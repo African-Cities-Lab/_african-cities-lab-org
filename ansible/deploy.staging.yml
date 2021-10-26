@@ -1,0 +1,17 @@
+---
+
+- hosts: staging
+  gather_facts: false
+
+  tasks:
+    - include: roles/common/tasks/checkout.yml
+
+    - name: Run `docker-compose up --build --detach`
+      command:
+        docker-compose up -f {{ repo_folder }}/production.yml -f {{ repo_folder }}/production.staging.yml  --build --detach
+      args:
+        chdir: "{{ repo_folder }}"
+      register: output
+
+    - debug:
+        var: output
