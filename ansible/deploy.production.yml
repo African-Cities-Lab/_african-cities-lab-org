@@ -1,0 +1,19 @@
+---
+
+- hosts: production
+  gather_facts: false
+
+  tasks:
+    - include: roles/common/tasks/checkout.yml
+
+    - include: roles/common/tasks/sync-envs-dir.yml
+
+    - name: Run `docker-compose up --build --detach`
+      command:
+        docker-compose -f {{ repo_folder }}/production.yml up --build --detach
+      args:
+        chdir: "{{ repo_folder }}/"
+      register: output
+
+    - debug:
+        var: output

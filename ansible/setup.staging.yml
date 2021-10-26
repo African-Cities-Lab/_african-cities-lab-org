@@ -1,0 +1,11 @@
+---
+
+- hosts: staging
+  vars:
+    docker_compose_version: 1.29.2
+    sys_packages: ["curl", "vim", "git", "ufw", "haveged"]
+    copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_ed25519.pub') }}"
+
+  roles:
+    - role: security
+    - role: docker_compose

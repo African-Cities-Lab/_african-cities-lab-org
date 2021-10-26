@@ -1,0 +1,14 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Run `docker-compose up --build --detach`
+      command:
+        docker-compose -f ../local.yml up --build --detach
+      register: output
+
+    - debug:
+        var: output

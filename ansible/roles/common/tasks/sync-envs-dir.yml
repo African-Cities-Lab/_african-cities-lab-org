@@ -1,0 +1,6 @@
+---
+
+- name: Sync .env dir
+  ansible.posix.synchronize:
+    src: "../{{ envs_dir }}/"
+    dest: "{{ repo_folder }}/{{ envs_dir }}/"
