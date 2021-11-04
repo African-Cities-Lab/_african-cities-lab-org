@@ -1,8 +1,8 @@
 # African Cities Lab
 
-[![Build Status](https://github.com/martibosch/african-cities-lab-org/workflows/CI/badge.svg?branch=main)](https://github.com/martibosch/african-cities-lab-org/actions/workflows/ci.yml)
+[![Build Status](https://github.com/African-Cities-Lab/african-cities-lab-org/workflows/CI/badge.svg?branch=main)](https://github.com/African-Cities-Lab/african-cities-lab-org/actions/workflows/ci.yml)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![GitHub license](https://img.shields.io/github/license/martibosch/african-cities-lab-org.svg)](https://github.com/martibosch/african-cities-lab-org/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/African-Cities-Lab/african-cities-lab-org.svg)](https://github.com/African-Cities-Lab/african-cities-lab-org/blob/main/LICENSE)
 
 African Cities Lab website [africancitieslab.org](https://africancitieslab.org)
 
