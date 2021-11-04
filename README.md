@@ -12,11 +12,20 @@ African Cities Lab website [africancitieslab.org](https://africancitieslab.org)
 * docker-compose
 * ansible
 
-## Deployment instructions
+## Development instructions
+
+To set up a development environment, install the requirements and initialize pre-commit as follows:
+
+```bash
+pip install -r requirements/local.txt
+pre-commit install
+```
+
+### Deployment instructions
 
 This site is based on the [cookiecutter-django](https://github.com/pydanny/cookiecutter-django/) template, so further valuable information can also be found in [its documentation](https://cookiecutter-django.readthedocs.io/en/latest/?badge=latest).
 
-### Local deployment
+#### Local deployment
 
 1. Build the stack:
 
@@ -43,7 +52,11 @@ This site is based on the [cookiecutter-django](https://github.com/pydanny/cooki
     docker-compose -f local.yml run django python manage.py createsuperuser
     ```
 
-## Staging/production deployment
+#### Staging/production deployment
+
+##### Server setup
+
+In order to set up the staging and production servers, the following commands should be run once:
 
 1. Create two computing server instances (e.g., AWS EC2, DigitalOcean droplet...), one for staging and another for production, and ensure that you have root ssh access rights to both (e.g., by running `ssh root@<server-ip>`).
 
@@ -52,29 +65,24 @@ This site is based on the [cookiecutter-django](https://github.com/pydanny/cooki
 3. Execute the `ansible/setup.staging.yml` and `ansible/setup.production.yml` playbooks to setup the production and staging servers respectively:
 
     ```bash
-    ansible-playbook ansible/setup.staging.yml  # or ansible-playbook ansible/setup.production.yml
+    # ansible-playbook ansible/setup.staging.yml  # for staging
+    ansible-playbook ansible/setup.production.yml  # for production
     ```
 
 4. Create two storage bucket instances (e.g., AWS S3, DigitalOcean spaces...), one for staging and another for production.
 
 5. Ensure that `.envs/.staging/.django` and `.envs/.production/.django` have the correct access keys for the staging and production storage buckets respectively.
 
-6. Execute the `ansible/deploy.staging.yml` and `ansible/deploy.production.yml` playbooks to deploy the stack to the production and staging servers respectively:
+##### Deployment
 
-    ```bash
-    ansible-playbook ansible/deploy.staging.yml  # or ansible-playbook ansible/deploy.production.yml
-    ```
-
-    The web application should be now up and running in the staging and production servers
-
-## Development instructions
-
-To set up a development environment, install the requirements and initialize pre-commit as follows:
+Once the servers are setup, you can push the latest commit to the main branch of this repository (https://github.com/African-Cities-Lab/african-cities-lab-org) and then deploy them to staging/production by executing the `ansible/deploy.staging.yml` and `ansible/deploy.production.yml` playbooks respectively:
 
 ```bash
-pip install -r requirements/local.txt
-pre-commit install
+# ansible-playbook ansible/deploy.staging.yml  # for staging
+ansible-playbook ansible/deploy.production.yml  # for production
 ```
+
+The web application should be now up and running in the staging and production servers
 
 ## Acknowledgments
 
