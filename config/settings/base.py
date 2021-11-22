@@ -5,6 +5,8 @@ from pathlib import Path
 
 import environ
 
+# import wagtail
+
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # african_cities_lab/
 APPS_DIR = ROOT_DIR / "african_cities_lab"
@@ -52,6 +54,23 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 # APPS
 # ------------------------------------------------------------------------------
+# wagtail apps
+WAGTAIL = [
+    "wagtail.contrib.forms",
+    "wagtail.contrib.redirects",
+    "wagtail.embeds",
+    "wagtail.sites",
+    "wagtail.users",
+    "wagtail.snippets",
+    "wagtail.documents",
+    "wagtail.images",
+    "wagtail.search",
+    "wagtail.admin",
+    "wagtail.core",
+    "modelcluster",
+    "taggit",
+]
+
 DJANGO_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -72,7 +91,7 @@ LOCAL_APPS = [
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS + WAGTAIL
 
 # MIGRATIONS
 # ------------------------------------------------------------------------------
@@ -184,7 +203,7 @@ TEMPLATES = [
 FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
 # http://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # FIXTURES
 # ------------------------------------------------------------------------------
@@ -215,7 +234,10 @@ EMAIL_TIMEOUT = 5
 # ADMIN
 # ------------------------------------------------------------------------------
 # Django Admin URL.
-ADMIN_URL = "admin/"
+# ADMIN_URL = "admin/"
+
+DJANGO_ADMIN_URL = "django-admin/"
+WAGTAIL_ADMIN_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = [("""Martí Bosch""", "marti.bosch@epfl.ch")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -245,6 +267,15 @@ LOGGING = {
     "root": {"level": "INFO", "handlers": ["console"]},
 }
 
+# Wagtail stuff
+# ------------------------------------------------------------------------------
+WAGTAIL_SITE_NAME = "African Cities Lab"
+
+WAGTAILSEARCH_BACKENDS = {
+    "default": {
+        "BACKEND": "wagtail.search.backends.database",
+    }
+}
 
 # Your stuff...
 # ------------------------------------------------------------------------------

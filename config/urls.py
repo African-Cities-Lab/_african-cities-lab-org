@@ -4,16 +4,25 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
+from wagtail.admin import urls as wagtailadmin_urls
+from wagtail.core import urls as wagtail_urls
+from wagtail.documents import urls as wagtaildocs_urls
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),
-    # Django Admin, use {% url 'admin:index' %}
-    path(settings.ADMIN_URL, admin.site.urls),
+    # Django Admin, use {% raw %}{% url "admin:index" %}{% endraw %}
+    path(settings.DJANGO_ADMIN_URL, admin.site.urls),
+    # Wagtail Admin
+    path(settings.WAGTAIL_ADMIN_URL, include(wagtailadmin_urls)),
+    # Wagtail documents
+    path("documents/", include(wagtaildocs_urls)),
     # User management
     # path("users/", include("african_cities_lab.users.urls", namespace="users")),
+    # Wagtail urls
+    path("", include(wagtail_urls)),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
