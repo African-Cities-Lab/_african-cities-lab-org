@@ -69,6 +69,9 @@ WAGTAIL = [
     "wagtail.core",
     "modelcluster",
     "taggit",
+    # wagtail localize
+    # "wagtail_localize",
+    # "wagtail_localize.locales",
 ]
 
 DJANGO_APPS = [
@@ -87,6 +90,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "african_cities_lab.home.apps.HomeConfig",
     # "african_cities_lab.users.apps.UsersConfig",
     # Your stuff: custom apps go here
 ]
