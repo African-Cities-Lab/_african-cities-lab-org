@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
@@ -9,10 +10,6 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
-    path(
-        "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
-    ),
     # Django Admin, use {% raw %}{% url "admin:index" %}{% endraw %}
     path(settings.DJANGO_ADMIN_URL, admin.site.urls),
     # Wagtail Admin
@@ -22,10 +19,14 @@ urlpatterns = [
     # User management
     # path("users/", include("african_cities_lab.users.urls", namespace="users")),
     # Wagtail urls
-    path("", include(wagtail_urls)),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+urlpatterns = urlpatterns + i18n_patterns(
+    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    # path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
+    path("", include(wagtail_urls)),
+)
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit

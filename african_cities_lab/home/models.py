@@ -8,6 +8,7 @@ from wagtail.core.models import Page
 class FlatPage(Page):
     """FlatPage page model."""
 
+    template = "flatpage/flat_page.html"
     body = RichTextField()
 
     content_panels = Page.content_panels + [

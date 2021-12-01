@@ -36,6 +36,14 @@ USE_I18N = True
 USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
+# Wagtail internationalization
+WAGTAIL_I18N_ENABLED = True
+
+WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
+    ("en", "English"),
+    ("fr", "French"),
+]
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#locale-paths
 LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 
@@ -70,8 +78,8 @@ WAGTAIL = [
     "modelcluster",
     "taggit",
     # wagtail localize
-    # "wagtail_localize",
-    # "wagtail_localize.locales",
+    "wagtail_localize",
+    "wagtail_localize.locales",
 ]
 
 DJANGO_APPS = [
@@ -148,6 +156,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
 # STATIC
