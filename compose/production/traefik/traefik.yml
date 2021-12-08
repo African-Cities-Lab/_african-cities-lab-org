@@ -37,6 +37,11 @@ http:
       tls:
         # https://docs.traefik.io/master/routing/routers/#certresolver
         certResolver: letsencrypt
+    web-router:
+      rule: Host(`{{ env "TRAEFIK_HOST" }}`){{ if eq (env "ADD_HOST_WWW") "true" }} || Host(`www.{{ env "TRAEFIK_HOST" }}`){{ end }}
+      entryPoints:
+        - web
+      service: django
 
   middlewares:
     csrf:
