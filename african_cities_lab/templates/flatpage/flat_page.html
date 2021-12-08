@@ -1,5 +1,6 @@
 {% extends "base.html" %}
+{% load wagtailcore_tags %}
 
 {% block content %}
-{{ self.body|safe }}
+{{ self.body|richtext }}
 {% endblock content %}
