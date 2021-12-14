@@ -2,3 +2,7 @@
 # ------------------------------------------------------------------------------
 USE_DOCKER=yes
 IPYTHONDIR=/app/.ipython
+
+DJANGO_SU_NAME=acladmin
+DJANGO_SU_EMAIL=marti.bosch@epfl.ch
+DJANGO_SU_PASSWORD=abcd1234
