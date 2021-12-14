@@ -27,10 +27,11 @@ repos:
         args: ['--config=setup.cfg']
         additional_dependencies: [flake8-isort]
 
-  - repo: https://github.com/ansible-community/ansible-lint.git
-    rev: v5.2.1
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.58.0
     hooks:
-      - id: ansible-lint
+      - id: terraform_fmt
+      - id: terraform_validate
 
 # sets up .pre-commit-ci.yaml to ensure pre-commit dependencies stay up to date
 ci:
