@@ -4,7 +4,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
-from django.views.generic import TemplateView
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
@@ -25,7 +24,8 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns = urlpatterns + i18n_patterns(
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", include("home.urls")),
+    # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     # path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     path("", include(wagtail_urls)),
 )
