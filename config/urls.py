@@ -25,8 +25,6 @@ urlpatterns = [
 
 urlpatterns = urlpatterns + i18n_patterns(
     path("", include("home.urls")),
-    # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
-    # path("about/", TemplateView.as_view(template_name="pages/about.html"), name="about"),
     path("", include(wagtail_urls)),
 )
 
