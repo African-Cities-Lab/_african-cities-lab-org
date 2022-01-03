@@ -141,7 +141,14 @@ header.masthead .intro-text {
         z-index: 1030;
     }
 }
-
+/*----------------------------------------*/
+/*  Contents CSS
+/*----------------------------------------*/
+@media screen and (max-width: 768px) {
+    .content-container{
+        margin-top: 0% !important;
+    }
+}
 /*----------------------------------------*/
 /*  Latest Courses CSS
 /*----------------------------------------*/
