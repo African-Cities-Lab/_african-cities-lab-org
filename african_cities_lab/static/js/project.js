@@ -9,13 +9,12 @@
 //         Sticky Menu
 //     --------------------------------------*/
 //     var windows = $(window);
-//     var stick = $(".header-sticky");
 //     windows.on('scroll',function() {
 //         var scroll = windows.scrollTop();
 //         if (scroll < 5) {
-//             stick.removeClass("sticky");
+//             $( "#mainNav" ).css( "background-color", "#000000" );
 //         }else{
-//             stick.addClass("sticky");
+//             $( "#mainNav" ).css( "background-color", "black" );
 //         }
 //     });
 

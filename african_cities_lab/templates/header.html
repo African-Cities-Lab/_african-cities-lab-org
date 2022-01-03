@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!-- style="background-color: #00000057 !important;" -->
-<nav id="mainNav" class="navbar navbar-dark navbar-expand-md py-3" style="background-color: #000000 !important;">
+<nav id="mainNav" class="navbar fixed-top-navbar navbar-dark navbar-expand-md text-center py-3" style="background-color: #000000 !important;">
     <div class="container"><a class="navbar-brand" href="#page-top">ACL</a>
         <button class="navbar-toggler navbar-toggler-right bg-warning text-black" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div id="navbarResponsive" class="collapse navbar-collapse">
@@ -43,7 +43,7 @@
                 <hr class="nav_bar_hr">
                 <form action="{% url 'set_language' %}" method="post" class="mx-3">{% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}">
-                    <select name="language" class="form-control text-white bg-black" onchange="this.form.submit()" style="cursor: pointer;">
+                    <select name="language" class="form-control text-white bg-black" onchange="this.form.submit()" style="cursor: pointer;text-align: center;">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% get_available_languages as LANGUAGES %}
                         {% get_language_info_list for LANGUAGES as languages %}

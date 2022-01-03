@@ -133,6 +133,13 @@ header.masthead .intro-text {
     .nav_bar_hr{
       display: none;
     }
+    .fixed-top-navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 }
 
 /*----------------------------------------*/
