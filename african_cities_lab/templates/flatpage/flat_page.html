@@ -1,8 +1,5 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags %}
-
 {% block body %}
-<div class="container content-container py-5 mt-5">
-{{ self.body|richtext }}
-</div>
+    <div class="container content-container py-5 mt-5">{{ self.body|richtext }}</div>
 {% endblock body %}

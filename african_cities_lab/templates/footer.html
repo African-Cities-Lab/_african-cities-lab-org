@@ -7,34 +7,62 @@
                 <div class="col-lg-6 col-sm-12">
                     <div class="single-widget">
                         <div class="footer-logo mb-3">
-                            <a href="{% url 'home' %}"><img src="{% static 'images/assets/LOGO-ACL-BLANC.png'%}" alt="ACL" style="height: 2.5rem;"></a>
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'images/assets/LOGO-ACL-BLANC.png' %}"
+                                     width="162.33px"
+                                     height="40px"
+                                     alt="ACL"/>
+                            </a>
                         </div>
-                        <p>{% trans "footer description" %}</p>
+                        <p>
+                            {% trans "footer description" %}
+                        </p>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li>
+                                    <a href="#facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-sm-12 pt-4 pt-lg-0">
                     <div class="single-widget">
                         <h3>{% trans "useful links" %}</h3>
                         <ul>
-                            <li><a href="/about" class="text-white footer-link">{% trans "about us" %}</a></li>
-                            <li><a href="#faq" class="text-white footer-link">FAQ</a></li>
-                            <li><a href="#contact" class="text-white footer-link">{% trans "contact us" %}</a></li>
+                            <li>
+                                <a href="#about" class="text-white footer-link">{% trans "about us" %}</a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="text-white footer-link">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="text-white footer-link">{% trans "contact us" %}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-12 pt-4 pt-lg-0">
                     <div class="single-widget">
                         <h3>{% trans "contact" %}</h3>
-                        <p><i class="fa fa-phone-alt"></i> +000-000000000</p>
-                        <p><i class="fa fa-envelope"></i> info@africancitieslab.org</p>
+                        <p>
+                            <i class="fa fa-phone-alt"></i> +000-000000000
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i> info@africancitieslab.org
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,450 +1,555 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
+{% block css %}
+    {{ block.super }}
+    <style>
+     header.masthead{
+         background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url({% static 'images/assets/header_bg.jpg' %});
+     }
+    </style>
+{% endblock css %}
 {% block body %}
-
-<header class="masthead" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url({% static 'images/assets/header_bg.jpg' %});">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-lead-in">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-9 mx-auto position-relative">
-                            <p class="mb-2 text-uppercase h1 text-white"><strong>{% translate "Welcome to ACL" %}</strong></p>
-                            <p class="mb-3 text-white">{% translate "Welcome slogan" %}</p>
-                        </div>
-                        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                            <form disabled>
-                                <div class="row">
-                                    <div class="col-12 col-md-9 mb-2 mb-md-0 px-0"><input class="form-control form-control-lg rounded-0" type="text" placeholder="EX: Architecture specialisation" /></div>
-                                    <div class="col-12 col-md-3 px-0"><button class="col-12 btn btn-warning btn-lg float-start rounded-0 text-black" type="submit">{% translate "Search" %}</button></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Courses Area Start -->
-<div class="courses-area py-5 text-center bg-light" id="Courses">
-    <div class="container courses-container">
-        <div class="col-12 d-flex justify-content-center mb-4">
-            <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                <hr class="col-10 bg-danger my-0 rounded-pill opacity-100" style="height: 5px;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title mb-5">
-                    <h2>{% translate "African cities lab Courses" %}</h2>
-                    <h6 class="mt-2">{% translate "Check the latest courses" %}</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row latest_courses">
-            <div class="col-lg-3 col-md-6">
-                <div class="single-course opacity-100">
-                    <div class="course-img">
-                        <a href="#details"><img src="{% static 'images/assets/bg_um6p.png'%}" alt="course">
-                            <div class="course-hover">
-                                <i class="fa fa-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="course-content p-3">
-                        <p class="mb-2">UM6P</p>
-                        <h3><a href="#details">Web Developer Course</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6" style="display: flex; align-items: center;">
-                                <span><i class="fas fa-calendar-day"></i> 5 Feb 2022</span>
-                            </div>
-                            <div class="col-6">
-                                <span class="float-end"><a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-course opacity-100">
-                    <div class="course-img">
-                        <a href="#details"><img src="{% static 'images/assets/bg_um6p.png'%}" alt="course">
-                            <div class="course-hover">
-                                <i class="fa fa-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="course-content p-3">
-                        <p class="mb-2">UM6P</p>
-                        <h3><a href="#details">Web Developer Course</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6" style="display: flex; align-items: center;">
-                                <span><i class="fas fa-calendar-day"></i> 5 Feb 2022</span>
-                            </div>
-
-                            <div class="col-6">
-                                <span class="float-end"><a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-course opacity-100">
-                    <div class="course-img">
-                        <a href="#details"><img src="{% static 'images/assets/bg_um6p.png'%}" alt="course">
-                            <div class="course-hover">
-                                <i class="fa fa-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="course-content p-3">
-                        <p class="mb-2">UM6P</p>
-                        <h3><a href="#details">Web Developer Course</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6" style="display: flex; align-items: center;">
-                                <span><i class="fas fa-calendar-day"></i> 5 Feb 2022</span>
-                            </div>
-
-                            <div class="col-6">
-                                <span class="float-end"><a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single-course opacity-100">
-                    <div class="course-img">
-                        <a href="#details"><img src="{% static 'images/assets/bg_um6p.png'%}" alt="course">
-                            <div class="course-hover">
-                                <i class="fa fa-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="course-content p-3">
-                        <p class="mb-2">UM6P</p>
-                        <h3><a href="#details">Web Developer Course</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6" style="display: flex; align-items: center;">
-                                <span><i class="fas fa-calendar-day"></i> 5 Feb 2022</span>
-                            </div>
-
-                            <div class="col-6">
-                                <span class="float-end"><a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 mb-3 mt-3" style="text-align: right;">
-            <a class="btn btn-primary rounded-pill opacity-75" href="#allcourses">{% translate "View all courses" %}</a>
-        </div>
-    </div>
-</div>
-<!-- Courses Area End -->
-<hr class="m-0">
-<!-- Partners Area Start-->
-<div class="partners-area text-center py-5 bg-light" id="Partners">
-    <div class="container">
-        <div class="col-12 d-flex justify-content-center mb-4">
-            <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                <hr class="col-10 bg-danger my-0 rounded-pill opacity-100" style="height: 5px;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title mb-5">
-                    <h2>{% translate "Partners" %}</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/epfl.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/epfl.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/UM6P.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/UM6P.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/UM6P.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/UM6P.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="container partner-container">
-                    <a href="#UM6P">
-                        <div class="partner-gradient">
-                            <img src="{% static 'images/assets/UM6P.png'%}" style="display: block;"/>
-                        </div>
-                        <div class="partner-bottom-left text-white text-start px-3 py-1">
-                            <p class="text-white mb-1">Lorem ipsum dolor sit amet</p>
-                            <b class="h5">EPFL</b>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Partners Area End -->
-
-<!-- Start Blog Section -->
-<section class="blog-section semi_dark_bg section-ptb py-5" id="News">
-    <div class="blog-area">
+    <header class="masthead">
         <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 mx-auto position-relative">
+                                <p class="mb-2 text-uppercase h1 text-white">
+                                    <strong>{% translate "Welcome to ACL" %}</strong>
+                                </p>
+                                <p class="mb-3 text-white">
+                                    {% translate "Welcome slogan" %}
+                                </p>
+                            </div>
+                            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
+                                <form disabled>
+                                    <div class="row">
+                                        <div class="col-12 col-md-9 mb-2 mb-md-0 px-0">
+                                            <input class="form-control form-control-lg rounded-0"
+                                                   type="text"
+                                                   placeholder="EX: Architecture specialisation"/>
+                                        </div>
+                                        <div class="col-12 col-md-3 px-0">
+                                            <button class="col-12 btn btn-warning btn-lg float-start rounded-0 text-black"
+                                                    type="submit">
+                                                {% translate "Search" %}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Courses Area Start -->
+    <div class="courses-area py-5 text-center bg-light" id="Courses">
+        <div class="container courses-container">
             <div class="col-12 d-flex justify-content-center mb-4">
                 <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 bg-danger my-0 rounded-pill opacity-100" style="height: 5px;">
+                    <hr class="col-10 bg-danger my-0 rounded-pill opacity-100 thick" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title mb-5 text-center">
-                        <h2>{% translate "News" %}</h2>
-                        <h6 class="mt-2">{% translate "Latest News" %}</h6>
+                    <div class="section-title mb-5">
+                        <h2>{% translate "African cities lab Courses" %}</h2>
+                        <h6 class="mt-2">{% translate "Check the latest courses" %}</h6>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 mb-2">
-                    <div class="single-blog">
-                        <div class="row p-3">
-                            <div class="col-lg-5 col-md-12">
-                                <div class="blog-img">
-                                    <a href="#post_detail" style="position: relative;">
-                                        <img src="{% static 'images/assets/bg_um6p.png'%}" alt="blog" style="
-                                            height: 200px;
-                                            object-fit: cover;
-                                            position: relative;">
-
-                                        <div class="blog-date bg-warning text-center py-3" style="
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        width: 40% !important;
-                                        height: 40% !important;">
-                                        <h5 class="mb-0 text-white">15</h5>
-                                        <p class="mb-0 text-white">Jul</p>
-                                        </div>
-                                    </a>
-                                    <div class="blog-hover">
-                                        <a href="#post_detail"><i class="fa fa-link link-icon"></i></a>
-                                    </div>
+            <div class="row latest_courses">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-course opacity-100">
+                        <div class="course-img">
+                            <a href="#details">
+                                <img src="{% static 'images/assets/bg_um6p.png' %}" alt="course">
+                                <div class="course-hover">
+                                    <i class="fa fa-link"></i>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 mt-3">
-                                <a href="#post_detail"><h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4></a>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            </a>
+                        </div>
+                        <div class="course-content p-3">
+                            <p class="mb-2">
+                                UM6P
+                            </p>
+                            <h3>
+                                <a href="#details">Web Developer Course</a>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.
+                            </p>
+                            <hr />
+                            <div class="row">
+                                <div class="col-6" style="display: flex; align-items: center;">
+                                    <span>
+                                        <i class="fas fa-calendar-day"></i> 5 Feb 2022
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="float-end">
+                                        <a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-2">
-                    <div class="single-blog">
-                        <div class="row p-3">
-                            <div class="col-lg-5 col-md-12">
-                                <div class="blog-img">
-                                    <a href="#post_detail" style="position: relative;">
-                                        <img src="{% static 'images/assets/bg_um6p.png'%}" alt="blog" style="
-                                            height: 200px;
-                                            object-fit: cover;
-                                            position: relative;">
-
-                                        <div class="blog-date bg-warning text-center py-3" style="
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        width: 40% !important;
-                                        height: 40% !important;">
-                                        <h5 class="mb-0 text-white">15</h5>
-                                        <p class="mb-0 text-white">Jul</p>
-                                        </div>
-                                    </a>
-                                    <div class="blog-hover">
-                                        <a href="#post_detail"><i class="fa fa-link link-icon"></i></a>
-                                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-course opacity-100">
+                        <div class="course-img">
+                            <a href="#details">
+                                <img src="{% static 'images/assets/bg_um6p.png' %}" alt="course">
+                                <div class="course-hover">
+                                    <i class="fa fa-link"></i>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 mt-3">
-                                <a href="#post_detail"><h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4></a>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            </a>
+                        </div>
+                        <div class="course-content p-3">
+                            <p class="mb-2">
+                                UM6P
+                            </p>
+                            <h3>
+                                <a href="#details">Web Developer Course</a>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.
+                            </p>
+                            <hr />
+                            <div class="row">
+                                <div class="col-6" style="display: flex; align-items: center;">
+                                    <span>
+                                        <i class="fas fa-calendar-day"></i> 5 Feb 2022
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="float-end">
+                                        <a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-2">
-                    <div class="single-blog">
-                        <div class="row p-3">
-                            <div class="col-lg-5 col-md-12">
-                                <div class="blog-img">
-                                    <a href="#post_detail" style="position: relative;">
-                                        <img src="{% static 'images/assets/bg_um6p.png'%}" alt="blog" style="
-                                            height: 200px;
-                                            object-fit: cover;
-                                            position: relative;">
-
-                                        <div class="blog-date bg-warning text-center py-3" style="
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        width: 40% !important;
-                                        height: 40% !important;">
-                                        <h5 class="mb-0 text-white">15</h5>
-                                        <p class="mb-0 text-white">Jul</p>
-                                        </div>
-                                    </a>
-                                    <div class="blog-hover">
-                                        <a href="#post_detail"><i class="fa fa-link link-icon"></i></a>
-                                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-course opacity-100">
+                        <div class="course-img">
+                            <a href="#details">
+                                <img src="{% static 'images/assets/bg_um6p.png' %}" alt="course">
+                                <div class="course-hover">
+                                    <i class="fa fa-link"></i>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 mt-3">
-                                <a href="#post_detail"><h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4></a>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            </a>
+                        </div>
+                        <div class="course-content p-3">
+                            <p class="mb-2">
+                                UM6P
+                            </p>
+                            <h3>
+                                <a href="#details">Web Developer Course</a>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.
+                            </p>
+                            <hr />
+                            <div class="row">
+                                <div class="col-6" style="display: flex; align-items: center;">
+                                    <span>
+                                        <i class="fas fa-calendar-day"></i> 5 Feb 2022
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="float-end">
+                                        <a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-2">
-                    <div class="single-blog">
-                        <div class="row p-3">
-                            <div class="col-lg-5 col-md-12">
-                                <div class="blog-img">
-                                    <a href="#post_detail" style="position: relative;">
-                                        <img src="{% static 'images/assets/bg_um6p.png'%}" alt="blog" style="
-                                            height: 200px;
-                                            object-fit: cover;
-                                            position: relative;">
-
-                                        <div class="blog-date bg-warning text-center py-3" style="
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        width: 40% !important;
-                                        height: 40% !important;">
-                                        <h5 class="mb-0 text-white">15</h5>
-                                        <p class="mb-0 text-white">Jul</p>
-                                        </div>
-                                    </a>
-                                    <div class="blog-hover">
-                                        <a href="#post_detail"><i class="fa fa-link link-icon"></i></a>
-                                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-course opacity-100">
+                        <div class="course-img">
+                            <a href="#details">
+                                <img src="{% static 'images/assets/bg_um6p.png' %}" alt="course">
+                                <div class="course-hover">
+                                    <i class="fa fa-link"></i>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 mt-3">
-                                <a href="#post_detail"><h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4></a>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            </a>
+                        </div>
+                        <div class="course-content p-3">
+                            <p class="mb-2">
+                                UM6P
+                            </p>
+                            <h3>
+                                <a href="#details">Web Developer Course</a>
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh vestibulum, id fringilla risus condimentum.
+                            </p>
+                            <hr />
+                            <div class="row">
+                                <div class="col-6" style="display: flex; align-items: center;">
+                                    <span>
+                                        <i class="fas fa-calendar-day"></i> 5 Feb 2022
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="float-end">
+                                        <a class="btn btn-outline-danger rounded-pill py-0" href="#details">{% translate "View" %}</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 mb-3 mt-3" style="text-align: right;">
-                <a class="btn btn-primary rounded-pill opacity-75" href="#allposts">{% translate "View all Posts" %}</a>
+                <a class="btn btn-primary rounded-pill opacity-75" href="#allcourses">{% translate "View all courses" %}</a>
             </div>
         </div>
     </div>
-</section>
-
-
-<!-- End Blog Section -->
-
-<!-- Start Thematique section -->
-<section class="bg-light py-5" id="Topics">
+    <!-- Courses Area End -->
+    <hr class="m-0" />
+    <!-- Partners Area Start-->
+    <div class="partners-area text-center py-5 bg-light" id="Partners">
         <div class="container">
             <div class="col-12 d-flex justify-content-center mb-4">
                 <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 bg-danger my-0 rounded-pill opacity-100" style="height: 5px;">
+                    <hr class="col-10 bg-danger my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-5">
+                        <h2>{% translate "Partners" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/epfl.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/epfl.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/UM6P.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/UM6P.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/UM6P.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/UM6P.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="container partner-container">
+                        <a href="#UM6P">
+                            <div class="partner-gradient">
+                                <img src="{% static 'images/assets/UM6P.png' %}" style="display: block;"/>
+                            </div>
+                            <div class="partner-bottom-left text-white text-start px-3 py-1">
+                                <p class="text-white mb-1">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <b class="h5">EPFL</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Partners Area End -->
+    <!-- Start Blog Section -->
+    <section class="blog-section semi_dark_bg section-ptb py-5" id="News">
+        <div class="blog-area">
+            <div class="container">
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                        <hr class="col-10 bg-danger my-0 rounded-pill opacity-100 thick" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-5 text-center">
+                            <h2>{% translate "News" %}</h2>
+                            <h6 class="mt-2">{% translate "Latest News" %}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <div class="single-blog">
+                            <div class="row p-3">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="blog-img">
+                                        <a href="#post_detail" style="position: relative;">
+                                            <img src="{% static 'images/assets/bg_um6p.png' %}"
+                                                 alt="blog"
+                                                 style="height: 200px;
+                                                        object-fit: cover;
+                                                        position: relative;">
+                                            <div class="blog-date bg-warning text-center py-3"
+                                                 style="position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        width: 40% !important;
+                                                        height: 40% !important;">
+                                                <h5 class="mb-0 text-white">15</h5>
+                                                <p class="mb-0 text-white">
+                                                    Jul
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="blog-hover">
+                                            <a href="#post_detail">
+                                                <i class="fa fa-link link-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <a href="#post_detail">
+                                        <h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4>
+                                    </a>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="single-blog">
+                            <div class="row p-3">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="blog-img">
+                                        <a href="#post_detail" style="position: relative;">
+                                            <img src="{% static 'images/assets/bg_um6p.png' %}"
+                                                 alt="blog"
+                                                 style="height: 200px;
+                                                        object-fit: cover;
+                                                        position: relative;">
+                                            <div class="blog-date bg-warning text-center py-3"
+                                                 style="position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        width: 40% !important;
+                                                        height: 40% !important;">
+                                                <h5 class="mb-0 text-white">15</h5>
+                                                <p class="mb-0 text-white">
+                                                    Jul
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="blog-hover">
+                                            <a href="#post_detail">
+                                                <i class="fa fa-link link-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <a href="#post_detail">
+                                        <h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4>
+                                    </a>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="single-blog">
+                            <div class="row p-3">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="blog-img">
+                                        <a href="#post_detail" style="position: relative;">
+                                            <img src="{% static 'images/assets/bg_um6p.png' %}"
+                                                 alt="blog"
+                                                 style="height: 200px;
+                                                        object-fit: cover;
+                                                        position: relative;">
+                                            <div class="blog-date bg-warning text-center py-3"
+                                                 style="position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        width: 40% !important;
+                                                        height: 40% !important;">
+                                                <h5 class="mb-0 text-white">15</h5>
+                                                <p class="mb-0 text-white">
+                                                    Jul
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="blog-hover">
+                                            <a href="#post_detail">
+                                                <i class="fa fa-link link-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <a href="#post_detail">
+                                        <h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4>
+                                    </a>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="single-blog">
+                            <div class="row p-3">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="blog-img">
+                                        <a href="#post_detail" style="position: relative;">
+                                            <img src="{% static 'images/assets/bg_um6p.png' %}"
+                                                 alt="blog"
+                                                 style="height: 200px;
+                                                        object-fit: cover;
+                                                        position: relative;">
+                                            <div class="blog-date bg-warning text-center py-3"
+                                                 style="position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        width: 40% !important;
+                                                        height: 40% !important;">
+                                                <h5 class="mb-0 text-white">15</h5>
+                                                <p class="mb-0 text-white">
+                                                    Jul
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="blog-hover">
+                                            <a href="#post_detail">
+                                                <i class="fa fa-link link-icon"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <a href="#post_detail">
+                                        <h4 class="text-black blog-title">Lorem Ipsum dolor sit amet</h4>
+                                    </a>
+                                    <hr />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 mt-3" style="text-align: right;">
+                    <a class="btn btn-primary rounded-pill opacity-75" href="#allposts">{% translate "View all Posts" %}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section -->
+    <!-- Start Thematique section -->
+    <section class="bg-light py-5" id="Topics">
+        <div class="container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 bg-danger my-0 rounded-pill opacity-100 thick" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="section-title mb-5 text-center">
                         <h2>{% translate "Thematics" %}</h2>
-                        <h6 class="mt-2">{% translate "Thematics slogan" %}</h6>
+                        <h6 class="mt-2">
+                            {% translate "Thematics slogan" %}
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -452,54 +557,90 @@
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
                     <div class="card border-0 text-center p-3 shadow-sm">
                         <div class="card-body text-black">
-                            <span><i class="fa fa-atom fa-4x mb-3"></i></span>
-                            <h4 class="mb-2">SCIENCE</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <span>
+                                <i class="fa fa-atom fa-4x mb-3"></i>
+                            </span>
+                            <h4 class="mb-2">
+                                SCIENCE
+                            </h4>
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -508,6 +649,6 @@
                 <a class="btn btn-primary rounded-pill opacity-75" href="#allcourses">View all Posts</a>
             </div> -->
         </div>
-</section>
-<!-- End Thematique section -->
+    </section>
+    <!-- End Thematique section -->
 {% endblock body %}
