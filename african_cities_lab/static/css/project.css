@@ -97,7 +97,17 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-ul {
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5,
+.content-container h6,
+.content-container ul {
+  margin-bottom: 1rem;
+}
+
+footer ul {
   list-style: outside none none;
   margin: 0;
   padding: 0;
