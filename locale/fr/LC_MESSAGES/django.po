@@ -18,98 +18,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: african_cities_lab/templates/footer.html:12
+#: african_cities_lab/home/templates/home/about.html:6
+#, fuzzy
+#| msgid "about us"
+msgid "About us"
+msgstr "À propos"
+
+#: african_cities_lab/home/templates/home/home.html:21
+msgid "Welcome to ACL"
+msgstr "Bienvenue chez African cities lab !"
+
+#: african_cities_lab/home/templates/home/home.html:24
+msgid "Welcome slogan"
+msgstr ""
+"Retrouvez des palette de cours proposé par plusieurs universités africaines"
+
+#: african_cities_lab/home/templates/home/home.html:38
+msgid "Search"
+msgstr "Recherche"
+
+#: african_cities_lab/home/templates/home/home.html:61
+msgid "African cities lab Courses"
+msgstr "Cours d'African cities lab"
+
+#: african_cities_lab/home/templates/home/home.html:62
+msgid "Check the latest courses"
+msgstr "Voir les derniers cours"
+
+#: african_cities_lab/home/templates/home/home.html:96
+#: african_cities_lab/home/templates/home/home.html:132
+#: african_cities_lab/home/templates/home/home.html:168
+#: african_cities_lab/home/templates/home/home.html:204
+msgid "View"
+msgstr "Voir"
+
+#: african_cities_lab/home/templates/home/home.html:213
+msgid "View all courses"
+msgstr "Tous les cours"
+
+#: african_cities_lab/home/templates/home/home.html:230
+msgid "Partners"
+msgstr "Partenaires"
+
+#: african_cities_lab/home/templates/home/home.html:356
+#: african_cities_lab/templates/header.html:35
+msgid "News"
+msgstr "Actualités"
+
+#: african_cities_lab/home/templates/home/home.html:357
+msgid "Latest News"
+msgstr "Dernières actualités"
+
+#: african_cities_lab/home/templates/home/home.html:532
+msgid "View all Posts"
+msgstr "Toutes les actualités"
+
+#: african_cities_lab/home/templates/home/home.html:549
+msgid "Thematics"
+msgstr "Thematiques"
+
+#: african_cities_lab/home/templates/home/home.html:551
+msgid "Thematics slogan"
+msgstr "Mes thematiques les plus consultés"
+
+#: african_cities_lab/templates/footer.html:18
 msgid "footer description"
 msgstr ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam "
 "eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh "
 "vestibulum, id fringilla risus condimentum."
 
-#: african_cities_lab/templates/footer.html:25
+#: african_cities_lab/templates/footer.html:43
 msgid "useful links"
 msgstr "liens important"
 
-#: african_cities_lab/templates/footer.html:27
+#: african_cities_lab/templates/footer.html:46
 msgid "about us"
 msgstr "À propos"
 
-#: african_cities_lab/templates/footer.html:29
+#: african_cities_lab/templates/footer.html:52
 msgid "contact us"
 msgstr "Contact"
 
-#: african_cities_lab/templates/footer.html:35
+#: african_cities_lab/templates/footer.html:59
 msgid "contact"
 msgstr "contact"
 
-#: african_cities_lab/templates/header.html:11
+#: african_cities_lab/templates/header.html:26
 msgid "Home"
 msgstr "Accueil"
 
-#: african_cities_lab/templates/header.html:12
+#: african_cities_lab/templates/header.html:29
 msgid "Courses"
 msgstr "Cours"
 
-#: african_cities_lab/templates/header.html:13
+#: african_cities_lab/templates/header.html:32
 msgid "Universities"
 msgstr "Universités"
 
-#: african_cities_lab/templates/header.html:14
-#: african_cities_lab/templates/pages/home.html:282
-msgid "News"
-msgstr "Actualités"
-
-#: african_cities_lab/templates/header.html:22
+#: african_cities_lab/templates/header.html:48
 msgid "Register"
 msgstr "Inscription"
-
-#: african_cities_lab/templates/pages/home.html:13
-msgid "Welcome to ACL"
-msgstr "Bienvenue chez African cities lab !"
-
-#: african_cities_lab/templates/pages/home.html:14
-msgid "Welcome slogan"
-msgstr ""
-"Retrouvez des palette de cours proposé par plusieurs universités africaines"
-
-#: african_cities_lab/templates/pages/home.html:20
-msgid "Search"
-msgstr "Recherche"
-
-#: african_cities_lab/templates/pages/home.html:41
-msgid "African cities lab Courses"
-msgstr "Cours d'African cities lab"
-
-#: african_cities_lab/templates/pages/home.html:42
-msgid "Check the latest courses"
-msgstr "Voir les derniers cours"
-
-#: african_cities_lab/templates/pages/home.html:66
-#: african_cities_lab/templates/pages/home.html:92
-#: african_cities_lab/templates/pages/home.html:118
-#: african_cities_lab/templates/pages/home.html:144
-msgid "View"
-msgstr "Voir"
-
-#: african_cities_lab/templates/pages/home.html:152
-msgid "View all courses"
-msgstr "Tous les cours"
-
-#: african_cities_lab/templates/pages/home.html:169
-msgid "Partners"
-msgstr "Partenaires"
-
-#: african_cities_lab/templates/pages/home.html:283
-msgid "Latest News"
-msgstr "Dernières actualités"
-
-#: african_cities_lab/templates/pages/home.html:426
-msgid "View all Posts"
-msgstr "Toutes les actualités"
-
-#: african_cities_lab/templates/pages/home.html:446
-msgid "Thematics"
-msgstr "Thematiques"
-
-#: african_cities_lab/templates/pages/home.html:447
-msgid "Thematics slogan"
-msgstr "Mes thematiques les plus consultés"
