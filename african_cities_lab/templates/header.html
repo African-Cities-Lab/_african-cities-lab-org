@@ -37,7 +37,7 @@
             </ul>
             <div class="text-uppercase">
                 <hr class="nav-bar-hr" />
-                <a class="text-white mx-3" role="button" href="#login">
+                <a class="text-white mx-3" role="button" href="{% url 'login' %}">
                     <i class="fas fa-user-lock"></i>
                 </a>
             </div>
@@ -45,7 +45,7 @@
                 <hr class="nav-bar-hr" />
                 <a class="btn btn-warning ms-auto rounded-pill"
                    role="button"
-                   href="#register">{% trans "Register" %}</a>
+                   href="{% url 'register' %}">{% trans "Register" %}</a>
             </div>
             <div class="text-uppercase">
                 <hr class="nav-bar-hr" />

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-05 16:45+0100\n"
+"POT-Creation-Date: 2022-01-09 12:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,22 @@ msgstr ""
 #| msgid "about us"
 msgid "About us"
 msgstr "À propos"
+
+#: african_cities_lab/home/templates/home/contact.html:6
+#, fuzzy
+#| msgid "contact"
+msgid "Contact"
+msgstr "contact"
+
+#: african_cities_lab/home/templates/home/courses.html:6
+#, fuzzy
+#| msgid "View all courses"
+msgid "Online courses"
+msgstr "Cours en ligne"
+
+#: african_cities_lab/home/templates/home/get_involved.html:6
+msgid "Get involved"
+msgstr "S'impliquer"
 
 #: african_cities_lab/home/templates/home/home.html:21
 msgid "Welcome to ACL"
@@ -61,6 +77,7 @@ msgid "Partners"
 msgstr "Partenaires"
 
 #: african_cities_lab/home/templates/home/home.html:356
+#: african_cities_lab/home/templates/home/news.html:6
 #: african_cities_lab/templates/header.html:35
 msgid "News"
 msgstr "Actualités"
@@ -80,6 +97,19 @@ msgstr "Thematiques"
 #: african_cities_lab/home/templates/home/home.html:551
 msgid "Thematics slogan"
 msgstr "Mes thematiques les plus consultés"
+
+#: african_cities_lab/home/templates/home/login.html:6
+msgid "Login"
+msgstr "Connection"
+
+#: african_cities_lab/home/templates/home/programs.html:6
+msgid "Training programs"
+msgstr "Formations continue"
+
+#: african_cities_lab/home/templates/home/register.html:6
+#: african_cities_lab/templates/header.html:48
+msgid "Register"
+msgstr "Inscription"
 
 #: african_cities_lab/templates/footer.html:18
 msgid "footer description"
@@ -115,7 +145,3 @@ msgstr "Cours"
 #: african_cities_lab/templates/header.html:32
 msgid "Universities"
 msgstr "Universités"
-
-#: african_cities_lab/templates/header.html:48
-msgid "Register"
-msgstr "Inscription"
