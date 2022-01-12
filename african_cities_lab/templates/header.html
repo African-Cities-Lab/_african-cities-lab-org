@@ -26,15 +26,13 @@
                     <a class="nav-link text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#Courses">{% translate "Courses" %}</a>
+                    <a class="nav-link text-white" href="{% url 'courses' %}">{% translate "Courses" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#Partners">{% translate "Universities" %}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#News">{% translate "News" %}</a>
+                    <a class="nav-link text-white" href="{% url 'news' %}">{% translate "News" %}</a>
                 </li>
             </ul>
+            {% comment %}
             <div class="text-uppercase">
                 <hr class="nav-bar-hr" />
                 <a class="text-white mx-3" role="button" href="{% url 'login' %}">
@@ -47,6 +45,7 @@
                    role="button"
                    href="{% url 'register' %}">{% translate "Register" %}</a>
             </div>
+            {% endcomment %}
             <div class="text-uppercase">
                 <hr class="nav-bar-hr" />
                 <form action="{% url 'set_language' %}" method="post" class="ms-2">
