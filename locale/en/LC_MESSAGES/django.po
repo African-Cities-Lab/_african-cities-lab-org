@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-12 13:35+0100\n"
+"POT-Creation-Date: 2022-01-12 14:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: african_cities_lab/home/templates/home/about.html:6
+#: african_cities_lab/templates/footer.html:46
 #, fuzzy
 #| msgid "about us"
 msgid "About"
@@ -164,6 +165,46 @@ msgstr ""
 msgid "Get involved"
 msgstr "Get involved"
 
+#: african_cities_lab/home/templates/home/get_involved.html:7
+msgid "Events"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:8
+msgid "To come"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:9
+msgid "Calls for proposal"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:10
+msgid ""
+"CLOSED - call for projects to produce MOOCs on African cities and urban "
+"development "
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:12
+msgid "Careers"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:13
+msgid ""
+"Working for the project African Cities Lab means being part of an innovative "
+"initiative with prestigious partners across the African continent."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:14
+msgid "*put the list of jobs with title and location*"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:15
+msgid "Lausanne, Switzerland"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/get_involved.html:16
+msgid "Cotonou, Benin."
+msgstr ""
+
 #: african_cities_lab/home/templates/home/home.html:21
 msgid "Welcome to ACL"
 msgstr "Welcome to African cities lab !"
@@ -250,10 +291,6 @@ msgstr ""
 #: african_cities_lab/templates/footer.html:43
 msgid "useful links"
 msgstr "useful links"
-
-#: african_cities_lab/templates/footer.html:46
-msgid "about us"
-msgstr "About Us"
 
 #: african_cities_lab/templates/footer.html:52
 msgid "contact us"
