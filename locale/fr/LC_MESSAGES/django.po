@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-12 13:23+0100\n"
+"POT-Creation-Date: 2022-01-12 13:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,14 +170,17 @@ msgstr ""
 "semestre 2023."
 
 #: african_cities_lab/home/templates/home/courses.html:8
+#: african_cities_lab/home/templates/home/programs.html:8
 msgid "Themes"
 msgstr "Thèmes"
 
 #: african_cities_lab/home/templates/home/courses.html:9
+#: african_cities_lab/home/templates/home/programs.html:9
 msgid "Institutions"
 msgstr "Etablissements"
 
 #: african_cities_lab/home/templates/home/courses.html:10
+#: african_cities_lab/home/templates/home/programs.html:10
 msgid "Languages"
 msgstr "Langues"
 
@@ -254,6 +257,14 @@ msgstr "Connection"
 #: african_cities_lab/home/templates/home/programs.html:6
 msgid "Training programs"
 msgstr "Formations continue"
+
+#: african_cities_lab/home/templates/home/programs.html:7
+msgid ""
+"The first African Cities Lab training programs will be available in the "
+"first half of 2023."
+msgstr ""
+"Les premières formations continues de l'African Cities Lab seront disponibles au premier "
+"semestre 2023."
 
 #: african_cities_lab/home/templates/home/register.html:6
 #: african_cities_lab/templates/header.html:48
