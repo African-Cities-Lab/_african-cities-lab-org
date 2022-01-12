@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-12 01:14+0100\n"
+"POT-Creation-Date: 2022-01-12 13:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,6 +160,30 @@ msgstr "contact"
 #| msgid "View all courses"
 msgid "Online courses"
 msgstr "Cours en ligne"
+
+#: african_cities_lab/home/templates/home/courses.html:7
+msgid ""
+"The first African Cities Lab courses will be available the first semester of "
+"2023."
+msgstr ""
+"Les premiers cours de l'African Cities Lab seront disponibles au premier "
+"semestre 2023."
+
+#: african_cities_lab/home/templates/home/courses.html:8
+msgid "Themes"
+msgstr "Thèmes"
+
+#: african_cities_lab/home/templates/home/courses.html:9
+msgid "Institutions"
+msgstr "Etablissements"
+
+#: african_cities_lab/home/templates/home/courses.html:10
+msgid "Languages"
+msgstr "Langues"
+
+#: african_cities_lab/home/templates/home/courses.html:11
+msgid "Speakers"
+msgstr "Intervenants"
 
 #: african_cities_lab/home/templates/home/get_involved.html:6
 msgid "Get involved"

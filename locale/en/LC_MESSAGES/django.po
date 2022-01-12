@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-09 12:20+0100\n"
+"POT-Creation-Date: 2022-01-12 13:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,8 +21,105 @@ msgstr ""
 #: african_cities_lab/home/templates/home/about.html:6
 #, fuzzy
 #| msgid "about us"
-msgid "About us"
+msgid "About"
 msgstr "About Us"
+
+#: african_cities_lab/home/templates/home/about.html:7
+#, fuzzy
+#| msgid "African cities lab Courses"
+msgid "African Cities Lab presentation"
+msgstr "African cities lab Courses"
+
+#: african_cities_lab/home/templates/home/about.html:8
+msgid ""
+"Contributing to sustainable urban development in Africa through an education "
+"tool by Africa, for Africa."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:9
+msgid "Vision"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:10
+msgid ""
+"Create a higher education ecosystem bringing together universities and "
+"professionals in the field, with a view to sustainable and resilient urban "
+"development."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:11
+#, fuzzy
+#| msgid "footer description"
+msgid "Description"
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis diam "
+"eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh "
+"vestibulum, id fringilla risus condimentum."
+
+#: african_cities_lab/home/templates/home/about.html:12
+msgid ""
+"The overall objective of the project is to create an African digital "
+"education Platform on urban development, offering quality MOOCs and online, "
+"continuing education training for professionals. It will also act as a forum "
+"for the exchange of digital educational resources and the management and "
+"governance of African cities to foster sustainable urban development."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:13
+msgid ""
+"Anchored on African soil, initially under the supervision of EPFL, the "
+"Platform will gather leading universities in the Anglophone and Francophone "
+"regions in order to create a network of institutions in digital education "
+"and have impact on the entire continent. African Cities Lab (ACL) is a joint "
+"initiative led by EPFL,"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:15
+msgid ""
+"the <a href=\"https://www.knust.edu.gh\">Kwame Nkrumah University of Science "
+"and Technology (Ghana)</a>,"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:16
+msgid ""
+"the <a href=\"https://www.um6p.ma/en\">Mohammed VI Polytechnic University "
+"(Maroc)</a>,"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:17
+msgid "the <a href=\"https://semecity.bj/en\">Sèmè City campus (Benin)</a>,"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:18
+msgid ""
+"the <a href=\"http://www.ucar.rnu.tn\">University of Carthage (Tunisia)</a>,"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:19
+msgid ""
+"the <a href=\"https://www.uct.ac.za\">University of Cape Town (South "
+"Africa)</a>, and"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:20
+msgid "the <a href=\"https://ur.ac.rw\">University of Rwanda</a>"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:22
+msgid "to contribute to sustainable urban development on the continent."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/about.html:23
+msgid ""
+"The initiative, funded by the <a href=\"https://seco.admin.ch/seco/en/home."
+"html\">Swiss State Secretariat for Economic Affairs (SECO)</a>, aims to "
+"create a digital education platform and its content on urban planning and "
+"urban development in Africa. The English-French bilingual ACL platform based "
+"on open edX and hosted by the partners in Africa, will offer quality MOOCs "
+"and online training for professionals. It will also act as a forum for the "
+"exchange of digital educational resources and the management and governance "
+"of African cities."
+msgstr ""
 
 #: african_cities_lab/home/templates/home/contact.html:6
 #, fuzzy
@@ -35,6 +132,30 @@ msgstr "contact"
 #| msgid "View all courses"
 msgid "Online courses"
 msgstr "Online courses"
+
+#: african_cities_lab/home/templates/home/courses.html:7
+msgid ""
+"The first African Cities Lab courses will be available the first semester of "
+"2023."
+msgstr ""
+
+#: african_cities_lab/home/templates/home/courses.html:8
+#, fuzzy
+#| msgid "Thematics"
+msgid "Themes"
+msgstr "Topics"
+
+#: african_cities_lab/home/templates/home/courses.html:9
+msgid "Institutions"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/courses.html:10
+msgid "Languages"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/courses.html:11
+msgid "Speakers"
+msgstr ""
 
 #: african_cities_lab/home/templates/home/get_involved.html:6
 msgid "Get involved"
