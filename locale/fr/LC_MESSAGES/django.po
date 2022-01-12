@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-12 13:35+0100\n"
+"POT-Creation-Date: 2022-01-12 14:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: african_cities_lab/home/templates/home/about.html:6
+#: african_cities_lab/templates/footer.html:46
 #, fuzzy
 #| msgid "about us"
 msgid "About"
@@ -192,6 +193,51 @@ msgstr "Intervenants"
 msgid "Get involved"
 msgstr "S'impliquer"
 
+#: african_cities_lab/home/templates/home/get_involved.html:7
+msgid "Events"
+msgstr "Evènements"
+
+#: african_cities_lab/home/templates/home/get_involved.html:8
+msgid "To come"
+msgstr "A venir"
+
+#: african_cities_lab/home/templates/home/get_involved.html:9
+msgid "Calls for proposal"
+msgstr "Appels à candidature"
+
+#: african_cities_lab/home/templates/home/get_involved.html:10
+msgid ""
+"CLOSED - call for projects to produce MOOCs on African cities and urban "
+"development "
+msgstr ""
+"FERME - Appel à projets pour produire des MOOCs sur les villes africaines et "
+"le développement urbain"
+
+#: african_cities_lab/home/templates/home/get_involved.html:12
+msgid "Careers"
+msgstr "Carrières"
+
+#: african_cities_lab/home/templates/home/get_involved.html:13
+msgid ""
+"Working for the project African Cities Lab means being part of an innovative "
+"initiative with prestigious partners across the African continent."
+msgstr ""
+"Travailler pour le projet African Cities Lab signifie faire partie d'une "
+"initiative innovante avec des partenaires prestigieux à travers le continent "
+"africain."
+
+#: african_cities_lab/home/templates/home/get_involved.html:14
+msgid "*put the list of jobs with title and location*"
+msgstr "*pour consulter la liste des emplois avec le titre et le lieu*."
+
+#: african_cities_lab/home/templates/home/get_involved.html:15
+msgid "Lausanne, Switzerland"
+msgstr "Lausanne, Suisse"
+
+#: african_cities_lab/home/templates/home/get_involved.html:16
+msgid "Cotonou, Benin."
+msgstr "Cotonou, Bénin"
+
 #: african_cities_lab/home/templates/home/home.html:21
 msgid "Welcome to ACL"
 msgstr "Bienvenue chez African cities lab !"
@@ -263,8 +309,8 @@ msgid ""
 "The first African Cities Lab training programs will be available in the "
 "first half of 2023."
 msgstr ""
-"Les premières formations continues de l'African Cities Lab seront disponibles au premier "
-"semestre 2023."
+"Les premières formations continues de l'African Cities Lab seront "
+"disponibles au premier semestre 2023."
 
 #: african_cities_lab/home/templates/home/register.html:6
 #: african_cities_lab/templates/header.html:48
@@ -281,10 +327,6 @@ msgstr ""
 #: african_cities_lab/templates/footer.html:43
 msgid "useful links"
 msgstr "liens important"
-
-#: african_cities_lab/templates/footer.html:46
-msgid "about us"
-msgstr "À propos"
 
 #: african_cities_lab/templates/footer.html:52
 msgid "contact us"
