@@ -5,7 +5,7 @@
     {{ block.super }}
     <style>
      header.masthead{
-         background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url({% static 'images/assets/header_img.jpeg' %});
+         background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url({% static 'images/assets/header_bg.jpeg' %});
      }
     </style>
 {% endblock css %}
@@ -37,11 +37,6 @@
                                                     type="submit">
                                                 {% translate "Search" %}
                                             </button>
-                                        </div>
-                                        <div class="col-12 mt-4">
-                                            <h6>
-                                                <a href="{% url 'about' %}">{% translate "About African Cities Lab" %}</a>
-                                            </h6>
                                         </div>
                                     </div>
                                 </form>
@@ -102,10 +97,20 @@
                 </div>
             </div>
             <div class="row">
-                {% static "images/assets/epfl.png" as epfl_logo_path %}
+                {% static "images/assets/partners/epfl.png" as epfl_logo_path %}
                 {% include "home/partner.html" with url="https://epfl.ch" img_path=epfl_logo_path full_name="École Polytechnique Fédérale de Lausanne" %}
-                {% static "images/assets/um6p.png" as um6p_logo_path %}
+                {% static "images/assets/partners/um6p.png" as um6p_logo_path %}
                 {% include "home/partner.html" with url="https://um6p.ma" img_path=um6p_logo_path full_name="Université Mohammed VI Polytechnique" %}
+                {% static "images/assets/partners/knust.png" as knust_logo_path %}
+                {% include "home/partner.html" with url="https://www.knust.edu.gh" img_path=knust_logo_path full_name="Université des sciences et technologies Kwame Nkrumah" %}
+                {% static "images/assets/partners/semecity.png" as semecity_logo_path %}
+                {% include "home/partner.html" with url="https://semecity.bj/en" img_path=semecity_logo_path full_name="Sèmè City" %}
+                {% static "images/assets/partners/ucar.png" as ucar_logo_path %}
+                {% include "home/partner.html" with url="http://www.ucar.rnu.tn" img_path=ucar_logo_path full_name="Université de Carthage" %}
+                {% static "images/assets/partners/uct.png" as uct_logo_path %}
+                {% include "home/partner.html" with url="https://www.uct.ac.za" img_path=uct_logo_path full_name="Université de Cape Town" %}
+                {% static "images/assets/partners/ur.png" as ur_logo_path %}
+                {% include "home/partner.html" with url="https://ur.ac.rw" img_path=ur_logo_path full_name="Université du Rwanda" %}
             </div>
         </div>
     </div>
