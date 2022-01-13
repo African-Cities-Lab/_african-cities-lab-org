@@ -23,30 +23,27 @@
             <ul class="navbar-nav ms-auto text-uppercase">
                 <hr class="nav-bar-hr" />
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'home' %}">{% trans "Home" %}</a>
+                    <a class="nav-link text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#Courses">{% trans "Courses" %}</a>
+                    <a class="nav-link text-white" href="{% url 'courses' %}">{% translate "Courses" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#Partners">{% trans "Universities" %}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#News">{% trans "News" %}</a>
+                    <a class="nav-link text-white" href="{% url 'news' %}">{% translate "News" %}</a>
                 </li>
             </ul>
-            <div class="text-uppercase">
-                <hr class="nav-bar-hr" />
-                <a class="text-white mx-3" role="button" href="{% url 'login' %}">
-                    <i class="fas fa-user-lock"></i>
-                </a>
-            </div>
-            <div class="text-uppercase">
-                <hr class="nav-bar-hr" />
-                <a class="btn btn-warning ms-auto rounded-pill"
-                   role="button"
-                   href="{% url 'register' %}">{% trans "Register" %}</a>
-            </div>
+            {% comment %}
+                <div class="text-uppercase">
+                    <hr class="nav-bar-hr" />
+                    <a class="text-white mx-3" role="button" href="{% url 'login' %}">
+                        <i class="fas fa-user-lock"></i>
+                    </a>
+                </div>
+                <div class="text-uppercase">
+                    <hr class="nav-bar-hr" />
+                    <a class="btn btn-warning ms-auto rounded-pill" role="button" href="{% url 'register' %}">{% translate "Register" %}</a>
+                </div>
+            {% endcomment %}
             <div class="text-uppercase">
                 <hr class="nav-bar-hr" />
                 <form action="{% url 'set_language' %}" method="post" class="ms-2">

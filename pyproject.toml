@@ -1,2 +1,2 @@
 [tool.djlint]
-ignore="H031"
+ignore="H006,H031"

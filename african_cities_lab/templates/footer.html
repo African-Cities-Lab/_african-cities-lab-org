@@ -14,8 +14,9 @@
                                      alt="ACL"/>
                             </a>
                         </div>
+                        {% comment %}
                         <p>
-                            {% trans "footer description" %}
+                            {% translate "footer description" %}
                         </p>
                         <div class="footer-social">
                             <ul>
@@ -36,30 +37,35 @@
                                 </li>
                             </ul>
                         </div>
+                        {% endcomment %}
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-12 pt-4 pt-lg-0">
                     <div class="single-widget">
-                        <h3>{% trans "useful links" %}</h3>
+                        <h3>{% translate "useful links" %}</h3>
                         <ul>
                             <li>
-                                <a href="{% url 'about' %}" class="text-white footer-link">{% trans "About" %}</a>
+                                <a href="{% url 'about' %}" class="text-white footer-link">{% translate "About" %}</a>
                             </li>
+                            {% comment %}
                             <li>
                                 <a href="#faq" class="text-white footer-link">FAQ</a>
                             </li>
+                            {% endcomment %}
                             <li>
-                                <a href="{% url 'contact' %}" class="text-white footer-link">{% trans "contact us" %}</a>
+                                <a href="{% url 'contact' %}" class="text-white footer-link">{% translate "contact us" %}</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-12 pt-4 pt-lg-0">
                     <div class="single-widget">
-                        <h3>{% trans "contact" %}</h3>
+                        <h3>{% translate "contact" %}</h3>
+                        {% comment %}
                         <p>
                             <i class="fa fa-phone-alt"></i> +000-000000000
                         </p>
+                        {% endcomment %}
                         <p>
                             <i class="fa fa-envelope"></i> info@africancitieslab.org
                         </p>

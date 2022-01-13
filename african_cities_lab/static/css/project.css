@@ -28,6 +28,7 @@ h6 {
 }
 
 a {
+  color: #527fb9;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
@@ -52,18 +53,13 @@ a,
 button,
 input {
   outline: medium none;
-  color: #606060;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
+button,
+input {
+  color: #606060;
 }
 
 label {
@@ -161,7 +157,7 @@ hr.thick {
 /*----------------------------------------*/
 /*  Navbar and Header CSS
 /*----------------------------------------*/
-header.masthead {
+.masthead {
   text-align: center;
   color: #fff;
   background-repeat: no-repeat;
@@ -170,10 +166,18 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead .intro-text {
+.masthead .intro-text {
   font-family: "Open Sans", sans-serif;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.masthead a {
+  color: #a7cdfd;
+}
+
+.masthead a:hover {
+  color: #ec1c23;
 }
 
 .navbar {
@@ -324,12 +328,12 @@ header.masthead .intro-text {
   transition: 0.3s;
 }
 
-.latest_courses:hover .single-course {
+.latest-courses:hover .single-course {
   opacity: 0.75 !important;
   transform: scaleY(0.9) !important;
 }
 
-.latest_courses .single-course:hover {
+.latest-courses .single-course:hover {
   opacity: 1 !important;
   /* transform: scaleY(1.1) !important; */
   transform: scaleX(1.1) !important;
@@ -498,7 +502,7 @@ header.masthead .intro-text {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   position: relative;
 }
 
