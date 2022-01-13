@@ -6,7 +6,11 @@
         <h1>{% translate "Contact" %}</h1>
         <h2>Rémi Jaligot</h2>
         <!-- the Linter complain about phone number href so i used django template to output it -->
-        <p class="mb-0"><a href="{{ 'tel:+41 (0) 763 407 694' }}">+41 (0) 763 407 694</a></p>
-        <p><a href="mailto:info@africancitieslab.com">info@africancitieslab.com</a></p>
+        <p class="mb-0">
+            <a href="{{ 'tel:+41 (0) 763 407 694' }}">+41 (0) 763 407 694</a>
+        </p>
+        <p>
+            <a href="mailto:info@africancitieslab.com">info@africancitieslab.com</a>
+        </p>
     </div>
 {% endblock body %}
