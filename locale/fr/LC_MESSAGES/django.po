@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-13 03:05+0100\n"
+"POT-Creation-Date: 2022-01-13 16:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/about.html:6
 #: african_cities_lab/templates/footer.html:49
+#: african_cities_lab/templates/header.html:29
 msgid "About"
 msgstr "À propos"
 
@@ -88,8 +89,8 @@ msgid ""
 "the <a href=\"https://www.knust.edu.gh\">Kwame Nkrumah University of Science "
 "and Technology (Ghana)</a>,"
 msgstr ""
-"<a href=\"https://www.knust.edu.gh\">Kwame Nkrumah University of Science and "
-"Technology (Ghana)</a>,"
+"<a href=\"https://www.knust.edu.gh\">Université des sciences et technologies "
+"Kwame Nkrumah (Ghana)</a>,"
 
 #: african_cities_lab/home/templates/home/about.html:27
 msgid ""
@@ -114,12 +115,12 @@ msgid ""
 "the <a href=\"https://www.uct.ac.za\">University of Cape Town (South "
 "Africa)</a>, and"
 msgstr ""
-"l'<a href=\"https://www.uct.ac.za\">Université de Cape Town (Afrique du Sud)"
-"</a>, et"
+"l'<a href=\"https://www.uct.ac.za\">Université de Cape Town (Afrique du "
+"Sud)</a>, et"
 
 #: african_cities_lab/home/templates/home/about.html:39
 msgid "the <a href=\"https://ur.ac.rw\">University of Rwanda</a>"
-msgstr "l'<a href=\"https://ur.ac.rw\">University du Rwanda</a>"
+msgstr "l'<a href=\"https://ur.ac.rw\">Université du Rwanda</a>"
 
 #: african_cities_lab/home/templates/home/about.html:43
 msgid "to contribute to sustainable urban development on the continent."
@@ -247,26 +248,22 @@ msgstr "EX: Spécialisation architecture"
 msgid "Search"
 msgstr "Recherche"
 
-#: african_cities_lab/home/templates/home/home.html:42
-msgid "About African Cities Lab"
-msgstr "À propos d'African Cities Lab"
-
-#: african_cities_lab/home/templates/home/home.html:64
+#: african_cities_lab/home/templates/home/home.html:61
 msgid "African cities lab Courses"
 msgstr "Cours d'African cities lab"
 
-#: african_cities_lab/home/templates/home/home.html:75
-#: african_cities_lab/home/templates/home/home.html:135
+#: african_cities_lab/home/templates/home/home.html:72
+#: african_cities_lab/home/templates/home/home.html:142
 msgid "Coming soon..."
 msgstr "Prochainement..."
 
-#: african_cities_lab/home/templates/home/home.html:100
+#: african_cities_lab/home/templates/home/home.html:97
 msgid "Partners"
 msgstr "Partenaires"
 
-#: african_cities_lab/home/templates/home/home.html:124
+#: african_cities_lab/home/templates/home/home.html:131
 #: african_cities_lab/home/templates/home/news.html:6
-#: african_cities_lab/templates/header.html:32
+#: african_cities_lab/templates/header.html:38
 msgid "News"
 msgstr "Actualités"
 
@@ -306,6 +303,13 @@ msgstr "contact"
 msgid "Home"
 msgstr "Accueil"
 
-#: african_cities_lab/templates/header.html:29
+#: african_cities_lab/templates/header.html:32
+msgid "Programs"
+msgstr "Formations"
+
+#: african_cities_lab/templates/header.html:35
 msgid "Courses"
 msgstr "Cours"
+
+#~ msgid "About African Cities Lab"
+#~ msgstr "À propos d'African Cities Lab"
