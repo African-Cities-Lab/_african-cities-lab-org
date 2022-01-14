@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <nav id="main-nav"
-     class="navbar fixed-top-navbar navbar-dark navbar-expand-md text-center py-3">
+     class="navbar fixed-top-navbar navbar-expand-md text-center py-3">
     <div class="container">
         <a class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'images/assets/LOGO-ACL-BLANC.png' %}"
@@ -10,7 +10,7 @@
                  width="130px"
                  height="32px"/>
         </a>
-        <button class="navbar-toggler navbar-toggler-right bg-warning text-black"
+        <button class="navbar-toggler navbar-toggler-right bg-warning"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbar-responsive"
                 type="button"
@@ -59,7 +59,7 @@
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}" />
                     <select name="language"
-                            class="form-control text-white bg-black language-select"
+                            class="form-control text-white bg-transparent language-select"
                             onchange="this.form.submit()">
                         {% get_current_language as LANGUAGE_CODE %}
                         {% get_available_languages as LANGUAGES %}

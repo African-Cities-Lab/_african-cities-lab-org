@@ -185,7 +185,15 @@ hr.thick {
 }
 
 #main-nav {
-  background-color: #000;
+  background-color: #be3712 !important;
+}
+
+.navbar-toggler {
+  color: #be3712;
+}
+
+.nav-bar-hr {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -483,6 +491,7 @@ hr.thick {
 /*  Footer CSS
 /*----------------------------------------*/
 .main-footer {
+  background-color: #be3712 !important;
   padding-bottom: 104px;
   padding-top: 117px;
 }
@@ -578,9 +587,9 @@ hr.thick {
 
 .footer-social ul li:hover a,
 .footer-area.two .footer-social ul li:hover a {
-  border: 1px solid #ec1c23;
-  background: #ec1c23;
-  color: #fff;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: #be3712 !important;
 }
 
 .single-widget ul li:last-child {
@@ -662,5 +671,5 @@ hr.thick {
 }
 
 .footer-link:hover {
-  color: #ec1c23 !important;
+  text-decoration: underline;
 }
