@@ -1,7 +1,6 @@
 {% extends "base.html" %}
-{% load static %}
-{% load i18n %}
-{% block body %}
+{% load i18n static %}
+{% block content %}
     <div class="container content-container py-5 mt-5">
         <h1>{% translate "About" %}</h1>
         <h2>{% translate "African Cities Lab presentation" %}</h2>
@@ -46,4 +45,4 @@
             {% blocktranslate %}The initiative, funded by the <a href="https://seco.admin.ch/seco/en/home.html">Swiss State Secretariat for Economic Affairs (SECO)</a>, aims to create a digital education platform and its content on urban planning and urban development in Africa. The English-French bilingual ACL platform based on open edX and hosted by the partners in Africa, will offer quality MOOCs and online training for professionals. It will also act as a forum for the exchange of digital educational resources and the management and governance of African cities.{% endblocktranslate %}
         </p>
     </div>
-{% endblock body %}
+{% endblock content %}

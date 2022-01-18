@@ -1,6 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
-{% load i18n %}
+{% load i18n static %}
 {% block css %}
     {{ block.super }}
     <style>
@@ -9,7 +8,7 @@
      }
     </style>
 {% endblock css %}
-{% block body %}
+{% block content %}
     <header class="masthead">
         <div class="container">
             <div class="intro-text">
@@ -143,4 +142,4 @@
         </div>
     </section>
     <!-- End News Section -->
-{% endblock body %}
+{% endblock content %}
