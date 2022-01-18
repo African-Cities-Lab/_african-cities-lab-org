@@ -211,6 +211,7 @@ hr.thick {
 }
 
 .language-select {
+  color: #666;
   cursor: pointer;
   text-align: center;
 }
