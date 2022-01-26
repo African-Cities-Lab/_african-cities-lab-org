@@ -14,3 +14,7 @@ class FlatPage(Page):
     content_panels = Page.content_panels + [
         FieldPanel("body"),
     ]
+
+
+class HomePage(Page):
+    pass
