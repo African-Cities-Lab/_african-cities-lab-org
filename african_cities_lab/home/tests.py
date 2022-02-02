@@ -29,3 +29,4 @@ class HomePageTests(WagtailPageTests):
         self.assertCanCreateAt(HomePage, TrainingProgramsPage)
         self.assertCanCreateAt(HomePage, GetInvolvedPage)
         self.assertCanCreateAt(HomePage, ContactPage)
+        self.assertCanNotCreateAt(HomePage, FlatPage)
