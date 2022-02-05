@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n wagtailcore_tags wagtailimages_tags %}
+{% block content %}
+    <div class="container content-container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-12">
+                <h1 class="my-3">{{ page.title }}</h1>
+                <figure class="figure mb-0">
+                    {% image page.main_image original class="img-fluid" %}
+                </figure>
+                <p class="lead p-4 bg-secondary text-white">
+                    {{ page.summary }}
+                </p>
+            </div>
+            <div class="col-lg-10 col-12">
+                <p class="text-muted fst-italic">
+                    {{ page.date }}
+                </p>
+                {% for block in page.body %}
+                    {% include_block block %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
