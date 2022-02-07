@@ -1,4 +1,4 @@
-{% load i18n static wagtailcore_tags %}
+{% load home_tags i18n static %}
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
@@ -84,7 +84,7 @@
                             <a class="nav-link text-white" href="{% url 'get-involved' %}">{% translate "Get involved" %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="{% slugurl 'news' %}">{% translate "News" %}</a>
+                            <a class="nav-link text-white" href="{% localized_slugurl 'news' %}">{% translate "News" %}</a>
                         </li>
                     </ul>
                     {% comment %}
