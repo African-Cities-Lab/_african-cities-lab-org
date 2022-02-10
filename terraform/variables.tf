@@ -41,7 +41,13 @@ variable "droplet_user" {
 variable "domain" {
   description = "Domain that should point to the droplet."
   type        = string
-  default     = ""
+  default     = "africancitieslab.org"
+}
+
+variable "domain_link_droplet" {
+  description = "If true, will automatically create an A record that points to the created droplet."
+  type        = bool
+  default     = true
 }
 
 variable "records" {
@@ -59,4 +65,10 @@ variable "docker_compose_version" {
   description = "Version of docker-compose"
   type        = string
   default     = "v2.2.2"
+}
+
+variable "cors_allowed_origins" {
+  description = "Domain to add a CORS allowed origin rule to the spaces instance."
+  type        = list(string)
+  default     = ["https://africancitieslab.org"]
 }
