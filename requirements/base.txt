@@ -15,5 +15,5 @@ django-redis==5.0.0  # https://github.com/jazzband/django-redis
 
 # Wagtail
 # ------------------------------------------------------------------------------
-wagtail>=2.15.1 # https://docs.wagtail.io/en/stable/releases/2.15.1.html
-wagtail-localize>=1.0 # https://www.wagtail-localize.org/
+wagtail==2.15.1  # https://docs.wagtail.io/en/stable/releases/2.15.1.html
+wagtail-localize==1.0  # https://www.wagtail-localize.org/

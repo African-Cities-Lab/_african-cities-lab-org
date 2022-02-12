@@ -1,5 +1,3 @@
-# from django.test import TestCase
-
 from wagtail.tests.utils import WagtailPageTests
 
 from .models import (
@@ -8,13 +6,11 @@ from .models import (
     FlatPage,
     GetInvolvedPage,
     HomePage,
+    NewsIndexPage,
+    NewsPage,
     OnlineCoursesPage,
     TrainingProgramsPage,
 )
-
-
-def test_imports():
-    from .models import FlatPage  # noqa: F401
 
 
 class FlatPageTests(WagtailPageTests):
@@ -30,3 +26,5 @@ class HomePageTests(WagtailPageTests):
         self.assertCanCreateAt(HomePage, GetInvolvedPage)
         self.assertCanCreateAt(HomePage, ContactPage)
         self.assertCanNotCreateAt(HomePage, FlatPage)
+        self.assertCanCreateAt(HomePage, NewsIndexPage)
+        self.assertCanCreateAt(NewsIndexPage, NewsPage)

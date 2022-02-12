@@ -19,7 +19,7 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/get_involved.html"),
         name="get-involved",
     ),
-    path("news/", TemplateView.as_view(template_name="home/news.html"), name="news"),
+    # path("news/", TemplateView.as_view(template_name="home/news.html"), name="news"),
     path(
         "contact/",
         TemplateView.as_view(template_name="home/contact.html"),
