@@ -1,0 +1,32 @@
+/************************************
+  15. About Page
+****************************************/
+.about-header-section {
+  border-radius: 50% 50% / 20% 20%;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  background-color: #be3712 !important;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.about-header-section h1 {
+  font-weight: 500;
+}
+
+.about-header-area {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.header-page-name {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}

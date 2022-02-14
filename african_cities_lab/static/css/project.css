@@ -154,6 +154,10 @@ hr.thick {
   height: 5px;
 }
 
+.section-divider {
+  background-color: #be3712 !important;
+}
+
 /*----------------------------------------*/
 /*  Navbar and Header CSS
 /*----------------------------------------*/
@@ -180,6 +184,10 @@ hr.thick {
   color: #ec1c23;
 }
 
+.search-btn {
+  background-color: #be3712 !important;
+}
+
 .navbar {
   font-family: "Open Sans", sans-serif;
 }
@@ -196,7 +204,7 @@ hr.thick {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   .nav-bar-hr {
     display: none;
   }

@@ -1,48 +1,207 @@
 {% extends "base.html" %}
+{% load static %}
 {% load i18n %}
+{% block css %}
+    {{ block.super }}
+    <link href="{% static 'css/about.css' %}" rel="stylesheet" />
+{% endblock css %}
 {% block content %}
-    <div class="container content-container py-5 mt-5">
-        <h1>{% translate "About" %}</h1>
-        <h2>{% translate "African Cities Lab presentation" %}</h2>
-        <p>
-            {% blocktranslate %}Contributing to sustainable urban development in Africa through an education tool by Africa, for Africa.{% endblocktranslate %}
-        </p>
-        <h3>{% translate "Vision" %}</h3>
-        <p>
-            {% blocktranslate %}Create a higher education ecosystem bringing together universities and professionals in the field, with a view to sustainable and resilient urban development.{% endblocktranslate %}
-        </p>
-        <h3>{% translate "Description" %}</h3>
-        <p>
-            {% blocktranslate %}The overall objective of the project is to create an African digital education Platform on urban development, offering quality MOOCs and online, continuing education training for professionals. It will also act as a forum for the exchange of digital educational resources and the management and governance of African cities to foster sustainable urban development.{% endblocktranslate %}
-        </p>
-        <p>
-            {% blocktranslate %}Anchored on African soil, initially under the supervision of EPFL, the Platform will gather leading universities in the Anglophone and Francophone regions in order to create a network of institutions in digital education and have impact on the entire continent. African Cities Lab (ACL) is a joint initiative led by EPFL,{% endblocktranslate %}
-        </p>
-        <ul>
-            <li>
-                {% blocktranslate %}the <a href="https://www.knust.edu.gh">Kwame Nkrumah University of Science and Technology (Ghana)</a>,{% endblocktranslate %}
-            </li>
-            <li>
-                {% blocktranslate %}the <a href="https://www.um6p.ma/en">Mohammed VI Polytechnic University (Maroc)</a>,{% endblocktranslate %}
-            </li>
-            <li>
-                {% blocktranslate %}the <a href="https://semecity.bj/en">Sèmè City campus (Benin)</a>,{% endblocktranslate %}
-            </li>
-            <li>
-                {% blocktranslate %}the <a href="http://www.ucar.rnu.tn">University of Carthage (Tunisia)</a>,{% endblocktranslate %}
-            </li>
-            <li>
-                {% blocktranslate %}the <a href="https://www.uct.ac.za">University of Cape Town (South Africa)</a>, and{% endblocktranslate %}
-            </li>
-            <li>
-                {% blocktranslate %}the <a href="https://ur.ac.rw">University of Rwanda</a>{% endblocktranslate %}
-            </li>
-        </ul>
-        <p>
-            {% blocktranslate %}to contribute to sustainable urban development on the continent.{% endblocktranslate %}
-        </p>
-        <p>
-            {% blocktranslate %}The initiative, funded by the <a href="https://seco.admin.ch/seco/en/home.html">Swiss State Secretariat for Economic Affairs (SECO)</a>, aims to create a digital education platform and its content on urban planning and urban development in Africa. The English-French bilingual ACL platform based on open edX and hosted by the partners in Africa, will offer quality MOOCs and online training for professionals. It will also act as a forum for the exchange of digital educational resources and the management and governance of African cities.{% endblocktranslate %}
-        </p>
+    <section class="about-header-section">
+        <div class="about-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-white text-center">
+                            <p class="mt-5 h1 font-weight-bold text-white header-page-name">
+                                {% translate "About" %}
+                            </p>
+                            <div class="mt-3">
+                                <p class="text-white">
+                                    <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
+                                    -  {% translate "About" %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pt-5 text-center bg-white" id="courses">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "African Cities Lab presentation" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <p>
+                        {% blocktranslate %}Contributing to sustainable urban development in Africa through an education tool by Africa, for Africa.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 text-center bg-white" id="courses">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Vision" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <p>
+                        {% blocktranslate %}Create a higher education ecosystem bringing together universities and professionals in the field, with a view to sustainable and resilient urban development.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 bg-white" id="courses">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3 text-center">
+                        <h2>{% translate "Description" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <p>
+                        {% blocktranslate %}The overall objective of the project is to create an African digital education Platform on urban development, offering quality MOOCs and online, continuing education training for professionals. It will also act as a forum for the exchange of digital educational resources and the management and governance of African cities to foster sustainable urban development.{% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}Anchored on African soil, initially under the supervision of EPFL, the Platform will gather leading universities in the Anglophone and Francophone regions in order to create a network of institutions in digital education and have impact on the entire continent. African Cities Lab (ACL) is a joint initiative led by EPFL,{% endblocktranslate %}
+                    </p>
+                    <ul>
+                        <li>
+                            {% blocktranslate %}the <a href="https://www.knust.edu.gh">Kwame Nkrumah University of Science and Technology (Ghana)</a>,{% endblocktranslate %}
+                        </li>
+                        <li>
+                            {% blocktranslate %}the <a href="https://www.um6p.ma/en">Mohammed VI Polytechnic University (Maroc)</a>,{% endblocktranslate %}
+                        </li>
+                        <li>
+                            {% blocktranslate %}the <a href="https://semecity.bj/en">Sèmè City campus (Benin)</a>,{% endblocktranslate %}
+                        </li>
+                        <li>
+                            {% blocktranslate %}the <a href="http://www.ucar.rnu.tn">University of Carthage (Tunisia)</a>,{% endblocktranslate %}
+                        </li>
+                        <li>
+                            {% blocktranslate %}the <a href="https://www.uct.ac.za">University of Cape Town (South Africa)</a>, and{% endblocktranslate %}
+                        </li>
+                        <li>
+                            {% blocktranslate %}the <a href="https://ur.ac.rw">University of Rwanda</a>{% endblocktranslate %}
+                        </li>
+                    </ul>
+                    <p>
+                        {% blocktranslate %}to contribute to sustainable urban development on the continent.{% endblocktranslate %}
+                    </p>
+                    <p>
+                        {% blocktranslate %}The initiative, funded by the <a href="https://seco.admin.ch/seco/en/home.html">Swiss State Secretariat for Economic Affairs (SECO)</a>, aims to create a digital education platform and its content on urban planning and urban development in Africa. The English-French bilingual ACL platform based on open edX and hosted by the partners in Africa, will offer quality MOOCs and online training for professionals. It will also act as a forum for the exchange of digital educational resources and the management and governance of African cities.{% endblocktranslate %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Services -->
+    <!-- <section class="services-section pt-5">
+        <div class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-xs-5" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-service-3 text-center py-5 px-4 border">
+                            <div class="service-icon">
+                                <img src="assets/images/service_icon_07.png" alt="service one" class="img-fluid">
+                            </div>
+                            <div class="service-text">
+                                <h4>Scholarship Facility</h4>
+                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-xs-5" data-aos="fade-up" data-aos-delay="400">
+                        <div class="single-service-3 active text-center text-white py-5 px-4">
+                            <div class="service-icon">
+                                <img src="assets/images/service_icon_01.png" alt="service one" class="img-fluid">
+                            </div>
+                            <div class="service-text">
+                                <h4>Skilled Lecturers</h4>
+                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-xs-5" data-aos="fade-up" data-aos-delay="500">
+                        <div class="single-service-3 text-center py-5 px-4 border">
+                            <div class="service-icon">
+                                <img src="assets/images/service_icon_08.png" alt="service one" class="img-fluid">
+                            </div>
+                            <div class="service-text">
+                                <h4>Book Library & Store</h4>
+                                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+                                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <!-- End Services -->
+    <div class="py-5 text-center bg-white" id="courses">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Partners" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% static "images/assets/partners/epfl.png" as epfl_logo_path %}
+                {% include "home/partner.html" with url="https://epfl.ch" img_path=epfl_logo_path full_name="École Polytechnique Fédérale de Lausanne" %}
+                {% static "images/assets/partners/um6p.png" as um6p_logo_path %}
+                {% include "home/partner.html" with url="https://um6p.ma" img_path=um6p_logo_path full_name="Université Mohammed VI Polytechnique" %}
+                {% static "images/assets/partners/knust.png" as knust_logo_path %}
+                {% include "home/partner.html" with url="https://www.knust.edu.gh" img_path=knust_logo_path full_name="Université des sciences et technologies Kwame Nkrumah" %}
+                {% static "images/assets/partners/semecity.png" as semecity_logo_path %}
+                {% include "home/partner.html" with url="https://semecity.bj/en" img_path=semecity_logo_path full_name="Sèmè City" %}
+                {% static "images/assets/partners/ucar.png" as ucar_logo_path %}
+                {% include "home/partner.html" with url="http://www.ucar.rnu.tn" img_path=ucar_logo_path full_name="Université de Carthage" %}
+                {% static "images/assets/partners/uct.png" as uct_logo_path %}
+                {% include "home/partner.html" with url="https://www.uct.ac.za" img_path=uct_logo_path full_name="Université de Cape Town" %}
+                {% static "images/assets/partners/ur.png" as ur_logo_path %}
+                {% include "home/partner.html" with url="https://ur.ac.rw" img_path=ur_logo_path full_name="Université du Rwanda" %}
+            </div>
+        </div>
     </div>
 {% endblock content %}
