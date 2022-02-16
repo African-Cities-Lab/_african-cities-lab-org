@@ -83,7 +83,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 my-3">{{ self.description|richtext }}</div>
+                <div class="col-12 my-3">
+                    {% for block in page.description %}
+                        {% include_block block %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

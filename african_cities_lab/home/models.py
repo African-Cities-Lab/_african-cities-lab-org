@@ -13,7 +13,7 @@ class HomePage(Page):
     template = "home/home.html"
 
     subpage_types = [
-        "home.AboutPage",
+        "home.AboutUsPage",
         "home.OnlineCoursesPage",
         "home.TrainingProgramsPage",
         "home.GetInvolvedPage",
@@ -40,10 +40,25 @@ class FlatPage(Page):
     ]
 
 
-class AboutPage(FlatPage):
-    """FlatPage page model."""
+class AboutUsPage(Page):
+    """About Us page model."""
 
     template = "home/about.html"
+
+    presentation = RichTextField()
+    vision = RichTextField()
+    description = StreamField(
+        [
+            ("paragraph", blocks.RichTextBlock()),
+            ("image", ImageChooserBlock()),
+        ]
+    )
+
+    content_panels = Page.content_panels + [
+        FieldPanel("presentation"),
+        FieldPanel("vision"),
+        StreamFieldPanel("description", classname="full"),
+    ]
 
     parent_page_type = [
         "home.HomePage",

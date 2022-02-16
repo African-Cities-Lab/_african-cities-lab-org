@@ -1,7 +1,7 @@
 from wagtail.tests.utils import WagtailPageTests
 
 from .models import (
-    AboutPage,
+    AboutUsPage,
     ContactPage,
     FlatPage,
     GetInvolvedPage,
@@ -20,7 +20,7 @@ class FlatPageTests(WagtailPageTests):
 
 class HomePageTests(WagtailPageTests):
     def test_can_create_pages(self):
-        self.assertCanCreateAt(HomePage, AboutPage)
+        self.assertCanCreateAt(HomePage, AboutUsPage)
         self.assertCanCreateAt(HomePage, OnlineCoursesPage)
         self.assertCanCreateAt(HomePage, TrainingProgramsPage)
         self.assertCanCreateAt(HomePage, GetInvolvedPage)
