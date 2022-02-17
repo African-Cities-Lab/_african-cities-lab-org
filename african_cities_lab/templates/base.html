@@ -103,7 +103,7 @@
                         <hr class="nav-bar-hr" />
                         <form action="{% url 'set_language' %}" method="post" class="ms-2">
                             {% csrf_token %}
-                            <input name="next" type="hidden" value="{{ redirect_to }}" />
+                            <input name="next" type="hidden" value="{% redirect_to self.slug %}" />
                             <select name="language"
                                     class="form-control text-white bg-transparent language-select"
                                     onchange="this.form.submit()">

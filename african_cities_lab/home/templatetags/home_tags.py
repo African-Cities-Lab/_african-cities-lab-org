@@ -6,6 +6,29 @@ register = template.Library()
 
 
 @register.simple_tag(takes_context=True)
+def redirect_to(context, slug):
+    if slug is None or slug == "":
+        return ""
+    english = Locale.get_default()
+    current_lang = Locale.get_active()
+    french = Locale.objects.get_for_language("fr")
+    if current_lang == english:
+        lang = english
+        target_lang = french
+    else:
+        lang = french
+        target_lang = english
+    current_page = Page.objects.filter(locale=lang, slug=slug).first()
+    page = Page.objects.filter(
+        locale=target_lang, translation_key=current_page.translation_key
+    ).first()
+    url = ""
+    if page:
+        url = page.url
+    return url
+
+
+@register.simple_tag(takes_context=True)
 def localized_slugurl(context, slug):
     """
     Localized slugurl.
