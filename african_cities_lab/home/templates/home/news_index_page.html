@@ -39,12 +39,13 @@
         <div class="row mt-5">
             {% for new in page.localized.get_children %}
                 <div class="col-md-6">
-                    <div class="card shadow rounded-0">
+                    <div class="card shadow-sm rounded-0">
                         {% image new.specific.main_image original class="card-img-top" %}
                         <div class="card-body">
                             <h3 class="card-title">
                                 <a href="{% pageurl new %}">{{ new.title }}</a>
                             </h3>
+                            <hr />
                             <p class="card-subtitle mb-0">
                                 <small class="text-muted fst-italic">{{ new.specific.date }}</small>
                             </p>
