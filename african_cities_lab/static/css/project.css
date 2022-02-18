@@ -158,6 +158,9 @@ hr.thick {
   background-color: #be3712 !important;
 }
 
+.view-all-button {
+  text-align: right;
+}
 /*----------------------------------------*/
 /*  Navbar and Header CSS
 /*----------------------------------------*/

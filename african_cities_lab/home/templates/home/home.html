@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n static %}
+{% load home_tags i18n static wagtailcore_tags wagtailimages_tags %}
 {% block css %}
     {{ block.super }}
     <style>
@@ -133,11 +133,52 @@
                 </div>
             </div>
             <div class="row">
+                {% comment %}
+                <div class="col-md-6 mb-2">
+                    <div class="single-blog">
+                        <div class="row p-3">
+                            <div class="col-lg-5 col-md-12">
+                                <div class="blog-img">
+                                    <a href="#post_detail" style="position: relative;">
+                                        <img src="{% static 'images/assets/bg_um6p.png' %}" class="blog-list-image" alt="blog" style="height: 200px; object-fit: cover; position: relative;">
+                                        <div class="blog-date bg-warning text-center py-3" style="position: absolute; top: 0; right: 0; width: 40% !important; height: 40% !important;">
+                                            <h5 class="mb-0 text-white">15</h5>
+                                            <p class="mb-0 text-white">
+                                                Jul
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div class="blog-hover">
+                                        <a href="#post_detail">
+                                            <i class="fa fa-link link-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 mt-3">
+                                <a href="#post_detail">
+                                    <h4 class="text-black blog-title">Lorem Ipsum Dolor</h4>
+                                </a>
+                                <hr />
+                                <p>
+                                    lorem ipsum dolor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endcomment %}
                 <div class="col-12 my-3">
                     <p>
                         {% translate "Coming soon..." %}
                     </p>
                 </div>
+            </div>
+            <div class="col-12 mb-3 mt-3 view-all-button">
+                <a class="btn btn-primary rounded-pill opacity-75"
+                   href="{% localized_slugurl 'news' %}">
+                    {% translate "View all Posts" %}
+                </a>
             </div>
         </div>
     </section>
