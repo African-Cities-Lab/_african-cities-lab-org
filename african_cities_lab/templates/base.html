@@ -116,7 +116,7 @@
                                 {% for language in languages %}
                                     {% if language.code != LANGUAGE_CODE %}
                                         <li>
-                                            <a class="btn py-2"
+                                            <a class="btn col-12 py-2"
                                                onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
                                                 {{ language.code|upper }}
                                             </a>
