@@ -101,21 +101,40 @@
                     {% endcomment %}
                     <div class="text-uppercase">
                         <hr class="nav-bar-hr" />
-                        <form action="{% url 'set_language' %}" method="post" class="ms-2">
-                            {% csrf_token %}
-                            <input name="next" type="hidden" value="{% redirect_to self.slug %}" />
-                            <select name="language"
-                                    class="form-control text-white bg-transparent language-select"
-                                    onchange="this.form.submit()">
+                        <div class="dropdown ms-2">
+                            <a class="btn btn-outline-light dropdown-toggle rounded-0 w-100"
+                               role="button"
+                               id="dropdownMenuLink"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="fas fa-globe me-2"></i>{{ LANGUAGE_CODE }}
+                            </a>
+                            <ul class="dropdown-menu languages-list rounded-0 w-100 p-0"
+                                aria-labelledby="dropdownMenuLink">
                                 {% get_available_languages as LANGUAGES %}
                                 {% get_language_info_list for LANGUAGES as languages %}
                                 {% for language in languages %}
-                                    <option value="{{ language.code }}"
-                                            {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                                        {{ language.code|upper }}
-                                    </option>
+                                    {% if language.code != LANGUAGE_CODE %}
+                                        <li>
+                                            <a class="btn py-2"
+                                               onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
+                                                {{ language.code|upper }}
+                                            </a>
+                                        </li>
+                                    {% endif %}
                                 {% endfor %}
-                            </select>
+                            </ul>
+                        </div>
+                        <form action="{% url 'set_language' %}"
+                              method="post"
+                              class="ms-2 d-none"
+                              id="language-form">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="{% redirect_to self.slug %}" />
+                            <input name="language"
+                                   id="language-selector"
+                                   type="hidden"
+                                   value="{{ LANGUAGE_CODE }}"/>
                         </form>
                     </div>
                 </div>

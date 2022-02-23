@@ -250,6 +250,16 @@ hr.thick {
   }
 }
 
+.languages-list {
+  min-width: unset !important;
+  text-align: center;
+}
+
+.languages-list:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
 .language-select {
   color: #666;
   cursor: pointer;
