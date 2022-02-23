@@ -1,15 +1,56 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load static i18n wagtailcore_tags wagtailimages_tags %}
+{% block css %}
+    {{ block.super }}
+    <style>
+        .page-header-section{
+            background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url({% static 'images/assets/pages-header.jpg' %});
+        }
+    </style>
+{% endblock css %}
 {% block content %}
-    <div class="container content-container py-5 mt-5">
-        <h1>{% translate "Contact" %}</h1>
-        <h2>Rémi Jaligot</h2>
-        <!-- the Linter complain about phone number href so i used django template to output it -->
-        <p class="mb-0">
-            <a href="{{ 'tel:+41 (0) 763 407 694' }}">+41 (0) 763 407 694</a>
-        </p>
-        <p>
-            <a href="mailto:info@africancitieslab.com">info@africancitieslab.com</a>
-        </p>
+    <section class="page-header-section">
+        <div class="page-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-white text-center">
+                            <p class="mt-5 h1 font-weight-bold text-white header-page-name">
+                                {% if self.title %}
+                                    {{ self.title }}
+                                {% else %}
+                                    {% translate "Contact" %}
+                                {% endif %}
+                            </p>
+                            <div class="mt-3">
+                                <p class="text-white">
+                                    <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
+                                    -  {{ self.title }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container content-container py-5">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Rémi Jaligot</h2>
+                <!-- the Linter complain about phone number href so i used django template to output it -->
+                <p class="mb-0">
+                    <a href="{{ 'tel:+41 (0) 763 407 694' }}">+41 (0) 763 407 694</a>
+                </p>
+                <p>
+                    <a href="mailto:info@africancitieslab.com">info@africancitieslab.com</a>
+                </p>
+            </div>
+        </div>
     </div>
 {% endblock content %}
