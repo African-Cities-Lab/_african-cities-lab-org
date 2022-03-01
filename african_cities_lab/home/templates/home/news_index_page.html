@@ -1,5 +1,12 @@
 {% extends "base.html" %}
-{% load static i18n wagtailcore_tags wagtailimages_tags %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% else %}
+        {{ self.title }}
+    {% endif %}
+{% endblock title %}
 {% block css %}
     {{ block.super }}
     <style>
@@ -20,7 +27,7 @@
                             </p>
                             <div class="mt-3">
                                 <p class="text-white">
-                                    <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
+                                    <a class="text-white" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                                     -  {{ self.title }}
                                 </p>
                             </div>
