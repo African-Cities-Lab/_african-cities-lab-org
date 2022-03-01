@@ -132,47 +132,48 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                {% comment %}
-                <div class="col-md-6 mb-2">
-                    <div class="single-blog">
-                        <div class="row p-3">
-                            <div class="col-lg-5 col-md-12">
-                                <div class="blog-img">
-                                    <a href="#post_detail" style="position: relative;">
-                                        <img src="{% static 'images/assets/bg_um6p.png' %}" class="blog-list-image" alt="blog" style="height: 200px; object-fit: cover; position: relative;">
-                                        <div class="blog-date bg-warning text-center py-3" style="position: absolute; top: 0; right: 0; width: 40% !important; height: 40% !important;">
-                                            <h5 class="mb-0 text-white">15</h5>
-                                            <p class="mb-0 text-white">
-                                                Jul
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="blog-hover">
-                                        <a href="#post_detail">
-                                            <i class="fa fa-link link-icon"></i>
+            <div class="row mt-2">
+                {% for new in news %}
+                    <div class="col-md-6 mb-2">
+                        <div class="single-blog">
+                            <div class="row p-3">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="blog-img">
+                                        <a href="{{ new.url }}" class="position-relative">
+                                            {% image new.main_image original class="article-image" %}
+                                            <div class="article-pub-date bg-warning text-center py-3">
+                                                <h5 class="mb-0 text-white">{{ new.date|date:"d" }}</h5>
+                                                <p class="mb-0 text-white">
+                                                    {{ new.date|date:"M" }}
+                                                </p>
+                                            </div>
                                         </a>
+                                        <div class="blog-hover">
+                                            <a href="{{ new.url }}">
+                                                <i class="fa fa-link link-icon"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 mt-3">
-                                <a href="#post_detail">
-                                    <h4 class="text-black blog-title">Lorem Ipsum Dolor</h4>
-                                </a>
-                                <hr />
-                                <p>
-                                    lorem ipsum dolor
-                                </p>
+                                <div class="col-lg-7 mt-0">
+                                    <a href="{{ new.url }}">
+                                        <h5 class="text-black blog-title text-start">{{ new.title }}</h5>
+                                    </a>
+                                    <hr class="my-2"/>
+                                    <p class="text-start">
+                                        {{ new.summary }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {% endcomment %}
-                <div class="col-12 my-3">
-                    <p>
-                        {% translate "Coming soon..." %}
-                    </p>
-                </div>
+                {% empty %}
+                    <div class="col-12 my-3">
+                        <p>
+                            {% translate "Coming soon..." %}
+                        </p>
+                    </div>
+                {% endfor %}
             </div>
             <div class="col-12 mb-3 mt-3 view-all-button">
                 <a class="btn btn-primary rounded-pill opacity-75"

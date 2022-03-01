@@ -538,6 +538,20 @@ hr.thick {
   line-height: 0;
 }
 
+.article-image {
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+}
+
+.article-pub-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40% !important;
+  height: 40% !important;
+}
+
 /*----------------------------------------*/
 /*  Footer CSS
 /*----------------------------------------*/
