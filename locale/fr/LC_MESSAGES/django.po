@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-02 03:19+0100\n"
+"POT-Creation-Date: 2022-03-02 03:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,11 @@ msgstr ""
 msgid "Login"
 msgstr "Connection"
 
-#: african_cities_lab/home/templates/home/news_index_page.html:91
+#: african_cities_lab/home/templates/home/news_index_page.html:49
+msgid "All articles"
+msgstr "Tous les articles"
+
+#: african_cities_lab/home/templates/home/news_index_page.html:68
 msgid "Read More"
 msgstr "En savoir plus"
 

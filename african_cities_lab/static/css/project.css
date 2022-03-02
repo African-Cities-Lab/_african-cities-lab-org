@@ -161,6 +161,10 @@ hr.thick {
 .view-all-button {
   text-align: right;
 }
+
+.more-btn {
+  background-color: #be3712;
+}
 /*----------------------------------------*/
 /*  Navbar and Header CSS
 /*----------------------------------------*/
