@@ -165,7 +165,7 @@ msgstr "Les derniers articles"
 
 #: african_cities_lab/home/templates/home/home.html:181
 msgid "View all Posts"
-msgstr ""
+msgstr "Voir tous"
 
 #: african_cities_lab/home/templates/home/login.html:5
 msgid "Login"
