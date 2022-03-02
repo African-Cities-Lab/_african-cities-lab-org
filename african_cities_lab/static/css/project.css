@@ -738,3 +738,22 @@ hr.thick {
 .footer-link:hover {
   text-decoration: underline;
 }
+
+/*----------------------------------------*/
+/*  News page CSS
+/*----------------------------------------*/
+.single_article .article-card {
+  transition: all 0.4s linear 0s;
+}
+
+.single_article .article-image {
+  transition: all 0.4s linear 0s;
+}
+
+.single_article:hover .article-card {
+  box-shadow: 0 0.5rem 1rem rgba(34, 34, 34, 0.15) !important;
+}
+
+.single_article:hover .article-image {
+  transform: scale3d(1.1, 1.1, 1.1);
+}

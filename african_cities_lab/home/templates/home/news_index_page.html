@@ -44,10 +44,36 @@
             </div>
         </div>
         <div class="row mt-5">
+            <!-- <div class="single_blog mb-5">
+                <div class="blog-content event-content border">
+                    <div class="article-image">
+                        <img src="assets/images/blog_details_01.jpg" alt="event image" class="img-fluid">
+                        <div class="events-info-2 bg-white">
+                            <div class="single-event-data">
+                                <p>Posted By <a href="#">Admin</a> <span>|</span></p>
+                            </div>
+                            <div class="single-event-data">
+                                <p>5 May, 2020 <span>|</span></p>
+                            </div>
+                            <div class="single-event-data">
+                                <p>55 Likes <span>|</span></p>
+                            </div>
+                            <div class="single-event-data">
+                                <p>12 Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-text p-4 bg-white">
+                        <h2><a href="#">Build Education Website Using WP</a></h2>
+                        <p>Coluta nobis est eligendi optio cumque nihil impedit quo minusd quod maxime placeat facere possimus, omnis voluptas assumenda est. Our friendly support team is standing. quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+                        <a href="#" class="button_one mb-3">More</a>
+                    </div>
+                </div>
+</div> -->
             {% for new in page.localized.get_children %}
-                <div class="col-md-6 mb-3">
-                    <div class="card shadow rounded-0 border-0">
-                        {% image new.specific.main_image original class="card-img-top" %}
+                <div class="single_article col-md-6 mb-3">
+                    <div class="card article-card rounded-0 border-0">
+                        {% image new.specific.main_image original class="card-img-top article-image" %}
                         <div class="card-body">
                             <h3 class="card-title">
                                 <a href="{% pageurl new %}">{{ new.title }}</a>
@@ -59,6 +85,7 @@
                             <p class="card-text">
                                 {{ new.specific.summary }}
                             </p>
+                            <a href="{% pageurl new %}" class="button_one mb-3">{% translate "Read More" %}</a>
                         </div>
                     </div>
                 </div>

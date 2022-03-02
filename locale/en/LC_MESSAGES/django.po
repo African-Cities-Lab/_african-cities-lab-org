@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-13 16:08+0100\n"
+"POT-Creation-Date: 2022-03-02 03:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: african_cities_lab/home/templates/home/about.html:6
-#: african_cities_lab/templates/footer.html:49
-#: african_cities_lab/templates/header.html:29
-#, fuzzy
-#| msgid "about us"
-msgid "About"
-msgstr "About Us"
+#: african_cities_lab/home/templates/home/about.html:30
+#: african_cities_lab/home/templates/home/contact.html:27
+#: african_cities_lab/home/templates/home/news_index_page.html:30
+#: african_cities_lab/home/templates/home/news_page.html:31
+#: african_cities_lab/templates/base.html:72
+msgid "Home"
+msgstr "Home"
 
-#: african_cities_lab/home/templates/home/about.html:7
+#: african_cities_lab/home/templates/home/about.html:50
 #, fuzzy
 #| msgid "African cities lab Courses"
 msgid "African Cities Lab presentation"
 msgstr "African cities lab Courses"
 
-#: african_cities_lab/home/templates/home/about.html:9
-msgid ""
-"Contributing to sustainable urban development in Africa through an education "
-"tool by Africa, for Africa."
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:11
+#: african_cities_lab/home/templates/home/about.html:69
 msgid "Vision"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/about.html:13
-msgid ""
-"Create a higher education ecosystem bringing together universities and "
-"professionals in the field, with a view to sustainable and resilient urban "
-"development."
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:15
+#: african_cities_lab/home/templates/home/about.html:88
 #, fuzzy
 #| msgid "footer description"
 msgid "Description"
@@ -58,234 +45,177 @@ msgstr ""
 "eros, vitae imperdiet massa euismod in. Nulla ullamcorper eros nec nibh "
 "vestibulum, id fringilla risus condimentum."
 
-#: african_cities_lab/home/templates/home/about.html:17
-msgid ""
-"The overall objective of the project is to create an African digital "
-"education Platform on urban development, offering quality MOOCs and online, "
-"continuing education training for professionals. It will also act as a forum "
-"for the exchange of digital educational resources and the management and "
-"governance of African cities to foster sustainable urban development."
-msgstr ""
+#: african_cities_lab/home/templates/home/about.html:111
+#: african_cities_lab/home/templates/home/home.html:96
+msgid "Partners"
+msgstr "Partners"
 
-#: african_cities_lab/home/templates/home/about.html:20
-msgid ""
-"Anchored on African soil, initially under the supervision of EPFL, the "
-"Platform will gather leading universities in the Anglophone and Francophone "
-"regions in order to create a network of institutions in digital education "
-"and have impact on the entire continent. African Cities Lab (ACL) is a joint "
-"initiative led by EPFL,"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:24
-msgid ""
-"the <a href=\"https://www.knust.edu.gh\">Kwame Nkrumah University of Science "
-"and Technology (Ghana)</a>,"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:27
-msgid ""
-"the <a href=\"https://www.um6p.ma/en\">Mohammed VI Polytechnic University "
-"(Maroc)</a>,"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:30
-msgid "the <a href=\"https://semecity.bj/en\">Sèmè City campus (Benin)</a>,"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:33
-msgid ""
-"the <a href=\"http://www.ucar.rnu.tn\">University of Carthage (Tunisia)</a>,"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:36
-msgid ""
-"the <a href=\"https://www.uct.ac.za\">University of Cape Town (South "
-"Africa)</a>, and"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:39
-msgid "the <a href=\"https://ur.ac.rw\">University of Rwanda</a>"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:43
-msgid "to contribute to sustainable urban development on the continent."
-msgstr ""
-
-#: african_cities_lab/home/templates/home/about.html:46
-msgid ""
-"The initiative, funded by the <a href=\"https://seco.admin.ch/seco/en/home."
-"html\">Swiss State Secretariat for Economic Affairs (SECO)</a>, aims to "
-"create a digital education platform and its content on urban planning and "
-"urban development in Africa. The English-French bilingual ACL platform based "
-"on open edX and hosted by the partners in Africa, will offer quality MOOCs "
-"and online training for professionals. It will also act as a forum for the "
-"exchange of digital educational resources and the management and governance "
-"of African cities."
-msgstr ""
-
-#: african_cities_lab/home/templates/home/contact.html:6
+#: african_cities_lab/home/templates/home/contact.html:22
 #, fuzzy
 #| msgid "contact"
 msgid "Contact"
 msgstr "contact"
 
-#: african_cities_lab/home/templates/home/courses.html:6
+#: african_cities_lab/home/templates/home/courses.html:5
 #, fuzzy
 #| msgid "View all courses"
 msgid "Online courses"
 msgstr "Online courses"
 
-#: african_cities_lab/home/templates/home/courses.html:8
+#: african_cities_lab/home/templates/home/courses.html:7
 msgid ""
 "The first African Cities Lab courses will be available the first semester of "
 "2023."
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:10
-#: african_cities_lab/home/templates/home/programs.html:10
+#: african_cities_lab/home/templates/home/courses.html:9
 #, fuzzy
 #| msgid "Thematics"
 msgid "Themes"
 msgstr "Topics"
 
-#: african_cities_lab/home/templates/home/courses.html:11
-#: african_cities_lab/home/templates/home/programs.html:11
+#: african_cities_lab/home/templates/home/courses.html:10
 msgid "Institutions"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:12
-#: african_cities_lab/home/templates/home/programs.html:12
+#: african_cities_lab/home/templates/home/courses.html:11
 msgid "Languages"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:13
+#: african_cities_lab/home/templates/home/courses.html:12
 msgid "Speakers"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:6
+#: african_cities_lab/home/templates/home/get_involved.html:5
+#: african_cities_lab/templates/base.html:84
 msgid "Get involved"
 msgstr "Get involved"
 
-#: african_cities_lab/home/templates/home/get_involved.html:7
+#: african_cities_lab/home/templates/home/get_involved.html:6
 msgid "Events"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:9
+#: african_cities_lab/home/templates/home/get_involved.html:8
+#: african_cities_lab/home/templates/home/programs.html:7
 msgid "To come"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:11
+#: african_cities_lab/home/templates/home/get_involved.html:10
 msgid "Calls for proposal"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:13
+#: african_cities_lab/home/templates/home/get_involved.html:12
 msgid ""
 "CLOSED - call for projects to produce MOOCs on African cities and urban "
 "development "
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:20
+#: african_cities_lab/home/templates/home/get_involved.html:19
 msgid "Careers"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:22
+#: african_cities_lab/home/templates/home/get_involved.html:21
 msgid ""
 "Working for the project African Cities Lab means being part of an innovative "
 "initiative with prestigious partners across the African continent."
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:25
+#: african_cities_lab/home/templates/home/get_involved.html:24
 msgid "*put the list of jobs with title and location*"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:28
+#: african_cities_lab/home/templates/home/get_involved.html:27
 msgid "Lausanne, Switzerland"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/get_involved.html:29
+#: african_cities_lab/home/templates/home/get_involved.html:28
 msgid "Cotonou, Benin."
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:21
+#: african_cities_lab/home/templates/home/home.html:20
 #, fuzzy
 #| msgid "Welcome to ACL"
 msgid "Welcome to African Cities Lab"
 msgstr "Welcome to African cities lab !"
 
-#: african_cities_lab/home/templates/home/home.html:24
+#: african_cities_lab/home/templates/home/home.html:23
 msgid ""
 "Explore a collection of courses on urban development offered by African "
 "Universities"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:33
+#: african_cities_lab/home/templates/home/home.html:32
 msgid "EX: Architecture specialization"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:38
+#: african_cities_lab/home/templates/home/home.html:37
 msgid "Search"
 msgstr "Search"
 
-#: african_cities_lab/home/templates/home/home.html:61
+#: african_cities_lab/home/templates/home/home.html:60
 msgid "African cities lab Courses"
 msgstr "African cities lab Courses"
 
-#: african_cities_lab/home/templates/home/home.html:72
-#: african_cities_lab/home/templates/home/home.html:142
+#: african_cities_lab/home/templates/home/home.html:71
+#: african_cities_lab/home/templates/home/home.html:173
 msgid "Coming soon..."
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:97
-msgid "Partners"
-msgstr "Partners"
-
-#: african_cities_lab/home/templates/home/home.html:131
-#: african_cities_lab/home/templates/home/news.html:6
-#: african_cities_lab/templates/header.html:38
+#: african_cities_lab/home/templates/home/home.html:130
+#: african_cities_lab/templates/base.html:87
 msgid "News"
 msgstr "News"
 
-#: african_cities_lab/home/templates/home/login.html:6
+#: african_cities_lab/home/templates/home/home.html:131
+msgid "Latest News"
+msgstr "Latest news"
+
+#: african_cities_lab/home/templates/home/home.html:181
+msgid "View all Posts"
+msgstr "View all Posts"
+
+#: african_cities_lab/home/templates/home/login.html:5
 msgid "Login"
 msgstr "Login"
 
-#: african_cities_lab/home/templates/home/programs.html:6
-msgid "Training programs"
-msgstr "Training programs"
-
-#: african_cities_lab/home/templates/home/programs.html:8
-msgid ""
-"The first African Cities Lab training programs will be available in the "
-"first half of 2023."
+#: african_cities_lab/home/templates/home/news_index_page.html:91
+msgid "Read More"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/register.html:6
-msgid "Register"
-msgstr "Register"
-
-#: african_cities_lab/templates/footer.html:46
-msgid "useful links"
-msgstr "useful links"
-
-#: african_cities_lab/templates/footer.html:58
-msgid "contact us"
-msgstr "Contact Us"
-
-#: african_cities_lab/templates/footer.html:65
-msgid "contact"
-msgstr "contact"
-
-#: african_cities_lab/templates/header.html:26
-msgid "Home"
-msgstr "Home"
-
-#: african_cities_lab/templates/header.html:32
+#: african_cities_lab/home/templates/home/programs.html:5
+#: african_cities_lab/templates/base.html:81
 msgid "Programs"
 msgstr ""
 
-#: african_cities_lab/templates/header.html:35
+#: african_cities_lab/home/templates/home/register.html:5
+msgid "Register"
+msgstr "Register"
+
+#: african_cities_lab/templates/base.html:75
+#: african_cities_lab/templates/base.html:192
+#, fuzzy
+#| msgid "about us"
+msgid "About"
+msgstr "About Us"
+
+#: african_cities_lab/templates/base.html:78
 msgid "Courses"
 msgstr "Courses"
+
+#: african_cities_lab/templates/base.html:189
+msgid "useful links"
+msgstr "useful links"
+
+#: african_cities_lab/templates/base.html:201
+msgid "contact us"
+msgstr "Contact Us"
+
+#: african_cities_lab/templates/base.html:208
+msgid "contact"
+msgstr "contact"
+
+#~ msgid "Training programs"
+#~ msgstr "Training programs"
 
 #, fuzzy
 #~| msgid "African cities lab Courses"
@@ -303,12 +233,6 @@ msgstr "Courses"
 
 #~ msgid "View all courses"
 #~ msgstr "View all courses"
-
-#~ msgid "Latest News"
-#~ msgstr "Latest news"
-
-#~ msgid "View all Posts"
-#~ msgstr "View all Posts"
 
 #~ msgid "Thematics"
 #~ msgstr "Topics"
