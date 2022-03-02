@@ -25,7 +25,12 @@
                             <div class="mt-3">
                                 <p class="text-white">
                                     <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
-                                    -  {{ self.title }}
+                                    -
+                                    {% if self.title %}
+                                        {{ self.title }}
+                                    {% else %}
+                                        {% translate "Contact" %}
+                                    {% endif %}
                                 </p>
                             </div>
                         </div>

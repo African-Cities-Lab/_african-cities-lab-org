@@ -1,6 +1,44 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load static i18n %}
+{% block css %}
+    {{ block.super }}
+    <style>
+        .page-header-section{
+            background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url({% static 'images/assets/pages-header.jpg' %});
+        }
+    </style>
+{% endblock css %}
 {% block content %}
+    <section class="page-header-section">
+        <div class="page-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-white text-center">
+                            <p class="mt-5 h1 font-weight-bold text-white header-page-name">
+                                {% if self.title %}
+                                    {{ self.title }}
+                                {% else %}
+                                    {% translate "Online courses" %}
+                                {% endif %}
+                            </p>
+                            <div class="mt-3">
+                                <p class="text-white">
+                                    <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
+                                    -
+                                    {% if self.title %}
+                                        {{ self.title }}
+                                    {% else %}
+                                        {% translate "Online courses" %}
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container content-container py-5 mt-5">
         <h1>{% translate "Online courses" %}</h1>
         <p>
