@@ -80,6 +80,7 @@ WAGTAIL = [
     "wagtail.core",
     "modelcluster",
     "taggit",
+    "wagtailmetadata",
 ]
 
 DJANGO_APPS = [

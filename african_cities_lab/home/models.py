@@ -5,11 +5,12 @@ from wagtail.core.fields import RichTextField, StreamField
 from wagtail.core.models import Page
 from wagtail.images.blocks import ImageChooserBlock
 from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtailmetadata.models import MetadataPageMixin
 
 NEWS_SUMMARY_MAX_LENGTH = 500
 
 
-class HomePage(Page):
+class HomePage(MetadataPageMixin, Page):
     template = "home/home.html"
 
     subpage_types = [
@@ -26,7 +27,7 @@ class HomePage(Page):
     max_count = 1
 
 
-class FlatPage(Page):
+class FlatPage(MetadataPageMixin, Page):
     """FlatPage page model."""
 
     template = "home/flat_page.html"
@@ -40,7 +41,7 @@ class FlatPage(Page):
     ]
 
 
-class AboutUsPage(Page):
+class AboutUsPage(MetadataPageMixin, Page):
     """About Us page model."""
 
     template = "home/about.html"
@@ -107,7 +108,7 @@ class ContactPage(FlatPage):
     max_count = 1
 
 
-class NewsIndexPage(Page):
+class NewsIndexPage(MetadataPageMixin, Page):
 
     subpage_types = ["home.NewsPage"]
     parent_page_type = [
@@ -116,7 +117,7 @@ class NewsIndexPage(Page):
     max_count = 1
 
 
-class NewsPage(Page):
+class NewsPage(MetadataPageMixin, Page):
     summary = models.CharField(max_length=NEWS_SUMMARY_MAX_LENGTH)
     main_image = models.ForeignKey(
         "wagtailimages.Image",
