@@ -1,5 +1,14 @@
 {% extends "base.html" %}
-{% load static i18n %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Online courses" %}
+    {% endif %}
+{% endblock title %}
 {% block css %}
     {{ block.super }}
     <style>
@@ -39,14 +48,101 @@
             </div>
         </div>
     </section>
-    <div class="container content-container py-5 mt-5">
-        <h1>{% translate "Online courses" %}</h1>
-        <p>
-            {% blocktranslate %}The first African Cities Lab courses will be available the first semester of 2023.{% endblocktranslate %}
-        </p>
-        <h2>{% translate "Themes" %}</h2>
-        <h2>{% translate "Institutions" %}</h2>
-        <h2>{% translate "Languages" %}</h2>
-        <h2>{% translate "Speakers" %}</h2>
+    <div class="pt-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Online courses" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">
+                    {% blocktranslate %}The first African Cities Lab courses will be available the first semester of 2023.{% endblocktranslate %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Themes" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">{% blocktranslate %}To come{% endblocktranslate %}</div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Institutions" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">{% blocktranslate %}To come{% endblocktranslate %}</div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Languages" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">{% blocktranslate %}To come{% endblocktranslate %}</div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Speakers" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">{% blocktranslate %}To come{% endblocktranslate %}</div>
+            </div>
+        </div>
     </div>
 {% endblock content %}

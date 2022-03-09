@@ -3,8 +3,10 @@
 {% block title %}
     {% if self.seo_title %}
         {{ self.seo_title }}
-    {% else %}
+    {% elif self.title %}
         {{ self.title }}
+    {% else %}
+        {% translate "News" %}
     {% endif %}
 {% endblock title %}
 {% block css %}
@@ -50,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-3">
             {% for new in page.localized.get_children %}
                 <div class="single_article col-md-6 mb-3">
                     <div class="card article-card rounded-0">
@@ -66,7 +68,7 @@
                                 {{ new.specific.summary }}
                             </p>
                             <a href="{% pageurl new %}"
-                               class="btn more-btn text-white rounded-0 mb-3">{% translate "Read More" %}</a>
+                               class="btn more-btn text-white rounded-0 mb-3 py-2">{% translate "Read More" %}</a>
                         </div>
                     </div>
                 </div>
