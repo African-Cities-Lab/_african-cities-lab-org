@@ -39,13 +39,27 @@
             </div>
         </div>
     </section>
-    <div class="container content-container py-5">
-        <div class="col-12 d-flex justify-content-center">
-            <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+    <div class="pt-5 text-center bg-white">
+        <div class="container content-container">
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
+                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title mb-3">
+                        <h2>{% translate "Contact" %}</h2>
+                    </div>
+                    <p>
+                        {% blocktranslate %}Get in touch with us{% endblocktranslate %}
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row mt-5">
+    </div>
+    <div class="container content-container py-5">
+        <div class="row">
             <div class="col-md-12">
                 <h2>Rémi Jaligot</h2>
                 <!-- the Linter complain about phone number href so i used django template to output it -->

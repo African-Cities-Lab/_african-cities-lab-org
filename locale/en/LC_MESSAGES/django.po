@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-02 03:55+0100\n"
+"POT-Creation-Date: 2022-03-16 00:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,8 +20,10 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/about.html:30
 #: african_cities_lab/home/templates/home/contact.html:27
-#: african_cities_lab/home/templates/home/news_index_page.html:30
+#: african_cities_lab/home/templates/home/courses.html:36
+#: african_cities_lab/home/templates/home/news_index_page.html:32
 #: african_cities_lab/home/templates/home/news_page.html:31
+#: african_cities_lab/home/templates/home/programs.html:36
 #: african_cities_lab/templates/base.html:72
 msgid "Home"
 msgstr "Home"
@@ -51,38 +53,56 @@ msgid "Partners"
 msgstr "Partners"
 
 #: african_cities_lab/home/templates/home/contact.html:22
+#: african_cities_lab/home/templates/home/contact.html:32
+#: african_cities_lab/home/templates/home/contact.html:52
 #, fuzzy
 #| msgid "contact"
 msgid "Contact"
 msgstr "contact"
 
-#: african_cities_lab/home/templates/home/courses.html:5
+#: african_cities_lab/home/templates/home/contact.html:55
+msgid "Get in touch with us"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/courses.html:9
+#: african_cities_lab/home/templates/home/courses.html:31
+#: african_cities_lab/home/templates/home/courses.html:41
+#: african_cities_lab/home/templates/home/courses.html:61
 #, fuzzy
 #| msgid "View all courses"
 msgid "Online courses"
 msgstr "Online courses"
 
-#: african_cities_lab/home/templates/home/courses.html:7
+#: african_cities_lab/home/templates/home/courses.html:67
 msgid ""
 "The first African Cities Lab courses will be available the first semester of "
 "2023."
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:9
+#: african_cities_lab/home/templates/home/courses.html:82
 #, fuzzy
 #| msgid "Thematics"
 msgid "Themes"
 msgstr "Topics"
 
-#: african_cities_lab/home/templates/home/courses.html:10
+#: african_cities_lab/home/templates/home/courses.html:87
+#: african_cities_lab/home/templates/home/courses.html:106
+#: african_cities_lab/home/templates/home/courses.html:125
+#: african_cities_lab/home/templates/home/courses.html:144
+#: african_cities_lab/home/templates/home/get_involved.html:8
+#: african_cities_lab/home/templates/home/programs.html:66
+msgid "To come"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/courses.html:101
 msgid "Institutions"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:11
+#: african_cities_lab/home/templates/home/courses.html:120
 msgid "Languages"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/courses.html:12
+#: african_cities_lab/home/templates/home/courses.html:139
 msgid "Speakers"
 msgstr ""
 
@@ -93,11 +113,6 @@ msgstr "Get involved"
 
 #: african_cities_lab/home/templates/home/get_involved.html:6
 msgid "Events"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/get_involved.html:8
-#: african_cities_lab/home/templates/home/programs.html:7
-msgid "To come"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/get_involved.html:10
@@ -157,11 +172,12 @@ msgid "African cities lab Courses"
 msgstr "African cities lab Courses"
 
 #: african_cities_lab/home/templates/home/home.html:71
-#: african_cities_lab/home/templates/home/home.html:173
+#: african_cities_lab/home/templates/home/home.html:172
 msgid "Coming soon..."
 msgstr ""
 
 #: african_cities_lab/home/templates/home/home.html:130
+#: african_cities_lab/home/templates/home/news_index_page.html:9
 #: african_cities_lab/templates/base.html:87
 msgid "News"
 msgstr "News"
@@ -170,7 +186,7 @@ msgstr "News"
 msgid "Latest News"
 msgstr "Latest news"
 
-#: african_cities_lab/home/templates/home/home.html:181
+#: african_cities_lab/home/templates/home/home.html:180
 msgid "View all Posts"
 msgstr "View all Posts"
 
@@ -178,15 +194,18 @@ msgstr "View all Posts"
 msgid "Login"
 msgstr "Login"
 
-#: african_cities_lab/home/templates/home/news_index_page.html:49
+#: african_cities_lab/home/templates/home/news_index_page.html:51
 msgid "All articles"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/news_index_page.html:68
+#: african_cities_lab/home/templates/home/news_index_page.html:71
 msgid "Read More"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/programs.html:5
+#: african_cities_lab/home/templates/home/programs.html:9
+#: african_cities_lab/home/templates/home/programs.html:31
+#: african_cities_lab/home/templates/home/programs.html:41
+#: african_cities_lab/home/templates/home/programs.html:61
 #: african_cities_lab/templates/base.html:81
 msgid "Programs"
 msgstr ""
