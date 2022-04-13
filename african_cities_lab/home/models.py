@@ -31,7 +31,7 @@ class FlatPage(MetadataPageMixin, Page):
     """FlatPage page model."""
 
     template = "home/flat_page.html"
-    body = RichTextField()
+    body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel("body"),
@@ -75,6 +75,7 @@ class OnlineCoursesPage(FlatPage):
     parent_page_type = [
         "home.HomePage",
     ]
+    max_count = 1
 
 
 class TrainingProgramsPage(FlatPage):
@@ -85,6 +86,7 @@ class TrainingProgramsPage(FlatPage):
     parent_page_type = [
         "home.HomePage",
     ]
+    max_count = 1
 
 
 class GetInvolvedPage(FlatPage):
@@ -95,6 +97,7 @@ class GetInvolvedPage(FlatPage):
     parent_page_type = [
         "home.HomePage",
     ]
+    max_count = 1
 
 
 class ContactPage(FlatPage):

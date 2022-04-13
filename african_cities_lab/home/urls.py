@@ -16,11 +16,11 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/programs.html"),
         name="programs",
     ),
-    path(
-        "get-involved/",
-        TemplateView.as_view(template_name="home/get_involved.html"),
-        name="get-involved",
-    ),
+    # path(
+    #     "get-involved/",
+    #     TemplateView.as_view(template_name="home/get_involved.html"),
+    #     name="get-involved",
+    # ),
     # path("news/", TemplateView.as_view(template_name="home/news.html"), name="news"),
     path(
         "contact/",
