@@ -10,124 +10,225 @@
 {% block css %}
     {{ block.super }}
     <style>
-        .page-header-section{
-            background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) ,url({% static 'images/assets/pages-header.jpg' %});
+        .page-banner__right { 
+            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern-3.jpeg' %});
+        } 
+        .acl-conference {
+            background-image: url({% static 'images/assets/conference-bg.jpg' %});
         }
     </style>
 {% endblock css %}
+
 {% block content %}
-    <section class="page-header-section">
-        <div class="page-header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-white text-center">
-                            <p class="mt-5 h1 font-weight-bold text-white header-page-name">
-                                {{ self.title }}
-                            </p>
-                            <div class="mt-3">
-                                <p class="text-white">
-                                    <a class="text-white" href="{% url 'home' %}">{% translate "Home" %}</a>
-                                    -  {{ self.title }}
-                                </p>
-                            </div>
-                        </div>
+
+    <section class="page-banner__area"> 
+        <div class="container-fluid position-relative pr-lg-0">
+            <div class="row justify-content-center justify-content-md-between align-item-center">
+
+                <div class="col-lg-7 p-5 p-md-3 align-self-center">
+                    <span class="font-weight-bold font-size-3em">{% translate "En 2050, les villes africaines abriteront" %}
+                        <span class="text_primary">{% translate "1 milliard d’habitants" %}</span>,
+                    </span>
+                    <span class="font-size-18">{% translate "soit le double de la population actuelle." %}</span>
+                    <p class="font-size-18 pt-3">
+                        {% translate "L’urbanisation accéléré du continent présente des enjeux majeurs en terme de lutte contre les inégalités et le réchauffement climatique qu’il faudra adresser." %} 
+                    </p>
+
+                    <div class="banner-angle__left"> 
+                        <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
                     </div>
+
                 </div>
+                <div class="col-lg-5 d-none d-lg-block page-banner__right"></div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="pt-5 position-relative">
+        <div class="acl-sharpes red-left__sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/red-sharpe-left.svg' %}">
+        </div>  
+        <div class="container p-lg-5">
+            <div class="row justify-content-around ">
+                <div class="col-12 col-md-4">
+                     <h2 class="section-title mb-3">{% translate "Notre Mission" %}</h2>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 pt-4">
+                    <h3 class="text_primary">{% translate "Construire la  ville africaine  de demain" %}</h3>
+                    <p class="py-3 font-size-18 text-justify">
+                        {% blocktranslate %}
+                        Nous croyons profondément que le pari de la construction 
+                        de villes africaines durables qui offrent aux population un accès de qualité aux 
+                        services essentiels ne se fera pas sans une formation adéquate des acteurs de la 
+                        ville africaine de demain. C’est pourquoi nous avons créé la plus grande plateforme
+                        d’apprentissage en ligne sur la thématique du développement urbain et durable en 
+                        Afrique.
+                        {% endblocktranslate %} 
+                    </p> 
+                 </div> 
             </div>
         </div>
     </section>
-    <div class="pt-5 text-center bg-white">
-        <div class="container content-container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3">
-                        <h2>{% translate "African Cities Lab presentation" %}</h2>
+
+    <section class="acl-section__counter">
+        <div class="container">
+             <div class="banner-counter row justify-content-center text-center">
+                 <div class="stats-item col-md-4 col-lg-3 mt-3">
+                     <h3 class="stats-title">
+                         <span class="counter" >3000</span>
+                     </h3>
+                     <span class="banner-counter-title font-size-18">{% translate "Professionnels formés en 2023" %}</span>
+                 </div>
+                 <div class="stats-item col-md-4 col-lg-3 mt-3">
+                     <h3 class="stats-title">
+                         <span class="counter">13</span>
+                     </h3>
+                     <span class="banner-counter-title font-size-18">{% translate "Moocs publiés en 2023" %}</span>
+                 </div> 
+                 <div class="stats-item col-md-4 col-lg-3 mt-3">
+                     <h3 class="stats-title">
+                         <span class="counter">6</span>
+                     </h3>
+                     <span class="banner-counter-title font-size-18">{% translate "Universités africaines partenaires" %}</span>
+                 </div>  
+             </div> 
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container p-md-5">
+             <div class="row d-flex justify-content-center">
+                 <div class="col-12 col-lg-10 text-center"> 
+                     <h3 class="section-title">{% translate "La Plateforme ACL" %}</h3>
+
+                     <div class="font-size-18 py-3">
+                        {% blocktranslate %}
+                        La plateforme d'e-learning African Cities Lab est accessible depuis l'Afrique francophone et 
+                        anglophone. Elle permet à tous les acteurs impliqués dans la construction, le développement 
+                        et l'exploitation des zones urbaines d'accéder à des contenus pédagogiques de qualité sur 
+                        l'urbanisation durable répondant aux défis des villes africaines de 2050.
+                        {% endblocktranslate %} 
+                     </div>
+                 </div>
+             </div> 
+        </div>
+
+        <div class="container-xl pb-5">
+             <div class="row justify-content-lg-center">
+                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+                     <div class="card"> 
+                         <div class="card-body">  
+                             <h3 class="feature-card__title text_primary py-3" >
+                                {% translate "Les Moocs" %}
+                             </h3>
+                             <p class="feature-card__exerpt">
+                                {% blocktranslate %}
+                                C’est une offre de cours en ligne, accessible gratuitement, qui aborde 
+                                les questions de l’aménagement de l’espace urbain dans tous ses aspects. 
+                                Les cours proposés sur la plateforme sont divisés en treize (13) thématiques 
+                                et dispensés par des experts des universités de 6 pays d’Afrique Francophone 
+                                et Anglophone.
+                                {% endblocktranslate %} 
+                             </p>
+                         </div> 
+                     </div> 
+                 </div>
+                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+                     <div class="card"> 
+                         <div class="card-body">  
+                             <h3 class="feature-card__title text_primary py-3">
+                                {% translate "Les formations continues en ligne" %}
+                             </h3>
+                             <p class="feature-card__exerpt">
+                                {% blocktranslate %}
+                                Ce sont des cours approfondis, destinés à un public d’experts avec 
+                                pour objectif de faire évoluer les pratiques professionnelles des 
+                                acteurs impliqués dans la construction des villes africaines d’aujourd’hui 
+                                et de demain.
+                                {% endblocktranslate %} 
+                             </p>
+                         </div> 
+                     </div> 
+                 </div>
+                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+                     <div class="card"> 
+                         <div class="card-body">  
+                             <h3 class="feature-card__title text_primary py-3">
+                                {% translate "Les formations continues hybrides" %}
+                             </h3>
+                             <p class="feature-card__exerpt">
+                                 
+                             </p>
+                         </div> 
+                     </div> 
+                 </div> 
+             </div> 
+        </div>
+    </section>
+
+    <section class="acl-conference">  
+   
+        <div class="img-overlay__leftToRight"></div>
+
+        <div class="acl-sharpes top-right__sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-triange__.svg' %}">
+        </div> 
+
+        <div class="container position-relative">
+            <div class="row p-3 p-md-5">
+                <div class="col-12 col-lg-8 pt-lg-3">
+                    <h3 class="section-title">
+                        {% translate "La Conférence Internationale des Villes Africaines (CIVA)" %}
+                    </h3>
+                    <div class="font-size-18 py-3">
+                        {% blocktranslate %}
+                            Les villes digitales africaines sont présentées comme une réponse rationnelle aux projections démographiques futures. Remettant en question la vision actuelle des villes en Afrique, 
+                            les villes digitales semblent être des acteurs majeurs de l'urbanisation de l'Afrique.
+                            African Cities Lab crée la « Conférence Internationale sur les Villes Africaines (CIVA) – 
+                            Villes digitales », événement phare qui vise à accroître la portée et le rayonnement des 
+                            activités de recherche et entrepreneuriale sur le continent africain relative à la numérisation
+                            des villes, ainsi qu’à promouvoir l’excellence scientifique en Afrique.
+                            La première Edition aura lieu en 2023 et se tiendra à Cotonou au Bénin. 
+                        {% endblocktranslate %}
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 my-3">{{ self.presentation|richtext }}</div>
-            </div>
-        </div>
-    </div>
-    <div class="pt-5 text-center bg-white">
-        <div class="container content-container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3">
-                        <h2>{% translate "Vision" %}</h2>
+        </div> 
+    </section>
+
+    <section> 
+        <div class="container p-lg-5">
+            <div class="row d-flex justify-content-center pt-5">
+                <div class="col-12 col-md-10 text-center"> 
+                    <h3 class="section-title">{% translate "Les Webinaires African Cities Lab" %}</h3>
+
+                    <div class="py-3 font-size-18 text-justify">
+                        {% blocktranslate %}
+                        A travers une série de 3 webinaires, les partenaires du projet African Cities Lab, 
+                        dirigée par l’EPFL, préparent le terrain pour le dialogue politique et scientifique, 
+                        en prélude de la conférence de Cotonou en 2023. L’objectif est de discuter des grands 
+                        thèmes qui composent la ville digitale africaine afin de poser le cadre du débat politique
+                        et scientifique. Cette série de webinaires présentera des recherches, des tendances, 
+                        des cas et des idées critiques sur la façon dont les villes sont ou pourraient être plus 
+                        efficaces dans l'exploitation du numérique pour atteindre les ODD localement.
+                        {% endblocktranslate %} 
+                    </div>
+                    <div class="my-5 text-center">
+                        <a href="http://localhost:8000/en/events/webinar-integrating-ai-in-the-development-of-smart-cities-in-africa/" 
+                            class="btn btn__primary btn__big btn-arrow">
+                            {% translate "Participer au 1er webinaire" %}<i class="fas fa-arrow-right mx-2"></i>
+                        </a> 
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 my-3">{{ self.vision|richtext }}</div>
-            </div>
+            </div> 
         </div>
-    </div>
-    <div class="pt-5 bg-white">
-        <div class="container content-container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3 text-center">
-                        <h2>{% translate "Description" %}</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 my-3">
-                    {% for block in page.description %}
-                        {% include_block block %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-5 text-center bg-light">
-        <div class="container content-container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3">
-                        <h2>{% translate "Partners" %}</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {% static "images/assets/partners/epfl.png" as epfl_logo_path %}
-                {% include "home/partner.html" with url="https://epfl.ch" img_path=epfl_logo_path full_name="École Polytechnique Fédérale de Lausanne" %}
-                {% static "images/assets/partners/um6p.png" as um6p_logo_path %}
-                {% include "home/partner.html" with url="https://um6p.ma" img_path=um6p_logo_path full_name="Université Mohammed VI Polytechnique" %}
-                {% static "images/assets/partners/knust.png" as knust_logo_path %}
-                {% include "home/partner.html" with url="https://www.knust.edu.gh" img_path=knust_logo_path full_name="Université des sciences et technologies Kwame Nkrumah" %}
-                {% static "images/assets/partners/semecity.png" as semecity_logo_path %}
-                {% include "home/partner.html" with url="https://semecity.bj/en" img_path=semecity_logo_path full_name="Sèmè City" %}
-                {% static "images/assets/partners/ucar.png" as ucar_logo_path %}
-                {% include "home/partner.html" with url="http://www.ucar.rnu.tn" img_path=ucar_logo_path full_name="Université de Carthage" %}
-                {% static "images/assets/partners/uct.png" as uct_logo_path %}
-                {% include "home/partner.html" with url="https://www.uct.ac.za" img_path=uct_logo_path full_name="Université de Cape Town" %}
-                {% static "images/assets/partners/ur.png" as ur_logo_path %}
-                {% include "home/partner.html" with url="https://ur.ac.rw" img_path=ur_logo_path full_name="Université du Rwanda" %}
-            </div>
-        </div>
-    </div>
+    </section>
+
+     <!-- Start Partners Area-->
+     <section class="our-partners">
+        {% include "home/parts/partners_section.html" %}
+    </section>
+    <!-- End Partners Area -->
+    
 {% endblock content %}

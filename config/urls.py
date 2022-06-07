@@ -33,6 +33,7 @@ if settings.DEBUG:
     # these url in browser to see how these error pages look like.
     urlpatterns += [
         path(
+            
             "400/",
             default_views.bad_request,
             kwargs={"exception": Exception("Bad Request!")},

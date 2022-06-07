@@ -4,7 +4,6 @@ from wagtail.core.templatetags.wagtailcore_tags import pageurl
 
 register = template.Library()
 
-
 @register.simple_tag(takes_context=True)
 def redirect_to(context, slug):
     if slug is None or slug == "":

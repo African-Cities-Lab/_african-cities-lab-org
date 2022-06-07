@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% else %}
+        {{ self.title }}
+    {% endif %}
+{% endblock title %} 
+{% block content %}
+
+    <section id="single-post">  
+        <div class="post-hero__container"> 
+             <div class="acl-sharpes top-right__sharpe">
+                 <img class="d-none d-md-block" src="{% static 'images/assets/sharpe-triange__.svg' %}">
+             </div>  
+        </div>
+        <div class="container mt-sm-n8"> 
+            <div class="row justify-content-center">  
+                <div class="col-12 col-lg-8 border-top-8px">   
+
+                    <h3 class="mb-5 text-center">{{ self.title }}</h3>
+
+                    <div class="article-meta d-flex align-items-center justify-content-center">
+                        <div class="article__date">{{ page.date }}</div>
+                        {% comment %}
+                        <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
+                        <div class="article__category text_primary font-weight-bold"></div> 
+                        {% endcomment %} 
+                    </div>  
+                </div>
+            </div> 
+        </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col col-lg-10">
+                    <div class="row justify-content-center">
+                        {% comment %}
+                        <div id="widget-share" class="col-12 col-lg-1">
+                            <span class="widget-share__title">
+                                <i class="fa fa-share-alt mx-2" aria-hidden="true"></i>{% translate "Share" %}
+                            </span>
+                            <div class="novashare-buttons-wrapper">
+                                <a href="#" class="novashare-button"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="novashare-button"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="novashare-button"><i class="fab fa-facebook-f"></i></a>
+                            </div> 
+                        </div>
+                        {% endcomment %}
+                        <div class="col-12 col-lg-10">
+                            <div class="post-thumbnail text-center my-2">
+                                {% image page.main_image original %}
+                            </div>
+
+                            <div class="post-content__body px-sm-5 my-5">   
+                                {{ page.body|richtext }}
+                            </div> 
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div>  
+    </section>
+
+    <!-- Start Partners Area-->
+    <section class="our-partners">
+        {% include "home/parts/partners_section.html" %}
+    </section>
+    <!-- End Partners Area -->
+
+{% endblock content %}

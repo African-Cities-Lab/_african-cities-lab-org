@@ -3,182 +3,297 @@
 {% block css %}
     {{ block.super }}
     <style>
-     header.masthead{
-         background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)) ,url({% static 'images/assets/header_bg.jpg' %});
-     }
+         
     </style>
 {% endblock css %}
-{% block content %}
-    <header class="masthead">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-9 mx-auto position-relative">
-                                <p class="mb-2 text-uppercase h1 text-white">
-                                    <strong>{% translate "Welcome to African Cities Lab" %}</strong>
-                                </p>
-                                <p class="mb-3 text-white">
-                                    {% translate "Explore a collection of courses on urban development offered by African Universities" %}
-                                </p>
-                            </div>
-                            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                                <form disabled>
+
+{% block content %} 
+
+    <section> 
+        <div class="home-banner__area">
+            <div class="row justify-content-between align-item-center">
+                <div class="col-lg-6 home-banner__left">
+                    <div class="home-banner__title h1" >
+                        {% translate "Devenez acteur de la transformation des villes africaines de demain" %} 
+                        <span class="dash-accent"></span>
+                    </div> 
+                    <p class="my-4 font-size-18">
+                        {% translate "Des formations avancées en ligne pour tirer parti des opportunités et faire face aux défis architecturaux, sociaux et environnementaux des villes africaines de 2050." %}
+                    </p> 
+                    {% comment %}
+                    <a href="#" class="btn btn__primary btn__small btn-arrow">
+                        {% translate "Explore our MOOCs" %}<i class="fas fa-arrow-right mx-2"></i>
+                    </a>  
+                    {% endcomment %}
+                    <div class="d-none d-lg-block banner-angle__left"> 
+                        <img src="{% static 'images/assets/banner-angle-left.svg' %}">
+                    </div> 
+                </div>
+                <div class="col-lg-5 home-banner__right"> 
+                    <img src="{% static 'images/assets/banner.jpeg' %}">
+                </div> 
+            </div>
+        </div> 
+    </section>
+    
+    <section>
+        <div class="container pb-5">
+            <div class="row d-flex justify-content-center p-md-5">
+                <div class="col-12 col-lg-10 text-center">
+                    <h3 class="section-title">
+                        {% translate "Ce que nous offrons" %}
+                    </h3>
+                    <div class="my-3 font-size-18"> 
+                        {% translate "Du contenu pédagogique de qualité sous un format MOOC pour comprendre et apporter des solutions pratiques aux enjeux que présente l’urbanisation accélérée du continent Africain" %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-4 justify-content-center"> 
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 20 20">
+                                <path fill="#BE3712" d="M14.5 18h-10c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h10c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                                <path fill="#BE3712" d="M16.5 3c-0.276 0-0.5 0.224-0.5 0.5v15c0 0.276-0.224 0.5-0.5 0.5h-11c-0.827 0-1.5-0.673-1.5-1.5s0.673-1.5 1.5-1.5h9c0.827 0 1.5-0.673 1.5-1.5v-12c0-0.827-0.673-1.5-1.5-1.5h-10c-0.827 0-1.5 0.673-1.5 1.5v15c0 1.378 1.122 2.5 2.5 2.5h11c0.827 0 1.5-0.673 1.5-1.5v-15c0-0.276-0.224-0.5-0.5-0.5zM3.5 2h10c0.276 0 0.5 0.224 0.5 0.5v12c0 0.276-0.224 0.5-0.5 0.5h-9c-0.562 0-1.082 0.187-1.5 0.501v-13.001c0-0.276 0.224-0.5 0.5-0.5z"></path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h5>{% translate "13 MOOCs" %}</h5>
+                            </div> 
+                            <div class="icon-box__desc">
+                                {% translate "Un catalogue de cours vidéos dispensés par des intervenants africains, experts chacun dans leur domaine, allant de l’éco-construction à la gestion des déchets." %} 
+                            </div> 
+                        </div> 
+                    </div>  
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 17 17">
+                                <g></g>
+                                <path d="M17 16.488c-0.063-2.687-2.778-4.999-6.521-5.609v-1.374c0.492-0.473 0.842-1.207 1.071-1.833 0.332-0.166 0.624-0.536 0.794-1.033 0.238-0.688 0.146-1.323-0.206-1.629 0.028-0.238 0.046-0.481 0.015-0.723-0.079-0.663 0.065-1.038 0.194-1.368 0.106-0.277 0.229-0.591 0.106-0.945-0.442-1.273-1.727-1.974-3.618-1.974l-0.264 0.005c-1.313 0.047-1.707 0.6-1.971 1.115-0.033 0.062-0.077 0.146-0.077 0.151-1.712 0.153-1.697 1.569-1.684 2.707l0.003 0.369c0 0.205 0.009 0.419 0.026 0.639-0.425 0.3-0.504 1.005-0.179 1.737 0.185 0.415 0.452 0.729 0.749 0.892 0.243 0.674 0.625 1.47 1.179 1.965v1.283c-3.798 0.589-6.554 2.907-6.617 5.625l-0.012 0.512h17.023l-0.011-0.512zM1.054 16c0.392-2.094 2.859-3.821 6.122-4.204l0.441-0.052v-2.666l-0.216-0.15c-0.393-0.272-0.791-0.947-1.090-1.851l-0.083-0.281-0.294-0.051c-0.053-0.019-0.208-0.153-0.33-0.428-0.075-0.168-0.104-0.312-0.112-0.415l0.51 0.143-0.096-0.749c-0.042-0.33-0.064-0.651-0.064-0.95l-0.003-0.38c-0.015-1.341 0.051-1.634 0.773-1.699 0.545-0.048 0.752-0.449 0.876-0.689 0.15-0.292 0.28-0.543 1.12-0.574l0.227-0.004c0.829 0 2.279 0.169 2.669 1.282 0 0.043-0.052 0.177-0.090 0.275-0.145 0.374-0.364 0.939-0.254 1.853 0.024 0.188-0.007 0.424-0.040 0.675l-0.089 0.805 0.441-0.048c0.008 0.104-0.004 0.269-0.075 0.472-0.097 0.289-0.242 0.438-0.237 0.454h-0.36l-0.114 0.342c-0.283 0.853-0.65 1.497-1.009 1.768l-0.198 0.15v2.726l0.438 0.055c3.211 0.401 5.641 2.123 6.030 4.192h-14.893z" fill="#BE3712"></path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h5>{% translate "Apprennez des experts" %}</h5>
+                            </div> 
+                            <div class="icon-box__desc">
+                                {% translate "+ 20 Experts Intervenants du développement urbain et durable en Afrique" %} 
+                            </div> 
+                        </div>  
+                    </div>    
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card ">
+                        <div class="card-header icon-container">
+                            <img src="{% static 'images/assets/university.svg' %}" height="62" width="62">
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h5>{% translate "6 Universités / Partenaires Africaines" %}</h5>
+                            </div> 
+                            <div class="icon-box__desc">
+                                {% translate "Qui s’unissent pour transmettre leurs connaissances sur les problématiques urbaines des villes africaines de demain." %} 
+                            </div> 
+                        </div>
+                    </div>     
+                </div> 
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <img src="{% static 'images/assets/people-ico.svg' %}" height="78" width="78">
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h5>{% translate "Une grande communauté" %}</h5>
+                            </div> 
+                            <div class="icon-box__desc">
+                                {% translate "1 communauté active de + 2000 acteurs et témoins soucieux du cadre de vie qu’offriront les villes africaines à leurs populations en 2050." %} 
+                            </div>  
+                        </div> 
+                    </div>    
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="featured-moocs position-relative bg_secondary py-5">
+        <!--div class="acl-sharpes top-inside__divider"></div-->
+        <div class="container p-md-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10 text-center"> 
+                    <h3 class="section-title text-white">
+                        {% translate "Nos MOOCs" %}
+                    </h3>
+
+                    <div class="font-size-18 text-white my-3">
+                        {% translate "Nous balayons toute la thématique de l’aménagement des espaces urbains selon une approche qui tient compte des problématiques se rapportant au logement, transport, accès à l’eau et l’électricité, l’emploi et la qualité de vie." %}
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="row py-5"> 
+                {% for mooc in moocs %}
+                {% include "home/parts/moocs_vertical_card.html" with url=mooc.url date=mooc.date thumbail=mooc.image title=mooc.title duration=mooc.duration topic=mooc.topic univ_img=mooc.univ_img univ_name=mooc.univ_name %}
+                {% empty %}
+                    <div class="row justify-content-center text-white">
+                        <div class="col-12 col-lg-3 text-center">
+                            <div class="position-relative h1">{% translate "À découvrir" %}<br>
+                                {% translate "prochainement" %}
+                                <span class="dash-accent"></span>
+                            </div> 
+                        </div>
+                        <div class="col-12 col-lg-7 px-lg-5 pt-4">
+                            <p>{% translate "Soyez le premier à être informé de la mise en ligne de notre catalogue de cours en vous inscrivant au formulaire ci-dessous :" %}</p> 
+                            
+                            <div class="moocs-waiting-list pb-3">
+                                <form>
                                     <div class="row">
-                                        <div class="col-12 col-md-9 mb-2 mb-md-0 px-0">
-                                            <input class="form-control form-control-lg rounded-0"
-                                                   type="text"
-                                                   placeholder="{% translate 'EX: Architecture specialization' %}"/>
+                                        <div class="col-12 col-lg-5 mt-3"> 
+                                            <input type="text" class="form-control" placeholder="Votre nom et prénoms" >
                                         </div>
-                                        <div class="col-12 col-md-3 px-0">
-                                            <button class="col-12 btn search-btn btn-lg float-start rounded-0 text-white"
-                                                    type="submit">
-                                                {% translate "Search" %}
-                                            </button>
+                                        <div class="col-12 col-lg-5 mt-3"> 
+                                            <input type="email" class="form-control" placeholder="Votre email">
+                                        </div>
+                                        <div class="col-12 col-lg-2 mt-3"> 
+                                            <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "S'inscrire" %}</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
+
                         </div>
                     </div>
-                </div>
+                {% endfor %} 
+            </div>  
+            {% if moocs %}
+            <div class="my-5 text-center">
+                <a href="#" class="btn btn__primary btn__big btn-arrow">
+                    {% translate "View all courses" %}<i class="fas fa-arrow-right mx-2"></i>
+                </a>
             </div>
+            {% endif %} 
         </div>
-    </header>
-    <!-- Start Courses Area -->
-    <div class="py-5 text-center bg-light" id="courses">
-        <div class="container courses-container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3">
-                        <h2>{% translate "African cities lab Courses" %}</h2>
-                        {% comment %}
-                            <h6 class="mt-2">{% translate "Check the latest courses" %}</h6>
-                        {% endcomment %}
+    </section>
+
+     <!-- Start Topics Area--> 
+     <section class="explore-topic position-relative py-5">
+        
+        <div class="container p-md-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10 text-center"> 
+                    <h3 class="section-title mb-3">{% translate "Thématiques abordées" %}</h3>
+
+                    <div class="font-size-18 my-3">
+                        {% translate "13 MOOCs – 8 thématiques qui abordent des sujets transverses et pluridisciplinaires de la mutation urbaine en Afrique, dans une démarche environnementale durable." %}
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 my-3">
-                    <p>
-                        {% translate "Coming soon..." %}
-                    </p>
-                </div>
-            </div>
-            {% comment %}
-                <div class="col-12 my-3 text-end">
-                    <a class="btn btn-primary rounded-pill opacity-75" href="{% url 'courses' %}">{% translate "View all courses" %}</a>
-                </div>
-            {% endcomment %}
-        </div>
-    </div>
-    <!-- End Courses Area -->
-    <hr class="m-0" />
-    <!-- Start Partners Area-->
-    <div class="text-center py-5 bg-light" id="partners">
-        <div class="container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-5">
-                        <h2>{% translate "Partners" %}</h2>
+
+            <div class="row justify-content-center py-3">
+                <div class="col col-md-10 col-lg-8">
+                    <div class="row justify-content-center">
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Housing</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Digital</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Building</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Climate change</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Planning</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Urban System</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Gouvernance</span></a>
+                        </div> 
+                        <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                            <a href="#" class="card topic-item"><span>Energy</span></a>
+                        </div> 
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                {% static "images/assets/partners/epfl.png" as epfl_logo_path %}
-                {% include "home/partner.html" with url="https://epfl.ch" img_path=epfl_logo_path full_name="École Polytechnique Fédérale de Lausanne" %}
-                {% static "images/assets/partners/um6p.png" as um6p_logo_path %}
-                {% include "home/partner.html" with url="https://um6p.ma" img_path=um6p_logo_path full_name="Université Mohammed VI Polytechnique" %}
-                {% static "images/assets/partners/knust.png" as knust_logo_path %}
-                {% include "home/partner.html" with url="https://www.knust.edu.gh" img_path=knust_logo_path full_name="Université des sciences et technologies Kwame Nkrumah" %}
-                {% static "images/assets/partners/semecity.png" as semecity_logo_path %}
-                {% include "home/partner.html" with url="https://semecity.bj/en" img_path=semecity_logo_path full_name="Sèmè City" %}
-                {% static "images/assets/partners/ucar.png" as ucar_logo_path %}
-                {% include "home/partner.html" with url="http://www.ucar.rnu.tn" img_path=ucar_logo_path full_name="Université de Carthage" %}
-                {% static "images/assets/partners/uct.png" as uct_logo_path %}
-                {% include "home/partner.html" with url="https://www.uct.ac.za" img_path=uct_logo_path full_name="Université de Cape Town" %}
-                {% static "images/assets/partners/ur.png" as ur_logo_path %}
-                {% include "home/partner.html" with url="https://ur.ac.rw" img_path=ur_logo_path full_name="Université du Rwanda" %}
-            </div>
+                </div> 
+            </div> 
         </div>
-    </div>
-    <!-- End Partners Area -->
+    </section> 
+    <!-- End Topics Section -->
+
+
     <!-- Start News Section -->
-    <section class="text-center section-ptb py-5" id="news">
-        <div class="container">
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div class="col-1 d-flex justify-content-center bg-light rounded-pill opacity-100">
-                    <hr class="col-10 section-divider my-0 rounded-pill opacity-100 thick" />
-                </div>
+    <section class="latest-article bg-light pb-5">
+        <div class="container py-5">
+            <div class="row pt-5 pb-4 align-items-start">
+                <div class="col-12 col-md-8">
+                    <h3 class="section-title">
+                        {% translate "Latest News" %}
+                    </h3> 
+                    <div class="font-size-18 my-3">
+                        {% translate "Familiarisez-vous avec la thématique du développement urbain et durable en Afrique en explorant nos articles de blog." %}
+                    </div>
+                </div>  
+                <div class="col-12 col-md-4 d-none d-md-block"> 
+                    <a class="float-end btn btn__small btn__primary btn-arrow" role="button" href="{% localized_slugurl 'blog' %}">{% translate "All articles" %}<i class="fas fa-arrow-right mx-2"></i></a>
+                </div> 
             </div>
+
             <div class="row">
-                <div class="col-12">
-                    <div class="section-title mb-3">
-                        <h2>{% translate "News" %}</h2>
-                        <h6 class="mt-2">{% translate "Latest News" %}</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                {% for new in news %}
-                    <div class="col-md-6 mb-2">
-                        <div class="single-blog">
-                            <div class="row p-3">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="blog-img">
-                                        <a href="{{ new.url }}" class="position-relative">
-                                            {% image new.main_image original class="article-image" %}
-                                            <div class="article-pub-date bg-warning text-center py-3">
-                                                <h5 class="mb-0 text-white">{{ new.date|date:"d" }}</h5>
-                                                <p class="mb-0 text-white">
-                                                    {{ new.date|date:"M" }}
-                                                </p>
-                                            </div>
-                                        </a>
-                                        <div class="blog-hover">
-                                            <a href="{{ new.url }}">
-                                                <i class="fa fa-link link-icon"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 mt-3">
-                                    <a href="{{ new.url }}">
-                                        <h5 class="text-black blog-title text-start">{{ new.title }}</h5>
-                                    </a>
-                                    <p class="text-start mt-1">
-                                        {{ new.summary }}
-                                    </p>
-                                </div>
-                            </div>
+                {% for article in blog %} 
+                <div class="col-12 col-lg-4 col-md-6 article-card">
+                    <div class="card border-0">
+                        <div class="card-header article-preview-img p-0"> 
+                            <a href="{{ article.url }}" class="d-block">
+                                {% image article.main_image original %} 
+                            </a>
                         </div>
-                    </div>
+                        <div class="card-body"> 
+                            <div class="article-meta d-flex align-items-center">
+                                <div class="article__date">{{ article.date }}</div>
+                                {% comment %}
+                                <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
+                                <div class="article__category text_primary font-weight-bold"></div> 
+                                {% endcomment %}
+                            </div>  
+                            <h5 class="article-title py-3">
+                                <a href="{{ article.url }}" class="d-block text-black">
+                                    {{ article.title }}
+                                </a> 
+                            </h5>
+                            <div class="article-exerpt">
+                                {{ article.summary }}
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
                 {% empty %}
-                    <div class="col-12 my-3">
-                        <p>
-                            {% translate "Coming soon..." %}
-                        </p>
+                    <div class="col-12 my-5">
+                        <div class="row justify-content-center">
+                            <div class="nothing-to-show h1">
+                                {% translate "nothing" %}<br>
+                                {% translate "to" %}<br>
+                                {% translate "show" %}
+                                <span class="dash-accent"></span>
+                            </div>  
+                        </div> 
                     </div>
                 {% endfor %}
             </div>
-            <div class="col-12 mb-3 mt-3 view-all-button">
-                <a class="btn btn-primary rounded-pill opacity-75"
-                   href="{% localized_slugurl 'news' %}">
-                    {% translate "View all Posts" %}
-                </a>
-            </div>
-        </div>
     </section>
     <!-- End News Section -->
+
+    <!-- Start Partners Area-->
+    <section class="our-partners">
+        {% include "home/parts/partners_section.html" %}
+    </section>
+    <!-- End Partners Area -->
+
+    
 {% endblock content %}

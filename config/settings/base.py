@@ -67,7 +67,7 @@ WAGTAIL = [
     # wagtail localize before forms and redirects
     "wagtail_localize",
     "wagtail_localize.locales",
-    "wagtail.contrib.forms",
+    "wagtail.contrib.forms",  
     "wagtail.contrib.redirects",
     "wagtail.embeds",
     "wagtail.sites",

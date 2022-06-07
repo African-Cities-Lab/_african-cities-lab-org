@@ -17,13 +17,15 @@ class HomeView(generic.TemplateView):
         context = super().get_context_data(**kwargs)
         current_lang = Locale.get_active()
         # Get current language
-        news_model = apps.get_model("home.NewsPage")
-        # Get last 4 news articles
-        latest_news = (
-            news_model.objects.filter(locale=current_lang)
+        blog_model = apps.get_model("home.BlogPage")
+        # Get last 3 news articles
+        latest_article = (
+            blog_model.objects.filter(locale=current_lang)
             .live()
             .public()
-            .order_by("-first_published_at")[:4]
+            .order_by("-first_published_at")[:3]
         )
-        context["news"] = latest_news
+        context["blog"] = latest_article
+        context["moocs"] = []
+        context["topics"] = []
         return context

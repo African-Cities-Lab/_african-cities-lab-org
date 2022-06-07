@@ -2,20 +2,47 @@
 
 // TODO: Create a sticky navbar using jquery
 
-// (function ($) {
-//     "use strict";
+(function ($) {
+    "use strict";
 
-//     /*------------------------------------
-//         Sticky Menu
-//     --------------------------------------*/
-//     var windows = $(window);
-//     windows.on('scroll',function() {
-//         var scroll = windows.scrollTop();
-//         if (scroll < 5) {
-//             $( "#mainNav" ).css( "background-color", "#000000" );
-//         }else{
-//             $( "#mainNav" ).css( "background-color", "black" );
-//         }
-//     });
+    // CHANGE TO STICKY NAV
+    $(window).scroll(function() {
+        var startPx = $(window).scrollTop();
+        startPx >= 50 ? $("#main-nav").addClass("sticky-nav") :  $("#main-nav").removeClass("sticky-nav");
+    });
 
-// })(jQuery);
+    //Partners logo swipper
+    var swiper = new Swiper(".partners-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true, 
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        freeMode: true,
+        pagination: { 
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 60,
+            },
+        },
+    }); 
+
+    //COUNTER
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    }); 
+})(jQuery);
