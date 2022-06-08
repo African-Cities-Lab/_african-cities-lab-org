@@ -88,13 +88,13 @@
                             </li>
                             {% endcomment %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% url 'about' %}">{% translate "A propos" %}</a>
+                                <a class="nav-link" href="{% url 'about' %}">{% translate "About" %}</a>
                             </li> 
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li> 
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% localized_slugurl 'events' %}">{% translate "Evenements" %}</a>
+                                <a class="nav-link" href="{% localized_slugurl 'events' %}">{% translate "Events" %}</a>
                             </li>
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'contact' %}">{% translate "Contact" %}</a>
@@ -155,10 +155,10 @@
                         <div class="col-12 col-lg-7 order-2 order-lg-1">
                             <div class="row">
                                 <div class="col-6 col-sm-4">
-                                    <h5 class="footer__col-title my-3">{% translate "A propos" %}</h5>
+                                    <h5 class="footer__col-title my-3">{% translate "Get to know us" %}</h5>
                                     <ul class="footer-menu list-unstyled">
                                         <li>
-                                            <a href="{% url 'about' %}">{% translate "A propos" %}</a>
+                                            <a href="{% url 'about' %}">{% translate "About" %}</a>
                                         </li>
                                         {% comment %}
                                         <li>
@@ -170,7 +170,7 @@
                                         </li>
                                        
                                         <li>
-                                            <a href="{% localized_slugurl 'events' %}">{% translate "Evenements" %}</a>
+                                            <a href="{% localized_slugurl 'events' %}">{% translate "Events" %}</a>
                                         </li>
                                         <li>
                                             <a href="{% localized_slugurl 'contact' %}">{% translate "Contact" %}</a> 
@@ -197,7 +197,7 @@
                                 </div>
                                 {% endcomment %}
                                 <div class="col-6 col-sm-4">
-                                    <h5 class="footer__col-title my-3">{% translate "Terms" %}</h5>
+                                    <h5 class="footer__col-title my-3">{% translate "Legal" %}</h5>
                                     <ul class="footer-menu list-unstyled">
                                         <li>
                                             <a href="{% localized_slugurl 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>

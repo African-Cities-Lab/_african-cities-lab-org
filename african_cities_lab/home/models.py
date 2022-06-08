@@ -19,8 +19,7 @@ class HomePage(MetadataPageMixin, Page):
         "home.EventsIndexPage",  
         "home.ContactPage",
         "home.GdprPage",
-        "home.TermsPage",
-        
+        "home.TermsPage", 
     ]
     parent_page_type = [
         "wagtailcore.Page",

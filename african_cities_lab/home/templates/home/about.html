@@ -11,7 +11,7 @@
     {{ block.super }}
     <style>
         .page-banner__right { 
-            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern-3.jpeg' %});
+            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern.png' %});
         } 
         .acl-conference {
             background-image: url({% static 'images/assets/conference-bg.jpg' %});
@@ -22,16 +22,16 @@
 {% block content %}
 
     <section class="page-banner__area"> 
-        <div class="container-fluid position-relative pr-lg-0">
-            <div class="row justify-content-center justify-content-md-between align-item-center">
+        <div class="container-fluid position-relative">
+            <div class="row justify-content-center justify-content-lg-between align-item-center">
 
-                <div class="col-lg-7 p-5 p-md-3 align-self-center">
-                    <span class="font-weight-bold font-size-3em">{% translate "En 2050, les villes africaines abriteront" %}
-                        <span class="text_primary">{% translate "1 milliard d’habitants" %}</span>,
+                <div class="col-lg-6 p-5 align-self-center">
+                    <span class="font-weight-bold font-size-2-25em">{% translate "By 2050, African cities will be populated by" %}
+                        <span class="text_primary">{% translate "1 billion people" %}</span>,
                     </span>
-                    <span class="font-size-18">{% translate "soit le double de la population actuelle." %}</span>
+                    <span class="font-size-18">{% translate "more than twice the current population." %}</span>
                     <p class="font-size-18 pt-3">
-                        {% translate "L’urbanisation accéléré du continent présente des enjeux majeurs en terme de lutte contre les inégalités et le réchauffement climatique qu’il faudra adresser." %} 
+                        {% translate "The fast urbanization of the continent presents major challenges in terms of the fight against inequalities and global warming that must be resolved." %} 
                     </p>
 
                     <div class="banner-angle__left"> 
@@ -44,70 +44,69 @@
         </div> 
     </section>
 
-    <section class="pt-5 position-relative">
-        <div class="acl-sharpes red-left__sharpe">
+    <section class="p-5 position-relative">
+        <!--div class="acl-sharpes red-left__sharpe">
             <img class="d-none d-lg-block" src="{% static 'images/assets/red-sharpe-left.svg' %}">
-        </div>  
-        <div class="container p-lg-5">
-            <div class="row justify-content-around ">
-                <div class="col-12 col-md-4">
-                     <h2 class="section-title mb-3">{% translate "Notre Mission" %}</h2>
+        </div-->  
+        <div class="container-fluid pt-5">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-3 col-lg-4">
+                    <img class="d-none d-lg-block" src="{% static 'images/assets/building.png' %}">
                 </div>
-                <div class="col-12 col-md-8 col-lg-6 pt-4">
-                    <h3 class="text_primary">{% translate "Construire la  ville africaine  de demain" %}</h3>
+                <div class="col-12 col-md-9 col-lg-8 p-5">
+
+                    <h2 class="section-title mb-3">{% translate "Our Mission" %}</h2>
+
+                    <h3 class="text_primary">{% translate "Building the African city of tomorrow" %}</h3>
                     <p class="py-3 font-size-18 text-justify">
                         {% blocktranslate %}
-                        Nous croyons profondément que le pari de la construction 
-                        de villes africaines durables qui offrent aux population un accès de qualité aux 
-                        services essentiels ne se fera pas sans une formation adéquate des acteurs de la 
-                        ville africaine de demain. C’est pourquoi nous avons créé la plus grande plateforme
-                        d’apprentissage en ligne sur la thématique du développement urbain et durable en 
-                        Afrique.
+                        We deeply believe that the challenge of building sustainable African cities 
+                        that offer the population quality access to essential services essential 
+                        services will not be achieved without an adequate training of the actors 
+                        of the African city of tomorrow. This is why we have created the largest 
+                        online learning platform learning platform on the theme of urban and sustainable 
+                        development in Africa.
                         {% endblocktranslate %} 
                     </p> 
-                 </div> 
-            </div>
-        </div>
-    </section>
 
-    <section class="acl-section__counter">
-        <div class="container">
-             <div class="banner-counter row justify-content-center text-center">
-                 <div class="stats-item col-md-4 col-lg-3 mt-3">
-                     <h3 class="stats-title">
-                         <span class="counter" >3000</span>
-                     </h3>
-                     <span class="banner-counter-title font-size-18">{% translate "Professionnels formés en 2023" %}</span>
-                 </div>
-                 <div class="stats-item col-md-4 col-lg-3 mt-3">
-                     <h3 class="stats-title">
-                         <span class="counter">13</span>
-                     </h3>
-                     <span class="banner-counter-title font-size-18">{% translate "Moocs publiés en 2023" %}</span>
+                    <div class="banner-counter row justify-content-center justify-content-md-between text-center mt-5">
+                        <div class="stats-item col-md-4 col-lg-3 mt-3">
+                            <h3 class="stats-title">
+                                <span class="counter" >3000</span>
+                            </h3>
+                            <span class="banner-counter-title font-size-18">{% translate "Professionals trained in 2023" %}</span>
+                        </div>
+                        <div class="stats-item col-md-4 col-lg-3 mt-3">
+                            <h3 class="stats-title">
+                                <span class="counter">13</span>
+                            </h3>
+                            <span class="banner-counter-title font-size-18">{% translate "Moocs released in 2023" %}</span>
+                        </div> 
+                        <div class="stats-item col-md-4 col-lg-3 mt-3">
+                            <h3 class="stats-title">
+                                <span class="counter">6</span>
+                            </h3>
+                            <span class="banner-counter-title font-size-18">{% translate "African university partners" %}</span>
+                        </div>  
+                    </div> 
                  </div> 
-                 <div class="stats-item col-md-4 col-lg-3 mt-3">
-                     <h3 class="stats-title">
-                         <span class="counter">6</span>
-                     </h3>
-                     <span class="banner-counter-title font-size-18">{% translate "Universités africaines partenaires" %}</span>
-                 </div>  
-             </div> 
+            </div> 
         </div>
-    </section>
+    </section> 
 
 
     <section class="py-5">
         <div class="container p-md-5">
              <div class="row d-flex justify-content-center">
                  <div class="col-12 col-lg-10 text-center"> 
-                     <h3 class="section-title">{% translate "La Plateforme ACL" %}</h3>
+                     <h3 class="section-title">{% translate "The ACL Platform" %}</h3>
 
                      <div class="font-size-18 py-3">
                         {% blocktranslate %}
-                        La plateforme d'e-learning African Cities Lab est accessible depuis l'Afrique francophone et 
-                        anglophone. Elle permet à tous les acteurs impliqués dans la construction, le développement 
-                        et l'exploitation des zones urbaines d'accéder à des contenus pédagogiques de qualité sur 
-                        l'urbanisation durable répondant aux défis des villes africaines de 2050.
+                        The African Cities Lab e-learning platform is accessible from French and 
+                        English-speaking Africa. It allows all actors involved in the construction, 
+                        development and operation of urban areas to access quality educational content
+                        on sustainable urbanization to meet the challenges of African cities of 2050.
                         {% endblocktranslate %} 
                      </div>
                  </div>
@@ -120,15 +119,14 @@
                      <div class="card"> 
                          <div class="card-body">  
                              <h3 class="feature-card__title text_primary py-3" >
-                                {% translate "Les Moocs" %}
+                                {% translate "The MOOCs" %}
                              </h3>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                C’est une offre de cours en ligne, accessible gratuitement, qui aborde 
-                                les questions de l’aménagement de l’espace urbain dans tous ses aspects. 
-                                Les cours proposés sur la plateforme sont divisés en treize (13) thématiques 
-                                et dispensés par des experts des universités de 6 pays d’Afrique Francophone 
-                                et Anglophone.
+                                It is an online course offer, accessible free of charge, which addresses 
+                                the issues of urban space planning in all its aspects. The courses offered 
+                                on the platform are divided into thirteen (13) themes and taught by experts 
+                                from universities in six (6) French and English-speaking African countries.
                                 {% endblocktranslate %} 
                              </p>
                          </div> 
@@ -138,14 +136,13 @@
                      <div class="card"> 
                          <div class="card-body">  
                              <h3 class="feature-card__title text_primary py-3">
-                                {% translate "Les formations continues en ligne" %}
+                                {% translate "Online training courses" %}
                              </h3>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                Ce sont des cours approfondis, destinés à un public d’experts avec 
-                                pour objectif de faire évoluer les pratiques professionnelles des 
-                                acteurs impliqués dans la construction des villes africaines d’aujourd’hui 
-                                et de demain.
+                                These are in-depth courses, intended for a public of experts with with the 
+                                objective of improving the professional practices of the actors actors involved 
+                                in the construction of African cities of today and tomorrow. of today and tomorrow.
                                 {% endblocktranslate %} 
                              </p>
                          </div> 
@@ -155,7 +152,7 @@
                      <div class="card"> 
                          <div class="card-body">  
                              <h3 class="feature-card__title text_primary py-3">
-                                {% translate "Les formations continues hybrides" %}
+                                {% translate "Hybrid training courses" %}
                              </h3>
                              <p class="feature-card__exerpt">
                                  
@@ -179,17 +176,17 @@
             <div class="row p-3 p-md-5">
                 <div class="col-12 col-lg-8 pt-lg-3">
                     <h3 class="section-title">
-                        {% translate "La Conférence Internationale des Villes Africaines (CIVA)" %}
+                        {% translate "The International Conference of African Cities (ICAC)" %}
                     </h3>
                     <div class="font-size-18 py-3">
                         {% blocktranslate %}
-                            Les villes digitales africaines sont présentées comme une réponse rationnelle aux projections démographiques futures. Remettant en question la vision actuelle des villes en Afrique, 
-                            les villes digitales semblent être des acteurs majeurs de l'urbanisation de l'Afrique.
-                            African Cities Lab crée la « Conférence Internationale sur les Villes Africaines (CIVA) – 
-                            Villes digitales », événement phare qui vise à accroître la portée et le rayonnement des 
-                            activités de recherche et entrepreneuriale sur le continent africain relative à la numérisation
-                            des villes, ainsi qu’à promouvoir l’excellence scientifique en Afrique.
-                            La première Edition aura lieu en 2023 et se tiendra à Cotonou au Bénin. 
+                        African digital cities are presented as a rational response to future demographic projections.
+                        Challenging the current vision of cities in Africa Digital cities seem to be major players in 
+                        the urbanization of Africa. African Cities Lab creates the "International Conference on African 
+                        Cities (ICAC) - Digital Cities Cities", a major event that aims to increase the scope and 
+                        influence of research and research and entrepreneurial activities on the African continent 
+                        related to the digitization of cities, as well as to promote scientific excellence in Africa. 
+                        The first edition will take place in 2023 and will be held in Cotonou, Benin.
                         {% endblocktranslate %}
                     </div>
                 </div>
@@ -201,23 +198,22 @@
         <div class="container p-lg-5">
             <div class="row d-flex justify-content-center pt-5">
                 <div class="col-12 col-md-10 text-center"> 
-                    <h3 class="section-title">{% translate "Les Webinaires African Cities Lab" %}</h3>
+                    <h3 class="section-title">{% translate "African Cities Lab Webinars" %}</h3>
 
                     <div class="py-3 font-size-18 text-justify">
                         {% blocktranslate %}
-                        A travers une série de 3 webinaires, les partenaires du projet African Cities Lab, 
-                        dirigée par l’EPFL, préparent le terrain pour le dialogue politique et scientifique, 
-                        en prélude de la conférence de Cotonou en 2023. L’objectif est de discuter des grands 
-                        thèmes qui composent la ville digitale africaine afin de poser le cadre du débat politique
-                        et scientifique. Cette série de webinaires présentera des recherches, des tendances, 
-                        des cas et des idées critiques sur la façon dont les villes sont ou pourraient être plus 
-                        efficaces dans l'exploitation du numérique pour atteindre les ODD localement.
+                        Through a series of 3 webinars, the partners of the African Cities Lab project, 
+                        led by EPFL, are setting the table for the political and scientific dialogue in 
+                        the run-up to the Cotonou conference in 2023. The objective is to discuss the 
+                        major themes that make up the African digital city in order to set the framework 
+                        for political and scientific debate. This webinar series will present research, 
+                        trends cases and critical insights on how cities are or could be more effective 
+                        in harnessing effective in leveraging digital to achieve the ODD locally.
                         {% endblocktranslate %} 
                     </div>
                     <div class="my-5 text-center">
-                        <a href="http://localhost:8000/en/events/webinar-integrating-ai-in-the-development-of-smart-cities-in-africa/" 
-                            class="btn btn__primary btn__big btn-arrow">
-                            {% translate "Participer au 1er webinaire" %}<i class="fas fa-arrow-right mx-2"></i>
+                        <a href="" class="btn btn__primary btn__big btn-arrow">
+                            {% translate "Participate to the 1st webinar" %}<i class="fas fa-arrow-right mx-2"></i>
                         </a> 
                     </div>
                 </div>

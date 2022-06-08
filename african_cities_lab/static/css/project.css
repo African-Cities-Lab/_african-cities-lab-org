@@ -505,7 +505,7 @@ optgroup {
 	height: 55px;
 }
 textarea {
-	height: 200px; 
+	height: 130px; 
 }
 form {
 	font-size: 14px;
@@ -595,8 +595,8 @@ a:hover {
 .font-size-18 {
   font-size: 18px;
 }
-.font-size-3em {
-	font-size: 2.85em;
+.font-size-2-25em {
+	font-size: 2.25em;
 }
 .text-justify {
 	text-align: justify;
@@ -764,7 +764,7 @@ a:hover {
 	position: relative;
 	display: block;
 }
-.nav-link:focus, .nav-link:hover {
+a.nav-link:focus, a.nav-link.active, a.nav-link:hover {
 	color: #BE3712 !important;
 }
 
@@ -889,8 +889,8 @@ a.novashare-button {
 	width: 548px;
 }
 .page-banner__area .banner-angle__left { 
-	left: 56%;
-    width: 330px;
+	left: 53%;
+    width: 375px;
 }
 .banner-angle__left {
   position: absolute; 
@@ -915,12 +915,12 @@ a.novashare-button {
     min-height: 450px;
 }
 .home-banner__right > img {
-  width: 670px;
-  height: 488px;
-  object-fit: cover;
-  position: absolute;
-  top: 47px;
-  right: 4%;
+	width: 710px;
+    height: 505px;
+    object-fit: cover;
+    position: absolute;
+    top: 36px;
+    right: 36px;;
 }
 
 .icon-box {
@@ -1263,6 +1263,11 @@ li.events-listing__item .events-listing__desc {
   .page-banner__area {
 	  padding-top: 3rem;
 	  padding-bottom: 3rem;
+  }
+  .post-thumbnail > img, 
+  li.events-listing__item .events-listing__logo,
+  #single-event .event-thumbail {
+	height: auto !important;
   }
 }
 @media (max-width: 992px){

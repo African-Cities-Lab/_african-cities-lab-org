@@ -14,11 +14,11 @@
             <div class="row justify-content-between align-item-center">
                 <div class="col-lg-6 home-banner__left">
                     <div class="home-banner__title h1" >
-                        {% translate "Devenez acteur de la transformation des villes africaines de demain" %} 
+                        {% translate "Become a actor in the transformation of the African cities of tomorrow" %} 
                         <span class="dash-accent"></span>
                     </div> 
                     <p class="my-4 font-size-18">
-                        {% translate "Des formations avancées en ligne pour tirer parti des opportunités et faire face aux défis architecturaux, sociaux et environnementaux des villes africaines de 2050." %}
+                        {% translate "Advanced online training to take advantage of the opportunities and face the architectural, social and environmental challenges of African cities in 2050." %}
                     </p> 
                     {% comment %}
                     <a href="#" class="btn btn__primary btn__small btn-arrow">
@@ -30,7 +30,7 @@
                     </div> 
                 </div>
                 <div class="col-lg-5 home-banner__right"> 
-                    <img src="{% static 'images/assets/banner.jpeg' %}">
+                    <img src="{% static 'images/assets/home.jpg' %}">
                 </div> 
             </div>
         </div> 
@@ -41,10 +41,10 @@
             <div class="row d-flex justify-content-center p-md-5">
                 <div class="col-12 col-lg-10 text-center">
                     <h3 class="section-title">
-                        {% translate "Ce que nous offrons" %}
+                        {% translate "What we offer" %}
                     </h3>
                     <div class="my-3 font-size-18"> 
-                        {% translate "Du contenu pédagogique de qualité sous un format MOOC pour comprendre et apporter des solutions pratiques aux enjeux que présente l’urbanisation accélérée du continent Africain" %}
+                        {% translate "Top quality educational content in a MOOC format to understand and provide practical solutions to the challenges presented by the accelerated urbanization of the African continent" %}
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                                 <h5>{% translate "13 MOOCs" %}</h5>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "Un catalogue de cours vidéos dispensés par des intervenants africains, experts chacun dans leur domaine, allant de l’éco-construction à la gestion des déchets." %} 
+                                {% translate "A collection of video courses given by African speakers, each one an expert in his or her field, ranging from eco-construction to waste management." %} 
                             </div> 
                         </div> 
                     </div>  
@@ -78,10 +78,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "Apprennez des experts" %}</h5>
+                                <h5>{% translate "Learn from the experts" %}</h5>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "+ 20 Experts Intervenants du développement urbain et durable en Afrique" %} 
+                                {% translate "+ 20 Experts Intervenants of urban and sustainable development in Africa" %} 
                             </div> 
                         </div>  
                     </div>    
@@ -93,10 +93,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "6 Universités / Partenaires Africaines" %}</h5>
+                                <h5>{% translate "6 African Universities/Partners" %}</h5>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "Qui s’unissent pour transmettre leurs connaissances sur les problématiques urbaines des villes africaines de demain." %} 
+                                {% translate "Who join efforts to share their knowledge on the urban issues of tomorrow's African cities." %} 
                             </div> 
                         </div>
                     </div>     
@@ -108,10 +108,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "Une grande communauté" %}</h5>
+                                <h5>{% translate "A wide community" %}</h5>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "1 communauté active de + 2000 acteurs et témoins soucieux du cadre de vie qu’offriront les villes africaines à leurs populations en 2050." %} 
+                                {% translate "1 active community of more than 2000 actors and experts concerned about the living environment that African cities will offer to their populations in 2050." %} 
                             </div>  
                         </div> 
                     </div>    
@@ -126,11 +126,11 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-10 text-center"> 
                     <h3 class="section-title text-white">
-                        {% translate "Nos MOOCs" %}
+                        {% translate "Our MOOCs" %}
                     </h3>
 
                     <div class="font-size-18 text-white my-3">
-                        {% translate "Nous balayons toute la thématique de l’aménagement des espaces urbains selon une approche qui tient compte des problématiques se rapportant au logement, transport, accès à l’eau et l’électricité, l’emploi et la qualité de vie." %}
+                        {% translate "We cover all aspects of urban development, taking into account issues related to housing, transportation, access to water and electricity, employment and quality of life." %}
                     </div>
                         
                 </div>
@@ -141,25 +141,25 @@
                 {% empty %}
                     <div class="row justify-content-center text-white">
                         <div class="col-12 col-lg-3 text-center">
-                            <div class="position-relative h1">{% translate "À découvrir" %}<br>
-                                {% translate "prochainement" %}
+                            <div class="position-relative h1">{% translate "Coming" %}<br>
+                                {% translate "soon" %}
                                 <span class="dash-accent"></span>
                             </div> 
                         </div>
                         <div class="col-12 col-lg-7 px-lg-5 pt-4">
-                            <p>{% translate "Soyez le premier à être informé de la mise en ligne de notre catalogue de cours en vous inscrivant au formulaire ci-dessous :" %}</p> 
+                            <p>{% translate "To receive notification of our new course catalog, please register on the form below:" %}</p> 
                             
                             <div class="moocs-waiting-list pb-3">
                                 <form>
                                     <div class="row">
                                         <div class="col-12 col-lg-5 mt-3"> 
-                                            <input type="text" class="form-control" placeholder="Votre nom et prénoms" >
+                                            <input type="text" class="form-control" placeholder="{% translate 'Your Fullname' %}" >
                                         </div>
                                         <div class="col-12 col-lg-5 mt-3"> 
-                                            <input type="email" class="form-control" placeholder="Votre email">
+                                            <input type="email" class="form-control" placeholder="{% translate 'Your email here' %}">
                                         </div>
                                         <div class="col-12 col-lg-2 mt-3"> 
-                                            <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "S'inscrire" %}</button>
+                                            <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Suscribe" %}</button>
                                         </div>
                                     </div>
                                 </form>
@@ -185,10 +185,10 @@
         <div class="container p-md-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-10 text-center"> 
-                    <h3 class="section-title mb-3">{% translate "Thématiques abordées" %}</h3>
+                    <h3 class="section-title mb-3">{% translate "Topics covered" %}</h3>
 
                     <div class="font-size-18 my-3">
-                        {% translate "13 MOOCs – 8 thématiques qui abordent des sujets transverses et pluridisciplinaires de la mutation urbaine en Afrique, dans une démarche environnementale durable." %}
+                        {% translate "13 MOOCs - 8 topics that address cross-cutting and multidisciplinary issues of urban transformation in Africa, in an environmentally safe way." %}
                     </div>
                 </div>
             </div>
@@ -197,28 +197,28 @@
                 <div class="col col-md-10 col-lg-8">
                     <div class="row justify-content-center">
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Housing</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Housing" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Digital</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Digital" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Building</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Building" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Climate change</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Climate change" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Planning</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Planning" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Urban System</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Urban System" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Gouvernance</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Gouvernance" %}</span></a>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>Energy</span></a>
+                            <a href="#" class="card topic-item"><span>{% translate "Energy" %}</span></a>
                         </div> 
                     </div>
                 </div> 
@@ -237,7 +237,7 @@
                         {% translate "Latest News" %}
                     </h3> 
                     <div class="font-size-18 my-3">
-                        {% translate "Familiarisez-vous avec la thématique du développement urbain et durable en Afrique en explorant nos articles de blog." %}
+                        {% translate "Learn more about urban and ecology development in Africa by exploring our blog posts." %}
                     </div>
                 </div>  
                 <div class="col-12 col-md-4 d-none d-md-block"> 
