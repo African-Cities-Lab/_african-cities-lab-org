@@ -1,3 +1,18 @@
+terraform {
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2.0"
+    }
+  }
+  cloud {
+    organization = "exaf-epfl"
+    workspaces {
+      tags = ["african-cities-lab-org"]
+    }
+  }
+}
+
 provider "digitalocean" {
   token             = var.do_token
   spaces_access_id  = var.spaces_access_id
