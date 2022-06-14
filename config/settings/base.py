@@ -67,7 +67,7 @@ WAGTAIL = [
     # wagtail localize before forms and redirects
     "wagtail_localize",
     "wagtail_localize.locales",
-    "wagtail.contrib.forms",  
+    "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
     "wagtail.sites",
@@ -290,6 +290,12 @@ WAGTAILSEARCH_BACKENDS = {
         "BACKEND": "wagtail.search.backends.database",
     }
 }
+
+# Mailchimp
+# ------------------------------------------------------------------------------
+MAILCHIMP_API_KEY = env("MAILCHIMP_API_KEY")
+MAILCHIMP_DATA_CENTER = env("MAILCHIMP_DATA_CENTER")
+MAILCHIMP_LIST_ID = env("MAILCHIMP_LIST_ID")
 
 # Your stuff...
 # ------------------------------------------------------------------------------

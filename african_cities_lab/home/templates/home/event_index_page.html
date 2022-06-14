@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+  {% if self.seo_title %}
+    {{ self.seo_title }}
+  {% elif self.title %}
+    {{ title }}
+  {% endif %}
+{% endblock title %}
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-hero__container{
+      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+  <!-- Page banner area-->
+  <section class="page-hero__container">
+    {% include "home/parts/page_header.html" with page_title=title %}
+  </section>
+  <!-- End Page banner area -->
+
+  <section class="upcoming-events">
+
+    <div class="container-lg p-md-5">
+
+      <ul class="events-listing-list">
+
+        <li class="events-listing__item">
+
+          <a href="#" class="d-block">
+
+            {% comment %}
+            <div class="events-listing__logo">
+              {% image event.specific.preview_image original %}
+            </div>
+            {% endcomment %}
+
+            <div class="events-listing__desc">
+
+              <h2 class="event-title">{% translate "Integration of artificial intelligence in the development of smart cities in Africa" %}</h2>
+
+              <p class="event-date py-2 text-black">{% translate "5 July 2022, from 10h to 16h GMT+1" %}</p>
+
+              <p class="event-location text-black font-weight-700">{% translate "Online" %}</p>
+
+              <div class="event-summary pt-3 text-black">
+                {% blocktranslate %}
+                In the era of new technologies, the growth of African cities will be not only sustainable but also smart.
+                The rapid urban growth represents one of the greatest challenges of the 21st century in Africa.
+                In the time where a new paradigm of urban development is taking place, but where intrinsic challenges remain, the role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
+                The application systems of Artificial Intelligence (AI) are presented as a tool to address future demographic projections and the inability of the public sector to respond alone structurally to a strong augmentation of the demand for infrastructure and urban housing services.
+                In this webinar, you will discover:
+                {% endblocktranslate %}
+                <ul>
+                  <li>{% translate "the data availability for AI in African cities" %}</li>
+                  <li>{% translate "the applications of AI in the different aspects of the city" %}</li>
+                  <li>{% translate "the best practices in the implementation of AI in Africa" %}</li>
+                </ul>
+
+		<p><a class="btn btn__primary btn__small" href="{% url 'subscribe' %}" role="button">{% translate "Subscribe to the webinar" %}</a></p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}
