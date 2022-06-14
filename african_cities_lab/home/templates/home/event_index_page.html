@@ -6,75 +6,181 @@
   {% elif self.title %}
     {{ title }}
   {% endif %}
-{% endblock title %}
-{% block css %}
-  {{ block.super }}
-  <style>
-    .page-hero__container{
-      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
-    }
-  </style>
-{% endblock css %}
+{% endblock title %} 
 
 {% block content %}
 
-  <!-- Page banner area-->
-  <section class="page-hero__container">
-    {% include "home/parts/page_header.html" with page_title=title %}
-  </section>
-  <!-- End Page banner area -->
+  <section id="single-event">  
+    <div class="post-hero__container">  
+        <div class="container-fluid">
+            <div class="row align-items-lg-center justify-content-center justify-content-lg-between">
+                <div class="col-12 col-lg-7 py-5 px-3 text-white">
+                    <h1 class="event-title"> {% translate "Integration of artificial intelligence in the development of smart cities in Africa" %} </h1> 
 
-  <section class="upcoming-events">
+                    <div class="event-desc">
+                        <p class="event-datetime pb-4">
+                            <span>{% translate "5 July 2022" %}</span> {% translate "10am - 4pm" %} GMT +1
+                        </p>  
+                        <p class="event-location">{% translate "Online" %}</p>
+                    </div>
+                    <div class="mt-5">
+                        <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
+                            {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-12 col-lg-5 p-4">
+                    <img src="{% static 'images/assets/event/integration-of-artificial-intelligence-in-the-development-of-smart-cities-in-africa.png' %}"> 
+                </div> 
+            </div>  
+        </div>
+    </div>
 
-    <div class="container-lg p-md-5">
-
-      <ul class="events-listing-list">
-
-        <li class="events-listing__item">
-
-            {% comment %}
-            <div class="events-listing__logo">
-              {% image event.specific.preview_image original %}
-            </div>
-            {% endcomment %}
-
-            <div class="events-listing__desc font-size-18">
-
-              <h1 class="font-size-2-5em">{% translate "Integration of artificial intelligence in the development of smart cities in Africa" %}</h1>
-
-              <p class="event-date py-2 text-black">{% translate "5 July 2022, from 10h to 16h GMT+1" %}</p>
-
-              <p class="event-location text-black font-weight-700">{% translate "Online" %}</p>
-
-              <div class="event-summary pt-3 text-black">
-                {% blocktranslate %}
-                In the era of new technologies, the growth of African cities will be not only sustainable but also smart.
-                The rapid urban growth represents one of the greatest challenges of the 21st century in Africa.
-                In the time where a new paradigm of urban development is taking place, but where intrinsic challenges remain, the role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
-                The application systems of Artificial Intelligence (AI) are presented as a tool to address future demographic projections and the inability of the public sector to respond alone structurally to a strong augmentation of the demand for infrastructure and urban housing services.
-                In this webinar, you will discover:
-                {% endblocktranslate %}
-
-                <ul class="pt-4">
+    <div class="container p-3 p-md-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-10">  
+              <div class="event-overview font-size-18">
+                <h3 class="section-title text-center mb-3">{% translate "Overview" %}</h3>
+                <div>
+                  {% blocktranslate %}
+                    In the era of new technologies, the growth of African cities will be not only sustainable but also smart.
+                    The rapid urban growth represents one of the greatest challenges of the 21st century in Africa.
+                    In the time where a new paradigm of urban development is taking place, but where intrinsic challenges remain, the role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
+                    The application systems of Artificial Intelligence (AI) are presented as a tool to address future demographic projections and the inability of the public sector to respond alone structurally to a strong augmentation of the demand for infrastructure and urban housing services.
+                    In this webinar, you will discover:
+                  {% endblocktranslate %} 
+                </div>
+                
+                <ul class="py-4">
                   <li>{% translate "the data availability for AI in African cities" %}</li>
                   <li>{% translate "the applications of AI in the different aspects of the city" %}</li>
                   <li>{% translate "the best practices in the implementation of AI in Africa" %}</li>
                 </ul>
-
-		            <p class="my-5">
-                  <a class="btn btn__primary btn__small" href="{% url 'subscribe' %}" role="button">{% translate "Subscribe to the webinar" %}</a>
-                </p>
               </div>
-            </div>
-        </li>
-      </ul>
-    </div>
-  </section>
 
-  <!-- Start Partners Area-->
+              <div class="event-speakers py-5">
+                <h3 class="section-title text-center mb-3">{% translate "Speakers" %}</h3>
+
+                <div class="row event-speakers__list">
+
+                  <div class="col-12 col-md-6 speakers-card">
+                      <div class="card border-0"> 
+                          <div class="card-header py-4 border-0 bg-white"> 
+                              <img src="{% static 'images/assets/event/Anastasija_Nikiforova.png' %}"> 
+                          </div> 
+                          <div class="card-body">
+                              <h5 class="speakers-name">
+                                Anastasija Nikiforova
+                              </h5>
+                              <div class="speakers-title my-3">
+                                {% translate "Doctor in Computer Science" %}
+                              </div> 
+                              <div class="speakers-function"> 
+                                {% blocktranslate %}
+                                Professor of Information Systems, University of Tartu, Institute of Computer Science, 
+                                European Open Science Cloud (EOSC) Working Group "FAIR metrics and data quality
+                                {% endblocktranslate %} 
+                              </div>
+                          </div> 
+                      </div>
+                  </div>
+                  
+                  <div class="col-12 col-md-6 speakers-card">
+                    <div class="card border-0"> 
+                        <div class="card-header py-4 border-0 bg-white"> 
+                            <img src="{% static 'images/assets/event/Constant CAP.jpg' %}"> 
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="speakers-name">
+                              Constant CAP 
+                            </h5>
+                            <div class="speakers-title my-3">
+                              {% translate "CEO Open data Africa" %}
+                            </div> 
+                            <div class="speakers-function"> 
+                              {% blocktranslate %}
+                               Is the Senior Product Manager at Code for Africa’s “Africa.Sensors” 
+                               environmental monitoring program. He has a Masters degree in Urban and 
+                               Regional Planning from the University of Nairobi, Kenya and an undergraduate 
+                               Education degree in Geography and Mathematics from the same. 
+                              {% endblocktranslate %} 
+                            </div>
+                        </div> 
+                    </div>  
+                  </div>
+
+                  <div class="col-12 col-md-6 speakers-card">
+                    <div class="card border-0"> 
+                      <div class="card-header py-4 border-0 bg-white"> 
+                          <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}"> 
+                      </div> 
+                      <div class="card-body">
+                          <h5 class="speakers-name">
+                            Oualid Ali
+                          </h5>
+                          <div class="speakers-title my-3">
+                            {% translate "CEO Open data Africa" %}
+                          </div> 
+                          <div class="speakers-function"> 
+                            {% blocktranslate %}
+                            Dr. Oualid Ali is the President at the Future Cities Council. 
+                            He's a futurist, technologist, future cities expert, and considered 
+                            as one of the international well-recognized experts in the fields of 
+                            Future foresight, Scenarios planning, Trends watching, Emerging 
+                            technologies & innovations
+                            {% endblocktranslate %} 
+                          </div>
+                      </div> 
+                  </div>  
+                </div>
+
+                <div class="col-12 col-md-6 speakers-card">
+                  <div class="card border-0"> 
+                    <div class="card-header py-4 border-0 bg-white"> 
+                        <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}"> 
+                    </div> 
+                    <div class="card-body">
+                        <h5 class="speakers-name">
+                          Willy Franck SOB
+                        </h5>
+                        <div class="speakers-title my-3">
+                          {% translate "CEO of SOGEFI & World bank consultant" %}
+                        </div> 
+                        <div class="speakers-function"> 
+                          {% blocktranslate %}
+                          Senior Product Manager at Code for Africa’s “Africa.Sensors” environmental 
+                          monitoring program. He has a Masters degree in Urban and Regional Planning 
+                          from the University of Nairobi, Kenya and an undergraduate Education degree 
+                          in Geography and Mathematics.
+                          {% endblocktranslate %} 
+                        </div>
+                    </div> 
+                  </div>
+                </div>
+
+              </div>
+
+              <!--div class="event-agenda font-size-18">
+                <h3 class="section-title text-center mb-3">{% translate "On the agenda" %}</h3>
+
+                <div></div>
+              </div-->
+
+              <div class="my-5 text-center">
+                <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
+                  {% translate "Register now" %}
+                </a>
+              </div> 
+            </div> 
+         </div>
+        </div> 
+    </div>
+</section>
+
+<!-- Start Partners Area-->
   <section class="our-partners">
     {% include "home/parts/partners_section.html" %}
   </section>
-  <!-- End Partners Area -->
+<!-- End Partners Area -->
 
 {% endblock content %}

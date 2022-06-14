@@ -1166,6 +1166,25 @@ li.events-listing__item .events-listing__desc {
 }
 
 /*----------------------------------------*/
+/*  Static page event
+/*----------------------------------------*/
+.event-speakers__list .speakers-card {
+	display: flex;
+	padding: 1rem;
+}
+.event-speakers__list .speakers-card .card {
+	-webkit-box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%);
+}
+.event-speakers__list .speakers-card .card .card-header > img {
+	width: 252px;
+    height: 215px; 
+    border: 1px solid #e5e5e5;
+    object-fit: cover;
+}
+
+
+/*----------------------------------------*/
 /*  About Page
 /*----------------------------------------*/
 .stats-title {
