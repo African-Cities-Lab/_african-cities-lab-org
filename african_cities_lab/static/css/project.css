@@ -595,8 +595,14 @@ a:hover {
 .font-size-18 {
   font-size: 18px;
 }
+.font-size-14 {
+	font-size: 14px;
+}
 .font-size-2-25em {
 	font-size: 2.25em;
+}
+.font-size-2-5em {
+	font-size: 2.5em;
 }
 .text-justify {
 	text-align: justify;
@@ -1179,8 +1185,10 @@ li.events-listing__item .events-listing__desc {
 	background-position: center;
 	background-size: cover; position: relative;
     background-repeat: no-repeat; 
-	min-height: 500px;
+	min-height: 600px;
 	color: #fff;
+	display: flex;
+    align-items: center;
 }
 
 /*----------------------------------------*/
@@ -1213,7 +1221,7 @@ li.events-listing__item .events-listing__desc {
 		font-size: 1.5em;
 	}
 	.home-banner__left { 
-		padding: 3rem;
+		padding: 3rem 1.5rem 2rem 1.5rem !important;
 	} 
 	.home-banner__title {
 		font-size: 2.5em;
@@ -1226,6 +1234,9 @@ li.events-listing__item .events-listing__desc {
 	}
 	.page-hero__container {
 		min-height: 250px;
+	}
+	.text-align-left__max-576 {
+		text-align: left;
 	}
 }
 
@@ -1269,6 +1280,9 @@ li.events-listing__item .events-listing__desc {
   #single-event .event-thumbail {
 	height: auto !important;
   }
+  .font-size-2-5em {
+	  font-size: unset;
+  }
 }
 @media (max-width: 992px){
   li.events-listing__item .events-listing__logo {
@@ -1282,6 +1296,10 @@ li.events-listing__item .events-listing__desc {
   .filter-wrapper {
 	  padding-top: 1.5rem;
 	  padding-bottom: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
   }
 } 
 @media (min-width: 768px) { 

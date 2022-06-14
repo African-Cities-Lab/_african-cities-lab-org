@@ -43,7 +43,7 @@
                     <h3 class="section-title">
                         {% translate "What we offer" %}
                     </h3>
-                    <div class="my-3 font-size-18"> 
+                    <div class="my-3 font-size-18 text-align-left__max-576"> 
                         {% translate "Top quality educational content in a MOOC format to understand and provide practical solutions to the challenges presented by the accelerated urbanization of the African continent" %}
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <div class="icon-box__title">
                                 <h5>{% translate "13 MOOCs" %}</h5>
                             </div> 
-                            <div class="icon-box__desc">
+                            <div class="icon-box__desc text-align-left__max-576">
                                 {% translate "A collection of video courses given by African speakers, each one an expert in his or her field, ranging from eco-construction to waste management." %} 
                             </div> 
                         </div> 
@@ -129,24 +129,24 @@
                         {% translate "Our MOOCs" %}
                     </h3>
 
-                    <div class="font-size-18 text-white my-3">
+                    <div class="font-size-18 text-white my-3 text-align-left__max-576">
                         {% translate "We cover all aspects of urban development, taking into account issues related to housing, transportation, access to water and electricity, employment and quality of life." %}
                     </div>
                         
                 </div>
             </div>
-            <div class="row py-5"> 
+            <div class="row justify-content-center py-5"> 
                 {% for mooc in moocs %}
-                {% include "home/parts/moocs_vertical_card.html" with url=mooc.url date=mooc.date thumbail=mooc.image title=mooc.title duration=mooc.duration topic=mooc.topic univ_img=mooc.univ_img univ_name=mooc.univ_name %}
+                    {% include "home/parts/moocs_vertical_card.html" with url=mooc.url date=mooc.date thumbail=mooc.image title=mooc.title duration=mooc.duration topic=mooc.topic univ_img=mooc.univ_img univ_name=mooc.univ_name %}
                 {% empty %}
                     <div class="row justify-content-center text-white">
-                        <div class="col-12 col-lg-3 text-center">
+                        <div class="col-8 col-lg-3 text-center">
                             <div class="position-relative h1">{% translate "Coming" %}<br>
                                 {% translate "soon" %}
                                 <span class="dash-accent"></span>
                             </div> 
                         </div>
-                        <div class="col-12 col-lg-7 px-lg-5 pt-4">
+                        <div class="col-10 col-lg-7 px-lg-5 pt-4">
                             <p>{% translate "To receive notification of our new course catalog, please register on the form below:" %}</p> 
                             
                             <div class="moocs-waiting-list pb-3">
@@ -158,7 +158,7 @@
                                         <div class="col-12 col-lg-5 mt-3"> 
                                             <input type="email" class="form-control" placeholder="{% translate 'Your email here' %}">
                                         </div>
-                                        <div class="col-12 col-lg-2 mt-3"> 
+                                        <div class="col-12 col-lg-2 mt-3 text-center"> 
                                             <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Suscribe" %}</button>
                                         </div>
                                     </div>
@@ -187,7 +187,7 @@
                 <div class="col-12 col-lg-10 text-center"> 
                     <h3 class="section-title mb-3">{% translate "Topics covered" %}</h3>
 
-                    <div class="font-size-18 my-3">
+                    <div class="font-size-18 my-3 text-align-left__max-576">
                         {% translate "13 MOOCs - 8 topics that address cross-cutting and multidisciplinary issues of urban transformation in Africa, in an environmentally safe way." %}
                     </div>
                 </div>

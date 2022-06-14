@@ -32,17 +32,15 @@
 
         <li class="events-listing__item">
 
-          <a href="#" class="d-block">
-
             {% comment %}
             <div class="events-listing__logo">
               {% image event.specific.preview_image original %}
             </div>
             {% endcomment %}
 
-            <div class="events-listing__desc">
+            <div class="events-listing__desc font-size-18">
 
-              <h2 class="event-title">{% translate "Integration of artificial intelligence in the development of smart cities in Africa" %}</h2>
+              <h1 class="font-size-2-5em">{% translate "Integration of artificial intelligence in the development of smart cities in Africa" %}</h1>
 
               <p class="event-date py-2 text-black">{% translate "5 July 2022, from 10h to 16h GMT+1" %}</p>
 
@@ -56,16 +54,18 @@
                 The application systems of Artificial Intelligence (AI) are presented as a tool to address future demographic projections and the inability of the public sector to respond alone structurally to a strong augmentation of the demand for infrastructure and urban housing services.
                 In this webinar, you will discover:
                 {% endblocktranslate %}
-                <ul>
+
+                <ul class="pt-4">
                   <li>{% translate "the data availability for AI in African cities" %}</li>
                   <li>{% translate "the applications of AI in the different aspects of the city" %}</li>
                   <li>{% translate "the best practices in the implementation of AI in Africa" %}</li>
                 </ul>
 
-		<p><a class="btn btn__primary btn__small" href="{% url 'subscribe' %}" role="button">{% translate "Subscribe to the webinar" %}</a></p>
+		            <p class="my-5">
+                  <a class="btn btn__primary btn__small" href="{% url 'subscribe' %}" role="button">{% translate "Subscribe to the webinar" %}</a>
+                </p>
               </div>
             </div>
-          </a>
         </li>
       </ul>
     </div>

@@ -237,7 +237,7 @@ msgstr "voir"
 #: african_cities_lab/templates/base.html:101
 #: african_cities_lab/templates/base.html:179
 msgid "Contact"
-msgstr "COntact"
+msgstr "Contact"
 
 #: african_cities_lab/home/templates/home/contact.html:38
 msgid "Follow us on"
@@ -499,14 +499,14 @@ msgid "Terms & Condition"
 msgstr "Termes & Conditions"
 
 #: african_cities_lab/templates/base.html:218
-msgid "Stay updated with our article"
-msgstr "Restez à jour avec notre article"
+msgid "Stay updated with our newsletter"
+msgstr "Restez à jour avec notre newsletter"
 
 #: african_cities_lab/templates/base.html:220
 msgid ""
 "Stay up to date with all the recent news, updates and new courses by simply "
 "adding your email address to our list. We promise we will never spam you."
-msgstr "Restez au courant de toutes les mises à jour et nouveaux cours en ajoutant simplement votre adresse électronique à notre liste. Nous vous promettons de ne jamais vous spammer."
+msgstr "Restez au courant de toutes nos mises à jour en ajoutant simplement votre adresse électronique à notre liste. Nous vous promettons de ne jamais vous spammer."
 
 #: african_cities_lab/templates/base.html:234
 msgid "Connect with us"
