@@ -97,7 +97,7 @@
                                 <a class="nav-link" href="{% url 'events' %}">{% translate "Events" %}</a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% localized_slugurl 'contact' %}">{% translate "Contact" %}</a>
+                                <a class="nav-link" href="{% url 'contact' %}">{% translate "Contact" %}</a>
                             </li>
                         </ul>
                         <div class="right-header">
@@ -170,10 +170,10 @@
                                         </li>
                                        
                                         <li>
-                                            <a href="{% localized_slugurl 'events' %}">{% translate "Events" %}</a>
+                                            <a href="{% url 'events' %}">{% translate "Events" %}</a>
                                         </li>
                                         <li>
-                                            <a href="{% localized_slugurl 'contact' %}">{% translate "Contact" %}</a> 
+                                            <a href="{% url 'contact' %}">{% translate "Contact" %}</a> 
                                         </li> 
                                     </ul>
                                 </div> 
@@ -200,10 +200,10 @@
                                     <h5 class="footer__col-title my-3">{% translate "Legal" %}</h5>
                                     <ul class="footer-menu list-unstyled">
                                         <li>
-                                            <a href="{% localized_slugurl 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
+                                            <a href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
                                         </li>
                                         <li>
-                                            <a href="{% localized_slugurl 'gdpr' %}">{% translate "GDPR" %}</a>
+                                            <a href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>
                                         </li> 
                                     </ul>
                                 </div>

@@ -14,6 +14,21 @@ urlpatterns = [
         views.EventIndexView.as_view(),
         name="events",
     ),
+    path(
+        "gdpr/",
+        TemplateView.as_view(template_name="home/static_gdpr.html"),
+        name="gdpr",
+    ),
+    path(
+        "terms-conditions/",
+        TemplateView.as_view(template_name="home/static_terms.html"),
+        name="terms-conditions",
+    ),
+    path(
+        "contact/",
+        TemplateView.as_view(template_name="home/static_contact.html"),
+        name="contact",
+    ),
     path("webinar-subscribe/", views.subscribe, name="subscribe"),
     # path(
     #   "contact/",

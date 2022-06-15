@@ -75,6 +75,30 @@ class EventIndexView(generic.TemplateView):
         context = super().get_context_data(**kwargs)
         context["title"] = _("Events")
         return context
+    
+class GdprView(generic.TemplateView):
+    template_name = "home/static_gdpr.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = _("GDPR")
+        return context
+    
+class TermsView(generic.TemplateView):
+    template_name = "home/static_terms.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = _("Terms & Conditions")
+        return context   
+    
+class TermsView(generic.TemplateView):
+    template_name = "home/static_contact.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = _("Contact")
+        return context            
 
 
 def subscribe(request):

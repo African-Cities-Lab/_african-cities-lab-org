@@ -1182,7 +1182,10 @@ li.events-listing__item .events-listing__desc {
     border: 1px solid #e5e5e5;
     object-fit: cover;
 }
-
+.box_shadow_level_1 {
+	box-shadow: 0px 8px 40px -5px rgb(9 31 67 / 10%);
+	padding: 25px 25px 15px 25px !important;
+}
 
 /*----------------------------------------*/
 /*  About Page

@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+  {% if self.seo_title %}
+    {{ self.seo_title }}
+  {% elif self.title %}
+    {{ self.title }}
+  {% else %}
+    {% translate "Contact" %}
+  {% endif %}
+{% endblock title %}
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-hero__container{
+      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+  <!-- Page banner area-->
+  <section class="page-hero__container">
+    <div class="container p-md-5">
+        <div class="row px-lg-5 pt-5 align-items-end">
+            <div class="col">
+                <h1 class="page-hero__title">{% translate "Contact" %}</h1> 
+            </div>
+        </div>
+    </div>  
+    <div class="page-hero__shape">
+        <img src="{% static "images/assets/sharpe-on-hero.svg" %}"> 
+    </div>  
+  </section>
+  <!-- End Page banner area -->
+
+    <section class="py-5">
+        <div class="container p-md-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">  
+                    <h3 class="section-title text-center">{% translate "We’re here to help!" %}</h3>
+                    <div class="text-center font-size-18 mb-5">{% translate "Please contact us in case of any query. We are happy to help" %}.</div> 
+
+                    <div class="row justify-content-around">
+                        <div class="col-12 col-lg-5 col-md-6 icon-box box_shadow_level_1 m-4">
+                            <div class="card"> 
+                                <div class="card-body">
+                                    <div class="icon-box__title">
+                                        <h4>{% translate "Email Us To Get Information" %}</h4>
+                                    </div> 
+                                    <div class="icon-box__desc">
+                                        <a class="d-block text_primary mb-2" href="mailto:info@africancitieslab.org">
+                                            <strong>info@africancitieslab.org</strong>
+                                        </a>
+                                        <a class="d-block text_primary" href="mailto:contact@africancitieslab.org">
+                                            <strong>contact@africancitieslab.org</strong>
+                                        </a>
+                                    </div>  
+                                </div> 
+                            </div>    
+                        </div> 
+                        <div class="col-12 col-lg-5 col-md-6 icon-box box_shadow_level_1 m-4">
+                            <div class="card"> 
+                                <div class="card-body">
+                                    <div class="icon-box__title">
+                                        <h4>{% translate "Follow us on" %}</h4>
+                                    </div> 
+                                    <div class="icon-box__desc">
+                                        <ul class="list-inline my-3 font-size-18">
+                                            <li class="list-inline-item mx-2"><a  href="https://twitter.com/AfricanCtiesLab" class="text_primary"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="list-inline-item mx-2"><a href="https://www.linkedin.com/company/african-cities-lab/?viewAsMember=true" class="text_primary"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li class="list-inline-item mx-2"><a href="https://www.facebook.com/African-Cities-Lab-103073095772023" class="text_primary"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="list-inline-item mx-2"><a href="https://instagram.com/africancitieslab?igshid=YmMyMTA2M2Y=" class="text_primary"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="list-inline-item mx-2"><a href="https://medium.com/@African_Cities_Lab" class="text_primary"><i class="fab fa-medium-m"></i></a></li>
+                                            <li class="list-inline-item mx-2"><a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA" class="text_primary"><i class="fab fa-youtube"></i></a></li>
+                                        </ul>
+                                    </div>  
+                                </div> 
+                            </div>    
+                        </div> 
+                    <div>
+                </div>  
+            </div> 
+        </div>
+    </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}
