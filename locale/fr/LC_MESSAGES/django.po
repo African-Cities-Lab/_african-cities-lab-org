@@ -41,11 +41,11 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/about.html:58
 msgid "Our Mission"
-msgstr "Notre Mission"
+msgstr "Notre mission"
 
 #: african_cities_lab/home/templates/home/about.html:60
-msgid "Building the African city of tomorrow"
-msgstr "Construire la ville africaine de demain"
+msgid "Training new generations of actors to build the African cities of the future"
+msgstr "Former les générations d’acteurs au service des villes africaines de demain"
 
 #: african_cities_lab/home/templates/home/about.html:62
 msgid ""
@@ -64,18 +64,12 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Nous croyons profondément que le pari de la construction de villes "
-"africaines durables \n"
-"qui offrent aux population un accès de qualité aux services essentiels \n"
-"ne se fera pas sans une formation adéquate des acteurs \n"
-"de la ville africaine de demain. C’est pourquoi nous avons créé la plus "
-"grande plateforme d’apprentissage en ligne \n"
-"sur la thématique du développement urbain et durable en Afrique."
+"Nous croyons profondément que le pari de la construction de villes africaines durables qui offrent aux population un accès de qualité aux services essentiels ne se fera pas sans une formation adéquate des acteurs de la ville africaine de demain. C’est pourquoi nous avons créé la plus grande plateforme d’apprentissage en ligne sur la thématique du développement urbain durable et inclusif en Afrique."
 
 
 #: african_cities_lab/home/templates/home/about.html:77
-msgid "Professionals trained in 2023"
-msgstr "Professionnels formés en 2023"
+msgid "Professionals trained in 2024"
+msgstr "Professionnels formés en 2024"
 
 #: african_cities_lab/home/templates/home/about.html:83
 msgid "Moocs released in 2023"
@@ -103,12 +97,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"La plateforme d’e-learning d’African Cities Lab est accessible depuis "
-"l’Afrique francophone et \n"
-"anglophone. Elle permet à toutes les parties prenantes impliquées dans la "
-"construction, l’aménagement et le fonctionnement de zones urbaines, "
-"d’accéder à des contenus pédagogiques de qualité orienté\n"
-"urbanisation durable qui réponde aux enjeux des villes africaines de 2050. "
+"La plateforme d’e-learning d’African Cities Lab est accessible depuis l’Afrique francophone et anglophone. Elle permet à toutes les parties prenantes impliquées dans la construction, l’aménagement et le fonctionnement de zones urbaines, d’accéder à des contenus pédagogiques de qualité orienté urbanisation durable qui réponde aux enjeux des villes africaines de 2050."
 
 #: african_cities_lab/home/templates/home/about.html:122
 msgid "The MOOCs"
@@ -185,16 +174,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Les villes digitales africaines sont présentées comme une réponse "
-"rationnelle aux projections démographiques futures. Remettant en question la "
-"vision actuelle des villes en Afrique, les villes digitales semblent être "
-"des acteurs majeurs de l'urbanisation de l'Afrique. African Cities Lab crée "
-"la « Conférence Internationale sur les Villes Africaines (CIVA) – Villes "
-"digitales », événement phare qui vise à accroître la portée et le "
-"rayonnement des activités de recherche et entrepreneuriale sur le continent "
-"africain relative à la numérisation des villes, ainsi qu’à promouvoir "
-"l’excellence scientifique en Afrique. La première Edition aura lieu en 2023 "
-"et se tiendra à Cotonou au Bénin."
+"Les villes digitales africaines sont présentées comme une réponse rationnelle aux projections démographiques futures. Remettant en question la vision actuelle des villes en Afrique, les villes digitales semblent être des acteurs majeurs de l'urbanisation de l'Afrique. African Cities Lab crée la « Conférence Internationale des Villes Africaines (CIVA) – Villes digitales », événement phare qui vise à accroître la portée et le rayonnement des activités de recherche et entrepreneuriale sur le continent africain relative à la numérisation des villes, ainsi qu’à promouvoir l’excellence scientifique en Afrique. La première Edition aura lieu en 2023 et se tiendra à Cotonou au Bénin."
 
 #: african_cities_lab/home/templates/home/about.html:201
 msgid "African Cities Lab Webinars"
@@ -279,7 +259,7 @@ msgstr "Retrouvez-nous sur"
 
 #: african_cities_lab/home/templates/home/contact.html:54
 msgid "Your Full name"
-msgstr "Votre nom et prénoms"
+msgstr "Votre nom et prénom"
 
 #: african_cities_lab/home/templates/home/contact.html:58
 msgid "E-mail"
@@ -347,18 +327,15 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"A l’ère des nouvelles technologies la croissance des villes africaines sera non seulement durable mais aussi intelligente."
-"La croissance urbaine rapide, représente l’un des plus grands défis du XXIè siècle pour le continent africain. A l’heure où un nouveau paradigme de développement des villes est mis en œuvre mais où des défis intrinsèques demeurent, le rôle des outils digitaux et des villes digitales en tant que moteurs du développement urbain en Afrique est à établir."
-"Les systèmes d’application de l’intelligence artificielle (IA) sont présentés comme un outil d’aide aux projections démographiques futures et à l'incapacité du secteur public à répondre seul structurellement à une forte augmentation de la demande en infrastructures et services de logement urbain."
-"A travers ce webinaire vous découvrirez :"
+"La croissance urbaine rapide, représente l’un des plus grands défis du XXIè siècle pour le continent africain. À l'heure où un nouveau paradigme urbain est mis en œuvre mais où des défis intrinsèques demeurent, il est nécessaire d'asseoir le rôle des villes intelligentes comme moteur du développement urbain et durable en Afrique. Les systèmes d’application de l’intelligence artificielle (IA) sont présentés comme un outil d’aide aux projections démographiques futures et à l'incapacité du secteur public à répondre seul structurellement à une forte augmentation de la demande en infrastructures et services de logement urbain.A travers ce webinaire vous découvrirez :"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:55
 msgid "the data availability for AI in African cities"
-msgstr "La disponibilité de données pour l’intelligence artificielle dans les villes africaines"
+msgstr "L’importance de la collecte et du traitement de données dans la construction de villes intelligentes"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:56
 msgid "the applications of AI in the different aspects of the city"
-msgstr "les applications de l’intelligence artificielle dans les différents aspects de la ville"
+msgstr "Les applications de l’intelligence artificielle dans les différents aspects de la ville"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:57
 msgid "the best practices in the implementation of AI in Africa"
@@ -495,17 +472,14 @@ msgstr "RGPD"
 
 #: african_cities_lab/home/templates/home/home.html:17
 msgid "Become an actor in the transformation of the African cities of tomorrow"
-msgstr "Devenir un acteur de la transformation des villes africaines de demain"
+msgstr "Devenez acteur de la transformation des villes africaines de demain"
 
 #: african_cities_lab/home/templates/home/home.html:21
 msgid ""
 "Advanced online training to take advantage of the opportunities and face the "
 "architectural, social and environmental challenges of African cities in 2050."
 msgstr ""
-"Des formations avancées en ligne pour tirer parti des opportunités et faire "
-"face aux défis architecturaux, sociaux et environnementaux des villes "
-"africaines de 2050."
-
+"Des formations avancées en ligne pour tirer parti des opportunités de l’urbanisation galopante du continent et faire face aux défis architecturaux, sociaux et environnementaux des villes africaines de 2050."
 
 #: african_cities_lab/home/templates/home/home.html:45
 msgid "What we offer"
@@ -530,9 +504,7 @@ msgid ""
 "A collection of video courses given by African speakers, each one an expert "
 "in his or her field, ranging from eco-construction to waste management."
 msgstr ""
-"Un catalogue de cours vidéos dispensés par des intervenants africains, "
-"experts chacun dans leur domaine, allant de l’éco-construction à la gestion "
-"des déchets."
+"Un catalogue de cours vidéos dispensés par des intervenants experts des villes africaines."
 
 #: african_cities_lab/home/templates/home/home.html:82
 msgid "Learn from the experts"
@@ -547,7 +519,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/home.html:97
 msgid "6 African Universities/Partners"
-msgstr "6 Universités / Partenaires Africaines"
+msgstr "6 campus africains partenaires"
 
 #: african_cities_lab/home/templates/home/home.html:100
 msgid ""
@@ -567,8 +539,7 @@ msgid ""
 "living environment that African cities will offer to their populations in "
 "2050."
 msgstr ""
-"1 communauté active de + 2000 acteurs et témoins soucieux du cadre de vie "
-"qu’offriront les villes africaines à leurs populations en 2050."
+"Une communauté active de + 2000 apprenants - acteurs soucieux de la qualité de vie qu’offriront les villes africaines à l’horizon 2050."
 
 #: african_cities_lab/home/templates/home/home.html:130
 msgid "Our MOOCs"
@@ -580,9 +551,7 @@ msgid ""
 "related to housing, transportation, access to water and electricity, "
 "employment and quality of life."
 msgstr ""
-"Nous balayons toute la thématique de l’aménagement des espaces urbains selon "
-"une approche qui tient compte des problématiques se rapportant au logement, "
-"transport, accès à l’eau et l’électricité, l’emploi et la qualité de vie. "
+"Nous abordons toute la thématique de l’aménagement des espaces urbains selon une approche qui tient compte des problématiques transverses de logement, transport, accès à l’eau et l’électricité, emploi et la qualité de vie."
 
 
 #: african_cities_lab/home/templates/home/home.html:145
@@ -604,7 +573,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/home.html:157
 msgid "Your Fullname"
-msgstr "Votre nom et prénoms"
+msgstr "Votre nom et prénom"
 
 #: african_cities_lab/home/templates/home/home.html:160
 msgid "Your email here"
@@ -665,7 +634,7 @@ msgstr "Énergie"
 
 #: african_cities_lab/home/templates/home/home.html:238
 msgid "Latest News"
-msgstr "Dernières articles"
+msgstr "Derniers articles"
 
 #: african_cities_lab/home/templates/home/home.html:241
 msgid ""
@@ -692,12 +661,12 @@ msgid "Our Partners"
 msgstr "Nos Partenaires"
 
 #: african_cities_lab/home/templates/home/static_contact.html:42
-msgid "We’re here to help!"
-msgstr "Nous sommes là pour vous aider !"
+msgid "We’re here to help"
+msgstr "Nous sommes là pour vous aider"
 
 #: african_cities_lab/home/templates/home/static_contact.html:43
 msgid "Please contact us in case of any query. We are happy to help"
-msgstr "Merci de nous contacter en cas de question. Nous sommes heureux de vous aider."
+msgstr "Merci de nous contacter en cas de question. Nous seront heureux de vous aider."
 
 #: african_cities_lab/home/templates/home/static_contact.html:50
 msgid "Email Us To Get Information"
@@ -773,16 +742,14 @@ msgstr "Termes & Conditions"
 
 #: african_cities_lab/templates/base.html:218
 msgid "Stay updated with our newsletter"
-msgstr "Restez à jour avec notre newsletter"
+msgstr "Recevez la newsletter ACL"
 
 #: african_cities_lab/templates/base.html:220
 msgid ""
 "Stay up to date with all the recent news, updates and new courses by simply "
 "adding your email address to our list. We promise we will never spam you."
 msgstr ""
-"Restez au courant de toutes nos mises à jour en ajoutant simplement votre "
-"adresse électronique à notre liste. Nous vous promettons de ne jamais vous "
-"spammer."
+"Restez informés de la mise à jour des cours. Et suivez toute l’actualité de la transformation des villes africaines."
 
 
 #: african_cities_lab/templates/base.html:226
@@ -791,7 +758,7 @@ msgstr "Entrer votre adresse email"
 
 #: african_cities_lab/templates/base.html:234
 msgid "Connect with us"
-msgstr "Connectez-vous à nous"
+msgstr "Suivez-nous"
 
 #: african_cities_lab/templates/base.html:254
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
