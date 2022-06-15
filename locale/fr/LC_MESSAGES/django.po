@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-14 18:48+0000\n"
+"POT-Creation-Date: 2022-06-15 10:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,6 +72,7 @@ msgstr ""
 "grande plateforme d’apprentissage en ligne \n"
 "sur la thématique du développement urbain et durable en Afrique."
 
+
 #: african_cities_lab/home/templates/home/about.html:77
 msgid "Professionals trained in 2023"
 msgstr "Professionnels formés en 2023"
@@ -133,6 +134,7 @@ msgstr ""
 " sur la plateforme sont divisés en treize (13) thématiques et dispensés par "
 "des experts \n"
 "des universités de 6 pays d’Afrique Francophone et Anglophone."
+
 
 #: african_cities_lab/home/templates/home/about.html:139
 msgid "Online training courses"
@@ -227,6 +229,7 @@ msgstr ""
 "idées critiques sur la façon dont les villes sont ou pourraient être plus "
 "efficaces dans l'exploitation du numérique pour atteindre les ODD localement."
 
+
 #: african_cities_lab/home/templates/home/about.html:216
 msgid "Participate to the 1st webinar"
 msgstr "Participer au 1er webinaire"
@@ -261,12 +264,16 @@ msgid "show"
 msgstr "voir"
 
 #: african_cities_lab/home/templates/home/contact.html:9
+#: african_cities_lab/home/templates/home/static_contact.html:9
+#: african_cities_lab/home/templates/home/static_contact.html:28
+#: african_cities_lab/home/views.py:100
 #: african_cities_lab/templates/base.html:101
 #: african_cities_lab/templates/base.html:179
 msgid "Contact"
 msgstr "Contact"
 
 #: african_cities_lab/home/templates/home/contact.html:38
+#: african_cities_lab/home/templates/home/static_contact.html:67
 msgid "Follow us on"
 msgstr "Retrouvez-nous sur"
 
@@ -276,7 +283,7 @@ msgstr "Votre nom et prénoms"
 
 #: african_cities_lab/home/templates/home/contact.html:58
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: african_cities_lab/home/templates/home/contact.html:62
 msgid "Subject"
@@ -351,11 +358,11 @@ msgstr "La disponibilité de données pour l’intelligence artificielle dans le
 
 #: african_cities_lab/home/templates/home/event_index_page.html:56
 msgid "the applications of AI in the different aspects of the city"
-msgstr "Les applications de l’intelligence artificielle dans les différents aspects de la ville"
+msgstr "les applications de l’intelligence artificielle dans les différents aspects de la ville"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:57
 msgid "the best practices in the implementation of AI in Africa"
-msgstr "Les best practices dans l’implémentation de l’IA en Afrique"
+msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:62
 msgid "Speakers"
@@ -379,7 +386,6 @@ msgstr ""
 ""
 
 #: african_cities_lab/home/templates/home/event_index_page.html:98
-#: african_cities_lab/home/templates/home/event_index_page.html:122
 msgid "CEO Open data Africa"
 msgstr "CEO Open data Africa"
 
@@ -387,7 +393,7 @@ msgstr "CEO Open data Africa"
 msgid ""
 "\n"
 "                               Is the Senior Product Manager at Code for "
-"Africa’s Africa.Sensors \n"
+"Africa’s Africa.Sensors\n"
 "                               environmental monitoring program. He has a "
 "Masters degree in Urban and \n"
 "                               Regional Planning from the University of "
@@ -399,6 +405,10 @@ msgstr ""
 "\n"
 "Est le chef de produit principal du programme de surveillance environnementale Africa.Sensors de Code for Africa. Il est titulaire d'une maîtrise en planification urbaine et régionale de l'université de Nairobi, au Kenya, et d'un diplôme de premier cycle en géographie et en mathématiques de la même université."
 
+
+#: african_cities_lab/home/templates/home/event_index_page.html:122
+msgid "Prof. & CEO of Future Cities "
+msgstr "Prof. & CEO de Future Cities "
 
 #: african_cities_lab/home/templates/home/event_index_page.html:125
 msgid ""
@@ -420,7 +430,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/event_index_page.html:147
 msgid "CEO of SOGEFI & World bank consultant"
-msgstr "PDG de SOGEFI et Consultant de la Banque mondiale"
+msgstr "CEO de SOGEFI & Consultant de la Banque mondiale"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:150
 msgid ""
@@ -437,6 +447,7 @@ msgstr ""
 "\n"
 "Rejoint la société SOGEFI France comme responsable développement international, puis comme country manager chargé de mettre en place et gérer la succursale camerounaise du groupe. Il reprend et développe les activités de la succursale, crée une société de droit camerounais et en devient le directeur général en 2016."
 
+
 #: african_cities_lab/home/templates/home/event_index_page.html:164
 msgid "On the agenda"
 msgstr "Au programme"
@@ -451,12 +462,12 @@ msgstr "Nom et prénoms"
 
 #: african_cities_lab/home/templates/home/event_page.html:56
 msgid "Job Title"
-msgstr "Poste"
+msgstr "Fonction"
 
 #: african_cities_lab/home/templates/home/event_page.html:60
 #: african_cities_lab/home/templates/home/webinar_form.html:56
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: african_cities_lab/home/templates/home/event_page.html:64
 msgid "Phone"
@@ -475,12 +486,15 @@ msgid "Events"
 msgstr "Evènements"
 
 #: african_cities_lab/home/templates/home/gdpr.html:9
+#: african_cities_lab/home/templates/home/static_gdpr.html:9
+#: african_cities_lab/home/templates/home/static_gdpr.html:28
+#: african_cities_lab/home/views.py:84
 #: african_cities_lab/templates/base.html:210
 msgid "GDPR"
-msgstr ""
+msgstr "RGPD"
 
 #: african_cities_lab/home/templates/home/home.html:17
-msgid "Become a actor in the transformation of the African cities of tomorrow"
+msgid "Become an actor in the transformation of the African cities of tomorrow"
 msgstr "Devenir un acteur de la transformation des villes africaines de demain"
 
 #: african_cities_lab/home/templates/home/home.html:21
@@ -491,6 +505,7 @@ msgstr ""
 "Des formations avancées en ligne pour tirer parti des opportunités et faire "
 "face aux défis architecturaux, sociaux et environnementaux des villes "
 "africaines de 2050."
+
 
 #: african_cities_lab/home/templates/home/home.html:45
 msgid "What we offer"
@@ -528,6 +543,7 @@ msgid ""
 "+ 20 Experts Intervenants of urban and sustainable development in Africa"
 msgstr ""
 "+ 20 Experts Intervenants du développement urbain et durable en Afrique"
+
 
 #: african_cities_lab/home/templates/home/home.html:97
 msgid "6 African Universities/Partners"
@@ -568,13 +584,14 @@ msgstr ""
 "une approche qui tient compte des problématiques se rapportant au logement, "
 "transport, accès à l’eau et l’électricité, l’emploi et la qualité de vie. "
 
+
 #: african_cities_lab/home/templates/home/home.html:145
 msgid "Coming"
-msgstr "À découvrir"
+msgstr "Disponible"
 
 #: african_cities_lab/home/templates/home/home.html:146
 msgid "soon"
-msgstr "Prochainement"
+msgstr "bientôt"
 
 #: african_cities_lab/home/templates/home/home.html:151
 msgid ""
@@ -583,6 +600,7 @@ msgid ""
 msgstr ""
 "Soyez le premier à être informé de la mise en ligne de notre catalogue en "
 "vous inscrivant au formulaire ci-dessous :"
+
 
 #: african_cities_lab/home/templates/home/home.html:157
 msgid "Your Fullname"
@@ -615,7 +633,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/home.html:201
 msgid "Housing"
-msgstr "Hébergement"
+msgstr "Logement"
 
 #: african_cities_lab/home/templates/home/home.html:204
 msgid "Digital"
@@ -659,7 +677,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/parts/moocs_vertical_card.html:23
 msgid "Topic:"
-msgstr "Sujet"
+msgstr "Thématique"
 
 #: african_cities_lab/home/templates/home/parts/moocs_vertical_card.html:29
 msgid "Duration:"
@@ -673,57 +691,64 @@ msgstr "Commence le"
 msgid "Our Partners"
 msgstr "Nos Partenaires"
 
+#: african_cities_lab/home/templates/home/static_contact.html:42
+msgid "We’re here to help!"
+msgstr "Nous sommes là pour vous aider !"
+
+#: african_cities_lab/home/templates/home/static_contact.html:43
+msgid "Please contact us in case of any query. We are happy to help"
+msgstr "Merci de nous contacter en cas de question. Nous sommes heureux de vous aider."
+
+#: african_cities_lab/home/templates/home/static_contact.html:50
+msgid "Email Us To Get Information"
+msgstr "Envoyez-nous un e-mail pour obtenir des informations"
+
+#: african_cities_lab/home/templates/home/static_terms.html:9
+#: african_cities_lab/home/templates/home/static_terms.html:28
 #: african_cities_lab/home/templates/home/terms.html:9
+#: african_cities_lab/home/views.py:92
 msgid "Terms & Conditions"
 msgstr "Termes & Conditions"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:9
 msgid "Subscribe to webinar"
-msgstr ""
+msgstr "S'inscrire au webinaire"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:48
 msgid "Last name"
-msgstr ""
+msgstr "Prénoms"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:52
-#, fuzzy
-#| msgid "Full name"
 msgid "First name"
-msgstr "Nom et prénoms"
+msgstr "Nom"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:60
 msgid "Institution"
-msgstr ""
+msgstr "Institution"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:64
 msgid "Function"
-msgstr ""
+msgstr "Fonction"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:68
-#, fuzzy
-#| msgid "Job Title"
 msgid "Title"
-msgstr "Poste"
+msgstr "Titre"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:76
 msgid "LinkedIn account"
-msgstr ""
+msgstr "Compte LinkedIn"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:80
-#, fuzzy
-#| msgid "Suscribe"
 msgid "Subscribe"
 msgstr "S'inscrire"
 
-#: african_cities_lab/home/views.py:95
+#: african_cities_lab/home/views.py:119
 msgid "You have successfully subscribed to the webinar. Thank you!"
-msgstr ""
+msgstr "Vous vous êtes inscrit avec succès au webinaire. Merci !"
 
-#: african_cities_lab/home/views.py:101
-#, fuzzy
-#| msgid "Participate to the 1st webinar"
+#: african_cities_lab/home/views.py:125
 msgid "Subscribe to the webinar"
-msgstr "Participer au 1er webinaire"
+msgstr "S'inscrire au webinaire"
 
 #: african_cities_lab/templates/base.html:80
 msgid "Home"
@@ -736,7 +761,7 @@ msgstr "À propos"
 
 #: african_cities_lab/templates/base.html:160
 msgid "Get to know us"
-msgstr "Découvrez-nous"
+msgstr "En savoir plus"
 
 #: african_cities_lab/templates/base.html:204
 msgid "Legal"
@@ -759,11 +784,10 @@ msgstr ""
 "adresse électronique à notre liste. Nous vous promettons de ne jamais vous "
 "spammer."
 
+
 #: african_cities_lab/templates/base.html:226
-#, fuzzy
-#| msgid "Your email here"
 msgid "Enter your email address"
-msgstr "Votre email ici"
+msgstr "Entrer votre adresse email"
 
 #: african_cities_lab/templates/base.html:234
 msgid "Connect with us"
@@ -771,4 +795,4 @@ msgstr "Connectez-vous à nous"
 
 #: african_cities_lab/templates/base.html:254
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
-msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés."
+msgstr ""
