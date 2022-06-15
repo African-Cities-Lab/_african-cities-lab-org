@@ -601,6 +601,9 @@ a:hover {
 .font-size-2-25em {
 	font-size: 2.25em;
 }
+.font-size-2-45em {
+	font-size: 2.45em;
+}
 .font-size-2-5em {
 	font-size: 2.5em;
 }
@@ -906,7 +909,7 @@ a.novashare-button {
 	width: 548px;
 }
 .page-banner__area .banner-angle__left { 
-	left: 53%;
+	left: 57%;
     width: 375px;
 }
 .banner-angle__left {
@@ -1273,7 +1276,7 @@ li.events-listing__item .events-listing__desc {
 		padding: 3rem 1.5rem 2rem 1.5rem !important;
 	} 
 	.home-banner__title {
-		font-size: 2.5em;
+		font-size: 2.28em;
 	}
 	.section-title {
 		font-size: 2.15em;
@@ -1286,6 +1289,9 @@ li.events-listing__item .events-listing__desc {
 	}
 	.text-align-left__max-576 {
 		text-align: left;
+	}
+	.font-size-2-45em {
+		font-size: 2.25em;
 	}
 }
 
