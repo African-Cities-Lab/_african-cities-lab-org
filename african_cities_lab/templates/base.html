@@ -90,9 +90,11 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'about' %}">{% translate "About" %}</a>
                             </li>
+                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
+                            {% endcomment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'events' %}">{% translate "Events" %}</a>
                             </li>
@@ -164,10 +166,11 @@
                                         <li>
                                             <a href="{% url 'careers' %}">{% translate "Careers" %}</a>
                                         </li>
-                                         {% endcomment %}
+                                         
                                         <li>
                                             <a href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                                         </li>
+                                        {% endcomment %}
                                        
                                         <li>
                                             <a href="{% url 'events' %}">{% translate "Events" %}</a>
@@ -227,7 +230,7 @@
                                     </form>
                                 </div>
                                 <div class="social-media__wrapper">
-                                    <span>{% translate "Connect with us" %}</span>
+                                    <span>{% translate "Connect with us :" %}</span>
                                     <ul class="list-inline m-3">
                                         <li class="list-inline-item mx-2"><a  href="https://twitter.com/AfricanCtiesLab" class="text_primary"><i class="fab fa-twitter"></i></a></li>
                                         <li class="list-inline-item mx-2"><a href="https://www.linkedin.com/company/african-cities-lab/?viewAsMember=true" class="text_primary"><i class="fab fa-linkedin-in"></i></a></li>
@@ -247,7 +250,7 @@
                 <div class="container-fluid"> 
                     <div class="row align-items-end p-3">
                         <div class="col">
-                            <p class="font-size-14">{% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}</p>
+                            <p class="font-size-12">{% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}</p>
                         </div> 
                         <div class="col d-flex justify-content-sm-end">
                             <a href="{% localized_slugurl 'home' %}">

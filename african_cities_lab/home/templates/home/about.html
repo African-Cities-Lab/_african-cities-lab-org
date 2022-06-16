@@ -11,7 +11,7 @@
     {{ block.super }}
     <style>
         .page-banner__right { 
-            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern.png' %});
+            background-image: url({% static 'images/assets/header_bg.jpg' %});
         } 
         .acl-conference {
             background-image: url({% static 'images/assets/conference-bg.jpg' %});
@@ -22,49 +22,51 @@
 {% block content %}
 
     <section class="page-banner__area"> 
-        <div class="container-fluid position-relative">
-            <div class="row justify-content-center justify-content-lg-between align-item-center">
-                <div class="col-lg-7 p-lg-5 align-self-center"> 
-                    <p class="font-weight-bold font-size-2-45em">{% translate "By 2050, African cities will be home to " %}
-                        <span class="text_primary">{% translate "2.5 billion people" %}</span>.
-                    </p>
-                    <p class="font-size-18 pt-3">
-                        <span class="font-weight-bold h1">{% translate "700 million" %}</span> {% translate "new homes" %}, 
-                        <span class="font-weight-bold h1">{% translate "300,000 schools" %} </span> 
-                        {% translate "and almost" %}  <span class="font-weight-bold h1">{% translate "100 million" %}</span> {% translate "health centers remain to be built." %}
-                    </p>    
-                    <div class="banner-angle__left"> 
-                        <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
-                    </div>
-
+        <div class="row justify-content-between align-item-center">
+            <div class="page-banner__left"> 
+                <div class="page-banner__title h1">
+                    {% translate "By 2050 , African cities will be home to" %} <span class="text_primary">{% translate "2.5 billion" %}</span> {% translate "people." %}
                 </div>
-                <div class="col-lg-5 d-none d-lg-block page-banner__right"></div>
+                <ul class="banner-text-list">
+                    <li class="banner-text__item one">
+                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "700 million" %}</span>{% translate " new homes" %}</h2>
+                    </li>
+                    <li class="banner-text__item two">
+                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "300,000" %}</span>{% translate "  schools and almost" %}</h2>
+                    </li>
+                    <li class="banner-text__item three">
+                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "100 million" %}</span>{% translate " health centers" %}</h2>
+                    </li>
+                    <li class="banner-text__item four">
+                        <h2 class="bannner__add-text">{% translate "remain to be built." %}</h2>
+                    </li>
+                </ul>
             </div>
-        </div> 
+            <div class="page-banner__right">
+                <div class="d-none d-lg-block banner-angle__left"> 
+                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="p-lg-5 position-relative">
         <!--div class="acl-sharpes red-left__sharpe">
             <img class="d-none d-lg-block" src="{% static 'images/assets/red-sharpe-left.svg' %}">
         </div-->  
-        <div class="container-fluid pt-5">
+        <div class="container-fluid">
             <div class="row justify-content-around">
                 <div class="col-12 col-md-3 col-lg-4">
-                    <img src="{% static 'images/assets/building.png' %}">
+                    <img class="about-mission__img" src="{% static 'images/assets/about-mission.jpg' %}">
                 </div>
-                <div class="col-12 col-md-9 col-lg-8 pt-5 p-lg-5">
+                <div class="col-12 col-md-9 col-lg-8 pt-5 px-lg-5">
 
                     <h2 class="section-title mb-3">{% translate "Our Mission" %}</h2>
 
-                    <h3 class="text_primary">{% translate "Training new generations of actors to build the African cities of the future" %}</h3>
-                    <p class="py-3 font-size-18 text-justify">
+                    <h3 class="text_primary">{% translate "Training a new generation of professionals to build the African cities of the future" %}</h3>
+                    <p class="py-3 font-size-16 text-justify">
                         {% blocktranslate %}
-                        We deeply believe that the challenge of building sustainable African cities 
-                        that offer the population quality access to essential services essential 
-                        services will not be achieved without an adequate training of the actors 
-                        of the African city of tomorrow. This is why we have created the largest 
-                        online learning platform learning platform on the theme of urban and sustainable 
-                        development in Africa.
+                        We believe that the challenge of building sustainable African cities able to offer to the population quality access to essential services will not be achieved without an adequate training of those in charge of the transformation. This is why we have created the largest online learning platform on sustainable urban development in Africa. 
                         {% endblocktranslate %} 
                     </p> 
 
@@ -73,19 +75,19 @@
                             <h3 class="stats-title">
                                 <span>+ </span><span class="counter" >5000</span>
                             </h3>
-                            <span class="banner-counter-title font-size-18">{% translate "Professionals trained in 2024" %}</span>
+                            <span class="banner-counter-title">{% translate "Professionals trained in 2024" %}</span>
                         </div>
                         <div class="stats-item col-md-4 col-lg-3 mt-3">
                             <h3 class="stats-title">
                                 <span class="counter">13</span>
                             </h3>
-                            <span class="banner-counter-title font-size-18">{% translate "Moocs released in 2023" %}</span>
+                            <span class="banner-counter-title">{% translate "Moocs released in 2023" %}</span>
                         </div> 
                         <div class="stats-item col-md-4 col-lg-3 mt-3">
                             <h3 class="stats-title">
                                 <span class="counter">6</span>
                             </h3>
-                            <span class="banner-counter-title font-size-18">{% translate "African university partners" %}</span>
+                            <span class="banner-counter-title">{% translate "African university partners" %}</span>
                         </div>  
                     </div> 
                  </div> 
@@ -94,18 +96,15 @@
     </section> 
 
 
-    <section class="py-5">
+    <section>
         <div class="container p-md-5">
              <div class="row d-flex justify-content-center">
                  <div class="col-12 col-lg-10 text-center"> 
                      <h3 class="section-title">{% translate "The ACL Platform" %}</h3>
 
-                     <div class="font-size-18 py-3 text-align-left__max-576">
+                     <div class="font-size-16 py-3 text-align-left__max-576">
                         {% blocktranslate %}
-                        The African Cities Lab e-learning platform is accessible from French and 
-                        English-speaking Africa. It allows all actors involved in the construction, 
-                        development and operation of urban areas to access quality educational content
-                        on sustainable urbanization to meet the challenges of African cities of 2050.
+                        The African Cities Lab e-learning platform is available in French and English. It allows all stakeholders involved in the construction, development and operation in urban areas to access quality education on sustainable urbanization to meet the 2050 challenges of African cities.
                         {% endblocktranslate %} 
                      </div>
                  </div>
@@ -117,15 +116,12 @@
                  <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
                      <div class="card"> 
                          <div class="card-body">  
-                             <h3 class="feature-card__title text_primary py-3" >
+                             <h5 class="feature-card__title text_primary py-3">
                                 {% translate "The MOOCs" %}
-                             </h3>
+                             </h5>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                It is an online course offer, accessible free of charge, which addresses 
-                                the issues of urban space planning in all its aspects. The courses offered 
-                                on the platform are divided into thirteen (13) themes and taught by experts 
-                                from universities in six (6) French and English-speaking African countries.
+                                We offer online course, free of charge, focused on all aspects of urban space planning. The courses offered on the platform are divided into thirteen (13) themes and taught by experts from universities in six (6) French and English-speaking African countries.
                                 {% endblocktranslate %} 
                              </p>
                          </div> 
@@ -134,14 +130,12 @@
                  <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
                      <div class="card"> 
                          <div class="card-body">  
-                             <h3 class="feature-card__title text_primary py-3">
+                             <h5 class="feature-card__title text_primary py-3">
                                 {% translate "Online training courses" %}
-                             </h3>
+                             </h5>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                These are in-depth courses, intended for a public of experts with with the 
-                                objective of improving the professional practices of the actors actors involved 
-                                in the construction of African cities of today and tomorrow. of today and tomorrow.
+                                These are in-depth courses, designed for professionals involved in the construction of African cities of today and tomorrow who want to improve their professional practice and expertise.
                                 {% endblocktranslate %} 
                              </p>
                          </div> 
@@ -150,12 +144,14 @@
                  <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
                      <div class="card"> 
                          <div class="card-body">  
-                             <h3 class="feature-card__title text_primary py-3">
+                             <h5 class="feature-card__title text_primary py-3">
                                 {% translate "Hybrid training courses" %}
-                             </h3>
+                             </h5>
                              <p class="feature-card__exerpt">
-                                 
-                             </p>
+                                {% blocktranslate %}
+                                Offer deep-dive trainings to key decision makers. The courses are made of an eLearning component to gain foundation knowledge, as well as classroom training and field visits to deepen and contextualise knowledge.
+                                {% endblocktranslate %} 
+                            </p>
                          </div> 
                      </div> 
                  </div> 
@@ -179,13 +175,13 @@
                     </h3>
                     <div class="font-size-18 py-3">
                         {% blocktranslate %}
-                        African digital cities are presented as a rational response to future demographic projections.
-                        Challenging the current vision of cities in Africa Digital cities seem to be major players in 
-                        the urbanization of Africa. African Cities Lab creates the "International Conference on African 
-                        Cities (ICAC) - Digital Cities Cities", a major event that aims to increase the scope and 
-                        influence of research and research and entrepreneurial activities on the African continent 
-                        related to the digitization of cities, as well as to promote scientific excellence in Africa. 
-                        The first edition will take place in 2023 and will be held in Cotonou, Benin.
+                        African digital cities are presented as a rational response to meet the demand 
+                        of future demographic projections. Challenging the current vision of cities in 
+                        Africa, African Cities Lab introduces the "International Conference on African Cities (ICAC) - 
+                        Digital Cities", a major event that aims to fill the knowledge gap and develop 
+                        synergies between research and entrepreneurship on the African continent.  
+                        It is all about accelerating digitization of cities and promoting scientific excellence 
+                        in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin. 
                         {% endblocktranslate %}
                     </div>
                 </div>
@@ -199,20 +195,22 @@
                 <div class="col-12 col-md-10 text-center"> 
                     <h3 class="section-title">{% translate "African Cities Lab Webinars" %}</h3>
 
-                    <div class="py-3 font-size-18 text-justify">
+                    <div class="py-3 font-size-16 text-justify">
                         {% blocktranslate %}
-                        Through a series of 3 webinars, the partners of the African Cities Lab project, 
-                        led by EPFL, are setting the table for the political and scientific dialogue in 
-                        the run-up to the Cotonou conference in 2023. The objective is to discuss the 
-                        major themes that make up the African digital city in order to set the framework 
-                        for political and scientific debate. This webinar series will present research, 
-                        trends cases and critical insights on how cities are or could be more effective 
-                        in harnessing effective in leveraging digital to achieve the ODD locally.
+                        Through a series of 3 webinars, the partners of the African Cities Lab, 
+                        led by EPFL, are setting the table for the political and scientific 
+                        dialogue in the run-up to the Cotonou conference in 2023. 
+                        The objective of these webinars is to discuss the major themes that make
+                        up the African digital city and set the framework for the agenda of the
+                        Conference. This webinar series will present research, trends, use cases 
+                        and critical insights on how cities are or could be more effective in 
+                        harnessing and leveraging digital technologies to promote sustainable 
+                        development and achieve SDGs.
                         {% endblocktranslate %} 
                     </div>
-                    <div class="my-5 text-center">
+                    <div class="mt-5 text-center">
                         <a href="{% url 'events' %}" class="btn btn__primary btn__small btn-arrow">
-                            {% translate "Participate to the 1st webinar" %}<i class="fas fa-arrow-right mx-2"></i>
+                            {% translate "Register for the webinar" %}<i class="fas fa-arrow-right mx-2"></i>
                         </a> 
                     </div>
                 </div>

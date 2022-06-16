@@ -12,24 +12,24 @@
     <section> 
         <div class="home-banner__area">
             <div class="row justify-content-between align-item-center">
-                <div class="col-lg-6 home-banner__left">
+                <div class="home-banner__left">
                     <div class="home-banner__title h1" >
-                        {% translate "Become an actor in the transformation of the African cities of tomorrow" %} 
+                        {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %} 
                         <span class="dash-accent"></span>
                     </div> 
-                    <p class="my-4 font-size-18">
+                    <p class="my-4 font-size-16">
                         {% translate "Advanced online training to take advantage of the opportunities and face the architectural, social and environmental challenges of African cities in 2050." %}
                     </p> 
                     {% comment %}
                     <a href="#" class="btn btn__primary btn__small btn-arrow">
                         {% translate "Explore our MOOCs" %}<i class="fas fa-arrow-right mx-2"></i>
                     </a>  
-                    {% endcomment %}
+                    {% endcomment %} 
+                </div>
+                <div class="home-banner__right"> 
                     <div class="d-none d-lg-block banner-angle__left"> 
                         <img src="{% static 'images/assets/banner-angle-left.svg' %}">
                     </div> 
-                </div>
-                <div class="col-lg-5 home-banner__right"> 
                     <img src="{% static 'images/assets/home.jpg' %}">
                 </div> 
             </div>
@@ -39,12 +39,12 @@
     <section>
         <div class="container pb-5">
             <div class="row d-flex justify-content-center p-md-5">
-                <div class="col-12 col-lg-10 text-center">
+                <div class="col-12 col-lg-8 text-center">
                     <h3 class="section-title">
                         {% translate "What we offer" %}
                     </h3>
-                    <div class="my-3 font-size-18 text-align-left__max-576"> 
-                        {% translate "Top quality educational content in a MOOC format to understand and provide practical solutions to the challenges presented by the accelerated urbanization of the African continent" %}
+                    <div class="my-3 font-size-16 text-align-left__max-576"> 
+                        {% translate "Top quality educational content to understand and provide practical solutions to the challenges presented by the accelerated urbanization of the African continent." %}
                     </div>
                 </div>
             </div>
@@ -60,10 +60,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "13 MOOCs" %}</h5>
+                                <h6>{% translate "13 MOOCs" %}</h6>
                             </div> 
                             <div class="icon-box__desc text-align-left__max-576">
-                                {% translate "A collection of video courses given by African speakers, each one an expert in his or her field, ranging from eco-construction to waste management." %} 
+                                {% translate "A collection of video courses given by African speakers, each one an expert in his or her field, ranging from eco-construction to waste management" %} 
                             </div> 
                         </div> 
                     </div>  
@@ -78,7 +78,7 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "Learn from the experts" %}</h5>
+                                <h6>{% translate "Learn from the experts" %}</h6>
                             </div> 
                             <div class="icon-box__desc">
                                 {% translate "+ 20 Experts Intervenants of urban and sustainable development in Africa" %} 
@@ -93,10 +93,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "6 African Universities/Partners" %}</h5>
+                                <h6>{% translate "6 African Universities" %}</h6>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "Who join efforts to share their knowledge on the urban issues of tomorrow's African cities." %} 
+                                {% translate "Partners of the knowledge hub of the African Cities Lab" %} 
                             </div> 
                         </div>
                     </div>     
@@ -108,10 +108,10 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h5>{% translate "A wide community" %}</h5>
+                                <h6>{% translate "A wide community" %}</h6>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "1 active community of more than 2000 actors and experts concerned about the living environment that African cities will offer to their populations in 2050." %} 
+                                {% translate "An active community of more than 5000 professionals concerned about the living environment that African cities will offer to their populations in 2050" %} 
                             </div>  
                         </div> 
                     </div>    
@@ -129,8 +129,8 @@
                         {% translate "Our MOOCs" %}
                     </h3>
 
-                    <div class="font-size-18 text-white my-3 text-align-left__max-576">
-                        {% translate "We cover all aspects of urban development, taking into account issues related to housing, transportation, access to water and electricity, employment and quality of life." %}
+                    <div class="font-size-16 text-white my-3 text-align-left__max-576">
+                        {% translate "We cover all aspects of urban development, taking into account issues related to housing, employment, transportation, access to water, sanitation, electricity, and quality of life." %}
                     </div>
                         
                 </div>
@@ -147,19 +147,19 @@
                             </div> 
                         </div>
                         <div class="col-10 col-lg-7 px-lg-5 pt-4">
-                            <p>{% translate "To receive notification of our new course catalog, please register on the form below:" %}</p> 
+                            <p>{% translate "To receive notification of our new course catalogue or to register for our newsletter please sign up here:" %}</p> 
                             
                             <div class="moocs-waiting-list pb-3">
                                 <form>
                                     <div class="row">
                                         <div class="col-12 col-lg-5 mt-3"> 
-                                            <input type="text" class="form-control" placeholder="{% translate 'Your Fullname' %}" >
+                                            <input type="text" class="form-control" placeholder="{% translate 'Family Name and First Name' %}" >
                                         </div>
                                         <div class="col-12 col-lg-5 mt-3"> 
                                             <input type="email" class="form-control" placeholder="{% translate 'Your email here' %}">
                                         </div>
                                         <div class="col-12 col-lg-2 mt-3 text-center"> 
-                                            <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Suscribe" %}</button>
+                                            <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
                                         </div>
                                     </div>
                                 </form>
@@ -184,41 +184,41 @@
         
         <div class="container p-md-5">
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-lg-10 text-center"> 
-                    <h3 class="section-title mb-3">{% translate "Topics covered" %}</h3>
+                <div class="col-12 col-lg-8 text-center"> 
+                    <h3 class="section-title mb-3">{% translate "Focus Areas" %}</h3>
 
-                    <div class="font-size-18 my-3 text-align-left__max-576">
+                    <div class="font-size-16 my-3 text-align-left__max-576">
                         {% translate "13 MOOCs - 8 topics that address cross-cutting and multidisciplinary issues of urban transformation in Africa, in an environmentally safe way." %}
                     </div>
                 </div>
             </div>
 
             <div class="row justify-content-center py-3">
-                <div class="col col-md-10 col-lg-8">
+                <div class="col-12 col-lg-10">
                     <div class="row justify-content-center">
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Housing" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Housing" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Digital" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Digital" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Building" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Building" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Climate change" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Climate change" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Planning" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Planning" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Urban System" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Urban System" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Gouvernance" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Gouvernance" %}</span></p>
                         </div> 
                         <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                            <a href="#" class="card topic-item"><span>{% translate "Energy" %}</span></a>
+                            <p class="card topic-item"><span>{% translate "Energy" %}</span></p>
                         </div> 
                     </div>
                 </div> 
@@ -231,18 +231,18 @@
     <!-- Start News Section -->
     <section class="latest-article bg-light pb-5">
         <div class="container py-5">
-            <div class="row pt-5 pb-4 align-items-start">
-                <div class="col-12 col-md-8">
+            <div class="row pt-5 pb-4 justify-content-center">
+                <div class="col-12 col-md-8 text-center">
                     <h3 class="section-title">
                         {% translate "Latest News" %}
                     </h3> 
-                    <div class="font-size-18 my-3">
-                        {% translate "Learn more about urban and ecology development in Africa by exploring our blog posts." %}
+                    <div class="font-size-16 my-3 text-align-left__max-576">
+                        {% translate "Stay up to date with our newsletter and explore our blog posts to learn more about urban and environmental development in Africa." %}
                     </div>
                 </div>  
-                <div class="col-12 col-md-4 d-none d-md-block"> 
+                <!--div class="col-12 col-md-4 d-none d-md-block"> 
                     <a class="float-end btn btn__small btn__primary btn-arrow" role="button" href="{% localized_slugurl 'blog' %}">{% translate "All articles" %}<i class="fas fa-arrow-right mx-2"></i></a>
-                </div> 
+                </div--> 
             </div>
 
             <div class="row">
@@ -277,9 +277,8 @@
                     <div class="col-12 my-5">
                         <div class="row justify-content-center">
                             <div class="nothing-to-show h1">
-                                {% translate "nothing" %}<br>
-                                {% translate "to" %}<br>
-                                {% translate "show" %}
+                                {% translate "Comming" %}<br> 
+                                {% translate "soon" %}
                                 <span class="dash-accent"></span>
                             </div>  
                         </div> 

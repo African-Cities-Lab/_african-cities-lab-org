@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 14:54+0200\n"
+"POT-Creation-Date: 2022-06-16 17:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,61 +19,65 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: african_cities_lab/home/templates/home/about.html:28 
-msgid "By 2050, African cities will be home to "
+msgid "By 2050 , African cities will be home to"
 msgstr "D’ici 2050, les villes africaines abriteront"
 
-#: african_cities_lab/home/templates/home/about.html:29 
-msgid "2.5 billion people"
-msgstr "2,5 milliards d’habitants"
+#: african_cities_lab/home/templates/home/about.html:28
+msgid "2.5 billion"
+msgstr "2,5 milliards"
+
+#: african_cities_lab/home/templates/home/about.html:28
+msgid "people."
+msgstr "d’habitants"
 
 #: african_cities_lab/home/templates/home/about.html:32
 msgid "700 million"
 msgstr "700 millions"
 
 #: african_cities_lab/home/templates/home/about.html:32
-msgid "new homes"
+msgid " new homes"
 msgstr "de nouveaux logements"
 
-#: african_cities_lab/home/templates/home/about.html:33
-msgid "300,000 schools"
-msgstr "300 000 écoles "
+#: african_cities_lab/home/templates/home/about.html:35 
+msgid "300,000"
+msgstr "300 000"
 
-#: african_cities_lab/home/templates/home/about.html:34
-msgid "and almost"
-msgstr "et presque"
+#: african_cities_lab/home/templates/home/about.html:35
+msgid "  schools and almost"
+msgstr " écoles et presque"
 
-#: african_cities_lab/home/templates/home/about.html:34
+#: african_cities_lab/home/templates/home/about.html:38
 msgid "100 million"
 msgstr "100 millions"
 
-#: african_cities_lab/home/templates/home/about.html:34
-msgid "health centers remain to be built."
-msgstr "de centres de santé restent à construire."
+#: african_cities_lab/home/templates/home/about.html:38
+msgid " health centers"
+msgstr "de centre de santé"
 
-#: african_cities_lab/home/templates/home/about.html:57
+#: african_cities_lab/home/templates/home/about.html:41 
+msgid "remain to be built."
+msgstr "restent à construire."
+
+#: african_cities_lab/home/templates/home/about.html:64
 msgid "Our Mission"
 msgstr "Notre mission"
 
-#: african_cities_lab/home/templates/home/about.html:59
+#: african_cities_lab/home/templates/home/about.html:66
 msgid ""
-"Training new generations of actors to build the African cities of the future"
+"Training a new generation of professionals to build the African cities of "
+"the future"
 msgstr ""
 "Former les générations d’acteurs au service des villes africaines de demain"
 
-#: african_cities_lab/home/templates/home/about.html:61
+#: african_cities_lab/home/templates/home/about.html:68 
 msgid ""
 "\n"
-"                        We deeply believe that the challenge of building "
-"sustainable African cities \n"
-"                        that offer the population quality access to "
-"essential services essential \n"
-"                        services will not be achieved without an adequate "
-"training of the actors \n"
-"                        of the African city of tomorrow. This is why we have "
-"created the largest \n"
-"                        online learning platform learning platform on the "
-"theme of urban and sustainable \n"
-"                        development in Africa.\n"
+"                        We believe that the challenge of building "
+"sustainable African cities able to offer to the population quality access to "
+"essential services will not be achieved without an adequate training of "
+"those in charge of the transformation. This is why we have created the "
+"largest online learning platform on sustainable urban development in "
+"Africa. \n"
 "                        "
 msgstr ""
 "\n"
@@ -84,33 +88,30 @@ msgstr ""
 "grande plateforme d’apprentissage en ligne sur la thématique du "
 "développement urbain durable et inclusif en Afrique."
 
-#: african_cities_lab/home/templates/home/about.html:76
+#: african_cities_lab/home/templates/home/about.html:78
 msgid "Professionals trained in 2024"
 msgstr "Professionnels formés en 2024"
 
-#: african_cities_lab/home/templates/home/about.html:82
+#: african_cities_lab/home/templates/home/about.html:84
 msgid "Moocs released in 2023"
 msgstr "MOOCs publiés en 2023"
 
-#: african_cities_lab/home/templates/home/about.html:88
+#: african_cities_lab/home/templates/home/about.html:90
 msgid "African university partners"
 msgstr "Universités africaines partenaires"
 
-#: african_cities_lab/home/templates/home/about.html:101
+#: african_cities_lab/home/templates/home/about.html:103
 msgid "The ACL Platform"
 msgstr "La plateforme ACL"
 
-#: african_cities_lab/home/templates/home/about.html:104
+#: african_cities_lab/home/templates/home/about.html:106 
 msgid ""
 "\n"
 "                        The African Cities Lab e-learning platform is "
-"accessible from French and \n"
-"                        English-speaking Africa. It allows all actors "
-"involved in the construction, \n"
-"                        development and operation of urban areas to access "
-"quality educational content\n"
-"                        on sustainable urbanization to meet the challenges "
-"of African cities of 2050.\n"
+"available in French and English. It allows all stakeholders involved in the "
+"construction, development and operation in urban areas to access quality "
+"education on sustainable urbanization to meet the 2050 challenges of African "
+"cities.\n"
 "                        "
 msgstr ""
 "\n"
@@ -121,21 +122,17 @@ msgstr ""
 "qualité orienté urbanisation durable qui réponde aux enjeux des villes "
 "africaines de 2050."
 
-#: african_cities_lab/home/templates/home/about.html:121
+#: african_cities_lab/home/templates/home/about.html:120
 msgid "The MOOCs"
 msgstr "Les MOOCs"
 
-#: african_cities_lab/home/templates/home/about.html:124
+#: african_cities_lab/home/templates/home/about.html:123 
 msgid ""
 "\n"
-"                                It is an online course offer, accessible "
-"free of charge, which addresses \n"
-"                                the issues of urban space planning in all "
-"its aspects. The courses offered \n"
-"                                on the platform are divided into thirteen "
-"(13) themes and taught by experts \n"
-"                                from universities in six (6) French and "
-"English-speaking African countries.\n"
+"                                We offer online course, free of charge, "
+"focused on all aspects of urban space planning. The courses offered on the "
+"platform are divided into thirteen (13) themes and taught by experts from "
+"universities in six (6) French and English-speaking African countries.\n"
 "                                "
 msgstr ""
 "\n"
@@ -146,19 +143,16 @@ msgstr ""
 "des experts \n"
 "des universités de 6 pays d’Afrique Francophone et Anglophone."
 
-#: african_cities_lab/home/templates/home/about.html:138
+#: african_cities_lab/home/templates/home/about.html:134
 msgid "Online training courses"
 msgstr "Les formations continues en ligne"
 
-#: african_cities_lab/home/templates/home/about.html:141
+#: african_cities_lab/home/templates/home/about.html:137 
 msgid ""
 "\n"
-"                                These are in-depth courses, intended for a "
-"public of experts with with the \n"
-"                                objective of improving the professional "
-"practices of the actors actors involved \n"
-"                                in the construction of African cities of "
-"today and tomorrow. of today and tomorrow.\n"
+"                                These are in-depth courses, designed for "
+"professionals involved in the construction of African cities of today and "
+"tomorrow who want to improve their professional practice and expertise.\n"
 "                                "
 msgstr ""
 "\n"
@@ -167,31 +161,44 @@ msgstr ""
 "impliqués dans la construction des villes africaines d’aujourd’hui et de "
 "demain."
 
-#: african_cities_lab/home/templates/home/about.html:154
+#: african_cities_lab/home/templates/home/about.html:148
 msgid "Hybrid training courses"
 msgstr "Les formations continues hybrides"
 
-#: african_cities_lab/home/templates/home/about.html:178
+#: african_cities_lab/home/templates/home/about.html:151
+msgid ""
+"\n"
+"                                Offer deep-dive trainings to key decision "
+"makers. The courses are made of an eLearning component to gain foundation "
+"knowledge, as well as classroom training and field visits to deepen and "
+"contextualise knowledge.\n"
+"                                "
+msgstr ""
+"\n"
+"Offrir des formations approfondies aux décideurs clés. Les cours sont composés d'une composante eLearning pour acquérir des connaissances de base, ainsi que de formations en présentiel et de visites sur le terrain pour approfondir et contextualiser les connaissances.\n"
+"                                "
+
+#: african_cities_lab/home/templates/home/about.html:174
 msgid "The International Conference of African Cities (ICAC)"
 msgstr "La Conférence Internationale des Villes Africaines (CIVA)"
 
-#: african_cities_lab/home/templates/home/about.html:181
+#: african_cities_lab/home/templates/home/about.html:177 
 msgid ""
 "\n"
 "                        African digital cities are presented as a rational "
-"response to future demographic projections.\n"
-"                        Challenging the current vision of cities in Africa "
-"Digital cities seem to be major players in \n"
-"                        the urbanization of Africa. African Cities Lab "
-"creates the \"International Conference on African \n"
-"                        Cities (ICAC) - Digital Cities Cities\", a major "
-"event that aims to increase the scope and \n"
-"                        influence of research and research and "
-"entrepreneurial activities on the African continent \n"
-"                        related to the digitization of cities, as well as to "
-"promote scientific excellence in Africa. \n"
-"                        The first edition will take place in 2023 and will "
-"be held in Cotonou, Benin.\n"
+"response to meet the demand \n"
+"                        of future demographic projections. Challenging the "
+"current vision of cities in \n"
+"                        Africa, African Cities Lab introduces the "
+"\"International Conference on African Cities (ICAC) - \n"
+"                        Digital Cities\", a major event that aims to fill "
+"the knowledge gap and develop \n"
+"                        synergies between research and entrepreneurship on "
+"the African continent.  \n"
+"                        It is all about accelerating digitization of cities "
+"and promoting scientific excellence \n"
+"                        in Africa. The first edition of the Conference will "
+"take place in 2023 in Cotonou, Benin. \n"
 "                        "
 msgstr ""
 "\n"
@@ -206,27 +213,30 @@ msgstr ""
 "l’excellence scientifique en Afrique. La première Edition aura lieu en 2023 "
 "et se tiendra à Cotonou au Bénin."
 
-#: african_cities_lab/home/templates/home/about.html:200
+#: african_cities_lab/home/templates/home/about.html:196
 msgid "African Cities Lab Webinars"
 msgstr "Les webinaires African Cities Lab"
 
-#: african_cities_lab/home/templates/home/about.html:203
+#: african_cities_lab/home/templates/home/about.html:199 
 msgid ""
 "\n"
 "                        Through a series of 3 webinars, the partners of the "
-"African Cities Lab project, \n"
+"African Cities Lab, \n"
 "                        led by EPFL, are setting the table for the political "
-"and scientific dialogue in \n"
-"                        the run-up to the Cotonou conference in 2023. The "
-"objective is to discuss the \n"
-"                        major themes that make up the African digital city "
-"in order to set the framework \n"
-"                        for political and scientific debate. This webinar "
-"series will present research, \n"
-"                        trends cases and critical insights on how cities are "
-"or could be more effective \n"
-"                        in harnessing effective in leveraging digital to "
-"achieve the ODD locally.\n"
+"and scientific \n"
+"                        dialogue in the run-up to the Cotonou conference in "
+"2023. \n"
+"                        The objective of these webinars is to discuss the "
+"major themes that make\n"
+"                        up the African digital city and set the framework "
+"for the agenda of the\n"
+"                        Conference. This webinar series will present "
+"research, trends, use cases \n"
+"                        and critical insights on how cities are or could be "
+"more effective in \n"
+"                        harnessing and leveraging digital technologies to "
+"promote sustainable \n"
+"                        development and achieve SDGs.\n"
 "                        "
 msgstr ""
 "\n"
@@ -239,13 +249,12 @@ msgstr ""
 "idées critiques sur la façon dont les villes sont ou pourraient être plus "
 "efficaces dans l'exploitation du numérique pour atteindre les ODD localement."
 
-#: african_cities_lab/home/templates/home/about.html:215
-msgid "Participate to the 1st webinar"
-msgstr "Participer au 1er webinaire"
+#: african_cities_lab/home/templates/home/about.html:213
+#: african_cities_lab/home/templates/home/event_page.html:47
+msgid "Register for the webinar"
+msgstr "Inscrivez-vous au webinaire"
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:9
-#: african_cities_lab/templates/base.html:95
-#: african_cities_lab/templates/base.html:172
 msgid "Blog"
 msgstr ""
 
@@ -256,35 +265,33 @@ msgstr "Tous les articles"
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:86
 #: african_cities_lab/home/templates/home/events_index_page.html:60
-#: african_cities_lab/home/templates/home/home.html:282
 msgid "nothing"
 msgstr "Rien"
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:87
 #: african_cities_lab/home/templates/home/events_index_page.html:61
-#: african_cities_lab/home/templates/home/home.html:283
 msgid "to"
 msgstr "à"
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:88
 #: african_cities_lab/home/templates/home/events_index_page.html:62
-#: african_cities_lab/home/templates/home/home.html:284
 msgid "show"
 msgstr "voir"
 
 #: african_cities_lab/home/templates/home/contact.html:9
 #: african_cities_lab/home/templates/home/static_contact.html:9
-#: african_cities_lab/home/templates/home/static_contact.html:28
+#: african_cities_lab/home/templates/home/static_contact.html:31
+#: african_cities_lab/home/templates/home/static_contact.html:44
 #: african_cities_lab/home/views.py:100
-#: african_cities_lab/templates/base.html:101
-#: african_cities_lab/templates/base.html:179
+#: african_cities_lab/templates/base.html:104
+#: african_cities_lab/templates/base.html:183
 msgid "Contact"
 msgstr "Contact"
 
 #: african_cities_lab/home/templates/home/contact.html:38
-#: african_cities_lab/home/templates/home/static_contact.html:67
+#: african_cities_lab/home/templates/home/static_contact.html:83
 msgid "Follow us on"
-msgstr "Retrouvez-nous sur"
+msgstr "Suivez-nous sur"
 
 #: african_cities_lab/home/templates/home/contact.html:54
 msgid "Your Full name"
@@ -307,12 +314,11 @@ msgstr "Votre message"
 msgid "Submit"
 msgstr "Envoyer"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:27
+#: african_cities_lab/home/templates/home/event_index_page.html:25
 msgid "Webinar"
 msgstr "Webinaire"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:29
-#: african_cities_lab/home/templates/home/event_index_page.html:57
+#: african_cities_lab/home/templates/home/event_index_page.html:27
 msgid ""
 "Integration of artificial intelligence in the development of smart cities in "
 "Africa"
@@ -320,33 +326,29 @@ msgstr ""
 "Intégration de l’intelligence artificielle dans le développement des smart "
 "cities en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:33
-#: african_cities_lab/home/templates/home/event_index_page.html:61
+#: african_cities_lab/home/templates/home/event_index_page.html:31
 msgid "5 July 2022"
 msgstr "5 Juillet 2022"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:33
-#: african_cities_lab/home/templates/home/event_index_page.html:61
+#: african_cities_lab/home/templates/home/event_index_page.html:31
 msgid "10am - 4pm"
 msgstr "10h - 16h"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:35
-#: african_cities_lab/home/templates/home/event_index_page.html:63
+#: african_cities_lab/home/templates/home/event_index_page.html:33
 msgid "Online"
 msgstr "En ligne"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:39
-#: african_cities_lab/home/templates/home/event_index_page.html:67
-#: african_cities_lab/home/templates/home/event_index_page.html:209
+#: african_cities_lab/home/templates/home/event_index_page.html:37
+#: african_cities_lab/home/templates/home/event_index_page.html:191
 #: african_cities_lab/home/templates/home/event_page.html:27
 msgid "Register now"
 msgstr "S'inscrire maintenant"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:81
+#: african_cities_lab/home/templates/home/event_index_page.html:54
 msgid "Overview"
 msgstr "Présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:83
+#: african_cities_lab/home/templates/home/event_index_page.html:56
 msgid ""
 "\n"
 "                    In the era of new technologies, the growth of African "
@@ -375,122 +377,133 @@ msgstr ""
 "structurellement à une forte augmentation de la demande en infrastructures "
 "et services de logement urbain.A travers ce webinaire vous découvrirez :"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:93
+#: african_cities_lab/home/templates/home/event_index_page.html:66
 msgid "the data availability for AI in African cities"
 msgstr ""
 "L’importance de la collecte et du traitement de données dans la construction "
 "de villes intelligentes"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:94
+#: african_cities_lab/home/templates/home/event_index_page.html:67
 msgid "the applications of AI in the different aspects of the city"
 msgstr ""
 "Les applications de l’intelligence artificielle dans les différents aspects "
 "de la ville"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:95
+#: african_cities_lab/home/templates/home/event_index_page.html:68
 msgid "the best practices in the implementation of AI in Africa"
 msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:100
+#: african_cities_lab/home/templates/home/event_index_page.html:73
 msgid "Speakers"
 msgstr "Intervenants"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:114
-msgid "Doctor in Computer Science"
-msgstr "Docteur en Informatique"
+#: african_cities_lab/home/templates/home/event_index_page.html:87
+msgid ""
+"Researcher , PhD in Computer Science – Data Processing Systems and Data "
+"Networking"
+msgstr ""
+"Chercheur, Docteur en Informatique,  Systèmes de traitement de données et mise en réseau de données"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:117
+#: african_cities_lab/home/templates/home/event_index_page.html:90
 msgid ""
 "\n"
-"                                Professor of Information Systems, University "
-"of Tartu, Institute of Computer Science, \n"
-"                                European Open Science Cloud (EOSC) Working "
-"Group FAIR metrics and data quality\n"
+"                                Assistant professor of Information Systems "
+"at University of Tartu (Institute of Computer Science), \n"
+"                                a part of European Open Science Cloud Task "
+"Force FAIR Metrics and Data Quality and a visiting \n"
+"                                researcher at Delft University of "
+"Technology, Faculty Technology Policy and Management. \n"
+"                                Expert of the COST – European Cooperation in "
+"Science & Technology, as well as Latvian Council \n"
+"                                of Sciences in Natural Sciences – Computer "
+"Science and Informatics, Engineering and Technology-Electrical \n"
+"                                Engineering, Electronics, Information and "
+"Communication Technologies (ICT), and Social Sciences – Economics and "
+"Business.\n"
 "                                "
 msgstr ""
 "\n"
-"Professeur des Systemes d’Informations, Université de Tartu, Institut de "
-"Sciences Informatiques, Groupe de travail de l'European Open Science Cloud "
-"(EOSC) FAIR metrics and data quality"
+"Professeur adjointe de systèmes d'information à l'Université de Tartu (Institute of Computer Science), membre du groupe de travail européen Open Science Cloud FAIR Metrics and Data Quality et chercheur invitée à l'Université de technologie de Delft, Faculté Politique et gestion des technologies. Experte du COST - Coopération européenne en science et technologie, et du Latvian Council of Sciences en sciences naturelles , informatique, génie informatique, technologie, génie électrique, électronique, technologies de l'information et de la communication (TIC) et sciences sociales - économie et affaires.\n"
+"                                "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:136
-msgid "CEO Open data Africa"
-msgstr "CEO Open data Africa"
+#: african_cities_lab/home/templates/home/event_index_page.html:116
+msgid ""
+"Senior Product Manager at Code for Africa’s Africa.Sensors environmental "
+"monitoring program."
+msgstr ""
+"Chef de produit senior du programme de surveillance environnementale Africa.Sensors de Code for Africa."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:139
+#: african_cities_lab/home/templates/home/event_index_page.html:119
 msgid ""
 "\n"
-"                               Is the Senior Product Manager at Code for "
-"Africa’s Africa.Sensors\n"
-"                               environmental monitoring program. He has a "
-"Masters degree in Urban and \n"
-"                               Regional Planning from the University of "
-"Nairobi, Kenya and an undergraduate \n"
-"                               Education degree in Geography and Mathematics "
-"from the same. \n"
+"                              He has a Master degree in Urban and Regional "
+"Planning from the University of Nairobi, Kenya and an undergraduate "
+"Education degree in Geography and Mathematics from the same. He is a "
+"Graduate Member of the Town and County Planners Association of Kenya  and a "
+"member of the International Society of Urban and Regional Planners "
+"(ISOCARP). He has previously worked at the Strathmore University Advancement "
+"Office and as the Executive Director of Kilimani Project Foundation.\n"
 "                              "
 msgstr ""
 "\n"
-"Est le chef de produit principal du programme de surveillance "
-"environnementale Africa.Sensors de Code for Africa. Il est titulaire d'une "
-"maîtrise en planification urbaine et régionale de l'université de Nairobi, "
-"au Kenya, et d'un diplôme de premier cycle en géographie et en mathématiques "
-"de la même université."
+"Titulaire d'un master en planification urbaine et régionale et d'un diplôme de premier cycle en géographie et mathématiques, de l'Université de Nairobi, au Kenya, de la même université. Il est membre diplômé de la Town and County Planners Association of Kenya et membre de la Société internationale des planificateurs urbains et régionaux (ISOCARP). Il a auparavant travaillé au Strathmore University Advancement Office et en tant que directeur exécutif de la Kilimani Project Foundation.\n"
+"                              "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:160
-msgid "Prof. & CEO of Future Cities "
-msgstr "Prof. & CEO de Future Cities "
+#: african_cities_lab/home/templates/home/event_index_page.html:140
+msgid "Founder and President at the Future Cities Council"
+msgstr "Fondateur et Président de Future Cities Council"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:163
+#: african_cities_lab/home/templates/home/event_index_page.html:143 
 msgid ""
 "\n"
-"                            Dr. Oualid Ali is the President at the Future "
-"Cities Council. \n"
 "                            He's a futurist, technologist, future cities "
-"expert, and considered \n"
-"                            as one of the international well-recognized "
-"experts in the fields of \n"
-"                            Future foresight, Scenarios planning, Trends "
-"watching, Emerging \n"
-"                            technologies & innovations\n"
+"expert, and considered as one of the international well-recognized experts "
+"in the fields of Future foresight, Scenarios planning, Trends watching, "
+"Emerging technologies & innovations, Industrial Revolution 4.0, Future "
+"cities (Smart, Sustainable and innovative Cities), Education 4.0, Artificial "
+"Intelligence (AI), etc.\n"
 "                            "
 msgstr ""
 "\n"
-"Président du Future Cities Council. Technologue, expert en villes du futur, "
-"et considéré comme l'un des experts internationaux les plus reconnus dans "
-"les domaines de la prospective, de la planification de scénarios, des "
-"technologies émergentes et des innovations."
+"Futuriste, technologue, expert des villes du futur. Il est considéré comme l'un des experts internationaux reconnus dans les domaines de la prospective future, de la planification de scénarios, de l'observation des tendances, des technologies et innovations émergentes, de la révolution industrielle 4.0, des villes futures (intelligentes, durables et villes innovantes), de l’Education 4.0 et de l’Intelligence Artificielle (IA)."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:185
-msgid "CEO of SOGEFI & World bank consultant"
-msgstr "CEO de SOGEFI & Consultant de la Banque mondiale"
+#: african_cities_lab/home/templates/home/event_index_page.html:166
+msgid ""
+"Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure"
+msgstr ""
+"Foundateur de GeOsm Family – 1ère infrastructure ouverte de connaissances géospatiales"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:188
+#: african_cities_lab/home/templates/home/event_index_page.html:169
 msgid ""
 "\n"
-"                          Senior Product Manager at Code for Africa’s "
-"“Africa.Sensors” environmental \n"
-"                          monitoring program. He has a Masters degree in "
-"Urban and Regional Planning \n"
-"                          from the University of Nairobi, Kenya and an "
-"undergraduate Education degree \n"
-"                          in Geography and Mathematics.\n"
+"                          Graduated in 2013 from the school of surveyors in "
+"Le Mans (France). He is the promoter of GeOsm (https://geo.sm/) the very "
+"first geolocated social network aimed at players in the digital ecosystem in "
+"order to achieve sustainable development through open innovation. Recently "
+"deployed on a global scale, this open platform for technological innovations "
+"aims to accelerate the appropriation of geospatial data by those actors who "
+"depend heavily on it (startups, universities, municipalities, civil "
+"society). His expertise is recognized by several international institutions "
+"where he regularly works as a consultant. These include: The World Bank, "
+"GIZ, UNESCO, UN-Habitat, AFD, etc.\n"
 "                          "
 msgstr ""
 "\n"
-"Rejoint la société SOGEFI France comme responsable développement "
-"international, puis comme country manager chargé de mettre en place et gérer "
-"la succursale camerounaise du groupe. Il reprend et développe les activités "
-"de la succursale, crée une société de droit camerounais et en devient le "
-"directeur général en 2016."
+"Diplômé en 2013 de l’école des géomètres du Mans (France). Il est le promoteur " 
+"de GeOsm (https://geo.sm/) le tout premier réseau social géolocalisé destiné aux "
+"acteurs de l'écosystème digital afin de parvenir à un développement durable par "
+"l'innovation ouverte. Déployée récemment à l'échelle mondiale, cette plateforme "
+"ouverte d'innovations technologiques vise à accélérer l’appropriation de données "
+"géospatiales à ces acteurs qui en dépendent fortement (startups, universités, "
+"municipalités, société civile)."
+"Son expertise est reconnue par plusieurs institutions internationales où il intervient "
+"régulièrement comme consultant. On peut notamment citer : La Banque Mondiale, la GIZ, "
+"l'UNESCO, l’UN-Habitat, l'AFD, etc."
+""
 
-#: african_cities_lab/home/templates/home/event_index_page.html:202
+#: african_cities_lab/home/templates/home/event_index_page.html:183
 msgid "On the agenda"
 msgstr "Au programme"
-
-#: african_cities_lab/home/templates/home/event_page.html:47
-msgid "Register for the webinar"
-msgstr "Inscrivez-vous au webinaire"
 
 #: african_cities_lab/home/templates/home/event_page.html:52
 msgid "Full name"
@@ -501,7 +514,7 @@ msgid "Job Title"
 msgstr "Fonction"
 
 #: african_cities_lab/home/templates/home/event_page.html:60
-#: african_cities_lab/home/templates/home/webinar_form.html:56
+#: african_cities_lab/home/templates/home/webinar_form.html:72
 msgid "Email"
 msgstr "Email"
 
@@ -510,14 +523,14 @@ msgid "Phone"
 msgstr "Téléphone"
 
 #: african_cities_lab/home/templates/home/event_page.html:68
-#: african_cities_lab/home/templates/home/webinar_form.html:72
+#: african_cities_lab/home/templates/home/webinar_form.html:88
 msgid "Country"
 msgstr "Pays"
 
 #: african_cities_lab/home/templates/home/events_index_page.html:9
 #: african_cities_lab/home/views.py:76
-#: african_cities_lab/templates/base.html:98
-#: african_cities_lab/templates/base.html:176
+#: african_cities_lab/templates/base.html:101
+#: african_cities_lab/templates/base.html:180
 msgid "Events"
 msgstr "Evènements"
 
@@ -525,12 +538,14 @@ msgstr "Evènements"
 #: african_cities_lab/home/templates/home/static_gdpr.html:9
 #: african_cities_lab/home/templates/home/static_gdpr.html:28
 #: african_cities_lab/home/views.py:84
-#: african_cities_lab/templates/base.html:210
+#: african_cities_lab/templates/base.html:214
 msgid "GDPR"
 msgstr "RGPD"
 
 #: african_cities_lab/home/templates/home/home.html:17
-msgid "Become an actor in the transformation of the African cities of tomorrow"
+msgid ""
+"Drive the change and contribute to the transformation of tomorrow’s African "
+"cities"
 msgstr "Devenez acteur de la transformation des villes africaines de demain"
 
 #: african_cities_lab/home/templates/home/home.html:21
@@ -548,13 +563,13 @@ msgstr "Ce que nous offrons"
 
 #: african_cities_lab/home/templates/home/home.html:48
 msgid ""
-"Top quality educational content in a MOOC format to understand and provide "
-"practical solutions to the challenges presented by the accelerated "
-"urbanization of the African continent"
+"Top quality educational content to understand and provide practical "
+"solutions to the challenges presented by the accelerated urbanization of the "
+"African continent."
 msgstr ""
-"Du contenu pédagogique de qualité sous un format MOOC pour comprendre et "
-"apporter des solutions pratiques aux enjeux que présente l’urbanisation "
-"accélérée du continent Africain"
+"Du contenu pédagogique de qualité pour comprendre et apporter des solutions "
+"pratiques aux enjeux que présente l’urbanisation accélérée du continent "
+"Africain"
 
 #: african_cities_lab/home/templates/home/home.html:64
 msgid "13 MOOCs"
@@ -563,10 +578,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/home.html:67
 msgid ""
 "A collection of video courses given by African speakers, each one an expert "
-"in his or her field, ranging from eco-construction to waste management."
-msgstr ""
-"Un catalogue de cours vidéos dispensés par des intervenants experts des "
-"villes africaines."
+"in his or her field, ranging from eco-construction to waste management"
+msgstr "Une collection de cours vidéo donnés par des intervenants africains, chacun étant expert dans son domaine, allant de l'éco-construction à la gestion des déchets."
 
 #: african_cities_lab/home/templates/home/home.html:82
 msgid "Learn from the experts"
@@ -579,13 +592,11 @@ msgstr ""
 "+ 20 Experts Intervenants du développement urbain et durable en Afrique"
 
 #: african_cities_lab/home/templates/home/home.html:97
-msgid "6 African Universities/Partners"
+msgid "6 African Universities"
 msgstr "6 campus africains partenaires"
 
 #: african_cities_lab/home/templates/home/home.html:100
-msgid ""
-"Who join efforts to share their knowledge on the urban issues of tomorrow's "
-"African cities."
+msgid "Partners of the knowledge hub of the African Cities Lab"
 msgstr ""
 "Qui s’unissent pour transmettre leurs connaissances sur les problématiques "
 "urbaines des villes africaines de demain."
@@ -596,9 +607,9 @@ msgstr "Une vaste communauté"
 
 #: african_cities_lab/home/templates/home/home.html:115
 msgid ""
-"1 active community of more than 2000 actors and experts concerned about the "
+"An active community of more than 5000 professionals concerned about the "
 "living environment that African cities will offer to their populations in "
-"2050."
+"2050"
 msgstr ""
 "Une communauté active de + 2000 apprenants - acteurs soucieux de la qualité "
 "de vie qu’offriront les villes africaines à l’horizon 2050."
@@ -610,8 +621,8 @@ msgstr "Nos MOOCs"
 #: african_cities_lab/home/templates/home/home.html:134
 msgid ""
 "We cover all aspects of urban development, taking into account issues "
-"related to housing, transportation, access to water and electricity, "
-"employment and quality of life."
+"related to housing, employment, transportation, access to water, sanitation, "
+"electricity, and quality of life."
 msgstr ""
 "Nous abordons toute la thématique de l’aménagement des espaces urbains selon "
 "une approche qui tient compte des problématiques transverses de logement, "
@@ -622,19 +633,19 @@ msgid "Coming"
 msgstr "Disponible"
 
 #: african_cities_lab/home/templates/home/home.html:146
+#: african_cities_lab/home/templates/home/home.html:283
 msgid "soon"
 msgstr "bientôt"
 
 #: african_cities_lab/home/templates/home/home.html:151
 msgid ""
-"To receive notification of our new course catalog, please register on the "
-"form below:"
+"To receive notification of our new course catalogue or to register for our "
+"newsletter please sign up here:"
 msgstr ""
-"Soyez le premier à être informé de la mise en ligne de notre catalogue en "
-"vous inscrivant au formulaire ci-dessous :"
+"Pour recevoir la notification d'un nouveau catalogue de cours ou pour vous inscrire à notre newsletter, veuillez vous inscrire ici :"
 
 #: african_cities_lab/home/templates/home/home.html:157
-msgid "Your Fullname"
+msgid "Family Name and First Name"
 msgstr "Votre nom et prénom"
 
 #: african_cities_lab/home/templates/home/home.html:160
@@ -642,7 +653,7 @@ msgid "Your email here"
 msgstr "Votre email ici"
 
 #: african_cities_lab/home/templates/home/home.html:163
-msgid "Suscribe"
+msgid "Register"
 msgstr "S'inscrire"
 
 #: african_cities_lab/home/templates/home/home.html:176
@@ -650,8 +661,8 @@ msgid "View all courses"
 msgstr "Voir tous les cours"
 
 #: african_cities_lab/home/templates/home/home.html:189
-msgid "Topics covered"
-msgstr "Thématiques abordées"
+msgid "Focus Areas"
+msgstr "Thématiques"
 
 #: african_cities_lab/home/templates/home/home.html:192
 msgid ""
@@ -700,11 +711,15 @@ msgstr "Derniers articles"
 
 #: african_cities_lab/home/templates/home/home.html:241
 msgid ""
-"Learn more about urban and ecology development in Africa by exploring our "
-"blog posts."
+"Stay up to date with our newsletter and explore our blog posts to learn more "
+"about urban and environmental development in Africa."
 msgstr ""
 "Familiarisez-vous avec la thématique du développement urbain et durable en "
 "Afrique en explorant nos articles de blog."
+
+#: african_cities_lab/home/templates/home/home.html:282 
+msgid "Comming"
+msgstr "Disponible"
 
 #: african_cities_lab/home/templates/home/parts/moocs_vertical_card.html:23
 msgid "Topic:"
@@ -722,19 +737,19 @@ msgstr "Commence le"
 msgid "Our Partners"
 msgstr "Nos Partenaires"
 
-#: african_cities_lab/home/templates/home/static_contact.html:42
+#: african_cities_lab/home/templates/home/static_contact.html:58
 msgid "We’re here to help"
 msgstr "Nous sommes là pour vous aider"
 
-#: african_cities_lab/home/templates/home/static_contact.html:43
+#: african_cities_lab/home/templates/home/static_contact.html:59
 msgid "Please contact us in case of any query. We are happy to help"
 msgstr ""
 "Merci de nous contacter en cas de question. Nous seront heureux de vous "
 "aider."
 
-#: african_cities_lab/home/templates/home/static_contact.html:50
+#: african_cities_lab/home/templates/home/static_contact.html:66
 msgid "Email Us To Get Information"
-msgstr "Envoyez-nous un e-mail pour obtenir des informations"
+msgstr "Écrivez-nous pour plus d'informations"
 
 #: african_cities_lab/home/templates/home/static_terms.html:9
 #: african_cities_lab/home/templates/home/static_terms.html:28
@@ -744,34 +759,35 @@ msgid "Terms & Conditions"
 msgstr "Termes & Conditions"
 
 #: african_cities_lab/home/templates/home/webinar_form.html:9
+#: african_cities_lab/home/templates/home/webinar_form.html:35
 msgid "Subscribe to webinar"
 msgstr "S'inscrire au webinaire"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:48
+#: african_cities_lab/home/templates/home/webinar_form.html:64
 msgid "Last name"
 msgstr "Prénoms"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:52
+#: african_cities_lab/home/templates/home/webinar_form.html:68
 msgid "First name"
 msgstr "Nom"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:60
+#: african_cities_lab/home/templates/home/webinar_form.html:76
 msgid "Institution"
 msgstr "Institution"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:64
+#: african_cities_lab/home/templates/home/webinar_form.html:80
 msgid "Function"
 msgstr "Fonction"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:68
+#: african_cities_lab/home/templates/home/webinar_form.html:84
 msgid "Title"
 msgstr "Titre"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:76
+#: african_cities_lab/home/templates/home/webinar_form.html:92
 msgid "LinkedIn account"
 msgstr "Compte LinkedIn"
 
-#: african_cities_lab/home/templates/home/webinar_form.html:80
+#: african_cities_lab/home/templates/home/webinar_form.html:96
 msgid "Subscribe"
 msgstr "S'inscrire"
 
@@ -788,27 +804,27 @@ msgid "Home"
 msgstr "Accueil"
 
 #: african_cities_lab/templates/base.html:92
-#: african_cities_lab/templates/base.html:163
+#: african_cities_lab/templates/base.html:166
 msgid "About"
 msgstr "À propos"
 
-#: african_cities_lab/templates/base.html:160
+#: african_cities_lab/templates/base.html:163
 msgid "Get to know us"
 msgstr "En savoir plus"
 
-#: african_cities_lab/templates/base.html:204
+#: african_cities_lab/templates/base.html:208
 msgid "Legal"
 msgstr "Mentions légales"
 
-#: african_cities_lab/templates/base.html:207
+#: african_cities_lab/templates/base.html:211
 msgid "Terms & Condition"
 msgstr "Termes & Conditions"
 
-#: african_cities_lab/templates/base.html:218
+#: african_cities_lab/templates/base.html:222
 msgid "Stay updated with our newsletter"
 msgstr "Recevez la newsletter ACL"
 
-#: african_cities_lab/templates/base.html:220
+#: african_cities_lab/templates/base.html:224
 msgid ""
 "Stay up to date with all the recent news, updates and new courses by simply "
 "adding your email address to our list. We promise we will never spam you."
@@ -816,17 +832,92 @@ msgstr ""
 "Restez informés de la mise à jour des cours. Et suivez toute l’actualité de "
 "la transformation des villes africaines."
 
-#: african_cities_lab/templates/base.html:226
+#: african_cities_lab/templates/base.html:230
 msgid "Enter your email address"
 msgstr "Entrer votre adresse email"
 
-#: african_cities_lab/templates/base.html:234
-msgid "Connect with us"
+#: african_cities_lab/templates/base.html:238 
+msgid "Connect with us :"
 msgstr "Suivez-nous"
 
-#: african_cities_lab/templates/base.html:254
+#: african_cities_lab/templates/base.html:258
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr ""
+
+#~ msgid "Participate to the 1st webinar"
+#~ msgstr "Participer au 1er webinaire"
+
+#~ msgid "Doctor in Computer Science"
+#~ msgstr "Docteur en Informatique"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                Professor of Information Systems, "
+#~ "University of Tartu, Institute of Computer Science, \n"
+#~ "                                European Open Science Cloud (EOSC) "
+#~ "Working Group FAIR metrics and data quality\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "Professeur des Systemes d’Informations, Université de Tartu, Institut de "
+#~ "Sciences Informatiques, Groupe de travail de l'European Open Science "
+#~ "Cloud (EOSC) FAIR metrics and data quality"
+
+#~ msgid "CEO Open data Africa"
+#~ msgstr "CEO Open data Africa"
+
+#~ msgid ""
+#~ "\n"
+#~ "                               Is the Senior Product Manager at Code for "
+#~ "Africa’s Africa.Sensors\n"
+#~ "                               environmental monitoring program. He has a "
+#~ "Masters degree in Urban and \n"
+#~ "                               Regional Planning from the University of "
+#~ "Nairobi, Kenya and an undergraduate \n"
+#~ "                               Education degree in Geography and "
+#~ "Mathematics from the same. \n"
+#~ "                              "
+#~ msgstr ""
+#~ "\n"
+#~ "Est le chef de produit principal du programme de surveillance "
+#~ "environnementale Africa.Sensors de Code for Africa. Il est titulaire "
+#~ "d'une maîtrise en planification urbaine et régionale de l'université de "
+#~ "Nairobi, au Kenya, et d'un diplôme de premier cycle en géographie et en "
+#~ "mathématiques de la même université."
+
+#~ msgid "Prof. & CEO of Future Cities "
+#~ msgstr "Prof. & CEO de Future Cities "
+
+#~ msgid "CEO of SOGEFI & World bank consultant"
+#~ msgstr "CEO de SOGEFI & Consultant de la Banque mondiale"
+
+#~ msgid ""
+#~ "\n"
+#~ "                          Senior Product Manager at Code for Africa’s "
+#~ "“Africa.Sensors” environmental \n"
+#~ "                          monitoring program. He has a Masters degree in "
+#~ "Urban and Regional Planning \n"
+#~ "                          from the University of Nairobi, Kenya and an "
+#~ "undergraduate Education degree \n"
+#~ "                          in Geography and Mathematics.\n"
+#~ "                          "
+#~ msgstr ""
+#~ "\n"
+#~ "Rejoint la société SOGEFI France comme responsable développement "
+#~ "international, puis comme country manager chargé de mettre en place et "
+#~ "gérer la succursale camerounaise du groupe. Il reprend et développe les "
+#~ "activités de la succursale, crée une société de droit camerounais et en "
+#~ "devient le directeur général en 2016."
+
+#~ msgid ""
+#~ "A collection of video courses given by subject matter experts many of "
+#~ "whom are Africans and have expertise in different fields, ranging from "
+#~ "eco-construction to waste management. The educational content is provided "
+#~ "by using MOOCs (Massive Open Online Courses), free online courses "
+#~ "available for everyone"
+#~ msgstr ""
+#~ "Le contenu pédagogique est assuré par l'utilisation de MOOC (Massive Open "
+#~ "Online Courses), des cours en ligne gratuits accessibles à tous"
 
 #~ msgid "more than twice the current population."
 #~ msgstr "soit le double de la population actuelle."

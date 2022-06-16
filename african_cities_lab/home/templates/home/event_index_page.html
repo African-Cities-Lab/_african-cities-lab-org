@@ -11,7 +11,7 @@
     {{ block.super }}
     <style>
         .page-banner__right { 
-            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern.png' %});
+            background-image: linear-gradient(rgba(191, 55, 18,0.65),rgba(191, 55, 18, 0.7)), url({% static 'images/assets/bg-pattern.png' %});
         }  
     </style>
 {% endblock css %}
@@ -20,60 +20,33 @@
 
     
   <section id="single-event" class="page-banner__area"> 
-    <div class="container-fluid position-relative">
-        <div class="row justify-content-center justify-content-lg-between align-item-center">
-            <div class="col-lg-6 py-5 px-3 align-self-center">
+    <div class="row justify-content-between align-item-center">
+      <div class="home-banner__left pt-5"> 
+        <div class="meta-badge">{% translate "Webinar" %}</div>
 
-              <div class="meta-badge">{% translate "Webinar" %}</div>
+        <h1 class="event-title"> {% translate "Integration of artificial intelligence in the development of smart cities in Africa" %} </h1> 
 
-              <h1 class="event-title"> {% translate "Integration of artificial intelligence in the development of smart cities in Africa" %} </h1> 
-
-              <div class="event-desc">
-                  <p class="event-datetime __black-ico pb-4">
-                      <span>{% translate "5 July 2022" %}</span> {% translate "10am - 4pm" %} GMT +1
-                  </p>  
-                  <p class="event-location __black-ico">{% translate "Online" %}</p>
-              </div>
-              <div class="mt-5">
-                  <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
-                      {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
-                  </a>
-              </div>
-
-              <div class="banner-angle__left"> 
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
-            </div>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block page-banner__right"></div>
+        <div class="event-desc">
+            <p class="event-datetime __black-ico pb-3">
+                <span>{% translate "5 July 2022" %}</span> {% translate "10am - 4pm" %} GMT +1
+            </p>  
+            <p class="event-location __black-ico">{% translate "Online" %}</p>
         </div>
+        <div class="mt-4">
+            <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
+                {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
+            </a>
+        </div>
+      </div>
+      <div class="page-banner__right">
+          <div class="d-none d-lg-block banner-angle__left"> 
+              <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+          </div>
+      </div> 
     </div> 
   </section>
 
   <section>  
-    <!--div class="post-hero__container">  
-        <div class="container-fluid">
-            <div class="row align-items-lg-center justify-content-center justify-content-lg-between">
-                <div class="col-12 col-lg-7 py-5 px-3 text-white">
-                    <h1 class="event-title"> {% translate "Integration of artificial intelligence in the development of smart cities in Africa" %} </h1> 
-
-                    <div class="event-desc">
-                        <p class="event-datetime pb-4">
-                            <span>{% translate "5 July 2022" %}</span> {% translate "10am - 4pm" %} GMT +1
-                        </p>  
-                        <p class="event-location">{% translate "Online" %}</p>
-                    </div>
-                    <div class="mt-5">
-                        <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
-                            {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
-                        </a>
-                    </div>
-                </div> 
-                <div class="col-12 col-lg-5 p-4">
-                    <img src="{% static 'images/assets/event/integration-of-artificial-intelligence-in-the-development-of-smart-cities-in-africa.png' %}"> 
-                </div> 
-            </div>  
-        </div>
-    </div-->
     <div class="container p-lg-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-10">  
@@ -111,14 +84,21 @@
                                 Anastasija Nikiforova
                               </h5>
                               <div class="speakers-title my-3">
-                                {% translate "Doctor in Computer Science" %}
+                                {% translate "Researcher , PhD in Computer Science – Data Processing Systems and Data Networking" %}
                               </div> 
                               <div class="speakers-function"> 
                                 {% blocktranslate %}
-                                Professor of Information Systems, University of Tartu, Institute of Computer Science, 
-                                European Open Science Cloud (EOSC) Working Group FAIR metrics and data quality
+                                Assistant professor of Information Systems at University of Tartu (Institute of Computer Science), 
+                                a part of European Open Science Cloud Task Force FAIR Metrics and Data Quality and a visiting 
+                                researcher at Delft University of Technology, Faculty Technology Policy and Management. 
+                                Expert of the COST – European Cooperation in Science & Technology, as well as Latvian Council 
+                                of Sciences in Natural Sciences – Computer Science and Informatics, Engineering and Technology-Electrical 
+                                Engineering, Electronics, Information and Communication Technologies (ICT), and Social Sciences – Economics and Business.
                                 {% endblocktranslate %} 
                               </div>
+                          </div> 
+                          <div class="card-footer bg-white border-0">
+                            <a href="https://www.linkedin.com/in/anastasija-nikiforova-466b99b3/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
                           </div> 
                       </div>
                   </div>
@@ -133,16 +113,16 @@
                               Constant CAP 
                             </h5>
                             <div class="speakers-title my-3">
-                              {% translate "CEO Open data Africa" %}
+                              {% translate "Senior Product Manager at Code for Africa’s Africa.Sensors environmental monitoring program." %}
                             </div> 
                             <div class="speakers-function"> 
                               {% blocktranslate %}
-                               Is the Senior Product Manager at Code for Africa’s Africa.Sensors
-                               environmental monitoring program. He has a Masters degree in Urban and 
-                               Regional Planning from the University of Nairobi, Kenya and an undergraduate 
-                               Education degree in Geography and Mathematics from the same. 
+                              He has a Master degree in Urban and Regional Planning from the University of Nairobi, Kenya and an undergraduate Education degree in Geography and Mathematics from the same. He is a Graduate Member of the Town and County Planners Association of Kenya  and a member of the International Society of Urban and Regional Planners (ISOCARP). He has previously worked at the Strathmore University Advancement Office and as the Executive Director of Kilimani Project Foundation.
                               {% endblocktranslate %} 
                             </div>
+                        </div> 
+                        <div class="card-footer bg-white border-0">
+                          <a href="https://www.linkedin.com/in/constantcap/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
                         </div> 
                     </div>  
                   </div>
@@ -157,17 +137,18 @@
                             Oualid Ali
                           </h5>
                           <div class="speakers-title my-3">
-                            {% translate "Prof. & CEO of Future Cities " %}
+                            {% translate "Founder and President at the Future Cities Council" %}
                           </div> 
                           <div class="speakers-function"> 
                             {% blocktranslate %}
-                            Dr. Oualid Ali is the President at the Future Cities Council. 
-                            He's a futurist, technologist, future cities expert, and considered 
-                            as one of the international well-recognized experts in the fields of 
-                            Future foresight, Scenarios planning, Trends watching, Emerging 
-                            technologies & innovations
+                            He's a futurist, technologist, future cities expert, and considered as one of the international well-recognized experts in the fields of Future foresight, Scenarios planning, Trends watching, Emerging technologies & innovations, Industrial Revolution 4.0, Future cities (Smart, Sustainable and innovative Cities), Education 4.0, Artificial Intelligence (AI), etc.
                             {% endblocktranslate %} 
                           </div>
+                      </div> 
+                      <div class="card-footer bg-white border-0">
+                        <a href="https://www.linkedin.com/in/dr-oualid-ali-490809106/?originalSubdomain=ca" class="text_primary">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
                       </div> 
                   </div>  
                 </div>
@@ -182,16 +163,16 @@
                           Willy Franck SOB
                         </h5>
                         <div class="speakers-title my-3">
-                          {% translate "CEO of SOGEFI & World bank consultant" %}
+                          {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
                         </div> 
                         <div class="speakers-function"> 
                           {% blocktranslate %}
-                          Senior Product Manager at Code for Africa’s “Africa.Sensors” environmental 
-                          monitoring program. He has a Masters degree in Urban and Regional Planning 
-                          from the University of Nairobi, Kenya and an undergraduate Education degree 
-                          in Geography and Mathematics.
+                          Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the digital ecosystem in order to achieve sustainable development through open innovation. Recently deployed on a global scale, this open platform for technological innovations aims to accelerate the appropriation of geospatial data by those actors who depend heavily on it (startups, universities, municipalities, civil society). His expertise is recognized by several international institutions where he regularly works as a consultant. These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
                           {% endblocktranslate %} 
                         </div>
+                    </div> 
+                    <div class="card-footer bg-white border-0">
+                      <a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
                     </div> 
                   </div>
                 </div>
@@ -205,9 +186,11 @@
               </div-->
 
               <div class="my-5 text-center">
-                <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
-                  {% translate "Register now" %}
-                </a>
+                <p class="pt-5">
+                  <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
+                    {% translate "Register now" %}
+                  </a>
+                </p> 
               </div> 
             </div> 
          </div>

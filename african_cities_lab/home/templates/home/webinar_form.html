@@ -15,18 +15,34 @@
     .page-hero__container{
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
+    .page-banner__right { 
+      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern.png' %});
+  }
   </style>
 {% endblock css %}
 
 {% block content %}
 
-  <!-- Page banner area-->
+  <!-- Page banner area
   <section class="page-hero__container">
     {% include "home/parts/page_header.html" with page_title=title %}
   </section>
-  <!-- End Page banner area -->
+  <End Page banner area -->
 
-  <section class="upcoming-events py-5">
+  <section class="page-banner__area"> 
+      <div class="row justify-content-between align-item-center">
+          <div class="page-banner__left align-self-center"> 
+              <h1 class="page-hero__title">{% translate "Subscribe to webinar" %}</h1> 
+          </div>
+          <div class="page-banner__right">
+              <div class="d-none d-lg-block banner-angle__left"> 
+                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="upcoming-events">
 
     <div class="container-lg p-md-5">
       <div class="row justify-content-center">
