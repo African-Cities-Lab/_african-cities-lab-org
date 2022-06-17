@@ -7,6 +7,19 @@
     </style>
 {% endblock css %}
 
+{% block hellobar %}
+    <div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span> 
+
+            {% translate "Integration of artificial intelligence in the development of smart cities in Africa." %}  
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div> 
+{% endblock hellobar %} 
+
 {% block content %} 
 
     <section> 
@@ -30,7 +43,7 @@
                     <div class="d-none d-lg-block banner-angle__left"> 
                         <img src="{% static 'images/assets/banner-angle-left.svg' %}">
                     </div> 
-                    <img src="{% static 'images/assets/home.jpg' %}">
+                    <img src="{% static 'images/assets/Smart-Cities.jpg' %}">
                 </div> 
             </div>
         </div> 
@@ -60,7 +73,7 @@
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
-                                <h6>{% translate "13 MOOCs" %}</h6>
+                                <h6>{% translate "MOOCs" %}</h6>
                             </div> 
                             <div class="icon-box__desc text-align-left__max-576">
                                 {% translate "A collection of video courses given by African speakers, each one an expert in his or her field, ranging from eco-construction to waste management" %} 
@@ -81,7 +94,7 @@
                                 <h6>{% translate "Learn from the experts" %}</h6>
                             </div> 
                             <div class="icon-box__desc">
-                                {% translate "+ 20 Experts Intervenants of urban and sustainable development in Africa" %} 
+                                {% translate "Experts Intervenants of urban and sustainable development in Africa" %} 
                             </div> 
                         </div>  
                     </div>    

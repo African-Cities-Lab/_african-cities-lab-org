@@ -11,13 +11,26 @@
     {{ block.super }}
     <style>
         .page-banner__right { 
-            background-image: url({% static 'images/assets/header_bg.jpg' %});
+            background-image: url({% static 'images/assets/konza-city.jpg' %});
         } 
         .acl-conference {
             background-image: url({% static 'images/assets/conference-bg.jpg' %});
-        }
+        } 
     </style>
 {% endblock css %}
+
+{% block hellobar %}
+    <div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span> 
+
+            {% translate "Integration of artificial intelligence in the development of smart cities in Africa." %}  
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div> 
+{% endblock hellobar %} 
 
 {% block content %}
 
@@ -32,12 +45,15 @@
                         <h2 class="bannner__add-text"><span class="text_primary">{% translate "700 million" %}</span>{% translate " new homes" %}</h2>
                     </li>
                     <li class="banner-text__item two">
-                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "300,000" %}</span>{% translate "  schools and almost" %}</h2>
+                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "300,000" %}</span>{% translate " schools" %}</h2>
                     </li>
                     <li class="banner-text__item three">
-                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "100 million" %}</span>{% translate " health centers" %}</h2>
+                        <h2 class="bannner__add-text">{% translate " and almost " %}</h2>
                     </li>
                     <li class="banner-text__item four">
+                        <h2 class="bannner__add-text"><span class="text_primary">{% translate "100 million" %}</span>{% translate " health centers" %}</h2>
+                    </li>
+                    <li class="banner-text__item five">
                         <h2 class="bannner__add-text">{% translate "remain to be built." %}</h2>
                     </li>
                 </ul>
@@ -121,7 +137,7 @@
                              </h5>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                We offer online course, free of charge, focused on all aspects of urban space planning. The courses offered on the platform are divided into thirteen (13) themes and taught by experts from universities in six (6) French and English-speaking African countries.
+                                We offer online course, free of charge, focused on all aspects of urban space planning. The courses offered on the platform are divided into eight (8) themes and taught by experts from Africa in six (6) French and English-speaking African countries.
                                 {% endblocktranslate %} 
                              </p>
                          </div> 
@@ -149,7 +165,7 @@
                              </h5>
                              <p class="feature-card__exerpt">
                                 {% blocktranslate %}
-                                Offer deep-dive trainings to key decision makers. The courses are made of an eLearning component to gain foundation knowledge, as well as classroom training and field visits to deepen and contextualise knowledge.
+                                We offer deep-dive trainings to key decision makers. The courses are made of an eLearning component to gain foundation knowledge, as well as classroom training and field visits to deepen and contextualise knowledge.
                                 {% endblocktranslate %} 
                             </p>
                          </div> 
@@ -176,10 +192,10 @@
                     <div class="font-size-18 py-3">
                         {% blocktranslate %}
                         African digital cities are presented as a rational response to meet the demand 
-                        of future demographic projections. Challenging the current vision of cities in 
-                        Africa, African Cities Lab introduces the "International Conference on African Cities (ICAC) - 
-                        Digital Cities", a major event that aims to fill the knowledge gap and develop 
-                        synergies between research and entrepreneurship on the African continent.  
+                        of future demographic projections. Challenging the current vision of african cities, 
+                        digital cities are presented as a rational response to future demographic projections. 
+                        African Cities Lab creates the "International Conference on African Cities (ICAC) - Digital Cities" , 
+                        a major event that aims to increase the scope and develop synergies between research and entrepreneurship on the African continent.  
                         It is all about accelerating digitization of cities and promoting scientific excellence 
                         in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin. 
                         {% endblocktranslate %}
@@ -198,7 +214,7 @@
                     <div class="py-3 font-size-16 text-justify">
                         {% blocktranslate %}
                         Through a series of 3 webinars, the partners of the African Cities Lab, 
-                        led by EPFL, are setting the table for the political and scientific 
+                        in collaboration with EPFL, are providing insights for the political and scientific 
                         dialogue in the run-up to the Cotonou conference in 2023. 
                         The objective of these webinars is to discuss the major themes that make
                         up the African digital city and set the framework for the agenda of the

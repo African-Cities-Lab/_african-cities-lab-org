@@ -16,10 +16,23 @@
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
     .page-banner__right { 
-        background-image: linear-gradient(rgba(191, 55, 18, 0.65),rgba(191, 55, 18, 0.7)), url({% static 'images/assets/bg-pattern.png' %});
+        background-image: url({% static 'images/assets/konza-city.jpg' %});
     } 
   </style>
 {% endblock css %}
+
+{% block hellobar %}
+    <div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span> 
+
+            {% translate "Integration of artificial intelligence in the development of smart cities in Africa." %}  
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div> 
+{% endblock hellobar %} 
 
 {% block content %}
 
@@ -38,18 +51,18 @@
   </section>
   < End Page banner area -->
 
-  <section class="page-banner__area"> 
-    <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left align-self-center"> 
-            <h1 class="page-hero__title">{% translate "Contact" %}</h1> 
-        </div>
-        <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left"> 
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+    <section class="page-banner__area bg_primary"> 
+        <div class="row justify-content-between align-item-center">
+            <div class="page-banner__left align-self-center"> 
+                <h1 class="page-hero__title text-white">{% translate "Contact" %}</h1> 
+            </div>
+            <div class="page-banner__right">
+                <div class="d-none d-lg-block banner-angle__left"> 
+                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section>
         <div class="container p-md-5">

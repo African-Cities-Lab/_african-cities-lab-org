@@ -6,7 +6,7 @@
   {% elif self.title %}
     {{ self.title }}
   {% else %}
-    {% translate "Subscribe to webinar" %}
+    {% translate "Events" %}
   {% endif %}
 {% endblock title %}
 {% block css %}
@@ -16,8 +16,8 @@
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
     .page-banner__right { 
-      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)), url({% static 'images/assets/bg-pattern.png' %});
-  }
+      background-image: url({% static 'images/assets/konza-city.jpg' %});
+    } 
   </style>
 {% endblock css %}
 
@@ -29,14 +29,14 @@
   </section>
   <End Page banner area -->
 
-  <section class="page-banner__area"> 
+  <section class="page-banner__area bg_primary"> 
       <div class="row justify-content-between align-item-center">
           <div class="page-banner__left align-self-center"> 
-              <h1 class="page-hero__title">{% translate "Subscribe to webinar" %}</h1> 
+              <h1 class="page-hero__title text-white">{% translate "Events" %}</h1> 
           </div>
           <div class="page-banner__right">
               <div class="d-none d-lg-block banner-angle__left"> 
-                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
               </div>
           </div>
       </div>
@@ -45,6 +45,11 @@
   <section class="upcoming-events">
 
     <div class="container-lg p-md-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-8 text-center"> 
+            <h3 class="section-title mb-3">{% translate "Subscribe to the webinar" %}</h3> 
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
             <!-- message if email is sent -->

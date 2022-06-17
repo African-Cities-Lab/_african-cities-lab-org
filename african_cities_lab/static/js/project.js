@@ -11,6 +11,24 @@
         startPx >= 50 ? $("#main-nav").addClass("sticky-nav") :  $("#main-nav").removeClass("sticky-nav");
     });
 
+    // HelloBar
+    setup_hellobar();
+    function setup_hellobar() {
+        setTimeout( function() {
+            if($(".hellobar").hasClass("d-none")) {
+                $(".hellobar").removeClass("d-none");
+                return $(".hellobar").addClass("d-block")
+            } else {
+                return $(".hellobar").addClass("d-block")
+            } 
+        },450);
+        return $("#close_hellobar").on("click",function(){
+            $(".hellobar").removeClass("d-block");
+             $(".hellobar").addClass("d-none");
+          return!1
+        })
+      }
+
     //Partners logo swipper
     var swiper = new Swiper(".partners-swiper", {
         slidesPerView: 2,
