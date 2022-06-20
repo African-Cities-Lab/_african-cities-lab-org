@@ -78,8 +78,9 @@
                     </button>
                     <div id="navbar-responsive" class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav text-uppercase mx-5">
+                            {%  localized_slugurl 'home' as url %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                             </li>
                             {% comment %}
                             <li class="nav-item mx-3">
@@ -89,19 +90,22 @@
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
                             </li>
                             {% endcomment %}
+                            {% url 'about' as url %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% url 'about' %}">{% translate "About" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'about' %}">{% translate "About" %}</a>
                             </li>
                             {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
                             {% endcomment %}
+                            {% url 'events' as url %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% url 'events' %}">{% translate "Events" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Events" %}</a>
                             </li>
+                            {% url 'contact' as url %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% url 'contact' %}">{% translate "Contact" %}</a>
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'contact' %}">{% translate "Contact" %}</a>
                             </li>
                         </ul>
                         <div class="right-header">
@@ -218,7 +222,7 @@
                             <div class="footer__articleletter-col">
                                 <h5 class="footer__col-title my-3">{% translate "Stay updated with our newsletter" %}</h5>
                                 <p class="footer__col-text">
-                                    {% translate "Stay up to date with all the recent news, updates and new courses by simply adding your email address to our list. We promise we will never spam you." %} 
+                                    {% translate "Stay up to date with all the recent news, updates, and courses by simply your email address to our mailing list. We promise to never spam you." %} 
                                 </p>
                                 <div class="articleletter-form py-3">
                                     <form id="newsletter-form" class="append-form" action="#" method="post">

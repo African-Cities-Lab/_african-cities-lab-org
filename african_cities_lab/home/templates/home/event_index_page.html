@@ -12,7 +12,7 @@
     <style>
         .page-banner__right { 
             background-image: linear-gradient(rgba(191, 55, 18,0.65),rgba(191, 55, 18, 0.7)), url({% static 'images/assets/bg-pattern.png' %});
-        }  
+        }
     </style>
 {% endblock css %}
 
@@ -27,11 +27,18 @@
         <h1 class="event-title"> {% translate "Integration of artificial intelligence in the development of smart cities in Africa" %} </h1> 
 
         <div class="event-desc">
-            <p class="event-datetime __black-ico pb-3">
-                <span>{% translate "5 July 2022" %}</span> {% translate "10am - 4pm" %} GMT +1
-            </p>  
-            <p class="event-location __black-ico">{% translate "Online" %}</p>
+            <div class="event-datetime __black-ico py-3 d-md-flex align-items-center">
+                <div class="d-inline-block font-size-24">{% translate "5 July 2022" %}</div>
+                <div class="event-time">
+                  <p class="font-size-14 text_primary">{% translate "Session I" %}</p>
+                  <span>{% translate "10am - 12pm" %}</span> GMT+1
+                  <p class="font-size-14 text_primary">{% translate "Session II" %}</p>
+                  <span>{% translate "2pm - 4pm" %}</span> GMT+1
+                </div> 
+            </div> 
+            <p class="event-location __black-ico">{% translate "Online" %}</p>  
         </div>
+        
         <div class="mt-4">
             <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
                 {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
@@ -54,20 +61,20 @@
                 <h3 class="section-title text-center mb-3">{% translate "Overview" %}</h3>
                 <div>
                   {% blocktranslate %}
-                    In the era of new technologies, the growth of African cities will be not only sustainable but also smart.
+                    In the era of new technologies, the growth of African cities will not only be sustainable but also smart.
                     The rapid urban growth represents one of the greatest challenges of the 21st century in Africa.
                     A new paradigm of urban development is taking place, where intrinsic challenges remain. 
                     The role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
-                    Can artificial intelligence present opportunities to address issues related to demographic growth and the complexity 
-                    of developing solutions for fast growing of infrastructure and urban housing services.
+                    Can artificial intelligence present opportunities to address issues related to demographic growth and to the complexity 
+                    of developing solutions for fast growing of infrastructure and urban housing services?
                     In this webinar, you will discover:
                   {% endblocktranslate %} 
                 </div>
                 
                 <ul class="py-4">
-                  <li>{% translate "The importance of collecting and analyzing big data in african cities" %}</li>
-                  <li>{% translate "IA applications in the different aspects in african cities" %}</li>
-                  <li>{% translate "Best practices in the implementation of AI in african cities" %}</li>
+                  <li>{% translate "The importance of collecting and analyzing big data in the context of African cities" %}</li>
+                  <li>{% translate "IA applications in the different aspects of African cities" %}</li>
+                  <li>{% translate "Best practices in the implementation of AI for African cities" %}</li>
                 </ul>
               </div>
 
@@ -152,58 +159,173 @@
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </div> 
-                  </div>  
-                </div>
-
-                <div class="col-12 col-md-6 speakers-card">
-                  <div class="card border-0"> 
-                    <div class="card-header py-4 border-0 bg-white"> 
-                        <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}"> 
-                    </div> 
-                    <div class="card-body">
-                        <h5 class="speakers-name">
-                          Willy Franck SOB
-                        </h5>
-                        <div class="speakers-title my-3">
-                          {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-                        </div> 
-                        <div class="speakers-function"> 
-                          {% blocktranslate %}
-                          Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the digital ecosystem in order to achieve sustainable development through open innovation. Recently deployed on a global scale, this open platform for technological innovations aims to accelerate the appropriation of geospatial data by those actors who depend heavily on it (startups, universities, municipalities, civil society). His expertise is recognized by several international institutions where he regularly works as a consultant. These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                          {% endblocktranslate %} 
-                        </div>
-                    </div> 
-                    <div class="card-footer bg-white border-0">
-                      <a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
-                    </div> 
+                    </div>   
                   </div>
+
+                  <div class="col-12 col-md-6 speakers-card">
+                    <div class="card border-0"> 
+                      <div class="card-header py-4 border-0 bg-white"> 
+                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}"> 
+                      </div> 
+                      <div class="card-body">
+                          <h5 class="speakers-name">
+                            Willy Franck SOB
+                          </h5>
+                          <div class="speakers-title my-3">
+                            {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
+                          </div> 
+                          <div class="speakers-function"> 
+                            {% blocktranslate %}
+                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the digital ecosystem in order to achieve sustainable development through open innovation. Recently deployed on a global scale, this open platform for technological innovations aims to accelerate the appropriation of geospatial data by those actors who depend heavily on it (startups, universities, municipalities, civil society). His expertise is recognized by several international institutions where he regularly works as a consultant. These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
+                            {% endblocktranslate %} 
+                          </div>
+                      </div> 
+                      <div class="card-footer bg-white border-0">
+                        <a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
+                      </div> 
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
 
-              <!--div class="event-agenda font-size-18">
-                <h3 class="section-title text-center mb-3">{% translate "On the agenda" %}</h3>
+              <div class="event-agenda py-5">
 
-                <div></div>
-              </div-->
+                  <h3 class="section-title text-center mb-3">{% translate "On the agenda" %}</h3> 
+
+                  <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">
+                          <h4>{% translate "Session I" %}</h4>
+                          <span>{% translate "10am - 12pm" %}</span> GMT+1
+                      </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">
+                          <h4>{% translate "Session II" %}</h4>
+                          <span>{% translate "2pm - 4pm" %}</span> GMT+1
+                      </a>
+                    </li> 
+                  </ul>
+                  <div class="tab-content" id="agenda-content">
+                    <div class="tab-pane pt-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                      <div class="row border-bottom_grey">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "Introduction" %}</div>
+                          <p class="font-size-16 font-weight-500"> {% translate "Smart Cities strategy and AI integretion in Africa: opportunities & challenges." %}</p> 
+                        </div>
+                        <div class="col-12 col-sm-4 p-3">
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Oualid Ali</p>
+                          <small>{% translate "Founder and President at the Future Cities Council" %}</small>
+                        </div>
+                      </div>
+                      <div class="row border-bottom_grey">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "First Presentation" %}</div>
+                          <p class="font-size-16 font-weight-500"> {% translate "African government initiative for the integration of AI in african cities: Lessons from Moroccan and Rwanda experiences." %}</p> 
+                        </div> 
+                      </div>
+                      <div class="row border-bottom_grey">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "Second Presentation" %}</div>
+                          <p class="font-size-16 font-weight-500"> {% translate "Technologies for smart cities: The role of AI as a pillar of smart city planning in Africa." %}</^> 
+                        </div> 
+                      </div>
+                      <div class="row ">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "Third Presentation" %}</div>
+                          <p class="font-size-16 font-weight-500"> {% translate "Impact and challenges of the digitization of african cities on AI integration: Case of anglophone and francophone countries." %}</p> 
+                        </div>
+                        <div class="col-12 col-sm-4 p-3">
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Willy Franck SOB</p>
+                          <small>{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</small>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-8 p-3">
+                          <p class="font-size-16 font-weight-500"> {% translate "What city is the smart city about? Actors and construction processes in the african context." %}</p> 
+                        </div>
+                        <div class="col-12 col-sm-4 p-3">
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Tariq Akdim</p> 
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-8 p-3">
+                          <p class="font-size-16 font-weight-500"> {% translate "The smart city in african context: Lessons from the moroccan experience." %}</p> 
+                        </div>
+                        <div class="col-12 col-sm-4 p-3">
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Mohamed Abdedaime</p> 
+                        </div>
+                      </div>
+                      <div class="row border-bottom_grey">
+                        <div class="col-12 col-sm-8 p-3">
+                          <p class="font-size-16 font-weight-500"> {% translate "Application of geoinformation in urban planning: the case of Morocco." %}</p> 
+                        </div>
+                        <div class="col-12 col-sm-4 p-3">
+                          
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "Video interview & discussion" %}</div>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="tab-pane pt-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                      <div class="row border-bottom_grey">
+                        <div class="col-12 col-sm-8 p-3">
+                          <div class="meta-badge">{% translate "Introduction" %}</div>
+                          <p class="font-size-16 font-weight-500"> {% translate "The role of data availability for AI integration in African smart cities: applications and challenges." %}</p> 
+                        </div> 
+                      </div>
+                      <div class="row border-bottom_grey">
+                          <div class="col-12 col-sm-8 p-3">
+                            <div class="meta-badge">{% translate "First presentation" %}</div>
+                            <p class="font-size-16 font-weight-500"> {% translate "Open data and participatory data as catalysts and drivers of African smart cities." %}</p> 
+                          </div>
+                          <div class="col-12 col-sm-4 p-3">
+                            <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Anastasija Nikiforova</p>
+                            <small>{% translate "Researcher , PhD in Computer Science – Data Processing Systems and Data Networking" %}</small>
+                          </div>
+                      </div>
+                      <div class="row border-bottom_grey">
+                          <div class="col-12 col-sm-8 p-3">
+                            <div class="meta-badge">{% translate "Second presentation" %}</div>
+                            <p class="font-size-16 font-weight-500"> {% translate "Low cost data solution and citizen initiatives for AI integration in African smart cities." %}</p> 
+                          </div>
+                          <div class="col-12 col-sm-4 p-3">
+                            <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Constant CAP</p>
+                            <small>{% translate "Senior Product Manager at Code for Africa’s Africa.Sensors environmental monitoring program." %}</small>
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-12 col-sm-8 p-3">
+                            <div class="meta-badge">{% translate "Video interview and discussion" %}</div> 
+                          </div> 
+                      </div>
+                    </div> 
+                  </div>
+              </div>
 
               <div class="my-5 text-center">
-                <p class="pt-5">
-                  <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
-                    {% translate "Register now" %}
-                  </a>
-                </p> 
+                <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
+                  {% translate "Register now" %}
+                </a>
               </div> 
-            </div> 
-         </div>
-        </div> 
-    </div>
-</section>
 
-<!-- Start Partners Area-->
-  <section class="our-partners">
-    {% include "home/parts/partners_section.html" %}
+            </div> 
+            
+          </div>
+        </div> 
+      </div>
   </section>
-<!-- End Partners Area -->
+
+  <!-- Start Partners Area-->
+    <section class="our-partners">
+      {% include "home/parts/partners_section.html" %}
+    </section>
+  <!-- End Partners Area -->
 
 {% endblock content %}
