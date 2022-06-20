@@ -83,12 +83,12 @@ msgid " and almost "
 msgstr " et presque"
 
 #: african_cities_lab/home/templates/home/about.html:54
-msgid "100 million"
-msgstr "100 millions"
+msgid "100,000"
+msgstr "100 000"
 
 #: african_cities_lab/home/templates/home/about.html:54
 msgid " health centers"
-msgstr " de centre de santé"
+msgstr " centre de santé"
 
 #: african_cities_lab/home/templates/home/about.html:57
 msgid "remain to be built."
