@@ -33,11 +33,9 @@ msgstr "Webinaire"
 #: african_cities_lab/home/templates/home/static_gdpr.html:29
 #: african_cities_lab/home/templates/home/static_terms.html:30
 msgid ""
-"Integration of artificial intelligence in the development of smart cities in "
-"Africa."
+"Integration of open data and artificial intelligence in the development of smart cities in Africa."
 msgstr ""
-"Intégration de l’intelligence artificielle dans le développement des smart "
-"cities en Afrique."
+"Intégration de l'open data et l’intelligence artificielle dans le développement des smart cities en Afrique."
 
 #: african_cities_lab/home/templates/home/about.html:29
 #: african_cities_lab/home/templates/home/event_index_page.html:44
@@ -88,7 +86,7 @@ msgstr "100 000"
 
 #: african_cities_lab/home/templates/home/about.html:54
 msgid " health centers"
-msgstr " centre de santé"
+msgstr " centres de santé"
 
 #: african_cities_lab/home/templates/home/about.html:57
 msgid "remain to be built."
@@ -160,7 +158,7 @@ msgstr ""
 "La plateforme e-learning African Cities Lab est "
 "disponible en français et en anglais. \n"
 "Cette initiative financée par le <a href=\"https://seco."
-"admin.ch/seco/en/home.html\" class=\"text_primary\">Secrétariat d'Etat "
+"admin.ch/seco/fr/home.html\" class=\"text_primary\">Secrétariat d'Etat "
 "Suisse à l'Economie (SECO)</a> permet à tous les acteurs impliqués dans "
 "la construction, l'aménagement et l'exploitation en milieu urbain d'accéder "
 "à une éducation de qualité sur l'urbanisation durable pour répondre aux "
@@ -360,11 +358,9 @@ msgstr "Envoyer"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:27
 msgid ""
-"Integration of artificial intelligence in the development of smart cities in "
-"Africa"
+"Integration of open data and artificial intelligence in the development of smart cities in Africa"
 msgstr ""
-"Intégration de l’intelligence artificielle dans le développement des smart "
-"cities en Afrique"
+"Intégration de l'open data et l’intelligence artificielle dans le développement des smart cities en Afrique"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:31
 msgid "5 July 2022"
