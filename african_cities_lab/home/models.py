@@ -1,5 +1,5 @@
 from django.db import models
-from wagtail.admin.edit_handlers import FieldPanel, StreamFieldPanel 
+from wagtail.admin.edit_handlers import FieldPanel, StreamFieldPanel
 from wagtail.core import blocks
 from wagtail.core.fields import RichTextField, StreamField
 from wagtail.core.models import Page
@@ -14,12 +14,12 @@ class HomePage(MetadataPageMixin, Page):
     template = "home/home.html"
 
     subpage_types = [
-        "home.AboutUsPage", 
-        "home.BlogIndexPage", 
-        "home.EventsIndexPage",  
+        "home.AboutUsPage",
+        "home.BlogIndexPage",
+        "home.EventIndexPage",
         "home.ContactPage",
         "home.GdprPage",
-        "home.TermsPage", 
+        "home.TermsPage",
     ]
     parent_page_type = [
         "wagtailcore.Page",
@@ -38,8 +38,8 @@ class FlatPage(MetadataPageMixin, Page):
     parent_page_type = [
         "home.HomePage",
     ]
-    
-    
+
+
 class AboutUsPage(MetadataPageMixin, Page):
     """About Us page model."""
 
@@ -64,7 +64,7 @@ class AboutUsPage(MetadataPageMixin, Page):
         "home.HomePage",
     ]
     max_count = 1
-    
+
 class ContactPage(FlatPage):
     """Contact page model."""
 
@@ -74,7 +74,7 @@ class ContactPage(FlatPage):
         "home.HomePage",
     ]
     max_count = 1
-    
+
 class GdprPage(FlatPage):
     """GDPR page model."""
 
@@ -84,7 +84,7 @@ class GdprPage(FlatPage):
         "home.HomePage",
     ]
     max_count = 1
-    
+
 class TermsPage(FlatPage):
     """Terms & Conditions page model."""
 
@@ -93,7 +93,7 @@ class TermsPage(FlatPage):
     parent_page_type = [
         "home.HomePage",
     ]
-    max_count = 1    
+    max_count = 1
 
 class BlogIndexPage(MetadataPageMixin, Page):
 
@@ -102,7 +102,7 @@ class BlogIndexPage(MetadataPageMixin, Page):
         "home.HomePage",
     ]
     max_count = 1
-    
+
 
 class BlogPage(MetadataPageMixin, Page):
     summary = models.CharField(max_length=NEWS_SUMMARY_MAX_LENGTH)
@@ -111,23 +111,23 @@ class BlogPage(MetadataPageMixin, Page):
         on_delete=models.PROTECT,
     )
     date = models.DateField("Post date")
-    body = RichTextField(blank=True) 
+    body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel("summary"),
         ImageChooserPanel("main_image"),
         FieldPanel("date"),
-        FieldPanel("body"), 
+        FieldPanel("body"),
     ]
 
     parent_page_type = [
         "home.BlogIndexPage",
     ]
-    
+
     def __str__(self):
         return self.title
 
-class EventsIndexPage(MetadataPageMixin, Page):
+class EventIndexPage(MetadataPageMixin, Page):
 
     subpage_types = ["home.EventPage"]
     parent_page_type = [
@@ -141,23 +141,23 @@ class EventPage(MetadataPageMixin, Page):
         "wagtailimages.Image",
         on_delete=models.PROTECT,
     )
-    event_date = models.DateField() 
+    event_date = models.DateField()
     event_time = models.TimeField()
     event_location = models.CharField(max_length=CHARFIELD_MAX_LENGTH)
-    body = RichTextField(blank=True) 
+    body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         ImageChooserPanel("preview_image"),
         FieldPanel("summary"),
-        FieldPanel("event_date"), 
+        FieldPanel("event_date"),
         FieldPanel("event_time"),
         FieldPanel("event_location"),
-        FieldPanel("body"), 
+        FieldPanel("body"),
     ]
 
     parent_page_type = [
-        "home.EventsIndexPage",
+        "home.EventIndexPage",
     ]
-    
+
     def __str__(self):
         return self.title
