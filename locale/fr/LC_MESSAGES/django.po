@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-20 16:14+0200\n"
+"POT-Creation-Date: 2022-06-22 12:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,8 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: african_cities_lab/home/templates/home/about.html:25
-#: african_cities_lab/home/templates/home/event_index_page.html:25
+#: african_cities_lab/home/templates/home/event_index_page.html:47
 #: african_cities_lab/home/templates/home/home.html:13
+#: african_cities_lab/home/templates/home/home.html:327
 #: african_cities_lab/home/templates/home/static_contact.html:27
 #: african_cities_lab/home/templates/home/static_gdpr.html:27
 #: african_cities_lab/home/templates/home/static_terms.html:28
@@ -33,13 +34,15 @@ msgstr "Webinaire"
 #: african_cities_lab/home/templates/home/static_gdpr.html:29
 #: african_cities_lab/home/templates/home/static_terms.html:30
 msgid ""
-"Integration of open data and artificial intelligence in the development of smart cities in Africa."
+"Integration of open data and artificial intelligence in the development of "
+"smart cities in Africa."
 msgstr ""
-"Intégration de l'open data et l’intelligence artificielle dans le développement des smart cities en Afrique."
+"Intégration de l'open data et l’intelligence artificielle dans le "
+"développement des smart cities en Afrique."
 
 #: african_cities_lab/home/templates/home/about.html:29
-#: african_cities_lab/home/templates/home/event_index_page.html:44
-#: african_cities_lab/home/templates/home/event_index_page.html:314
+#: african_cities_lab/home/templates/home/event_index_page.html:79
+#: african_cities_lab/home/templates/home/event_index_page.html:359
 #: african_cities_lab/home/templates/home/event_page.html:27
 #: african_cities_lab/home/templates/home/home.html:17
 #: african_cities_lab/home/templates/home/static_contact.html:31
@@ -155,14 +158,14 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"La plateforme e-learning African Cities Lab est "
-"disponible en français et en anglais. \n"
-"Cette initiative financée par le <a href=\"https://seco."
-"admin.ch/seco/fr/home.html\" class=\"text_primary\">Secrétariat d'Etat "
-"Suisse à l'Economie (SECO)</a> permet à tous les acteurs impliqués dans "
-"la construction, l'aménagement et l'exploitation en milieu urbain d'accéder "
-"à une éducation de qualité sur l'urbanisation durable pour répondre aux "
-"enjeux 2050 des villes africaines."
+"La plateforme e-learning African Cities Lab est disponible en français et en "
+"anglais. \n"
+"Cette initiative financée par le <a href=\"https://seco.admin.ch/seco/fr/"
+"home.html\" class=\"text_primary\">Secrétariat d'Etat Suisse à l'Economie "
+"(SECO)</a> permet à tous les acteurs impliqués dans la construction, "
+"l'aménagement et l'exploitation en milieu urbain d'accéder à une éducation "
+"de qualité sur l'urbanisation durable pour répondre aux enjeux 2050 des "
+"villes africaines."
 
 #: african_cities_lab/home/templates/home/about.html:140
 msgid "The MOOCs"
@@ -356,45 +359,56 @@ msgstr "Votre message"
 msgid "Submit"
 msgstr "Envoyer"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:27
+#: african_cities_lab/home/templates/home/event_index_page.html:49
+#: african_cities_lab/home/templates/home/home.html:329
 msgid ""
-"Integration of open data and artificial intelligence in the development of smart cities in Africa"
+"Integration of open data and artificial intelligence in the development of "
+"smart cities in Africa"
 msgstr ""
-"Intégration de l'open data et l’intelligence artificielle dans le développement des smart cities en Afrique"
+"Intégration de l'open data et l’intelligence artificielle dans le "
+"développement des smart cities en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:31
-msgid "5 July 2022"
+#: african_cities_lab/home/templates/home/event_index_page.html:52
+#: african_cities_lab/home/templates/home/event_index_page.html:71
+msgid "5 July, 2022"
 msgstr "5 Juillet 2022"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:33
-#: african_cities_lab/home/templates/home/event_index_page.html:200
-msgid "Session I"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/event_index_page.html:34
-#: african_cities_lab/home/templates/home/event_index_page.html:201
-msgid "10am - 12pm"
-msgstr "10h - 12h"
-
-#: african_cities_lab/home/templates/home/event_index_page.html:35
-#: african_cities_lab/home/templates/home/event_index_page.html:206
-msgid "Session II"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/event_index_page.html:36
-#: african_cities_lab/home/templates/home/event_index_page.html:207
-msgid "2pm - 4pm"
-msgstr "14h - 16h"
-
-#: african_cities_lab/home/templates/home/event_index_page.html:39
+#: african_cities_lab/home/templates/home/event_index_page.html:53
+#: african_cities_lab/home/templates/home/event_index_page.html:74
 msgid "Online"
 msgstr "En ligne"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:61
+#: african_cities_lab/home/templates/home/event_index_page.html:57
+msgid "Session I:"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/event_index_page.html:58
+#: african_cities_lab/home/templates/home/event_index_page.html:238
+msgid "10am - 12pm"
+msgstr "10h - 12h"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:59
+msgid "Artificial intelligence for smart cities"
+msgstr "Intelligence artificielle et smart cities"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:62
+msgid "Session II:"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/event_index_page.html:63
+#: african_cities_lab/home/templates/home/event_index_page.html:244
+msgid "2pm - 4pm"
+msgstr "14h - 16h"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:64
+msgid "Artificial Intelligence for big data"
+msgstr "Intelligence artificielle et big data"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:96
 msgid "Overview"
 msgstr "Présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:63
+#: african_cities_lab/home/templates/home/event_index_page.html:98
 msgid ""
 "\n"
 "                    In the era of new technologies, the growth of African "
@@ -424,7 +438,7 @@ msgstr ""
 "du développement de solutions pour une croissance rapide des infrastructures "
 "et des services de logement urbain ? Dans ce webinaire, vous découvrirez :"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:75
+#: african_cities_lab/home/templates/home/event_index_page.html:110
 msgid ""
 "The importance of collecting and analyzing big data in the context of "
 "African cities"
@@ -432,22 +446,22 @@ msgstr ""
 "L’importance de la collecte et du traitement de données dans la construction "
 "de villes intelligentes"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:76
+#: african_cities_lab/home/templates/home/event_index_page.html:111
 msgid "IA applications in the different aspects of African cities"
 msgstr ""
 "Les applications de l’intelligence artificielle dans les différents aspects "
 "de la ville"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:77
+#: african_cities_lab/home/templates/home/event_index_page.html:112
 msgid "Best practices in the implementation of AI for African cities"
 msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:82
+#: african_cities_lab/home/templates/home/event_index_page.html:117
 msgid "Speakers"
 msgstr "Intervenants"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:96
-#: african_cities_lab/home/templates/home/event_index_page.html:290
+#: african_cities_lab/home/templates/home/event_index_page.html:131
+#: african_cities_lab/home/templates/home/event_index_page.html:335
 msgid ""
 "Researcher , PhD in Computer Science – Data Processing Systems and Data "
 "Networking"
@@ -455,7 +469,7 @@ msgstr ""
 "Chercheur, Docteur en Informatique,  Systèmes de traitement de données et "
 "mise en réseau de données"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:99
+#: african_cities_lab/home/templates/home/event_index_page.html:134
 msgid ""
 "\n"
 "                                Assistant professor of Information Systems "
@@ -485,8 +499,8 @@ msgstr ""
 "sciences sociales - économie et affaires.\n"
 "                                "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:125
-#: african_cities_lab/home/templates/home/event_index_page.html:300
+#: african_cities_lab/home/templates/home/event_index_page.html:160
+#: african_cities_lab/home/templates/home/event_index_page.html:345
 msgid ""
 "Senior Product Manager at Code for Africa’s Africa.Sensors environmental "
 "monitoring program."
@@ -494,7 +508,7 @@ msgstr ""
 "Chef de produit senior du programme de surveillance environnementale Africa."
 "Sensors de Code for Africa."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:128
+#: african_cities_lab/home/templates/home/event_index_page.html:163
 msgid ""
 "\n"
 "                              He has a Master degree in Urban and Regional "
@@ -516,12 +530,12 @@ msgstr ""
 "de la Kilimani Project Foundation.\n"
 "                              "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:149
-#: african_cities_lab/home/templates/home/event_index_page.html:220
+#: african_cities_lab/home/templates/home/event_index_page.html:184
+#: african_cities_lab/home/templates/home/event_index_page.html:261
 msgid "Founder and President at the Future Cities Council"
 msgstr "Fondateur et Président de Future Cities Council"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:152
+#: african_cities_lab/home/templates/home/event_index_page.html:187
 msgid ""
 "\n"
 "                            He's a futurist, technologist, future cities "
@@ -540,15 +554,15 @@ msgstr ""
 "4.0, des villes futures (intelligentes, durables et villes innovantes), de "
 "l’Education 4.0 et de l’Intelligence Artificielle (IA)."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:175
-#: african_cities_lab/home/templates/home/event_index_page.html:242
+#: african_cities_lab/home/templates/home/event_index_page.html:210
+#: african_cities_lab/home/templates/home/event_index_page.html:283
 msgid ""
 "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure"
 msgstr ""
 "Foundateur de GeOsm Family – 1ère infrastructure ouverte de connaissances "
 "géospatiales"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:178
+#: african_cities_lab/home/templates/home/event_index_page.html:213
 msgid ""
 "\n"
 "                            Graduated in 2013 from the school of surveyors "
@@ -576,36 +590,57 @@ msgstr ""
 "notamment citer : La Banque Mondiale, la GIZ, l'UNESCO, l’UN-Habitat, l'AFD, "
 "etc."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:195
+#: african_cities_lab/home/templates/home/event_index_page.html:230
 msgid "On the agenda"
 msgstr "Au programme"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:215
-#: african_cities_lab/home/templates/home/event_index_page.html:279
+#: african_cities_lab/home/templates/home/event_index_page.html:232
+msgid "This program is temporally"
+msgstr "Ce programme est temporaire"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:237
+msgid "Session I"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/event_index_page.html:243
+msgid "Session II"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/event_index_page.html:251
+#: african_cities_lab/home/templates/home/event_index_page.html:319
+msgid "Language:"
+msgstr "Langage :"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:252
+msgid "French subtitled English"
+msgstr "Français sous titré Anglais"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:256
+#: african_cities_lab/home/templates/home/event_index_page.html:324
 msgid "Introduction"
 msgstr "Introduction"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:216
+#: african_cities_lab/home/templates/home/event_index_page.html:257
 msgid ""
 "Smart Cities strategy and AI integretion in Africa: opportunities & "
 "challenges."
 msgstr ""
 "Stratégie Smart City et intégration de l'IA en Afrique : opportunités & défis"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:219
-#: african_cities_lab/home/templates/home/event_index_page.html:241
-#: african_cities_lab/home/templates/home/event_index_page.html:250
-#: african_cities_lab/home/templates/home/event_index_page.html:258
-#: african_cities_lab/home/templates/home/event_index_page.html:289
+#: african_cities_lab/home/templates/home/event_index_page.html:260
+#: african_cities_lab/home/templates/home/event_index_page.html:282
+#: african_cities_lab/home/templates/home/event_index_page.html:291
 #: african_cities_lab/home/templates/home/event_index_page.html:299
+#: african_cities_lab/home/templates/home/event_index_page.html:334
+#: african_cities_lab/home/templates/home/event_index_page.html:344
 msgid "Speaker:"
 msgstr "Intervenant :"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:225
+#: african_cities_lab/home/templates/home/event_index_page.html:266
 msgid "First Presentation"
 msgstr "Première présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:226
+#: african_cities_lab/home/templates/home/event_index_page.html:267
 msgid ""
 "African government initiative for the integration of AI in african cities: "
 "Lessons from Moroccan and Rwanda experiences."
@@ -613,11 +648,11 @@ msgstr ""
 "Initiative du gouvernement africain pour l'intégration de l'IA dans les "
 "villes africaines : Leçons des expériences du Maroc et du Rwanda."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:231
+#: african_cities_lab/home/templates/home/event_index_page.html:272
 msgid "Second Presentation"
 msgstr "Deuxième présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:232
+#: african_cities_lab/home/templates/home/event_index_page.html:273
 msgid ""
 "Technologies for smart cities: The role of AI as a pillar of smart city "
 "planning in Africa."
@@ -625,11 +660,11 @@ msgstr ""
 "Technologies pour les villes intelligentes: le rôle de l'IA comme pilier de "
 "la planification des smart cities en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:237
+#: african_cities_lab/home/templates/home/event_index_page.html:278
 msgid "Third Presentation"
 msgstr "Troisième présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:238
+#: african_cities_lab/home/templates/home/event_index_page.html:279
 msgid ""
 "Impact and challenges of the digitization of african cities on AI "
 "integration: Case of anglophone and francophone countries."
@@ -637,7 +672,7 @@ msgstr ""
 "Impact et défis de la digitalisation des villes africaine sur l'intégration "
 "des IA: Cas des pays anglophones et francophones"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:247
+#: african_cities_lab/home/templates/home/event_index_page.html:288
 msgid ""
 "What city is the smart city about? Actors and construction processes in the "
 "african context."
@@ -645,24 +680,28 @@ msgstr ""
 "De quelle ville parle la ville intelligente ? Acteurs et processus de "
 "construction dans le context africain"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:255
+#: african_cities_lab/home/templates/home/event_index_page.html:296
 msgid ""
 "The smart city in african context: Lessons from the moroccan experience."
 msgstr ""
 "La ville intelligente dans le contexte africain : Les leçons de l'expérience "
 "marocaine."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:263
+#: african_cities_lab/home/templates/home/event_index_page.html:304
 msgid "Application of geoinformation in urban planning: the case of Morocco."
 msgstr ""
 "Application de la géoinformation dans la planification urbaine : le cas du "
 "Maroc."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:271
+#: african_cities_lab/home/templates/home/event_index_page.html:312
 msgid "Video interview & discussion"
 msgstr "Interview vidéo et discussion"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:280
+#: african_cities_lab/home/templates/home/event_index_page.html:320
+msgid "English subtitled French"
+msgstr "Anglais sous titré Français"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:325
 msgid ""
 "The role of data availability for AI integration in African smart cities: "
 "applications and challenges."
@@ -670,11 +709,11 @@ msgstr ""
 "Le rôle de la disponibilité des données pour l'intégration de l'IA dans les "
 "villes intelligentes africaines : applications et défis."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:285
+#: african_cities_lab/home/templates/home/event_index_page.html:330
 msgid "First presentation"
 msgstr "Première présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:286
+#: african_cities_lab/home/templates/home/event_index_page.html:331
 msgid ""
 "Open data and participatory data as catalysts and drivers of African smart "
 "cities."
@@ -682,11 +721,11 @@ msgstr ""
 "Les données ouvertes et les données participatives comme catalyseurs et "
 "moteurs des villes intelligentes africaines."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:295
+#: african_cities_lab/home/templates/home/event_index_page.html:340
 msgid "Second presentation"
 msgstr "Deuxième présentation"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:296
+#: african_cities_lab/home/templates/home/event_index_page.html:341
 msgid ""
 "Low cost data solution and citizen initiatives for AI integration in African "
 "smart cities."
@@ -694,7 +733,7 @@ msgstr ""
 "Des solutions de données à faible coût et des initiatives citoyennes pour "
 "l'intégration de l'IA dans les villes intelligentes africaines."
 
-#: african_cities_lab/home/templates/home/event_index_page.html:305
+#: african_cities_lab/home/templates/home/event_index_page.html:350
 msgid "Video interview and discussion"
 msgstr "Interview et discussion vidéo"
 
@@ -914,6 +953,58 @@ msgid ""
 msgstr ""
 "Recevez notre newsletter et consultez nos articles de blog pour en savoir "
 "plus sur le développement urbain et environnemental en Afrique."
+
+#: african_cities_lab/home/templates/home/home.html:313
+msgid "Upcoming event"
+msgstr "Événement à venir"
+
+#: african_cities_lab/home/templates/home/home.html:321 
+msgid "5 July"
+msgstr "5 Juillet"
+
+#: african_cities_lab/home/templates/home/home.html:332
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                    In the era of new technologies, the growth of African "
+#| "cities will not only be sustainable but also smart.\n"
+#| "                    The rapid urban growth represents one of the greatest "
+#| "challenges of the 21st century in Africa.\n"
+#| "                    A new paradigm of urban development is taking place, "
+#| "where intrinsic challenges remain. \n"
+#| "                    The role of digital tools and smart cities as key "
+#| "urban development actors in Africa is yet to be established.\n"
+#| "                    Can artificial intelligence present opportunities to "
+#| "address issues related to demographic growth and to the complexity \n"
+#| "                    of developing solutions for fast growing of "
+#| "infrastructure and urban housing services?\n"
+#| "                    In this webinar, you will discover:\n"
+#| "                  "
+msgid ""
+"\n"
+"                        In the era of new technologies, the growth of "
+"African cities will not only be sustainable but also smart. The rapid urban "
+"growth represents one of the greatest challenges of the 21st century in "
+"Africa. A new paradigm of urban development is taking place, where intrinsic "
+"challenges remain. The role of digital tools and smart cities as key urban "
+"development actors in Africa is yet to be established.\n"
+"                        "
+msgstr ""
+"\n"
+"À l'ère des nouvelles technologies, la croissance des villes africaines sera "
+"non seulement durable mais aussi intelligente. La croissance urbaine rapide "
+"représente l'un des plus grands défis du 21e siècle en Afrique. Un nouveau "
+"paradigme de développement urbain se met en place, où des défis intrinsèques "
+"demeurent. Le rôle des outils numériques et des villes intelligentes en tant "
+"qu'acteurs clés du développement urbain en Afrique reste à établir. "
+"L'intelligence artificielle peut-elle présenter des opportunités pour "
+"répondre aux problèmes liés à la croissance démographique et à la complexité "
+"du développement de solutions pour une croissance rapide des infrastructures "
+"et des services de logement urbain ? Dans ce webinaire, vous découvrirez :"
+
+#: african_cities_lab/home/templates/home/home.html:338
+msgid "Read more"
+msgstr "En savoir plus"
 
 #: african_cities_lab/home/templates/home/parts/moocs_vertical_card.html:23
 msgid "Topic:"

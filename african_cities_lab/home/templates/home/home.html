@@ -43,7 +43,7 @@
                     <div class="d-none d-lg-block banner-angle__left"> 
                         <img src="{% static 'images/assets/banner-angle-left.svg' %}">
                     </div> 
-                    <img src="{% static 'images/assets/Smart-Cities.jpg' %}">
+                    <img src="{% static 'images/assets/acl-homepage-banner.jpg' %}">
                 </div> 
             </div>
         </div> 
@@ -298,8 +298,49 @@
                     </div>
                 {% endfor %}
             </div>
+        </div>
     </section>
     <!-- End News Section -->
+
+    <!-- End Event Section -->
+    <section class="featured-event pt-5">
+        <div class="container p-md-5">
+            <div class="row pb-4">
+                <div class="col-12 col-md-8">
+                    <h3 class="section-title">
+                        {% translate "Upcoming event" %}
+                    </h3> 
+                </div>   
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-5 position-relative pb-3">
+                    <div class="event-date-badge">
+                        <h4 class="day_month">{% translate "5 July" %}</h4>
+                        <h6 class="year pt-2">2022</h6> 
+                    </div>
+                    <img src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}">
+                </div>
+                <div class="col-12 col-sm-7 px-sm-5">
+                    <div class="meta-badge">{% translate "Webinar" %}</div> 
+
+                    <h5 class="event-title"> {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %} </h5> 
+
+                    <div class="event-desc py-3">
+                        {% blocktranslate %}
+                        In the era of new technologies, the growth of African cities will not only be sustainable but also smart. The rapid urban growth represents one of the greatest challenges of the 21st century in Africa. A new paradigm of urban development is taking place, where intrinsic challenges remain. The role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
+                        {% endblocktranslate %} 
+                    </div>
+                    <div class="my-3">
+                        <a href="{% url 'events' %}" class="btn btn__primary btn-arrow">
+                            {% translate "Read more" %}<i class="fas fa-arrow-right mx-2"></i>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Event Section -->
 
     <!-- Start Partners Area-->
     <section class="our-partners">

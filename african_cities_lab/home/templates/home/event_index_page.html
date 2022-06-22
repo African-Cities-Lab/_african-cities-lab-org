@@ -11,8 +11,8 @@
     {{ block.super }}
     <style>
         .page-banner__right { 
-            background-image: linear-gradient(rgba(191, 55, 18,0.65),rgba(191, 55, 18, 0.7)), url({% static 'images/assets/bg-pattern.png' %});
-        }
+            background-image: url({% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %});
+        } 
     </style>
 {% endblock css %}
 
@@ -26,20 +26,33 @@
 
         <h1 class="event-title"> {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %} </h1> 
 
-        <div class="event-desc">
-            <div class="event-datetime __black-ico py-3 d-md-flex align-items-center">
-                <div class="d-inline-block font-size-24">{% translate "5 July 2022" %}</div>
-                <div class="event-time">
-                  <p class="font-size-14 text_primary">{% translate "Session I" %}</p>
-                  <span>{% translate "10am - 12pm" %}</span> GMT+1
-                  <p class="font-size-14 text_primary">{% translate "Session II" %}</p>
-                  <span>{% translate "2pm - 4pm" %}</span> GMT+1
-                </div> 
+        <ul class="event-meta my-3">
+          <li class="list-inline-item h5">{% translate "5 July, 2022" %}</li>
+          <li class="list-inline-item h5">{% translate "Online" %}</li>
+        </ul>
+        <div class="event-time">
+          <div>
+            <span class="text_primary h5">{% translate "Session I:" %}</span>
+            <span class="h6">{% translate "10am - 12pm" %} GMT+1</span> 
+            <p class="h6 pt-2">{% translate "Artificial intelligence for smart cities" %}</p> 
+          </div>
+          <div class="mt-3">
+            <span class="text_primary h5">{% translate "Session II:" %}</span>
+            <span class="h6">{% translate "2pm - 4pm" %} GMT+1</span> 
+            <p class="h6 pt-2">{% translate "Artificial Intelligence for big data" %}</p> 
+          </div>
+        </div>
+
+
+        <!--div class="event-desc">   
+            <div class="event-datetime __black-ico d-md-flex align-items-center">
+                <div class="d-inline-block font-size-24">{% translate "5 July, 2022" %}</div>
+                
             </div> 
             <p class="event-location __black-ico">{% translate "Online" %}</p>  
-        </div>
+        </div-->
         
-        <div class="mt-4">
+        <div class="my-4">
             <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
                 {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
             </a>
@@ -192,7 +205,9 @@
 
               <div class="event-agenda py-5">
 
-                  <h3 class="section-title text-center mb-3">{% translate "On the agenda" %}</h3> 
+                  <h3 class="section-title text-center">{% translate "On the agenda" %}</h3> 
+                  
+                  <p class="mb-5">***{% translate "This program is temporally" %}</p> 
 
                   <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -210,7 +225,11 @@
                   </ul>
                   <div class="tab-content" id="agenda-content">
                     <div class="tab-pane pt-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
-                      <div class="row border-bottom_grey">
+                      
+                      <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                      <span>{% translate "French subtitled English" %}</span>
+
+                      <div class="row mt-3 border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Introduction" %}</div>
                           <p class="font-size-16 font-weight-500"> {% translate "Smart Cities strategy and AI integretion in Africa: opportunities & challenges." %}</p> 
@@ -274,7 +293,11 @@
                     </div>
 
                     <div class="tab-pane pt-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
-                      <div class="row border-bottom_grey">
+
+                      <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                      <span>{% translate "English subtitled French" %}</span>
+
+                      <div class="row mt-3 border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Introduction" %}</div>
                           <p class="font-size-16 font-weight-500"> {% translate "The role of data availability for AI integration in African smart cities: applications and challenges." %}</p> 
