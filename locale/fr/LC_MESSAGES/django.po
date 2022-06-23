@@ -37,7 +37,7 @@ msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa."
 msgstr ""
-"Intégration de l'open data et l’intelligence artificielle dans le "
+"Intégration de l'open data et de l’intelligence artificielle dans le "
 "développement des smart cities en Afrique."
 
 #: african_cities_lab/home/templates/home/about.html:29
@@ -365,7 +365,7 @@ msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa"
 msgstr ""
-"Intégration de l'open data et l’intelligence artificielle dans le "
+"Intégration de l'open data et de l’intelligence artificielle dans le "
 "développement des smart cities en Afrique"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:52
@@ -958,7 +958,7 @@ msgstr ""
 msgid "Upcoming event"
 msgstr "Événement à venir"
 
-#: african_cities_lab/home/templates/home/home.html:321 
+#: african_cities_lab/home/templates/home/home.html:321
 msgid "5 July"
 msgstr "5 Juillet"
 
