@@ -65,15 +65,15 @@
 
           <form action="{% url 'subscribe' %}" method="post">
             {% csrf_token %}
-            <div class="form-group">
+            <div class="form-group" required="required">
               <label>{% translate "Last name" %}</label>
               <input type="text" name="LNAME" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group" required="required">
               <label>{% translate "First name" %}</label>
               <input type="text" name="FNAME" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group" required="required">
               <label>{% translate "Email" %}</label>
               <input type="email" name="EMAIL" class="form-control">
             </div>
@@ -89,7 +89,7 @@
               <label>{% translate "Title" %}</label>
               <input type="text" name="TITLE" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-group" required="required">
               <label>{% translate "Country" %}</label>
               <input type="text" name="COUNTRY" class="form-control">
             </div>
