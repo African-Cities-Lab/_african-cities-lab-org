@@ -6,25 +6,25 @@
   {% elif self.title %}
     {{ title }}
   {% endif %}
-{% endblock title %} 
+{% endblock title %}
 {% block css %}
-    {{ block.super }}
-    <style>
-        .page-banner__right { 
-            background-image: url({% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %});
-        } 
-    </style>
+  {{ block.super }}
+  <style>
+    .page-banner__right {
+      background-image: url({% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %});
+    }
+  </style>
 {% endblock css %}
 
 {% block content %}
 
-    
-  <section id="single-event" class="page-banner__area"> 
+
+  <section id="single-event" class="page-banner__area">
     <div class="row justify-content-between align-item-center">
-      <div class="home-banner__left pt-5"> 
+      <div class="home-banner__left pt-5">
         <div class="meta-badge">{% translate "Webinar" %}</div>
 
-        <h1 class="event-title"> {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %} </h1> 
+        <h1 class="event-title"> {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %} </h1>
 
         <ul class="event-meta my-3">
           <li class="list-inline-item h5">{% translate "5 July, 2022" %}</li>
@@ -33,57 +33,57 @@
         <div class="event-time">
           <div>
             <span class="text_primary h5">{% translate "Session I:" %}</span>
-            <span class="h6">{% translate "10am - 12pm" %} GMT+1</span> 
-            <p class="h6 pt-2">{% translate "Artificial intelligence for smart cities" %}</p> 
+            <span class="h6">{% translate "10am - 12pm" %} GMT+1</span>
+            <p class="h6 pt-2">{% translate "Artificial intelligence for smart cities" %}</p>
           </div>
           <div class="mt-3">
             <span class="text_primary h5">{% translate "Session II:" %}</span>
-            <span class="h6">{% translate "2pm - 4pm" %} GMT+1</span> 
-            <p class="h6 pt-2">{% translate "Artificial Intelligence for big data" %}</p> 
+            <span class="h6">{% translate "2pm - 4pm" %} GMT+1</span>
+            <p class="h6 pt-2">{% translate "Artificial Intelligence for big data" %}</p>
           </div>
         </div>
 
 
-        <!--div class="event-desc">   
-            <div class="event-datetime __black-ico d-md-flex align-items-center">
-                <div class="d-inline-block font-size-24">{% translate "5 July, 2022" %}</div>
-                
-            </div> 
-            <p class="event-location __black-ico">{% translate "Online" %}</p>  
-        </div-->
-        
+        <!--div class="event-desc">
+             <div class="event-datetime __black-ico d-md-flex align-items-center">
+             <div class="d-inline-block font-size-24">{% translate "5 July, 2022" %}</div>
+
+             </div>
+             <p class="event-location __black-ico">{% translate "Online" %}</p>
+             </div-->
+
         <div class="my-4">
-            <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
-                {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
-            </a>
+          <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small btn-arrow">
+            {% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i>
+          </a>
         </div>
       </div>
       <div class="page-banner__right">
-          <div class="d-none d-lg-block banner-angle__left"> 
-              <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
-          </div>
-      </div> 
-    </div> 
+        <div class="d-none d-lg-block banner-angle__left">
+          <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>  
+  <section>
     <div class="container p-lg-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-10">  
+            <div class="col-12 col-md-10 col-lg-10">
               <div class="event-overview font-size-18">
                 <h3 class="section-title text-center mb-3">{% translate "Overview" %}</h3>
                 <div>
                   {% blocktranslate %}
                     In the era of new technologies, the growth of African cities will not only be sustainable but also smart.
                     The rapid urban growth represents one of the greatest challenges of the 21st century in Africa.
-                    A new paradigm of urban development is taking place, where intrinsic challenges remain. 
+                    A new paradigm of urban development is taking place, where intrinsic challenges remain.
                     The role of digital tools and smart cities as key urban development actors in Africa is yet to be established.
-                    Can artificial intelligence present opportunities to address issues related to demographic growth and to the complexity 
+                    Can artificial intelligence present opportunities to address issues related to demographic growth and to the complexity
                     of developing solutions for fast growing of infrastructure and urban housing services?
                     In this webinar, you will discover:
-                  {% endblocktranslate %} 
+                  {% endblocktranslate %}
                 </div>
-                
+
                 <ul class="py-4">
                   <li>{% translate "The importance of collecting and analyzing big data in the context of African cities" %}</li>
                   <li>{% translate "IA applications in the different aspects of African cities" %}</li>
@@ -97,106 +97,106 @@
                 <div class="row event-speakers__list">
 
                   <div class="col-12 col-md-6 speakers-card">
-                    <div class="card border-0"> 
-                      <div class="card-header py-4 border-0 bg-white"> 
-                          <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}"> 
-                      </div> 
+                    <div class="card border-0">
+                      <div class="card-header py-4 border-0 bg-white">
+                          <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}">
+                      </div>
                       <div class="card-body">
                           <h5 class="speakers-name">
                             Dr. Oualid Ali
                           </h5>
                           <div class="speakers-title my-3">
                             {% translate "Founder and President at the Future Cities Council" %}
-                          </div> 
-                          <div class="speakers-function"> 
+                          </div>
+                          <div class="speakers-function">
                             {% blocktranslate %}
                             He's a futurist, technologist, future cities expert, and considered as one of the international well-recognized experts in the fields of Future foresight, Scenarios planning, Trends watching, Emerging technologies & innovations, Industrial Revolution 4.0, Future cities (Smart, Sustainable and innovative Cities), Education 4.0, Artificial Intelligence (AI), etc.
-                            {% endblocktranslate %} 
+                            {% endblocktranslate %}
                           </div>
-                      </div> 
+                      </div>
                       <div class="card-footer bg-white border-0">
                         <a href="https://www.linkedin.com/in/dr-oualid-ali-490809106/?originalSubdomain=ca" class="text_primary">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
-                      </div> 
-                    </div>   
+                      </div>
+                    </div>
                   </div>
 
                   <div class="col-12 col-md-6 speakers-card">
-                    <div class="card border-0"> 
-                      <div class="card-header py-4 border-0 bg-white"> 
-                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}"> 
-                      </div> 
+                    <div class="card border-0">
+                      <div class="card-header py-4 border-0 bg-white">
+                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
+                      </div>
                       <div class="card-body">
                           <h5 class="speakers-name">
                             Dr. Willy Franck SOB
                           </h5>
                           <div class="speakers-title my-3">
                             {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-                          </div> 
-                          <div class="speakers-function"> 
+                          </div>
+                          <div class="speakers-function">
                             {% blocktranslate %}
                             Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the digital ecosystem in order to achieve sustainable development through open innovation. Recently deployed on a global scale, this open platform for technological innovations aims to accelerate the appropriation of geospatial data by those actors who depend heavily on it (startups, universities, municipalities, civil society). His expertise is recognized by several international institutions where he regularly works as a consultant. These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                            {% endblocktranslate %} 
+                            {% endblocktranslate %}
                           </div>
-                      </div> 
+                      </div>
                       <div class="card-footer bg-white border-0">
                         <a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
-                      </div> 
+                      </div>
                     </div>
                   </div>
 
                   <div class="col-12 col-md-6 speakers-card">
-                      <div class="card border-0"> 
-                          <div class="card-header py-4 border-0 bg-white"> 
-                              <img src="{% static 'images/assets/event/Anastasija_Nikiforova.png' %}"> 
-                          </div> 
+                      <div class="card border-0">
+                          <div class="card-header py-4 border-0 bg-white">
+                              <img src="{% static 'images/assets/event/Anastasija_Nikiforova.png' %}">
+                          </div>
                           <div class="card-body">
                               <h5 class="speakers-name">
                                 Dr. Anastasija Nikiforova
                               </h5>
                               <div class="speakers-title my-3">
                                 {% translate "Researcher , PhD in Computer Science – Data Processing Systems and Data Networking" %}
-                              </div> 
-                              <div class="speakers-function"> 
-                                {% blocktranslate %}
-                                Assistant professor of Information Systems at University of Tartu (Institute of Computer Science), 
-                                a part of European Open Science Cloud Task Force FAIR Metrics and Data Quality and a visiting 
-                                researcher at Delft University of Technology, Faculty Technology Policy and Management. 
-                                Expert of the COST – European Cooperation in Science & Technology, as well as Latvian Council 
-                                of Sciences in Natural Sciences – Computer Science and Informatics, Engineering and Technology-Electrical 
-                                Engineering, Electronics, Information and Communication Technologies (ICT), and Social Sciences – Economics and Business.
-                                {% endblocktranslate %} 
                               </div>
-                          </div> 
+                              <div class="speakers-function">
+                                {% blocktranslate %}
+                                Assistant professor of Information Systems at University of Tartu (Institute of Computer Science),
+                                a part of European Open Science Cloud Task Force FAIR Metrics and Data Quality and a visiting
+                                researcher at Delft University of Technology, Faculty Technology Policy and Management.
+                                Expert of the COST – European Cooperation in Science & Technology, as well as Latvian Council
+                                of Sciences in Natural Sciences – Computer Science and Informatics, Engineering and Technology-Electrical
+                                Engineering, Electronics, Information and Communication Technologies (ICT), and Social Sciences – Economics and Business.
+                                {% endblocktranslate %}
+                              </div>
+                          </div>
                           <div class="card-footer bg-white border-0">
                             <a href="https://www.linkedin.com/in/anastasija-nikiforova-466b99b3/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
-                          </div> 
+                          </div>
                       </div>
                   </div>
-                  
+
                   <div class="col-12 col-md-6 speakers-card">
-                    <div class="card border-0"> 
-                        <div class="card-header py-4 border-0 bg-white"> 
-                            <img src="{% static 'images/assets/event/Constant CAP.jpg' %}"> 
-                        </div> 
+                    <div class="card border-0">
+                        <div class="card-header py-4 border-0 bg-white">
+                            <img src="{% static 'images/assets/event/Constant CAP.jpg' %}">
+                        </div>
                         <div class="card-body">
                             <h5 class="speakers-name">
-                              Mr. Constant CAP 
+                              Mr. Constant CAP
                             </h5>
                             <div class="speakers-title my-3">
                               {% translate "Senior Product Manager at Code for Africa’s Africa.Sensors environmental monitoring program." %}
-                            </div> 
-                            <div class="speakers-function"> 
+                            </div>
+                            <div class="speakers-function">
                               {% blocktranslate %}
                               He has a Master degree in Urban and Regional Planning from the University of Nairobi, Kenya and an undergraduate Education degree in Geography and Mathematics from the same. He is a Graduate Member of the Town and County Planners Association of Kenya  and a member of the International Society of Urban and Regional Planners (ISOCARP). He has previously worked at the Strathmore University Advancement Office and as the Executive Director of Kilimani Project Foundation.
-                              {% endblocktranslate %} 
+                              {% endblocktranslate %}
                             </div>
-                        </div> 
+                        </div>
                         <div class="card-footer bg-white border-0">
                           <a href="https://www.linkedin.com/in/constantcap/" class="text_primary"><i class="fab fa-linkedin-in"></i></a>
-                        </div> 
-                    </div>  
+                        </div>
+                    </div>
                   </div>
 
                 </div>
@@ -205,9 +205,9 @@
 
               <div class="event-agenda py-5">
 
-                  <h3 class="section-title text-center">{% translate "On the agenda" %}</h3> 
-                  
-                  <p class="mb-5">***{% translate "This program is temporally" %}</p> 
+                  <h3 class="section-title text-center">{% translate "On the agenda" %}</h3>
+
+                  <p class="mb-5">***{% translate "This program is temporally" %}</p>
 
                   <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -221,18 +221,18 @@
                           <h4>{% translate "Session II" %}</h4>
                           <span>{% translate "2pm - 4pm" %}</span> GMT+1
                       </a>
-                    </li> 
+                    </li>
                   </ul>
                   <div class="tab-content" id="agenda-content">
                     <div class="tab-pane pt-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
-                      
+
                       <h6 class="d-inline-block">{% translate "Language:" %}</h6>
                       <span>{% translate "French subtitled English" %}</span>
 
                       <div class="row mt-3 border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Introduction" %}</div>
-                          <p class="font-size-16 font-weight-500"> {% translate "Smart Cities strategy and AI integretion in Africa: opportunities & challenges." %}</p> 
+                          <p class="font-size-16 font-weight-500"> {% translate "Smart Cities strategy and AI integretion in Africa: opportunities & challenges." %}</p>
                         </div>
                         <div class="col-12 col-sm-4 p-3">
                           <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Oualid Ali</p>
@@ -242,19 +242,19 @@
                       <div class="row border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "First Presentation" %}</div>
-                          <p class="font-size-16 font-weight-500"> {% translate "African government initiative for the integration of AI in african cities: Lessons from Moroccan and Rwanda experiences." %}</p> 
-                        </div> 
+                          <p class="font-size-16 font-weight-500"> {% translate "African government initiative for the integration of AI in african cities: Lessons from Moroccan and Rwanda experiences." %}</p>
+                        </div>
                       </div>
                       <div class="row border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Second Presentation" %}</div>
-                          <p class="font-size-16 font-weight-500"> {% translate "Technologies for smart cities: The role of AI as a pillar of smart city planning in Africa." %}</^> 
-                        </div> 
+                          <p class="font-size-16 font-weight-500"> {% translate "Technologies for smart cities: The role of AI as a pillar of smart city planning in Africa." %}</^>
+                        </div>
                       </div>
                       <div class="row ">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Third Presentation" %}</div>
-                          <p class="font-size-16 font-weight-500"> {% translate "Impact and challenges of the digitization of african cities on AI integration: Case of anglophone and francophone countries." %}</p> 
+                          <p class="font-size-16 font-weight-500"> {% translate "Impact and challenges of the digitization of african cities on AI integration: Case of anglophone and francophone countries." %}</p>
                         </div>
                         <div class="col-12 col-sm-4 p-3">
                           <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Willy Franck SOB</p>
@@ -263,32 +263,32 @@
                       </div>
                       <div class="row">
                         <div class="col-12 col-sm-8 p-3">
-                          <p class="font-size-16 font-weight-500"> {% translate "What city is the smart city about? Actors and construction processes in the african context." %}</p> 
+                          <p class="font-size-16 font-weight-500"> {% translate "What city is the smart city about? Actors and construction processes in the african context." %}</p>
                         </div>
                         <div class="col-12 col-sm-4 p-3">
-                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Tariq Akdim</p> 
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Tariq Akdim</p>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12 col-sm-8 p-3">
-                          <p class="font-size-16 font-weight-500"> {% translate "The smart city in african context: Lessons from the moroccan experience." %}</p> 
+                          <p class="font-size-16 font-weight-500"> {% translate "The smart city in african context: Lessons from the moroccan experience." %}</p>
                         </div>
                         <div class="col-12 col-sm-4 p-3">
-                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Mohamed Abdedaime</p> 
+                          <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Mohamed Abdedaime</p>
                         </div>
                       </div>
                       <div class="row border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
-                          <p class="font-size-16 font-weight-500"> {% translate "Application of geoinformation in urban planning: the case of Morocco." %}</p> 
+                          <p class="font-size-16 font-weight-500"> {% translate "Application of geoinformation in urban planning: the case of Morocco." %}</p>
                         </div>
                         <div class="col-12 col-sm-4 p-3">
-                          
+
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Video interview & discussion" %}</div>
-                        </div> 
+                        </div>
                       </div>
                     </div>
 
@@ -300,13 +300,13 @@
                       <div class="row mt-3 border-bottom_grey">
                         <div class="col-12 col-sm-8 p-3">
                           <div class="meta-badge">{% translate "Introduction" %}</div>
-                          <p class="font-size-16 font-weight-500"> {% translate "The role of data availability for AI integration in African smart cities: applications and challenges." %}</p> 
-                        </div> 
+                          <p class="font-size-16 font-weight-500"> {% translate "The role of data availability for AI integration in African smart cities: applications and challenges." %}</p>
+                        </div>
                       </div>
                       <div class="row border-bottom_grey">
                           <div class="col-12 col-sm-8 p-3">
                             <div class="meta-badge">{% translate "First presentation" %}</div>
-                            <p class="font-size-16 font-weight-500"> {% translate "Open data and participatory data as catalysts and drivers of African smart cities." %}</p> 
+                            <p class="font-size-16 font-weight-500"> {% translate "Open data and participatory data as catalysts and drivers of African smart cities." %}</p>
                           </div>
                           <div class="col-12 col-sm-4 p-3">
                             <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Anastasija Nikiforova</p>
@@ -316,7 +316,7 @@
                       <div class="row border-bottom_grey">
                           <div class="col-12 col-sm-8 p-3">
                             <div class="meta-badge">{% translate "Second presentation" %}</div>
-                            <p class="font-size-16 font-weight-500"> {% translate "Low cost data solution and citizen initiatives for AI integration in African smart cities." %}</p> 
+                            <p class="font-size-16 font-weight-500"> {% translate "Low cost data solution and citizen initiatives for AI integration in African smart cities." %}</p>
                           </div>
                           <div class="col-12 col-sm-4 p-3">
                             <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Mr. Constant CAP</p>
@@ -325,10 +325,10 @@
                       </div>
                       <div class="row ">
                           <div class="col-12 col-sm-8 p-3">
-                            <div class="meta-badge">{% translate "Video interview and discussion" %}</div> 
-                          </div> 
+                            <div class="meta-badge">{% translate "Video interview and discussion" %}</div>
+                          </div>
                       </div>
-                    </div> 
+                    </div>
                   </div>
               </div>
 
@@ -336,12 +336,12 @@
                 <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}" role="button">
                   {% translate "Register now" %}
                 </a>
-              </div> 
+              </div>
 
-            </div> 
-            
+            </div>
+
           </div>
-        </div> 
+        </div>
       </div>
   </section>
 
