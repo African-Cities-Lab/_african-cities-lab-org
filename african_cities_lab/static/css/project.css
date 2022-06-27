@@ -734,14 +734,6 @@ a:hover {
 	right: 25px;
 	bottom: 0;
 }
-.acl-sharpes.gray-left__sharpe {
-	top: -158px;
-    left: -10px;
-}
-.acl-sharpes.gray-left__sharpe > img {
-	width: 165px;
-	height: auto;
-}
 .acl-sharpes.bottom-right__sharpe > img {
 	width: 300px;
 	height: auto;
@@ -761,6 +753,14 @@ a:hover {
 .acl-sharpes > img {        
 	-webkit-transition: all 0.8s ease-in-out;
 	transition: all 0.8s ease-in-out; 
+}
+.acl-sharpes.gray-left__sharpe {
+	top: -158px;
+    left: -10px;
+}
+.acl-sharpes.gray-left__sharpe > img {
+	width: 165px;
+	height: auto;
 }
 .select-angle {
 	position: absolute;
