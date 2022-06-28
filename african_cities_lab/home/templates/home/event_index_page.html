@@ -5,16 +5,16 @@
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}">
 <meta name="twitter:description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% localized_slugurl 'home' %}static/images/assets/event/event-visuel-officiel.png">
+<meta name="twitter:image" content="{% static 'images/assets/event/event-visuel-officiel.png' %}">
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% localized_slugurl 'home' %}static/images/assets/event/event-visuel-officiel.png" /> 
+<meta property="og:image" content="{% static 'images/assets/event/event-visuel-officiel.png' %}" /> 
 
 <meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
-<meta itemprop='image' content="{% localized_slugurl 'home' %}static/images/assets/event/event-visuel-officiel.png" />
+<meta itemprop='image' content="{% static 'images/assets/event/event-visuel-officiel.png' %}" />
 {% endblock %}
 {% block title %}
     {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %} 
