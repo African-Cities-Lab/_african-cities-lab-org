@@ -2,17 +2,22 @@
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
-    <head>
+    <head> 
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% block static_meta_tag %}
+        {% endblock %}
         <title>
             {% block title %}
                 African Cities Lab
-            {% endblock title %}
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="African Cities Lab website" />
-        <meta name="author" content="Martí Bosch" />
+            {% endblock title %} 
+        </title> 
+        {% block meta_tag_description %}
+            <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+        {% endblock %}
+
+        <meta name="author" content="Martí Bosch - Nabil RAIMI" />
         <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
         {% block css %}
             <!-- Your stuff: Third-party CSS libraries go here -->

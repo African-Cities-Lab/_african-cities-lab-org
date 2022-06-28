@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
-  {% if self.seo_title %}
-    {{ self.seo_title }}
-  {% elif self.title %}
-    {{ self.title }}
-  {% else %}
-    {% translate "Events" %}
-  {% endif %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Events" %} - African Cities Lab
+    {% endif %} 
 {% endblock title %}
+{% block meta_tag_description %}
+  <meta name="description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
+{% endblock %}
+
 {% block css %}
   {{ block.super }}
   <style>

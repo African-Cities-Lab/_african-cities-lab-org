@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% load static i18n wagtailcore_tags %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
     {% if self.seo_title %}
         {{ self.seo_title }}
-    {% else %}
+    {% elif self.title %}
         {{ self.title }}
-    {% endif %}
+    {% else %}
+        {% translate "About" %} - African Cities Lab
+    {% endif %} 
 {% endblock title %}
+
 {% block css %}
     {{ block.super }}
     <style>
