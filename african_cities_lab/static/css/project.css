@@ -1238,10 +1238,7 @@ li.events-listing__item .events-listing__desc {
 /*----------------------------------------*/
 /*  Static page event
 /*----------------------------------------*/
-.event-speakers__list .speakers-card {
-	display: flex;
-	padding: 1rem;
-}
+
 .event-speakers__list .speakers-card .card {
 	-webkit-box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%);
     box-shadow: 0 2px 3px 0 rgb(0 0 0 / 5%);
@@ -1255,6 +1252,48 @@ li.events-listing__item .events-listing__desc {
 .event-speakers__list .speakers-card .card .card-footer > a {
 	font-size: 1.75em;
 }
+.event-speakers .speaker-ht__card {
+	padding: 1.5rem; 
+	background-color: #fff; 
+	border-radius: 5px;
+}
+.speaker-ht__card .speaker-ht__card-profil {
+	padding: 1rem; 
+	border-right: 1px solid #eaeaea;
+}
+.speaker-ht__card .speaker-ht__card-profil > img {
+	object-fit: cover; 
+	width: 252px;
+    height: 215px;
+}
+.speaker-ht__card .speaker-ht__card-rs > a {
+	padding: .75rem; 
+	background-color: #f6f2f1; 
+	border-radius: 5px; 
+	margin-right: 1rem;
+	display: inline-block;
+	color: #BE3712 !important;
+}
+.speaker-ht__card .speaker-ht__card-bio {
+	padding: 1.5rem;
+}
+.speakers-swiper .swiper-pagination-bullet-active { 
+	background: #BE3712;
+}
+.speakers-swiper .swiper-button-prev, 
+.speakers-swiper .swiper-button-next {
+	background: #f6f2f1;
+	color: #BE3712;
+	padding: 1.5rem;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px rgb(7 7 35 / 10%);
+}
+.speakers-swiper .swiper-button-prev:after, 
+.speakers-swiper .swiper-button-next:after {
+	font-size: 20px;
+	font-weight: 700;
+} 
+
 .box_shadow_level_1 {
 	box-shadow: 0px 8px 40px -5px rgb(9 31 67 / 10%);
 	padding: 25px 25px 15px 25px !important;
@@ -1317,6 +1356,16 @@ ul.event-meta {
   vertical-align: 0;
   margin-right: 3px;
 }
+.moderator-ico:before {
+	content: "";
+	background:url('../images/assets/moderator-ico.png') no-repeat center;
+	background-size: contain;
+	display: inline-block; 
+	height: 22px;
+	width: 22px;
+	vertical-align: 0;
+	margin-right: 3px;
+  }
 
 /*----------------------------------------*/
 /*  About Page

@@ -5,16 +5,14 @@
     <head> 
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {% block static_meta_tag %}
-        {% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <title>
-            {% block title %}
-                African Cities Lab
-            {% endblock title %} 
+            {% block title %} African Cities Lab{% endblock title %} 
         </title> 
         {% block meta_tag_description %}
             <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+        {% endblock %}
+        {% block static_meta_tag %}
         {% endblock %}
 
         <meta name="author" content="Martí Bosch - Nabil RAIMI" />
