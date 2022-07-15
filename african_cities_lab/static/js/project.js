@@ -61,12 +61,8 @@
     //Speakers card swipper
     var swiper = new Swiper(".speakers-swiper", {
         slidesPerView: 1,
-        spaceBetween: 40,
+        spaceBetween: 80,
         loop: true, 
-        autoplay: {
-            delay: 7500,
-            disableOnInteraction: false,
-        }, 
         freeMode: true, 
         pagination: {
           el: ".swiper-pagination",

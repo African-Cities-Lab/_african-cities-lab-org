@@ -39,6 +39,7 @@
   </style>
 {% endblock css %}
 
+{% comment %}
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
@@ -51,6 +52,7 @@
         <span id="close_hellobar"><a href="#">+</a></span>
     </div> 
 {% endblock hellobar %} 
+{% endcomment %}
 
 {% block content %}
 
@@ -83,15 +85,15 @@
     </section>
 
     <section>
-        <div class="container p-md-5">
+        <div class="container py-5 p-md-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">  
                     <h3 class="section-title text-center">{% translate "We’re here to help" %}</h3>
                     <div class="text-center font-size-18 mb-5">{% translate "Please contact us in case of any query. We are happy to help" %}.</div> 
 
                     <div class="row justify-content-around">
-                        <div class="col-12 col-lg-5 col-md-6 icon-box box_shadow_level_1 m-4">
-                            <div class="card"> 
+                        <div class="col-12 col-md-6 icon-box m-3 m-md-0">
+                            <div class="card w-100 box_shadow_level_1"> 
                                 <div class="card-body">
                                     <div class="icon-box__title">
                                         <h5 class="pb-3">{% translate "Email Us To Get Information" %}</h5>
@@ -107,8 +109,8 @@
                                 </div> 
                             </div>    
                         </div> 
-                        <div class="col-12 col-lg-5 col-md-6 icon-box box_shadow_level_1 m-4">
-                            <div class="card"> 
+                        <div class="col-12 col-md-6 icon-box m-3 m-md-0">
+                            <div class="card w-100 box_shadow_level_1"> 
                                 <div class="card-body">
                                     <div class="icon-box__title">
                                         <h5>{% translate "Follow us on" %}</h5>

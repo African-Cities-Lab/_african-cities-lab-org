@@ -39,6 +39,7 @@
     </style>
 {% endblock css %}
 
+{% comment %}
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
@@ -51,6 +52,7 @@
         <span id="close_hellobar"><a href="#">+</a></span>
     </div> 
 {% endblock hellobar %} 
+{% endcomment %}
 
 {% block content %}
 
@@ -248,11 +250,11 @@
                         development and achieve SDGs.
                         {% endblocktranslate %} 
                     </div>
-                    <div class="mt-5 text-center">
+                    <!--div class="mt-5 text-center">
                         <a href="{% url 'events' %}" class="btn btn__primary btn__small btn-arrow">
                             {% translate "Register for the webinar" %}<i class="fas fa-arrow-right mx-2"></i>
                         </a> 
-                    </div>
+                    </div-->
                 </div>
             </div> 
         </div>
