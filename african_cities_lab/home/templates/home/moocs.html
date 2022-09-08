@@ -1,0 +1,507 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "MOOCs" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style> 
+    .page-banner__right {
+        background-image: url({% static 'images/assets/acl-contact-banner.jpg' %});
+    }
+  </style>
+{% endblock css %}
+
+{% comment %}
+{% block hellobar %}
+    <div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
+
+            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div>
+{% endblock hellobar %}
+{% endcomment %}
+
+{% block content %}
+
+    <section class="page-banner__area bg_primary">
+        <div class="row justify-content-between align-item-center">
+            <div class="page-banner__left align-self-center">
+                <h1 class="page-hero__title text-white">{% translate "Explore our MOOCs" %}</h1>
+            </div>
+            <div class="page-banner__right">
+                <div class="d-none d-lg-block banner-angle__left">
+                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-xl py-3">
+            <div class="row py-5">
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'introduction-to-sanitazation-economy-systems-markets' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/sanitation.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div> 
+                    
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'introduction-to-sanitazation-economy-systems-markets' %}" class="d-block text-black">{% translate "Introduction to Sanitazation Economy Systems & Markets" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'urban-data-management-for-smart-city-developpement-in-africa' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/digital_.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/um6p.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "UM6P" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Digital" %}</span>
+                                </div>
+                            </div> 
+                            
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'urban-data-management-for-smart-city-developpement-in-africa' %}" class="d-block text-black">
+                                    {% translate "Urban Data Management for Smart City Developpement in Africa" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'eco-construction-en-afrique' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/eco_construction.png' %}"> 
+                            </a>
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/semecity.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "Sèmè City" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Building" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'eco-construction-en-afrique' %}" class="d-block text-black">{% translate "Eco construction en Afrique" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'making-housing-work-in-african-cities' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/housing.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Housing" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'making-housing-work-in-african-cities' %}" class="d-block text-black">
+                                    {% translate "Making housing work in African cities: understanding the role and opportunity of finance" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/digital__.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Digital" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block text-black">{% translate "How can cities in Africa be smarter?" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/food_systems.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Food Systems" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block text-black">{% translate "What can food tell us about cities in Africa?" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'la-fabrique-urbaine-collective' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/planning.png' %}"> 
+                            </a>
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/ucad.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "Université Cheikh Anta Diop de Dakar" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Planning" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'la-fabrique-urbaine-collective' %}" class="d-block text-black">{% translate "La fabrique urbaine collective : Idées et outils pour co-produire la ville" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'urban-economic-development-in-the-context-of-climate-change' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/climate_change.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/um6p.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "UM6P" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Climate Change" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'urban-economic-development-in-the-context-of-climate-change' %}" class="d-block text-black">{% translate "Urban Economic Development in the Context of Climate Change" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'digital-governance-for-a-better-public-participation-and-urban-services-delivery-in-african-cities' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/gouvernance.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/unhabitat.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "UN Habitat" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Governance" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'digital-governance-for-a-better-public-participation-and-urban-services-delivery-in-african-cities' %}" class="d-block text-black">
+                                    {% translate "Digital Governance for a better public participation and urban services delivery in African cities" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'le-solaire-photovoltaïque-et-ses-applications-au-profit-du-developpement-urbain' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/energy.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/um6p.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "UM6P" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Energy" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'le-solaire-photovoltaïque-et-ses-applications-au-profit-du-developpement-urbain' %}" class="d-block text-black">{% translate "Le solaire photovoltaïque et ses application au profit du développement urbain" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'sustainable-urban-systems' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/urban_systems.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Urban Systems" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'sustainable-urban-systems' %}" class="d-block text-black">{% translate "Sustainable Urban Systems: How can urban sustainability become possible in Africa?" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="{% url 'habitat-resilient' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/housing.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uvt.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "Université Virtuelle de Tunis" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Housing" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'habitat-resilient' %}" class="d-block text-black">{% translate "Habitat résilient (Résilent Housing)" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'urban-ai' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/digital__.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/asu.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "Ain Shams University" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Digital" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title ">
+                                <a href="{% url 'urban-ai' %}" class="d-block text-black">{% translate "Urban AI: Inspiring Smart Action for Just African Cities" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}

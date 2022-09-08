@@ -1,0 +1,686 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Speakers | The International Conference of African Cities" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab"/>
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .shadow-sm {
+        box-shadow: unset !important;
+    }
+    .civa-form__section {
+      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
+    }
+    .page-banner__right {
+        background-image: url({% static 'images/assets/Place_de_Etoile_rouge.jpg' %});
+    }
+  </style>
+{% endblock css %}
+
+{% block javascript %}
+  {{ block.super }}
+  <script defer src="{% static 'js/subnavigation.js' %}"></script>
+{% endblock javascript %}
+
+{% block content %}
+
+<div class="subnavigation">
+    <div class="hz-scroll-container">
+        <div class="container-fluid hz-scroll-content">
+            <div class="row no-gutters">
+                <div class="overflow-wrap col-10 col-xl-11">
+                    <nav aria-labelledby="nav2">
+                        <label id="nav2">
+                            {% translate "ICAC 2023" %}
+                            <span class="visuallyhidden">secondary menu</span>
+                        </label>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                              {% url 'civa-agenda' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-speakers' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-sponsors' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-travel-information' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Travel Information" %}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
+    </div>
+</div>
+
+<section class="page-banner__area bg_primary">
+    <div class="row justify-content-between align-item-center">
+        <div class="page-banner__left align-self-center">
+            <h1 class="page-hero__title text-white">{% translate "Speakers" %}</h1>
+        </div>
+        <div class="page-banner__right">
+            <div class="d-none d-lg-block banner-angle__left">
+                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="event-speakers pt-5">
+    <div class="container-xl position-relative py-5">
+
+      <div class="text-center h1 mb-3">
+        {% blocktranslate %}
+            These experts will inspire <br>
+            you to create tomorrow african cities
+        {% endblocktranslate %}
+      </div>
+
+      <div class="row event-speakers__list justify-content-center py-5">
+        
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Nisrine-Cherata.png' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Dr Nesrine Chehata</h4>
+              <p class="speaker-designation">
+                {% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Nisrine-Cherata.png' %}" alt="Dr Nesrine Chehata"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Dr Nesrine Chehata</h2>
+                            
+                          <p class="my-2">{% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Is a lecturer at Bordeaux INP since 2006 and specializes in geomatics and AI for Earth observation.
+                            She defended her thesis in 2005 with CNES (Centre National des Etudes Spatiales) and IGN
+                            (Institut Géographique National) on 3D modeling of buildings from satellite data THR.
+                            She is president and founding member of the association AGEOS - African Association for Geospatial
+                            Development since November 2016. She organizes many seminars of awareness and technology watch in
+                            geospatial in Tunisia and open to the African scale. She advocates for opengeodata in Tunisia and
+                            the animation of the community of reusers via the organization of Tunisia Opengeodatahack.
+                            She coordinates several projects to support ministries and local authorities in Tunisia for
+                            the implementation of their GIS, with the inclusion of citizens via openstreetmap.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr. Tariq AKDIM</h4>
+              <p class="speaker-designation">
+                {% translate "Doctoral student, Researcher" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}" alt="Mr. Tariq AKDIM"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr. Tariq AKDIM</h2>
+                            
+                          <p class="my-2">{% translate "Doctoral student, Researcher" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                              Mr. Tariq AKDIM is a doctoral researcher at UIT Ibn Tofail, president of the LOGOS club, economist 
+                              expert in territorial development and associate professor at SupMTI Rabat.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_3">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Christelle GBADO.png' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">{% translate "Ms" %} Christelle Gbado</h4>
+              <p class="speaker-designation">
+                {% translate "PhD student" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_3" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Christelle GBADO.png' %}" alt="Christelle Gbado"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>{% translate "Ms" %} Christelle Gbado</h2>
+                            
+                          <p class="my-2">{% translate "PhD student" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Christelle GBADO is a PhD student in urban and regional planning at Sorbornne University.
+                            Since 2019, she has been studying and analysing quality of life issues in the construction
+                            of smart cities in Africa through the study of some cases of emerging smart cities.
+                            She holds a Master's degree in Urban and Regional Planning, Development and Foresight
+                            from the Sorbonne University. She has worked on many projects related to urban planning
+                            and urban programming in Benin and as part of her studies at Sobornne University.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr Willy Franck SOB</h4>
+              <p class="speaker-designation">
+                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr Willy Franck SOB</h2>
+                            
+                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
+                            GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
+                            digital ecosystem in order to achieve sustainable development through open innovation. 
+                            Recently deployed on a global scale, this open platform for technological innovations 
+                            aims to accelerate the appropriation of geospatial data by those actors who depend 
+                            heavily on it (startups, universities, municipalities, civil society). His expertise 
+                            is recognized by several international institutions where he regularly works as a consultant. 
+                            These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Dr. Oualid Ali</h4>
+              <p class="speaker-designation">
+                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_5" tabindex="-1" aria-labelledby="speaker_modal_5" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}" alt="Dr. Oualid Ali"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Dr. Oualid Ali</h2>
+                            
+                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            He's a futurist, technologist, future cities expert, and considered as one of the international
+                            well-recognized experts in the fields of Future foresight, Scenarios planning, Trends watching,
+                            Emerging technologies & innovations, Industrial Revolution 4.0, Future cities (Smart, Sustainable
+                            and innovative Cities), Education 4.0, Artificial Intelligence (AI), etc.
+                          {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_6" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_6">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Vitor Pessoa Colombo.jpg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr. Vitor Pessoa Colombo</h4>
+              <p class="speaker-designation">
+                {% translate "Architech and PhD student EPFL Lausanne, Switzerland" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_6" tabindex="-1" aria-labelledby="speaker_modal_6" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Vitor Pessoa Colombo.jpg' %}" alt="Mr. Vitor Pessoa Colombo"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr. Vitor Pessoa Colombo</h2>
+                            
+                          <p class="my-2">{% translate "Architech and PhD student EPFL Lausanne, Switzerland" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                              He has a Master degree in Urban and Regional Planning from the University of Nairobi,
+                              Kenya and an undergraduate Education degree in Geography and Mathematics from the same.
+                              He is a Graduate Member of the Town and County Planners Association of Kenya  and a
+                              member of the International Society of Urban and Regional Planners (ISOCARP).
+                              He has previously worked at the Strathmore University Advancement Office and as
+                              the Executive Director of Kilimani Project Foundation.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_7" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_7">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Anastasija_Nikiforova.png' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/anastasija-nikiforova-466b99b3/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Dr. Anastasija Nikiforova</h4>
+              <p class="speaker-designation">
+                {% translate "Researcher , PhD in Computer Science – Data Processing Systems and Data Networking" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_7" tabindex="-1" aria-labelledby="speaker_modal_7" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Anastasija_Nikiforova.png' %}" alt="Dr. Anastasija Nikiforova"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Dr. Anastasija Nikiforova</h2>
+                            
+                          <p class="my-2">{% translate "Researcher , PhD in Computer Science – Data Processing Systems and Data Networking" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/anastasija-nikiforova-466b99b3/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Assistant professor of Information Systems at University of Tartu (Institute of Computer Science),
+                            a part of European Open Science Cloud Task Force FAIR Metrics and Data Quality and a visiting
+                            researcher at Delft University of Technology, Faculty Technology Policy and Management.
+                            Expert of the COST – European Cooperation in Science & Technology, as well as Latvian Council
+                            of Sciences in Natural Sciences – Computer Science and Informatics, Engineering and Technology-Electrical
+                            Engineering, Electronics, Information and Communication Technologies (ICT), and Social Sciences – Economics and Business.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+        
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_8" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_8">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Constant CAP.png' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/constantcap/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr. Constant CAP</h4>
+              <p class="speaker-designation">
+                {% translate "Senior Product Manager at Code for Africa's sensors AFRICA citizen science program" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_8" tabindex="-1" aria-labelledby="speaker_modal_8" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Constant CAP.png' %}" alt="Mr. Constant CAP"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr. Constant CAP</h2>
+                            
+                          <p class="my-2">{% translate "Senior Product Manager at Code for Africa's sensors AFRICA citizen science program" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/constantcap/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            He has a Master degree in Urban and Regional Planning from the University
+                            of Nairobi, Kenya and an undergraduate Education degree in Geography and
+                            Mathematics from the same. He is a Graduate Member of the Town and County
+                            Planners Association of Kenya  and a member of the International Society
+                            of Urban and Regional Planners (ISOCARP). He has previously worked at the
+                            Strathmore University Advancement Office and as the Executive Director of
+                            Kilimani Project Foundation.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+</section>
+
+<section class="civa-form__section">
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-white text-center py-5">
+          <div class="h1 pt-lg-5">{% translate "Join the International Conference on African Cities" %}</div>
+          <div class="mt-5 text-center">
+            <a href="#" class="btn btn__primary btn__big">
+                {% translate "Register to attend" %}
+            </a>
+          </div>
+          <p class="font-size-18 pt-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>info@africancitieslab.org</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock content %}
+  

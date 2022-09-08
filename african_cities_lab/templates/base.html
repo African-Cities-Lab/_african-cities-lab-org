@@ -85,10 +85,11 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                             </li>
-                            {% comment %}
+                            {% url 'moocs' as url %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link" href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
+                                <a class="nav-link  {% if request.path == url %}active{% endif %}" href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
                             </li>
+                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
                             </li>
@@ -97,14 +98,23 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'about' %}">{% translate "About" %}</a>
                             </li>
-                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
-                            {% endcomment %}
-                            {% url 'events' as url %}
-                            <li class="nav-item mx-3">
-                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Events" %}</a>
+                            <li class="nav-item mx-3 dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" href="#" id="event-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {% translate "Events" %}
+                                </a>
+                                <ul class="dropdown-menu py-lg-3" aria-labelledby="event-dropdown">
+                                    <li>
+                                        {% url 'events' as url %}
+                                        <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
+                                    </li>
+                                    <li class="pt-2">
+                                        {% url 'the-international-conference-of-african-cities-2023' as url %}
+                                        <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">{% translate "CIVA 2023" %}</a>
+                                    </li>
+                                </ul>
                             </li>
                             {% url 'contact' as url %}
                             <li class="nav-item mx-3">
@@ -113,7 +123,7 @@
                         </ul>
                         <div class="right-header">
                             <span class="dropdown px-3">
-                                <a class="text-black font-weight-bold" href="#" role="button" id="lang-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="text-black font-weight-bold dropdown-toggle" href="#" role="button" id="lang-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-globe mx-2"></i>{{ LANGUAGE_CODE|upper }}
                                 </a>
                                 <ul class="dropdown-menu"
@@ -123,7 +133,7 @@
                                     {% for language in languages %}
                                         {% if language.code != LANGUAGE_CODE %}
                                             <li>
-                                                <a class="dropdown-item font-weight-bold"
+                                                <a class="dropdown-item "
                                                     onclick='document.getElementById("language-selector").value="{{ language.code }}";document.getElementById("language-form").submit()'>
                                                         {{ language.code|upper }}
                                                 </a>
@@ -177,13 +187,13 @@
                                             <a href="{% url 'careers' %}">{% translate "Careers" %}</a>
                                         </li>
                                          
+                                        {% endcomment %}
                                         <li>
                                             <a href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                                         </li>
-                                        {% endcomment %}
                                        
                                         <li>
-                                            <a href="{% url 'events' %}">{% translate "Events" %}</a>
+                                            <a href="{% url 'events' %}">{% translate "Webinars" %}</a>
                                         </li>
                                         <li>
                                             <a href="{% url 'contact' %}">{% translate "Contact" %}</a> 

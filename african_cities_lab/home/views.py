@@ -32,8 +32,6 @@ class HomeView(generic.TemplateView):
             .order_by("-first_published_at")[:3]
         )
         context["blog"] = latest_article
-        context["moocs"] = []
-        context["topics"] = []
         return context
 
 
@@ -67,40 +65,6 @@ def _subscribe(email, merge_fields=None):
     except ApiClientError as error:
         print("An exception occurred: {}".format(error.text))
 
-
-class EventIndexView(generic.TemplateView):
-    template_name = "home/event_index_page.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["title"] = _("Events")
-        return context
-    
-class GdprView(generic.TemplateView):
-    template_name = "home/static_gdpr.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["title"] = _("GDPR")
-        return context
-    
-class TermsView(generic.TemplateView):
-    template_name = "home/static_terms.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["title"] = _("Terms & Conditions")
-        return context   
-    
-class TermsView(generic.TemplateView):
-    template_name = "home/static_contact.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["title"] = _("Contact")
-        return context            
-
-
 def subscribe(request):
     if request.method == "POST":
         email = request.POST["EMAIL"]
@@ -116,7 +80,7 @@ def subscribe(request):
 
         _subscribe(email, merge_fields)  # function to access mailchimp
         messages.success(
-            request, _("You have successfully subscribed to the webinar. Thank you!")
+            request, _("Thank you for registering.We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
         )  # message
 
     return render(

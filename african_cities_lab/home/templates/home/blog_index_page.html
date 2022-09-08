@@ -12,23 +12,33 @@
 {% block css %}
     {{ block.super }}
     <style>
-        .page-hero__container{
-            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
+        .page-banner__right {
+            background-image: url({% static 'images/assets/acl-contact-banner.jpg' %});
         }
-    </style>
+    </style> 
 {% endblock css %}
 
 {% block content %}
 
     <!-- Page banner area-->
-    <section class="page-hero__container">
-        {% include "home/parts/page_header.html" with page_title=self.title %}
+    <section class="page-banner__area bg_primary">
+        <div class="row justify-content-between align-item-center">
+            <div class="page-banner__left align-self-center">
+                <h1 class="page-hero__title text-white">{% translate "Blog" %}</h1>
+            </div>
+            <div class="page-banner__right">
+                <div class="d-none d-lg-block banner-angle__left">
+                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Page banner area -->
 
-    <section class="filter-wrapper">
-        <div class="container">
-            <div class="row justify-content-md-between align-content-center p-lg-5">
+    {% if page.localized.get_children %}
+    <section class="filter-wrapper py-5">
+        <div class="container-xl">
+            <div class="row justify-content-md-between align-content-center">
                 <div class="col-12 col-sm-4 align-self-center">
                     <h2>{% translate "All articles" %}</h2> 
                 </div> 
@@ -47,9 +57,9 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="row px-lg-5">
+    <section class="pB-5">
+        <div class="container-xl">
+            <div class="row ">
                 {% for article in page.localized.get_children %} 
                 <div class="col-12 col-lg-4 col-md-6 article-card">
                     <div class="card border-0">
@@ -77,22 +87,12 @@
                         </div> 
                     </div> 
                 </div> 
-                {% empty %}
-                    <div class="col-12 my-5">
-                        <div class="row justify-content-center">
-                            <div class="nothing-to-show h1">
-                                {% translate "nothing" %}<br>
-                                {% translate "to" %}<br>
-                                {% translate "show" %}
-                                <span class="dash-accent"></span>
-                            </div>  
-                        </div> 
-                    </div>
                 {% endfor %}
             </div>
-
         </div>
     </section>
+
+    {% endif %}
 
     <!-- Start Partners Area-->
     <section class="our-partners">

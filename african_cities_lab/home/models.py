@@ -14,12 +14,8 @@ class HomePage(MetadataPageMixin, Page):
     template = "home/home.html"
 
     subpage_types = [
-        "home.AboutUsPage",
         "home.BlogIndexPage",
-        "home.EventIndexPage",
-        "home.ContactPage",
-        "home.GdprPage",
-        "home.TermsPage",
+        "home.FlatPage",
     ]
     parent_page_type = [
         "wagtailcore.Page",
@@ -38,63 +34,6 @@ class FlatPage(MetadataPageMixin, Page):
     parent_page_type = [
         "home.HomePage",
     ]
-
-
-class AboutUsPage(MetadataPageMixin, Page):
-    """About Us page model."""
-
-    template = "home/about.html"
-
-    presentation = RichTextField()
-    vision = RichTextField()
-    description = StreamField(
-        [
-            ("paragraph", blocks.RichTextBlock()),
-            ("image", ImageChooserBlock()),
-        ]
-    )
-
-    content_panels = Page.content_panels + [
-        FieldPanel("presentation"),
-        FieldPanel("vision"),
-        StreamFieldPanel("description", classname="full"),
-    ]
-
-    parent_page_type = [
-        "home.HomePage",
-    ]
-    max_count = 1
-
-class ContactPage(FlatPage):
-    """Contact page model."""
-
-    template = "home/contact.html"
-
-    parent_page_type = [
-        "home.HomePage",
-    ]
-    max_count = 1
-
-class GdprPage(FlatPage):
-    """GDPR page model."""
-
-    template = "home/gdpr.html"
-
-    parent_page_type = [
-        "home.HomePage",
-    ]
-    max_count = 1
-
-class TermsPage(FlatPage):
-    """Terms & Conditions page model."""
-
-    template = "home/terms.html"
-
-    parent_page_type = [
-        "home.HomePage",
-    ]
-    max_count = 1
-
 class BlogIndexPage(MetadataPageMixin, Page):
 
     subpage_types = ["home.BlogPage"]
@@ -102,8 +41,6 @@ class BlogIndexPage(MetadataPageMixin, Page):
         "home.HomePage",
     ]
     max_count = 1
-
-
 class BlogPage(MetadataPageMixin, Page):
     summary = models.CharField(max_length=NEWS_SUMMARY_MAX_LENGTH)
     main_image = models.ForeignKey(
@@ -122,41 +59,6 @@ class BlogPage(MetadataPageMixin, Page):
 
     parent_page_type = [
         "home.BlogIndexPage",
-    ]
-
-    def __str__(self):
-        return self.title
-
-class EventIndexPage(MetadataPageMixin, Page):
-
-    subpage_types = ["home.EventPage"]
-    parent_page_type = [
-        "home.HomePage",
-    ]
-    max_count = 1
-
-class EventPage(MetadataPageMixin, Page):
-    summary = models.CharField(max_length=NEWS_SUMMARY_MAX_LENGTH)
-    preview_image = models.ForeignKey(
-        "wagtailimages.Image",
-        on_delete=models.PROTECT,
-    )
-    event_date = models.DateField()
-    event_time = models.TimeField()
-    event_location = models.CharField(max_length=CHARFIELD_MAX_LENGTH)
-    body = RichTextField(blank=True)
-
-    content_panels = Page.content_panels + [
-        ImageChooserPanel("preview_image"),
-        FieldPanel("summary"),
-        FieldPanel("event_date"),
-        FieldPanel("event_time"),
-        FieldPanel("event_location"),
-        FieldPanel("body"),
-    ]
-
-    parent_page_type = [
-        "home.EventIndexPage",
     ]
 
     def __str__(self):

@@ -6,27 +6,27 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "Events" %} - African Cities Lab
+        {% translate "Webinar Registration" %} - African Cities Lab
     {% endif %} 
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
+  <meta name="description" content="{% translate 'On September 27, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
 {% endblock %}
 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta name="twitter:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}">
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" /> 
+<meta property="og:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Events" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'On July 5, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Integration of open data and artificial intelligence in the development of smart cities in Africa.' %}" />
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
 {% endblock %}
 
@@ -53,7 +53,7 @@
   <section class="page-banner__area bg_primary"> 
       <div class="row justify-content-between align-item-center">
           <div class="page-banner__left align-self-center"> 
-              <h1 class="page-hero__title text-white">{% translate "Events" %}</h1> 
+              <h1 class="page-hero__title text-white">{% translate "Webinar Registration" %}</h1> 
           </div>
           <div class="page-banner__right">
               <div class="d-none d-lg-block banner-angle__left"> 
@@ -64,13 +64,7 @@
   </section>
 
   <section class="upcoming-events">
-
     <div class="container-lg p-md-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-lg-8 text-center"> 
-            <h3 class="section-title mb-3">{% translate "Register to the webinar" %}</h3> 
-        </div>
-      </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
             <!-- message if email is sent -->
@@ -83,42 +77,63 @@
               </div>
             {% endfor %}
           {% endif %}
-
+          <p class="font-size-18 pt-3 pb-5 text-center">{% translate "Please fill out the form so that your registration can be validated." %}</p>
           <form action="{% url 'subscribe' %}" method="post">
             {% csrf_token %}
-            <div class="form-group" required="required">
-              <label>{% translate "Last name" %}</label>
-              <input type="text" name="LNAME" class="form-control">
+            <div class="row">
+              <div class="col form-group">
+                <label>{% translate "Last name" %}
+                  <div class="form-asterix">*</div>
+                </label>
+                <input type="text" name="LNAME" class="form-control" required>
+              </div>
+              <div class="col form-group">
+                <label>{% translate "First name" %}
+                  <div class="form-asterix">*</div>
+                </label>
+                <input type="text" name="FNAME" class="form-control" required>
+              </div>
             </div>
             <div class="form-group" required="required">
-              <label>{% translate "First name" %}</label>
-              <input type="text" name="FNAME" class="form-control">
+              <label>{% translate "Email Address" %}
+                <div class="form-asterix">*</div>
+              </label>
+              <input type="email" name="EMAIL" class="form-control" required>
             </div>
-            <div class="form-group" required="required">
-              <label>{% translate "Email" %}</label>
-              <input type="email" name="EMAIL" class="form-control">
-            </div>
+
             <div class="form-group">
-              <label>{% translate "Institution" %}</label>
+              <label>{% translate "Organization Name" %}</label>
               <input type="text" name="INSTITUT" class="form-control">
             </div>
             <div class="form-group">
-              <label>{% translate "Function" %}</label>
+              <label>{% translate "Job Title" %}</label>
+              <input type="text" name="TITLE" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>{% translate "Job Function" %}</label>
               <input type="text" name="FUNCTION" class="form-control">
             </div>
             <div class="form-group">
-              <label>{% translate "Title" %}</label>
-              <input type="text" name="TITLE" class="form-control">
-            </div>
-            <div class="form-group" required="required">
-              <label>{% translate "Country" %}</label>
-              <input type="text" name="COUNTRY" class="form-control">
+              <label>{% translate "Country" %}
+                <div class="form-asterix">*</div>
+              </label>
+              <input type="text" name="COUNTRY" class="form-control" required>
             </div>
             <div class="form-group">
               <label>{% translate "LinkedIn account" %}</label>
               <input type="text" name="LINKEDIN" class="form-control">
             </div>
-            <div class="mt-3">
+            <div class="form-group">
+              <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
+            </div>
+            <p>
+              {% translate "By submitting your info in the form above, you agree to our" %}
+              <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
+              </a> and <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
+              {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
+            </p>
+            
+            <div class="mt-5">
               <button type="submit" class="btn btn__primary btn__small">{% translate "Register" %}</button>
             </div>
           </form>

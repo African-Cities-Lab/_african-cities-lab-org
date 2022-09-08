@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+{% endblock %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+  <section id="moocs-page">
+
+    <div class="moocs-page__top">
+        <div class="position-relative">
+            <div class="moocs-content__top">
+                <div class="page-top__inner">
+                    <div class="block-content">
+                        <h1>{% translate "Urban Data Management for Smart City Developpement in Africa" %}</h1>
+
+                        <div class="mt-5">
+                            <a href="#waiting_list" class="btn btn__primary btn__small">
+                                {% translate "Enroll now" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moocs-details">
+                <div class="page-top__inner">
+                    <div class="moocs-details__card">
+                        <div class="field-details moocs-img__field">
+                            <img src="{% static 'images/assets/moocs/digital_.png' %}">
+                        </div>
+                        <div class="field-details">
+                            <div class="label-inline moocs-modality__field">
+                                <i class="fas fa-chalkboard-teacher font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Online" %}</span>
+                            </div>
+                            <div class="label-inline moocs-price__field">
+                                <i class="fas fa-money-bill-wave-alt font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Free" %}</span> 
+                            </div>
+                        </div>
+                        <div class="field-details moocs-date-range__field">
+                            <div class="label-inline">
+                                <i class="far fa-calendar-alt font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Available soon" %}</span>
+                            </div>
+                        </div>
+                        <div class="field-details moocs-topics__field">
+                            <div class="label-inline">
+                                <i class="fas fa-tags font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Topics" %}</span>
+                            </div>
+                            <ul class="field-details field-type-list list-inline">
+                                <li class="list-inline-item mx-2">{% translate "Digital" %}</li>
+                            </ul>
+                        </div>
+                        <!--div class="field-details moocs-duration__field">
+                            <div class="label-inline">{% translate "Duration" %}</div>
+                            <div class="field-details">{% translate "1 week long" %}</div>
+                        </div-->
+                        <div class="field-details moocs-language__field">
+                            <div class="label-inline">
+                                <i class="far fa-comment font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Course language" %}</span>
+                            </div>
+                            <ul class="field-details field-type-list list-inline">
+                                <li class="list-inline-item mx-2">{% translate "English" %}</li>
+                            </ul>
+                        </div>
+                        <div class="field-details moocs-transcript__field">
+                            <div class="label-inline">
+                                <i class="fas fa-closed-captioning font-size-22 "></i>
+                                <span class="mx-2 font-size-16">{% translate "Video transcript" %}</span>
+                            </div>
+                            <ul class="field-details field-type-list list-inline">
+                                <li class="list-inline-item mx-2">{% translate "French" %}</li>
+                            </ul>
+                        </div>
+                        <!--div class="field-details moocs-difficulty__field">
+                            <div class="label-inline">{% translate "Difficulty" %}</div>
+                            <div class="field-details">{% translate "Introductory" %}</div>
+                        </div-->
+                        <div class="field-details moocs-university__field">
+                            <h4 class="text-center">{% translate "Associated University" %}</h4>
+                            <ul class="list-inline d-flex justify-content-center mt-2">
+                                <li>
+                                    <div>
+                                        <div class="field-details moocs-logo__field">
+                                            <img src="{% static "images/assets/partners/um6p.png" %}">
+                                        </div>
+                                        <div class="field-details moocs-name__field">
+                                            <div class="h6">{% translate "UM6P" %}</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="moocs-page__main">
+        <div class="container-xl">
+            <div class="moocs-content__main">
+                <div class="page-main__inner m-auto">
+                    <div class="block-content">
+                        <div id="moocs-overview" class="py-4">
+                            <h3 class="section-title mb-3">{% translate "Course description" %}</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet. Id totam culpa 33 nulla saepe et reiciendis nobis sed quos fuga eos repellat doloribus. 
+                                Et ratione repellendus vel nesciunt nulla aut consequatur dolores sed voluptates odit nam officia accusamus et 
+                                quos possimus cum laborum ullam. Et culpa consequatur et quaerat sint est iste voluptatum. Est molestiae dolorem 
+                                id molestiae voluptas et fugit reiciendis At cumque odio qui quae quia est illum magni et consequatur molestiae. 
+                            </p>
+                            <ul>
+                                <li>Est minus autem in recusandae temporibus ut temporibus itaque. </li>
+                                <li>Non quas illum et doloremque ducimus est praesentium nesciunt. </li>
+                                <li>Sit recusandae libero ut numquam consequatur. </li>
+                                <li>Aut atque voluptatem ea dolorem dolorem. </li>
+                            </ul>
+                            <p>Eos officia voluptatem et perferendis atque vel architecto autem sit aspernatur voluptas  molestias vero eum 
+                                perferendis fugiat et voluptatibus voluptas. Dolores dolorem est consequuntur fugit et pariatur tempore eos 
+                                praesentium quia eum omnis mollitia id deleniti magni! Cum libero repellendus et quos maxime ea consequatur 
+                                eaque hic dolorum quia quo illo illo. 
+                            </p>
+                            <p>Eos excepturi possimus et porro fuga sed laudantium natus non itaque nesciunt et voluptas consequatur. Aut 
+                                impedit laboriosam ut tempora quia sed dolor dolores et nihil neque rem quasi nisi At reprehenderit 
+                                praesentium. Sunt odio rem alias molestiae qui internos laudantium est aliquid omnis a ipsum omnis et nisi 
+                                consequuntur! Ea illo cumque aut quod sunt ad adipisci illum. 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="waiting_list" class="bg_secondary py-5">
+        <div class="container-lg py-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3 class="section-title text-center text-white">
+                        {% translate "Are you interested in this MOOC?" %}
+                    </h3>
+
+                    <div class="font-size-16 text-white my-3 text-center">
+                        {% translate "Please complete this form to stay up to date on its launch." %}
+                    </div>
+
+                    <form>
+                        <div class="form-group">
+                            <input name="moocs_choosed" type="hidden" value="{% translate 'Urban Data Management for Smart City Developpement in Africa' %}" />
+                        </div>
+                        <div class="row">
+                            <div class="col form-group"> 
+                              <input type="text" class="form-control" placeholder="{% translate 'Last Name' %}" required>
+                            </div>
+                            <div class="col form-group">
+                              <input type="text"  class="form-control" placeholder="{% translate 'First Name' %}" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group"> 
+                                <input type="text" name="" class="form-control" placeholder="{% translate 'Job Title' %}">
+                            </div>
+                            <div class="col form-group">
+                                <input type="text" name="" class="form-control" placeholder="{% translate 'Job Function' %}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="" class="form-control" placeholder="{% translate 'Email Address' %}">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="{% translate 'Organization Name' %}">
+                        </div>
+                        <p class="text-white mb-3">
+                            {% translate "By submitting your info in the form above, you agree to our" %}
+                            <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
+                            </a> and <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
+                            {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
+                          </p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6"> 
+                                <button type="submit" class="btn w-100 btn__primary btn__small">{% translate "Send" %}</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container-lg py-5">
+            <h3 class="section-title mb-3">{% translate "You may also like" %}</h3>
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/digital__.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Digital" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block text-black">{% translate "How can cities in Africa be smarter?" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/food_systems.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/uct.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "University of Cape Town" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Food Systems" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block text-black">{% translate "What can food tell us about cities in Africa?" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'la-fabrique-urbaine-collective' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/planning.png' %}"> 
+                            </a>
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/ucad.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "Université Cheikh Anta Diop de Dakar" %}</div>
+                            </div> 
+
+                            <div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Planning" %}</span>
+                                </div>
+                            </div> 
+
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'la-fabrique-urbaine-collective' %}" class="d-block text-black">{% translate "La fabrique urbaine collective : Idées et outils pour co-produire la ville" %}</a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <i class="far fa-calendar-alt"></i> 
+                            <span class="mx-3">{% translate "Available soon" %}</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+ 
+
+{% endblock content %}

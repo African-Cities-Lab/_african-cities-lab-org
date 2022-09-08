@@ -20,7 +20,7 @@
                 return $(".hellobar").addClass("d-block")
             } else {
                 return $(".hellobar").addClass("d-block")
-            } 
+            }
         },450);
         return $("#close_hellobar").on("click",function(){
             $(".hellobar").removeClass("d-block");
@@ -33,13 +33,13 @@
     var swiper = new Swiper(".partners-swiper", {
         slidesPerView: 2,
         spaceBetween: 10,
-        loop: true, 
+        loop: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
         },
         freeMode: true,
-        pagination: { 
+        pagination: {
             clickable: true,
         },
         breakpoints: {
@@ -56,27 +56,15 @@
               spaceBetween: 60,
             },
         },
-    }); 
-
-    //Speakers card swipper
-    var swiper = new Swiper(".speakers-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 80,
-        loop: true, 
-        freeMode: true, 
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-    }); 
+    });
 
     //COUNTER
     $('.counter').counterUp({
         delay: 10,
         time: 1000
-    }); 
+    });
+
+    //Share widget sticky
+   
+
 })(jQuery);

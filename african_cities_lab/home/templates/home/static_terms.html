@@ -7,7 +7,7 @@
         {{ self.title }}
     {% else %}
         {% translate "Terms & Conditions" %} - African Cities Lab
-    {% endif %} 
+    {% endif %}
 {% endblock title %}
 
 {% block static_meta_tag %}
@@ -20,7 +20,7 @@
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" /> 
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
 <meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
@@ -33,10 +33,10 @@
     .page-hero__container{
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
-    
-    .page-banner__right { 
+
+    .page-banner__right {
       background-image: url({% static 'images/assets/konza-city.jpg' %});
-  } 
+    }
   </style>
 {% endblock css %}
 
@@ -44,26 +44,26 @@
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
-            <span class="badge-hellobar">{% translate "Webinar" %}</span> 
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}  
+            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
 
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
-    </div> 
-{% endblock hellobar %} 
+    </div>
+{% endblock hellobar %}
 {% endcomment %}
 
 {% block content %}
 
-  <section class="page-banner__area bg_primary"> 
+  <section class="page-banner__area bg_primary">
     <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left align-self-center"> 
-            <h1 class="page-hero__title text-white">{% translate "Terms & Conditions" %}</h1> 
+        <div class="page-banner__left align-self-center">
+            <h1 class="page-hero__title text-white">{% translate "Terms & Conditions" %}</h1>
         </div>
         <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left"> 
+            <div class="d-none d-lg-block banner-angle__left">
                 <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
             </div>
         </div>
@@ -73,8 +73,8 @@
     <section class="py-5">
         <div class="container p-md-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">  
-                    <div>  
+                <div class="col-12 col-lg-10">
+                    <div>
                         <p>Last updated: 2022-06-03</p>
 
                         <p> 1. <b>Introduction</b>  </p>
@@ -419,8 +419,8 @@
                         email: <b>info@africancitieslab.org</b>.</p>
 
                     </div>
-                </div>  
-            </div> 
+                </div>
+            </div>
         </div>
     </section>
 

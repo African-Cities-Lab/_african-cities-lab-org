@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="description" content="{% translate 'On September 27, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+{% endblock %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    #single-event {
+      background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
+        url({% static 'images/assets/youth-and-urban-planning.png' %});
+    }
+    #video_player .btn-close{
+      color: #fff;
+      background: unset;
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+
+  <section id="single-event">
+    <div class="container-lg">
+      <div class="row align-item-center">
+        <div class="col-12 col-md-10 col-xl-7">
+          <div class="meta-badge p-0 bg-transparent">{% translate "Webinar" %}</div>
+
+          <h1 class="pt-3 font-size-2-75em"> 
+            {% blocktranslate %}
+              Youth and urban planning: <br>
+              Challenges and roles of youth in the development of the african city
+            {% endblocktranslate %}
+          </h1>
+
+          <ul class="event-meta my-3">
+            <li class="h5 mb-3">{% translate "27 September, 2022" %}</li>
+            <li class="h5">{% translate "Online" %}</li>
+          </ul>
+          <div class="my-5">
+            <a href="{% url 'subscribe' %}" class="btn btn__primary btn__small">
+              {% translate "Register now" %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!--section class="py-md-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <div class="event-overview font-size-16">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section-->
+
+  <section class="event-agenda acl-section-pattern">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+
+          <h3 class="section-title">{% translate "On the agenda" %}</h3> 
+
+          <p class="font-size-16 py-5">{% translate "Sheldule will be announced later." %}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-speakers py-5">
+    <div class="container-fluid position-relative pb-5">
+
+      <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
+
+      <div class="row event-speakers__list py-5">
+        {% translate "Speakers will be announced later." %}
+      </div>
+
+      <div class="my-5 text-center">
+        <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}">
+          {% translate "Register now" %}
+        </a>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

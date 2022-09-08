@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Travel information | The International Conference of African Cities" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab"/>
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .shadow-sm {
+        box-shadow: unset !important;
+    }
+    .civa-form__section {
+      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
+    }
+
+    .page-banner__right {
+        background-image: url({% static 'images/assets/Place_de_Etoile_rouge.jpg' %});
+    }
+  </style>
+{% endblock css %}
+
+{% block javascript %}
+  {{ block.super }}
+  <script defer src="{% static 'js/subnavigation.js' %}"></script>
+{% endblock javascript %}
+
+{% block content %}
+
+<div class="subnavigation">
+    <div class="hz-scroll-container">
+        <div class="container-fluid hz-scroll-content">
+            <div class="row no-gutters">
+                <div class="overflow-wrap col-10 col-xl-11">
+                    <nav aria-labelledby="nav2">
+                        <label id="nav2">
+                            {% translate "ICAC 2023" %}
+                            <span class="visuallyhidden">secondary menu</span>
+                        </label>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                              {% url 'civa-agenda' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-speakers' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-sponsors' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-travel-information' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Travel Information" %}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
+    </div>
+</div>
+
+<section class="page-banner__area bg_primary">
+    <div class="row justify-content-between align-item-center">
+        <div class="page-banner__left align-self-center">
+            <h1 class="page-hero__title text-white">{% translate "Travel information" %}</h1>
+        </div>
+        <div class="page-banner__right">
+            <div class="d-none d-lg-block banner-angle__left">
+                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="civa-form__section">
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-white text-center py-5">
+          <div class="h1 pt-lg-5">{% translate "Join the International Conference on African Cities" %}</div>
+          <div class="mt-5 text-center">
+            <a href="#" class="btn btn__primary btn__big">
+                {% translate "Register to attend" %}
+            </a>
+          </div>
+          <p class="font-size-18 pt-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>info@africancitieslab.org</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock content %}
+  

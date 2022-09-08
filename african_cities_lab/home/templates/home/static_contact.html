@@ -7,7 +7,7 @@
         {{ self.title }}
     {% else %}
         {% translate "Contact" %} - African Cities Lab
-    {% endif %} 
+    {% endif %}
 {% endblock title %}
 
 {% block static_meta_tag %}
@@ -20,7 +20,7 @@
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Contact" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" /> 
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
 <meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Contact" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
@@ -33,9 +33,9 @@
     .page-hero__container{
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
-    .page-banner__right { 
+    .page-banner__right {
         background-image: url({% static 'images/assets/acl-contact-banner.jpg' %});
-    } 
+    }
   </style>
 {% endblock css %}
 
@@ -43,15 +43,15 @@
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
-            <span class="badge-hellobar">{% translate "Webinar" %}</span> 
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}  
+            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
 
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
-    </div> 
-{% endblock hellobar %} 
+    </div>
+{% endblock hellobar %}
 {% endcomment %}
 
 {% block content %}
@@ -61,23 +61,23 @@
     <div class="container p-md-5">
         <div class="row px-lg-5 pt-5 align-items-end">
             <div class="col">
-                <h1 class="page-hero__title">{% translate "Contact" %}</h1> 
+                <h1 class="page-hero__title">{% translate "Contact" %}</h1>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="page-hero__shape">
-        <img src="{% static "images/assets/sharpe-on-hero.svg" %}"> 
-    </div>  
+        <img src="{% static "images/assets/sharpe-on-hero.svg" %}">
+    </div>
   </section>
   < End Page banner area -->
 
-    <section class="page-banner__area bg_primary"> 
+    <section class="page-banner__area bg_primary">
         <div class="row justify-content-between align-item-center">
-            <div class="page-banner__left align-self-center"> 
-                <h1 class="page-hero__title text-white">{% translate "Contact" %}</h1> 
+            <div class="page-banner__left align-self-center">
+                <h1 class="page-hero__title text-white">{% translate "Contact" %}</h1>
             </div>
             <div class="page-banner__right">
-                <div class="d-none d-lg-block banner-angle__left"> 
+                <div class="d-none d-lg-block banner-angle__left">
                     <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
                 </div>
             </div>
@@ -85,19 +85,19 @@
     </section>
 
     <section>
-        <div class="container py-5 p-md-5">
+        <div class="container-xl py-5 p-md-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">  
+                <div class="col-12 col-lg-10">
                     <h3 class="section-title text-center">{% translate "We’re here to help" %}</h3>
-                    <div class="text-center font-size-18 mb-5">{% translate "Please contact us in case of any query. We are happy to help" %}.</div> 
+                    <div class="text-center font-size-18 mb-5">{% translate "Please contact us in case of any query. We are happy to help" %}.</div>
 
                     <div class="row justify-content-around">
                         <div class="col-12 col-md-6 icon-box m-3 m-md-0">
-                            <div class="card w-100 box_shadow_level_1"> 
+                            <div class="card w-100 box_shadow_level_1">
                                 <div class="card-body">
                                     <div class="icon-box__title">
                                         <h5 class="pb-3">{% translate "Email Us To Get Information" %}</h5>
-                                    </div> 
+                                    </div>
                                     <div class="icon-box__desc font-size-16">
                                         <a class="d-block text_primary mb-2" href="mailto:info@africancitieslab.org">
                                             <strong>info@africancitieslab.org</strong>
@@ -105,16 +105,16 @@
                                         <a class="d-block text_primary" href="mailto:contact@africancitieslab.org">
                                             <strong>contact@africancitieslab.org</strong>
                                         </a>
-                                    </div>  
-                                </div> 
-                            </div>    
-                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-12 col-md-6 icon-box m-3 m-md-0">
-                            <div class="card w-100 box_shadow_level_1"> 
+                            <div class="card w-100 box_shadow_level_1">
                                 <div class="card-body">
                                     <div class="icon-box__title">
                                         <h5>{% translate "Follow us on" %}</h5>
-                                    </div> 
+                                    </div>
                                     <div class="icon-box__desc social-media__wrapper">
                                         <ul class="list-inline my-3">
                                             <li class="list-inline-item mx-2"><a  href="https://twitter.com/AfricanCtiesLab" class="text_primary"><i class="fab fa-twitter"></i></a></li>
@@ -124,13 +124,13 @@
                                             <li class="list-inline-item mx-2"><a href="https://medium.com/@African_Cities_Lab" class="text_primary"><i class="fab fa-medium-m"></i></a></li>
                                             <li class="list-inline-item mx-2"><a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA" class="text_primary"><i class="fab fa-youtube"></i></a></li>
                                         </ul>
-                                    </div>  
-                                </div> 
-                            </div>    
-                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <div>
-                </div>  
-            </div> 
+                </div>
+            </div>
         </div>
     </section>
 
