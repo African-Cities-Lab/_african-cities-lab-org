@@ -34,25 +34,23 @@
             background-image: url({% static 'images/assets/conference-bg.jpg' %});
         } 
         .page-banner__right {
-            background-image: url({% static 'images/assets/acl-about-banner.jpg' %});
+            background-image: url({% static 'images/assets/about-v2.jpeg' %});
         }
     </style>
 {% endblock css %}
 
-{% comment %}
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
+            {% translate "African Cities: What role for the youth?" %}
 
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
     </div>
 {% endblock hellobar %}
-{% endcomment %}
 
 {% block content %}
 
@@ -227,7 +225,7 @@
                             in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin.
                             {% endblocktranslate %}</p>
 
-                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}" class="btn mt-3 btn__primary btn-small">
+                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}" class="btn mt-3 btn__primary btn-small d-none">
                                 {% translate "Learn more" %}
                             </a>
                         </div>
@@ -265,49 +263,49 @@
             <div class="timeline-wrapper" dir="ltr">
                 <ul class="list-inline timeline-container">
                     <li class="list-inline-item timeline-step">
-                        <a href="" class="px-2 d-block">
+                        <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h5>Juillet 2022</h5>
-                            <span>1er webinaire</span> 
+                            <h5>{% translate "July 2022" %}</h5>
+                            <span>{% translate "1st webinar" %}</span> 
                             <p class="text-muted">{% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}</p>
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
-                        <a href="" class="px-2 d-block">
+                        <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h5>Septembre 2022</h5> 
-                            <span>2nd webinaire</span>
-                            <p class="text-muted">Défis et rôles des jeunes dans le développement de la ville africaine.</p>
+                            <h5>{% translate "October 2022" %}</h5> 
+                            <span>{% translate "2nd webinar" %}</span>
+                            <p class="text-muted">{% translate "African Cities: What role for the youth?" %}</p>
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
                         <a href="" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h5>Novembre 2022</h5> 
-                            <span>3ème webinaire</span>
+                            <h5>{% translate "November 2022" %}</h5> 
+                            <span>{% translate "3rd webinar" %}</span>
                             <p class="text-muted"></p>
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
                         <a href="" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h5>Février 2023</h5> 
-                            <span>4ème webinaire</span>
+                            <h5>{% translate "February 2023" %}</h5> 
+                            <span>{% translate "4th webinar" %}</span>
                             <p class="text-muted"></p>
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
                         <a href="" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h4 class="text_primary">Mars 2023</h4> 
-                            <span class="font-size-16">La Conférence Internationale des Villes Africaines</span>
+                            <h4 class="text_primary">{% translate "March 2023" %}</h4> 
+                            <span class="font-size-16">{% translate "International Conference of African Cities" %}</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="mt-5 text-center">
-                <a href="{% url 'events' %}" class="btn btn__primary my-5 btn__small">
+                <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="btn btn__primary my-5 btn__small">
                     {% translate "Register for the next webinar" %}
                 </a>
             </div>

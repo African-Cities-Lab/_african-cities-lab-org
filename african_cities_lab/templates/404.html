@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load i18n static %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 
 {% block title %}
     404  - African Cities Lab
@@ -11,19 +11,19 @@
         <div class="container p-md-5">
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <h2>Oops...</h2>
+                    <h2>{% translate "Oops..." %}</h2>
                     <div class="h1 py-3">
-                        Page not found
+                        {% translate "Page not found" %}
                     </div>
                     <p>
-                        The page you are looking for might have been removed, had its name changed or is temporarily unavailable.
+                        {% translate "The page you are looking for might have been removed, had its name changed or is temporarily unavailable." %}
                     </p>
                     <div class="my-5">
-                        <a href="{% url 'home' %}" class="btn btn__primary btn__big">Go to homepage</a>
+                        <a href="{% url 'home' %}" class="btn btn__primary btn__big">{% translate "Go to homepage" %}</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 py-5 text-center">
-                    <img src="{% static 'images/assets/page-not-found.png' %}" width="510" height="378">
+                    <img src="{% static 'images/assets/404.png' %}" width="510" height="378">
                 </div>
             </div>
         </div>

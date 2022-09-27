@@ -1012,7 +1012,7 @@ a.novashare-button {
 	background-color: #BE3712;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: bottom right;
+	background-position: bottom left;
 }
 .home-banner__right > img {
 	  object-fit: cover;
@@ -1068,7 +1068,15 @@ a.novashare-button {
 .partners-swiper .swiper-slide > a:hover {
 	border: 1px solid #BE3712;
 }
-
+.main-sponsor:before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 25px;
+	width: 1px;
+	height: 100%;
+	background: #e9e9e9;
+}
 .topic-wrapper .topic-item:before {
 	content: "";
 	position: absolute;
@@ -1435,7 +1443,7 @@ li.events-listing__item .events-listing__desc {
 } 
 .mdl-speaker-avatar > img {
 	width: 100%;
-    height: 375px; 
+    height: 250px; 
 	object-fit: cover;
 }
 .xs-hr-line {
@@ -1855,12 +1863,13 @@ ul.event-meta {
 	right: 0;
 	top: 0;
 	z-index: 1;
+	width: 475px;
 }
 .moocs-details .moocs-details__card .moocs-img__field img {
 	object-fit: cover;
 	object-position: bottom;
-	height: 300px; 
-	width: 530px;
+	height: 258px; 
+	width: 100%;
 }
 .moocs-details .moocs-details__card >.field-details + .field-details {
 	border-bottom: 1px solid #d8d8d8;
@@ -1869,7 +1878,7 @@ ul.event-meta {
 }
 .moocs-details .moocs-details__card >.field-details + .field-details .field-details {
 	display: inline-block;
-	margin: 0;
+	margin-left: 2rem;
 	width: 50%;
 }
 .moocs-details .moocs-details__card >.field-details .label-inline {
@@ -1880,6 +1889,11 @@ ul.event-meta {
 .moocs-details .moocs-details__card >.field-details + .field-details:last-child {
 	border-bottom: none;
 }
+.moocs-details .moocs-details__card .field-details .label-inline > i {
+	font-size: 20px;
+	color: #BE3712;
+}
+
 .moocs-university__field>ul li div {
 	display: flex;
 	flex-direction: column;
@@ -2022,9 +2036,9 @@ ul.event-meta {
 		padding-right: 0 !important;
 	}
 	.post-hero__container {
-		min-height: 185px;
-		padding-top: 52px;
-		padding-bottom: 72px;
+		min-height: 150px;
+		padding-top: 32px;
+		padding-bottom: 38px;
 	}
 	#single-event .event-thumbail {
 		height: 400px;
@@ -2044,6 +2058,7 @@ ul.event-meta {
 		height: 475px;
 	}
 	.mdl-speaker-avatar > img {
+		width: 65%;
 		height: 275px;
 	}
 }
@@ -2101,13 +2116,22 @@ ul.event-meta {
 	.home-banner__right > img {
 		padding: 1rem;
 	}
-	.hidden-details > p {
+	/**.hidden-details > p {
 		display: none;
 	}
+	*/
 	.moocs-details .moocs-details__card {
 		border: 1px solid #d8d8d8;
 		margin: auto;
 		max-width: 530px;
+	}
+	.main-sponsor {
+		padding: 54px 0;
+	}
+	.main-sponsor:before {
+		width: 0;
+		height: 0;
+		background: transparent;
 	}
 }
 @media (min-width: 768px) {
@@ -2122,12 +2146,14 @@ ul.event-meta {
 	.widget-share {
 		display: inline-block;
 		padding: 0;
-		top: 8%;
+		top: 12%;
 		right: 204px;
-		height: 100%;
-		position: absolute;
 		width: 115px;
+		height: fit-content;
     	text-align: center;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		position: absolute;
 	}
 	.widget-share__title {
 		margin: 0 0 1em;
@@ -2169,6 +2195,7 @@ ul.event-meta {
 		top: 25px;
 		right: 28px;
 	}
+	/**
 	.hidden-details {
 		transition: all 1s cubic-bezier(0.19,1,0.19,1);
 		max-height: 0;
@@ -2179,6 +2206,7 @@ ul.event-meta {
 		max-height: 300px;
 		opacity: 1;
 	}
+	**/
 	.banner-text-list {
 		height: 30px;
 		margin-top: 2.5rem;
@@ -2207,6 +2235,8 @@ ul.event-meta {
 		animation: appear 15s 10.5s infinite ease;
 	}
 	.moocs-content__top {
+		padding-right: 105px;
+		padding-left: 105px;
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -2221,6 +2251,7 @@ ul.event-meta {
 		background-color: #402781;
 		height: 0;
 		padding-top: 40px;
+		padding-right: 60px !important;
 		position: absolute;
 		right: 0;
 		top: 0;

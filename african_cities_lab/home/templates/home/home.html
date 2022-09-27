@@ -25,20 +25,18 @@
     </style>
 {% endblock css %}
 
-{% comment %}
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
+            {% translate "African Cities: What role for the youth?" %}
 
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
     </div>
 {% endblock hellobar %}
-{% endcomment %}
 
 {% block content %}
 
@@ -61,7 +59,7 @@
                     <div class="d-none d-lg-block banner-angle__left">
                         <img src="{% static 'images/assets/banner-angle-left.svg' %}">
                     </div>
-                    <img src="{% static 'images/assets/acl-homepage-banner.jpg' %}">
+                    <img src="{% static 'images/assets/acceuil-v2.jpeg' %}">
                 </div>
             </div>
         </div>
@@ -172,7 +170,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'introduction-to-sanitazation-economy-systems-markets' %}" class="d-block">
+                            <a href="#" class="d-block">
                                 <img src="{% static 'images/assets/moocs/sanitation.png' %}"> 
                             </a>
                         </div>
@@ -189,7 +187,7 @@
                                 </div>
                             </div> 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'introduction-to-sanitazation-economy-systems-markets' %}" class="d-block text-black">{% translate "Introduction to Sanitazation Economy Systems & Markets" %}</a> 
+                                <a href="#" class="d-block text-black">{% translate "Introduction to Sanitazation Economy Systems & Markets" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -201,7 +199,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'urban-data-management-for-smart-city-developpement-in-africa' %}" class="d-block">
+                            <a href="#" class="d-block">
                                 <img src="{% static 'images/assets/moocs/digital_.png' %}"> 
                             </a>
                         </div>
@@ -218,7 +216,7 @@
                                 </div>
                             </div> 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'urban-data-management-for-smart-city-developpement-in-africa' %}" class="d-block text-black">{% translate "Urban Dta Management for Smart City Developpement in Africa" %}</a> 
+                                <a href="#" class="d-block text-black">{% translate "Urban Data Management for Smart City Developpement in Africa" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -230,7 +228,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'eco-construction-en-afrique' %}" class="d-block">
+                            <a href="#" class="d-block">
                                 <img src="{% static 'images/assets/moocs/eco_construction.png' %}"> 
                             </a>
                         </div>
@@ -249,7 +247,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'eco-construction-en-afrique' %}" class="d-block text-black">{% translate "Eco construction en Afrique" %}</a> 
+                                <a href="#" class="d-block text-black">{% translate "Eco construction en Afrique" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -261,7 +259,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'making-housing-work-in-african-cities' %}" class="d-block">
+                            <a href="#" class="d-block">
                                 <img src="{% static 'images/assets/moocs/housing.png' %}"> 
                             </a>
                         </div>
@@ -280,7 +278,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'making-housing-work-in-african-cities' %}" class="d-block text-black">{% translate "Making housing work in African cities: understanding the role and opportunity of finance" %}</a> 
+                                <a href="#" class="d-block text-black">{% translate "Making housing work in African cities: understanding the role and opportunity of finance" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -325,7 +323,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block">
+                            <a href="#" class="d-block">
                                 <img src="{% static 'images/assets/moocs/food_systems.png' %}">
                             </a> 
                         </div>
@@ -344,7 +342,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'what-can-food-tell-us-about-cities-in-africa' %}" class="d-block text-black">{% translate "What can food tell us about cities in Africa?" %}</a> 
+                                <a href="#" class="d-block text-black">{% translate "What can food tell us about cities in Africa?" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -411,7 +409,7 @@
     <!-- End Topics Section -->
 
      <!-- start Event Section -->
-     <section class="featured-events acl-section-pattern">
+     <section class="featured-events ">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-12">
@@ -427,23 +425,23 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="event-date-badge">
-                                    <h4 class="day_month">{% translate "27 Sept" %}</h4>
+                                    <h4 class="day_month">{% translate "Oct 11" %}</h4>
                                     <h6 class="year pt-2">2022</h6>
                                 </div>
-                                <a href="{% url 'youth-and-urban-planning-challenges-and-roles-of-youth-in-the-development-of-the-african-city' %}" class="d-block">
-                                    <img src="{% static 'images/assets/youth-and-urban-planning.png' %}">
+                                <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block">
+                                    <img src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %}">
                                 </a>
                             </div>
                             <div class="card-body">
                                 <div class="meta-badge">{% translate "Webinar" %}</div>
-                                <h4 class="py-3">
-                                    <a href="{% url 'youth-and-urban-planning-challenges-and-roles-of-youth-in-the-development-of-the-african-city' %}" class="d-block text-black">
-                                        {% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %}
-                                    </a>
+                                <h4 class="py-3 font-size-22">
+                                    <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block text-black">
+                                        {% translate "African Cities: What role for the youth?" %}
+                                    </a> 
                                 </h4>
                             </div>
                             <div class="card-footer">
-                                <a href="{% url 'youth-and-urban-planning-challenges-and-roles-of-youth-in-the-development-of-the-african-city' %}"> {% translate "Register" %}</a>
+                                <a href="{% url 'african-cities-what-role-for-the-youth' %}"> {% translate "Register" %}</a>
                             </div>
                         </div>
                     </div>
@@ -457,13 +455,15 @@
                         <div class="mt-2 past-event__home">
 
                             <div class="date">
-                                <h4 class="day_month">{% translate "5 July" %}</h4>
+                                <h4 class="day_month">{% translate "July 5" %}</h4>
                                 <h6 class="year pt-2">2022</h6>
                             </div>
                             <div>
                                 <div class="meta-badge font-size-12">{% translate "Webinar" %}</div>
                                 <div class="h6">
-                                    <a href="">{% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %}</a>
+                                    <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}">
+                                        {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %}
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -485,6 +485,7 @@
                     </h3>
                     <div class="font-size-16 my-3">
                         {% translate "Stay up to date with our newsletter and explore our blog posts to learn more about African urban and environmental development." %}
+                        
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-none d-md-block">
@@ -505,7 +506,19 @@
                             <div class="article-meta d-flex align-items-center">
                                 <div class="article__date">{{ article.date }}</div>
                                 <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                                <div class="article__category text_primary font-weight-bold">Press Releases</div>
+                                <div class="article__category">
+                                    {% with categories=article.categories.all %}
+                                        {% if categories %}
+                                            <ul class="list-inline mb-0">
+                                                {% for category in categories %}
+                                                    <li class="post-info__item list-inline-item mr-2">
+                                                        <span class="text_primary font-weight-bold">{{ category.name }}</span>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    {% endwith %}
+                                </div>
                             </div>
                             <h5 class="article-title py-3">
                                 <a href="{{ article.url }}" class="d-block text-black">

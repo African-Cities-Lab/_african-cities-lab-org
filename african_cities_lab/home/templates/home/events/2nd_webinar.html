@@ -2,27 +2,27 @@
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 
 {% block title %}
-    {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}
+    {% translate "African Cities: What role for the youth?" %} - African Cities Lab
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="description" content="{% translate 'On September 27, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+  <meta name="description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 {% endblock %}
 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}">
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+<meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
-<meta itemprop='image' content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -30,7 +30,7 @@
   <style>
     #single-event {
       background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
-        url({% static 'images/assets/youth-and-urban-planning.png' %});
+        url({% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %});
     }
     #video_player .btn-close{
       color: #fff;
@@ -48,15 +48,14 @@
         <div class="col-12 col-md-10 col-xl-7">
           <div class="meta-badge p-0 bg-transparent">{% translate "Webinar" %}</div>
 
-          <h1 class="pt-3 font-size-2-75em"> 
+          <h1 class="pt-3 font-size-4em"> 
             {% blocktranslate %}
-              Youth and urban planning: <br>
-              Challenges and roles of youth in the development of the african city
+              African Cities: <br>What role for the youth?
             {% endblocktranslate %}
           </h1>
 
           <ul class="event-meta my-3">
-            <li class="h5 mb-3">{% translate "27 September, 2022" %}</li>
+            <li class="h5 mb-3">{% translate "October 11, 2022" %}</li>
             <li class="h5">{% translate "Online" %}</li>
           </ul>
           <div class="my-5">
@@ -69,17 +68,37 @@
     </div>
   </section>
  
-  <!--section class="py-md-5">
+  <section class="py-md-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-9">
           <div class="event-overview font-size-16">
-            
+            <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
+            <div class="text-justify">
+              {% blocktranslate %}
+              By the year 2050, 35&#37; world's population will be young and African, compared to the 15&#37; in 2000.
+              The accelerated urbanisation Africa has experienced last years came with the growth of the youngest 
+              part of its population, and it is bringing new issues. Nowadays, 60&#37; of the African population is 
+              under 24 years of age. This specificity of the continent is an essential fact to include in urban planning.
+              Considering the African youth as an important part of the development of different models of African cities, 
+              it is therefore legitimate positioning them as full actors and authors in the transformation of spaces and 
+              living environment. Those transformations will respond to the challenges the continent must face in the 
+              future such as sustainability, well-being, access to public utilities, education but above all, inclusion.
+              During this "African Cities: What place for the youth?" webinar, experts and intervenants from all over the 
+              continent will answer the following questions:
+              {% endblocktranslate %}
+            </div>
+
+            <ul class="py-4">
+              <li>{% translate "Youth engagement through different citizens movement;" %}</li>
+              <li>{% translate "Gender and equity throughout urban areas;" %}</li>
+              <li>{% translate "Young Urban activities;" %}</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section-->
+  </section>
 
   <section class="event-agenda acl-section-pattern">
     <div class="container-fluid">
@@ -88,7 +107,54 @@
 
           <h3 class="section-title">{% translate "On the agenda" %}</h3> 
 
-          <p class="font-size-16 py-5">{% translate "Sheldule will be announced later." %}</p>
+          <div class="p-4">
+            
+            <div class="row mt-3 border-bottom_grey">
+              <div class="col-12 col-sm-8 p-3 py-4">
+                <p class="font-size-18 font-weight-500"> {% translate "Introduction and welcome" %}</p>
+              </div>
+              <div class="col-12 col-sm-4 p-3 py-4">
+                <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Jérôme CHENAL</p>
+              </div>
+            </div>
+            <div class="row border-bottom_grey">
+              <div class="col-12 col-sm-8 p-3 py-4">
+                <!--div class="meta-badge">{% translate "10.00 - 10.40 AM" %}</div-->
+                <p class="font-size-18 font-weight-500"><span class="text_primary">[FR]</span> {% translate "Is there an urban youth? A reflection in the Maghreb context" %}</p>
+              </div>
+              <div class="col-12 col-sm-4 p-3 py-4">
+                <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Pr. Johannes Frische</p>
+                
+              </div>
+            </div>
+            <div class="row border-bottom_grey">
+              <div class="col-12 col-sm-8 p-3 py-4">
+                <!--div class="meta-badge">{% translate "10.40 - 11.00 AM" %}</div-->
+                <p class="font-size-18 font-weight-500"><span class="text_primary">[EN]</span>  {% translate "Challenging Cities: Young Men, Masculinity and Violence" %}</p>
+              </div>
+              <div class="col-12 col-sm-4 p-3 py-4">
+                <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Pr. Deevia Bhana </p>
+                <small>{% translate "DSI/NRF South African Research Chair in Gender and Childhood Sexuality." %}</small>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12 col-sm-8 p-3 py-4">
+                <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-12 col-sm-8 p-3 py-4">
+                <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Dr Seddik DARAI</p>
+              </div>
+            </div>
+
+            <p><span class="text_primary">* </span>{% translate "This agenda is subject to change" %}</p>
+            <p><span class="text_primary">* </span>{% translate "FR ===> French language session" %}</p>
+            <p><span class="text_primary">* </span>{% translate "EN ===> English language session" %}</p>
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -100,11 +166,11 @@
       <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
 
       <div class="row event-speakers__list py-5">
-        {% translate "Speakers will be announced later." %}
+        <p class="font-size-16 py-5">{% translate "Speakers will be announced later." %}</p>
       </div>
 
       <div class="my-5 text-center">
-        <a class="btn btn__primary btn__big" href="{% url 'subscribe' %}">
+        <a class="btn btn__primary btn__big" href="{% url 'webinar-registration' %}">
           {% translate "Register now" %}
         </a>
       </div>

@@ -81,6 +81,7 @@ WAGTAIL = [
     "modelcluster",
     "taggit",
     "wagtailmetadata",
+    "wagtail.contrib.routable_page",
 ]
 
 DJANGO_APPS = [
@@ -93,6 +94,7 @@ DJANGO_APPS = [
     # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
     "django.forms",
+    "django_countries",
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
@@ -295,7 +297,9 @@ WAGTAILSEARCH_BACKENDS = {
 # ------------------------------------------------------------------------------
 MAILCHIMP_API_KEY = env("MAILCHIMP_API_KEY")
 MAILCHIMP_DATA_CENTER = env("MAILCHIMP_DATA_CENTER")
-MAILCHIMP_LIST_ID = env("MAILCHIMP_LIST_ID")
+MAILCHIMP_WEBINAR_EN_LIST_ID = env("MAILCHIMP_WEBINAR_EN_LIST_ID")
+MAILCHIMP_WEBINAR_FR_LIST_ID = env("MAILCHIMP_WEBINAR_FR_LIST_ID")
+MAILCHIMP_MOOCS_LIST_ID = env("MAILCHIMP_MOOCS_LIST_ID")
 
 # Your stuff...
 # ------------------------------------------------------------------------------

@@ -9,7 +9,7 @@
         {% translate "Terms & Conditions" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-
+ 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}">
@@ -35,25 +35,23 @@
     }
 
     .page-banner__right {
-      background-image: url({% static 'images/assets/konza-city.jpg' %});
+      background-image: url({% static 'images/assets/pages-header.jpg' %});
     }
   </style>
 {% endblock css %}
 
-{% comment %}
 {% block hellobar %}
     <div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa." %}
+            {% translate "African Cities: What role for the youth?" %}
 
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'subscribe' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
     </div>
 {% endblock hellobar %}
-{% endcomment %}
 
 {% block content %}
 

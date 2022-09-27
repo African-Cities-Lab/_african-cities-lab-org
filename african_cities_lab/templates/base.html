@@ -98,9 +98,12 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'about' %}">{% translate "About" %}</a>
                             </li>
+                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
+                            {% endcomment %}
+                            {% comment %}
                             <li class="nav-item mx-3 dropdown">
                                 <a class="nav-link dropdown-toggle" role="button" href="#" id="event-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     {% translate "Events" %}
@@ -115,6 +118,11 @@
                                         <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">{% translate "CIVA 2023" %}</a>
                                     </li>
                                 </ul>
+                            </li>
+                            {% endcomment %}
+                            {% url 'events' as url %}
+                            <li class="nav-item mx-3">
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
                             </li>
                             {% url 'contact' as url %}
                             <li class="nav-item mx-3">
@@ -187,11 +195,10 @@
                                             <a href="{% url 'careers' %}">{% translate "Careers" %}</a>
                                         </li>
                                          
-                                        {% endcomment %}
                                         <li>
                                             <a href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                                         </li>
-                                       
+                                       {% endcomment %}
                                         <li>
                                             <a href="{% url 'events' %}">{% translate "Webinars" %}</a>
                                         </li>
@@ -241,7 +248,7 @@
                                 <div class="articleletter-form py-3">
                                     <form id="newsletter-form" class="append-form" action="#" method="post">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="articleletter"
+                                            <input type="email" class="form-control" name="articleletter"
                                                    placeholder="{% translate 'Enter your email address' %}">
                                             <div class="input-group-append bg_primary">
                                                 <button class="btn" type="submit">OK</button>

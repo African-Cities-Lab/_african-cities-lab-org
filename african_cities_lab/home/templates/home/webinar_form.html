@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags countries %}
 {% block title %}
     {% if self.seo_title %}
         {{ self.seo_title }}
@@ -10,24 +10,24 @@
     {% endif %} 
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="description" content="{% translate 'On September 27, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+  <meta name="description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 {% endblock %}
-
+ 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}">
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+<meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Youth and urban planning: Challenges and roles of youth in the development of the african city" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'On September 27, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: Youth and urban planning: Challenges and roles of youth in the development of the african city.' %}" />
-<meta itemprop='image' content="{% static 'images/assets/event/preview-event-visuel-officiel.png' %}" />
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -37,7 +37,7 @@
       background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
     }
     .page-banner__right { 
-      background-image: url({% static 'images/assets/konza-city.jpg' %});
+      background-image: url({% static 'images/assets/pages-header.jpg' %});
     } 
   </style>
 {% endblock css %}
@@ -67,8 +67,8 @@
     <div class="container-lg p-md-5">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
-            <!-- message if email is sent -->
-            {% if messages %}
+          <!-- message if email is sent -->
+          {% if messages %}
             {% for message in messages %}
               <div class="my-5 alert alert-success">
                 <h5 class="m-0">
@@ -106,18 +106,24 @@
               <input type="text" name="INSTITUT" class="form-control">
             </div>
             <div class="form-group">
-              <label>{% translate "Job Title" %}</label>
+              <label>{% translate "Title" %}</label>
               <input type="text" name="TITLE" class="form-control">
             </div>
             <div class="form-group">
-              <label>{% translate "Job Function" %}</label>
+              <label>{% translate "Function" %}</label>
               <input type="text" name="FUNCTION" class="form-control">
             </div>
             <div class="form-group">
               <label>{% translate "Country" %}
                 <div class="form-asterix">*</div>
               </label>
-              <input type="text" name="COUNTRY" class="form-control" required>
+              {% get_countries as countries %}
+              <select name="COUNTRY" class="form-select" required>
+                <option disabled selected>{% translate "Select your country" %}</option>
+              {% for country in countries %}
+                  <option value="{{ country.name }}">{{ country.name }}</option>
+              {% endfor %}
+              </select>
             </div>
             <div class="form-group">
               <label>{% translate "LinkedIn account" %}</label>
@@ -129,7 +135,7 @@
             <p>
               {% translate "By submitting your info in the form above, you agree to our" %}
               <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
-              </a> and <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
+              </a> {% translate "and" %} <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
               {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
             </p>
             

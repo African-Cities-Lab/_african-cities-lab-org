@@ -35,16 +35,17 @@ urlpatterns = [
          TemplateView.as_view(template_name="home/events/1st_webinar.html"), 
          name="integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa"
     ),
-    path("youth-and-urban-planning-challenges-and-roles-of-youth-in-the-development-of-the-african-city/", 
+    path("african-cities-what-role-for-the-youth/", 
          TemplateView.as_view(template_name="home/events/2nd_webinar.html"), 
-         name="youth-and-urban-planning-challenges-and-roles-of-youth-in-the-development-of-the-african-city"
+         name="african-cities-what-role-for-the-youth"
     ),
-    path("webinar-subscribe/", views.subscribe, name="subscribe"),
-    # path(
-    #   "contact/",
-    #   TemplateView.as_view(template_name="home/contact.html"),
-    #   name="contact",
-    # ),
+    path(
+        "webinar-registration/", 
+         TemplateView.as_view(template_name="home/webinar_form.html"), 
+         name="webinar-registration"
+    ),
+    path("webinar-subscribe/", views.WebinarSubscription.subscribe, name="subscribe"),
+    
     path(
         "the-international-conference-of-african-cities-2023/",
         TemplateView.as_view(template_name="home/events/civa/civa.html"),
@@ -137,5 +138,6 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/moocs/urban_ai.html"),
         name="urban-ai",
     ),
+    path("moocs/registered/", views.moocs_registered, name="moocs-registered"),
     
 ]

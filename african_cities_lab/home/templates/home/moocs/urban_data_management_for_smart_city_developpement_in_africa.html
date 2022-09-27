@@ -9,20 +9,6 @@
 {% endblock %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
-<meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
-
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
-<meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Urban Data Management for Smart City Developpement in Africa" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
-<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -60,23 +46,23 @@
                         </div>
                         <div class="field-details">
                             <div class="label-inline moocs-modality__field">
-                                <i class="fas fa-chalkboard-teacher font-size-22 "></i>
+                                <i class="fas fa-chalkboard-teacher  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Online" %}</span>
                             </div>
                             <div class="label-inline moocs-price__field">
-                                <i class="fas fa-money-bill-wave-alt font-size-22 "></i>
+                                <i class="fas fa-money-bill-wave-alt  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Free" %}</span> 
                             </div>
                         </div>
                         <div class="field-details moocs-date-range__field">
                             <div class="label-inline">
-                                <i class="far fa-calendar-alt font-size-22 "></i>
+                                <i class="far fa-calendar-alt  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Available soon" %}</span>
                             </div>
                         </div>
                         <div class="field-details moocs-topics__field">
                             <div class="label-inline">
-                                <i class="fas fa-tags font-size-22 "></i>
+                                <i class="fas fa-tags  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Topics" %}</span>
                             </div>
                             <ul class="field-details field-type-list list-inline">
@@ -89,7 +75,7 @@
                         </div-->
                         <div class="field-details moocs-language__field">
                             <div class="label-inline">
-                                <i class="far fa-comment font-size-22 "></i>
+                                <i class="far fa-comment  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Course language" %}</span>
                             </div>
                             <ul class="field-details field-type-list list-inline">
@@ -98,7 +84,7 @@
                         </div>
                         <div class="field-details moocs-transcript__field">
                             <div class="label-inline">
-                                <i class="fas fa-closed-captioning font-size-22 "></i>
+                                <i class="fas fa-closed-captioning  "></i>
                                 <span class="mx-2 font-size-16">{% translate "Video transcript" %}</span>
                             </div>
                             <ul class="field-details field-type-list list-inline">
@@ -179,45 +165,9 @@
                         {% translate "Please complete this form to stay up to date on its launch." %}
                     </div>
 
-                    <form>
-                        <div class="form-group">
-                            <input name="moocs_choosed" type="hidden" value="{% translate 'Urban Data Management for Smart City Developpement in Africa' %}" />
-                        </div>
-                        <div class="row">
-                            <div class="col form-group"> 
-                              <input type="text" class="form-control" placeholder="{% translate 'Last Name' %}" required>
-                            </div>
-                            <div class="col form-group">
-                              <input type="text"  class="form-control" placeholder="{% translate 'First Name' %}" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col form-group"> 
-                                <input type="text" name="" class="form-control" placeholder="{% translate 'Job Title' %}">
-                            </div>
-                            <div class="col form-group">
-                                <input type="text" name="" class="form-control" placeholder="{% translate 'Job Function' %}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="" class="form-control" placeholder="{% translate 'Email Address' %}">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="{% translate 'Organization Name' %}">
-                        </div>
-                        <p class="text-white mb-3">
-                            {% translate "By submitting your info in the form above, you agree to our" %}
-                            <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
-                            </a> and <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
-                            {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
-                          </p>
-                        <div class="row justify-content-center">
-                            <div class="col-md-6"> 
-                                <button type="submit" class="btn w-100 btn__primary btn__small">{% translate "Send" %}</button>
-                            </div>
-                        </div>
-                        
-                    </form>
+                    <!-- MOOC Waiting List Form -->
+                    {% include "home/moocs/_moocs_waiting_list.html" with moocs_title="Urban Data Management for Smart City Developpement in Africa" %}
+                    <!-- End MOOC Waiting List Form -->
                 </div>
             </div>
         </div>

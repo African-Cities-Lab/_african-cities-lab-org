@@ -1,6 +1,7 @@
 # from django.shortcuts import render
 # from multiprocessing import context
 
+from unicodedata import category
 from django.apps import apps
 from django.conf import settings
 from django.contrib import messages
@@ -9,6 +10,7 @@ from django.utils.translation import gettext_lazy as _
 from django.views import generic
 from mailchimp_marketing import Client
 from mailchimp_marketing.api_client import ApiClientError
+from django.utils.datastructures import MultiValueDictKeyError
 from wagtail.core.models import Locale
 
 
@@ -33,9 +35,58 @@ class HomeView(generic.TemplateView):
         )
         context["blog"] = latest_article
         return context
+    
+    
+def _moocs_registered(email, merge_fields=None):
+    """
+    Contains code handling the communication to the mailchimp api
+    to create a contact/member in an audience/list.
+    """
+    mailchimp = Client()
+    mailchimp.set_config(
+        {
+            "api_key": settings.MAILCHIMP_API_KEY,
+            "server": settings.MAILCHIMP_DATA_CENTER,
+        }
+    )
 
+    member_info = {
+        "email_address": email,
+        "status": "subscribed",
+    }
 
-def _subscribe(email, merge_fields=None):
+    if merge_fields is not None:
+        member_info["merge_fields"] = merge_fields
+
+    try:
+        response = mailchimp.lists.add_list_member(
+            settings.MAILCHIMP_MOOCS_LIST_ID, member_info
+        )
+        print("response: {}".format(response))
+    except ApiClientError as error:
+        print("An exception occurred: {}".format(error.text))
+        
+    
+def moocs_registered(self, request):
+    if request.method == "POST":
+        email = request.POST["EMAIL"]
+        merge_fields = {
+            "MOOCS": request.POST["MOOCS"],
+            "LNAME": request.POST["LNAME"],
+            "FNAME": request.POST["FNAME"],
+            "INSTITUT": request.POST["INSTITUT"],
+            "FUNCTION": request.POST["FUNCTION"],
+            "COUNTRY": request.POST["COUNTRY"],
+        }
+            
+        _moocs_registered(email, merge_fields)  # function to access mailchimp
+        messages.success(
+            request, _("Thank you for registering. We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
+        )  # message
+    return render(request)
+  
+
+def _webinar_subscription_en(email, merge_fields=None):
     """
     Contains code handling the communication to the mailchimp api
     to create a contact/member in an audience/list.
@@ -59,32 +110,74 @@ def _subscribe(email, merge_fields=None):
 
     try:
         response = mailchimp.lists.add_list_member(
-            settings.MAILCHIMP_LIST_ID, member_info
+            settings.MAILCHIMP_WEBINAR_EN_LIST_ID, member_info
         )
         print("response: {}".format(response))
     except ApiClientError as error:
         print("An exception occurred: {}".format(error.text))
+        
+        
+def _webinar_subscription_fr(email, merge_fields=None):
+    """
+    Contains code handling the communication to the mailchimp api
+    to create a contact/member in an audience/list.
+    """
 
-def subscribe(request):
-    if request.method == "POST":
-        email = request.POST["EMAIL"]
-        merge_fields = {
-            "LNAME": request.POST["LNAME"],
-            "FNAME": request.POST["FNAME"],
-            "INSTITUT": request.POST["INSTITUT"],
-            "FUNCTION": request.POST["FUNCTION"],
-            "TITLE": request.POST["TITLE"],
-            "COUNTRY": request.POST["COUNTRY"],
-            "LINKEDIN": request.POST["LINKEDIN"],
+    mailchimp = Client()
+    mailchimp.set_config(
+        {
+            "api_key": settings.MAILCHIMP_API_KEY,
+            "server": settings.MAILCHIMP_DATA_CENTER,
         }
-
-        _subscribe(email, merge_fields)  # function to access mailchimp
-        messages.success(
-            request, _("Thank you for registering.We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
-        )  # message
-
-    return render(
-        request,
-        "home/webinar_form.html",
-        context={"title": _("Subscribe to the webinar")},
     )
+
+    member_info = {
+        "email_address": email,
+        "status": "subscribed",
+    }
+
+    if merge_fields is not None:
+        member_info["merge_fields"] = merge_fields
+
+    try:
+        response = mailchimp.lists.add_list_member(
+            settings.MAILCHIMP_WEBINAR_FR_LIST_ID, member_info
+        )
+        print(f'API call successful: {response.status}')
+    except ApiClientError as error:
+        print(f'An exception occurred: {error.text}')     
+        
+class WebinarSubscription(generic.TemplateView):
+    
+    def subscribe(request):
+        if request.method == "POST":
+            email = request.POST["EMAIL"]
+            merge_fields = {
+                "LNAME": request.POST["LNAME"],
+                "FNAME": request.POST["FNAME"],
+                "INSTITUT": request.POST["INSTITUT"],
+                "FUNCTION": request.POST["FUNCTION"],
+                "TITLE": request.POST["TITLE"],
+                "COUNTRY": request.POST["COUNTRY"],
+                "LINKEDIN": request.POST["LINKEDIN"],
+            }
+            
+            if request.POST["site_language"] == "en":
+                _webinar_subscription_en(email, merge_fields)  # function to access mailchimp
+                messages.success(
+                    request, _("Thank you for registering. We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
+                )  # message
+                
+            if request.POST["site_language"] == "fr":
+                _webinar_subscription_fr(email, merge_fields)  # function to access mailchimp
+                messages.success(
+                    request, _("Nous venons de vous envoyer un e-mail avec le lien du webinaire. Veuillez vérifier votre boîte mails ou vos spams si vous ne l'avez pas encore reçu.")
+                )  # message
+
+        return render(
+            request,
+            "home/webinar_form.html",
+            context={"title": _("Subscribe to the webinar")},
+        )
+
+
