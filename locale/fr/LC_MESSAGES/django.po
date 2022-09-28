@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 13:01+0200\n"
+"POT-Creation-Date: 2022-09-28 17:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:63
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:174
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:309
 #: african_cities_lab/home/templates/home/home.html:35
 #: african_cities_lab/home/templates/home/moocs.html:46
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -699,7 +699,7 @@ msgid "French subtitled English"
 msgstr "Français sous titré Anglais"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:141
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:114
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:115
 msgid "Introduction and welcome"
 msgstr "Introduction"
 
@@ -712,14 +712,14 @@ msgstr "Introduction"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:219
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:229
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:239
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:117
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:126
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:136
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:118
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:127
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:137
 msgid "Speaker:"
 msgstr "Intervenant :"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:149
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:122
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:123
 msgid "10.00 - 10.40 AM"
 msgstr "10h00 - 10h40"
 
@@ -742,7 +742,7 @@ msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:159
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:132
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:133
 msgid "10.40 - 11.00 AM"
 msgstr "10h40 - 11h00"
 
@@ -801,13 +801,13 @@ msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:188
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:245
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:143
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:144
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:193
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:250
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:148
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:149
 msgid "Moderator:"
 msgstr "Modérateur :"
 
@@ -881,7 +881,7 @@ msgid "CEO Open data Africa"
 msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:265
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:166
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:165
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:69
 #: african_cities_lab/home/templates/home/events/civa/civa.html:59
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:69
@@ -933,6 +933,9 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:356
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:378
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:186
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:258
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
 #: african_cities_lab/home/templates/home/events/civa/civa.html:490
 #: african_cities_lab/home/templates/home/events/civa/civa.html:512
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:201
@@ -941,6 +944,7 @@ msgid "Doctoral student, Researcher"
 msgstr "Doctorant, Chercheur"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:387
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:291
 #: african_cities_lab/home/templates/home/events/civa/civa.html:521
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:232
 msgid ""
@@ -1314,36 +1318,85 @@ msgstr "La question genre et équité en milieu urbain ;"
 msgid "Young Urban activities;"
 msgstr "Les activités de la jeunesse urbaine ;"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:123
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:111
+msgid "This agenda is subject to change"
+msgstr "Cet agenda est susceptible d'être modifié"
+
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:124
 msgid "Is there an urban youth? A reflection in the Maghreb context"
 msgstr ""
 "Y a-t-il une jeunesse urbaine ? Une réflexion dans le contexte maghrebin"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:133
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:134
 msgid "Challenging Cities: Young Men, Masculinity and Violence"
 msgstr "Les villes au défi : Jeunes hommes, masculinité et violence"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:137
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:138
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:208
 msgid "DSI/NRF South African Research Chair in Gender and Childhood Sexuality."
 msgstr ""
 "DSI / NRF de la Chaire de recherche sud-africaine sur le genre et la "
 "sexualité de l'enfance."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:152
-msgid "This agenda is subject to change"
-msgstr "Cet agenda est susceptible d'être modifié"
-
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:153
 msgid "FR ===> French language session"
 msgstr "FR ===> Session en français"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:154
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:153
 msgid "EN ===> English language session"
 msgstr "EN ===> Session en anglais"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:169
-msgid "Speakers will be announced later."
-msgstr "Les intervenants seront annoncés plus tard."
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:217
+msgid ""
+"\n"
+"                            Deevia Bhana is the DSI/NRF South African "
+"Research Chair in Gender and Childhood Sexuality. She has written "
+"extensively on the\n"
+"                            experience of gender and sexuality in the young "
+"life course bringing a broad interdisciplinary social science lens to "
+"understanding how\n"
+"                            gender and sexuality is experienced by children "
+"and young people and the implications thereof for addressing violence, sex "
+"education\n"
+"                            and sexual health interventions. Her distinctive "
+"contributions and impact are reflected in several international keynotes, "
+"invited talks\n"
+"                            and her active role in science engagement. She "
+"collaborates with researchers across the social sciences including Women and "
+"Gender\n"
+"                            Studies, Anthropology, Sociology and Education. "
+"Her publications, include 11 books, and over 147 book chapters and articles "
+"in peer-\n"
+"                            reviewed journals. Her work appears in leading "
+"journals such as AIDS Education &amp; Prevention; British Educational "
+"Research Journal;\n"
+"                            British Journal of Sociology of Education; "
+"Gender &amp; Education; International Journal of Educational Development; "
+"International\n"
+"                            Journal of Inclusive Education; Journal of "
+"Southern African Studies; Sexualities; Social Science and Medicine, Youth "
+"Studies.\n"
+"                            "
+msgstr ""
+"\n"
+"Deevia Bhana est DSI/NRF de la chaire de recherche sud-africaine "
+"sur le genre et la sexualité de l'enfance. Elle a beaucoup écrit sur "
+"l'expérience du genre et de la sexualité des plus jeunes ,\n"
+" en apportant une large perspective interdisciplinaire de sciences "
+"sociales pour comprendre comment\n"
+" le genre et la sexualité sont vécus par les enfants et les jeunes et "
+"les implications qui en découlent pour aborder la violence, l'éducation sexuelle "
+"et les interventions de santé sexuelle. \n"
+"Ses contributions distinctives et son impact se reflètent dans plusieurs discours clés internationaux, "
+"des conférences invitées et son rôle actif dans"
+" l'engagement scientifique. Elle collabore avec des chercheurs en sciences sociales, \n"
+"notamment en études sur les femmes et le genre, en anthropologie, en sociologie et en éducation. "
+"Ses publications comprennent 11 livres et plus de 147 chapitres de livres et articles dans des revues évaluées par des pairs.\n"
+" Ses travaux sont publiés dans des revues de premier plan telles que AIDS Education &amp Prevention ; "
+"British Educational Research Journal ; British Journal of Sociology of Education ; Gender &amp Education ; \n"
+"International Journal of Educational Development ; International Journal of Inclusive Education ; "
+"Journal of Southern African Studies ; Sexualities ; Social Science and Medicine, Youth Studies.\n"
+"                            "
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:9
 msgid "Agenda | The International Conference of African Cities"
@@ -2228,8 +2281,8 @@ msgid "What can food tell us about cities in Africa?"
 msgstr "Que peut nous apprendre les aliments sur les villes d'Afrique ?"
 
 #: african_cities_lab/home/templates/home/home.html:359
-msgid "View all courses"
-msgstr "Voir tous les cours"
+msgid "View all MOOCs"
+msgstr "Voir tous les MOOCs"
 
 #: african_cities_lab/home/templates/home/home.html:371
 msgid "Focus Areas"
@@ -2856,3 +2909,6 @@ msgstr "Suivez-nous"
 #: african_cities_lab/templates/base.html:286
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
+
+#~ msgid "Speakers will be announced later."
+#~ msgstr "Les intervenants seront annoncés plus tard."

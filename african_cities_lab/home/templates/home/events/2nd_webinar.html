@@ -70,7 +70,7 @@
  
   <section class="py-5">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row py-md-5">
         <div class="col-12 col-lg-9">
           <div class="event-overview font-size-16">
             <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
@@ -107,7 +107,8 @@
 
           <h3 class="section-title">{% translate "On the agenda" %}</h3> 
 
-          <div class="p-4">
+          <div class="p-md-4">
+            <p><span class="text_primary">* </span>{% translate "This agenda is subject to change" %}</p>
             
             <div class="row mt-3 border-bottom_grey">
               <div class="col-12 col-sm-8 p-3 py-4">
@@ -148,10 +149,8 @@
                 <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Dr Seddik DARAI</p>
               </div>
             </div>
-
-            <p><span class="text_primary">* </span>{% translate "This agenda is subject to change" %}</p>
-            <p><span class="text_primary">* </span>{% translate "FR ===> French language session" %}</p>
-            <p><span class="text_primary">* </span>{% translate "EN ===> English language session" %}</p>
+            
+            <span class="text_primary">* </span>{% translate "FR ===> French language session" %}; <span class="text_primary">* </span>{% translate "EN ===> English language session" %}
 
           </div>
 
@@ -166,7 +165,143 @@
       <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
 
       <div class="row event-speakers__list py-5">
-        <p class="font-size-16 py-5">{% translate "Speakers will be announced later." %}</p>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Pr. Deevia Bhana</h4>
+              <p class="speaker-designation">
+                {% translate "DSI/NRF South African Research Chair in Gender and Childhood Sexuality." %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}" alt="Pr. Deevia Bhana"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Pr. Deevia Bhana</h2>
+                            
+                          <p class="my-2">{% translate "DSI/NRF South African Research Chair in Gender and Childhood Sexuality." %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Deevia Bhana is the DSI/NRF South African Research Chair in Gender and Childhood Sexuality. She has written extensively on the
+                            experience of gender and sexuality in the young life course bringing a broad interdisciplinary social science lens to understanding how
+                            gender and sexuality is experienced by children and young people and the implications thereof for addressing violence, sex education
+                            and sexual health interventions. Her distinctive contributions and impact are reflected in several international keynotes, invited talks
+                            and her active role in science engagement. She collaborates with researchers across the social sciences including Women and Gender
+                            Studies, Anthropology, Sociology and Education. Her publications, include 11 books, and over 147 book chapters and articles in peer-
+                            reviewed journals. Her work appears in leading journals such as AIDS Education &amp; Prevention; British Educational Research Journal;
+                            British Journal of Sociology of Education; Gender &amp; Education; International Journal of Educational Development; International
+                            Journal of Inclusive Education; Journal of Southern African Studies; Sexualities; Social Science and Medicine, Youth Studies.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/akdim-tariq-57b27393/?originalSubdomain=ma">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr. Tariq AKDIM</h4>
+              <p class="speaker-designation">
+                {% translate "Doctoral student, Researcher" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}" alt="Mr. Tariq AKDIM"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr. Tariq AKDIM</h2>
+                            
+                          <p class="my-2">{% translate "Doctoral student, Researcher" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/akdim-tariq-57b27393/?originalSubdomain=ma">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                              Mr. Tariq AKDIM is a doctoral researcher at UIT Ibn Tofail, president of the LOGOS club, economist 
+                              expert in territorial development and associate professor at SupMTI Rabat.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="my-5 text-center">
