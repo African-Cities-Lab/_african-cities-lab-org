@@ -170,7 +170,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="#" class="d-block">
+                            <a href="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/sanitation.png' %}"> 
                             </a>
                         </div>
@@ -180,14 +180,16 @@
                                 <div class="university__divider"></div> 
                                 <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
                             </div> 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Sanitation" %}</span>
                                 </div>
                             </div> 
                             <h5 class="moocsCard-title">
-                                <a href="#" class="d-block text-black">{% translate "Introduction to Sanitazation Economy Systems & Markets" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black"  data-title="Introduction to Sanitazation Economy Systems & Markets">
+                                    {% translate "Introduction to Sanitazation Economy Systems & Markets" %}
+                                </a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -199,7 +201,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="#" class="d-block">
+                            <a href="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/digital_.png' %}"> 
                             </a>
                         </div>
@@ -209,14 +211,14 @@
                                 <div class="university__divider"></div> 
                                 <div class="university__label">{% translate "UM6P" %}</div>
                             </div> 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Digital" %}</span>
                                 </div>
                             </div> 
                             <h5 class="moocsCard-title">
-                                <a href="#" class="d-block text-black">{% translate "Urban Data Management for Smart City Developpement in Africa" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black" >{% translate "Urban Data Management for Smart City Developpement in Africa" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -228,7 +230,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="#" class="d-block">
+                            <a hhref="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/eco_construction.png' %}"> 
                             </a>
                         </div>
@@ -239,7 +241,7 @@
                                 <div class="university__label">{% translate "Sèmè City" %}</div>
                             </div> 
 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Building" %}</span>
@@ -247,7 +249,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="#" class="d-block text-black">{% translate "Eco construction en Afrique" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black" >{% translate "Eco construction en Afrique" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -259,7 +261,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="#" class="d-block">
+                            <a href="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/housing.png' %}"> 
                             </a>
                         </div>
@@ -270,7 +272,7 @@
                                 <div class="university__label">{% translate "University of Cape Town" %}</div>
                             </div> 
 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Housing" %}</span>
@@ -278,7 +280,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="#" class="d-block text-black">{% translate "Making housing work in African cities: understanding the role and opportunity of finance" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black" >{% translate "Making housing work in African cities: understanding the role and opportunity of finance" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -291,7 +293,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block">
+                            <a href="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/digital__.png' %}"> 
                             </a>
                         </div>
@@ -302,7 +304,7 @@
                                 <div class="university__label">{% translate "University of Cape Town" %}</div>
                             </div> 
 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Digital" %}</span>
@@ -310,7 +312,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="{% url 'how-can-cities-in-africa-be-smarter' %}" class="d-block text-black">{% translate "How can cities in Africa be smarter?" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black" >{% translate "How can cities in Africa be smarter?" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -323,7 +325,7 @@
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
-                            <a href="#" class="d-block">
+                            <a href="#moocs_modal_form" type="button" class="d-block" >
                                 <img src="{% static 'images/assets/moocs/food_systems.png' %}">
                             </a> 
                         </div>
@@ -334,7 +336,7 @@
                                 <div class="university__label">{% translate "University of Cape Town" %}</div>
                             </div> 
 
-                            <div class="moocsCard-meta py-2">
+                            <div class="moocsCard-meta py-3">
                                 <div class="meta__values">
                                     <i class="fas fa-tags text_primary"></i>
                                     <span class="meta__unit">{% translate "Food Systems" %}</span>
@@ -342,7 +344,7 @@
                             </div> 
 
                             <h5 class="moocsCard-title">
-                                <a href="#" class="d-block text-black">{% translate "What can food tell us about cities in Africa?" %}</a> 
+                                <a href="#moocs_modal_form" type="button" class="d-block text-black" >{% translate "What can food tell us about cities in Africa?" %}</a> 
                             </h5>
                         </div>
                         <div class="card-footer border-0">
@@ -540,9 +542,7 @@
         </div>
     </section>
     {% endif %}
-<!-- End News Section -->
-
-
+    <!-- End News Section -->
 
 
     <!-- Start Partners Area-->
@@ -551,5 +551,25 @@
     </section>
     <!-- End Partners Area -->
 
+    <!-- Modal for MOOCs waiting list -->
+    <div class="modal fade" id="moocs_modal_form" tabindex="-1" aria-labelledby="moocs_modal_form" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0 p-4">
+                <h3 class="">
+                    {% translate "Interested in our MOOCs?" %}
+                </h3>
+                <div class="font-size-16 my-3">
+                    {% translate "Please complete this form to stay up to date on its launch." %}
+                </div>
+                {% include "home/moocs/_moocs_waiting_list.html" %}
+            </div>
+          </div>
+        </div>
+    </div>
+     <!-- End Modal for MOOCs waiting list -->
 
 {% endblock content %}

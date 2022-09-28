@@ -1,6 +1,7 @@
 # from django.shortcuts import render
 # from multiprocessing import context
 
+from django.http import HttpResponse
 from unicodedata import category
 from django.apps import apps
 from django.conf import settings
@@ -67,7 +68,7 @@ def _moocs_registered(email, merge_fields=None):
         print("An exception occurred: {}".format(error.text))
         
     
-def moocs_registered(self, request):
+def moocs_registered(request):
     if request.method == "POST":
         email = request.POST["EMAIL"]
         merge_fields = {
@@ -83,7 +84,7 @@ def moocs_registered(self, request):
         messages.success(
             request, _("Thank you for registering. We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
         )  # message
-    return render(request)
+    return HttpResponse("/")
   
 
 def _webinar_subscription_en(email, merge_fields=None):
