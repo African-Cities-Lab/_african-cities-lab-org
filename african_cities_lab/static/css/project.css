@@ -599,6 +599,9 @@ a:hover {
 .font-size-12 {
   font-size: 12px !important;
 }
+.font-size-14 {
+	font-size: 14px !important;
+}
 .font-size-16 {
 	font-size: 16px !important;
 }
@@ -2133,9 +2136,6 @@ ul.event-meta {
 		border: 1px solid #d8d8d8;
 		margin: auto;
 		max-width: 530px;
-	}
-	.main-sponsor {
-		padding: 54px 0;
 	}
 	.main-sponsor:before {
 		width: 0;

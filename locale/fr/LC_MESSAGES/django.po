@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 17:25+0200\n"
+"POT-Creation-Date: 2022-09-29 17:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:63
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:309
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:310
 #: african_cities_lab/home/templates/home/home.html:35
 #: african_cities_lab/home/templates/home/moocs.html:46
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -566,7 +566,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/event_index_page.html:117
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:75
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:891
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:892
 msgid "Watch the replay"
 msgstr "Regardez le replay"
 
@@ -764,8 +764,8 @@ msgstr "Emergences des smart cities en Afriques et qualité de vie"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:172
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:250
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:417
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:439
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:418
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:440
 #: african_cities_lab/home/templates/home/events/civa/civa.html:551
 #: african_cities_lab/home/templates/home/events/civa/civa.html:573
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:262
@@ -774,8 +774,8 @@ msgid "Ms"
 msgstr "Mme"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:173
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:419
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:441
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:420
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:442
 #: african_cities_lab/home/templates/home/events/civa/civa.html:553
 #: african_cities_lab/home/templates/home/events/civa/civa.html:575
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:264
@@ -933,34 +933,55 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:356
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:378
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:186
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:258
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
-#: african_cities_lab/home/templates/home/events/civa/civa.html:490
-#: african_cities_lab/home/templates/home/events/civa/civa.html:512
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:201
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:223
-msgid "Doctoral student, Researcher"
-msgstr "Doctorant, Chercheur"
+msgid ""
+"Doctoral student, Researcher at UIT Ibn Tofail, president of the LOGOS club, "
+"economist expert in territorial development and associate professor at "
+"SupMTI Rabat."
+msgstr ""
+"Doctorant chercheur à l'UIT Ibn Tofail, président du club LOGOS, économiste "
+"expert en développement territorial et professeur associé à SupMTI Rabat."
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:387
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:291
-#: african_cities_lab/home/templates/home/events/civa/civa.html:521
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:232
 msgid ""
 "\n"
-"                              Mr. Tariq AKDIM is a doctoral researcher at "
-"UIT Ibn Tofail, president of the LOGOS club, economist \n"
-"                              expert in territorial development and "
-"associate professor at SupMTI Rabat.\n"
+"                            Tariq AKDIM, is a territorial economist, "
+"researcher, strategy and development policy consultant. Teacher of economic "
+"policy, social innovation and research culture in several higher institutes "
+"in Rabat and President of the LOGOS think club. He is also Editorial "
+"Director of the ADRAR VOICE Review. \n"
+"                            He was a lecturer at AlAkhawayn University in "
+"Ifrane. Currently, his research interests focus on development models and "
+"dynamics of the territories, territorial resilience and socio-spatial "
+"disparities. He is a columnist and executive in the Territorial Development "
+"Support Directorate. \n"
+"                            Tariq AKDIM published his first book in August "
+"2018, entitled \"Metropolitan Areas, Territories and Regional Project in "
+"Morocco\".\n"
 "                            "
 msgstr ""
 "\n"
-"Mr Tariq AKDIM est Doctorant chercheur à l'UIT Ibn Tofail, président du club "
-"LOGOS, économiste expert en développement territorial et professeur associé "
-"à SupMTI Rabat."
+"Tariq AKDIM, est économiste des territoires, chercheur, consultant en "
+"stratégie et politique de développement. Enseignant de politiques "
+"économiques , innovation sociale et de la Culture de Recherche à Rabat et "
+"Président du club de pensée LOGOS. \n"
+"Il est également Directeur de rédaction de la Revue « ADRAR VOICE »."
+"Actuellement, ses intérêts de recherche portent sur les modèles de "
+"développement et dynamiques des territoires, la résilience territoriale et "
+"les disparités socio-spatiales, la question de la convergence et cohérence "
+"des politiques publiques et enfin la question des communs et de la marge. \n"
+"Fervent défenseur de la diversité culturelle comme levier d'accroissement et "
+"de développement humain et de la place de la culture dans les politiques "
+"territoriales de développement.Il est chroniqueur et cadre attaché à la "
+"Direction d’Appui au Développement Territorial. Tariq AKDIM a publié son "
+"premier ouvrage en 2018, intitulé « Aires métropolitaines, territoires et "
+"projet régional au Maroc ». Un deuxième ouvrage est en cours sous le signe "
+"de \"Ruptures\". \n"
+"                            "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:450
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:451
 #: african_cities_lab/home/templates/home/events/civa/civa.html:584
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:295
 msgid ""
@@ -990,10 +1011,10 @@ msgstr ""
 "programmation urbaine au Bénin et dans le cadre de ses études à la Sobornne "
 "Université."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:486
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:508
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:555
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:577
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:487
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:509
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:556
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:578
 #: african_cities_lab/home/templates/home/events/civa/civa.html:620
 #: african_cities_lab/home/templates/home/events/civa/civa.html:642
 #: african_cities_lab/home/templates/home/events/civa/civa.html:689
@@ -1008,7 +1029,7 @@ msgstr ""
 "Foundateur de GeOsm Family – 1ère infrastructure ouverte de connaissances "
 "géospatiales"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:517
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:518
 #: african_cities_lab/home/templates/home/events/civa/civa.html:651
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:362
 msgid ""
@@ -1044,7 +1065,7 @@ msgstr ""
 "notamment citer : La Banque Mondiale, la GIZ, l'UNESCO, l’UN-Habitat, l'AFD, "
 "etc."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:586
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:587
 #: african_cities_lab/home/templates/home/events/civa/civa.html:720
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:431
 msgid ""
@@ -1067,8 +1088,8 @@ msgstr ""
 "4.0, des villes futures (intelligentes, durables et villes innovantes), de "
 "l’Education 4.0 et de l’Intelligence Artificielle (IA)."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:620
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:642
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:621
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:643
 #: african_cities_lab/home/templates/home/events/civa/civa.html:754
 #: african_cities_lab/home/templates/home/events/civa/civa.html:776
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:465
@@ -1076,7 +1097,7 @@ msgstr ""
 msgid "Architech and PhD student EPFL Lausanne, Switzerland"
 msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:651
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:652
 #: african_cities_lab/home/templates/home/events/civa/civa.html:785
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:496
 msgid ""
@@ -1105,8 +1126,8 @@ msgstr ""
 "de la Kilimani Project Foundation.\n"
 "                              "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:689
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:711
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:690
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:712
 #: african_cities_lab/home/templates/home/events/civa/civa.html:823
 #: african_cities_lab/home/templates/home/events/civa/civa.html:845
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:534
@@ -1118,7 +1139,7 @@ msgstr ""
 "Chercheur, Docteur en Informatique,  Systèmes de traitement de données et "
 "mise en réseau de données"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:722
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:723
 #: african_cities_lab/home/templates/home/events/civa/civa.html:856
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:567
 msgid ""
@@ -1150,8 +1171,8 @@ msgstr ""
 "sciences sociales - économie et affaires.\n"
 "                                "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:760
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:782
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:761
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:783
 #: african_cities_lab/home/templates/home/events/civa/civa.html:894
 #: african_cities_lab/home/templates/home/events/civa/civa.html:916
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:605
@@ -1163,7 +1184,7 @@ msgstr ""
 "Chef de produit senior du programme de surveillance environnementale Africa."
 "Sensors de Code for Africa."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:793
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:794
 #: african_cities_lab/home/templates/home/events/civa/civa.html:927
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:638
 msgid ""
@@ -1193,8 +1214,8 @@ msgstr ""
 "de la Kilimani Project Foundation.\n"
 "                              "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:832
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:854
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:833
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:855
 msgid ""
 "Disaster Risk Management Specialist, Global Facility for Disaster Risk "
 "Reduction and Recovery"
@@ -1202,7 +1223,7 @@ msgstr ""
 "Spécialiste de la gestion des risques de catastrophes, Fonds mondial pour la "
 "réduction des risques de catastrophes et le relèvement"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:865
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:866
 msgid ""
 "\n"
 "                            Vivien Deparday is a Disaster Risk Management "
@@ -1279,7 +1300,7 @@ msgid ""
 "challenges the continent must face in the \n"
 "              future such as sustainability, well-being, access to public "
 "utilities, education but above all, inclusion.\n"
-"              During this \"African Cities: What place for the youth?\" "
+"              <br> During this \"African Cities: What place for the youth?\" "
 "webinar, experts and intervenants from all over the \n"
 "              continent will answer the following questions:\n"
 "              "
@@ -1298,11 +1319,10 @@ msgstr ""
 " il est dès lors légitime de les positionner comme acteurs et auteurs à part "
 "entière de la transformation d’espaces et \n"
 "cadres de vie qui répondent aux enjeux auxquels le continent doit faire "
-"face \n"
-"en matière de durabilité, de bien être, d’accès aux services essentielles, "
-"d’éducation mais surtout d’inclusion.\n"
-"Dans ce webinaire intitulé \"Villes africaines : quelle place pour les "
-"jeunes ?\" les experts venus des 4 coins du continent \n"
+"face(durabilité, bien être, \n"
+"accès aux services essentiels d’éducation et inclusion)\n"
+" <br>Dans ce webinaire intitulé \"Villes africaines : quelle place pour les "
+"jeunes ?\", les experts venus des 4 coins du continent \n"
 "répondront aux questions de :\n"
 "              "
 
@@ -1332,6 +1352,7 @@ msgid "Challenging Cities: Young Men, Masculinity and Violence"
 msgstr "Les villes au défi : Jeunes hommes, masculinité et violence"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:138
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:186
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:208
 msgid "DSI/NRF South African Research Chair in Gender and Childhood Sexuality."
 msgstr ""
@@ -1379,23 +1400,28 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Deevia Bhana est DSI/NRF de la chaire de recherche sud-africaine "
-"sur le genre et la sexualité de l'enfance. Elle a beaucoup écrit sur "
-"l'expérience du genre et de la sexualité des plus jeunes ,\n"
-" en apportant une large perspective interdisciplinaire de sciences "
-"sociales pour comprendre comment\n"
-" le genre et la sexualité sont vécus par les enfants et les jeunes et "
-"les implications qui en découlent pour aborder la violence, l'éducation sexuelle "
+"Deevia Bhana est DSI/NRF de la chaire de recherche sud-africaine sur le "
+"genre et la sexualité de l'enfance. Elle a beaucoup écrit sur l'expérience "
+"du genre et de la sexualité des plus jeunes ,\n"
+" en apportant une large perspective interdisciplinaire de sciences sociales "
+"pour comprendre comment\n"
+" le genre et la sexualité sont vécus par les enfants et les jeunes et les "
+"implications qui en découlent pour aborder la violence, l'éducation sexuelle "
 "et les interventions de santé sexuelle. \n"
-"Ses contributions distinctives et son impact se reflètent dans plusieurs discours clés internationaux, "
-"des conférences invitées et son rôle actif dans"
-" l'engagement scientifique. Elle collabore avec des chercheurs en sciences sociales, \n"
-"notamment en études sur les femmes et le genre, en anthropologie, en sociologie et en éducation. "
-"Ses publications comprennent 11 livres et plus de 147 chapitres de livres et articles dans des revues évaluées par des pairs.\n"
-" Ses travaux sont publiés dans des revues de premier plan telles que AIDS Education &amp Prevention ; "
-"British Educational Research Journal ; British Journal of Sociology of Education ; Gender &amp Education ; \n"
-"International Journal of Educational Development ; International Journal of Inclusive Education ; "
-"Journal of Southern African Studies ; Sexualities ; Social Science and Medicine, Youth Studies.\n"
+"Ses contributions distinctives et son impact se reflètent dans plusieurs "
+"discours clés internationaux, des conférences invitées et son rôle actif "
+"dans l'engagement scientifique. Elle collabore avec des chercheurs en "
+"sciences sociales, \n"
+"notamment en études sur les femmes et le genre, en anthropologie, en "
+"sociologie et en éducation. Ses publications comprennent 11 livres et plus "
+"de 147 chapitres de livres et articles dans des revues évaluées par des "
+"pairs.\n"
+" Ses travaux sont publiés dans des revues de premier plan telles que AIDS "
+"Education &amp Prevention ; British Educational Research Journal ; British "
+"Journal of Sociology of Education ; Gender &amp Education ; \n"
+"International Journal of Educational Development ; International Journal of "
+"Inclusive Education ; Journal of Southern African Studies ; Sexualities ; "
+"Social Science and Medicine, Youth Studies.\n"
 "                            "
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:9
@@ -1807,6 +1833,28 @@ msgid ""
 "            Meet our <br> Conference speakers\n"
 "        "
 msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:490
+#: african_cities_lab/home/templates/home/events/civa/civa.html:512
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:201
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:223
+msgid "Doctoral student, Researcher"
+msgstr "Doctorant, Chercheur"
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:521
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:232
+msgid ""
+"\n"
+"                              Mr. Tariq AKDIM is a doctoral researcher at "
+"UIT Ibn Tofail, president of the LOGOS club, economist \n"
+"                              expert in territorial development and "
+"associate professor at SupMTI Rabat.\n"
+"                            "
+msgstr ""
+"\n"
+"Mr Tariq AKDIM est Doctorant chercheur à l'UIT Ibn Tofail, président du club "
+"LOGOS, économiste expert en développement territorial et professeur associé "
+"à SupMTI Rabat."
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:951
 #, fuzzy
@@ -2281,8 +2329,10 @@ msgid "What can food tell us about cities in Africa?"
 msgstr "Que peut nous apprendre les aliments sur les villes d'Afrique ?"
 
 #: african_cities_lab/home/templates/home/home.html:359
-msgid "View all MOOCs"
-msgstr "Voir tous les MOOCs"
+#, fuzzy
+#| msgid "View all courses"
+msgid "View all courses"
+msgstr "Voir tous les cours"
 
 #: african_cities_lab/home/templates/home/home.html:371
 msgid "Focus Areas"
@@ -2330,7 +2380,7 @@ msgstr ""
 "plus sur le développement urbain et environnemental en Afrique."
 
 #: african_cities_lab/home/templates/home/home.html:563
-msgid "Interested in our MOOCs?"
+msgid "Interested by this MOOC?"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/home.html:566
@@ -2814,7 +2864,7 @@ msgid "Please fill out the form so that your registration can be validated."
 msgstr ""
 "Veuillez remplir le formulaire afin que votre inscription soit validée."
 
-#: african_cities_lab/home/views.py:85 african_cities_lab/home/views.py:169
+#: african_cities_lab/home/views.py:170
 msgid ""
 "Thank you for registering. We have just sent you an email with the webinar "
 "link.Please check your mailbox or spam folder if you haven't received it yet."
@@ -2823,13 +2873,13 @@ msgstr ""
 "de détails du webinaire. Veuillez vérifier votre boîte mails ou vos spam si "
 "vous ne l'avez pas encore reçu."
 
-#: african_cities_lab/home/views.py:175
+#: african_cities_lab/home/views.py:176
 msgid ""
 "Nous venons de vous envoyer un e-mail avec le lien du webinaire. Veuillez "
 "vérifier votre boîte mails ou vos spams si vous ne l'avez pas encore reçu."
 msgstr ""
 
-#: african_cities_lab/home/views.py:181
+#: african_cities_lab/home/views.py:182
 msgid "Subscribe to the webinar"
 msgstr "S'inscrire au webinaire"
 
@@ -2909,6 +2959,9 @@ msgstr "Suivez-nous"
 #: african_cities_lab/templates/base.html:286
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
+
+#~ msgid "View all MOOCs"
+#~ msgstr "Voir tous les MOOCs"
 
 #~ msgid "Speakers will be announced later."
 #~ msgstr "Les intervenants seront annoncés plus tard."
