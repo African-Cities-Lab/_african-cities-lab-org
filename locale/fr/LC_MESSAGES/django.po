@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 17:27+0200\n"
+"POT-Creation-Date: 2022-09-29 18:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2380,10 +2380,10 @@ msgstr ""
 "plus sur le développement urbain et environnemental en Afrique."
 
 #: african_cities_lab/home/templates/home/home.html:563
-msgid "Interested by this MOOC?"
+msgid "Interested by "
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:566
+#: african_cities_lab/home/templates/home/home.html:567
 #: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:165
 #: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:165
 #: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:165
@@ -2866,17 +2866,16 @@ msgstr ""
 
 #: african_cities_lab/home/views.py:170
 msgid ""
-"Thank you for registering. We have just sent you an email with the webinar "
-"link.Please check your mailbox or spam folder if you haven't received it yet."
+"Thank you for registering! A confirmation email has been sent to you, please "
+"check your mailbox or your spam."
 msgstr ""
-"Merci de vous être inscrit. Nous venons de vous envoyer un e-mail avec plus "
-"de détails du webinaire. Veuillez vérifier votre boîte mails ou vos spam si "
-"vous ne l'avez pas encore reçu."
+"Merci de votre inscription ! Un mail de confirmation vous a été envoyé, "
+"veuillez consulter votre boîte mail ou vos spams."
 
 #: african_cities_lab/home/views.py:176
 msgid ""
-"Nous venons de vous envoyer un e-mail avec le lien du webinaire. Veuillez "
-"vérifier votre boîte mails ou vos spams si vous ne l'avez pas encore reçu."
+"Merci de votre inscription ! Un mail de confirmation vous a été envoyé, "
+"veuillez consulter votre boîte mail ou vos spams."
 msgstr ""
 
 #: african_cities_lab/home/views.py:182

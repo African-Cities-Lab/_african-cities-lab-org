@@ -166,13 +166,13 @@ class WebinarSubscription(generic.TemplateView):
             if request.POST["site_language"] == "en":
                 _webinar_subscription_en(email, merge_fields)  # function to access mailchimp
                 messages.success(
-                    request, _("Thank you for registering. We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
+                    request, _("Thank you for your registration! A confirmation email has been sent to you, please check your mailbox or your spam.")
                 )  # message
                 
             if request.POST["site_language"] == "fr":
                 _webinar_subscription_fr(email, merge_fields)  # function to access mailchimp
                 messages.success(
-                    request, _("Nous venons de vous envoyer un e-mail avec le lien du webinaire. Veuillez vérifier votre boîte mails ou vos spams si vous ne l'avez pas encore reçu.")
+                    request, _("Merci de votre inscription ! Un mail de confirmation vous a été envoyé, veuillez consulter votre boîte mail ou vos spams.")
                 )  # message
 
         return render(
