@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-30 16:21+0200\n"
+"POT-Creation-Date: 2022-09-30 18:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1300,8 +1300,8 @@ msgid ""
 "              facing the continent (sustainability, well-being, access to "
 "essential education services and inclusion).\n"
 "              <br>In this webinar entitled \"African cities: what place for "
-"young people?\" experts from the four corners \n"
-"              of the continent will answer the questions of:\n"
+"young people?\" experts \n"
+"              will answer the questions of:\n"
 "              "
 msgstr ""
 "\n"
@@ -1317,25 +1317,25 @@ msgstr ""
 "nombreux modèles de villes africaines, \n"
 " il est dès lors légitime de les positionner comme acteurs et auteurs à part "
 "entière de la transformation d’espaces et \n"
-"cadres de vie qui répondent aux enjeux auxquels le continent doit faire "
-"face (durabilité, bien être, \n"
+"cadres de vie qui répondent aux enjeux auxquels le continent doit faire face "
+"(durabilité, bien être, \n"
 "accès aux services essentiels, éducation, inclusion).\n"
 " <br>Dans ce webinaire intitulé \"Villes africaines : quelle place pour les "
-"jeunes ?\", les experts venus des 4 coins du continent \n"
-"répondront aux questions de :\n"
+"jeunes ?\", des experts \n"
+"répondront aux questions suivantes :\n"
 "              "
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:93
 msgid "Youth engagement through different movements;"
-msgstr "Engagement des jeunes au travers de différents mouvements ;"
+msgstr "Engagement des jeunes au travers de différents mouvements;"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:94
 msgid "Gender and equity in urban areas;"
-msgstr "La question genre et équité en milieu urbain ;"
+msgstr "La question genre et équité en milieu urbain;"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:95
 msgid "Urban youth activities."
-msgstr "Les activités de la jeunesse urbaine ;"
+msgstr "Les activités de la jeunesse urbaine."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:111
 msgid "This agenda is subject to change"
@@ -2174,8 +2174,8 @@ msgid ""
 "To receive notification of our new course catalog or to register for our "
 "newsletter, please register here:"
 msgstr ""
-"Pour recevoir la notification d'un nouveau catalogue de cours ou pour vous inscrire "
-"à notre newsletter, veuillez vous inscrire ici :"
+"Pour recevoir la notification d'un nouveau catalogue de cours ou pour vous "
+"inscrire à notre newsletter, veuillez vous inscrire ici :"
 
 #: african_cities_lab/home/templates/home/home.html:196
 msgid "Your First and Last Name"
@@ -2825,8 +2825,7 @@ msgstr "Nous sommes là pour vous aider"
 #: african_cities_lab/home/templates/home/static_contact.html:88
 msgid "Please contact us in case of any query. We are happy to help"
 msgstr ""
-"Merci de nous contacter en cas de question. Nous serons heureux de vous "
-"aider"
+"Merci de nous contacter en cas de question. Nous serons heureux de vous aider"
 
 #: african_cities_lab/home/templates/home/static_contact.html:95
 msgid "Email Us To Get Information"
@@ -2934,15 +2933,15 @@ msgstr ""
 "Restez informés de la mise à jour des cours. Et suivez toute l’actualité de "
 "la transformation des villes africaines."
 
-#: african_cities_lab/templates/base.html:259
+#: african_cities_lab/templates/base.html:260
 msgid "Enter your email address"
 msgstr "Entrer votre adresse email"
 
-#: african_cities_lab/templates/base.html:267
+#: african_cities_lab/templates/base.html:268
 msgid "Connect with us :"
 msgstr "Suivez-nous"
 
-#: african_cities_lab/templates/base.html:287
+#: african_cities_lab/templates/base.html:288
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
 
