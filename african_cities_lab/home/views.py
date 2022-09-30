@@ -72,19 +72,18 @@ def moocs_registered(request):
     if request.method == "POST":
         email = request.POST["EMAIL"]
         merge_fields = {
-            "MOOCS": request.POST["MOOCS"],
-            "LNAME": request.POST["LNAME"],
-            "FNAME": request.POST["FNAME"],
-            "INSTITUT": request.POST["INSTITUT"],
-            "FUNCTION": request.POST["FUNCTION"],
-            "COUNTRY": request.POST["COUNTRY"],
+            "NAME": request.POST["NAME"],
         }
-            
-        _moocs_registered(email, merge_fields)  # function to access mailchimp
+        
+        _moocs_registered(email, merge_fields)
         messages.success(
-            request, _("Thank you for registering. We have just sent you an email with the webinar link.Please check your mailbox or spam folder if you haven't received it yet.")
+            request, _("Thank you! Your registration has been successful.")
         )  # message
-    return HttpResponse("/")
+             
+    return render(
+            request,
+            "home/home.html"
+        )
   
 
 def _webinar_subscription_en(email, merge_fields=None):
@@ -166,7 +165,7 @@ class WebinarSubscription(generic.TemplateView):
             if request.POST["site_language"] == "en":
                 _webinar_subscription_en(email, merge_fields)  # function to access mailchimp
                 messages.success(
-                    request, _("Thank you for your registration! A confirmation email has been sent to you, please check your mailbox or your spam.")
+                    request, _("Thank you for registering! A confirmation email has been sent to you, please check your mailbox or your spam.")
                 )  # message
                 
             if request.POST["site_language"] == "fr":

@@ -2,7 +2,7 @@
 <form id="moocs_list_form" method="post" action="{% url 'moocs-registered' %}">
     {% csrf_token %}
     <div class="form-group">
-        <input name="MOOCS" type="text" value="" class="form-control" disabled required/>
+        <input name="MOOCS" type="hidden" class="form-control" />
     </div>
     <div class="row mb-2">
         <div class="col-12 col-md-6 form-group"> 

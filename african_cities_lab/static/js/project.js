@@ -44,15 +44,15 @@
         },
         breakpoints: {
             640: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 6,
+              slidesPerView: 4,
               spaceBetween: 60,
             },
         },
@@ -64,23 +64,20 @@
         time: 1000
     });
 
-    //triggered when moocs waiting list modal is about to be shown
     $(document).ready(function(){
-
         $('#moocs_modal_form').on('show.bs.modal', function(e) {
 
             //get data-title attribute of the clicked element
-            var moocs_title = $(e.relatedTarget).data('title');
-    
+            var moocs_title = $(e.relatedTarget).data('title'); 
+            
             //populate the input MOOCS 
-            var moocs_title_field = $(e.currentTarget).find('input[name="MOOCS"]');
+            $(e.currentTarget).find('input[name="MOOCS"]').attr('value', moocs_title);
 
-            moocs_title_field.val(moocs_title);
+            //populate span
+            $(".moocs-title-on-modal").html(moocs_title);
         });
-        
     });
-
-
+    
     /* Function is for submitting moocs waiting list
     $('#moocs_list_for').submit(function(e){
         e.preventDefault();

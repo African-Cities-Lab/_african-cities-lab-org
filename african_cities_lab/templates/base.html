@@ -85,11 +85,12 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                             </li>
+                            {% comment %}
                             {% url 'moocs' as url %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link  {% if request.path == url %}active{% endif %}" href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
                             </li>
-                            {% comment %}
+                            
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
                             </li>
@@ -179,7 +180,7 @@
 
         <footer>
             <div class="footer-top">
-                <div class="container py-3">
+                <div class="container-lg py-3">
                     <div class="row justify-content-lg-between p-md-5"> 
                          
                         <div class="col-12 col-lg-7 order-2 order-lg-1">
@@ -239,14 +240,15 @@
                                 </div>
                             </div>
                         </div> 
-                        <div class="col-12 col-lg-5 order-1 order-lg-2">
+                        <div class="col-12 col-md-9 col-lg-5 order-1 order-lg-2">
                             <div class="footer__articleletter-col">
                                 <h5 class="footer__col-title my-3">{% translate "Stay updated with our newsletter" %}</h5>
                                 <p class="footer__col-text">
                                     {% translate "Stay up to date with all the recent news, updates, and courses by simply your email address to our mailing list. We promise to never spam you." %} 
                                 </p>
                                 <div class="articleletter-form py-3">
-                                    <form id="newsletter-form" class="append-form" action="#" method="post">
+                                    <form id="newsletter-form" class="append-form">
+                                        {% csrf_token %}
                                         <div class="input-group">
                                             <input type="email" class="form-control" name="articleletter"
                                                    placeholder="{% translate 'Enter your email address' %}">
