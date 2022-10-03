@@ -1,11 +1,11 @@
-{% load i18n countries%} 
-<form id="moocs_list_form" method="post" action="{% url 'moocs-registered' %}">
+{% load i18n countries%}
+<form id="moocs_list_form" method="post" action="{% url 'subscribe-moocs' %}">
     {% csrf_token %}
     <div class="form-group">
         <input name="MOOCS" type="hidden" class="form-control" />
     </div>
     <div class="row mb-2">
-        <div class="col-12 col-md-6 form-group"> 
+        <div class="col-12 col-md-6 form-group">
           <input type="text" name="LNAME" class="form-control" placeholder="{% translate 'Last Name' %}" required>
         </div>
         <div class="col-12 col-md-6 form-group">
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row mb-2">
-        <div class="col-12 col-md-6 form-group"> 
+        <div class="col-12 col-md-6 form-group">
             <input type="text" name="INSTITUT" class="form-control" placeholder="{% translate 'Organization Name' %}" required>
         </div>
         <div class="col-12 col-md-6 form-group">
@@ -41,8 +41,8 @@
         {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
       </p>
     <div class="row justify-content-center">
-        <div class="col-md-6"> 
+        <div class="col-md-6">
             <button id="moocs-form_submit" type="submit" class="btn w-100 btn__primary btn__small">{% translate "Send" %}</button>
         </div>
-    </div> 
+    </div>
 </form>

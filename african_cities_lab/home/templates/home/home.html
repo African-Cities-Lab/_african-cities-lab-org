@@ -166,18 +166,18 @@
 
                 </div>
             </div>
-            <div class="row justify-content-center py-5"> 
-                
+            <div class="row justify-content-center py-5">
+
                 <div class="row justify-content-center align-items-center text-white">
                     <div class="col-12 col-lg-3">
                         <div class="coming-soon__block position-relative h1">{% translate "Coming" %}<br>
                             {% translate "soon" %}
                             <span class="dash-accent"></span>
-                        </div> 
+                        </div>
                     </div>
                     <div class="col-10 col-lg-7 px-lg-5 pt-4">
-                        <p>{% translate "To receive notification of our new course catalog or to register for our newsletter, please register here:" %}</p> 
-                        
+                        <p>{% translate "To receive notification of our new course catalog or to register for our newsletter, please register here:" %}</p>
+
                         <div class="moocs-waiting-list pb-3">
                             <!-- message if email is sent -->
                             {% if messages %}
@@ -189,16 +189,16 @@
                                     </div>
                                 {% endfor %}
                             {% endif %}
-                            <form method="post" action="{% url 'moocs-registered' %}">
+                            <form method="post" action="{% url 'subscribe-moocs' %}">
                                 {% csrf_token %}
                                 <div class="row">
-                                    <div class="col-12 col-lg-5 mt-3"> 
+                                    <div class="col-12 col-lg-5 mt-3">
                                         <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required>
                                     </div>
-                                    <div class="col-12 col-lg-5 mt-3"> 
+                                    <div class="col-12 col-lg-5 mt-3">
                                         <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required>
                                     </div>
-                                    <div class="col-12 col-lg-2 mt-3 text-center"> 
+                                    <div class="col-12 col-lg-2 mt-3 text-center">
                                         <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@
 
                     </div>
                 </div>
-             
+
             </div>
         </div>
     </section>
@@ -241,7 +241,7 @@
                                 <h4 class="py-3 font-size-22">
                                     <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block text-black">
                                         {% translate "African Cities: What role for the youth?" %}
-                                    </a> 
+                                    </a>
                                 </h4>
                             </div>
                             <div class="card-footer">
@@ -337,7 +337,7 @@
                     </h3>
                     <div class="font-size-16 my-3">
                         {% translate "Stay up to date with our newsletter and explore our blog posts to learn more about African urban and environmental development." %}
-                        
+
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-none d-md-block">
@@ -346,12 +346,12 @@
             </div>
 
             <div class="row latest-article__list pb-5">
-                {% for article in blog %} 
+                {% for article in blog %}
                 <div class="col-12 col-lg-4 col-md-6 article-card">
                     <div class="card border-0">
                         <div class="card-header article-preview-img p-0">
                             <a href="{{ article.url }}" class="d-block">
-                                {% image article.main_image original %} 
+                                {% image article.main_image original %}
                             </a>
                         </div>
                         <div class="card-body">
@@ -375,7 +375,7 @@
                             <h5 class="article-title py-3">
                                 <a href="{{ article.url }}" class="d-block text-black">
                                     {{ article.title }}
-                                </a> 
+                                </a>
                             </h5>
                             <div class="article-exerpt">
                                 {{ article.summary }}
