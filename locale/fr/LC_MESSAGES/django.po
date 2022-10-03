@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-03 17:42+0200\n"
+"POT-Creation-Date: 2022-10-03 17:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:63
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:310
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:300
 #: african_cities_lab/home/templates/home/home.html:35
 #: african_cities_lab/home/templates/home/moocs.html:32
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -676,7 +676,7 @@ msgid "Best practices in the implementation of AI for African cities"
 msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:117
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:108
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:98
 msgid "On the agenda"
 msgstr "Au programme"
 
@@ -698,7 +698,7 @@ msgid "French subtitled English"
 msgstr "Français sous titré Anglais"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:141
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:115
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:105
 msgid "Introduction and welcome"
 msgstr "Introduction"
 
@@ -711,14 +711,14 @@ msgstr "Introduction"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:219
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:229
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:239
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:118
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:108
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:117
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:127
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:137
 msgid "Speaker:"
 msgstr "Intervenant :"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:149
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:123
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:113
 msgid "10.00 - 10.40 AM"
 msgstr "10h00 - 10h40"
 
@@ -741,7 +741,7 @@ msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:159
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:133
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:123
 msgid "10.40 - 11.00 AM"
 msgstr "10h40 - 11h00"
 
@@ -800,13 +800,13 @@ msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:188
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:245
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:144
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:134
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:193
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:250
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:149
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:139
 msgid "Moderator:"
 msgstr "Modérateur :"
 
@@ -880,7 +880,7 @@ msgid "CEO Open data Africa"
 msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:265
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:165
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:155
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:69
 #: african_cities_lab/home/templates/home/events/civa/civa.html:59
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:69
@@ -932,8 +932,8 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:356
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:378
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:258
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:248
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:270
 msgid ""
 "Doctoral student, Researcher at UIT Ibn Tofail, president of the LOGOS club, "
 "economist expert in territorial development and associate professor at "
@@ -1271,9 +1271,14 @@ msgstr ""
 "le développement des smart cities en Afrique."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:52
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "              African Cities: <br>What role for the youth?\n"
+#| "            "
 msgid ""
 "\n"
-"              African Cities: <br>What role for the youth?\n"
+"            African Cities: <br>What role for the youth?\n"
 "            "
 msgstr ""
 "\n"
@@ -1304,91 +1309,81 @@ msgstr ""
 #| "              will answer the questions of:\n"
 #| "              "
 msgid ""
-"\n"
-"              By 2050, 35&#37; of the world population will be young and "
-"African, compared to 15&#37; in 2000.\n"
-"              The accelerated urbanisation that Africa has been experiencing "
-"in recent years goes along with an\n"
-"              increase in the youngest part of its population, bringing new "
-"challenges to the cities.\n"
-"              Today, 60&#37; of the African population is under the age of "
-"24. This peculiarity of the continent\n"
-"              is an essential fact to be taken into account in urban "
-"planning. Young people should have an important\n"
-"              role in the development of African cities models. It is "
-"therefore legitimate to position them as actors\n"
-"              and authors of the transformation of spaces and living "
-"environments that respond to the urban challenges\n"
-"              facing the continent (sustainability, well-being, access to "
-"essential education services and inclusion).\n"
-"              <br>In this webinar entitled \"African cities: what place for "
-"young people?\" experts from the four corners\n"
-"              of the continent will answer the questions of:\n"
-"              "
+"By 2050, 35&#37; of the world population will be young and African, compared "
+"to 15&#37; in 2000. The accelerated urbanisation that Africa has been "
+"experiencing in recent years goes along with an increase in the youngest "
+"part of its population, bringing new challenges to the cities. Today, "
+"60&#37; of the African population is under the age of 24. This peculiarity "
+"of the continent is an essential fact to be taken into account in urban "
+"planning. Young people should have an important role in the development of "
+"African cities models. It is therefore legitimate to position them as actors "
+"and authors of the transformation of spaces and living environments that "
+"respond to the urban challenges facing the continent (sustainability, well-"
+"being, access to essential education services and inclusion). "
 msgstr ""
-"\n"
-" A l’horizon 2050, 35&#37; de la population mondiale sera jeune et "
-"africaine, contre 15&#37; en 2000.\n"
-" L’urbanisation accélérée que connaît l’Afrique depuis quelques années "
-"s’accompagne d’un accroissement de la part \n"
-"la plus jeune de sa population, faisant émerger de nouveaux défis. A ce "
-"jour, 60&#37; de la population africaine \n"
-"est âgée de moins de 24 ans. Cette spécificité propre au continent, est une "
-"donnée essentielle à prendre en compte dans la planification urbaine.\n"
-" Considérant les jeunes comme une part importante du développement des "
-"nombreux modèles de villes africaines, \n"
-" il est dès lors légitime de les positionner comme acteurs et auteurs à part "
-"entière de la transformation d’espaces et \n"
-"cadres de vie qui répondent aux enjeux auxquels le continent doit faire face "
-"(durabilité, bien être, \n"
-"accès aux services essentiels, éducation, inclusion).\n"
-" <br>Dans ce webinaire intitulé \"Villes africaines : quelle place pour les "
-"jeunes ?\", des experts \n"
-"répondront aux questions suivantes :\n"
-"              "
+"A l’horizon 2050, 35&#37; de la population mondiale sera jeune et africaine, "
+"contre 15&#37; en 2000. L’urbanisation accélérée que connaît l’Afrique depuis"
+" quelques années s’accompagne d’un accroissement de la part la plus jeune de "
+"sa population, faisant émerger de nouveaux défis. A ce jour, 60&#37; de la "
+"population africaine est âgée de moins de 24 ans. Cette spécificité propre au"
+" continent, est une donnée essentielle à prendre en compte dans la "
+"planification urbaine. Considérant les jeunes comme une part importante du "
+"développement des nombreux modèles de villes africaines, il est dès lors "
+"légitime de les positionner comme acteurs et auteurs à part entière de la "
+"transformation d’espaces et cadres de vie qui répondent aux enjeux auxquels "
+"le continent doit faire face (durabilité, bien être, accès aux services "
+"essentiels, éducation, inclusion).""              "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:93
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:79
+msgid ""
+"In this webinar entitled \"African cities: what place for young people?\" "
+"experts from the four corners of the continent will answer the questions of:"
+msgstr ""
+"Dans ce webinaire intitulé \"Villes africaines : quelle place pour les "
+"jeunes ?\", des experts répondront aux questions suivantes :"
+
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:83
 msgid "Youth engagement through different movements;"
 msgstr "Engagement des jeunes au travers de différents mouvements;"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:94
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:84
 msgid "Gender and equity in urban areas;"
 msgstr "La question genre et équité en milieu urbain;"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:95
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:85
 msgid "Urban youth activities."
 msgstr "Les activités de la jeunesse urbaine."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:111
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:101
 msgid "This agenda is subject to change"
 msgstr "Cet agenda est susceptible d'être modifié"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:124
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:114
 msgid "Is there an urban youth? A reflection in the Maghreb context"
 msgstr ""
 "Y a-t-il une jeunesse urbaine? Une réflexion dans le contexte maghrebin"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:134
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:124
 msgid "Challenging Cities: Young Men, Masculinity and Violence"
 msgstr "Les villes au défi : Jeunes hommes, masculinité et violence"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:138
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:186
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:208
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:128
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:176
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:198
 msgid "DSI/NRF South African Research Chair in Gender and Childhood Sexuality."
 msgstr ""
 "DSI / NRF de la Chaire de recherche sud-africaine sur le genre et la "
 "sexualité de l'enfance."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:153
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:143
 msgid "FR ===> French language session"
 msgstr "FR ===> Session en français"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:153
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:143
 msgid "EN ===> English language session"
 msgstr "EN ===> Session en anglais"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:217
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:207
 msgid ""
 "\n"
 "                            Deevia Bhana is the DSI/NRF South African "
@@ -1445,7 +1440,7 @@ msgstr ""
 "Social Science and Medicine, Youth Studies.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:291
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:281
 #, fuzzy
 #| msgid ""
 #| "\n"

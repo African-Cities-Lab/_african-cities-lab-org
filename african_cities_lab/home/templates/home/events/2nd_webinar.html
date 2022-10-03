@@ -2,27 +2,27 @@
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 
 {% block title %}
-    {% translate "African Cities: What role for the youth?" %} - African Cities Lab
+  {% translate "African Cities: What role for the youth?" %} - African Cities Lab
 {% endblock title %}
 {% block meta_tag_description %}
   <meta name="description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 {% endblock %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
-<meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+  <meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
+  <meta name="twitter:site" content="@AfricanCtiesLab" />
+  <meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}">
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
-<meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
+  <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
+  <meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+  <meta property="og:site_name" content="African Cities Lab" />
+  <meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
-<meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
+  <meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+  <meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+  <meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -30,7 +30,7 @@
   <style>
     #single-event {
       background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
-        url({% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %});
+      url({% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %});
     }
     #video_player .btn-close{
       color: #fff;
@@ -50,7 +50,7 @@
 
           <h1 class="pt-3 font-size-3-50em">
             {% blocktranslate %}
-              African Cities: <br>What role for the youth?
+            African Cities: <br>What role for the youth?
             {% endblocktranslate %}
           </h1>
 
@@ -75,18 +75,8 @@
           <div class="event-overview font-size-16">
             <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
             <div class="text-justify">
-              {% blocktranslate %}
-              By 2050, 35&#37; of the world population will be young and African, compared to 15&#37; in 2000.
-              The accelerated urbanisation that Africa has been experiencing in recent years goes along with an
-              increase in the youngest part of its population, bringing new challenges to the cities.
-              Today, 60&#37; of the African population is under the age of 24. This peculiarity of the continent
-              is an essential fact to be taken into account in urban planning. Young people should have an important
-              role in the development of African cities models. It is therefore legitimate to position them as actors
-              and authors of the transformation of spaces and living environments that respond to the urban challenges
-              facing the continent (sustainability, well-being, access to essential education services and inclusion).
-              <br>In this webinar entitled "African cities: what place for young people?" experts from the four corners
-              of the continent will answer the questions of:
-              {% endblocktranslate %}
+              <p>{% blocktranslate %}By 2050, 35&#37; of the world population will be young and African, compared to 15&#37; in 2000. The accelerated urbanisation that Africa has been experiencing in recent years goes along with an increase in the youngest part of its population, bringing new challenges to the cities. Today, 60&#37; of the African population is under the age of 24. This peculiarity of the continent is an essential fact to be taken into account in urban planning. Young people should have an important role in the development of African cities models. It is therefore legitimate to position them as actors and authors of the transformation of spaces and living environments that respond to the urban challenges facing the continent (sustainability, well-being, access to essential education services and inclusion). {% endblocktranslate %}</p>
+              <p>{% blocktranslate %}In this webinar entitled "African cities: what place for young people?" experts from the four corners of the continent will answer the questions of:{% endblocktranslate %}</p>
             </div>
 
             <ul class="py-4">
@@ -169,16 +159,16 @@
         <div class="col-lg-3 col-md-4 speakers-card">
           <div class="card border-0 bg-transparent">
             <div class="card-header p-0">
-                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
-                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}">
+              <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
+                <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}">
 
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                <div class="speaker-hover-content">
+                  <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                  <ul class="speakers-social-lists list-inline p-0 mb-0">
 
-                      </ul>
-                    </div>
-                </a>
+                  </ul>
+                </div>
+              </a>
             </div>
             <div class="card-body border-0">
               <h4 class="speaker-title">Pr. Deevia Bhana</h4>
@@ -239,18 +229,18 @@
         <div class="col-lg-3 col-md-4 speakers-card">
           <div class="card border-0 bg-transparent">
             <div class="card-header p-0">
-                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}">
+              <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                <img class="speaker-avatar" src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}">
 
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/akdim-tariq-57b27393/?originalSubdomain=ma">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
+                <div class="speaker-hover-content">
+                  <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                  <ul class="speakers-social-lists list-inline p-0 mb-0">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/akdim-tariq-57b27393/?originalSubdomain=ma">
+                      <i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
             </div>
             <div class="card-body border-0">
               <h4 class="speaker-title">Mr. Tariq AKDIM</h4>
