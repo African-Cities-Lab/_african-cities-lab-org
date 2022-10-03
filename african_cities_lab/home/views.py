@@ -64,7 +64,7 @@ def _subscribe(email, list_id, merge_fields=None):
     try:
         response = mailchimp.lists.add_list_member(list_id, member_info)
         print(f"API call successful: {response}")
-        return response.status
+        return response["status"]
     except ApiClientError as error:
         print(f"An exception occurred: {error.text}")
         if json.loads(error.text)["title"] == "Member Exists":
