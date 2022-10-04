@@ -1315,7 +1315,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-" Identité et participation de la jeunesse urbaine <br> à la démocratisation "
+" Identité et participation de la jeunesse urbaine à la démocratisation "
 "&amp; au développement\n"
 "                    "
 
