@@ -1045,7 +1045,7 @@ a.novashare-button {
   height: 100%;
   pointer-events: none;
   left: -2px;
-  width: 310px;
+  width: 330px;
 }
 .banner-angle__left > img {
   width: 100%;
@@ -2016,13 +2016,13 @@ ul.event-meta {
 		background: unset; 
 	}
 	.font-size-4em {
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 	.font-size-3-50em {
-		font-size: 2.25em;
+		font-size: 2.25em !important;
 	}
 	.font-size-2-75em {
-		font-size: 2em;
+		font-size: 2em !important;
 	}
 }
 
@@ -2159,7 +2159,7 @@ ul.event-meta {
 		background: transparent;
 	}
 	.main-sponsor {
-		padding: 2rem 0;
+		padding: 2rem;
 		border-bottom: 1px solid#e9e9e9;
 	}
 	.coming-soon__block {
@@ -2168,6 +2168,16 @@ ul.event-meta {
 	.coming-soon__block > br {
 		display: none;
 	}
+	.banner-text__item {
+		display: flex;
+		align-items: baseline;
+	}
+	.banner-text__item > img {
+		display: inline;
+		margin-right: 1rem;	
+	}
+	
+	
 }
 @media (min-width: 768px) {
 	.pl-md-0 {
@@ -2268,6 +2278,9 @@ ul.event-meta {
 	}
 	.banner-text__item.five {
 		animation: appear 15s 10.5s infinite ease;
+	}
+	.banner-text__item > img {
+		display: none !important;	
 	}
 	.moocs-content__top {
 		padding-right: 105px;

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 11:18+0200\n"
+"POT-Creation-Date: 2022-10-07 14:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -564,7 +564,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/event_index_page.html:118
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:75
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:892
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:898
 msgid "Watch the replay"
 msgstr "Regardez le replay"
 
@@ -607,6 +607,7 @@ msgid "10am - 12pm"
 msgstr "10h - 12h"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:64
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:137
 msgid "Artificial intelligence for smart cities"
 msgstr "Intelligence artificielle et smart cities"
 
@@ -621,6 +622,7 @@ msgid "2pm - 4pm"
 msgstr "14h - 16h"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:69
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:204
 msgid "Artificial Intelligence for big data"
 msgstr "Intelligence artificielle et big data"
 
@@ -692,30 +694,30 @@ msgstr ""
 msgid "Session II"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:136
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:200
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:139
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:206
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:178
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:244
 msgid "Language:"
 msgstr "Langage :"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:137
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:140
 msgid "French subtitled English"
 msgstr "Français sous titré Anglais"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:141
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:144
 msgid "Introduction and welcome"
 msgstr "Introduction"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:144
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:153
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:163
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:172
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:182
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:209
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:219
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:229
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:239
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:147
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:156
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:166
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:175
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:185
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:215
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:225
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:235
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:245
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:187
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:196
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:207
@@ -728,20 +730,20 @@ msgstr "Introduction"
 msgid "Speaker:"
 msgstr "Intervenant :"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:149
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:152
 msgid "10.00 - 10.40 AM"
 msgstr "10h00 - 10h40"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:150
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:153
 msgid ""
 "AI for Urban Geo-Information and its applications for smart cities in Africa"
 msgstr ""
 "L'IA pour la GeoInformation urbaine et ses applications pour les smart "
 "cities en Afrique"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:154
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:286
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:308
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:157
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:292
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:314
 #: african_cities_lab/home/templates/home/events/civa/civa.html:420
 #: african_cities_lab/home/templates/home/events/civa/civa.html:442
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:131
@@ -750,11 +752,11 @@ msgid "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation"
 msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:159
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:162
 msgid "10.40 - 11.00 AM"
 msgstr "10h40 - 11h00"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:160
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:163
 msgid ""
 "What kind of city is the smart city about? Actors and construction processes "
 "in the African context"
@@ -762,18 +764,18 @@ msgstr ""
 "De quelle ville parle la ville intelligente ? Acteurs et processus de "
 "construction dans le context africain"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:168
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:171
 msgid "11.00 - 11.20 AM"
 msgstr "11h00 - 11h20"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:169
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:172
 msgid "Emergence of smart cities in Africa and quality of life"
 msgstr "Emergences des smart cities en Afriques et qualité de vie"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:172
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:250
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:418
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:440
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:175
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:256
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:424
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:446
 #: african_cities_lab/home/templates/home/events/civa/civa.html:551
 #: african_cities_lab/home/templates/home/events/civa/civa.html:573
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:262
@@ -781,9 +783,9 @@ msgstr "Emergences des smart cities en Afriques et qualité de vie"
 msgid "Ms"
 msgstr "Mme"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:173
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:420
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:442
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:176
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:426
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:448
 #: african_cities_lab/home/templates/home/events/civa/civa.html:553
 #: african_cities_lab/home/templates/home/events/civa/civa.html:575
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:264
@@ -791,11 +793,11 @@ msgstr "Mme"
 msgid "PhD student"
 msgstr "Doctorante en urbanisme"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:178
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:181
 msgid "11.20 - 11.55 AM"
 msgstr "11h20 - 11h55"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:179
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:182
 msgid ""
 "Impact and challenges of the digitalisation of African cities on AI "
 "integration: The case of Anglophone and Francophone countries"
@@ -803,32 +805,32 @@ msgstr ""
 "Impact et défis de la digitalisation des villes africaine sur l'intégration "
 "des IA: Cas des pays anglophones et francophones"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:183
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:186
 msgid "CEO of GeOsm and World Bank Consultant"
 msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:188
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:245
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:191
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:251
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:233
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:193
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:250
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:196
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:256
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:293
 msgid "Moderator:"
 msgstr "Modérateur :"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:201
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:207
 msgid "English subtitled French"
 msgstr "Anglais sous titré Français"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:205
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:211
 msgid "2.00 - 3.40 PM"
 msgstr "14h00 - 15h40"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:206
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:212
 msgid ""
 "Smart Cities Strategies in Africa and AI integration: Issues, opportunities "
 "and challenges"
@@ -836,15 +838,15 @@ msgstr ""
 "Les Stratégies des Smart Cities en Afrique et intégrations d’IA: Enjeux, "
 "opportunités et défis"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:210
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:216
 msgid "Prof. & CEO of Future Cities Council, Toronto, Canada"
 msgstr "Professeur et PDG de Future Cities "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:215
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:221
 msgid "2.40 - 3.00 PM"
 msgstr "14h40 - 15h00"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:216
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:222
 msgid ""
 "Using Open-Access Data to Explore Relations between Urban Landscapes and "
 "Diarrhoeal Diseases in Côte d’Ivoire"
@@ -853,15 +855,15 @@ msgstr ""
 "relations entre les paysages urbains et les maladies diarrhéiques en Côte "
 "d'Ivoire"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:220
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:226
 msgid "Architech and PhD student  EPFL Lausanne, Switzerland"
 msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:225
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:231
 msgid "3.00 - 3.30 PM"
 msgstr "15h00 - 15h30"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:226
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:232
 msgid ""
 "Open data and crowdsourced data as enablers and drivers for smart African "
 "cities."
@@ -869,15 +871,15 @@ msgstr ""
 "Les Open Data et les crowdsourced data comme facilitateurs et moteurs des "
 "villes africaines intelligentes"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:230
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:236
 msgid "University Professor at Tartu, Latvia"
 msgstr "Pr. à l’Univ de Tatu, Latvia"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:235
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:241
 msgid "3.30 - 4.00 PM"
 msgstr "15h30 - 16h00"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:236
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:242
 msgid ""
 "Low-cost data solution and citizen initiatives for AI integration in African "
 "smart cities"
@@ -885,11 +887,11 @@ msgstr ""
 "Solution de données à faible coût et initiatives citoyennes pour "
 "l'intégration de l'IA dans les villes intelligentes africaines"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:240
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:246
 msgid "CEO Open data Africa"
 msgstr "CEO Open data Africa"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:265
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:271
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:308
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:69
 #: african_cities_lab/home/templates/home/events/civa/civa.html:59
@@ -900,7 +902,7 @@ msgstr "CEO Open data Africa"
 msgid "Speakers"
 msgstr "Intervenants"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:317
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:323
 #: african_cities_lab/home/templates/home/events/civa/civa.html:451
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:162
 msgid ""
@@ -940,8 +942,8 @@ msgstr ""
 "ministères et collectivités locales en Tunisie pour la mise en place de leur "
 "SIG, avec l'inclusion des citoyens via la cartographie openstreetmap."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:356
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:378
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:362
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:384
 msgid ""
 "Doctoral student, Researcher at UIT Ibn Tofail, president of the LOGOS club, "
 "economist expert in territorial development and associate professor at "
@@ -950,7 +952,7 @@ msgstr ""
 "Doctorant chercheur à l'UIT Ibn Tofail, président du club LOGOS, économiste "
 "expert en développement territorial et professeur associé à SupMTI Rabat."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:387
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:393
 msgid ""
 "\n"
 "                            Tariq AKDIM, is a territorial economist, "
@@ -987,7 +989,7 @@ msgstr ""
 "de \"Ruptures\". \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:451
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:457
 #: african_cities_lab/home/templates/home/events/civa/civa.html:584
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:295
 msgid ""
@@ -1017,10 +1019,10 @@ msgstr ""
 "programmation urbaine au Bénin et dans le cadre de ses études à la Sobornne "
 "Université."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:487
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:509
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:556
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:578
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:493
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:515
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:562
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:584
 #: african_cities_lab/home/templates/home/events/civa/civa.html:620
 #: african_cities_lab/home/templates/home/events/civa/civa.html:642
 #: african_cities_lab/home/templates/home/events/civa/civa.html:689
@@ -1035,7 +1037,7 @@ msgstr ""
 "Foundateur de GeOsm Family – 1ère infrastructure ouverte de connaissances "
 "géospatiales"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:518
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:524
 #: african_cities_lab/home/templates/home/events/civa/civa.html:651
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:362
 msgid ""
@@ -1071,7 +1073,7 @@ msgstr ""
 "notamment citer : La Banque Mondiale, la GIZ, l'UNESCO, l’UN-Habitat, l'AFD, "
 "etc."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:587
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:593
 #: african_cities_lab/home/templates/home/events/civa/civa.html:720
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:431
 msgid ""
@@ -1094,8 +1096,8 @@ msgstr ""
 "4.0, des villes futures (intelligentes, durables et villes innovantes), de "
 "l’Education 4.0 et de l’Intelligence Artificielle (IA)."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:621
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:643
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:627
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:649
 #: african_cities_lab/home/templates/home/events/civa/civa.html:754
 #: african_cities_lab/home/templates/home/events/civa/civa.html:776
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:465
@@ -1103,7 +1105,7 @@ msgstr ""
 msgid "Architech and PhD student EPFL Lausanne, Switzerland"
 msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:652
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:658
 #: african_cities_lab/home/templates/home/events/civa/civa.html:785
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:496
 msgid ""
@@ -1132,8 +1134,8 @@ msgstr ""
 "de la Kilimani Project Foundation.\n"
 "                              "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:690
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:712
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:696
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:718
 #: african_cities_lab/home/templates/home/events/civa/civa.html:823
 #: african_cities_lab/home/templates/home/events/civa/civa.html:845
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:534
@@ -1145,7 +1147,7 @@ msgstr ""
 "Chercheur, Docteur en Informatique,  Systèmes de traitement de données et "
 "mise en réseau de données"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:723
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:729
 #: african_cities_lab/home/templates/home/events/civa/civa.html:856
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:567
 msgid ""
@@ -1177,8 +1179,8 @@ msgstr ""
 "sciences sociales - économie et affaires.\n"
 "                                "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:761
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:783
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:767
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:789
 #: african_cities_lab/home/templates/home/events/civa/civa.html:894
 #: african_cities_lab/home/templates/home/events/civa/civa.html:916
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:605
@@ -1190,7 +1192,7 @@ msgstr ""
 "Chef de produit senior du programme de surveillance environnementale Africa."
 "Sensors de Code for Africa."
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:794
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:800
 #: african_cities_lab/home/templates/home/events/civa/civa.html:927
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:638
 msgid ""
@@ -1220,8 +1222,8 @@ msgstr ""
 "de la Kilimani Project Foundation.\n"
 "                              "
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:833
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:855
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:839
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:861
 msgid ""
 "Disaster Risk Management Specialist, Global Facility for Disaster Risk "
 "Reduction and Recovery"
@@ -1229,7 +1231,7 @@ msgstr ""
 "Spécialiste de la gestion des risques de catastrophes, Fonds mondial pour la "
 "réduction des risques de catastrophes et le relèvement"
 
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:866
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:872
 msgid ""
 "\n"
 "                            Vivien Deparday is a Disaster Risk Management "
@@ -1315,8 +1317,8 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-" Identité et participation de la jeunesse urbaine à la démocratisation "
-"&amp; au développement\n"
+" Identité et participation de la jeunesse urbaine à la démocratisation &amp; "
+"au développement\n"
 "                    "
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:98
@@ -1443,13 +1445,13 @@ msgstr "Identité politique et la participation de la jeunesse urbaine"
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:331
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:354
 msgid ""
-"Doctor in geography - Research teacher at the 'Espace Nature et Culture' "
-"laboratory of Paris-La Sorbonne and teacher in preparatory classes for "
-"business schools at the Descartes high school in Rabat."
+"Researcher in the laboratory \"Médiations. Sciences des liens, sciences des "
+"lieux\" of Sorbonne University. In charge of the \"Identifications et "
+"sociabilités\" axis."
 msgstr ""
-"Docteur en géographie - Enseignant chercheur au laboratoire 'Espace Nature "
-"et Culture' de Paris-La Sorbonne et Professeur en classe préparatoire aux "
-"grandes écoles de commerce au lycée Descartes de Rabat."
+"Chercheur au sein du laboratoire \"Médiations. Sciences des liens, sciences "
+"des lieux\" de Sorbonne Université. Responsable de l'axe \"Identifications "
+"et sociabilités\"."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:203
 msgid "10.30 - 10.55 AM"
@@ -1604,8 +1606,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Il est aussi chercheur associé au "
-"Centre Jacques Berque de Rabat. Il mène\n"
+"Il est aussi chercheur associé au Centre Jacques Berque de Rabat. Il mène\n"
 " des travaux de recherche sur les marges et les marginalités dans les pays à "
 "revenus limités (Inde et Maroc). Actuellement, il étudie tout\n"
 " particulièrement les transformations des espaces oasiens à travers le "
@@ -1845,8 +1846,10 @@ msgid ""
 "militaro-politique en Côte d'Ivoire (Codesria, Dakar, 2006)."
 msgstr ""
 "Francis Akindès est un Professeur bénino-ivoirien de sociologie à "
-"l’université Alassane Ouattara (Bouaké, Côte d’Ivoire), né en 1961, auteur de plusieurs essais de science politique, parmi lesquels Côte d’Ivoire : la réinvention de soi "
-"dans la violence (Codesria, Dakar, 2011) et Les Racines de la crise militaro-politique en Côte d’Ivoire (Codesria, Dakar, 2006)."
+"l’université Alassane Ouattara (Bouaké, Côte d’Ivoire), né en 1961, auteur "
+"de plusieurs essais de science politique, parmi lesquels Côte d’Ivoire : la "
+"réinvention de soi dans la violence (Codesria, Dakar, 2011) et Les Racines "
+"de la crise militaro-politique en Côte d’Ivoire (Codesria, Dakar, 2006)."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:646
 msgid ""
@@ -1877,8 +1880,8 @@ msgid ""
 "Deevia Bhana is the DSI/NRF South African Research Chair in Gender and "
 "Childhood Sexuality."
 msgstr ""
-"Deevia Bhana est titulaire de la chaire de recherche sud-africaine DSI/"
-"NRF sur le genre et la sexualité de l'enfance."
+"Deevia Bhana est titulaire de la chaire de recherche sud-africaine DSI/NRF "
+"sur le genre et la sexualité de l'enfance."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:683
 msgid ""
@@ -1893,11 +1896,10 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Elle a beaucoup écrit sur l'expérience du "
-"genre et de la sexualité au cours de la jeune vie, apportant une large perspective "
-"interdisciplinaire \n"
-"de sciences sociales pour comprendre comment le genre et la sexualité "
-"sont vécus par les enfants et les \n"
+"Elle a beaucoup écrit sur l'expérience du genre et de la sexualité au cours "
+"de la jeune vie, apportant une large perspective interdisciplinaire \n"
+"de sciences sociales pour comprendre comment le genre et la sexualité sont "
+"vécus par les enfants et les \n"
 "jeunes et les implications de cette expérience pour aborder la violence, "
 "l'éducation sexuelle et les interventions de santé sexuelle.\n"
 "                            "

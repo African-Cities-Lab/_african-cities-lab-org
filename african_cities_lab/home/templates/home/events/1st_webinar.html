@@ -57,7 +57,7 @@
             <li class="list-inline-item h5">{% translate "5 July, 2022" %}</li>
             <li class="list-inline-item h5">{% translate "Online" %}</li>
           </ul>
-          <div class="event-time">
+          <div class="event-time d-none d-md-block">
             <div>
               <span class="font-size-16 font-weight-500">{% translate "Session I:" %}</span>
               <span class="h6">{% translate "10am - 12pm" %} GMT+1</span>
@@ -131,10 +131,15 @@
             </li>
           </ul>
           <div class="tab-content" id="agenda-content">
-            <div class="tab-pane p-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+            <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
 
-              <h6 class="d-inline-block">{% translate "Language:" %}</h6>
-              <span>{% translate "French subtitled English" %}</span>
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <div class="h5 d-inline-block px-2 py-5">{% translate "Artificial intelligence for smart cities" %}</div>
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "French subtitled English" %}</span>
+              </div>
 
               <div class="row mt-3 border-bottom_grey">
                 <div class="col-12 col-sm-8 p-3 py-4">
@@ -195,10 +200,15 @@
               </div>
             </div>
 
-            <div class="tab-pane p-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+            <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
 
-              <h6 class="d-inline-block">{% translate "Language:" %}</h6>
-              <span>{% translate "English subtitled French" %}</span>
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <div class="h5 d-inline-block px-2 py-5">{% translate "Artificial Intelligence for big data" %}</div>
+            
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "English subtitled French" %}</span>
+              </div>
 
               <div class="row mt-3 border-bottom_grey">
                 <div class="col-12 col-sm-8 p-3 py-4">
