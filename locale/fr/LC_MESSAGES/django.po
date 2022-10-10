@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 11:08+0200\n"
+"POT-Creation-Date: 2022-10-10 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:118
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:968
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:973
 #: african_cities_lab/home/templates/home/home.html:35
 #: african_cities_lab/home/templates/home/moocs.html:32
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -697,12 +697,11 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:140
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:209
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:178
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:244
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:249
 msgid "Language:"
 msgstr "Langage :"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:141
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:179
 msgid "French subtitled English"
 msgstr "Français sous titré Anglais"
 
@@ -724,11 +723,11 @@ msgstr "Introduction"
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:207
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:217
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:227
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:254
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:264
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:274
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:284
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:298
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:259
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:269
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:279
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:289
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:303
 msgid "Speaker:"
 msgstr "Intervenant :"
 
@@ -814,18 +813,18 @@ msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:193
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:255
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:233
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:290
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:295
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:198
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:260
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:303
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:238
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:308
 msgid "Moderator:"
 msgstr "Modérateur :"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:210
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:245
 msgid "English subtitled French"
 msgstr "Anglais sous titré Français"
 
@@ -895,7 +894,7 @@ msgid "CEO Open data Africa"
 msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:318
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:69
 #: african_cities_lab/home/templates/home/events/civa/civa.html:59
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:69
@@ -1415,6 +1414,10 @@ msgstr ""
 "Identité et participation de la jeunesse urbaine à la démocratisation au "
 "développement"
 
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:179
+msgid "French translated to English"
+msgstr "Français traduit en Anglais"
+
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:184
 msgid "Opening Statement"
 msgstr "Introduction"
@@ -1428,8 +1431,8 @@ msgid "Political identity and participation of urban youth"
 msgstr "Identité politique et la participation de la jeunesse urbaine"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:198
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:341
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:364
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:346
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:369
 msgid ""
 "Researcher in the laboratory \"Médiations. Sciences des liens, sciences des "
 "lieux\" of Sorbonne University. In charge of the \"Identifications et "
@@ -1488,29 +1491,33 @@ msgstr ""
 "Professeur bénino-ivoirien de sociologie à l’université Alassane Ouattara "
 "(Bouaké, Côte d’Ivoire)"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:241
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:246
 msgid "Challenges of the urban youth"
 msgstr "Les défis de la jeunesse urbaine"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:250
+msgid "English translated to French"
+msgstr "Anglais traduit en Français"
+
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:255
 msgid "3.00 - 3.25 PM"
 msgstr "15h00 - 15h25"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:251
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:256
 msgid "Challenging Cities: Young Men, Masculinity and Violence"
 msgstr "Les villes au défi : Jeunes hommes, masculinité et violence"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:255
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:260
 msgid "DSI/NRF South African Research Chair in Gender and Childhood Sexuality"
 msgstr ""
 "DSI / NRF de la Chaire de recherche sud-africaine sur le genre et la "
 "sexualité de l'enfance."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:260
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:265
 msgid "3.25 - 3.50 PM"
 msgstr "15h25 - 15h50"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:261
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:266
 msgid ""
 "Tackling the challenges of the urban youth through music: the case of the "
 "hip hop movement"
@@ -1518,21 +1525,21 @@ msgstr ""
 "Relever les défis de la jeunesse urbaine par la musique : le cas du "
 "mouvement hip hop"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:265
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:270
 msgid "Youth, peacebuilding, security, CVE and Africa specialist"
 msgstr ""
 "Spécialiste de la jeunesse, de la consolidation de la paix, de la sécurité, "
 "du CVE et de l'Afrique"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:270
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:275
 msgid "3.50 - 4.15 PM"
 msgstr "15h50 - 16h15"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:271
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:276
 msgid "Urban youth unemployment"
 msgstr "Chômage des jeunes urbains"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:275
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
 msgid ""
 "Director of the North Africa Office at the United Nations Economic "
 "Commission for Africa"
@@ -1540,11 +1547,11 @@ msgstr ""
 "Directrice du Bureau de l'Afrique du Nord à la Commission économique des "
 "Nations Unies pour l'Afrique"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:280
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:285
 msgid "4.15 - 4.40 PM"
 msgstr "16h15 - 16h40"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:281
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:286
 msgid ""
 "Young sports African migrants: challenges and constraints of the 'unknown' "
 "career abroad"
@@ -1552,7 +1559,7 @@ msgstr ""
 "Jeunes sportifs migrants africains : défis et contraintes de la carrière "
 "\"inconnue\" à l'étranger"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:285
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:290
 msgid ""
 "Senior Lecturer/Research Associate in the Department of Health, Physical "
 "Education, Recreation and Sports at the University of Education, Winneba, "
@@ -1562,11 +1569,11 @@ msgstr ""
 "l'éducation physique, des loisirs et des sports de l'université de "
 "l'éducation de Winneba, au Ghana."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:295
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:300
 msgid "Closing statement"
 msgstr "Mot de fin"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:377
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:382
 msgid ""
 "\n"
 "                            David Goeury has a doctoral degree in geography "
@@ -1582,7 +1589,7 @@ msgstr ""
 "aux grandes écoles de commerce au lycée Descartes de Rabat.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:382
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:387
 msgid ""
 "\n"
 "                            He is also an associate researcher at the "
@@ -1607,7 +1614,7 @@ msgstr ""
 "l’urbanisation des oasis de Méditerranée).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:388
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:393
 msgid ""
 "\n"
 "                            He has also been involved in the study of "
@@ -1631,7 +1638,7 @@ msgstr ""
 " Gana.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:394
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:399
 msgid ""
 "\n"
 "                            Finally, he was the principal investigator of "
@@ -1647,7 +1654,7 @@ msgstr ""
 "recherche communautaire.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:428
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:433
 msgid ""
 "\n"
 "                Postdoctoral researcher from Leipzig University\n"
@@ -1657,7 +1664,7 @@ msgstr ""
 "                Chercheur postdoctorat de l'Université de Leipzig\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:453
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:458
 msgid ""
 "\n"
 "                            Postdoctoral researcher from Leipzig University\n"
@@ -1667,7 +1674,7 @@ msgstr ""
 "                Chercheur postdoctorat de l'Université de Leipzig\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:467
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:472
 msgid ""
 "\n"
 "                            Dr. Johannes Frische is a postdoctoral "
@@ -1684,7 +1691,7 @@ msgstr ""
 "spécialisé dans la géographie humaine de la région MENA.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:471
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:476
 msgid ""
 "\n"
 "                            After graduating his master’s degree, Johannes "
@@ -1700,7 +1707,7 @@ msgstr ""
 "Leipzig. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:475
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:480
 msgid ""
 "\n"
 "                            His doctoral thesis, defended in May 2021, "
@@ -1719,7 +1726,7 @@ msgstr ""
 "Studies in the Maghreb (MECAM).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:506
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:511
 msgid ""
 "\n"
 "                Teacher-researcher at the Department of Sociology of the "
@@ -1730,7 +1737,7 @@ msgstr ""
 "Enseignant-chercheur au Département de Sociologie de l’Université Assane "
 "Seck de Ziguinchor (Sénégal)."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:531
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:536
 msgid ""
 "\n"
 "                            Teacher-researcher at the Department of "
@@ -1741,7 +1748,7 @@ msgstr ""
 "Enseignant-chercheur au Département de Sociologie de l’Université Assane "
 "Seck de Ziguinchor (Sénégal)."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:542
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:547
 msgid ""
 "\n"
 "                            Ibrahima Touré is a teacher-researcher in the "
@@ -1757,7 +1764,7 @@ msgstr ""
 "Gaston Berger de Saint-Louis.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:546
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:551
 msgid ""
 "\n"
 "                            He is a member of the Laboratoire d'Étude et de "
@@ -1772,7 +1779,7 @@ msgstr ""
 " Formation et de Recherches (UFR) Sciences économiques et sociales (SES).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:550
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:555
 msgid ""
 "\n"
 "                            His expertise and research work focus on public "
@@ -1788,7 +1795,7 @@ msgstr ""
 "de jeunes. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:554
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:559
 msgid ""
 "\n"
 "                            Member of several professional networks in "
@@ -1806,7 +1813,7 @@ msgstr ""
 " Seck de Ziguinchor.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:589
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:594
 msgid ""
 "\n"
 "                Beninese-Ivorian Professor of Sociology at Alassane Ouattara "
@@ -1817,7 +1824,7 @@ msgstr ""
 "Professeur bénino-ivoirien de sociologie à l’université Alassane Ouattara "
 "(Bouaké, Côte d’Ivoire)"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:614
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:619
 msgid ""
 "\n"
 "                            Beninese-Ivorian Professor of Sociology at "
@@ -1828,7 +1835,7 @@ msgstr ""
 "Professeur bénino-ivoirien de sociologie à l’université Alassane Ouattara "
 "(Bouaké, Côte d’Ivoire)"
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:628
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:633
 msgid ""
 "Francis Akindès is a Beninese-Ivorian Professor of Sociology at Alassane "
 "Ouattara University (Bouaké, Côte d'Ivoire), born in 1961, and the author of "
@@ -1842,7 +1849,7 @@ msgstr ""
 "réinvention de soi dans la violence (Codesria, Dakar, 2011) et Les Racines "
 "de la crise militaro-politique en Côte d’Ivoire (Codesria, Dakar, 2006)."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:656
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:661
 msgid ""
 "\n"
 "                DSI/NRF South African Research Chair in Gender and Childhood "
@@ -1854,7 +1861,7 @@ msgstr ""
 "sexualité de l'enfance.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:681
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:686
 msgid ""
 "\n"
 "                            DSI/NRF South African Research Chair in Gender "
@@ -1866,7 +1873,7 @@ msgstr ""
 "sexualité de l'enfance.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:692
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:697
 msgid ""
 "Deevia Bhana is the DSI/NRF South African Research Chair in Gender and "
 "Childhood Sexuality."
@@ -1874,7 +1881,7 @@ msgstr ""
 "Deevia Bhana est titulaire de la chaire de recherche sud-africaine DSI/NRF "
 "sur le genre et la sexualité de l'enfance."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:693
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:698
 msgid ""
 "\n"
 "                            She has written extensively on the experience of "
@@ -1895,7 +1902,7 @@ msgstr ""
 "l'éducation sexuelle et les interventions de santé sexuelle.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:698
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:703
 msgid ""
 "Her latest book is entitled, Girls and the Negotiation of Porn in South "
 "Africa: Power, Play and Sexuality (2022, Routledge)."
@@ -1903,7 +1910,7 @@ msgstr ""
 "Son dernier livre s'intitule Girls and the Negotiation of Porn in South "
 "Africa : Power, Play and Sexuality (2022, Routledge)."
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:729
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:734
 msgid ""
 "\n"
 "                Youth, peacebuilding, security, CVE and Africa specialist\n"
@@ -1914,7 +1921,7 @@ msgstr ""
 "du CVE et de l'Afrique\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:754
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:759
 msgid ""
 "\n"
 "                            Youth, peacebuilding, security, CVE and Africa "
@@ -1926,7 +1933,7 @@ msgstr ""
 "du CVE et de l'Afrique\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:768
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:773
 msgid ""
 "\n"
 "                            Marc is an internationally recognized youth, "
@@ -1944,7 +1951,7 @@ msgstr ""
 "négociation de conflits, notamment :\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:772
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:777
 msgid ""
 "\n"
 "                              • As a peacebuilder, designing and assessing "
@@ -1962,7 +1969,7 @@ msgstr ""
 "stratège en matière de consolidation de la paix.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:776
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:781
 msgid ""
 "\n"
 "                              • As a field researcher and evaluator, where "
@@ -1983,7 +1990,7 @@ msgstr ""
 "dirigé un important atelier de recherche pour l'IGAD à Djibouti.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:780
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:785
 msgid ""
 "\n"
 "                            • As a security and risk management analyst, "
@@ -1998,7 +2005,7 @@ msgstr ""
 "urgents.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:783
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:788
 msgid ""
 "\n"
 "                            Marc has served as a senior advisor and officer "
@@ -2018,7 +2025,7 @@ msgstr ""
 " et du Bellagio Center.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:788
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:793
 msgid ""
 "\n"
 "                            He taught for many years at The Fletcher School "
@@ -2034,7 +2041,7 @@ msgstr ""
 "mondiale.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:792
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:797
 msgid ""
 "\n"
 "                            Marc is the author of 9 books (on youth, war, "
@@ -2054,7 +2061,7 @@ msgstr ""
 "2022).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:827
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:832
 msgid ""
 "\n"
 "                Director of the North Africa Office at the United Nations "
@@ -2066,7 +2073,7 @@ msgstr ""
 "Nations Unies pour l'Afrique\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:852
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:857
 msgid ""
 "\n"
 "                            Director of the North Africa Office at the "
@@ -2078,7 +2085,7 @@ msgstr ""
 "Nations Unies pour l'Afrique\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:866
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:871
 msgid ""
 "\n"
 "                            Zuzana Brixiova Schwidrowski is Director of the "
@@ -2094,7 +2101,7 @@ msgstr ""
 "travail, l'économie familiale et le développement. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:870
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:875
 msgid ""
 "\n"
 "                            She has published in journals such as "
@@ -2114,7 +2121,7 @@ msgstr ""
 "Economic Dynamics et World Development. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:875
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:880
 msgid ""
 "\n"
 "                             She holds Ph.D. in Economics from the "
@@ -2128,7 +2135,7 @@ msgstr ""
 "de Prague (VSE).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:909
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:914
 msgid ""
 "\n"
 "                Senior Lecturer/Research Associate in the Department of "
@@ -2142,7 +2149,7 @@ msgstr ""
 "l'éducation de Winneba, au Ghana.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:934
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:939
 msgid ""
 "\n"
 "                              Senior Lecturer/Research Associate in the "
@@ -2156,7 +2163,7 @@ msgstr ""
 "l'éducation de Winneba, au Ghana.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:948
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:953
 msgid ""
 "\n"
 "                            His research interests include African soccer, "
