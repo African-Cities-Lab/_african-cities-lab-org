@@ -172,11 +172,11 @@
             <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
 
               <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-              <div class="h5 d-inline-block px-2 py-5">{% translate "Urban youth identity and participation in democratization &amp; development" %}</div>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Urban youth identity and participation in democratization &amp; development" %}</div>
 
               <div>
                 <h6 class="d-inline-block">{% translate "Language:" %}</h6>
-                <span>{% translate "French" %}</span>
+                <span>{% translate "French subtitled English" %}</span>
               </div>
 
               <div class="row mt-3 border-bottom_grey">
@@ -238,11 +238,11 @@
             <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
 
               <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-              <div class="h5 d-inline-block px-2 py-5">{% translate "Challenges of the urban youth" %}</div>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Challenges of the urban youth" %}</div>
 
               <div>
                 <h6 class="d-inline-block">{% translate "Language:" %}</h6>
-                <span>{% translate "English" %}</span>
+                <span>{% translate "English subtitled French" %}</span>
               </div>
 
               <div class="row mt-3 border-bottom_grey">
@@ -273,6 +273,16 @@
                 <div class="col-12 col-sm-4 py-4 p-3">
                   <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Zuzana Brixiova Schwidrowski</p>
                   <small>{% translate "Director of the North Africa Office at the United Nations Economic Commission for Africa" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "4.15 - 4.40 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Young sports African migrants: challenges and constraints of the 'unknown' career abroad" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Ernest Yeboah Acheampong</p>
+                  <small>{% translate "Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana" %}</small>
                 </div>
               </div>
               <div class="row border-bottom_grey">
@@ -865,6 +875,80 @@
                             {% blocktranslate %}
                              She holds Ph.D. in Economics from the University of Minnesota and MA (Ing.) in Finance from the Prague University
                              of Economics (VSE).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_8" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_8">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Ernest Yeboah ACHEAMPONG.png' %}" alt="Dr. Ernest Yeboah ACHEAMPONG">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ernest-yeboah-acheampong-phd-82a1271b/?originalSubdomain=gh">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Dr. Ernest Yeboah ACHEAMPONG</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_8" tabindex="-1" aria-labelledby="speaker_modal_8" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Ernest Yeboah ACHEAMPONG.png' %}" alt="Dr. Ernest Yeboah ACHEAMPONG">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Dr. Ernest Yeboah ACHEAMPONG</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                              Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ernest-yeboah-acheampong-phd-82a1271b/?originalSubdomain=gh">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            His research interests include African soccer, migration, soccer and youth education, sport for development and the phenomenon 
+                            of self-giving. He has published several academic articles in reputable journals and has served as a reviewer for some scientific journals.
+                            His current book is 'African Footballers ii Europe: Migration, Community, and Give Back Behaviours' published by Routledge (2020).
                             {% endblocktranslate %}
                           </p>
                         </div>
