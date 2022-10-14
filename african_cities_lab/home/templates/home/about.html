@@ -40,7 +40,7 @@
 {% endblock css %}
 
 {% block hellobar %}
-    <div class="hellobar d-none">
+    <!--div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
@@ -49,7 +49,7 @@
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'african-cities-what-role-for-the-youth' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
-    </div>
+    </div-->
 {% endblock hellobar %}
 
 {% block content %}
@@ -282,7 +282,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
-                        <a href="" class="px-2 d-block">
+                        <a href="{% url 'how-the-natural-environment-can-help-combat-climate-change-in-africa' %}" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
                             <h5>{% translate "November 2022" %}</h5> 
                             <span>{% translate "3rd webinar" %}</span>
@@ -290,7 +290,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
-                        <a href="" class="px-2 d-block">
+                        <a href="#" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
                             <h5>{% translate "February 2023" %}</h5> 
                             <span>{% translate "4th webinar" %}</span>
@@ -298,7 +298,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
-                        <a href="" class="px-2 d-block">
+                        <a href="#" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
                             <h4 class="text_primary">{% translate "March 2023" %}</h4> 
                             <span class="font-size-16">{% translate "International Conference of African Cities" %}</span>
@@ -307,11 +307,11 @@
                 </ul>
             </div>
 
-            <div class="mt-5 text-center">
+            <!--div class="mt-5 text-center">
                 <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="btn btn__primary my-5 btn__small">
                     {% translate "Register for the next webinar" %}
                 </a>
-            </div>
+            </div-->
         </div>
     </section>
 

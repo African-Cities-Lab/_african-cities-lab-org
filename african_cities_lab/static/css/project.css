@@ -478,6 +478,7 @@ body {
 	color: #000;
 	font-size: 14px;
 	overflow-x: hidden;
+	line-height: 1.5 !important;
 }
 img {
 	max-width: 100%;
@@ -490,12 +491,17 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5
-h6, h6 {
+h6 {
 	font-family: "Biko", "Calibri", sans-serif;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
 }
+h6 {
+	line-height: 1.5;
+}
+
 p {
 	margin-bottom: 0 !important;
 }
@@ -1227,6 +1233,20 @@ a.novashare-button {
 .upcoming-event__home .card {
 	border: 1px solid #eee
 }
+.upcoming-event__home .card .card-footer:after {
+	content: '';
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 50px;
+	border-color: transparent transparent #BE3712 transparent;
+	color: #ffffff;
+	display: block;
+	transform: rotate(135deg);
+}
 .upcoming-event__home .card .card-header {
 	background: #fff; 
 	border: unset; 
@@ -1256,24 +1276,33 @@ a.novashare-button {
 	font-size: 18px;
 }
 .past-event__home {
-	display: flex;
-    align-items: center;
+	display: grid;
+    gap: 10px;
+    grid-template-columns: .45fr 2fr;
+	align-items: center;
     padding: 15px 15px 15px 0;
     border-top: solid 1px #eee;
     border-right: solid 1px #eee;
     border-bottom: solid 1px #eee;
     border-left: solid 7px #BE3712;
+	max-width: 532px;
 	min-height: 135px;
     background: #fff;
 }
 .past-event__home > .date {
 	display: block; 
-	width: 155px;
     float: left;
     padding: 0 20px;
-    text-align: center;
+    text-align: left;
+	min-width: 112px;
 }
-
+.past-event-home__content > .meta-badge {
+	font-size: 12px;
+    padding: 4px 8px;
+}
+.past-event-home__content > .h6 {
+	margin-top: 0.5rem;
+}
 
 
 

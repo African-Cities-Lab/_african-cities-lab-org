@@ -21,12 +21,11 @@
 {% block css %}
     {{ block.super }}
     <style>
-
     </style>
 {% endblock css %}
 
 {% block hellobar %}
-    <div class="hellobar d-none">
+    <!--div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
@@ -35,7 +34,7 @@
             <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'african-cities-what-role-for-the-youth' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
-    </div>
+    </!div-->
 {% endblock hellobar %}
 
 {% block content %}
@@ -215,21 +214,24 @@
     <!-- start Event Section -->
     <section class="featured-events py-5">
         <div class="container-lg py-md-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12">
-                    <h3 class="section-title mb-3">{% translate "Events" %}</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="section-title">
+                        {% translate "Events" %}
+                    </h3>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-block">
+                    <a class="float-end btn btn__small btn__primary" role="button" href="{% url 'events' %}">{% translate "All events" %}</a>
                 </div>
             </div>
 
             <div class="row justify-content-center mt-3">
                 <div class="col-12 col-md-6 col-lg-5">
-                    <p class="font-size-16 font-weight-500">{% translate "Upcoming" %}</p>
-
                     <div class="upcoming-event__home mt-3">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header d-none">
                                 <div class="event-date-badge">
-                                    <h4 class="day_month">{% translate "Oct 11" %}</h4>
+                                    <h4 class="day_month">{% translate "Nov 21" %}</h4>
                                     <h6 class="year pt-2">2022</h6>
                                 </div>
                                 <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block">
@@ -238,32 +240,57 @@
                             </div>
                             <div class="card-body pb-0">
                                 <div class="meta-badge">{% translate "Webinar" %}</div>
-                                <h4 class="py-3 font-size-22">
-                                    <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block text-black">
-                                        {% translate "African Cities: What role for the youth?" %}
+                                <h4 class="py-3 font-size-24">
+                                    <a href="{% url 'how-the-natural-environment-can-help-combat-climate-change-in-africa' %}" class="d-block text-black">
+                                        {% translate "How the natural environment can help combat climate change in Africa?" %}
                                     </a>
                                 </h4>
+                                <p class="text_primary pb-2">{% translate "Monday, November 21st" %}</p>
+                                <div class="mb-3">
+                                    {% blocktranslate %}
+                                    How can the natural environment help fight climate change in Africa? Can Africa play a leading role in
+                                     the fight against climate change? It is in this context that African Cities Lab and its partners 
+                                     <a href="https://www.semecity.bj/">Sèmè City</a> and <a href="https://www.linkedin.com/company/um6p-cus-center-of-urban-systems/">UM6P-CUS Center of Urban Systems</a> 
+                                     are organizing a webinar to promote integrated urban solutions for African cities to combat biodiversity loss and climate change. 
+                                    {% endblocktranslate %}
+                                </div>
                             </div>
                             <div class="card-footer">
-                                <a href="{% url 'african-cities-what-role-for-the-youth' %}"> {% translate "Register" %}</a>
+                                <a href="{% url 'how-the-natural-environment-can-help-combat-climate-change-in-africa' %}"> {% translate "Learn more" %}</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 offset-lg-1 col-md-6 mt-5">
 
-                    <p class="font-size-16 font-weight-500">{% translate "Past" %}</p>
+                <div class="col-12 offset-lg-1 col-md-6 mt-3">
 
                     <div class="row pt-0 p-3">
 
                         <div class="mt-2 past-event__home">
 
                             <div class="date">
-                                <h4 class="day_month">{% translate "July 5" %}</h4>
-                                <h6 class="year pt-2">2022</h6>
+                                <h4 class="day_month">{% translate "Oct 11" %}</h4>
+                                <h4 class="year">2022</h4>
                             </div>
-                            <div>
-                                <div class="meta-badge font-size-12">{% translate "Webinar" %}</div>
+                            <div class="past-event-home__content">
+                                <div class="meta-badge">{% translate "Webinar" %}</div>
+                                <div class="h6">
+                                    <a href="{% url 'african-cities-what-role-for-the-youth' %}">
+                                        {% translate "African Cities: What role for the youth?" %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-0 p-3">
+                        <div class="mt-4 past-event__home">
+                            <div class="date">
+                                <h4 class="day_month">{% translate "Jul 5" %}</h4>
+                                <h4 class="year">2022</h4>
+                            </div>
+                            <div class="past-event-home__content">
+                                <div class="meta-badge">{% translate "Webinar" %}</div>
                                 <div class="h6">
                                     <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}">
                                         {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %}
@@ -273,6 +300,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="my-5 text-center d-md-none">
+                <a class="btn btn__small btn__primary" role="button" href="{% url 'events' %}">{% translate "All events" %}</a>
             </div>
         </div>
     </section>
