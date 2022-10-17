@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 15:13+0200\n"
+"POT-Creation-Date: 2022-10-17 19:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,11 +82,11 @@ msgstr ""
 #: african_cities_lab/home/templates/home/about.html:45
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:48
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:50
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:49
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:50
 #: african_cities_lab/home/templates/home/home.html:30
-#: african_cities_lab/home/templates/home/home.html:242
-#: african_cities_lab/home/templates/home/home.html:276
-#: african_cities_lab/home/templates/home/home.html:293
+#: african_cities_lab/home/templates/home/home.html:243
+#: african_cities_lab/home/templates/home/home.html:270
+#: african_cities_lab/home/templates/home/home.html:287
 #: african_cities_lab/home/templates/home/moocs.html:28
 #: african_cities_lab/home/templates/home/static_contact.html:45
 #: african_cities_lab/home/templates/home/static_gdpr.html:45
@@ -96,13 +96,13 @@ msgstr "Webinaire"
 
 #: african_cities_lab/home/templates/home/about.html:47
 #: african_cities_lab/home/templates/home/about.html:281
-#: african_cities_lab/home/templates/home/event_index_page.html:73
+#: african_cities_lab/home/templates/home/event_index_page.html:105
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:5
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:13
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:18
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:23
 #: african_cities_lab/home/templates/home/home.html:32
-#: african_cities_lab/home/templates/home/home.html:279
+#: african_cities_lab/home/templates/home/home.html:273
 #: african_cities_lab/home/templates/home/moocs.html:30
 #: african_cities_lab/home/templates/home/static_contact.html:46
 #: african_cities_lab/home/templates/home/static_gdpr.html:47
@@ -111,8 +111,8 @@ msgid "African Cities: What role for the youth?"
 msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:77
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:146
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:78
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:189
 #: african_cities_lab/home/templates/home/home.html:34
 #: african_cities_lab/home/templates/home/moocs.html:32
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -330,9 +330,10 @@ msgstr ""
 "et se tiendra à Cotonou au Bénin."
 
 #: african_cities_lab/home/templates/home/about.html:232
-#: african_cities_lab/home/templates/home/event_index_page.html:89
-#: african_cities_lab/home/templates/home/event_index_page.html:118
-#: african_cities_lab/home/templates/home/home.html:259
+#: african_cities_lab/home/templates/home/event_index_page.html:90
+#: african_cities_lab/home/templates/home/event_index_page.html:121
+#: african_cities_lab/home/templates/home/event_index_page.html:150
+#: african_cities_lab/home/templates/home/home.html:251
 msgid "Learn more"
 msgstr "En savoir plus"
 
@@ -432,8 +433,8 @@ msgid "Blog"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:43
-#: african_cities_lab/home/templates/home/home.html:375
-#: african_cities_lab/home/templates/home/home.html:421
+#: african_cities_lab/home/templates/home/home.html:369
+#: african_cities_lab/home/templates/home/home.html:415
 msgid "All articles"
 msgstr "Tous les articles"
 
@@ -472,15 +473,29 @@ msgstr "Événements"
 msgid "Webinars"
 msgstr "Webinaires"
 
+#: african_cities_lab/home/templates/home/event_index_page.html:73
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:5
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:13
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:18
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:23
+#: african_cities_lab/home/templates/home/home.html:246
+msgid "How to build Africa's green cities face a number of constraints?"
+msgstr ""
+"Comment construire les villes vertes de l'Afrique face à un certain nombre "
+"de contraintes ?"
+
 #: african_cities_lab/home/templates/home/event_index_page.html:75
-msgid "October 11, 2022"
-msgstr "11 Octobre 2022"
+#, fuzzy
+#| msgid "November 2022"
+msgid "November 21, 2022"
+msgstr "Novembre 2022"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:77
-#: african_cities_lab/home/templates/home/event_index_page.html:108
+#: african_cities_lab/home/templates/home/event_index_page.html:109
+#: african_cities_lab/home/templates/home/event_index_page.html:140
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:58
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:70
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:69
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:70
 #: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:50
 #: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:50
 #: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:50
@@ -498,20 +513,43 @@ msgid "Online"
 msgstr "En ligne"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:80
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                      By 2050, 35&#37; of the world's population will be "
-#| "young and African, compared to 15&#37; in 2000. \n"
-#| "                      The accelerated urbanisation that Africa has "
-#| "experienced in recent years goes along with an increase \n"
-#| "                      in the youngest part of its population, bringing "
-#| "new challenges to the cities. \n"
-#| "                      Today, 60&#37; of the African population is under "
-#| "the age of 24. This peculiarity of the African continent \n"
-#| "                      is an essential fact to be taken into account in "
-#| "urban planning.\n"
-#| "                      "
+msgid ""
+"\n"
+"                      A future planet will have 80&#37; of the global "
+"population living in densely packed cities. According to the OECD, \n"
+"                      African cities are expected to house an additional 950 "
+"million people by 2050. With cities housing more than \n"
+"                      half of the world's population, urban areas will play "
+"a critical role to fight against climate change. \n"
+"                      This need is reinforced by the release of the third "
+"part of the sixth: The Intergovernmental Panel on Climate \n"
+"                      Change - IPCC report, which places Africa among the "
+"regions with the fastest urban growth and calls for a \n"
+"                      profound transformation of cities to deal with climate "
+"change and its consequences.\n"
+"                      "
+msgstr ""
+"\n"
+"Sur la planète de demain, 80&#37; de la population mondiale vivra dans des "
+"villes densément peuplées. Selon l'OCDE, \n"
+"les villes africaines devraient accueillir 950 millions de personnes "
+"supplémentaires d'ici 2050. Les villes abritant plus de \n"
+"la moitié de la population mondiale, et les zones urbaines joueront un rôle "
+"essentiel dans la lutte contre le changement climatique. \n"
+"Cette nécessité est renforcée par la publication de la troisième partie du "
+"sixième rapport du groupe d'experts intergouvernemental sur l'évolution du "
+"climat \n"
+"GIEC -2022, qui place l'Afrique parmi les régions à la croissance urbaine la "
+"plus rapide et appelle à une \n"
+"transformation profonde des villes pour faire face au changement climatique "
+"et à ses conséquences.\n"
+"                "
+
+#: african_cities_lab/home/templates/home/event_index_page.html:107
+msgid "October 11, 2022"
+msgstr "11 Octobre 2022"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:112
 msgid ""
 "\n"
 "                        By 2050, 35&#37; of the world's population will be "
@@ -537,12 +575,12 @@ msgstr ""
 "donnée essentielle à prendre en compte dans la planification urbaine. \n"
 "                      "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:104
+#: african_cities_lab/home/templates/home/event_index_page.html:136
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:5
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:13
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:18
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:296
+#: african_cities_lab/home/templates/home/home.html:290
 msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa"
@@ -550,13 +588,11 @@ msgstr ""
 "Intégration de l'open data et de l’intelligence artificielle dans le "
 "développement des smart cities en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:106
-#, fuzzy
-#| msgid "July 2022"
+#: african_cities_lab/home/templates/home/event_index_page.html:138
 msgid "July 5, 2022"
 msgstr "5 Juillet 2022"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:111
+#: african_cities_lab/home/templates/home/event_index_page.html:143
 msgid ""
 "\n"
 "                              In the era of new technologies, the growth of "
@@ -614,6 +650,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:63
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:123
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:161
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:137
 msgid "10am - 12pm"
 msgstr "10h - 12h"
 
@@ -646,7 +683,7 @@ msgstr "Regardez le replay"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:88
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:131
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:90
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:91
 msgid "Overview"
 msgstr "Présentation"
 
@@ -700,17 +737,19 @@ msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:117
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:155
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:124
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:131
 msgid "On the agenda"
 msgstr "Au programme"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:122
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:160
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:136
 msgid "Session I"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:128
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:166
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:142
 msgid "Session II"
 msgstr ""
 
@@ -718,6 +757,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:209
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:178
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:249
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:151
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:162
 msgid "Language:"
 msgstr "Langage :"
 
@@ -915,7 +956,7 @@ msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:136
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:179
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:69
 #: african_cities_lab/home/templates/home/events/civa/civa.html:59
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:69
@@ -1421,6 +1462,7 @@ msgid "Urban youth activities."
 msgstr "Les activités de la jeunesse urbaine."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:167
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:143
 msgid "3pm - 5pm"
 msgstr "15h - 17h"
 
@@ -2204,46 +2246,33 @@ msgstr ""
 " Son livre actuel porte sur \"African Footballers ii Europe : Migration, "
 "Community, and Give Back Behaviours\" publié par Routledge (2020)/."
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:5
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:13
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:18
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:245
-#: african_cities_lab/home/templates/home/webinar_form.html:19
-#: african_cities_lab/home/templates/home/webinar_form.html:24
-#: african_cities_lab/home/templates/home/webinar_form.html:29
-msgid "How the natural environment can help combat climate change in Africa?"
-msgstr "Comment l'environnement naturel peut aider à lutter contre le changement climatique en Afrique ?"
-
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:8
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:14
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:19
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:24
-#: african_cities_lab/home/templates/home/webinar_form.html:14
-#: african_cities_lab/home/templates/home/webinar_form.html:20
-#: african_cities_lab/home/templates/home/webinar_form.html:25
-#: african_cities_lab/home/templates/home/webinar_form.html:30
 msgid ""
 "On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban "
 "Systems of Mohammed VI Polytechnic University will organise a webinar on the "
-"theme: How the natural environment can help combat climate change in Africa?."
+"theme: How to build Africa's green cities face a number of constraints?."
 msgstr ""
 "Le 21 novembre 2022, African Cities Lab, Sèmè City et le Centre des systèmes "
 "urbains de l'Université polytechnique Mohammed VI organisent un webinaire "
-"sur le thème : Comment l'environnement naturel peut aider à lutter contre le changement climatique en Afrique ?"
+"sur le thème : Comment construire les villes vertes de l'Afrique face à un "
+"certain nombre de contraintes ?"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:52
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:53
 msgid ""
 "\n"
-"                How the natural environment can help combat climate change "
-"in Africa\n"
+"            How to build Africa's green cities face a number of "
+"constraints?\n"
 "            "
 msgstr ""
 "\n"
-"Comment l'environnement naturel peut aider à lutter contre le changement climatique "
-"en Afrique ?\n"
+"Comment construire les villes vertes de l'Afrique face à un certain nombre "
+"de contraintes ?\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:62
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:63
 msgid ""
 "\n"
 "                    November 21st <br>2022\n"
@@ -2253,74 +2282,100 @@ msgstr ""
 "21 Novembre<br>2022\n"
 "                  "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:93
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:94
 msgid ""
 "\n"
-"                How can the natural environment help fight climate change in "
-"Africa? Can Africa play a leading role in the fight against climate "
-"change? \n"
-"                It is in this context that African Cities Lab and its "
-"partners Sèmè City and UM6P-CUS Center of Urban Systems are organizing a "
-"webinar \n"
-"                to promote integrated urban solutions for African cities to "
-"combat biodiversity loss and climate change. \n"
+"                A future planet will have 80&#37; of the global population "
+"living in densely packed cities. According to the OECD, \n"
+"                African cities are expected to house an additional 950 "
+"million people by 2050. With cities housing more than \n"
+"                half of the world's population, urban areas will play a "
+"critical role to fight against climate change. \n"
+"                This need is reinforced by the release of the third part of "
+"the sixth: The Intergovernmental Panel on Climate \n"
+"                Change - IPCC report, which places Africa among the regions "
+"with the fastest urban growth and calls for a \n"
+"                profound transformation of cities to deal with climate "
+"change and its consequences.\n"
 "                "
 msgstr ""
 "\n"
-"Comment l'environnement naturel peut aider à lutter contre le changement climatique en "
-"Afrique ? L'Afrique peut jouer un rôle de premier plan dans la lutte contre le "
-"changement climatique ? \n"
-" C'est dans ce contexte qu'African Cities Lab et ses partenaire Sèmè City et "
-"UM6P-CUS Center of Urban Systems organisent un webinaire "
-"pour promouvoir des solutions urbaines intégrées "
-"permettant aux villes Africaines de lutter contre la "
-"perte de biodiversité et le changement climatique. \n"
+"Sur la planète de demain, 80&#37; de la population mondiale vivra dans des "
+"villes densément peuplées. Selon l'OCDE, \n"
+"les villes africaines devraient accueillir 950 millions de personnes "
+"supplémentaires d'ici 2050. Les villes abritant plus de \n"
+"la moitié de la population mondiale, et les zones urbaines joueront un rôle "
+"essentiel dans la lutte contre le changement climatique. \n"
+"Cette nécessité est renforcée par la publication de la troisième partie du "
+"sixième rapport du groupe d'experts intergouvernemental sur l'évolution du "
+"climat \n"
+"GIEC -2022, qui place l'Afrique parmi les régions à la croissance urbaine la "
+"plus rapide et appelle à une \n"
+"transformation profonde des villes pour faire face au changement climatique "
+"et à ses conséquences.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:100
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:104
 msgid ""
 "\n"
-"                The series of thematic events will provide an online "
-"knowledge exchange platform linking policy makers, practitioners, and "
-"experts to \n"
-"                further integrate biodiversity considerations into cities "
-"and development projects.\n"
+"                With many African cities already struggling to meet basic "
+"human needs, development and climate challenges are \n"
+"                increasingly becoming urban issues. The ability to shift "
+"from business as usual to a more transformative approach \n"
+"                is critical to the development of sustainable cities. "
+"However, researchers and policy makers need to be more \n"
+"                concerned about the future of African cities by helping "
+"municipal governments, private and public investors, \n"
+"                and donors make informed decisions about urban planning and "
+"policy.\n"
 "                "
 msgstr ""
 "\n"
-"La série d'événements thématiques fournira une plateforme d'échange "
-"de connaissances en ligne reliant les décideurs politiques, les praticiens et "
-"les experts afin \n"
-"d'intégrer davantage les considérations de biodiversité dans les villes "
-"et les projets de développement. \n"
+"De nombreuses villes africaines ayant déjà du mal à répondre aux besoins "
+"humains de base, alors que les problèmes de développement et \n"
+"de climat deviennent de plus en plus des problèmes urbains. La capacité de "
+"passer du statu quo à une approche plus transformatrice \n"
+"est essentielle au développement de villes durables. Cependant, les "
+"chercheurs et les décideurs doivent \n"
+"se préoccuper davantage de l'avenir des villes africaines en aidant les "
+"gouvernements municipaux, les investisseurs privés et publics \n"
+"et les donateurs à prendre des décisions éclairées en matière de "
+"planification et de politique urbaines.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:106
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:113
 msgid ""
 "\n"
-"                The webinar will take place in November, with several "
-"supporters coming together to learn about climate policy, improve their \n"
-"                communication skills, and meet other climate action "
-"advocates. Join an even larger online cohort in the fall to hear from "
-"expert \n"
-"                speakers and virtually connect with dozens of advocates from "
-"around the world.\n"
+"                Join us for a live discussion with global experts on the "
+"most recent research and thinking on resilient cities. \n"
+"                Our webinar will broaden the discussion on priority topics "
+"that contribute to the successful development \n"
+"                of African cities and make cities more sustainable and "
+"resilient.\n"
 "                "
 msgstr ""
 "\n"
-"Le webinaire aura lieu en novembre, et plusieurs partisans "
-"se réunissent pour s'informer sur la politique climatique, améliorer leurs \n"
-"compétences en communication et rencontrer d'autres défenseurs de l'action "
-"climatique. Rejoignez une cohorte encore plus importante en ligne à \n"
-"l'automne pour écouter des conférenciers experts et entrer virtuellement en "
-"contact avec des dizaines de défenseurs du monde entier.\n"
+"Rejoignez-nous pour une discussion en direct avec des experts mondiaux sur "
+"les recherches et réflexions les plus récentes sur les villes résilientes. \n"
+"Notre webinaire élargira la discussion sur les sujets prioritaires qui "
+"contribuent à la réussite du développement \n"
+"des villes africaines et rendent les villes plus durables et résilientes.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:126
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:152
+msgid "French session"
+msgstr "Session en Français"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:155
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:166
 msgid "To be published very soon"
 msgstr "Sera publié très bientôt"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:140
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:163
+msgid "English session"
+msgstr "Session en Anglais"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:183
 msgid "To be announced very soon"
 msgstr "Seront annoncés très bientôt"
 
@@ -2523,7 +2578,7 @@ msgid ""
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:247
-#: african_cities_lab/home/templates/home/home.html:330
+#: african_cities_lab/home/templates/home/home.html:324
 #: african_cities_lab/home/templates/home/moocs.html:164
 #: african_cities_lab/home/templates/home/moocs.html:425
 #: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:231
@@ -2540,7 +2595,7 @@ msgid "Housing"
 msgstr "Logement"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:250
-#: african_cities_lab/home/templates/home/home.html:333
+#: african_cities_lab/home/templates/home/home.html:327
 #: african_cities_lab/home/templates/home/moocs.html:103
 #: african_cities_lab/home/templates/home/moocs.html:196
 #: african_cities_lab/home/templates/home/moocs.html:457
@@ -2561,7 +2616,7 @@ msgid "Digital"
 msgstr "Digital"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:253
-#: african_cities_lab/home/templates/home/home.html:336
+#: african_cities_lab/home/templates/home/home.html:330
 #: african_cities_lab/home/templates/home/moocs.html:133
 #: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:69
 #: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:198
@@ -2573,12 +2628,12 @@ msgid "Building"
 msgstr "Construction"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:256
-#: african_cities_lab/home/templates/home/home.html:339
+#: african_cities_lab/home/templates/home/home.html:333
 msgid "Climate change"
 msgstr "Changement climatique"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:259
-#: african_cities_lab/home/templates/home/home.html:342
+#: african_cities_lab/home/templates/home/home.html:336
 #: african_cities_lab/home/templates/home/moocs.html:261
 #: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:69
 #: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:262
@@ -2586,17 +2641,17 @@ msgid "Planning"
 msgstr "Planification"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:262
-#: african_cities_lab/home/templates/home/home.html:345
+#: african_cities_lab/home/templates/home/home.html:339
 msgid "Urban System"
 msgstr "Système urbain"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:265
-#: african_cities_lab/home/templates/home/home.html:348
+#: african_cities_lab/home/templates/home/home.html:342
 msgid "Gouvernance"
 msgstr "Gouvernance"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:268
-#: african_cities_lab/home/templates/home/home.html:351
+#: african_cities_lab/home/templates/home/home.html:345
 #: african_cities_lab/home/templates/home/moocs.html:361
 #: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:262
 #: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:197
@@ -3090,56 +3145,35 @@ msgid "Register"
 msgstr "S'inscrire"
 
 #: african_cities_lab/home/templates/home/home.html:224
-#: african_cities_lab/home/templates/home/home.html:306
+#: african_cities_lab/home/templates/home/home.html:300
 msgid "All events"
 msgstr "Voir tous"
 
-#: african_cities_lab/home/templates/home/home.html:234
+#: african_cities_lab/home/templates/home/home.html:231
+msgid "Upcoming"
+msgstr "À venir"
+
+#: african_cities_lab/home/templates/home/home.html:235
 msgid "Nov 21"
 msgstr "21 Nov"
 
-#: african_cities_lab/home/templates/home/home.html:248
-msgid "Monday, November 21st"
-msgstr "Lundi 21 novembre"
+#: african_cities_lab/home/templates/home/home.html:259
+msgid "Past"
+msgstr "Passés"
 
-#: african_cities_lab/home/templates/home/home.html:250
-msgid ""
-"\n"
-"                                    How can the natural environment help "
-"fight climate change in Africa? Can Africa play a leading role in\n"
-"                                     the fight against climate change? It is "
-"in this context that African Cities Lab and its partners \n"
-"                                     <a href=\"https://www.semecity.bj/"
-"\">Sèmè City</a> and <a href=\"https://www.linkedin.com/company/um6p-cus-"
-"center-of-urban-systems/\">UM6P-CUS Center of Urban Systems</a> \n"
-"                                     are organizing a webinar to promote "
-"integrated urban solutions for African cities to combat biodiversity loss "
-"and climate change. \n"
-"                                    "
-msgstr ""
-"\n"
-"Comment l'environnement naturel peut aider "
-"à lutter contre le changement climatique en Afrique ? L'Afrique peut jouer un \n"
-"rôle de premier plan dans la lutte contre le changement climatique ? C'est "
-"dans ce contexte qu'African Cities Lab et ses partenaire Sèmè City et \n"
-"UM6P-CUS Center of Urban Systems organisent un webinaire pour promouvoir "
-"des solutions urbaines intégrées permettant aux villes Africaines de lutter contre "
-"la perte de biodiversité et le changement climatique.\n"
-"                                    "
-
-#: african_cities_lab/home/templates/home/home.html:272
+#: african_cities_lab/home/templates/home/home.html:266
 msgid "Oct 11"
 msgstr "11 Oct"
 
-#: african_cities_lab/home/templates/home/home.html:289
+#: african_cities_lab/home/templates/home/home.html:283
 msgid "Jul 5"
 msgstr "5 Juil"
 
-#: african_cities_lab/home/templates/home/home.html:318
+#: african_cities_lab/home/templates/home/home.html:312
 msgid "Focus Areas"
 msgstr "Thématiques"
 
-#: african_cities_lab/home/templates/home/home.html:321
+#: african_cities_lab/home/templates/home/home.html:315
 msgid ""
 "8 topics that address cross-cutting and multidisciplinary issues of urban "
 "transformation in Africa in an environmentally safe way."
@@ -3147,11 +3181,11 @@ msgstr ""
 "8 thématiques qui abordent des sujets transverses et pluridisciplinaires de "
 "la mutation urbaine en Afrique, dans une démarche environnementale durable."
 
-#: african_cities_lab/home/templates/home/home.html:367
+#: african_cities_lab/home/templates/home/home.html:361
 msgid "Latest News"
 msgstr "Derniers articles"
 
-#: african_cities_lab/home/templates/home/home.html:370
+#: african_cities_lab/home/templates/home/home.html:364
 msgid ""
 "Stay up to date with our newsletter and explore our blog posts to learn more "
 "about African urban and environmental development."
@@ -3777,6 +3811,28 @@ msgstr "Termes & Conditions"
 msgid "Webinar Registration"
 msgstr "Inscription"
 
+#: african_cities_lab/home/templates/home/webinar_form.html:14
+#: african_cities_lab/home/templates/home/webinar_form.html:20
+#: african_cities_lab/home/templates/home/webinar_form.html:25
+#: african_cities_lab/home/templates/home/webinar_form.html:30
+msgid ""
+"On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban "
+"Systems of Mohammed VI Polytechnic University will organise a webinar on the "
+"theme: How the natural environment can help combat climate change in Africa?."
+msgstr ""
+"Le 21 novembre 2022, African Cities Lab, Sèmè City et le Centre des systèmes "
+"urbains de l'Université polytechnique Mohammed VI organisent un webinaire "
+"sur le thème : Comment l'environnement naturel peut aider à lutter contre le "
+"changement climatique en Afrique ?"
+
+#: african_cities_lab/home/templates/home/webinar_form.html:19
+#: african_cities_lab/home/templates/home/webinar_form.html:24
+#: african_cities_lab/home/templates/home/webinar_form.html:29
+msgid "How the natural environment can help combat climate change in Africa?"
+msgstr ""
+"Comment l'environnement naturel peut aider à lutter contre le changement "
+"climatique en Afrique ?"
+
 #: african_cities_lab/home/templates/home/webinar_form.html:81
 msgid "Please fill out the form so that your registration can be validated."
 msgstr ""
@@ -3874,15 +3930,3 @@ msgstr "Suivez-nous"
 #: african_cities_lab/templates/base.html:288
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
-
-#~ msgid "Past event : "
-#~ msgstr "Evénement passé"
-
-#~ msgid "Upcoming"
-#~ msgstr "À venir"
-
-#~ msgid "Past"
-#~ msgstr "Passé"
-
-#~ msgid "July 5"
-#~ msgstr "5 Juillet"

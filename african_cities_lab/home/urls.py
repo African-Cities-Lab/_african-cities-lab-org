@@ -42,9 +42,9 @@ urlpatterns = [
         name="african-cities-what-role-for-the-youth",
     ),
     path(
-        "how-the-natural-environment-can-help-combat-climate-change-in-africa/",
+        "how-to-build-africa-green-cities-face-a-number-of-constraints/",
         TemplateView.as_view(template_name="home/events/3rd_webinar.html"),
-        name="how-the-natural-environment-can-help-combat-climate-change-in-africa",
+        name="how-to-build-africa-green-cities-face-a-number-of-constraints",
     ),
     path(
         "webinar-registration/",

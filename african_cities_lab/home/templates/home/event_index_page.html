@@ -60,6 +60,38 @@
 
         <ul class="events-listing-list">
 
+          <li class="events-listing__item">
+
+            <a href="{% url 'how-to-build-africa-green-cities-face-a-number-of-constraints' %}" class="d-block">
+
+                <div class="events-listing__logo"> 
+                  <img src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}">
+                </div>
+
+                <div class="events-listing__desc"> 
+
+                    <h2 class="event-title"> {% translate "How to build Africa's green cities face a number of constraints?" %}</h2>
+                    
+                    <p class="event-date py-2 font-size-16 font-weight-500 text_primary">{% translate "November 21, 2022" %}</p>
+
+                    <p class="event-location text-black font-size-16 font-weight-500">{% translate "Online" %}</p>
+                    
+                    <div class="event-summary py-3 text-black">
+                      {% blocktranslate %}
+                      A future planet will have 80&#37; of the global population living in densely packed cities. According to the OECD, 
+                      African cities are expected to house an additional 950 million people by 2050. With cities housing more than 
+                      half of the world's population, urban areas will play a critical role to fight against climate change. 
+                      This need is reinforced by the release of the third part of the sixth: The Intergovernmental Panel on Climate 
+                      Change - IPCC report, which places Africa among the regions with the fastest urban growth and calls for a 
+                      profound transformation of cities to deal with climate change and its consequences.
+                      {% endblocktranslate %}
+                    </div>
+
+                    <a class="text_link" href="{% url 'how-to-build-africa-green-cities-face-a-number-of-constraints' %}"> {% translate "Learn more" %}</a>
+                </div>
+            </a> 
+          </li>
+
             <li class="events-listing__item">
 
               <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="d-block">

@@ -2,26 +2,26 @@
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 
 {% block title %}
-    {% translate "How the natural environment can help combat climate change in Africa?" %} - African Cities Lab
+    {% translate "How to build Africa's green cities face a number of constraints?" %} - African Cities Lab
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="description" content="{% translate 'On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How the natural environment can help combat climate change in Africa?.' %}" />
+  <meta name="description" content="{% translate "On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build Africa's green cities face a number of constraints?." %}" />
 {% endblock %}
 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How the natural environment can help combat climate change in Africa?" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'On November 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How the natural environment can help combat climate change in Africa?.' %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build Africa's green cities face a number of constraints?" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate "On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build Africa's green cities face a number of constraints?." %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How the natural environment can help combat climate change in Africa?" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How the natural environment can help combat climate change in Africa?.' %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build Africa's green cities face a number of constraints?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build Africa's green cities face a number of constraints?." %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How the natural environment can help combat climate change in Africa?" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How the natural environment can help combat climate change in Africa?.' %}" />
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build Africa's green cities face a number of constraints?" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate "On November 21, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build Africa's green cities face a number of constraints?." %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
 
@@ -29,7 +29,8 @@
   {{ block.super }}
   <style>
     #single-event {
-      background: rgba(64, 39, 129,1);
+      background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
+        url({% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %});
     }
     #video_player .btn-close{
       color: #fff;
@@ -50,7 +51,7 @@
 
           <h1 class="pt-3 font-size-3-50em">
             {% blocktranslate %}
-                How the natural environment can help combat climate change in Africa
+            How to build Africa's green cities face a number of constraints?
             {% endblocktranslate %}
           </h1>
 
@@ -91,22 +92,28 @@
             <div class="text-justify">
                 <p>
                 {% blocktranslate %}
-                How can the natural environment help fight climate change in Africa? Can Africa play a leading role in the fight against climate change? 
-                It is in this context that African Cities Lab and its partners Sèmè City and UM6P-CUS Center of Urban Systems are organizing a webinar 
-                to promote integrated urban solutions for African cities to combat biodiversity loss and climate change. 
+                A future planet will have 80&#37; of the global population living in densely packed cities. According to the OECD, 
+                African cities are expected to house an additional 950 million people by 2050. With cities housing more than 
+                half of the world's population, urban areas will play a critical role to fight against climate change. 
+                This need is reinforced by the release of the third part of the sixth: The Intergovernmental Panel on Climate 
+                Change - IPCC report, which places Africa among the regions with the fastest urban growth and calls for a 
+                profound transformation of cities to deal with climate change and its consequences.
                 {% endblocktranslate %}
                 </p>
                 <p>
                 {% blocktranslate %}
-                The series of thematic events will provide an online knowledge exchange platform linking policy makers, practitioners, and experts to 
-                further integrate biodiversity considerations into cities and development projects.
+                With many African cities already struggling to meet basic human needs, development and climate challenges are 
+                increasingly becoming urban issues. The ability to shift from business as usual to a more transformative approach 
+                is critical to the development of sustainable cities. However, researchers and policy makers need to be more 
+                concerned about the future of African cities by helping municipal governments, private and public investors, 
+                and donors make informed decisions about urban planning and policy.
                 {% endblocktranslate %}
                 </p>
                 <p>
                 {% blocktranslate %}
-                The webinar will take place in November, with several supporters coming together to learn about climate policy, improve their 
-                communication skills, and meet other climate action advocates. Join an even larger online cohort in the fall to hear from expert 
-                speakers and virtually connect with dozens of advocates from around the world.
+                Join us for a live discussion with global experts on the most recent research and thinking on resilient cities. 
+                Our webinar will broaden the discussion on priority topics that contribute to the successful development 
+                of African cities and make cities more sustainable and resilient.
                 {% endblocktranslate %}
                 </p>
             </div>
@@ -122,9 +129,45 @@
         <div class="col-12 col-lg-11">
 
           <h3 class="section-title">{% translate "On the agenda" %}</h3>
+
+          <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">
+                  <h4>{% translate "Session I" %}</h4>
+                  <span>{% translate "10am - 12pm" %}</span> GMT+1
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">
+                  <h4>{% translate "Session II" %}</h4>
+                  <span>{% translate "3pm - 5pm" %}</span> GMT+1
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="agenda-content">
+            <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "French session" %}</span>
+              </div>
+
+              <p class="font-size-18 py-5">{% translate "To be published very soon" %}</p>
+
+            </div>
+
+            <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "English session" %}</span>
+              </div>
+
+              <p class="font-size-18 py-5">{% translate "To be published very soon" %}</p>
+
+            </div>
+          </div>
         
-          <p class="font-size-18">{% translate "To be published very soon" %}</p>
-          
         </div>
       </div>
     </div>
@@ -137,7 +180,7 @@
 
       <div class="row event-speakers__list py-3">
 
-        <p class="font-size-18">{% translate "To be announced very soon" %}</p>
+        <p class="font-size-18 py-3">{% translate "To be announced very soon" %}</p>
         
       </div>
 
