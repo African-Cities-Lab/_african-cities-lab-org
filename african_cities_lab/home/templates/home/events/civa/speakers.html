@@ -37,7 +37,7 @@
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
     .page-banner__right {
-        background-image: url({% static 'images/assets/Place_de_Etoile_rouge.jpg' %});
+        background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
     }
   </style>
 {% endblock css %}
@@ -73,8 +73,11 @@
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
                             </li>
                             <li class="list-inline-item">
+                              <a class="" href="#">{% translate "Attend" %}</a>
+                            </li>
+                            <li class="list-inline-item">
                               {% url 'civa-travel-information' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Travel Information" %}</a>
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Venue & Contact" %}</a>
                             </li>
                         </ul>
                     </nav>

@@ -20,13 +20,36 @@
         box-shadow: unset !important;
     }
     .civa-banner {
-      background-image: linear-gradient(270deg, rgba(84,84,84,0.43) 12%, rgba(0,0,0,.95) 100%) ,url({% static 'images/assets/Place_de_Etoile_rouge.jpg' %});
+      background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+      position: relative;
+    }
+    .banner-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(64, 39, 129);
+      opacity: .78;
     }
     .civa-highlights__section {
       background-image: url({% static 'images/assets/conference_people_bg.jpeg' %});
     }
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
+    }
+    .feature-card__exerpt li {
+      margin: 8px 0px;
+    }
+    .feature-card__exerpt li:first-child {
+      margin-top: 0px;
+    }
+    .partners-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(129px, 1fr));
+      gap: 30px 40px;
+      margin-top: 50px;
+      place-items: center;
     }
   </style>
 {% endblock css %}
@@ -63,8 +86,11 @@
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
                             </li>
                             <li class="list-inline-item">
+                              <a class="" href="#">{% translate "Attend" %}</a>
+                            </li>
+                            <li class="list-inline-item">
                               {% url 'civa-travel-information' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Travel Information" %}</a>
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Venue & Contact" %}</a>
                             </li>
                         </ul>
                     </nav>
@@ -76,7 +102,8 @@
 </div>
 
 <section class="civa-banner">
-    <div class="container-lg">
+    <div class="banner-overlay"></div>
+    <div class="container-lg position-relative">
         <div class="row">
             <div class="col-12 col-md-10 col-xl-7">
                 <p class="font-size-16">{% translate "Match 21, 22 & 23 - Cotonou, Bénin" %}</p>
@@ -95,16 +122,38 @@
     <div class="container-xl pt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <h3 class="section-title">{% translate "About CIVA 2023" %}</h3>
-                <p class="py-3 font-size-16">
-                  {% blocktranslate %}
-                    Challenging the current vision of African cities, digital cities are presented as a rational response to future demographic projections.
-                    African Cities Lab creates the "International Conference on African Cities (ICAC) - Digital Cities" ,
-                    a major event that aims to increase the scope and develop synergies between research and entrepreneurship on the African continent.
-                    It is all about accelerating digitization of cities and promoting scientific excellence
+                <h3 class="section-title">{% translate "About ICAC 2023" %}</h3>
+                <div class="py-3 font-size-16">
+                  <p class="mb-2">
+                    {% blocktranslate %}
+                    African digital cities are presented as a reasonable response to future demographic projections and the inability of the public sector 
+                    alone to respond structurally to a strong increase in demand for urban infrastructure and infrastructure and urban services such as housing, 
+                    socio-professional integration, etc.
+                    {% endblocktranslate %}
+                    {% blocktranslate %}
+                    Challenging the current vision of cities in Africa, digital cities seem to be major players in the urbanization of Africa. At a time when a 
+                    new urban paradigm is being implemented but intrinsic challenges remain, the role of digital cities as drivers of urban development in 
+                    Africa is to be established.
+                    {% endblocktranslate %}
+                    {% blocktranslate %}
+                    There is today a tangible and growing demand for talented and highly qualified African researchers on the theme of the city and its digitalization. 
+                    This is particularly visible in all areas of the digital transformation of the continent.
+                    {% endblocktranslate %}
+                  </p>
+                  <p class="mb-2">
+                    {% blocktranslate %}
+                    The « <strong>International Conference on African Cities (CIVA) - Digital Cities</strong> » aims to increase the scope and influence of research, 
+                    innovation and entrepreneurial activities on the African continent related to the digitization of cities, as well as to promote scientific excellence 
                     in Africa.
-                  {% endblocktranslate %}
-                </p>
+                    {% endblocktranslate %}
+                  </p>
+                  <p class="mb-2">
+                    {% blocktranslate %}
+                    Therefore, beyond its thematic focus, CIVA aims to advance interdisciplinary research by bridging the disciplinary gap between the different academic 
+                    cultures of the humanities, sciences and application-oriented research, but also the sectoral gap between urban development actors in Africa.
+                    {% endblocktranslate %}
+                  </p>
+                </div>
                 <div class="civa-date-area"> 
                     <h4><span class="xl-counter" >21</span></h4>
                     <p><span class="d-block font-size-16 font-weight-bold">{% translate "March 2023" %}</span>{% translate "Cotonou, Benin" %}</p>
@@ -163,12 +212,12 @@
               </h3>
           </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-5 col-md-6 p-4">
+      <div class="row">
+        <div class="col-12 col-md-4 p-4">
           <div class="card text-box">
               <div class="card-body">
                   <h3>{% translate "Networking" %}</h3>
-                  <p class="py-3 font-size-16">
+                  <p class="py-3">
                     {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
@@ -178,11 +227,11 @@
               </div>
           </div>
         </div>
-        <div class="col-12 col-lg-5 col-md-6 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="card text-box">
               <div class="card-body">
                   <h3>{% translate "Skilled speakers" %}</h3>
-                  <p class="py-3 font-size-16">
+                  <p class="py-3 ">
                     {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
@@ -192,13 +241,11 @@
               </div>
           </div>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-5 col-md-6 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="card text-box">
               <div class="card-body">
                   <h3>{% translate "Usefull sessions" %}</h3>
-                  <p class="py-3 font-size-16">
+                  <p class="py-3">
                     {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
@@ -208,11 +255,11 @@
               </div>
           </div>
         </div>
-        <div class="col-12 col-lg-5 col-md-6 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="card text-box">
               <div class="card-body">
                   <h3>{% translate "Venue tour" %}</h3>
-                  <p class="py-3 font-size-16">
+                  <p class="py-3">
                     {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
@@ -226,9 +273,9 @@
   </div>
 </section>
 
-<section class="explore-topic pb-5">
+<section class="pb-5">
 
-  <div class="container p-md-5">
+  <div class="container-xl py-md-5">
       <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-8 text-center">
               <h3 class="section-title mb-3">
@@ -240,77 +287,99 @@
           </div>
       </div>
 
-      <div class="row justify-content-center py-3">
-          <div class="col-12 col-lg-10">
-              <div class="row justify-content-center">
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Housing" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Digital" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Building" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Climate change" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Planning" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Urban System" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Gouvernance" %}</span></p>
-                  </div>
-                  <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
-                      <p class="card topic-item"><span>{% translate "Energy" %}</span></p>
-                  </div>
+      <div class="row no-gutters py-3">
+        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="feature-card__title text_primary py-3">{% translate "Digitalization of cities and urban planning" %}</h5>
+                <ul class="feature-card__exerpt">
+                  <li  >{% translate "Digital water and energy management" %}</li>
+                  <li  >{% translate "Smart waste management and sanitation" %}</li>
+                  <li  >{% translate "Digital management of education and health" %}</li>
+                  <li  >{% translate "Digital mobility and transport management" %}</li>
+                  <li  >{% translate "Land use and land cover management" %}</li>
+                  <li  >{% translate "Informality & precarious neighbourhoods" %}</li>
+                  <li  >{% translate "Land tenure and cadastral management" %}</li>
+                  <li  >{% translate "Quality of Life and Social Layer" %}</li>
+                </ul>
               </div>
           </div>
-      </div>
-  </div>
-</section>
+        </div>
 
-<section class="pb-5">
-  <div class="container-xl">
-      <div class="row align-items-center py-5">
-          <div class="col-12 col-md-7 col-lg-6">
-              <h3 class="section-title">
-                  {% blocktranslate %}
-                      Who do we expect
-                  {% endblocktranslate %}
-              </h3>
-
-              <div class="py-3 font-size-16">
-                  {% blocktranslate %}
-                  Pellentesque purus mi, ultricies quis lacus sit amet, mollis ultrices tellus. 
-                  Etiam vitae dictum neque, et interdum orci. Suspendisse at neque eros. 
-                  Sed a purus eget nibh bibendum dignissim. 
-                  {% endblocktranslate %}
-                  <ul class="py-3">
-                      <li>
-                          {% translate "Phasellus eleifend nisi et leo fermentum, non egestas ligula dictum." %}
-                      </li>
-                      <li class="pt-2">
-                          {% translate "Vestibulum eu nunc at magna vehicula cursus sed et augue." %}
-                      </li>
-                      <li class="pt-2">
-                          {% translate "Cras quis risus tincidunt, fringilla libero sed, scelerisque leo." %}
-                      </li>
-                      <li class="pt-2">
-                          {% translate "Duis ac nulla vitae sem aliquam gravida." %}
-                      </li>
-                      <li class="pt-2">
-                          {% translate "Quisque molestie dolor et libero placerat consequat." %}
-                      </li>
-                  </ul>
+        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="feature-card__title text_primary py-3">{% translate "Digital and smart african cities" %}</h5>
+                <ul class="feature-card__exerpt">
+                  <li  >{% translate "Digital and smart cities strategies in Africa" %}</li>
+                  <li  >{% translate "Digital and Smart african city stakeholders" %}</li>
+                  <li  >{% translate "Digital and Smart city infrastructure" %}</li>
+                  <li  >{% translate "IoT for digital and smart cities " %}</li>
+                  <li  >{% translate "Robotics, blockchain and crytomoney" %}</li>
+                  <li  >{% translate "Artificial intelligence and application integration" %}</li>
+                  <li  >{% translate "Cybersecurity & IS governance for smart cities" %}</li>
+                  <li  >{% translate "Advanced technologies for African smart cities" %}</li>
+                </ul>
               </div>
           </div>
-          <div class="col-12 col-md-5 col-lg-6">
-              <img src="{% static 'images/assets/who-expect.jpg' %}">
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="feature-card__title text_primary py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h5>
+                <ul class="feature-card__exerpt">
+                  <li  >{% translate "GIS and remote sensing" %}</li>
+                  <li  >{% translate "Citizen sensing and Citizen engagement" %}</li>
+                  <li  >{% translate "Geo AI and applications" %}</li>
+                  <li  >{% translate "Spatial data Infrastructures (SDI)" %}</li>
+                  <li  >{% translate "Interactive visualization and 3D modeling" %}</li>
+                  <li  >{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
+                  <li  >{% translate "GIS application (GIS API)" %}</li>
+                  <li  >{% translate "Collective sensing & spatial big urban data" %}</li>
+                  <li  >{% translate "Smart geo-addressing and participatory addressing" %}</li>
+                  <li  >{% translate "SIG and geolocalisation" %}</li>
+                  <li  >{% translate "Digital twins & twin cities" %}</li>
+                </ul>
+              </div>
           </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="feature-card__title text_primary py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h5>
+                <ul class="feature-card__exerpt">
+                  <li  >{% translate "Citizens and Collaborative Governance " %}</li>
+                  <li  >{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
+                  <li  >{% translate "Data Governance for smart cities" %}</li>
+                  <li  >{% translate "Digitalisation and internet 5.0 " %}</li>
+                  <li  >{% translate "Digital tools for smart urban development " %}</li>
+                  <li  >{% translate "Socio-cultural transformations and social inclusion" %}</li>
+                  <li  >{% translate "Open data smart cities governance" %}</li>
+                  <li  >{% translate "Crowdsourcing and citizen participation " %}</li>
+                  <li  >{% translate "Digital governance and digital citizenship" %}</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="feature-card__title text_primary py-3">{% translate "African digital cities challenges" %}</h5>
+                <ul class="feature-card__exerpt">
+                  <li>{% translate "Resilience of African digital cities" %}</li>
+                  <li  >{% translate "Waste management and sanitation" %}</li>
+                  <li  >{% translate "Renewable energy and use" %}</li>
+                  <li  >{% translate "Energy and environmental efficiency" %}</li>
+                  <li  >{% translate "Sustainable development and adaptation of smart cities" %}</li>
+                  <li  >{% translate "Smart urban agriculture and food security" %}</li>
+                  <li  >{% translate "Urban pollution et heat monitoring" %}</li>
+                </ul>
+              </div>
+          </div>
+        </div>
       </div>
   </div>
 </section>
@@ -322,13 +391,13 @@
             <div class="col-12 col-lg-8">
                 <h3 class="section-title mb-3 text-center">
                     {% blocktranslate %}
-                    Highlights
+                    CIVA Special Events
                     {% endblocktranslate %}
                 </h3>
 
                 <div class="py-3">
                     <div class="highlights-item">
-                        <h2>{% translate "Launch of The International Conference of African Cities 2023" %}</h2>
+                        <h2>{% translate "Preliminary Webinars" %}</h2>
 
                         <p class="py-3">
                             {% blocktranslate %}
@@ -340,7 +409,7 @@
                         </p>
                     </div>
                     <div class="highlights-item">
-                        <h2>{% translate "Word to various speakers" %}</h2>
+                        <h2>{% translate "Rencontres B2B et partenariats" %}</h2>
 
                         <p class="py-3">
                             {% blocktranslate %}
@@ -350,7 +419,7 @@
                         </p>
                     </div>
                     <div class="highlights-item">
-                        <h2>{% translate "Workshops" %}</h2>
+                        <h2>{% translate "African smart cities’ Innovation Expo-2023" %}</h2>
                         <p class="py-3">
                             {% blocktranslate %}
                             PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
@@ -360,7 +429,7 @@
                         </p>
                     </div>
                     <div class="highlights-item">
-                        <h2>{% translate "Global networking opportunities" %}</h2>
+                        <h2>{% translate "Online Spring school" %}</h2>
                         <p class="py-3">
                             {% blocktranslate %}
                               PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
@@ -369,7 +438,7 @@
                         </p>
                     </div>
                     <div class="highlights-item">
-                        <h2>{% translate "Executive certification" %}</h2>
+                        <h2>{% translate "Poster Session" %}</h2>
                         <p class="py-3">
                             {% blocktranslate %}
                               PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
@@ -377,12 +446,22 @@
                             {% endblocktranslate %}
                         </p>
                     </div>
+                    <div class="highlights-item">
+                      <h2>{% translate "Concours de recherche et innovation sur les villes digitales" %}</h2>
+                      <p class="py-3">
+                          {% blocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
+                          Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
+                          {% endblocktranslate %}
+                      </p>
+                  </div>
                 </div>
             </div>
         </div>
         <div class="my-3 text-center">
           <a class="btn btn__primary btn__small" href="{% url 'civa-agenda' %}">
-            {% translate "Get more details" %}
+            {% translate "View conference agenda" %}
           </a>
         </div>
     </div>
@@ -394,281 +473,12 @@
 
       <h3 class="section-title text-center mb-3">
         {% blocktranslate %}
-            Meet our <br> Conference speakers
+            Meet our <br> keynote speakers
         {% endblocktranslate %}
       </h3>
 
       <div class="row event-speakers__list justify-content-center py-5">
-        
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Nisrine-Cherata.png' %}">
-
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Dr Nesrine Chehata</h4>
-              <p class="speaker-designation">
-                {% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Nisrine-Cherata.png' %}" alt="Dr Nesrine Chehata"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8 ">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Dr Nesrine Chehata</h2>
-                            
-                          <p class="my-2">{% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                            Is a lecturer at Bordeaux INP since 2006 and specializes in geomatics and AI for Earth observation.
-                            She defended her thesis in 2005 with CNES (Centre National des Etudes Spatiales) and IGN
-                            (Institut Géographique National) on 3D modeling of buildings from satellite data THR.
-                            She is president and founding member of the association AGEOS - African Association for Geospatial
-                            Development since November 2016. She organizes many seminars of awareness and technology watch in
-                            geospatial in Tunisia and open to the African scale. She advocates for opengeodata in Tunisia and
-                            the animation of the community of reusers via the organization of Tunisia Opengeodatahack.
-                            She coordinates several projects to support ministries and local authorities in Tunisia for
-                            the implementation of their GIS, with the inclusion of citizens via openstreetmap.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}">
-
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr. Tariq AKDIM</h4>
-              <p class="speaker-designation">
-                {% translate "Doctoral student, Researcher" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Tarik Akdim.jpeg' %}" alt="Mr. Tariq AKDIM"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr. Tariq AKDIM</h2>
-                            
-                          <p class="my-2">{% translate "Doctoral student, Researcher" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                              Mr. Tariq AKDIM is a doctoral researcher at UIT Ibn Tofail, president of the LOGOS club, economist 
-                              expert in territorial development and associate professor at SupMTI Rabat.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_3">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Christelle GBADO.png' %}">
-
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">{% translate "Ms" %} Christelle Gbado</h4>
-              <p class="speaker-designation">
-                {% translate "PhD student" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_3" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Christelle GBADO.png' %}" alt="Christelle Gbado"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>{% translate "Ms" %} Christelle Gbado</h2>
-                            
-                          <p class="my-2">{% translate "PhD student" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                            Christelle GBADO is a PhD student in urban and regional planning at Sorbornne University.
-                            Since 2019, she has been studying and analysing quality of life issues in the construction
-                            of smart cities in Africa through the study of some cases of emerging smart cities.
-                            She holds a Master's degree in Urban and Regional Planning, Development and Foresight
-                            from the Sorbonne University. She has worked on many projects related to urban planning
-                            and urban programming in Benin and as part of her studies at Sobornne University.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
-
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr Willy Franck SOB</h4>
-              <p class="speaker-designation">
-                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr Willy Franck SOB</h2>
-                            
-                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
-                            GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
-                            digital ecosystem in order to achieve sustainable development through open innovation. 
-                            Recently deployed on a global scale, this open platform for technological innovations 
-                            aims to accelerate the appropriation of geospatial data by those actors who depend 
-                            heavily on it (startups, universities, municipalities, civil society). His expertise 
-                            is recognized by several international institutions where he regularly works as a consultant. 
-                            These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      
         <div class="col-lg-3 col-md-4 speakers-card">
           <div class="card border-0 bg-transparent">
             <div class="card-header p-0">
@@ -954,7 +764,7 @@
     </div>
 </section>
 
-
+{% comment %}
 <section class="py-5">
   <div class="container-xl">
       <div class="row justify-content-center py-3">
@@ -1051,6 +861,550 @@
       <div class="mt-5 text-center d-md-none">
           <a class="btn btn__small btn__primary" role="button" href="{% localized_slugurl 'blog' %}">{% translate "More articles" %}</a>
       </div>
+  </div>
+</section>
+{% endcomment %}
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center py-3">
+      <div class="col-12 col-md-8">
+        <h3 class="section-title text-center">
+          {% translate "High Patronage" %}
+        </h3>
+      </div>
+    </div>
+    <div class="partners-wrapper"> 
+      <div class="partners-item">
+        <a href="https://seco.admin.ch/seco/en/home.html" class="d-block">
+          <img src="{% static "images/assets/partners/seco.png" %}">
+        </a> 
+      </div>                                        
+      <div class="partners-item">
+        <a href="https://epfl.ch" class="d-block">
+          <img src="{% static "images/assets/partners/epfl.png" %}">
+        </a> 
+      </div>
+      <div class="partners-item">
+        <a href="https://semecity.bj/en" class="d-block"> 
+          <img src="{% static "images/assets/partners/semecity.png" %}">
+        </a> 
+      </div>
+      <div class="partners-item">
+        <a href="https://um6p.ma" class="d-block">
+          <img src="{% static "images/assets/partners/um6p.png" %}">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-8">
+        <h3 class="section-title text-center">
+          {% translate "Honary Guest" %}
+        </h3>
+      </div>
+    </div>
+    <div class="row event-speakers__list py-3">
+
+      <div class="mt-5 font-size-18 text-center">{% translate 'To be announced soon' %}</div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center py-3">
+      <div class="col-12 col-md-8">
+        <h3 class="section-title text-center">
+          {% translate "ICAC's chairs & co-chairs" %}
+        </h3>
+      </div>
+    </div>
+    <div class="row event-speakers__list py-3">
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#chairs_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_1">
+                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Mr. Jérôme Chenal</h4>
+            <p class="speaker-designation">
+              {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="chairs_modal_1" tabindex="-1" aria-labelledby="chairs_modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">``
+                        <h2>Mr. Jérôme Chenal</h2>
+
+                        <p class="my-2">
+                          {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
+                          
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          Jérôme Chenal studied architecture at the École Polytechnique Fédérale de Lausanne, where he obtained a degree in architecture in 1997. He defended a doctoral thesis on the urban planning challenges of African cities.
+                          He proposes a pragmatic vision of African cities, suggesting to leave the models conceived in international conferences to invent cities from their own realities.
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#chairs_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_2">
+                  <img class="speaker-avatar" src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Mr Khalid Badour</h4>
+            <p class="speaker-designation">
+              {% blocktranslate %}
+              Director of the President's Cabinet, Mohammed VI Polytechnic University
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="chairs_modal_2" tabindex="-1" aria-labelledby="chairs_modal_2" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Mr Khalid Badour</h2>
+
+                        <p class="my-2">
+                          {% blocktranslate %}
+                          Director of the President's Cabinet, Mohammed VI Polytechnic University
+                          {% endblocktranslate %}
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          Executive Director who has held for more than 20 years positions of responsibility in large multinational companies (FMCG, Pharma and Finance) 
+                          with regional functions, managing multidisciplinary teams and strategic and operational initiatives in Morocco and Africa.
+                          Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and communication.
+                          {% endblocktranslate %}
+                        </p>
+                        <p>
+                          {% blocktranslate %}
+                          Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and 
+                          communication.
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#chairs_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_3">
+                  <img class="speaker-avatar" src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Claude Borna</h4>
+            <p class="speaker-designation">
+              {% blocktranslate %}
+              Managing Director and Chief Innovation Officer at Sèmè City
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="chairs_modal_3" tabindex="-1" aria-labelledby="chairs_modal_3" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Claude Borna</h2>
+
+                        <p class="my-2">
+                          {% blocktranslate %}
+                          Managing Director and Chief Innovation Officer at Sèmè City
+                          {% endblocktranslate %}
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          A self-described entrepreneurial-minded strategist, Claude is passionate about creating and leading disruptive businesses. 
+                          With an MBA from UCLA and a bachelor's from McGill University, she started as a senior consultant with Deloitte in London, 
+                          then joined Amazon to drive highly strategic categories, and eventually moved to Sony Pictures where she was appointed Senior 
+                          Vice President for Global Customers and Worldwide Commercial Strategy.
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#chairs_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_4">
+                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Cedric-TEKOUABOU.jpeg' %}" alt="Cédric Stéphane TEKOUABOU KOUMETIO">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/c%C3%A9dric-st%C3%A9phane-tekouabou-koumetio-a0364a119/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Dr. Stéphane TEKOUABOU KOUMETIO</h4>
+            <p class="speaker-designation">
+              {% blocktranslate %}
+              Researcher at Mohammed VI Polytechnic University
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="chairs_modal_4" tabindex="-1" aria-labelledby="chairs_modal_4" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/civa/Cedric-TEKOUABOU.jpeg' %}" alt="Cédric Stéphane TEKOUABOU KOUMETIO">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Dr. Stéphane TEKOUABOU KOUMETIO</h2>
+
+                        <p class="my-2">
+                          {% blocktranslate %}
+                          Researcher at Mohammed VI Polytechnic University
+                          {% endblocktranslate %}
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/c%C3%A9dric-st%C3%A9phane-tekouabou-koumetio-a0364a119/">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#chairs_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_5">
+                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Dr. Martí Bosch</h4>
+            <p class="speaker-designation">
+              {% blocktranslate %}
+              Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="chairs_modal_5" tabindex="-1" aria-labelledby="chairs_modal_5" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Dr. Martí Bosch</h2>
+
+                        <p class="my-2">
+                          {% blocktranslate %}
+                          Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
+                          {% endblocktranslate %}
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          I am a Doctor in Civil and Environmental Engineering from the École polytechnique fédérale de Lausanne (EPFL). 
+                          My PhD thesis, undertaken in the CEAT team, focused the spatiotemporal patterns of urbanization and their impacts on the 
+                          environment and human well being, with a focus on the urban heat island effect. From February to July 2016 I have been 
+                          intern in the STEEP group of the INRIA Rhone-Alpes, working on a project to evaluate different aspects of Urban Sprawl through 
+                          the analysis of spatial data obtained from crowd-sourcing sites. This internship served as my Master's Thesis from the Artificial Intelligence 
+                          and the Web specialization of the Master of Science in Informatics at Grenoble.
+                          {% endblocktranslate %}
+                        </p>
+                        <p>
+                          {% blocktranslate %}
+                          I was a Summer Student in 2015 at the European Organization for Nuclear Research (CERN), working on a project to visualize the data flows among the several experiment detectors and computing facilities in the center.
+                          {% endblocktranslate %}
+                        </p>
+                        <p>
+                          {% blocktranslate %}
+                          My research career started in February 2014 in an internship in the Tyrex team, in the French institute of Research in Informatics INRIA, that focuses on web data, algorithms and reasoning.
+                          {% endblocktranslate %}
+                        </p>
+                        <p>
+                          {% blocktranslate %}
+                          In October 2014 I received my Bachelor's Degree in Industrial Engineering from the Universitat Politècnica de Catalunya.
+                          {% endblocktranslate %}
+                        </p>
+                        <p>
+                          {% blocktranslate %}
+                          My areas of interest are Computer Science, Applied Maths and Engineering, more precisely Machine Learning, Optimization and Science and Engineering Simulations. Always willing to learn.
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center py-3">
+      <div class="col-12 col-md-8">
+        <h3 class="section-title text-center">
+          {% translate "Global Coordinators" %}
+        </h3>
+      </div>
+    </div>
+    <div class="row event-speakers__list py-3">
+
+      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#coordinators_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#coordinators_modal_1">
+                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
+
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title">Dr. Rida AZMI</h4>
+            <p class="speaker-designation">
+              {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="coordinators_modal_1" tabindex="-1" aria-labelledby="coordinators_modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">``
+                        <h2>Dr. Rida AZMI</h2>
+
+                        <p class="my-2">
+                          {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
+                          
+                        </p>
+
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
+                            <i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                        </ul>
+
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          GIS consultant in the national agricultural census project / member of the team in charge of the implementation of the 
+                          spatial database of the national agricultural register - RNA 2016 at the Ministry of Agriculture. 
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 font-size-18 text-center">{% translate 'More to be annonced' %}</div>
+    </div>
   </div>
 </section>
 
