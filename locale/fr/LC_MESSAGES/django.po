@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-02 09:20+0100\n"
+"POT-Creation-Date: 2022-11-02 16:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,8 +114,8 @@ msgid "African Cities: What role for the youth?"
 msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
 #: african_cities_lab/home/templates/home/about.html:49
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:78
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:189
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:119
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:354
 #: african_cities_lab/home/templates/home/home.html:34
 #: african_cities_lab/home/templates/home/moocs.html:32
 #: african_cities_lab/home/templates/home/static_contact.html:47
@@ -641,13 +641,14 @@ msgstr "5 Juillet 2022"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:62
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:86
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:86
 msgid "Session I:"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:63
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:123
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:161
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:137
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:178
 msgid "10am - 12pm"
 msgstr "10h - 12h"
 
@@ -658,6 +659,7 @@ msgstr "Intelligence artificielle et smart cities"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:67
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:105
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:105
 msgid "Session II:"
 msgstr ""
 
@@ -680,7 +682,7 @@ msgstr "Regardez le replay"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:88
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:131
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:91
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:132
 msgid "Overview"
 msgstr "Présentation"
 
@@ -734,19 +736,19 @@ msgstr "les best practices dans l’implémentation de l’IA en Afrique"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:117
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:155
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:131
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:172
 msgid "On the agenda"
 msgstr "Au programme"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:122
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:160
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:136
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:177
 msgid "Session I"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:128
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:166
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:142
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:183
 msgid "Session II"
 msgstr ""
 
@@ -754,8 +756,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:209
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:178
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:249
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:151
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:162
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:196
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:268
 msgid "Language:"
 msgstr "Langage :"
 
@@ -786,6 +788,16 @@ msgstr "Introduction"
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:279
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:289
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:303
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:205
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:214
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:226
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:236
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:246
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:278
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:288
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:298
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:308
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:322
 msgid "Speaker:"
 msgstr "Intervenant :"
 
@@ -866,6 +878,8 @@ msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:255
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:233
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:295
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:252
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:314
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
@@ -873,6 +887,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:260
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:238
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:308
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:257
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:327
 msgid "Moderator:"
 msgstr "Modérateur :"
 
@@ -947,7 +963,7 @@ msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:179
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:344
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:74
 #: african_cities_lab/home/templates/home/events/civa/civa.html:87
 #: african_cities_lab/home/templates/home/events/civa/contact.html:75
@@ -1345,6 +1361,7 @@ msgstr ""
 "                  "
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:79
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:79
 msgid ""
 "\n"
 "                    10AM | 12PM <br>\n"
@@ -1369,6 +1386,7 @@ msgstr ""
 "                    "
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:98
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:98
 msgid ""
 "\n"
 "                    3PM | 5PM <br>\n"
@@ -1449,7 +1467,7 @@ msgid "Urban youth activities."
 msgstr "Les activités de la jeunesse urbaine."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:167
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:143
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:184
 msgid "3pm - 5pm"
 msgstr "15h - 17h"
 
@@ -1465,6 +1483,7 @@ msgid "French translated to English"
 msgstr "Français traduit en Anglais"
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:184
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:202
 msgid "Opening Statement"
 msgstr "Introduction"
 
@@ -1616,6 +1635,7 @@ msgstr ""
 "l'éducation de Winneba, au Ghana."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:300
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:319
 msgid "Closing statement"
 msgstr "Mot de fin"
 
@@ -2236,7 +2256,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:8
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:14
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:19
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:24 
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:24
 msgid ""
 "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban "
 "Systems of Mohammed VI Polytechnic University will organise a webinar on the "
@@ -2266,7 +2286,27 @@ msgstr ""
 "24 Novembre<br>2022\n"
 "                  "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:94
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:88
+msgid ""
+"\n"
+"                    Digital Technologies for Urban Resilience in Africa\n"
+"                    "
+msgstr ""
+"\n"
+"Les technologies numériques au service de la résilience urbaine en Afrique\n"
+"                    "
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:107
+msgid ""
+"\n"
+"                    Environmental impact of cities\n"
+"                    "
+msgstr ""
+"\n"
+"Les impacts environnementaux des villes\n"
+"                    "
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:135
 msgid ""
 "\n"
 "                A future planet will have 80&#37; of the global population "
@@ -2299,19 +2339,18 @@ msgstr ""
 "et à ses conséquences.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:104
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:145
 msgid ""
 "\n"
 "                With many African cities already struggling to meet basic "
-"human needs, development and climate challenges are \n"
-"                increasingly becoming urban issues. The ability to shift "
-"from business as usual to a more transformative approach \n"
-"                is critical to the development of sustainable cities. "
-"However, researchers and policy makers need to be more \n"
-"                concerned about the future of African cities by helping "
-"municipal governments, private and public investors, \n"
-"                and donors make informed decisions about urban planning and "
-"policy.\n"
+"human needs, development and climate challenges are increasingly \n"
+"                becoming urban issues. The ability to shift from business as "
+"usual to a more transformative approach is critical to the \n"
+"                development of sustainable cities. However, researchers and "
+"policy makers need to be more concerned about the future of \n"
+"                African cities by helping municipal governments, private and "
+"public investors, and donors make informed decisions \n"
+"                about urban planning and policy.\n"
 "                "
 msgstr ""
 "\n"
@@ -2327,15 +2366,14 @@ msgstr ""
 "planification et de politique urbaines.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:113
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:154
 msgid ""
 "\n"
 "                Join us for a live discussion with global experts on the "
 "most recent research and thinking on resilient cities. \n"
 "                Our webinar will broaden the discussion on priority topics "
-"that contribute to the successful development \n"
-"                of African cities and make cities more sustainable and "
-"resilient.\n"
+"that contribute to the successful development of African cities \n"
+"                and make cities more sustainable and resilient.\n"
 "                "
 msgstr ""
 "\n"
@@ -2346,20 +2384,65 @@ msgstr ""
 "des villes africaines et rendent les villes plus durables et résilientes.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:152
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:193
+msgid "Digital Technologies for Urban Resilience in Africa"
+msgstr ""
+"Les technologies numériques au service de la résilience urbaine en Afrique"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:197
 msgid "French session"
 msgstr "Session en Français"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:155
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:166
-msgid "To be published very soon"
-msgstr "Sera publié très bientôt"
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:211
+msgid ""
+"How to combat traffic congestion & pollution for future sustainable cities?"
+msgstr ""
+"Comment lutter contre les embouteillages et la pollution dans les villes "
+"durables de demain ?"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:163
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:223
+msgid "The role of Data hub in building resilient cities"
+msgstr "Le rôle du Data hub dans la construction de villes résilientes"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:233
+msgid "Digital Transport for Africa is part of Urban Mobility"
+msgstr ""
+"Le transport numérique pour l'Afrique fait partie de la mobilité urbaine"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:243
+msgid "The impact of digital economic development on carbon productivity"
+msgstr ""
+"L'impact du développement économique numérique sur la production de carbone"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:265
+msgid "Environmental impact of cities"
+msgstr "Les impacts environnementaux des villes"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:269
 msgid "English session"
 msgstr "Session en Anglais"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:183
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:275
+msgid "Street transformations, Biodiversity,"
+msgstr "Transformations des villes, Biodiversité,"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:285
+msgid "Cities for forest: the relation between cities and forests "
+msgstr "Villes et forêts : la relation entre les villes et les forêts"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:295
+msgid "Sustainable energy in Africa"
+msgstr "Énergie durable en Afrique"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:305
+msgid "Nature will be an integral part of cities in the future"
+msgstr "La nature fera partie intégrante des villes à l'avenir"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:334
+msgid "This agenda is the object of modification"
+msgstr "Ce programme est susceptible de modifications"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:348
 msgid "To be announced very soon"
 msgstr "Seront annoncés très bientôt"
 
@@ -2535,7 +2618,6 @@ msgid ""
 "                    in Africa.\n"
 "                    "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:157
 msgid ""
@@ -2799,7 +2881,6 @@ msgid ""
 "                    CIVA Special Events\n"
 "                    "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:398
 msgid "Preliminary Webinars"
@@ -2881,7 +2962,6 @@ msgid ""
 "University\n"
 "              "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1031
 msgid ""
@@ -2890,7 +2970,6 @@ msgid ""
 "Polytechnic University\n"
 "                          "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1045
 msgid ""
@@ -2916,7 +2995,6 @@ msgid ""
 "                          communication.\n"
 "                          "
 msgstr ""
-
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1086
 msgid ""
@@ -2955,7 +3033,6 @@ msgid ""
 "              Researcher at Mohammed VI Polytechnic University\n"
 "              "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1186
 msgid ""
@@ -2963,7 +3040,6 @@ msgid ""
 "                          Researcher at Mohammed VI Polytechnic University\n"
 "                          "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1229
 msgid ""
@@ -2980,7 +3056,6 @@ msgid ""
 "(École polytechnique fédérale de Lausanne)\n"
 "                          "
 msgstr ""
-""
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1268
 msgid ""
@@ -4270,3 +4345,6 @@ msgstr "Suivez-nous"
 #: african_cities_lab/templates/base.html:294
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
+
+#~ msgid "To be published very soon"
+#~ msgstr "Sera publié très bientôt"

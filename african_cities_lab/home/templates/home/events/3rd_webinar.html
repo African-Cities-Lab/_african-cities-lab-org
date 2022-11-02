@@ -71,6 +71,47 @@
               </div>
             </div>
 
+            <div class="col-12 col-md-8 mt-3 d-none d-md-block">
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    10AM | 12PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session I:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                    Digital Technologies for Urban Resilience in Africa
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    3PM | 5PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session II:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                    Environmental impact of cities
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!--div class="my-5">
@@ -102,18 +143,18 @@
                 </p>
                 <p>
                 {% blocktranslate %}
-                With many African cities already struggling to meet basic human needs, development and climate challenges are 
-                increasingly becoming urban issues. The ability to shift from business as usual to a more transformative approach 
-                is critical to the development of sustainable cities. However, researchers and policy makers need to be more 
-                concerned about the future of African cities by helping municipal governments, private and public investors, 
-                and donors make informed decisions about urban planning and policy.
+                With many African cities already struggling to meet basic human needs, development and climate challenges are increasingly 
+                becoming urban issues. The ability to shift from business as usual to a more transformative approach is critical to the 
+                development of sustainable cities. However, researchers and policy makers need to be more concerned about the future of 
+                African cities by helping municipal governments, private and public investors, and donors make informed decisions 
+                about urban planning and policy.
                 {% endblocktranslate %}
                 </p>
                 <p>
                 {% blocktranslate %}
                 Join us for a live discussion with global experts on the most recent research and thinking on resilient cities. 
-                Our webinar will broaden the discussion on priority topics that contribute to the successful development 
-                of African cities and make cities more sustainable and resilient.
+                Our webinar will broaden the discussion on priority topics that contribute to the successful development of African cities 
+                and make cities more sustainable and resilient.
                 {% endblocktranslate %}
                 </p>
             </div>
@@ -144,29 +185,153 @@
               </a>
             </li>
           </ul>
+
           <div class="tab-content" id="agenda-content">
             <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Digital Technologies for Urban Resilience in Africa" %}</div>
 
               <div>
                 <h6 class="d-inline-block">{% translate "Language:" %}</h6>
                 <span>{% translate "French session" %}</span>
               </div>
 
-              <p class="font-size-18 py-5">{% translate "To be published very soon" %}</p>
-
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Opening Statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "How to combat traffic congestion & pollution for future sustainable cities?" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <!--p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} </p-->
+                  <!--small>
+                    
+                  </small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "The role of Data hub in building resilient cities" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <!--p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} </p-->
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "Digital Transport for Africa is part of Urban Mobility" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Rob De Jong</p>
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "The impact of digital economic development on carbon productivity" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <!--p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} </p-->
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <!--p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} </p-->
+                </div>
+              </div>
             </div>
 
             <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Environmental impact of cities" %}</div>
 
               <div>
                 <h6 class="d-inline-block">{% translate "Language:" %}</h6>
                 <span>{% translate "English session" %}</span>
               </div>
 
-              <p class="font-size-18 py-5">{% translate "To be published very soon" %}</p>
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "Street transformations, Biodiversity," %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Nadine Kuhla Von Bergmann</p>
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "Cities for forest: the relation between cities and forests " %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Johan Mottelson </p>
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "Sustainable energy in Africa" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <!--p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} </p-->
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <!--div class="meta-badge"></div-->
+                  <p class="font-size-18 font-weight-500"> {% translate "Nature will be an integral part of cities in the future" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <!--p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} </p-->
+                  <!--small></small-->
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Closing statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Dr. Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <!--p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} </p-->
+                </div>
+              </div>
 
             </div>
           </div>
+
+          <p class="font-size-18">**{% translate "This agenda is the object of modification" %}</p>
         
         </div>
       </div>
