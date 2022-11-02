@@ -9,8 +9,10 @@
         {% translate "The International Conference of African Cities" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-
-{% block static_meta_tag %}
+{% block meta_tag_description %}
+  <meta name="robots" content="noindex,nofollow">
+{% endblock %}
+{% block static_meta_tag %} 
 {% endblock %}
 
 {% block css %}
@@ -69,8 +71,11 @@
                 <div class="overflow-wrap col-10 col-xl-11">
                     <nav aria-labelledby="nav2">
                         <label id="nav2">
-                            {% translate "ICAC 2023" %}
-                            <span class="visuallyhidden">secondary menu</span>
+                          {% url 'the-international-conference-of-african-cities-2023' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">
+                            {% translate "CIVA 2023" %}
+                          </a>
+                          <span class="visuallyhidden">secondary menu</span>
                         </label>
                         <ul class="list-inline">
                             <li class="list-inline-item">
@@ -86,11 +91,12 @@
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
                             </li>
                             <li class="list-inline-item">
-                              <a class="" href="#">{% translate "Attend" %}</a>
+                              {% url 'civa-registration' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
                             </li>
                             <li class="list-inline-item">
-                              {% url 'civa-travel-information' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-travel-information' %}">{% translate "Venue & Contact" %}</a>
+                              {% url 'civa-informations' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
                             </li>
                         </ul>
                     </nav>
@@ -106,9 +112,9 @@
     <div class="container-lg position-relative">
         <div class="row">
             <div class="col-12 col-md-10 col-xl-7">
-                <p class="font-size-16">{% translate "Match 21, 22 & 23 - Cotonou, Bénin" %}</p>
+                <p class="font-size-16">{% translate "March 21, 22 & 23 - Cotonou, Bénin" %}</p>
                 <h1 class="font-size-4em pt-4">
-                    {% translate "The International Conference of African Cities (ICAC)" %}
+                    {% translate "The International Conference of African Cities (CIVA)" %}
                 </h1>
                 <a class="btn btn__primary btn__small mt-4" href="">
                     {% translate "Register to attend" %}
@@ -122,7 +128,7 @@
     <div class="container-xl pt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <h3 class="section-title">{% translate "About ICAC 2023" %}</h3>
+                <h3 class="section-title">{% translate "About CIVA 2023" %}</h3>
                 <div class="py-3 font-size-16">
                   <p class="mb-2">
                     {% blocktranslate %}
@@ -167,9 +173,9 @@
     <div class="container-xl py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 ">
-                <p class="font-size-16">{% translate "Match 21, 22 & 23 - Cotonou, Bénin" %}</p>
+                <p class="font-size-16">{% translate "March 21, 22 & 23 - Cotonou, Bénin" %}</p>
                 <div class="h1 pt-3">
-                    {% translate "The International Conference of African Cities (ICAC)" %}
+                    {% translate "The International Conference of African Cities (CIVA)" %}
                 </div>
 
                 <div class="countdown-timer__widget">
@@ -207,7 +213,7 @@
               <h3 class="section-title">
                   {% blocktranslate %}
                   Why should Attend <br>
-                  <span class="text_primary">ICAC 2023</span>
+                  <span class="text_primary">CIVA 2023</span>
                   {% endblocktranslate %}
               </h3>
           </div>
@@ -218,10 +224,8 @@
               <div class="card-body">
                   <h3>{% translate "Networking" %}</h3>
                   <p class="py-3">
-                    {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
-                    {% endblocktranslate %}
                   </p>
                   <span class="count-number">1</span>
               </div>
@@ -232,10 +236,8 @@
               <div class="card-body">
                   <h3>{% translate "Skilled speakers" %}</h3>
                   <p class="py-3 ">
-                    {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
-                    {% endblocktranslate %}
                   </p>
                   <span class="count-number">2</span>
               </div>
@@ -246,10 +248,8 @@
               <div class="card-body">
                   <h3>{% translate "Usefull sessions" %}</h3>
                   <p class="py-3">
-                    {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
-                    {% endblocktranslate %}
                   </p>
                   <span class="count-number">3</span>
               </div>
@@ -260,10 +260,8 @@
               <div class="card-body">
                   <h3>{% translate "Venue tour" %}</h3>
                   <p class="py-3">
-                    {% blocktranslate %}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Quisque eu ligula in ligula faucibus venenatis a auctor mi.
-                    {% endblocktranslate %}
                   </p>
                   <span class="count-number">4</span>
               </div>
@@ -400,60 +398,48 @@
                         <h2>{% translate "Preliminary Webinars" %}</h2>
 
                         <p class="py-3">
-                            {% blocktranslate %}
-                            PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                            tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                            Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. Vestibulum non faucibus elit, 
-                            in semper nulla. Proin id eleifend ligula.
-                            {% endblocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
+                          Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. Vestibulum non faucibus elit, 
+                          in semper nulla. Proin id eleifend ligula.
                         </p>
                     </div>
                     <div class="highlights-item">
                         <h2>{% translate "Rencontres B2B et partenariats" %}</h2>
 
                         <p class="py-3">
-                            {% blocktranslate %}
-                            PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                            tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                            {% endblocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
                         </p>
                     </div>
                     <div class="highlights-item">
                         <h2>{% translate "African smart cities’ Innovation Expo-2023" %}</h2>
                         <p class="py-3">
-                            {% blocktranslate %}
-                            PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                            tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                            Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
-                            {% endblocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
+                          Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
                         </p>
                     </div>
                     <div class="highlights-item">
                         <h2>{% translate "Online Spring school" %}</h2>
                         <p class="py-3">
-                            {% blocktranslate %}
-                              PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                              tincidunt non lacus. Proin et cursus arcu, at placerat est.
-                            {% endblocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est.
                         </p>
                     </div>
                     <div class="highlights-item">
                         <h2>{% translate "Poster Session" %}</h2>
                         <p class="py-3">
-                            {% blocktranslate %}
-                              PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                              tincidunt non lacus. Proin et cursus arcu, at placerat est.
-                            {% endblocktranslate %}
+                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                          tincidunt non lacus. Proin et cursus arcu, at placerat est.
                         </p>
                     </div>
                     <div class="highlights-item">
-                      <h2>{% translate "Concours de recherche et innovation sur les villes digitales" %}</h2>
+                      <h2>{% translate "Research and innovation competition on digital cities" %}</h2>
                       <p class="py-3">
-                          {% blocktranslate %}
-                          PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+                        PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
                           tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
                           Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
-                          {% endblocktranslate %}
                       </p>
                   </div>
                 </div>
@@ -770,7 +756,7 @@
       <div class="row justify-content-center py-3">
           <div class="col-12 col-md-8">
               <h3 class="section-title">
-                {% translate "ICAC News Feeds" %}
+                {% translate "CIVA News Feeds" %}
               </h3>
           </div>
           <div class="col-12 col-md-4 d-none d-md-block">
@@ -790,7 +776,7 @@
                       <div class="article-meta d-flex align-items-center">
                           <div class="article__date">21/03/2022</div>
                           <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">ICAC 2023</div>
+                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
                       </div>
                       <h5 class="article-title py-3">
                           <a href="" class="d-block text-black">
@@ -816,7 +802,7 @@
                       <div class="article-meta d-flex align-items-center">
                           <div class="article__date">21/03/2022</div>
                           <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">ICAC 2023</div>
+                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
                       </div>
                       <h5 class="article-title py-3">
                           <a href="" class="d-block text-black">
@@ -842,7 +828,7 @@
                       <div class="article-meta d-flex align-items-center">
                           <div class="article__date">21/03/2022</div>
                           <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">ICAC 2023</div>
+                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
                       </div>
                       <h5 class="article-title py-3">
                           <a href="" class="d-block text-black">
@@ -922,7 +908,7 @@
     <div class="row justify-content-center py-3">
       <div class="col-12 col-md-8">
         <h3 class="section-title text-center">
-          {% translate "ICAC's chairs & co-chairs" %}
+          {% translate "CIVA's chairs & co-chairs" %}
         </h3>
       </div>
     </div>

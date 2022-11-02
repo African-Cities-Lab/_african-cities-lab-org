@@ -42,9 +42,9 @@ urlpatterns = [
         name="african-cities-what-role-for-the-youth",
     ),
     path(
-        "how-to-build-africa-green-cities-face-a-number-of-constraints/",
+        "how-to-build-resilient-african-cities/",
         TemplateView.as_view(template_name="home/events/3rd_webinar.html"),
-        name="how-to-build-africa-green-cities-face-a-number-of-constraints",
+        name="how-to-build-resilient-african-cities",
     ),
     path(
         "webinar-registration/",
@@ -73,9 +73,14 @@ urlpatterns = [
         name="civa-sponsors",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-travel-information/",
-        TemplateView.as_view(template_name="home/events/civa/travel_info.html"),
-        name="civa-travel-information",
+        "the-international-conference-of-african-cities-2023-contact/",
+        TemplateView.as_view(template_name="home/events/civa/contact.html"),
+        name="civa-informations",
+    ),
+    path(
+        "the-international-conference-of-african-cities-2023-registration/",
+        TemplateView.as_view(template_name="home/events/civa/form.html"),
+        name="civa-registration",
     ),
     # Moocs url
     path(
