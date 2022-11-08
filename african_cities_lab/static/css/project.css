@@ -1747,31 +1747,30 @@ ul.event-meta {
   border-radius: 5px;
   background: #ffffff;
   position: relative;
-  padding: 0px 20px 0px 20px;
-  text-align: center;
+  padding: 40px 45px 40px 40px;
+  min-width: 392px;
 }
 .text-box .card-header {
 	background-color: #fff;
 	border-bottom: unset; 
 	padding: 0; 
-	text-align: center
 }
 .text-box .card-header > img {
 	max-width: 200px;
 }
 .text-box .count-number {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 45px;
-  height: 45px;
-  background: #BE3712;
-  color: #ffffff;
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 44px;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    background: #BE3712;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 36px;
 }
 .civa-highlights__section {
 	background-position: center;
@@ -1785,10 +1784,28 @@ ul.event-meta {
     background-size: cover;
 	background-repeat: no-repeat;
     margin-top: 3rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
-
+.__border-left {
+	border-top: 1px solid #BE3712;
+    display: inline-block;
+    width: 30%;
+}
+.__border-right {
+	border-top: 1px solid #BE3712;
+    display: inline-block;
+    width: 30%;
+}
+.__btn-outline-more {
+	color: #BE3712;
+	display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #BE3712;
+    font-weight: 500;
+	text-align: center;
+	font-size: 18px;
+}
 
 /*----------------------------------------*/
 /*  About Page
@@ -2053,6 +2070,9 @@ ul.event-meta {
 	}
 	.font-size-2-75em {
 		font-size: 2em !important;
+	}
+	.__border-right, .__border-left {
+		display: none;
 	}
 }
 
