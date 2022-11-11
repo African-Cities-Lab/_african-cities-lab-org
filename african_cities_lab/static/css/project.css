@@ -496,12 +496,7 @@ h6 {
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
-	line-height: 1.5;
 }
-h6 {
-	line-height: 1.5;
-}
-
 p {
 	margin-bottom: 0 !important;
 }
@@ -1744,11 +1739,13 @@ ul.event-meta {
 }
 .text-box {
   display: flex;
+  border: none;
   border-radius: 5px;
   background: #ffffff;
   position: relative;
   padding: 40px 45px 40px 40px;
-  min-width: 392px;
+  -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 }
 .text-box .card-header {
 	background-color: #fff;
@@ -2023,11 +2020,15 @@ ul.event-meta {
 	.page-banner__title {
 		font-size: 2.28em;
 	}
+	.home-banner__left,
+	.page-banner__left {
+		font-size: 2.28em;
+	}
 	.section-title {
 		font-size: 2.3em;
 	}
 	.page-hero__title {
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 	.page-hero__container {
 		min-height: 250px;

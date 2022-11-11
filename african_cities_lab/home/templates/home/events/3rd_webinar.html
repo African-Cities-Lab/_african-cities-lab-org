@@ -13,16 +13,16 @@
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}">
 <meta name="twitter:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
 
 <meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
-<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -44,7 +44,7 @@
 
 
   <section id="single-event">
-    <div class="container-lg">
+    <div class="container-fluid">
       <div class="row align-item-center">
         <div class="col-12 col-lg-10 col-xl-8">
           <div class="meta-badge bg-transparent" style="border: 1px solid #fff">{% translate "Webinar" %}</div>
@@ -114,11 +114,11 @@
 
           </div>
 
-          <!--div class="my-5">
+          <div class="my-5">
             <a href="{% url 'webinar-registration' %}" class="btn btn__primary btn__small">
               {% translate "Register now" %}
             </a>
-          </div-->
+          </div>
         </div>
       </div>
     </div>
@@ -350,9 +350,9 @@
       </div>
 
       <div class="my-5 text-center">
-        <!--a class="btn btn__primary btn__big" href="{% url 'webinar-registration' %}">
+        <a class="btn btn__primary btn__big" href="{% url 'webinar-registration' %}">
           {% translate "Register now" %}
-        </a-->
+        </a>
       </div>
     </div>
   </section>

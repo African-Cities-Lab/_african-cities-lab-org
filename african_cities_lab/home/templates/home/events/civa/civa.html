@@ -53,6 +53,43 @@
       padding: 2rem;
       place-items: center;
     }
+    .swiper, .swiper-wrapper, .swipper-slide {
+      z-index: 0;
+    }
+    #column-2 {
+      column-count: 2; 
+      column-gap: 3.5em;
+    }
+    .focus-areas__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 24px;
+      margin-top: 1.5rem;
+    }
+    .focus-areas__container {
+      margin-top: 2rem;
+    }
+    .focus-areas__item {
+      height: 10.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ececec;
+      padding: 1rem;
+    }
+    .focus-areas__row.first .focus-areas__item {
+      background: rgba(255,115,0,.2);
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #fff;
+      top: 38%;
+      width: 50px;
+      height: 50px;
+      background: #BE3712;
+      border-radius: 50px;
+    }
+    .swiper-button-next:after, 
+    .swiper-button-prev:after {
+      font-size: 18px;
+    }
   </style>
 {% endblock css %}
 
@@ -113,7 +150,7 @@
         <div class="row">
             <div class="col-12 col-md-11 col-xl-8">
                 <p class="font-size-16">{% translate "March 21, 22 & 23 - Cotonou, Bénin" %}</p>
-                <h1 class="font-size-4em pt-4">
+                <h1 class="font-size-3-50em pt-4">
                     {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}
                 </h1>
                 <a class="btn btn__primary btn__small mt-4" href="">
@@ -126,127 +163,134 @@
 
 <section class="py-5">
   <div class="container-xl py-md-5">
-      <div class="row justify-content-around">
-          <div class="col-12 col-md-3 col-lg-4">
-              <img class="about-mission__img" src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}">
-          </div>
-          <div class="col-12 col-md-9 col-lg-8 pt-5 px-lg-5">
-            <h3 class="section-title">{% translate "About CIVA 2023" %}</h3>
-
-            <div class="py-3 font-size-16 text-justify">
-              <p>
-                {% blocktranslate %}
-                African digital cities are presented as a reasonable response to future demographic projections and the inability of the public sector 
-                alone to respond structurally to a strong increase in demand for urban infrastructure and infrastructure and urban services such as housing, 
-                socio-professional integration, etc.
-                {% endblocktranslate %}
-                {% blocktranslate %}
-                Challenging the current vision of cities in Africa, digital cities seem to be major players in the urbanization of Africa. At a time when a 
-                new urban paradigm is being implemented but intrinsic challenges remain, the role of digital cities as drivers of urban development in 
-                Africa is to be established.
-                {% endblocktranslate %}
-                {% blocktranslate %}
-                There is today a tangible and growing demand for talented and highly qualified African researchers on the theme of the city and its digitalization. 
-                This is particularly visible in all areas of the digital transformation of the continent.
-                {% endblocktranslate %}
-              </p>
-              <p class="mb-2">
-                {% blocktranslate %}
-                The « <strong>International Conference on African Cities (CIVA) - Digital Cities</strong> » aims to increase the scope and influence of research, 
-                innovation and entrepreneurial activities on the African continent related to the digitization of cities, as well as to promote scientific excellence 
-                in Africa.
-                {% endblocktranslate %}
-              </p>
-              <p class="mb-2">
-                {% blocktranslate %}
-                Therefore, beyond its thematic focus, CIVA aims to advance interdisciplinary research by bridging the disciplinary gap between the different academic 
-                cultures of the humanities, sciences and application-oriented research, but also the sectoral gap between urban development actors in Africa.
-                {% endblocktranslate %}
-              </p>
-
-               <!--div class="civa-date-area"> 
-                <h4><span class="xl-counter" >21</span></h4>
-                <p><span class="d-block font-size-16 font-weight-bold">{% translate "March 2023" %}</span>{% translate "Cotonou, Benin" %}</p>
-              </div-->
-            </div>
-          </div>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <h3 class="section-title">{% translate "CIVA 2023" %}</h3>
+  
+        <p class="font-size-24 py-4 text_primary ">
+          {% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}
+        </p>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-xl-11 pt-3">
+        <div id="column-2" class="text-justify font-size-16">
+          <p>
+            {% blocktranslate %}
+            African digital cities are presented as a reasonable response to future demographic projections and the inability of the public sector 
+            alone to respond structurally to a strong increase in demand for urban infrastructure and infrastructure and urban services such as housing, 
+            socio-professional integration, etc.<br>
+            {% endblocktranslate %}
+            {% blocktranslate %}
+            Challenging the current vision of cities in Africa, digital cities seem to be major players in the urbanization of Africa. At a time when a 
+            new urban paradigm is being implemented but intrinsic challenges remain, the role of digital cities as drivers of urban development in 
+            Africa is to be established.<br>
+            {% endblocktranslate %}
+            {% blocktranslate %}
+            There is today a tangible and growing demand for talented and highly qualified African researchers on the theme of the city and its digitalization. 
+            This is particularly visible in all areas of the digital transformation of the continent.
+            {% endblocktranslate %}
+          </p>
+          <p class="my-2">
+            {% blocktranslate %}
+            The « <strong>International Conference on African Cities (CIVA) - Digital Cities</strong> » aims to increase the scope and influence of research, 
+            innovation and entrepreneurial activities on the African continent related to the digitization of cities, as well as to promote scientific excellence 
+            in Africa.
+            {% endblocktranslate %}
+          </p>
+          <p class="mb-2">
+            {% blocktranslate %}
+            Therefore, beyond its thematic focus, CIVA aims to advance interdisciplinary research by bridging the disciplinary gap between the different academic 
+            cultures of the humanities, sciences and application-oriented research, but also the sectoral gap between urban development actors in Africa.
+            {% endblocktranslate %}
+          </p>
+
+          <!--div class="civa-date-area"> 
+            <h4><span class="xl-counter" >21</span></h4>
+            <p><span class="d-block font-size-16 font-weight-bold">{% translate "March 2023" %}</span>{% translate "Cotonou, Benin" %}</p>
+          </div-->
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="py-5">
-  <div class="container-xl pt-5">
-      <div class="row d-flex justify-content-center pt-5">
-        <div class="col-12 col-md-10 text-center">
-            <h3 class="section-title">
-              {% blocktranslate %}
-                Why should Attend <br>
-                <span class="text_primary">CIVA 2023</span>?
-              {% endblocktranslate %}
-            </h3>
+  <div class="container-xl">
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-12 col-md-4">
+          <h3 class="section-title">
+            {% blocktranslate %}
+              Why should attend <br>
+              <span class="text_primary">CIVA 2023</span>?
+            {% endblocktranslate %}
+          </h3>
 
-            <div class="py-3 font-size-16 text-justify">
-                {% blocktranslate %}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                tincidunt non lacus. Vivamus tristique condimentum risus nec feugiat.
-                {% endblocktranslate %}
-            </div>
-
+          <div class="py-3 font-size-16 text-justify">
+            {% blocktranslate %}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
+            tincidunt non lacus. Vivamus tristique condimentum risus nec feugiat.
+            {% endblocktranslate %}
+          </div>
+          <div class="my-3">
+            <a class="btn btn__primary btn__small" href="">
+              {% translate "Register now" %}
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="row d-flex justify-content-center my-5">
-          <div class="col-12 col-lg-10">
-            <div class="row d-flex justify-content-center">
-              <div class="col-12 col-md-4 col-lg-5 p-4">
-                <div class="card text-box">
-                    <div class="card-body p-0">
-                        <h3>{% translate "Networking" %}</h3>
-                        <p class="py-3">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                        <span class="count-number">1</span>
-                    </div>
-                </div>
+
+        <div class="col-12 col-md-8">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-4 col-lg-5 p-4">
+              <div class="card text-box">
+                  <div class="card-body p-0">
+                      <h3>{% translate "Networking" %}</h3>
+                      <p class="py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>
+                      <span class="count-number">1</span>
+                  </div>
               </div>
-              <div class="col-12 col-md-4 col-lg-5 p-4">
-                <div class="card text-box">
-                    <div class="card-body p-0">
-                        <h3>{% translate "Skilled speakers" %}</h3>
-                        <p class="py-3">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                        <span class="count-number">2</span>
-                    </div>
-                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-5 p-4">
+              <div class="card text-box">
+                  <div class="card-body p-0">
+                      <h3>{% translate "Skilled speakers" %}</h3>
+                      <p class="py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>
+                      <span class="count-number">2</span>
+                  </div>
               </div>
-              <div class="col-12 col-md-4 col-lg-5 p-4">
-                <div class="card text-box">
-                    <div class="card-body p-0">
-                        <h3>{% translate "Usefull sessions" %}</h3>
-                        <p class="py-3">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                        <span class="count-number">3</span>
-                    </div>
-                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-5 p-4">
+              <div class="card text-box">
+                  <div class="card-body p-0">
+                      <h3>{% translate "Usefull sessions" %}</h3>
+                      <p class="py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>
+                      <span class="count-number">3</span>
+                  </div>
               </div>
-              <div class="col-12 col-md-4 col-lg-5 p-4">
-                <div class="card text-box">
-                    <div class="card-body p-0">
-                        <h3>{% translate "Venue tour" %}</h3>
-                        <p class="py-3">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                        <span class="count-number">4</span>
-                    </div>
-                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-5 p-4">
+              <div class="card text-box">
+                  <div class="card-body p-0">
+                      <h3>{% translate "Venue tour" %}</h3>
+                      <p class="py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>
+                      <span class="count-number">4</span>
+                  </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
   </div>
 </section>
-
 
 <section id="countdowntimer__widget" class="bg_secondary text-white text-center">
     <div class="container-xl py-5">
@@ -288,110 +332,251 @@
 
 <section class="py-5 position-relative">
   <div class="container-xl py-md-5">
-      <div class="row d-flex justify-content-center">
-          <div class="col-12 col-lg-8 text-center">
-              <h3 class="section-title mb-3">
-                  {% blocktranslate %}
-                  Topics
-                  {% endblocktranslate %}
-              </h3>
-          </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h3 class="section-title">
+          {% blocktranslate %}
+            Topics
+          {% endblocktranslate %}
+        </h3>
       </div>
+    </div>
 
-      <div class="row no-gutters py-3">
-        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="feature-card__title text_primary py-3">{% translate "Digitalization of cities and urban planning" %}</h5>
-                <ul class="feature-card__exerpt">
-                  <li  >{% translate "Digital water and energy management" %}</li>
-                  <li  >{% translate "Smart waste management and sanitation" %}</li>
-                  <li  >{% translate "Digital management of education and health" %}</li>
-                  <li  >{% translate "Digital mobility and transport management" %}</li>
-                  <li  >{% translate "Land use and land cover management" %}</li>
-                  <li  >{% translate "Informality & precarious neighbourhoods" %}</li>
-                  <li  >{% translate "Land tenure and cadastral management" %}</li>
-                  <li  >{% translate "Quality of Life and Social Layer" %}</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="feature-card__title text_primary py-3">{% translate "Digital and smart african cities" %}</h5>
-                <ul class="feature-card__exerpt">
-                  <li  >{% translate "Digital and smart cities strategies in Africa" %}</li>
-                  <li  >{% translate "Digital and Smart african city stakeholders" %}</li>
-                  <li  >{% translate "Digital and Smart city infrastructure" %}</li>
-                  <li  >{% translate "IoT for digital and smart cities " %}</li>
-                  <li  >{% translate "Robotics, blockchain and crytomoney" %}</li>
-                  <li  >{% translate "Artificial intelligence and application integration" %}</li>
-                  <li  >{% translate "Cybersecurity & IS governance for smart cities" %}</li>
-                  <li  >{% translate "Advanced technologies for African smart cities" %}</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="feature-card__title text_primary py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h5>
-                <ul class="feature-card__exerpt">
-                  <li  >{% translate "GIS and remote sensing" %}</li>
-                  <li  >{% translate "Citizen sensing and Citizen engagement" %}</li>
-                  <li  >{% translate "Geo AI and applications" %}</li>
-                  <li  >{% translate "Spatial data Infrastructures (SDI)" %}</li>
-                  <li  >{% translate "Interactive visualization and 3D modeling" %}</li>
-                  <li  >{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
-                  <li  >{% translate "GIS application (GIS API)" %}</li>
-                  <li  >{% translate "Collective sensing & spatial big urban data" %}</li>
-                  <li  >{% translate "Smart geo-addressing and participatory addressing" %}</li>
-                  <li  >{% translate "SIG and geolocalisation" %}</li>
-                  <li  >{% translate "Digital twins & twin cities" %}</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="feature-card__title text_primary py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h5>
-                <ul class="feature-card__exerpt">
-                  <li  >{% translate "Citizens and Collaborative Governance " %}</li>
-                  <li  >{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
-                  <li  >{% translate "Data Governance for smart cities" %}</li>
-                  <li  >{% translate "Digitalisation and internet 5.0 " %}</li>
-                  <li  >{% translate "Digital tools for smart urban development " %}</li>
-                  <li  >{% translate "Socio-cultural transformations and social inclusion" %}</li>
-                  <li  >{% translate "Open data smart cities governance" %}</li>
-                  <li  >{% translate "Crowdsourcing and citizen participation " %}</li>
-                  <li  >{% translate "Digital governance and digital citizenship" %}</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="feature-card__title text_primary py-3">{% translate "African digital cities challenges" %}</h5>
-                <ul class="feature-card__exerpt">
-                  <li>{% translate "Resilience of African digital cities" %}</li>
-                  <li  >{% translate "Waste management and sanitation" %}</li>
-                  <li  >{% translate "Renewable energy and use" %}</li>
-                  <li  >{% translate "Energy and environmental efficiency" %}</li>
-                  <li  >{% translate "Sustainable development and adaptation of smart cities" %}</li>
-                  <li  >{% translate "Smart urban agriculture and food security" %}</li>
-                  <li  >{% translate "Urban pollution et heat monitoring" %}</li>
-                </ul>
-              </div>
-          </div>
+    <div class="focus-areas__container">
+      <div class="focus-areas__row first">
+        <div class="focus-areas__item">
+          <p class="h4 font-weight-500">
+            {% translate "Digitalization of cities and urban planning" %}
+          </p>
         </div>
       </div>
+      <div class="swiper focus-areas__list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">01</div>
+            <p class="h4 font-weight-500">{% translate "Digital water and energy management" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">02</div>
+            <p class="h4 font-weight-500">{% translate "Smart waste management and sanitation" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">03</div>
+            <p class="h4 font-weight-500">{% translate "Digital management of education and health" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">04</div>
+            <p class="h4 font-weight-500">{% translate "Digital mobility and transport management" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">05</div>
+            <p class="h4 font-weight-500">{% translate "Land use and land cover management" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">06</div>
+            <p class="h4 font-weight-500">{% translate "Informality & precarious neighbourhoods" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">07</div>
+            <p class="h4 font-weight-500"> {% translate "Land tenure and cadastral management" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">08</div>
+            <p class="h4 font-weight-500">{% translate "Quality of Life and Social Layer" %}</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="focus-areas__row first">
+        <div class="focus-areas__item">
+          <p class="h4 font-weight-500">
+            {% translate "Digital and smart african cities" %}
+          </p>
+        </div>
+      </div>
+      <div class="swiper focus-areas__list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">01</div>
+            <p class="h4 font-weight-500">{% translate "Digital and smart cities strategies in Africa" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">02</div>
+            <p class="h4 font-weight-500">{% translate "Digital and Smart african city stakeholders" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">03</div>
+            <p class="h4 font-weight-500">{% translate "Digital management of education and health" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">04</div>
+            <p class="h4 font-weight-500">{% translate "Digital and Smart city infrastructure" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">05</div>
+            <p class="h4 font-weight-500">{% translate "IoT for digital and smart cities" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">06</div>
+            <p class="h4 font-weight-500">{% translate "Robotics, blockchain and crytomoney" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">07</div>
+            <p class="h4 font-weight-500"> {% translate "Artificial intelligence and application integration" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">08</div>
+            <p class="h4 font-weight-500">{% translate "Cybersecurity & IS governance for smart cities" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">09</div>
+            <p class="h4 font-weight-500">{% translate "Advanced technologies for African smart cities" %}</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="focus-areas__row first">
+        <div class="focus-areas__item">
+          <p class="h4 font-weight-500">
+            {% translate "Smart geo-information systems (Smart GIS)" %}
+          </p>
+        </div>
+      </div>
+      <div class="swiper focus-areas__list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">01</div>
+            <p class="h4 font-weight-500">{% translate "GIS and remote sensing" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">02</div>
+            <p class="h4 font-weight-500">{% translate "Citizen sensing and Citizen engagement" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">03</div>
+            <p class="h4 font-weight-500">{% translate "Geo AI and applications" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">04</div>
+            <p class="h4 font-weight-500">{% translate "Interactive visualization and 3D modeling" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">05</div>
+            <p class="h4 font-weight-500">{% translate "Geo Artificial intelligence (Geo AI)" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">06</div>
+            <p class="h4 font-weight-500">{% translate "GIS application (GIS API)" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">07</div>
+            <p class="h4 font-weight-500">{% translate "Collective sensing & spatial big urban data" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">08</div>
+            <p class="h4 font-weight-500">{% translate "Smart geo-addressing and participatory addressing" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">09</div>
+            <p class="h4 font-weight-500">{% translate "SIG and geolocalisation" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">10</div>
+            <p class="h4 font-weight-500">{% translate "Digital twins & twin cities" %}</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="focus-areas__row first">
+        <div class="focus-areas__item">
+          <p class="h4 font-weight-500">
+            {% translate "Transitions digitales and smart Gouvernance" %}
+          </p>
+        </div>
+      </div>
+      <div class="swiper focus-areas__list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">01</div>
+            <p class="h4 font-weight-500">{% translate "Citizens and Collaborative Governance" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">02</div>
+            <p class="h4 font-weight-500">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">03</div>
+            <p class="h4 font-weight-500">{% translate "Data Governance for smart cities" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">04</div>
+            <p class="h4 font-weight-500">{% translate "Digitalisation and internet 5.0" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">05</div>
+            <p class="h4 font-weight-500">{% translate "Digital tools for smart urban development" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">06</div>
+            <p class="h4 font-weight-500">{% translate "Socio-cultural transformations and social inclusion" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">07</div>
+            <p class="h4 font-weight-500"> {% translate "Crowdsourcing and citizen participation" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">08</div>
+            <p class="h4 font-weight-500">{% translate "Digital governance and digital citizenship" %}</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="focus-areas__row first">
+        <div class="focus-areas__item">
+          <p class="h4 font-weight-500">
+            {% translate "African digital cities challenges" %}
+          </p>
+        </div>
+      </div>
+      <div class="swiper focus-areas__list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">01</div>
+            <p class="h4 font-weight-500">{% translate "Resilience of African digital cities" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">02</div>
+            <p class="h4 font-weight-500">{% translate "Waste management and sanitation" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">03</div>
+            <p class="h4 font-weight-500">{% translate "Renewable energy and use" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">04</div>
+            <p class="h4 font-weight-500">{% translate "Energy and environmental efficiency" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">05</div>
+            <p class="h4 font-weight-500">{% translate "Sustainable development and adaptation of smart cities" %}</p>
+          </div>
+          <div class="swiper-slide focus-areas__item">
+            <div class="mb-3">06</div>
+            <p class="h4 font-weight-500">{% translate "Urban pollution et heat monitoring" %}</p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
   </div>
 </section>
 
