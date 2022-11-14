@@ -6,7 +6,7 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "Regisyration | The International Conference of African Cities" %} - African Cities Lab
+        {% translate "Call for papers | The International Conference of African Cities" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
@@ -110,7 +110,7 @@
 <section class="page-banner__area bg_primary mt-5">
     <div class="row justify-content-between align-item-center">
         <div class="page-banner__left align-self-center">
-            <h1 class="page-hero__title text-white">{% translate "Attend" %}</h1>
+            <h1 class="page-hero__title text-white">{% translate "Call for papers" %}</h1>
         </div>
         <div class="page-banner__right">
             <div class="d-none d-lg-block banner-angle__left">
@@ -121,52 +121,48 @@
 </section>
 
 <section class="py-5">
-  <div class="container-lg">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <form>
-          <div class="row">
-              <div class="col form-group">
-                  <label>{% translate "First name" %}</label>
-                  <input type="text" class="form-control">
-              </div>
-              <div class="col form-group">
-                  <label>{% translate 'Last name' %}</label>
-                  <input type="text" class="form-control">
-              </div>
+    <div class="container pt-5">
+        <div class="row justify-content-center py-3">
+            <div class="col-12 col-md-8">
+                <h3 class="section-title text-center">
+                    {% translate "Conference proceedings" %}
+                </h3>
+                <div class="font-size-16 my-3">
+                    {% blocktranslate %}
+                    Accepted papers will be published in the conference proceedings which will be indexed by Ei Compendex, Scopus, 
+                    CPCI (Thomson Reuters, WoS) and other academic databases (Waiting for confirmation)
+                    {% endblocktranslate %}
+                </div>
+            </div>
+        </div>
+      
+    </div>
+  </section>
+
+
+<section class="civa-form__section">
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-white text-center py-5">
+          <div class="h1 pt-lg-5">{% translate "Join the International Conference of African Cities (CIVA) - Digital Cities" %}</div>
+          <div class="mt-5 text-center">
+            <a href="#" class="btn btn__primary btn__big">
+                {% translate "Register to attend" %}
+            </a>
           </div>
-          <div class="form-group">
-              <label>{% translate 'Email Address' %}</label>
-              <input type="text" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>{% translate "Institution" %}</label>
-            <input type="text" name="INSTITUT" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>{% translate "Function" %}</label>
-            <input type="text" name="FUNCTION" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>{% translate "Title" %}</label>
-            <input type="text" name="TITLE" class="form-control">
-          </div>
-          <div class="form-group" required="required">
-            <label>{% translate "Country" %}</label>
-            <input type="text" name="COUNTRY" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>{% translate "LinkedIn account" %}</label>
-            <input type="text" name="LINKEDIN" class="form-control">
-          </div>
-          <div class="mt-4">
-            <button type="submit" class="btn form-control py-3 btn__primary font-size-18">{% translate 'Submit' %}</button>
-          </div>
-      </form>
+          <p class="font-size-18 pt-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>info@africancitieslab.org</strong>
+            </a>
+          </p>
+        </div>
       </div>
     </div>
-  </div> 
-</section>
-
+  </section>
   
 {% endblock content %}
+  

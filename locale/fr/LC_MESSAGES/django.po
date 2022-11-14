@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-11 10:12+0100\n"
+"POT-Creation-Date: 2022-11-14 18:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,12 +36,21 @@ msgstr "À propos"
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:18
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:23
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:28
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:18
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:23
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:28
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:18
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:23
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:28
 #: african_cities_lab/home/templates/home/events/civa/contact.html:18
 #: african_cities_lab/home/templates/home/events/civa/contact.html:23
 #: african_cities_lab/home/templates/home/events/civa/contact.html:28
 #: african_cities_lab/home/templates/home/events/civa/form.html:18
 #: african_cities_lab/home/templates/home/events/civa/form.html:23
 #: african_cities_lab/home/templates/home/events/civa/form.html:28
+#: african_cities_lab/home/templates/home/events/civa/guests.html:18
+#: african_cities_lab/home/templates/home/events/civa/guests.html:23
+#: african_cities_lab/home/templates/home/events/civa/guests.html:28
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:18
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:23
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:28
@@ -120,7 +129,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:119
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:354
-#: african_cities_lab/home/templates/home/events/civa/civa.html:238
+#: african_cities_lab/home/templates/home/events/civa/civa.html:296
 #: african_cities_lab/home/templates/home/home.html:34
 #: african_cities_lab/home/templates/home/moocs.html:32
 #: african_cities_lab/home/templates/home/static_contact.html:49
@@ -431,7 +440,7 @@ msgid "4th webinar"
 msgstr "4ème Webinaire"
 
 #: african_cities_lab/home/templates/home/about.html:303
-#: african_cities_lab/home/templates/home/events/civa/civa.html:211
+#: african_cities_lab/home/templates/home/events/civa/civa.html:269
 msgid "March 2023"
 msgstr "Mars 2023"
 
@@ -821,10 +830,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:159
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:296
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:318
-#: african_cities_lab/home/templates/home/events/civa/civa.html:881
-#: african_cities_lab/home/templates/home/events/civa/civa.html:903
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:205
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:227
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:217
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:239
 msgid "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation"
 msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
@@ -969,17 +976,20 @@ msgstr "CEO Open data Africa"
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:344
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:74
-#: african_cities_lab/home/templates/home/events/civa/civa.html:124
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:75
+#: african_cities_lab/home/templates/home/events/civa/civa.html:145
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:87
 #: african_cities_lab/home/templates/home/events/civa/contact.html:75
 #: african_cities_lab/home/templates/home/events/civa/form.html:75
+#: african_cities_lab/home/templates/home/events/civa/guests.html:74
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:74
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:100
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:112
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:74
 msgid "Speakers"
 msgstr "Intervenants"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:327
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:236
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:248
 msgid ""
 "\n"
 "                            Is a lecturer at Bordeaux INP since 2006 and "
@@ -1096,14 +1106,10 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:519
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:566
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:588
-#: african_cities_lab/home/templates/home/events/civa/civa.html:816
-#: african_cities_lab/home/templates/home/events/civa/civa.html:838
-#: african_cities_lab/home/templates/home/events/civa/civa.html:951
-#: african_cities_lab/home/templates/home/events/civa/civa.html:973
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:140
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:162
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:275
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:297
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:152
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:174
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:287
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:309
 msgid ""
 "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure"
 msgstr ""
@@ -1111,7 +1117,7 @@ msgstr ""
 "géospatiales"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:528
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:306
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:318
 msgid ""
 "\n"
 "                            Graduated in 2013 from the school of surveyors "
@@ -1146,7 +1152,7 @@ msgstr ""
 "etc."
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:597
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:171
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:183
 msgid ""
 "\n"
 "                            He's a futurist, technologist, future cities "
@@ -2446,13 +2452,22 @@ msgstr "Conférence Internationale des Villes Africaines (CIVA)"
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:17
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:22
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:27
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:17
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:22
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:27
 #: african_cities_lab/home/templates/home/events/civa/civa.html:9
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:17
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:22
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:27
 #: african_cities_lab/home/templates/home/events/civa/contact.html:17
 #: african_cities_lab/home/templates/home/events/civa/contact.html:22
 #: african_cities_lab/home/templates/home/events/civa/contact.html:27
 #: african_cities_lab/home/templates/home/events/civa/form.html:17
 #: african_cities_lab/home/templates/home/events/civa/form.html:22
 #: african_cities_lab/home/templates/home/events/civa/form.html:27
+#: african_cities_lab/home/templates/home/events/civa/guests.html:17
+#: african_cities_lab/home/templates/home/events/civa/guests.html:22
+#: african_cities_lab/home/templates/home/events/civa/guests.html:27
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:17
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:22
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:27
@@ -2463,56 +2478,110 @@ msgid "The International Conference of African Cities"
 msgstr "Conférence Internationale des Villes Africaines"
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:63
-#: african_cities_lab/home/templates/home/events/civa/civa.html:113
-#: african_cities_lab/home/templates/home/events/civa/civa.html:168
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:64
+#: african_cities_lab/home/templates/home/events/civa/civa.html:134
+#: african_cities_lab/home/templates/home/events/civa/civa.html:201
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:76
 #: african_cities_lab/home/templates/home/events/civa/contact.html:64
 #: african_cities_lab/home/templates/home/events/civa/form.html:64
+#: african_cities_lab/home/templates/home/events/civa/guests.html:63
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:63
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:63
 msgid "CIVA 2023"
 msgstr "CIVA 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:70
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:100
-#: african_cities_lab/home/templates/home/events/civa/civa.html:120
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:112
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:71
+#: african_cities_lab/home/templates/home/events/civa/civa.html:141
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:83
 #: african_cities_lab/home/templates/home/events/civa/contact.html:71
 #: african_cities_lab/home/templates/home/events/civa/form.html:71
+#: african_cities_lab/home/templates/home/events/civa/guests.html:70
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:70
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:70
 msgid "Agenda"
 msgstr "Programme"
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:78
-#: african_cities_lab/home/templates/home/events/civa/civa.html:128
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:79
+#: african_cities_lab/home/templates/home/events/civa/civa.html:149
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:91
 #: african_cities_lab/home/templates/home/events/civa/contact.html:79
 #: african_cities_lab/home/templates/home/events/civa/form.html:79
+#: african_cities_lab/home/templates/home/events/civa/guests.html:78
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:78
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:78
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:100
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:112
 msgid "Sponsors"
 msgstr "Partenaires"
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:82
-#: african_cities_lab/home/templates/home/events/civa/civa.html:132
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:83
+#: african_cities_lab/home/templates/home/events/civa/civa.html:153
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:95
 #: african_cities_lab/home/templates/home/events/civa/contact.html:83
 #: african_cities_lab/home/templates/home/events/civa/form.html:83
-#: african_cities_lab/home/templates/home/events/civa/form.html:101
+#: african_cities_lab/home/templates/home/events/civa/guests.html:82
+#: african_cities_lab/home/templates/home/events/civa/guests.html:112
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:82
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:82
+msgid "Special guests"
+msgstr "Invités d'honneur"
+
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:86
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:87
+#: african_cities_lab/home/templates/home/events/civa/civa.html:157
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:99
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:125
+#: african_cities_lab/home/templates/home/events/civa/contact.html:87
+#: african_cities_lab/home/templates/home/events/civa/form.html:87
+#: african_cities_lab/home/templates/home/events/civa/guests.html:86
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:86
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:86
+msgid "Organization Committee"
+msgstr "Comité d'organisation"
+
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:90
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:91
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:113
+#: african_cities_lab/home/templates/home/events/civa/civa.html:161
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:103
+#: african_cities_lab/home/templates/home/events/civa/contact.html:91
+#: african_cities_lab/home/templates/home/events/civa/form.html:91
+#: african_cities_lab/home/templates/home/events/civa/guests.html:90
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:90
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:90
+msgid "Call for papers"
+msgstr "Appel à contributions"
+
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:94
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:95
+#: african_cities_lab/home/templates/home/events/civa/civa.html:165
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:107
+#: african_cities_lab/home/templates/home/events/civa/contact.html:95
+#: african_cities_lab/home/templates/home/events/civa/form.html:95
+#: african_cities_lab/home/templates/home/events/civa/form.html:113
+#: african_cities_lab/home/templates/home/events/civa/guests.html:94
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:94
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:94
 msgid "Attend"
 msgstr "Participer"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:86
-#: african_cities_lab/home/templates/home/events/civa/civa.html:136
-#: african_cities_lab/home/templates/home/events/civa/contact.html:87
-#: african_cities_lab/home/templates/home/events/civa/contact.html:101
-#: african_cities_lab/home/templates/home/events/civa/form.html:87
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:86
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:86
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:98
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:99
+#: african_cities_lab/home/templates/home/events/civa/civa.html:169
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:111
+#: african_cities_lab/home/templates/home/events/civa/contact.html:99
+#: african_cities_lab/home/templates/home/events/civa/contact.html:113
+#: african_cities_lab/home/templates/home/events/civa/form.html:99
+#: african_cities_lab/home/templates/home/events/civa/guests.html:98
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:98
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:98
 msgid "Venue & Contact"
 msgstr "Lieu & Contact"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:113
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:125
 msgid ""
 "\n"
 "                Information of <br>\n"
@@ -2524,32 +2593,40 @@ msgstr ""
 "                CIVA 2023\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:126
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1531
-#: african_cities_lab/home/templates/home/events/civa/contact.html:116
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:344
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:218
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:138
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:147
+#: african_cities_lab/home/templates/home/events/civa/civa.html:830
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:532
+#: african_cities_lab/home/templates/home/events/civa/contact.html:128
+#: african_cities_lab/home/templates/home/events/civa/guests.html:547
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:356
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:246
 msgid ""
 "Join the International Conference of African Cities (CIVA) - Digital Cities"
 msgstr ""
 "Rejoingnez la Conférence Internationale des Villes Africaines (CIVA) - "
 "Villes Digitales"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:129
-#: african_cities_lab/home/templates/home/events/civa/civa.html:157
-#: african_cities_lab/home/templates/home/events/civa/civa.html:325
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1534
-#: african_cities_lab/home/templates/home/events/civa/contact.html:119
-#: african_cities_lab/home/templates/home/events/civa/form.html:116
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:347
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:221
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:141
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:150
+#: african_cities_lab/home/templates/home/events/civa/civa.html:190
+#: african_cities_lab/home/templates/home/events/civa/civa.html:383
+#: african_cities_lab/home/templates/home/events/civa/civa.html:833
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:535
+#: african_cities_lab/home/templates/home/events/civa/contact.html:131
+#: african_cities_lab/home/templates/home/events/civa/guests.html:550
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:359
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:249
 msgid "Register to attend"
 msgstr "Inscrivez-vous pour participer"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:133
-#: african_cities_lab/home/templates/home/events/civa/contact.html:123
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:351
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:225
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:145
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:154
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:539
+#: african_cities_lab/home/templates/home/events/civa/contact.html:135
+#: african_cities_lab/home/templates/home/events/civa/guests.html:554
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:363
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:253
 msgid ""
 "\n"
 "              If you wish to have more information,<br> \n"
@@ -2561,24 +2638,62 @@ msgstr ""
 "              vous pouvez nous contacter directement sur :<br>\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:152
-#: african_cities_lab/home/templates/home/events/civa/civa.html:299
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:9
+msgid "Call for papers | The International Conference of African Cities"
+msgstr "La Conférence Internationale des Villes Africaines (CIVA)"
+
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:128
+msgid "Conference proceedings"
+msgstr "Travaux de la conférence"
+
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:131
+msgid ""
+"\n"
+"                    Accepted papers will be published in the conference "
+"proceedings which will be indexed by Ei Compendex, Scopus, \n"
+"                    CPCI (Thomson Reuters, WoS) and other academic databases "
+"(Waiting for confirmation)\n"
+"                    "
+msgstr ""
+"\n"
+"Les articles acceptés seront publiés dans les actes de la conférence, "
+"qui seront indexés par Ei Compendex, Scopus, \n"
+"                    CPCI (Thomson Reuters, WoS) et d'autres bases de données universitaires "
+"(en attente de confirmation).\n"
+"                    "
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:185
+#: african_cities_lab/home/templates/home/events/civa/civa.html:357
 msgid "March 21, 22 & 23 - Cotonou, Bénin"
 msgstr "21, 22 & 23 Mars - Cotonou, Bénin"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:154
-#: african_cities_lab/home/templates/home/events/civa/civa.html:301
+#: african_cities_lab/home/templates/home/events/civa/civa.html:187
+#: african_cities_lab/home/templates/home/events/civa/civa.html:359
 msgid "The International Conference of African Cities (CIVA) - Digital Cities"
 msgstr ""
 "Conférence Internationale des Villes Africaines (CIVA) - Villes Digitales"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:171
+#: african_cities_lab/home/templates/home/events/civa/civa.html:204
 msgid ""
 "CIVA is the first international conference on urban and sustainable "
 "development in Africa."
-msgstr "Experts du développement urbain et durable en Afrique"
+msgstr ""
+"CIVA est la première conférence internationale sur le "
+"développement urbain et durable en Afrique."
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:180
+#: african_cities_lab/home/templates/home/events/civa/civa.html:212
+#: african_cities_lab/home/templates/home/events/civa/civa.html:219
+#: african_cities_lab/home/templates/home/events/civa/civa.html:226
+msgid "March"
+msgstr "Mars"
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:214
+#: african_cities_lab/home/templates/home/events/civa/civa.html:221
+#: african_cities_lab/home/templates/home/events/civa/civa.html:228
+msgid "9am-6pm"
+msgstr "09h - 18h"
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:238
 msgid ""
 "\n"
 "            African digital cities are presented as a reasonable response to "
@@ -2598,7 +2713,7 @@ msgstr ""
 "l’insertion socio-professionnelle, etc.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:185
+#: african_cities_lab/home/templates/home/events/civa/civa.html:243
 msgid ""
 "\n"
 "            Challenging the current vision of cities in Africa, digital "
@@ -2619,7 +2734,7 @@ msgstr ""
 "urbain en Afrique est à établir. \n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:190
+#: african_cities_lab/home/templates/home/events/civa/civa.html:248
 msgid ""
 "\n"
 "            There is today a tangible and growing demand for talented and "
@@ -2637,7 +2752,7 @@ msgstr ""
 "transformation numérique du continent.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:196
+#: african_cities_lab/home/templates/home/events/civa/civa.html:254
 msgid ""
 "\n"
 "            The « <strong>International Conference on African Cities (CIVA) "
@@ -2658,7 +2773,7 @@ msgstr ""
 "scientifique en Afrique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:203
+#: african_cities_lab/home/templates/home/events/civa/civa.html:261
 msgid ""
 "\n"
 "            Therefore, beyond its thematic focus, CIVA aims to advance "
@@ -2678,11 +2793,11 @@ msgstr ""
 "développement urbain en Afrique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:211
+#: african_cities_lab/home/templates/home/events/civa/civa.html:269
 msgid "Cotonou, Benin"
 msgstr "Cotonou, Bénin"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:224
+#: african_cities_lab/home/templates/home/events/civa/civa.html:282
 msgid ""
 "\n"
 "              Why should attend <br>\n"
@@ -2694,7 +2809,7 @@ msgstr ""
 "              <span class=\"text_primary\">à la CIVA 2023 </span>?\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:231
+#: african_cities_lab/home/templates/home/events/civa/civa.html:289
 msgid ""
 "\n"
 "            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec "
@@ -2704,39 +2819,39 @@ msgid ""
 "            "
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:248
+#: african_cities_lab/home/templates/home/events/civa/civa.html:306
 msgid "Networking"
 msgstr "Réseautage"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:259
+#: african_cities_lab/home/templates/home/events/civa/civa.html:317
 msgid "Skilled speakers"
 msgstr "Des intervenants qualifiés"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:270
+#: african_cities_lab/home/templates/home/events/civa/civa.html:328
 msgid "Usefull sessions"
 msgstr "Des sessions utiles"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:281
+#: african_cities_lab/home/templates/home/events/civa/civa.html:339
 msgid "Venue tour"
 msgstr "Sortie pédagogique"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:307
+#: african_cities_lab/home/templates/home/events/civa/civa.html:365
 msgid "Days"
 msgstr "Jours"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:311
+#: african_cities_lab/home/templates/home/events/civa/civa.html:369
 msgid "Hours"
 msgstr "Heures"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:315
+#: african_cities_lab/home/templates/home/events/civa/civa.html:373
 msgid "Minutes"
 msgstr "Minutes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:319
+#: african_cities_lab/home/templates/home/events/civa/civa.html:377
 msgid "Seconds"
 msgstr "Secondes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:338
+#: african_cities_lab/home/templates/home/events/civa/civa.html:396
 msgid ""
 "\n"
 "            Topics\n"
@@ -2746,198 +2861,198 @@ msgstr ""
 "Thématiques\n"
 "                  "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:349
+#: african_cities_lab/home/templates/home/events/civa/civa.html:406
 msgid "Digitalization of cities and urban planning"
 msgstr "Digitalisation des villes et planification urbaine"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:357
+#: african_cities_lab/home/templates/home/events/civa/civa.html:412
 msgid "Digital water and energy management"
 msgstr "Gestion numérisée des eaux et de l'énergie"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:361
+#: african_cities_lab/home/templates/home/events/civa/civa.html:416
 msgid "Smart waste management and sanitation"
 msgstr "Gestion intelligente des déchets et assainissement"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:365
-#: african_cities_lab/home/templates/home/events/civa/civa.html:411
+#: african_cities_lab/home/templates/home/events/civa/civa.html:420
+#: african_cities_lab/home/templates/home/events/civa/civa.html:463
 msgid "Digital management of education and health"
 msgstr "Gestion de l'éducation et de la santé"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:369
+#: african_cities_lab/home/templates/home/events/civa/civa.html:424
 msgid "Digital mobility and transport management"
 msgstr "Mobilité digitale et gestion des transports"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:373
+#: african_cities_lab/home/templates/home/events/civa/civa.html:428
 msgid "Land use and land cover management"
 msgstr "Gestion de l'utilisation et de la couverture des sols"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:377
+#: african_cities_lab/home/templates/home/events/civa/civa.html:432
 msgid "Informality & precarious neighbourhoods"
 msgstr "Informalité & quartiers précaires"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:381
+#: african_cities_lab/home/templates/home/events/civa/civa.html:436
 msgid "Land tenure and cadastral management"
 msgstr "Gestion du régime foncier et du cadastre"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:385
+#: african_cities_lab/home/templates/home/events/civa/civa.html:440
 msgid "Quality of Life and Social Layer"
 msgstr "Qualité de vie et couches sociales"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:395
+#: african_cities_lab/home/templates/home/events/civa/civa.html:449
 msgid "Digital and smart african cities"
 msgstr "Villes africaines numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:403
+#: african_cities_lab/home/templates/home/events/civa/civa.html:455
 msgid "Digital and smart cities strategies in Africa"
 msgstr "Stratégies pour les villes numériques et intelligentes en Afrique"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:407
+#: african_cities_lab/home/templates/home/events/civa/civa.html:459
 msgid "Digital and Smart african city stakeholders"
 msgstr "Les acteurs de la ville africaine numérique et intelligente"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:415
+#: african_cities_lab/home/templates/home/events/civa/civa.html:467
 msgid "Digital and Smart city infrastructure"
 msgstr "Infrastructures des villes numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:419
+#: african_cities_lab/home/templates/home/events/civa/civa.html:471
 #, fuzzy
 #| msgid "IoT for digital and smart cities "
 msgid "IoT for digital and smart cities"
 msgstr "IoT pour les villes numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:423
+#: african_cities_lab/home/templates/home/events/civa/civa.html:475
 msgid "Robotics, blockchain and crytomoney"
 msgstr "Robotique, blockchain et cryptomonnaie"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:427
+#: african_cities_lab/home/templates/home/events/civa/civa.html:479
 msgid "Artificial intelligence and application integration"
 msgstr "Intelligence artificielle et intégration des applications"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:431
+#: african_cities_lab/home/templates/home/events/civa/civa.html:483
 msgid "Cybersecurity & IS governance for smart cities"
 msgstr "Cybersécurité et gouvernance des SI pour les villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:435
+#: african_cities_lab/home/templates/home/events/civa/civa.html:487
 msgid "Advanced technologies for African smart cities"
 msgstr "Technologies avancées pour les villes intelligentes africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:445
+#: african_cities_lab/home/templates/home/events/civa/civa.html:496
 msgid "Smart geo-information systems (Smart GIS)"
 msgstr "Systèmes intelligents de géo-information (Smart GIS)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:453
+#: african_cities_lab/home/templates/home/events/civa/civa.html:502
 msgid "GIS and remote sensing"
 msgstr "SIG et télédétection"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:457
+#: african_cities_lab/home/templates/home/events/civa/civa.html:506
 msgid "Citizen sensing and Citizen engagement"
 msgstr "La perception des citoyens et l'engagement des citoyens"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:461
+#: african_cities_lab/home/templates/home/events/civa/civa.html:510
 msgid "Geo AI and applications"
 msgstr "Géo IA et applications"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:465
+#: african_cities_lab/home/templates/home/events/civa/civa.html:514
 msgid "Interactive visualization and 3D modeling"
 msgstr "Visualisation interactive et modélisation 3D"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:469
+#: african_cities_lab/home/templates/home/events/civa/civa.html:518
 msgid "Geo Artificial intelligence (Geo AI)"
 msgstr "Intelligence géo-artificielle (Geo AI)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:473
+#: african_cities_lab/home/templates/home/events/civa/civa.html:522
 msgid "GIS application (GIS API)"
 msgstr "Application SIG (API SIG)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:477
+#: african_cities_lab/home/templates/home/events/civa/civa.html:526
 msgid "Collective sensing & spatial big urban data"
 msgstr "Détection collective et grandes données spatiales urbaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:481
+#: african_cities_lab/home/templates/home/events/civa/civa.html:530
 msgid "Smart geo-addressing and participatory addressing"
 msgstr "Géo-adressage intelligent et adressage participatif"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:485
+#: african_cities_lab/home/templates/home/events/civa/civa.html:534
 msgid "SIG and geolocalisation"
 msgstr "SIG et géolocalisation"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:489
+#: african_cities_lab/home/templates/home/events/civa/civa.html:538
 msgid "Digital twins & twin cities"
 msgstr "Jumeaux numériques et villes jumelles"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:499
+#: african_cities_lab/home/templates/home/events/civa/civa.html:547
 msgid "Transitions digitales and smart Gouvernance"
 msgstr "Transitions digitales et smart Gouvernance"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:507
+#: african_cities_lab/home/templates/home/events/civa/civa.html:553
 #, fuzzy
 #| msgid "Citizens and Collaborative Governance "
 msgid "Citizens and Collaborative Governance"
 msgstr "Citoyens et gouvernance collaborative"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:511
+#: african_cities_lab/home/templates/home/events/civa/civa.html:557
 msgid "Geopolitics, democratic processes and cyber-citizenship"
 msgstr "Géopolitique, processus démocratiques et cybercitoyenneté"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:515
+#: african_cities_lab/home/templates/home/events/civa/civa.html:561
 msgid "Data Governance for smart cities"
 msgstr "Gouvernance des données pour les villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:519
+#: african_cities_lab/home/templates/home/events/civa/civa.html:565
 #, fuzzy
 #| msgid "Digitalisation and internet 5.0 "
 msgid "Digitalisation and internet 5.0"
 msgstr "Digitalisation et internet 5.0"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:523
+#: african_cities_lab/home/templates/home/events/civa/civa.html:569
 #, fuzzy
 #| msgid "Digital tools for smart urban development "
 msgid "Digital tools for smart urban development"
 msgstr "Des outils numériques pour un développement urbain intelligent"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:527
+#: african_cities_lab/home/templates/home/events/civa/civa.html:573
 msgid "Socio-cultural transformations and social inclusion"
 msgstr "Transformations socioculturelles et inclusion sociale"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:531
+#: african_cities_lab/home/templates/home/events/civa/civa.html:577
 #, fuzzy
 #| msgid "Crowdsourcing and citizen participation "
 msgid "Crowdsourcing and citizen participation"
 msgstr "Crowdsourcing et participation citoyenne"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:535
+#: african_cities_lab/home/templates/home/events/civa/civa.html:581
 msgid "Digital governance and digital citizenship"
 msgstr "Gouvernance et citoyenneté numériques"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:545
+#: african_cities_lab/home/templates/home/events/civa/civa.html:590
 msgid "African digital cities challenges"
 msgstr "Défis des villes numériques africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:553
+#: african_cities_lab/home/templates/home/events/civa/civa.html:596
 msgid "Resilience of African digital cities"
 msgstr "Résilience des villes numériques africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:557
+#: african_cities_lab/home/templates/home/events/civa/civa.html:600
 msgid "Waste management and sanitation"
 msgstr "Gestion des déchets et assainissement"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:561
+#: african_cities_lab/home/templates/home/events/civa/civa.html:604
 msgid "Renewable energy and use"
 msgstr "Énergies renouvelables et utilisation"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:565
+#: african_cities_lab/home/templates/home/events/civa/civa.html:608
 msgid "Energy and environmental efficiency"
 msgstr "Efficacité énergétique et environnementale"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:569
+#: african_cities_lab/home/templates/home/events/civa/civa.html:612
 msgid "Sustainable development and adaptation of smart cities"
 msgstr "Développement durable et adaptation des villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:573
+#: african_cities_lab/home/templates/home/events/civa/civa.html:616
 msgid "Urban pollution et heat monitoring"
 msgstr "Surveillance de la pollution et de la température urbaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:588
+#: african_cities_lab/home/templates/home/events/civa/civa.html:631
 msgid ""
 "\n"
 "                    CIVA Special Events\n"
@@ -2947,179 +3062,80 @@ msgstr ""
 "                    Événements spéciaux de la CIVA\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:595
+#: african_cities_lab/home/templates/home/events/civa/civa.html:638
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:605
+#: african_cities_lab/home/templates/home/events/civa/civa.html:648
 msgid "B2B Meetings & Partnerships"
 msgstr "Rencontres et partenariats B2B"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:613
+#: african_cities_lab/home/templates/home/events/civa/civa.html:656
 msgid "African smart cities’ Innovation Expo-2023"
 msgstr ""
 "Exposition sur l'innovation dans les villes intelligentes d'Afrique - 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:621
+#: african_cities_lab/home/templates/home/events/civa/civa.html:664
 msgid "Online Spring school"
 msgstr "École de printemps en ligne"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:628
+#: african_cities_lab/home/templates/home/events/civa/civa.html:671
 msgid "Poster Session"
 msgstr "Session de communications par affiches"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:635
+#: african_cities_lab/home/templates/home/events/civa/civa.html:678
 msgid "Research and innovation competition on digital cities"
 msgstr "Concours de recherche et d'innovation sur les villes numériques"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:647
+#: african_cities_lab/home/templates/home/events/civa/civa.html:690
 msgid "View conference agenda"
 msgstr "Voir l'agenda de la conférence"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:759
-msgid "High Patronage"
-msgstr "Haut Patronage"
+#: african_cities_lab/home/templates/home/events/civa/civa.html:802
+msgid "Organizations"
+msgstr "Organisateurs"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:792
+#: african_cities_lab/home/templates/home/events/civa/civa.html:837
 msgid ""
 "\n"
-"          Meet our <br> keynote speakers\n"
-"      "
+"            If you wish to have more information,<br> \n"
+"            you can contact us directly on :<br>\n"
+"          "
 msgstr ""
 "\n"
-"          Rencontrez notre <br> intervenants\n"
-"      "
+"            Si vous souhaitez obtenir plus d'informations,<br> \n"
+"            vous pouvez nous contacter directement sur :<br>\n"
+"          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:847
-msgid ""
-"\n"
-"                          He's a futurist, technologist, future cities "
-"expert, and considered as one of the international\n"
-"                          well-recognized experts in the fields of Future "
-"foresight, Scenarios planning, Trends watching,\n"
-"                          Emerging technologies & innovations, Industrial "
-"Revolution 4.0, Future cities (Smart, Sustainable\n"
-"                          and innovative Cities), Education 4.0, Artificial "
-"Intelligence (AI), etc.\n"
-"                        "
-msgstr ""
-"\n"
-"Futuriste, technologue, expert des villes du futur. Il est considéré comme "
-"l'un des experts internationaux reconnus dans les domaines de la prospective "
-"future, de la planification de scénarios, de l'observation des tendances, "
-"des technologies et innovations émergentes, de la révolution industrielle "
-"4.0, des villes futures (intelligentes, durables et villes innovantes), de "
-"l’Education 4.0 et de l’Intelligence Artificielle (IA)."
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:9
+#, fuzzy
+#| msgid "Agenda | The International Conference of African Cities"
+msgid "Organization Committee | The International Conference of African Cities"
+msgstr "Conférence Internationale des Villes Africaines (CIVA)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:912
-msgid ""
-"\n"
-"                          Is a lecturer at Bordeaux INP since 2006 and "
-"specializes in geomatics and AI for Earth observation.\n"
-"                          She defended her thesis in 2005 with CNES (Centre "
-"National des Etudes Spatiales) and IGN\n"
-"                          (Institut Géographique National) on 3D modeling of "
-"buildings from satellite data THR.\n"
-"                          She is president and founding member of the "
-"association AGEOS - African Association for Geospatial\n"
-"                          Development since November 2016. She organizes "
-"many seminars of awareness and technology watch in\n"
-"                          geospatial in Tunisia and open to the African "
-"scale. She advocates for opengeodata in Tunisia and\n"
-"                          the animation of the community of reusers via the "
-"organization of Tunisia Opengeodatahack.\n"
-"                          She coordinates several projects to support "
-"ministries and local authorities in Tunisia for\n"
-"                          the implementation of their GIS, with the "
-"inclusion of citizens via openstreetmap.\n"
-"                          "
-msgstr ""
-"\n"
-"Elle est maître de conférences à Bordeaux INP depuis 2006 et se spécialise "
-"en géomatique et IA pour l'observation de la Terre. Elle a soutenu sa thèse "
-"en 2005 avec le CNES (Centre National des Etudes Spatiales) et l'IGN "
-"(Institut Géographique National) sur la modélisation 3D de bâtiments à "
-"partir de données satellitaires THR .Elle est présidente et membre "
-"fondatrice de l'association AGEOS- African Association for Geospatial "
-"Development depuis Novembre 2016. Elle organise de nombreux séminaires de "
-"sensibilisation et veille technologique en géospatial en Tunisie et ouverts "
-"à l'échelle africaine. Elle milite pour l'opengeodata en Tunisie et "
-"l'animation de la  communauté des réutilisateurs via l'organisation de  "
-"Tunisia Opengeodatahack. Elle coordonne plusieurs projets d'appui aux "
-"ministères et collectivités locales en Tunisie pour la mise en place de leur "
-"SIG, avec l'inclusion des citoyens via la cartographie openstreetmap."
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:140
+msgid "CIVA co-chairs"
+msgstr "Les co-chaires de de CIVA"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:982
-msgid ""
-"\n"
-"                          Graduated in 2013 from the school of surveyors in "
-"Le Mans (France). He is the promoter of \n"
-"                          GeOsm (https://geo.sm/) the very first geolocated "
-"social network aimed at players in the \n"
-"                          digital ecosystem in order to achieve sustainable "
-"development through open innovation. \n"
-"                          Recently deployed on a global scale, this open "
-"platform for technological innovations \n"
-"                          aims to accelerate the appropriation of geospatial "
-"data by those actors who depend \n"
-"                          heavily on it (startups, universities, "
-"municipalities, civil society). His expertise \n"
-"                          is recognized by several international "
-"institutions where he regularly works as a consultant. \n"
-"                          These include: The World Bank, GIZ, UNESCO, UN-"
-"Habitat, AFD, etc.\n"
-"                          "
-msgstr ""
-"\n"
-"Diplômé en 2013 de l’école des géomètres du Mans (France). Il est le "
-"promoteur de GeOsm (https://geo.sm/) le tout premier réseau social "
-"géolocalisé destiné aux acteurs de l'écosystème digital afin de parvenir à "
-"un développement durable par l'innovation ouverte. Déployée récemment à "
-"l'échelle mondiale, cette plateforme ouverte d'innovations technologiques "
-"vise à accélérer l’appropriation de données géospatiales à ces acteurs qui "
-"en dépendent fortement (startups, universités, municipalités, société "
-"civile).Son expertise est reconnue par plusieurs institutions "
-"internationales où il intervient régulièrement comme consultant. On peut "
-"notamment citer : La Banque Mondiale, la GIZ, l'UNESCO, l’UN-Habitat, l'AFD, "
-"etc."
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1009
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:333
-msgid "More to be annonced"
-msgstr "Plus d'informations à venir"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1014
-msgid "View all speakers"
-msgstr "Voir tous les intervenants"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1026
-msgid "Special guests"
-msgstr "Invités d'honneur"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1032
-msgid "To be announced soon"
-msgstr "À annoncer bientôt"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1043
-msgid "CIVA's chairs & co-chairs"
-msgstr "Présidents et co-présidents de CIVA"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1068
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1091
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:165
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:188
+#: african_cities_lab/home/templates/home/events/civa/guests.html:152
+#: african_cities_lab/home/templates/home/events/civa/guests.html:175
 msgid "Architecht/urbanist & Prof à EPFL, Laussanne - Suisse"
 msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1104
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:201
+#: african_cities_lab/home/templates/home/events/civa/guests.html:188
 msgid ""
 "\n"
-"                          Jérôme Chenal studied architecture at the École "
+"                            Jérôme Chenal studied architecture at the École "
 "Polytechnique Fédérale de Lausanne, where he obtained a degree in "
 "architecture in 1997. He defended a doctoral thesis on the urban planning "
 "challenges of African cities.\n"
-"                          He proposes a pragmatic vision of African cities, "
-"suggesting to leave the models conceived in international conferences to "
-"invent cities from their own realities.\n"
-"                          "
+"                            He proposes a pragmatic vision of African "
+"cities, suggesting to leave the models conceived in international "
+"conferences to invent cities from their own realities.\n"
+"                            "
 msgstr ""
 "\n"
 "Jérôme Chenal a étudié l'architecture à l'École Polytechnique Fédérale de "
@@ -3130,38 +3146,203 @@ msgstr ""
 "des villes à partir de leurs propres réalités.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1138
-msgid ""
-"\n"
-"              Director of the President's Cabinet, Mohammed VI Polytechnic "
-"University\n"
-"              "
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:224
+msgid "TPC & publication chairs"
+msgstr "PTC & chaires de publication"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:237
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:361
+msgid "CUS, UM6P"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1163
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:247
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:441
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:451
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:501
+msgid "African Centre for Cities"
+msgstr "African Centre for Cities"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:257
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:341
+msgid "University of Tartu"
+msgstr "Université de Tartu"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:269
+msgid "TPC"
+msgstr "PTC"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:281
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:301
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:381
+msgid "CEAT, EPFL"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:291
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:331
+msgid "Center of Urban System CUS, UM6P"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:311
+msgid "World Bank"
+msgstr "Banque Mondiale"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:321
+msgid "Bordeaux INP"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:351
+#: african_cities_lab/home/templates/home/moocs.html:320
+#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:107
+#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:191
+#: african_cities_lab/home/templates/home/moocs/urban_ai.html:255
+#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:191
+msgid "UN Habitat"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:371
+msgid "EIGSI"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:391
+msgid "Sémé City"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:401
+msgid "IDC, UM6P"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:411
+msgid "ENS"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:421
+msgid "SADV"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:431
+msgid "ISTEUB, University of Carthage"
+msgstr "ISTEUB, Université de Carthage"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:461
+msgid "Sèmè city"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:471
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:481
+msgid "Gret"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:491
+msgid "Water Research Commission"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:511
+msgid "Centre for Affordable Housing Finance in Africa"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:521
+#: african_cities_lab/home/templates/home/moocs.html:451
+#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:255
+#: african_cities_lab/home/templates/home/moocs/urban_ai.html:107
+msgid "Ain Shams University"
+msgstr "Université Ain Shams"
+
+#: african_cities_lab/home/templates/home/events/civa/contact.html:9
+msgid "Venue & Contact | The International Conference of African Cities"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:9
+msgid "Regisyration | The International Conference of African Cities"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:130
+#: african_cities_lab/home/templates/home/webinar_form.html:91
+msgid "First name"
+msgstr "Nom"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:134
+#: african_cities_lab/home/templates/home/webinar_form.html:85
+msgid "Last name"
+msgstr "Prénoms"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:139
+#: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:17
+#: african_cities_lab/home/templates/home/webinar_form.html:98
+msgid "Email Address"
+msgstr "Entrer votre adresse email"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:143
+msgid "Institution"
+msgstr "Institution"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:147
+#: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:34
+#: african_cities_lab/home/templates/home/webinar_form.html:113
+msgid "Function"
+msgstr "Fonction"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:151
+#: african_cities_lab/home/templates/home/webinar_form.html:109
+msgid "Title"
+msgstr "Titre"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:155
+#: african_cities_lab/home/templates/home/webinar_form.html:117
+msgid "Country"
+msgstr "Pays"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:159
+#: african_cities_lab/home/templates/home/webinar_form.html:129
+msgid "LinkedIn account"
+msgstr "Compte LinkedIn"
+
+#: african_cities_lab/home/templates/home/events/civa/form.html:163
+msgid "Submit"
+msgstr "Envoyer"
+
+#: african_cities_lab/home/templates/home/events/civa/guests.html:9
+msgid "Special guests | The International Conference of African Cities"
+msgstr "La Conférence Internationale des Villes Africaines (CIVA)"
+
+#: african_cities_lab/home/templates/home/events/civa/guests.html:127
+msgid "CIVA's chairs"
+msgstr "Chaires de la CIVA"
+
+#: african_cities_lab/home/templates/home/events/civa/guests.html:222
 msgid ""
 "\n"
-"                          Director of the President's Cabinet, Mohammed VI "
-"Polytechnic University\n"
-"                          "
+"                Director of the President's Cabinet, Mohammed VI Polytechnic "
+"University\n"
+"                "
 msgstr ""
 "\n"
 "Directeur du Cabinet du Président, Université Polytechnique Mohammed VI\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1177
+#: african_cities_lab/home/templates/home/events/civa/guests.html:247
 msgid ""
 "\n"
-"                          Executive Director who has held for more than 20 "
+"                            Director of the President's Cabinet, Mohammed VI "
+"Polytechnic University\n"
+"                            "
+msgstr ""
+"\n"
+"Directeur du Cabinet du Président, Université Polytechnique Mohammed VI\n"
+"                          "
+
+#: african_cities_lab/home/templates/home/events/civa/guests.html:261
+msgid ""
+"\n"
+"                            Executive Director who has held for more than 20 "
 "years positions of responsibility in large multinational companies (FMCG, "
 "Pharma and Finance) \n"
-"                          with regional functions, managing "
+"                            with regional functions, managing "
 "multidisciplinary teams and strategic and operational initiatives in Morocco "
 "and Africa.\n"
-"                          Member of the Board of Directors of regional and "
+"                            Member of the Board of Directors of regional and "
 "international professional organizations in the fields of education, "
 "entrepreneurship and communication.\n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "Directeur exécutif ayant occupé pendant plus de 20 ans des postes à "
@@ -3174,14 +3355,14 @@ msgstr ""
 "l'entrepreneuriat et de la communication.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1184
+#: african_cities_lab/home/templates/home/events/civa/guests.html:268
 msgid ""
 "\n"
-"                          Member of the Board of Directors of regional and "
+"                            Member of the Board of Directors of regional and "
 "international professional organizations in the fields of education, "
 "entrepreneurship and \n"
-"                          communication.\n"
-"                          "
+"                            communication.\n"
+"                            "
 msgstr ""
 "\n"
 "Membre du conseil d'administration d'organisations professionnelles "
@@ -3190,42 +3371,43 @@ msgstr ""
 " et de la communication.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1218
+#: african_cities_lab/home/templates/home/events/civa/guests.html:302
 msgid ""
 "\n"
-"              Managing Director and Chief Innovation Officer at Sèmè City\n"
-"              "
+"                Managing Director and Chief Innovation Officer at Sèmè City\n"
+"                "
 msgstr ""
 "\n"
 "Directrice générale et chef de l'innovation de Sèmè City\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1243
+#: african_cities_lab/home/templates/home/events/civa/guests.html:327
 msgid ""
 "\n"
-"                          Managing Director and Chief Innovation Officer at "
-"Sèmè City\n"
-"                          "
+"                            Managing Director and Chief Innovation Officer "
+"at Sèmè City\n"
+"                            "
 msgstr ""
 "\n"
 "                          Directrice générale et chef de l'innovation de "
 "Sèmè City\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1257
+#: african_cities_lab/home/templates/home/events/civa/guests.html:341
 msgid ""
 "\n"
-"                          A self-described entrepreneurial-minded "
+"                            A self-described entrepreneurial-minded "
 "strategist, Claude is passionate about creating and leading disruptive "
 "businesses. \n"
-"                          With an MBA from UCLA and a bachelor's from McGill "
-"University, she started as a senior consultant with Deloitte in London, \n"
-"                          then joined Amazon to drive highly strategic "
+"                            With an MBA from UCLA and a bachelor's from "
+"McGill University, she started as a senior consultant with Deloitte in "
+"London, \n"
+"                            then joined Amazon to drive highly strategic "
 "categories, and eventually moved to Sony Pictures where she was appointed "
 "Senior \n"
-"                          Vice President for Global Customers and Worldwide "
-"Commercial Strategy.\n"
-"                          "
+"                            Vice President for Global Customers and "
+"Worldwide Commercial Strategy.\n"
+"                            "
 msgstr ""
 "\n"
 "Se décrivant elle-même comme une stratège à l'esprit entrepreneurial, Claude "
@@ -3238,23 +3420,23 @@ msgstr ""
 "pour les clients mondiaux et la stratégie commerciale mondiale.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1283
+#: african_cities_lab/home/templates/home/events/civa/guests.html:367
 msgid "Global Coordinators"
 msgstr "Coordinateurs globaux"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1308
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1331
+#: african_cities_lab/home/templates/home/events/civa/guests.html:392
+#: african_cities_lab/home/templates/home/events/civa/guests.html:415
 msgid "Postdoctoral Researcher at Mohammed VI Polytechnic University"
 msgstr "Chercheur postdoctoral à l'Université Polytechnique Mohammed VI"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1344
+#: african_cities_lab/home/templates/home/events/civa/guests.html:428
 msgid ""
 "\n"
-"                          GIS consultant in the national agricultural census "
-"project / member of the team in charge of the implementation of the \n"
-"                          spatial database of the national agricultural "
+"                            GIS consultant in the national agricultural "
+"census project / member of the team in charge of the implementation of the \n"
+"                            spatial database of the national agricultural "
 "register - RNA 2016 at the Ministry of Agriculture. \n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "Consultant SIG dans le projet de recensement agricole national / membre de "
@@ -3263,70 +3445,49 @@ msgstr ""
 "ministère de l'agriculture.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1378
+#: african_cities_lab/home/templates/home/events/civa/guests.html:462
 msgid ""
 "\n"
-"              Researcher at Mohammed VI Polytechnic University\n"
-"              "
-msgstr ""
-"\n"
-"              Chercheur à l'Université polytechnique Mohammed VI\n"
-"              "
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1403
-msgid ""
-"\n"
-"                          Researcher at Mohammed VI Polytechnic University\n"
-"                          "
-msgstr ""
-"\n"
-"                          Chercheur à l'Université polytechnique Mohammed "
-"VI\n"
-"                          "
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1446
-msgid ""
-"\n"
-"              Doctor in Civil and Environmental Engineering (École "
+"                Doctor in Civil and Environmental Engineering (École "
 "polytechnique fédérale de Lausanne)\n"
-"              "
+"                "
 msgstr ""
 "\n"
 "              Docteur en génie civil et environnemental (École polytechnique "
 "fédérale de Lausanne)\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1471
+#: african_cities_lab/home/templates/home/events/civa/guests.html:487
 msgid ""
 "\n"
-"                          Doctor in Civil and Environmental Engineering "
+"                            Doctor in Civil and Environmental Engineering "
 "(École polytechnique fédérale de Lausanne)\n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "              Docteur en génie civil et environnemental (École polytechnique "
 "fédérale de Lausanne)\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1485
+#: african_cities_lab/home/templates/home/events/civa/guests.html:501
 msgid ""
 "\n"
-"                          I am a Doctor in Civil and Environmental "
+"                            I am a Doctor in Civil and Environmental "
 "Engineering from the École polytechnique fédérale de Lausanne (EPFL). \n"
-"                          My PhD thesis, undertaken in the CEAT team, "
+"                            My PhD thesis, undertaken in the CEAT team, "
 "focused the spatiotemporal patterns of urbanization and their impacts on "
 "the \n"
-"                          environment and human well being, with a focus on "
-"the urban heat island effect. From February to July 2016 I have been \n"
-"                          intern in the STEEP group of the INRIA Rhone-"
+"                            environment and human well being, with a focus "
+"on the urban heat island effect. From February to July 2016 I have been \n"
+"                            intern in the STEEP group of the INRIA Rhone-"
 "Alpes, working on a project to evaluate different aspects of Urban Sprawl "
 "through \n"
-"                          the analysis of spatial data obtained from crowd-"
+"                            the analysis of spatial data obtained from crowd-"
 "sourcing sites. This internship served as my Master's Thesis from the "
 "Artificial Intelligence \n"
-"                          and the Web specialization of the Master of "
+"                            and the Web specialization of the Master of "
 "Science in Informatics at Grenoble.\n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "Je suis docteur en génie civil et environnemental de l'École polytechnique "
@@ -3342,14 +3503,14 @@ msgstr ""
 "Artificielle et Web du Master of Science in Informatics de "
 "Grenoble.                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1495
+#: african_cities_lab/home/templates/home/events/civa/guests.html:511
 msgid ""
 "\n"
-"                          I was a Summer Student in 2015 at the European "
+"                            I was a Summer Student in 2015 at the European "
 "Organization for Nuclear Research (CERN), working on a project to visualize "
 "the data flows among the several experiment detectors and computing "
 "facilities in the center.\n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "J'ai été étudiant d'été en 2015 à l'Organisation européenne pour la "
@@ -3358,13 +3519,13 @@ msgstr ""
 "installations de calcul du centre.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1500
+#: african_cities_lab/home/templates/home/events/civa/guests.html:516
 msgid ""
 "\n"
-"                          My research career started in February 2014 in an "
-"internship in the Tyrex team, in the French institute of Research in "
+"                            My research career started in February 2014 in "
+"an internship in the Tyrex team, in the French institute of Research in "
 "Informatics INRIA, that focuses on web data, algorithms and reasoning.\n"
-"                          "
+"                            "
 msgstr ""
 "\n"
 "Ma carrière de chercheur a débuté en février 2014 lors d'un stage dans "
@@ -3372,25 +3533,25 @@ msgstr ""
 "INRIA, qui s'intéresse aux données, algorithmes et raisonnements du web.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1505
+#: african_cities_lab/home/templates/home/events/civa/guests.html:521
 msgid ""
 "\n"
-"                          In October 2014 I received my Bachelor's Degree in "
-"Industrial Engineering from the Universitat Politècnica de Catalunya.\n"
-"                          "
+"                            In October 2014 I received my Bachelor's Degree "
+"in Industrial Engineering from the Universitat Politècnica de Catalunya.\n"
+"                            "
 msgstr ""
 "\n"
 "En octobre 2014, j'ai obtenu ma licence en ingénierie industrielle à "
 "l'Universitat Politècnica de Catalunya.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1510
+#: african_cities_lab/home/templates/home/events/civa/guests.html:526
 msgid ""
 "\n"
-"                          My areas of interest are Computer Science, Applied "
-"Maths and Engineering, more precisely Machine Learning, Optimization and "
-"Science and Engineering Simulations. Always willing to learn.\n"
-"                          "
+"                            My areas of interest are Computer Science, "
+"Applied Maths and Engineering, more precisely Machine Learning, Optimization "
+"and Science and Engineering Simulations. Always willing to learn.\n"
+"                            "
 msgstr ""
 "\n"
 "Mes domaines d'intérêt sont l'informatique, les mathématiques appliquées et "
@@ -3399,76 +3560,11 @@ msgstr ""
 "apprendre.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:1538
-msgid ""
-"\n"
-"            If you wish to have more information,<br> \n"
-"            you can contact us directly on :<br>\n"
-"          "
-msgstr ""
-"\n"
-"            Si vous souhaitez obtenir plus d'informations,<br> \n"
-"            vous pouvez nous contacter directement sur :<br>\n"
-"          "
-
-#: african_cities_lab/home/templates/home/events/civa/contact.html:9
-msgid "Venue & Contact | The International Conference of African Cities"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:9
-msgid "Regisyration | The International Conference of African Cities"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:122
-#: african_cities_lab/home/templates/home/webinar_form.html:91
-msgid "First name"
-msgstr "Nom"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:126
-#: african_cities_lab/home/templates/home/webinar_form.html:85
-msgid "Last name"
-msgstr "Prénoms"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:131
-#: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:17
-#: african_cities_lab/home/templates/home/webinar_form.html:98
-msgid "Email Address"
-msgstr "Entrer votre adresse email"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:135
-msgid "Institution"
-msgstr "Institution"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:139
-#: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:34
-#: african_cities_lab/home/templates/home/webinar_form.html:113
-msgid "Function"
-msgstr "Fonction"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:143
-#: african_cities_lab/home/templates/home/webinar_form.html:109
-msgid "Title"
-msgstr "Titre"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:147
-#: african_cities_lab/home/templates/home/webinar_form.html:117
-msgid "Country"
-msgstr "Pays"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:151
-#: african_cities_lab/home/templates/home/webinar_form.html:129
-msgid "LinkedIn account"
-msgstr "Compte LinkedIn"
-
-#: african_cities_lab/home/templates/home/events/civa/form.html:155
-msgid "Submit"
-msgstr "Envoyer"
-
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:9
 msgid "Speakers | The International Conference of African Cities"
 msgstr "La Conférence Internationale des Villes Africaines (CIVA)"
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:115
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:127
 msgid ""
 "\n"
 "            These experts will inspire <br>\n"
@@ -3480,11 +3576,15 @@ msgstr ""
 "            pour créer les villes africaines de demain.\n"
 "        "
 
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:345
+msgid "More to be annonced"
+msgstr "Plus d'informations à venir"
+
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:9
 msgid "Sponsors | The International Conference of African Cities"
 msgstr "La Conférence Internationale des Villes Africaines (CIVA)"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:114
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:126
 msgid ""
 "\n"
 "                Big thanks to our sponsors <br>\n"
@@ -3494,29 +3594,29 @@ msgstr ""
 "                Un grand merci à nos partenaires <br>\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:126
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:138
 msgid "State Secretariat for Economic Affairs"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:127
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:138
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:149
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:160
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:171
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:182
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:141
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:154
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:167
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:180
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:193
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:205
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:206
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:219
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:233
 msgid "Visit website"
-msgstr ""
+msgstr "Consulter le site"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:137
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:151
 #: african_cities_lab/home/templates/home/moocs.html:67
 #: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:191
 #: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:107
 msgid "École Polytechnique Fédérale de Lausanne"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:148
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:164
 #: african_cities_lab/home/templates/home/moocs.html:127
 #: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:107
 #: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:192
@@ -3527,7 +3627,7 @@ msgstr ""
 msgid "Sèmè City"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:159
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:177
 #: african_cities_lab/home/templates/home/moocs.html:98
 #: african_cities_lab/home/templates/home/moocs.html:287
 #: african_cities_lab/home/templates/home/moocs.html:355
@@ -3548,23 +3648,19 @@ msgstr ""
 msgid "UM6P"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:170
-#, fuzzy
-#| msgid "University of Cape Town"
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:190
 msgid "University of Carthage"
-msgstr "Université de Cape Town"
+msgstr "Université de Carthage"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:181
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:203
 msgid "Kwame Nkrumah University of Science and Technology"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:192
-#, fuzzy
-#| msgid "University of Cape Town"
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:216
 msgid "University of Rwanda"
-msgstr "Université de Cape Town"
+msgstr "Université de Rwanda"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:204
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:230
 #: african_cities_lab/home/templates/home/moocs.html:158
 #: african_cities_lab/home/templates/home/moocs.html:190
 #: african_cities_lab/home/templates/home/moocs.html:222
@@ -4021,14 +4117,6 @@ msgstr "Changement climatique"
 msgid "Urban Economic Development in the Context of Climate Change"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/moocs.html:320
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:107
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:191
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:255
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:191
-msgid "UN Habitat"
-msgstr ""
-
 #: african_cities_lab/home/templates/home/moocs.html:326
 #: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:69
 #: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:197
@@ -4093,13 +4181,6 @@ msgstr ""
 #: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:265
 msgid "Habitat résilient (Résilent Housing)"
 msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:451
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:255
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:107
-#, fuzzy
-msgid "Ain Shams University"
-msgstr "Université Ain Shams"
 
 #: african_cities_lab/home/templates/home/moocs.html:462
 #: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:266

@@ -82,6 +82,21 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/events/civa/form.html"),
         name="civa-registration",
     ),
+    path(
+        "the-international-conference-of-african-cities-2023-special-guests/",
+        TemplateView.as_view(template_name="home/events/civa/guests.html"),
+        name="civa-guests",
+    ),
+    path(
+        "the-international-conference-of-african-cities-2023-commitee/",
+        TemplateView.as_view(template_name="home/events/civa/commitee.html"),
+        name="civa-commitee",
+    ),
+    path(
+        "the-international-conference-of-african-cities-2023-call-for-papers/",
+        TemplateView.as_view(template_name="home/events/civa/call-for-paper.html"),
+        name="civa-papers",
+    ),
     # Moocs url
     path(
         "moocs/introduction-to-sanitazation-economy-systems-markets/",

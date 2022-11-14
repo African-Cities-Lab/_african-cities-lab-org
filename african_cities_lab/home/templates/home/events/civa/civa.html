@@ -48,10 +48,11 @@
     }
     .partners-wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(129px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(105px, 200px));
       gap: 30px 40px;
       padding: 2rem;
       place-items: center;
+      justify-content: center;
     }
     .swiper, .swiper-wrapper, .swipper-slide {
       z-index: 0;
@@ -60,11 +61,28 @@
       column-count: 2; 
       column-gap: 3.5em;
     }
-    .focus-areas__row {
+    .civa-date__row {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 24px;
       margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .civa-date__row .item {
+      border: 1px solid #ececec;
+      border-radius: 4px;
+    }
+    .civa-date__row .item .top {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+    .civa-date__row .item > p{
+      padding: 1rem;
+      background: #BE3712;
+      color: #FFF;
+      width: 100%;
+      font-size: 18px;
     }
     .focus-areas__container {
       margin-top: 2rem;
@@ -73,10 +91,9 @@
       height: 10.5rem;
       margin-bottom: 1.5rem;
       border: 1px solid #ececec;
+      background: rgba(255,115,0, .1);
+      border-radius: 4px;
       padding: 1rem;
-    }
-    .focus-areas__row.first .focus-areas__item {
-      background: rgba(255,115,0,.2);
     }
     .swiper-button-next, .swiper-button-prev {
       color: #fff;
@@ -89,6 +106,10 @@
     .swiper-button-next:after, 
     .swiper-button-prev:after {
       font-size: 18px;
+    }
+    .swiper-button-next.swiper-button-disabled, 
+    .swiper-button-prev.swiper-button-disabled {
+      display: none;
     }
   </style>
 {% endblock css %}
@@ -115,26 +136,38 @@
                           <span class="visuallyhidden">secondary menu</span>
                         </label>
                         <ul class="list-inline">
-                            <li class="list-inline-item">
-                              {% url 'civa-agenda' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-speakers' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-sponsors' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
-                            </li>
-                            <li class="list-inline-item">
+                          <li class="list-inline-item">
+                            {% url 'civa-agenda' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-speakers' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-sponsors' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-guests' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-commitee' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Organization Committee" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-papers' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                          </li>
+                          <li class="list-inline-item">
                               {% url 'civa-registration' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                            </li>
-                            <li class="list-inline-item">
+                          </li>
+                          <li class="list-inline-item">
                               {% url 'civa-informations' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                            </li>
+                          </li>
                         </ul>
                     </nav>
                 </div>
@@ -164,12 +197,37 @@
 <section class="py-5">
   <div class="container-xl py-md-5">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-5">
         <h3 class="section-title">{% translate "CIVA 2023" %}</h3>
   
         <p class="font-size-24 py-4 text_primary ">
           {% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}
         </p>
+      </div>
+      <div class="col-12 col-lg-5 offset-lg-1">
+        <div class="civa-date__row">
+          <div class="item">
+            <div class="top">
+                <div class="h1">21</div>
+                <p class="font-size-18">{% translate "March" %}</p>
+            </div>
+            <p class="mb-0">{% translate "9am-6pm" %}</p>
+          </div>
+          <div class="item">
+            <div class="top">
+                <div class="h1">22</div>
+                <p class="font-size-18">{% translate "March" %}</p>
+            </div>
+            <p class="mb-0">{% translate "9am-6pm" %}</p>
+          </div>
+          <div class="item">
+            <div class="top">
+                <div class="h1">23</div>
+                <p class="font-size-18">{% translate "March" %}</p>
+            </div>
+            <p class="mb-0">{% translate "9am-6pm" %}</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -334,7 +392,7 @@
   <div class="container-xl py-md-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-8 text-center">
-        <h3 class="section-title">
+        <h3 class="section-title mb-3">
           {% blocktranslate %}
             Topics
           {% endblocktranslate %}
@@ -343,234 +401,219 @@
     </div>
 
     <div class="focus-areas__container">
-      <div class="focus-areas__row first">
-        <div class="focus-areas__item">
-          <p class="h4 font-weight-500">
-            {% translate "Digitalization of cities and urban planning" %}
-          </p>
-        </div>
+      <div>
+        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Digitalization of cities and urban planning" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">01</div>
-            <p class="h4 font-weight-500">{% translate "Digital water and energy management" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital water and energy management" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">02</div>
-            <p class="h4 font-weight-500">{% translate "Smart waste management and sanitation" %}</p>
+            <p class="h5 font-weight-400">{% translate "Smart waste management and sanitation" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">03</div>
-            <p class="h4 font-weight-500">{% translate "Digital management of education and health" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital management of education and health" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">04</div>
-            <p class="h4 font-weight-500">{% translate "Digital mobility and transport management" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital mobility and transport management" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">05</div>
-            <p class="h4 font-weight-500">{% translate "Land use and land cover management" %}</p>
+            <p class="h5 font-weight-400">{% translate "Land use and land cover management" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">06</div>
-            <p class="h4 font-weight-500">{% translate "Informality & precarious neighbourhoods" %}</p>
+            <p class="h5 font-weight-400">{% translate "Informality & precarious neighbourhoods" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">07</div>
-            <p class="h4 font-weight-500"> {% translate "Land tenure and cadastral management" %}</p>
+            <p class="h5 font-weight-400"> {% translate "Land tenure and cadastral management" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">08</div>
-            <p class="h4 font-weight-500">{% translate "Quality of Life and Social Layer" %}</p>
+            <p class="h5 font-weight-400">{% translate "Quality of Life and Social Layer" %}</p>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
 
-      <div class="focus-areas__row first">
-        <div class="focus-areas__item">
-          <p class="h4 font-weight-500">
-            {% translate "Digital and smart african cities" %}
-          </p>
-        </div>
+      <div>
+        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Digital and smart african cities" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">01</div>
-            <p class="h4 font-weight-500">{% translate "Digital and smart cities strategies in Africa" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital and smart cities strategies in Africa" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">02</div>
-            <p class="h4 font-weight-500">{% translate "Digital and Smart african city stakeholders" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital and Smart african city stakeholders" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">03</div>
-            <p class="h4 font-weight-500">{% translate "Digital management of education and health" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital management of education and health" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">04</div>
-            <p class="h4 font-weight-500">{% translate "Digital and Smart city infrastructure" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital and Smart city infrastructure" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">05</div>
-            <p class="h4 font-weight-500">{% translate "IoT for digital and smart cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "IoT for digital and smart cities" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">06</div>
-            <p class="h4 font-weight-500">{% translate "Robotics, blockchain and crytomoney" %}</p>
+            <p class="h5 font-weight-400">{% translate "Robotics, blockchain and crytomoney" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">07</div>
-            <p class="h4 font-weight-500"> {% translate "Artificial intelligence and application integration" %}</p>
+            <p class="h5 font-weight-400"> {% translate "Artificial intelligence and application integration" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">08</div>
-            <p class="h4 font-weight-500">{% translate "Cybersecurity & IS governance for smart cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Cybersecurity & IS governance for smart cities" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">09</div>
-            <p class="h4 font-weight-500">{% translate "Advanced technologies for African smart cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Advanced technologies for African smart cities" %}</p>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
 
-      <div class="focus-areas__row first">
-        <div class="focus-areas__item">
-          <p class="h4 font-weight-500">
-            {% translate "Smart geo-information systems (Smart GIS)" %}
-          </p>
-        </div>
+      <div>
+        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Smart geo-information systems (Smart GIS)" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">01</div>
-            <p class="h4 font-weight-500">{% translate "GIS and remote sensing" %}</p>
+            <p class="h5 font-weight-400">{% translate "GIS and remote sensing" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">02</div>
-            <p class="h4 font-weight-500">{% translate "Citizen sensing and Citizen engagement" %}</p>
+            <p class="h5 font-weight-400">{% translate "Citizen sensing and Citizen engagement" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">03</div>
-            <p class="h4 font-weight-500">{% translate "Geo AI and applications" %}</p>
+            <p class="h5 font-weight-400">{% translate "Geo AI and applications" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">04</div>
-            <p class="h4 font-weight-500">{% translate "Interactive visualization and 3D modeling" %}</p>
+            <p class="h5 font-weight-400">{% translate "Interactive visualization and 3D modeling" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">05</div>
-            <p class="h4 font-weight-500">{% translate "Geo Artificial intelligence (Geo AI)" %}</p>
+            <p class="h5 font-weight-400">{% translate "Geo Artificial intelligence (Geo AI)" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">06</div>
-            <p class="h4 font-weight-500">{% translate "GIS application (GIS API)" %}</p>
+            <p class="h5 font-weight-400">{% translate "GIS application (GIS API)" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">07</div>
-            <p class="h4 font-weight-500">{% translate "Collective sensing & spatial big urban data" %}</p>
+            <p class="h5 font-weight-400">{% translate "Collective sensing & spatial big urban data" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">08</div>
-            <p class="h4 font-weight-500">{% translate "Smart geo-addressing and participatory addressing" %}</p>
+            <p class="h5 font-weight-400">{% translate "Smart geo-addressing and participatory addressing" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">09</div>
-            <p class="h4 font-weight-500">{% translate "SIG and geolocalisation" %}</p>
+            <p class="h5 font-weight-400">{% translate "SIG and geolocalisation" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">10</div>
-            <p class="h4 font-weight-500">{% translate "Digital twins & twin cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital twins & twin cities" %}</p>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
 
-      <div class="focus-areas__row first">
-        <div class="focus-areas__item">
-          <p class="h4 font-weight-500">
-            {% translate "Transitions digitales and smart Gouvernance" %}
-          </p>
-        </div>
+      <div>
+        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Transitions digitales and smart Gouvernance" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">01</div>
-            <p class="h4 font-weight-500">{% translate "Citizens and Collaborative Governance" %}</p>
+            <p class="h5 font-weight-400">{% translate "Citizens and Collaborative Governance" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">02</div>
-            <p class="h4 font-weight-500">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</p>
+            <p class="h5 font-weight-400">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">03</div>
-            <p class="h4 font-weight-500">{% translate "Data Governance for smart cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Data Governance for smart cities" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">04</div>
-            <p class="h4 font-weight-500">{% translate "Digitalisation and internet 5.0" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digitalisation and internet 5.0" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">05</div>
-            <p class="h4 font-weight-500">{% translate "Digital tools for smart urban development" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital tools for smart urban development" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">06</div>
-            <p class="h4 font-weight-500">{% translate "Socio-cultural transformations and social inclusion" %}</p>
+            <p class="h5 font-weight-400">{% translate "Socio-cultural transformations and social inclusion" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">07</div>
-            <p class="h4 font-weight-500"> {% translate "Crowdsourcing and citizen participation" %}</p>
+            <p class="h5 font-weight-400"> {% translate "Crowdsourcing and citizen participation" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">08</div>
-            <p class="h4 font-weight-500">{% translate "Digital governance and digital citizenship" %}</p>
+            <p class="h5 font-weight-400">{% translate "Digital governance and digital citizenship" %}</p>
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
 
-      <div class="focus-areas__row first">
-        <div class="focus-areas__item">
-          <p class="h4 font-weight-500">
-            {% translate "African digital cities challenges" %}
-          </p>
-        </div>
+      <div>
+        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "African digital cities challenges" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">01</div>
-            <p class="h4 font-weight-500">{% translate "Resilience of African digital cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Resilience of African digital cities" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">02</div>
-            <p class="h4 font-weight-500">{% translate "Waste management and sanitation" %}</p>
+            <p class="h5 font-weight-400">{% translate "Waste management and sanitation" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">03</div>
-            <p class="h4 font-weight-500">{% translate "Renewable energy and use" %}</p>
+            <p class="h5 font-weight-400">{% translate "Renewable energy and use" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">04</div>
-            <p class="h4 font-weight-500">{% translate "Energy and environmental efficiency" %}</p>
+            <p class="h5 font-weight-400">{% translate "Energy and environmental efficiency" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">05</div>
-            <p class="h4 font-weight-500">{% translate "Sustainable development and adaptation of smart cities" %}</p>
+            <p class="h5 font-weight-400">{% translate "Sustainable development and adaptation of smart cities" %}</p>
           </div>
           <div class="swiper-slide focus-areas__item">
             <div class="mb-3">06</div>
-            <p class="h4 font-weight-500">{% translate "Urban pollution et heat monitoring" %}</p>
+            <p class="h5 font-weight-400">{% translate "Urban pollution et heat monitoring" %}</p>
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -752,773 +795,29 @@
 {% endcomment %}
 
 <section class="py-5">
-  <div class="container">
+  <div class="container pt-5">
     <div class="row justify-content-center py-3">
       <div class="col-12 col-md-8">
         <h3 class="section-title text-center">
-          {% translate "High Patronage" %}
+          {% translate "Organizations" %}
         </h3>
       </div>
     </div>
     <div class="partners-wrapper"> 
       <div class="partners-item">
-        <a href="https://seco.admin.ch/seco/en/home.html" class="d-block">
-          <img src="{% static "images/assets/partners/seco.png" %}">
+        <a href="{% url 'about' %}" class="d-block">
+          <img src="{% static "images/assets/logo.png" %}">
         </a> 
       </div>                                        
       <div class="partners-item">
         <a href="https://epfl.ch" class="d-block">
-          <img src="{% static "images/assets/partners/epfl.png" %}">
+          <img src="{% static "images/assets/partners/cus.png" %}">
         </a> 
       </div>
       <div class="partners-item">
         <a href="https://semecity.bj/en" class="d-block"> 
           <img src="{% static "images/assets/partners/semecity.png" %}">
         </a> 
-      </div>
-      <div class="partners-item">
-        <a href="https://um6p.ma" class="d-block">
-          <img src="{% static "images/assets/partners/um6p.png" %}">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="event-speakers">
-  <div class="container-xl position-relative py-5">
-
-    <h3 class="section-title text-center mb-3">
-      {% blocktranslate %}
-          Meet our <br> keynote speakers
-      {% endblocktranslate %}
-    </h3>
-
-    <div class="row event-speakers__list justify-content-center py-5">
-    
-      <div class="col-lg-3 col-md-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
-                  <img class="speaker-avatar" src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Dr. Oualid Ali</h4>
-            <p class="speaker-designation">
-              {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="speaker_modal_5" tabindex="-1" aria-labelledby="speaker_modal_5" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}" alt="Dr. Oualid Ali"> 
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Dr. Oualid Ali</h2>
-                          
-                        <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
-                          
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
-                        </ul> 
-              
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          He's a futurist, technologist, future cities expert, and considered as one of the international
-                          well-recognized experts in the fields of Future foresight, Scenarios planning, Trends watching,
-                          Emerging technologies & innovations, Industrial Revolution 4.0, Future cities (Smart, Sustainable
-                          and innovative Cities), Education 4.0, Artificial Intelligence (AI), etc.
-                        {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
-                  <img class="speaker-avatar" src="{% static 'images/assets/event/Nisrine-Cherata.png' %}">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"></li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Dr Nesrine Chehata</h4>
-            <p class="speaker-designation">
-              {% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-5">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/event/Nisrine-Cherata.png' %}" alt="Dr Nesrine Chehata"> 
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Dr Nesrine Chehata</h2>
-                          
-                        <p class="my-2">{% translate "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation" %}</p>
-                          
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"></li>
-                        </ul> 
-              
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          Is a lecturer at Bordeaux INP since 2006 and specializes in geomatics and AI for Earth observation.
-                          She defended her thesis in 2005 with CNES (Centre National des Etudes Spatiales) and IGN
-                          (Institut Géographique National) on 3D modeling of buildings from satellite data THR.
-                          She is president and founding member of the association AGEOS - African Association for Geospatial
-                          Development since November 2016. She organizes many seminars of awareness and technology watch in
-                          geospatial in Tunisia and open to the African scale. She advocates for opengeodata in Tunisia and
-                          the animation of the community of reusers via the organization of Tunisia Opengeodatahack.
-                          She coordinates several projects to support ministries and local authorities in Tunisia for
-                          the implementation of their GIS, with the inclusion of citizens via openstreetmap.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-3 col-md-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
-                  <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Mr Willy Franck SOB</h4>
-            <p class="speaker-designation">
-              {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-5">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-md-7">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Mr Willy Franck SOB</h2>
-                          
-                        <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
-                          
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul> 
-              
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
-                          GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
-                          digital ecosystem in order to achieve sustainable development through open innovation. 
-                          Recently deployed on a global scale, this open platform for technological innovations 
-                          aims to accelerate the appropriation of geospatial data by those actors who depend 
-                          heavily on it (startups, universities, municipalities, civil society). His expertise 
-                          is recognized by several international institutions where he regularly works as a consultant. 
-                          These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-
-    <div class="my-5 text-center">
-
-      <div class="__border-left"></div>
-
-      <span class="__btn-outline-more">{% translate 'More to be annonced' %}</span>
-
-      <div class="__border-right"></div>
-
-      <!--a class="btn btn__primary btn__small" href="{% url 'civa-speakers' %}">
-        {% translate "View all speakers" %}
-      </a-->
-    </div>
-  </div>
-</section>
-
-
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-      <div class="col-12 col-md-8">
-        <h3 class="section-title text-center">
-          {% translate "Special guests" %}
-        </h3>
-      </div>
-    </div>
-    <div class="row event-speakers__list py-3">
-
-      <div class="mt-5 font-size-18 text-center">{% translate 'To be announced soon' %}</div>
-
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center py-3">
-      <div class="col-12 col-md-8">
-        <h3 class="section-title text-center">
-          {% translate "CIVA's chairs & co-chairs" %}
-        </h3>
-      </div>
-    </div>
-    <div class="row event-speakers__list justify-content-center py-3">
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#chairs_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_1">
-                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Mr. Jérôme Chenal</h4>
-            <p class="speaker-designation">
-              {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="chairs_modal_1" tabindex="-1" aria-labelledby="chairs_modal_1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">``
-                        <h2>Mr. Jérôme Chenal</h2>
-
-                        <p class="my-2">
-                          {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
-                          
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          Jérôme Chenal studied architecture at the École Polytechnique Fédérale de Lausanne, where he obtained a degree in architecture in 1997. He defended a doctoral thesis on the urban planning challenges of African cities.
-                          He proposes a pragmatic vision of African cities, suggesting to leave the models conceived in international conferences to invent cities from their own realities.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#chairs_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_2">
-                  <img class="speaker-avatar" src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Mr Khalid Badour</h4>
-            <p class="speaker-designation">
-              {% blocktranslate %}
-              Director of the President's Cabinet, Mohammed VI Polytechnic University
-              {% endblocktranslate %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="chairs_modal_2" tabindex="-1" aria-labelledby="chairs_modal_2" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Mr Khalid Badour</h2>
-
-                        <p class="my-2">
-                          {% blocktranslate %}
-                          Director of the President's Cabinet, Mohammed VI Polytechnic University
-                          {% endblocktranslate %}
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          Executive Director who has held for more than 20 years positions of responsibility in large multinational companies (FMCG, Pharma and Finance) 
-                          with regional functions, managing multidisciplinary teams and strategic and operational initiatives in Morocco and Africa.
-                          Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and communication.
-                          {% endblocktranslate %}
-                        </p>
-                        <p>
-                          {% blocktranslate %}
-                          Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and 
-                          communication.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#chairs_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_3">
-                  <img class="speaker-avatar" src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Claude Borna</h4>
-            <p class="speaker-designation">
-              {% blocktranslate %}
-              Managing Director and Chief Innovation Officer at Sèmè City
-              {% endblocktranslate %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="chairs_modal_3" tabindex="-1" aria-labelledby="chairs_modal_3" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Claude Borna</h2>
-
-                        <p class="my-2">
-                          {% blocktranslate %}
-                          Managing Director and Chief Innovation Officer at Sèmè City
-                          {% endblocktranslate %}
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          A self-described entrepreneurial-minded strategist, Claude is passionate about creating and leading disruptive businesses. 
-                          With an MBA from UCLA and a bachelor's from McGill University, she started as a senior consultant with Deloitte in London, 
-                          then joined Amazon to drive highly strategic categories, and eventually moved to Sony Pictures where she was appointed Senior 
-                          Vice President for Global Customers and Worldwide Commercial Strategy.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center py-3">
-      <div class="col-12 col-md-8">
-        <h3 class="section-title text-center">
-          {% translate "Global Coordinators" %}
-        </h3>
-      </div>
-    </div>
-    <div class="row event-speakers__list justify-content-center py-3">
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#coordinators_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#coordinators_modal_1">
-                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Dr. Rida AZMI</h4>
-            <p class="speaker-designation">
-              {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="coordinators_modal_1" tabindex="-1" aria-labelledby="coordinators_modal_1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">``
-                        <h2>Dr. Rida AZMI</h2>
-
-                        <p class="my-2">
-                          {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
-                          
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          GIS consultant in the national agricultural census project / member of the team in charge of the implementation of the 
-                          spatial database of the national agricultural register - RNA 2016 at the Ministry of Agriculture. 
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#chairs_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_4">
-                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Cedric-TEKOUABOU.jpeg' %}" alt="Cédric Stéphane TEKOUABOU KOUMETIO">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/c%C3%A9dric-st%C3%A9phane-tekouabou-koumetio-a0364a119/">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Dr. Stéphane TEKOUABOU KOUMETIO</h4>
-            <p class="speaker-designation">
-              {% blocktranslate %}
-              Researcher at Mohammed VI Polytechnic University
-              {% endblocktranslate %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="chairs_modal_4" tabindex="-1" aria-labelledby="chairs_modal_4" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/civa/Cedric-TEKOUABOU.jpeg' %}" alt="Cédric Stéphane TEKOUABOU KOUMETIO">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Dr. Stéphane TEKOUABOU KOUMETIO</h2>
-
-                        <p class="my-2">
-                          {% blocktranslate %}
-                          Researcher at Mohammed VI Polytechnic University
-                          {% endblocktranslate %}
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/c%C3%A9dric-st%C3%A9phane-tekouabou-koumetio-a0364a119/">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-        <div class="card border-0 bg-transparent">
-          <div class="card-header p-0">
-              <a href="#chairs_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_5">
-                  <img class="speaker-avatar" src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
-
-                  <div class="speaker-hover-content">
-                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                    <ul class="speakers-social-lists list-inline p-0 mb-0">
-                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
-                        <i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-              </a>
-          </div>
-          <div class="card-body border-0">
-            <h4 class="speaker-title">Dr. Martí Bosch</h4>
-            <p class="speaker-designation">
-              {% blocktranslate %}
-              Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
-              {% endblocktranslate %}
-            </p>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="chairs_modal_5" tabindex="-1" aria-labelledby="chairs_modal_5" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header border-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body pb-5">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-7">
-                      <div class="mdl-speaker-avatar">
-                        <img src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
-                      </div>
-                    </div>
-                    <div class="col-lg-8">
-                      <div class="mdl-speaker-details p-3">
-                        <h2>Dr. Martí Bosch</h2>
-
-                        <p class="my-2">
-                          {% blocktranslate %}
-                          Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
-                          {% endblocktranslate %}
-                        </p>
-
-                        <ul class="mdl-speaker-social-list list-inline m-0">
-                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
-                            <i class="fab fa-linkedin-in"></i></a>
-                          </li>
-                        </ul>
-
-                        <span class="xs-hr-line"></span>
-
-                        <p>
-                          {% blocktranslate %}
-                          I am a Doctor in Civil and Environmental Engineering from the École polytechnique fédérale de Lausanne (EPFL). 
-                          My PhD thesis, undertaken in the CEAT team, focused the spatiotemporal patterns of urbanization and their impacts on the 
-                          environment and human well being, with a focus on the urban heat island effect. From February to July 2016 I have been 
-                          intern in the STEEP group of the INRIA Rhone-Alpes, working on a project to evaluate different aspects of Urban Sprawl through 
-                          the analysis of spatial data obtained from crowd-sourcing sites. This internship served as my Master's Thesis from the Artificial Intelligence 
-                          and the Web specialization of the Master of Science in Informatics at Grenoble.
-                          {% endblocktranslate %}
-                        </p>
-                        <p>
-                          {% blocktranslate %}
-                          I was a Summer Student in 2015 at the European Organization for Nuclear Research (CERN), working on a project to visualize the data flows among the several experiment detectors and computing facilities in the center.
-                          {% endblocktranslate %}
-                        </p>
-                        <p>
-                          {% blocktranslate %}
-                          My research career started in February 2014 in an internship in the Tyrex team, in the French institute of Research in Informatics INRIA, that focuses on web data, algorithms and reasoning.
-                          {% endblocktranslate %}
-                        </p>
-                        <p>
-                          {% blocktranslate %}
-                          In October 2014 I received my Bachelor's Degree in Industrial Engineering from the Universitat Politècnica de Catalunya.
-                          {% endblocktranslate %}
-                        </p>
-                        <p>
-                          {% blocktranslate %}
-                          My areas of interest are Computer Science, Applied Maths and Engineering, more precisely Machine Learning, Optimization and Science and Engineering Simulations. Always willing to learn.
-                          {% endblocktranslate %}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

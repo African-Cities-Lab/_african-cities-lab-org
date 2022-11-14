@@ -64,28 +64,40 @@
                         </a>
                         <span class="visuallyhidden">secondary menu</span>
                       </label>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                              {% url 'civa-agenda' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-speakers' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-sponsors' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-registration' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-informations' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                            </li>
-                        </ul>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          {% url 'civa-agenda' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'civa-speakers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'civa-sponsors' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'civa-guests' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'civa-commitee' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Organization Committee" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'civa-papers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            {% url 'civa-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            {% url 'civa-informations' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
+                        </li>
+                      </ul>
                     </nav>
                 </div>
             </div>
@@ -94,7 +106,7 @@
     </div>
 </div>
 
-<section class="page-banner__area bg_primary">
+<section class="page-banner__area bg_primary mt-5">
     <div class="row justify-content-between align-item-center">
         <div class="page-banner__left align-self-center">
             <h1 class="page-hero__title text-white">{% translate "Agenda" %}</h1>

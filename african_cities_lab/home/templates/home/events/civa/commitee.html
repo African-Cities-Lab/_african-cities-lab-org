@@ -1,0 +1,553 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Organization Committee | The International Conference of African Cities" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="robots" content="noindex,nofollow">
+{% endblock %}
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab"/>
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .shadow-sm {
+        box-shadow: unset !important;
+    }
+    .civa-form__section {
+      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
+    }
+    .page-banner__right {
+        background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+    }
+    .tpc-item {
+        height: 10.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ececec;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+    .tpc-item .flag >img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+  </style>
+{% endblock css %}
+
+{% block javascript %}
+  {{ block.super }}
+  <script defer src="{% static 'js/subnavigation.js' %}"></script>
+{% endblock javascript %}
+
+{% block content %}
+
+<div class="subnavigation">
+    <div class="hz-scroll-container">
+        <div class="container-fluid hz-scroll-content">
+            <div class="row no-gutters">
+                <div class="overflow-wrap col-10 col-xl-11">
+                    <nav aria-labelledby="nav2">
+                        <label id="nav2">
+                            {% url 'the-international-conference-of-african-cities-2023' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">
+                            {% translate "CIVA 2023" %}
+                            </a>
+                            <span class="visuallyhidden">secondary menu</span>
+                        </label>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                              {% url 'civa-agenda' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-speakers' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-sponsors' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-guests' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-commitee' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Organization Committee" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                              {% url 'civa-papers' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                                {% url 'civa-registration' as url %}
+                                <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
+                            </li>
+                            <li class="list-inline-item">
+                                {% url 'civa-informations' as url %}
+                                <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
+                            </li>
+                          </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
+    </div>
+</div>
+
+<section class="page-banner__area bg_primary mt-5">
+    <div class="row justify-content-between align-item-center">
+        <div class="page-banner__left align-self-center">
+            <h1 class="page-hero__title text-white">{% translate "Organization Committee" %}</h1>
+        </div>
+        <div class="page-banner__right">
+            <div class="d-none d-lg-block banner-angle__left">
+                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container-xl pt-5">
+      <div class="row justify-content-center py-3">
+        <div class="col-12 col-md-8">
+          <h3 class="section-title text-center">
+            {% translate "CIVA co-chairs" %}
+          </h3>
+        </div>
+      </div>
+      <div class="row event-speakers__list py-3">
+  
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#chairs_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_1">
+                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+  
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr. Jérôme Chenal</h4>
+              <p class="speaker-designation">
+                {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
+              </p>
+            </div>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="chairs_modal_1" tabindex="-1" aria-labelledby="chairs_modal_1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">``
+                          <h2>Mr. Jérôme Chenal</h2>
+  
+                          <p class="my-2">
+                            {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
+                            
+                          </p>
+  
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+  
+                          <span class="xs-hr-line"></span>
+  
+                          <p>
+                            {% blocktranslate %}
+                            Jérôme Chenal studied architecture at the École Polytechnique Fédérale de Lausanne, where he obtained a degree in architecture in 1997. He defended a doctoral thesis on the urban planning challenges of African cities.
+                            He proposes a pragmatic vision of African cities, suggesting to leave the models conceived in international conferences to invent cities from their own realities.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section class="py-5">
+    <div class="container-xl">
+        <div class="row justify-content-center py-3">
+            <div class="col-12 col-md-8">
+                <h3 class="section-title text-center">
+                    {% translate "TPC & publication chairs" %}
+                </h3>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguérir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Stéphane C. K. Tékouabou, {% translate "CUS, UM6P" %}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cape Town</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Edgar Pieterse, {% translate "African Centre for Cities" %}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/estonia.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Tartu</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Anastasija Nikiforova, {% translate "University of Tartu" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container-xl">
+        <div class="row justify-content-center py-3">
+            <div class="col-12 col-md-8">
+            <h3 class="section-title text-center">
+                {% translate "TPC" %}
+            </h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/suisse.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Lausanne</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Jérôme Chenal, {% translate "CEAT, EPFL" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguérir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Rida Azmi, {% translate "Center of Urban System CUS, UM6P" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/suisse.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Lausanne</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Marti Bosh, {% translate "CEAT, EPFL" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/usa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">New York</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Vivien Depardey, {% translate "World Bank" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/france.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Bordeaux</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Nesrine Cherata, {% translate "Bordeaux INP" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguérir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">El Bachir Diop, {% translate "Center of Urban System CUS, UM6P" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Tartu</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Anastasija Nikiforova, {% translate "University of Tartu" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/kenya.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Nairobi</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Leandry Jieutsa, {% translate "UN Habitat" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguérir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Stephane C. K. Tekouabou, {% translate "CUS, UM6P" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Casablanca</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Hamza Toulni, {% translate "EIGSI" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/suisse.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Lausanne</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Munyaka Baraka Jean-Claude, {% translate "CEAT, EPFL" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/benin.jpeg' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cotonou</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Claude Borna, {% translate "Sémé City" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguerir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Fouad Ayadi, {% translate "IDC, UM6P" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Meknes</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Elarbi Abdellaoui Alaoui, {% translate "ENS" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/maroc.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Benguerir</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Younouss Lahboub, {% translate "SADV" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/tunisia.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Carthage</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Hatem KAHLOUN, {% translate "ISTEUB, University of Carthage" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cape Town</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Rike Sitas, {% translate "African Centre for Cities" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cape Town</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Edgar Pieterse, {% translate "African Centre for Cities" %}</p>
+                  </div>
+            </div> 
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/benin.jpeg' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cotonou</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Thierry d'Almeida, {% translate "Sèmè city" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/senegal.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Dakar</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Sarah LECOURT, {% translate "Gret" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/senegal.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Dakar</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Virginie RACHMUHL, {% translate "Gret" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cape Town</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Dhesigen Naidoo, {% translate "Water Research Commission" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Cape Town</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Gareth Haysom, {% translate "African Centre for Cities" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/south-africa.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Johannesburg</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Kecia Rust, {% translate "Centre for Affordable Housing Finance in Africa" %}</p>
+                  </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="swiper-slide tpc-item">
+                    <div class="flag mb-3">
+                        <img src="{% static 'images/assets/civa/flags/egypt.png' %}">
+                        <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+                        <span class="font-size-16">Caire</span>
+                    </div>
+                    <p class="h5 font-size-18 font-weight-400">Mennatullah Hendawy, {% translate "Ain Shams University" %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="civa-form__section">
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-white text-center py-5">
+          <div class="h1 pt-lg-5">{% translate "Join the International Conference of African Cities (CIVA) - Digital Cities" %}</div>
+          <div class="mt-5 text-center">
+            <a href="#" class="btn btn__primary btn__big">
+                {% translate "Register to attend" %}
+            </a>
+          </div>
+          <p class="font-size-18 pt-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>info@africancitieslab.org</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock content %}
+  

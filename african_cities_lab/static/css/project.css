@@ -597,6 +597,9 @@ a:hover {
 .font-weight-500 {
 	font-weight: 500;
 }
+.font-weight-400 {
+	font-weight: 400;
+}
 .font-size-12 {
   font-size: 12px !important;
 }
@@ -1315,11 +1318,11 @@ a.novashare-button {
 }
 ul.events-listing-list {
   list-style-type: none!important;
-  padding: 0!important;
+  padding: 0 3rem !important;
 }
 ul.events-listing-list li.events-listing__item {
   position: relative;
-  padding: 40px 100px 40px 0;
+  padding: 40px 0 40px 0;
   overflow: hidden;
   border-bottom: 1px solid #e9e9e9;
 }
@@ -1737,6 +1740,16 @@ ul.event-meta {
 	color: #BE3712;
 	font-size: 22px;
 }
+.image-box {
+	display: flex;
+	border-radius: 5px;
+	border: none;
+	background: #ffffff;
+	position: relative;
+	-webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+	box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+	width: 100%;
+}
 .text-box {
   display: flex;
   border: none;
@@ -1746,13 +1759,23 @@ ul.event-meta {
   padding: 40px 45px 40px 40px;
   -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  width: 100%;
 }
-.text-box .card-header {
+.text-box .card-header{
 	background-color: #fff;
 	border-bottom: unset; 
 	padding: 0; 
 }
-.text-box .card-header > img {
+.image-box .card-header  {
+	min-height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+	border: none;
+}
+.text-box .card-header > img,
+.image-box .card-header > img {
 	max-width: 200px;
 }
 .text-box .count-number {
@@ -2098,6 +2121,9 @@ ul.event-meta {
 	.border-top-8px {
 		padding-bottom: 0 !important;
 	}
+	ul.events-listing-list {
+		padding: 0 !important;
+	}
 	li.events-listing__item .events-listing__logo {
 		margin: 0 auto 25px !important;
 		float: none;
@@ -2107,9 +2133,6 @@ ul.event-meta {
 	}
 	.events-listing__desc .event-title {
 		position: relative;
-	}
-	ul.events-listing-list li.events-listing__item {
-		padding-right: 0 !important;
 	}
 	.post-hero__container {
 		min-height: 150px;
