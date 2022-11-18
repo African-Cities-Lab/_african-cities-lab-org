@@ -75,16 +75,12 @@
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
                         </li>
                         <li class="list-inline-item">
-                          {% url 'civa-sponsors' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
-                        </li>
-                        <li class="list-inline-item">
                           {% url 'civa-guests' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
                         </li>
                         <li class="list-inline-item">
                           {% url 'civa-commitee' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Organization Committee" %}</a>
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
                         </li>
                         <li class="list-inline-item">
                           {% url 'civa-papers' as url %}

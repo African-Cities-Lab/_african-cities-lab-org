@@ -78,39 +78,35 @@
                             <span class="visuallyhidden">secondary menu</span>
                         </label>
                         <ul class="list-inline">
-                            <li class="list-inline-item">
-                              {% url 'civa-agenda' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-speakers' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-sponsors' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-sponsors' %}">{% translate "Sponsors" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-guests' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-commitee' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Organization Committee" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                              {% url 'civa-papers' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                                {% url 'civa-registration' as url %}
-                                <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                            </li>
-                            <li class="list-inline-item">
-                                {% url 'civa-informations' as url %}
-                                <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                            </li>
-                          </ul>
+                          <li class="list-inline-item">
+                            {% url 'civa-agenda' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-speakers' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-guests' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-commitee' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                            {% url 'civa-papers' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                              {% url 'civa-registration' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
+                          </li>
+                          <li class="list-inline-item">
+                              {% url 'civa-informations' as url %}
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
+                          </li>
+                        </ul>
                     </nav>
                 </div>
             </div>
@@ -216,7 +212,7 @@
     </div>
 </section>
   
-<section class="py-5">
+<section>
     <div class="container-xl">
         <div class="row justify-content-center py-3">
             <div class="col-12 col-md-8">
@@ -226,7 +222,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mt-3">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-5 col-lg-4 p-4">
                 <div class="tpc-item">
                     <div class="flag mb-3">
@@ -270,7 +266,7 @@
             </h3>
             </div>
         </div>
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-5 col-lg-4 p-4">
                 <div class="swiper-slide tpc-item">
                     <div class="flag mb-3">
@@ -526,28 +522,25 @@
 </section>
 
 <section class="civa-form__section">
-    <div class="container-xl">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-white text-center py-5">
-          <div class="h1 pt-lg-5">{% translate "Join the International Conference of African Cities (CIVA) - Digital Cities" %}</div>
-          <div class="mt-5 text-center">
-            <a href="#" class="btn btn__primary btn__big">
-                {% translate "Register to attend" %}
-            </a>
-          </div>
-          <p class="font-size-18 pt-5">
-            {% blocktranslate %}
-              If you wish to have more information,<br> 
-              you can contact us directly on :<br>
-            {% endblocktranslate %}
-            <a class="text-white" href="mailto:info@africancitieslab.org">
-              <strong>info@africancitieslab.org</strong>
-            </a>
-          </p>
+  <div class="container-xl">
+    <div class="row justify-content-center align-items-center justify-content-lg-between py-5">
+      <div class="col-lg-7 text-white ">
+        <p class="font-size-22 font-weight-500">
+          {% blocktranslate %}
+          Join us for two days of dynamic dialogues with leading scientists, policymakers, practitioners, 
+          influencers and advocates working on the scientific frontiers of human flourishing.
+          {% endblocktranslate %}
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-center">
+          <a href="#" class="btn btn__primary btn__big">
+              {% translate "Register to attend" %}
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
 {% endblock content %}
   

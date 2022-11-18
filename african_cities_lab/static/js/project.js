@@ -7,8 +7,8 @@
 
     // CHANGE TO STICKY NAV
     $(window).scroll(function() {
-        var startPx = $(window).scrollTop();
-        startPx >= 50 ? $("#main-nav").addClass("sticky-nav") :  $("#main-nav").removeClass("sticky-nav");
+      var startPx = $(window).scrollTop();
+      startPx >= 50 ? $("#main-nav").addClass("sticky-nav") :  $("#main-nav").removeClass("sticky-nav");
     });
 
     // HelloBar
