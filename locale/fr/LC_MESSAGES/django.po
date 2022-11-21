@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-18 12:42+0100\n"
+"POT-Creation-Date: 2022-11-21 10:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:119
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:796
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:786
 #: african_cities_lab/home/templates/home/events/civa/civa.html:369
 #: african_cities_lab/home/templates/home/home.html:34
 #: african_cities_lab/home/templates/home/moocs.html:32
@@ -772,7 +772,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:178
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:249
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:196
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:266
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:256
 msgid "Language:"
 msgstr "Langage :"
 
@@ -807,12 +807,11 @@ msgstr "Introduction"
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:214
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:224
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:234
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:244
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:266
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:276
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:286
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:296
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:306
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:320
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:310
 msgid "Speaker:"
 msgstr "Intervenant :"
 
@@ -889,8 +888,8 @@ msgstr "CEO of GeOsm & Consultant Banque Mondiale"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:255
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:233
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:295
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:250
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:312
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:240
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:302
 msgid "QUESTIONS & DISCUSSION"
 msgstr ""
 
@@ -898,8 +897,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:260
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:238
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:308
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:255
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:325
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:245
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:315
 msgid "Moderator:"
 msgstr "Modérateur :"
 
@@ -974,7 +973,7 @@ msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:342
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:332
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:74
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:75
 #: african_cities_lab/home/templates/home/events/civa/civa.html:190
@@ -1627,7 +1626,7 @@ msgstr ""
 "l'éducation de Winneba, au Ghana."
 
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:300
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:317
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:307
 msgid "Closing statement"
 msgstr "Mot de fin"
 
@@ -2389,23 +2388,29 @@ msgstr ""
 "Les technologies numériques au service de la résilience urbaine en Afrique"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:197
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:267
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:257
 msgid "English session"
 msgstr "Session en Anglais"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:210
-msgid "10.05 - 10.25 AM"
+#, fuzzy
+#| msgid "10.05 - 10.25 AM"
+msgid "10.05 - 10.25 PM"
 msgstr "10h05 - 10h30"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:211
-msgid "Initiative of the Youth of Climate in Morocco"
-msgstr "Initiative de la Jeunesse pour le Climat au Maroc"
+msgid "Cities for forest: the relation between cities and forests"
+msgstr "Villes et forêts : la relation entre les villes et les forêts"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:215
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:365
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:388
-msgid "Environmental Engineer & Climate activist"
-msgstr "Ingénieur en environnement et Activiste du Climat"
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:658
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:681
+msgid ""
+"Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal "
+"Danish Academy - Architecture, Design, Conservation"
+msgstr ""
+"Professeur assistant, Institut d'architecture, d'urbanisme et de paysage "
+"Académie royale danoise - Architecture, Design, Conservation"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:220
 msgid "10.25 - 11.45 AM"
@@ -2416,23 +2421,72 @@ msgid "Realizing Walkable and Bikeable Cities in Africa"
 msgstr "Rendre les villes praticables à pied et à vélo en Afrique"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:225
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:431
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:454
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:421
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:444
 msgid "Program Coordinator for Share the Road Program at UNEP"
 msgstr "Coordinateur du programme Share the Road au PNUE"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:230
-msgid "11.45 - 12.05 PM"
-msgstr "11h45 - 12h05"
+msgid "12.05 - 12.25 PM"
+msgstr "12h05 - 12h25"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:231
+msgid ""
+"SDG11 and resilient cities/ climate challenges in Africa with a focus on "
+"innovative and smart solutions"
+msgstr ""
+"ODD11 et les villes résilientes/les défis climatiques en Afrique en mettant "
+"l'accent sur les solutions innovantes et intelligentes."
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:235
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:575
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:598
+msgid ""
+"Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and "
+"country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat"
+msgstr ""
+"Point focal régional Afrique pour la résilience urbaine, l'action climatique "
+"et la RRC et responsable du programme pays Malawi, Rwanda, Océan Indien à "
+"ONU-Habitat."
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:253
+msgid "Environmental impact of cities"
+msgstr "Les impacts environnementaux des villes"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:262
+msgid "10.05 - 10.25 AM"
+msgstr "10h05 - 10h30"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:263
+msgid "Initiative of the Youth of Climate in Morocco"
+msgstr "Initiative de la Jeunesse pour le Climat au Maroc"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:267
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:355
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:378
+msgid "Environmental Engineer & Climate activist"
+msgstr "Ingénieur en environnement et Activiste du Climat"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:272
+msgid "3.25 - 3.45 PM"
+msgstr "15h25 - 15h45"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:273
+msgid "Nature will be an integral part of cities in the future"
+msgstr "La nature comme partie intégrante des villes à l'avenir"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:282
+msgid "3.45 - 4.05 PM"
+msgstr "15h45 - 16h05"
+
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:283
 msgid "Agriculture in African cities: drivers, effects and adaptations"
 msgstr ""
 "L'agriculture dans les villes africaines : facteurs, effets et adaptations"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:235
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:504
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:527
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:287
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:494
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:517
 msgid ""
 "Assistant Professor and Chair of Climate Change Adaptation and "
 "Sustainability Strategies in (IWRI)/UM6P and Director of (ACCA) Lab"
@@ -2441,80 +2495,19 @@ msgstr ""
 "climatique et de stratégies de durabilité à l'IIRW/UM6P et directeur du "
 "laboratoire AACC."
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:240
-msgid "12.05 - 12.25 PM"
-msgstr "12h05 - 12h25"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:241
-msgid ""
-"SDG11 and resilient cities/ climate challenges in Africa with a focus on "
-"innovative and smart solutions"
-msgstr ""
-"ODD11 et les villes résilientes/les défis climatiques en Afrique en mettant "
-"l'accent sur les solutions innovantes et intelligentes."
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:245
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:585
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:608
-msgid ""
-"Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and "
-"country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat"
-msgstr ""
-"Point focal régional Afrique pour la résilience urbaine, l'action climatique et la RRC et "
-"responsable du programme pays Malawi, Rwanda, Océan Indien à ONU-Habitat."
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:263
-msgid "Environmental impact of cities"
-msgstr "Les impacts environnementaux des villes"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:272
-msgid "3.05 - 3.25 PM"
-msgstr "15h05 - 15h25"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:273
-msgid "Cities for forest: the relation between cities and forests"
-msgstr "Villes et forêts : la relation entre les villes et les forêts"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:277
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:668
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:691
-msgid ""
-"Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal "
-"Danish Academy - Architecture, Design, Conservation"
-msgstr ""
-"Professeur assistant, Institut d'architecture, d'urbanisme et de paysage "
-"Académie royale danoise - Architecture, Design, Conservation"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:282
-msgid "3.25 - 3.45 PM"
-msgstr "15h25 - 15h45"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:283
-msgid "Nature will be an integral part of cities in the future"
-msgstr "La nature comme partie intégrante des villes à l'avenir"
-
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:292
-msgid "3.45 - 4.05 PM"
-msgstr "15h45 - 16h05"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:293
-msgid "Planning for Climate Change: Mitigation & adaptation"
-msgstr ""
-"Préparation au changement climatique : Mesures d'atténuation et d'adaptation"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:302
 msgid "4.05 - 4.25 PM"
 msgstr "16h05 - 16h25"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:303
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:293
 msgid "Challenges for urban Water security under climate change"
 msgstr ""
 "Les défis de la sécurité de l'eau en milieu urbain dans le contexte du "
 "changement climatique"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:307
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:735
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:758
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:297
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:725
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:748
 msgid ""
 "Visiting Adjunct Professor in the University of the Witwatersrand Graduate "
 "School of Governance"
@@ -2522,11 +2515,11 @@ msgstr ""
 "Professeur assistant invité à la Graduate School of Governance de "
 "l'Université de Witwatersrand."
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:332
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:322
 msgid "This agenda is the object of modification"
 msgstr "Ce programme est susceptible de modifications"
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:397
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:387
 msgid ""
 "\n"
 "                            Fatna Ikrame El Fanne student in 2ᵉ year Master "
@@ -2542,7 +2535,7 @@ msgstr ""
 " Cofondatrice de Youth for Climate Morocco. et activiste climatique.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:463
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:453
 msgid ""
 "\n"
 "                            She is a passionate urban/ transport Planner and "
@@ -2560,7 +2553,7 @@ msgstr ""
 "particulier des enfants. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:467
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:457
 msgid ""
 "\n"
 "                            Her inspiration is to advocate for socially "
@@ -2586,7 +2579,7 @@ msgstr ""
 "bidonvilles et l'assainissement de l'eau et l'hygiène (WASH).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:536
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:526
 msgid ""
 "\n"
 "                            Dr. Epule is currently an Assistant Professor of "
@@ -2602,7 +2595,7 @@ msgstr ""
 "l'Université Mohammed VI polytechnique  de Benguerir (UM6P) au Maroc.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:540
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:530
 msgid ""
 "\n"
 "                            He was previously an Associate Professor of "
@@ -2622,7 +2615,7 @@ msgstr ""
 "l'environnement.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:545
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:535
 msgid ""
 "\n"
 "                            His research is at the interface between "
@@ -2644,7 +2637,7 @@ msgstr ""
 "d'atténuation/adaptation au changement climatique.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:550
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:540
 msgid ""
 "\n"
 "                            He is also keen on the contributions of "
@@ -2670,7 +2663,7 @@ msgstr ""
 "terenceepuleepule.wixsite.com/epuleterenceepule</a>).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:617
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:607
 msgid ""
 "\n"
 "                            Fruzsina Straus has over 18 years of experience "
@@ -2684,17 +2677,17 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Fruzsina Straus a plus de 18 ans d'expérience "
-"au sein des Nations Unies, des ONG internationales et du secteur privé. Son "
-"expérience est multidisciplinaire, \n"
-"avec un accent sur la résilience urbaine, la gestion des risques "
-"de catastrophe, l'action climatique, le développement socio-économique, "
+"Fruzsina Straus a plus de 18 ans d'expérience au sein des Nations Unies, des "
+"ONG internationales et du secteur privé. Son expérience est "
+"multidisciplinaire, \n"
+"avec un accent sur la résilience urbaine, la gestion des risques de "
+"catastrophe, l'action climatique, le développement socio-économique, "
 "gouvernance publique, \n"
-"planification du développement national post-conflit "
-"et réforme institutionnelle.\n"
+"planification du développement national post-conflit et réforme "
+"institutionnelle.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:624
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:614
 msgid ""
 "\n"
 "                            Additionally, having initiated and implemented "
@@ -2710,19 +2703,20 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"En outre, ayant initié et mis en œuvre de "
-"multiples projets de coopération au développement à grande échelle \n"
-"impliquant un éventail de partenaires et de donateurs, elle possède une solide "
-"expérience professionnelle dans tous les aspects de la gestion des programmes. \n"
-"Fruzsina a rejoint ONU-Habitat en 2018, où elle dirige "
-"le portefeuille sur la résilience climatique urbaine et \n"
-"la RRC au sein du Bureau régional pour l'Afrique dans plus de 16 "
-"pays et gère les programmes nationaux \n"
-"à Madagascar, au Malawi, au Rwanda et dans les petits États insulaires "
-"en développement (PEID) africains.\n"
+"En outre, ayant initié et mis en œuvre de multiples projets de coopération "
+"au développement à grande échelle \n"
+"impliquant un éventail de partenaires et de donateurs, elle possède une "
+"solide expérience professionnelle dans tous les aspects de la gestion des "
+"programmes. \n"
+"Fruzsina a rejoint ONU-Habitat en 2018, où elle dirige le portefeuille sur "
+"la résilience climatique urbaine et \n"
+"la RRC au sein du Bureau régional pour l'Afrique dans plus de 16 pays et "
+"gère les programmes nationaux \n"
+"à Madagascar, au Malawi, au Rwanda et dans les petits États insulaires en "
+"développement (PEID) africains.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:633
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:623
 msgid ""
 "\n"
 "                            Prior to joining UN-Habitat, she spent five "
@@ -2734,15 +2728,15 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Avant de rejoindre ONU-Habitat, elle a passé cinq "
-"ans au Moyen-Orient avec la Commission régionale des Nations unies (ESCWA) et une \n"
-"décennie à New York à travailler au niveau mondial "
-"avec le PNUD et diverses ONG. \n"
-"Elle est titulaire d'un BA en sciences politiques et d'un MA en "
-"diplomatie et relations internationales.\n"
+"Avant de rejoindre ONU-Habitat, elle a passé cinq ans au Moyen-Orient avec "
+"la Commission régionale des Nations unies (ESCWA) et une \n"
+"décennie à New York à travailler au niveau mondial avec le PNUD et diverses "
+"ONG. \n"
+"Elle est titulaire d'un BA en sciences politiques et d'un MA en diplomatie "
+"et relations internationales.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:700
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:690
 msgid ""
 "\n"
 "                            Johan Mottelson is an award-winning architect "
@@ -2765,7 +2759,7 @@ msgstr ""
 "de subsistance dans la région.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:767
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:757
 msgid ""
 "\n"
 "                            Mike Muller, is a professional engineer and "
@@ -2787,7 +2781,7 @@ msgstr ""
 "et a travaillé pour le gouvernement du Mozambique (1979/88)\n"
 ".                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:774
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:764
 msgid ""
 "\n"
 "                            He has participated in global dialogues on "
@@ -3024,11 +3018,6 @@ msgid ""
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:140
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                    Environmental impact of cities\n"
-#| "                    "
 msgid ""
 "\n"
 "                  The direct link for paper submission is:\n"
@@ -3308,8 +3297,6 @@ msgid "Digital and Smart city infrastructure"
 msgstr "Infrastructures des villes numériques et intelligentes"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:506
-#, fuzzy
-#| msgid "IoT for digital and smart cities "
 msgid "IoT for digital and smart cities"
 msgstr "IoT pour les villes numériques et intelligentes"
 
@@ -3378,8 +3365,6 @@ msgid "Transitions digitales and smart Gouvernance"
 msgstr "Transitions digitales et smart Gouvernance"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:588
-#, fuzzy
-#| msgid "Citizens and Collaborative Governance "
 msgid "Citizens and Collaborative Governance"
 msgstr "Citoyens et gouvernance collaborative"
 
@@ -3392,14 +3377,10 @@ msgid "Data Governance for smart cities"
 msgstr "Gouvernance des données pour les villes intelligentes"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:600
-#, fuzzy
-#| msgid "Digitalisation and internet 5.0 "
 msgid "Digitalisation and internet 5.0"
 msgstr "Digitalisation et internet 5.0"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:604
-#, fuzzy
-#| msgid "Digital tools for smart urban development "
 msgid "Digital tools for smart urban development"
 msgstr "Des outils numériques pour un développement urbain intelligent"
 
@@ -3408,8 +3389,6 @@ msgid "Socio-cultural transformations and social inclusion"
 msgstr "Transformations socioculturelles et inclusion sociale"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:612
-#, fuzzy
-#| msgid "Crowdsourcing and citizen participation "
 msgid "Crowdsourcing and citizen participation"
 msgstr "Crowdsourcing et participation citoyenne"
 
@@ -3446,11 +3425,6 @@ msgid "Urban pollution et heat monitoring"
 msgstr "Surveillance de la pollution et de la température urbaines"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:666
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                    CIVA Special Events\n"
-#| "                    "
 msgid ""
 "\n"
 "                    CIVA 2023 side events\n"
@@ -3461,11 +3435,6 @@ msgstr ""
 "                    "
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:672
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                    Environmental impact of cities\n"
-#| "                    "
 msgid ""
 "\n"
 "                    This conference is virtual and presential and open to "
@@ -3473,22 +3442,18 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Les impacts environnementaux des villes\n"
+"                    Cette conférence, virtuelle et présentielle, est ouverte "
+"à tous.\n"
 "                    "
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:677
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "                    CIVA Special Events\n"
-#| "                    "
 msgid ""
 "\n"
 "                    It will include….\n"
 "                    "
 msgstr ""
 "\n"
-"                    Événements spéciaux de la CIVA\n"
+"                    Elle inclura....\n"
 "                    "
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:684
@@ -5067,3 +5032,4 @@ msgstr "Suivez-nous"
 #: african_cities_lab/templates/base.html:294
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
+
