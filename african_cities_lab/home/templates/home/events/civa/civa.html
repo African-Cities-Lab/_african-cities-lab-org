@@ -6,13 +6,28 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "The International Conference of African Cities" %} - African Cities Lab
+        {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
-{% block static_meta_tag %} 
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -46,12 +61,11 @@
     .partners-wrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       margin-top: 2.5rem;
     }
     .partners-item {
-      width: 25%;
-      height: 15rem;
+      width: 50%;
+      height: 12rem;
       border-left: 0.0625rem solid #E5E5E5;
       border-top: 0.0625rem solid #E5E5E5;
       border-bottom: 0.0625rem solid #E5E5E5;
@@ -66,10 +80,6 @@
     }
     .swiper, .swiper-wrapper, .swipper-slide {
       z-index: 0;
-    }
-    #column-2 {
-      column-count: 2; 
-      column-gap: 3.5em;
     }
     .civa-date__row {
       display: grid;
@@ -94,6 +104,9 @@
       width: 100%;
       font-size: 18px;
     }
+    .text-box {
+      min-height: 325px;
+    }
     .focus-areas__container {
       margin-top: 2rem;
     }
@@ -104,12 +117,19 @@
       border-radius: 4px;
       background: #fff;
       padding: 1rem;
-      box-shadow: 0px 8px 10px rgb(2 3 3 / 3%), 0px 3px 14px rgb(2 3 3 / 2%), 0px 5px 5px rgb(2 3 3 / 4%);
+    }
+    .focus-areas__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 24px;
+      margin-top: 1.5rem;
+    }
+    .focus-areas__row.first .focus-areas__item {
+      background: rgba(255,115,0,.2);
     }
     .swiper-button-next, .swiper-button-prev {
       height: 10.4rem;
       padding: 0.5rem;
-      background: rgba(190, 55, 18, .1);
       top: 12%;
     }
     .swiper-button-next, .swiper-rtl .swiper-button-prev {
@@ -156,6 +176,61 @@
   .accordion-button:not(.collapsed)::after {
     background-image: unset;
   }
+  .count-box {
+    max-width: 100%;
+    min-height: 140px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .count-box .count-box__order > h3 {
+    width: 50px;
+    height: 50px;
+    background: #BE3712;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;    
+    place-content: center;
+  }
+  .count-box .count-box__content {
+    margin-top: 1rem;
+  }
+  @media (max-width: 600px) {
+    .focus-areas__item p.h5 {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 600px) {
+    .count-box { grid-template-columns: 85px 1fr; }
+    .partners-wrapper {
+      justify-content: center;
+    }
+    .partners-item {
+      width: 33%;
+    }
+  }
+  @media (min-width: 992px){
+    #column-2 {
+      column-count: 2; 
+      column-gap: 3.5em;
+    }
+    .partners-item {
+      width: 21%;
+    }
+    .count-box {
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .count-box .count-box__order > h3 {
+      width: 85px;
+      height: 85px;
+      font-size: 38px;
+    }
+  }
   </style>
 {% endblock css %}
 
@@ -181,18 +256,18 @@
                           <span class="visuallyhidden">secondary menu</span>
                         </label>
                         <ul class="list-inline">
-                          <li class="list-inline-item">
+                          <!--li class="list-inline-item">
                             {% url 'civa-agenda' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                          </li>
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                          </li-->
                           <li class="list-inline-item">
                             {% url 'civa-speakers' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
                           </li>
-                          <li class="list-inline-item">
+                          <!--li class="list-inline-item">
                             {% url 'civa-guests' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
-                          </li>
+                          </li-->
                           <li class="list-inline-item">
                             {% url 'civa-commitee' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
@@ -201,14 +276,14 @@
                             {% url 'civa-papers' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
                           </li>
-                          <li class="list-inline-item">
-                              {% url 'civa-registration' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                          </li>
-                          <li class="list-inline-item">
+                          <!--li class="list-inline-item">
+                            {% url 'civa-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                          </li-->
+                          <!--li class="list-inline-item">
                               {% url 'civa-informations' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                          </li>
+                          </li-->
                         </ul>
                     </nav>
                 </div>
@@ -227,9 +302,9 @@
                 <h1 class="font-size-3-50em pt-4">
                     {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}
                 </h1>
-                <a class="btn btn__primary btn__small mt-4" href="">
+                <!--a class="btn btn__primary btn__small mt-4" href="">
                     {% translate "Register to attend" %}
-                </a>
+                </a-->
             </div>
         </div>
     </div>
@@ -252,21 +327,18 @@
                 <div class="h1">21</div>
                 <p class="font-size-18">{% translate "March" %}</p>
             </div>
-            <p class="mb-0">{% translate "9am-6pm" %}</p>
           </a>
           <a href="#" class="item">
             <div class="top">
                 <div class="h1">22</div>
                 <p class="font-size-18">{% translate "March" %}</p>
             </div>
-            <p class="mb-0">{% translate "9am-6pm" %}</p>
           </a>
           <a href="#" class="item">
             <div class="top">
                 <div class="h1">23</div>
                 <p class="font-size-18">{% translate "March" %}</p>
             </div>
-            <p class="mb-0">{% translate "9am-6pm" %}</p>
           </a>
         </div>
       </div>
@@ -347,79 +419,60 @@
   </div>
 </section>
 
-<section class="py-5">
-  <div class="container-xl">
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-12 col-md-4">
-          <h3 class="section-title">
-            {% blocktranslate %}
-              Why should attend <br>
-              <span class="text_primary">CIVA 2023</span>?
-            {% endblocktranslate %}
-          </h3>
+<section class="py-md-5">
+  <div class="container">
+    <div class="row d-flex justify-content-center pt-5">
+      <h3 class="section-title text-center">
+        {% blocktranslate %}
+          Why should attend <br>
+          <span class="text_primary">CIVA 2023</span>?
+        {% endblocktranslate %}
+      </h3>
+    </div>
+    <div class="row d-flex justify-content-center py-5">
 
-          <div class="py-3 font-size-16 text-justify">
-            {% blocktranslate %}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-            tincidunt non lacus. Vivamus tristique condimentum risus nec feugiat.
-            {% endblocktranslate %}
+      <div class="col-12 col-md-5 d-flex" >
+        <img src="{% static 'images/assets/who-expect.jpg' %}" style="object-fit: cover;">
+      </div>
+      
+      <div class="col-12 col-md-5">
+        <div class="m-5">
+          <div class="count-box">
+            <div class="count-box__order">
+              <h3>1</h3>
+            </div>
+            <div class="count-box__content">
+              <h3>{% translate "Networking" %}</h3>
+              <p class="py-3">
+                
+              </p>
+            </div>
           </div>
-          <div class="my-3">
-            <a class="btn btn__primary btn__small" href="">
-              {% translate "Register now" %}
-            </a>
+          <div class="count-box">
+            <div class="count-box__order">
+              <h3>2</h3>
+            </div>
+            <div class="count-box__content">
+              <h3>{% translate "Skilled speakers" %}</h3>
+              <p class="py-3">
+                
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div class="col-12 col-md-8">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-4 col-lg-5 p-4">
-              <div class="card text-box">
-                  <div class="card-body p-0">
-                      <h3>{% translate "Networking" %}</h3>
-                      <p class="py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      </p>
-                      <span class="count-number">1</span>
-                  </div>
-              </div>
+          <div class="count-box">
+            <div class="count-box__order">
+              <h3>3</h3>
             </div>
-            <div class="col-12 col-md-4 col-lg-5 p-4">
-              <div class="card text-box">
-                  <div class="card-body p-0">
-                      <h3>{% translate "Skilled speakers" %}</h3>
-                      <p class="py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      </p>
-                      <span class="count-number">2</span>
-                  </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-5 p-4">
-              <div class="card text-box">
-                  <div class="card-body p-0">
-                      <h3>{% translate "Usefull sessions" %}</h3>
-                      <p class="py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      </p>
-                      <span class="count-number">3</span>
-                  </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-5 p-4">
-              <div class="card text-box">
-                  <div class="card-body p-0">
-                      <h3>{% translate "Venue tour" %}</h3>
-                      <p class="py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      </p>
-                      <span class="count-number">4</span>
-                  </div>
-              </div>
+            <div class="count-box__content">
+              <h3>{% translate "Usefull sessions" %}</h3>
+              <p class="py-3">
+               
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </section>
 
@@ -437,9 +490,10 @@
 
     <div class="focus-areas__container">
       <div>
-        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Digitalization of cities and urban planning" %}</p>
+        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Digitalization of cities and urban planning" %}</p>
       </div>
+    
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
           <div class="swiper-slide focus-areas__item">
@@ -480,8 +534,8 @@
       </div>
 
       <div>
-        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Digital and smart african cities" %}</p>
+        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Digital and smart african cities" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
@@ -527,8 +581,8 @@
       </div>
 
       <div>
-        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Smart geo-information systems (Smart GIS)" %}</p>
+        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Smart geo-information systems (Smart GIS)" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
@@ -578,8 +632,8 @@
       </div>
 
       <div>
-        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "Transitions digitales and smart Gouvernance" %}</p>
+        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Transitions digitales and smart Gouvernance" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
@@ -621,8 +675,8 @@
       </div>
 
       <div>
-        <img class="d-none d-md-inline-block mb-2" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 font-weight-500 d-inline-block px-2 py-4">{% translate "African digital cities challenges" %}</p>
+        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "African digital cities challenges" %}</p>
       </div>
       <div class="swiper focus-areas__list">
         <div class="swiper-wrapper">
@@ -664,7 +718,7 @@
             <div class="col-12 col-lg-4 py-5">
                 <h3 class="section-title mb-3">
                   {% blocktranslate %}
-                    CIVA 2023 side events
+                  <span class="text_primary">CIVA 2023</span> side events
                   {% endblocktranslate %}
                 </h3>
                 <div class="py-3">
@@ -680,9 +734,9 @@
                   </p>
                 </div>
                 <div class="mt-4">
-                  <a class="btn btn__primary btn__small" href="">
+                  <!--a class="btn btn__primary btn__small" href="">
                     {% translate "View conference agenda" %}
-                  </a>
+                  </a-->
                 </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -695,10 +749,7 @@
                   </h4>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                      tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                      Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. Vestibulum non faucibus elit, 
-                      in semper nulla. Proin id eleifend ligula.
+                    
                     </div>
                   </div>
                 </div>
@@ -710,8 +761,7 @@
                   </h4>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                      tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
+                      
                     </div>
                   </div>
                 </div>
@@ -723,9 +773,7 @@
                   </h4>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                      tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                      Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
+                     
                     </div>
                   </div>
                 </div>
@@ -737,9 +785,7 @@
                   </h4>
                   <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                      tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                      Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
+                      
                     </div>
                   </div>
                 </div>
@@ -751,9 +797,7 @@
                   </h4>
                   <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at, 
-                      tincidunt non lacus. Proin et cursus arcu, at placerat est. Vivamus tristique condimentum risus nec feugiat. 
-                      Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
+                      
                     </div>
                   </div>
                 </div>
@@ -765,7 +809,7 @@
                   </h4>
                   <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      PLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus risus, tempus eu hendrerit at. 
+                     
                     </div>
                   </div>
                 </div>
@@ -777,8 +821,7 @@
                   </h4>
                   <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#civa-highlights">
                     <div class="accordion-body">
-                      Vivamus tristique condimentum risus nec feugiat. 
-                      Vivamus pharetra neque sit amet nunc elementum, ornare tempor ante ultricies. 
+                      
                     </div>
                   </div>
                 </div>
@@ -977,21 +1020,27 @@
 
 <section class="civa-form__section">
   <div class="container-xl">
-    <div class="row justify-content-center align-items-center justify-content-lg-between py-5">
-      <div class="col-lg-7 text-white ">
-        <p class="h4 font-weight-500">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-white text-center">
+        <div class="h1 pt-lg-5">
           {% blocktranslate %}
-          Join us for two days of dynamic dialogues with leading scientists, policymakers, practitioners, 
-          influencers and advocates working on the scientific frontiers of human flourishing.
+          Join the International Conference of African Cities (CIVA) - Digital Cities
           {% endblocktranslate %}
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="text-center">
-          <a href="#" class="btn btn__primary btn__big">
-              {% translate "Register to attend" %}
-          </a>
         </div>
+        <div class="mt-5 text-center">
+          <!--a href="#" class="btn btn__primary btn__small">
+            {% translate "Register now" %}
+          </a-->
+        </div>
+        <p class="font-size-18 pt-3 pb-5">
+          {% blocktranslate %}
+            If you wish to have more information,<br> 
+            you can contact us directly on :<br>
+          {% endblocktranslate %}
+          <a class="text-white" href="mailto:info@africancitieslab.org">
+            <strong>contact@africancitieslab.org</strong>
+          </a>
+        </p>
       </div>
     </div>
   </div>

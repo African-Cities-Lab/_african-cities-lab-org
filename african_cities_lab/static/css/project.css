@@ -1757,7 +1757,7 @@ ul.event-meta {
 }
 .text-box {
   display: flex;
-  border: none;
+  border: 1px solid #ececec;
   border-radius: 5px;
   background: #ffffff;
   position: relative;
@@ -2056,7 +2056,7 @@ ul.event-meta {
 		font-size: 2.3em;
 	}
 	.page-hero__title {
-		font-size: 2.5em;
+		font-size: 1.75em;
 	}
 	.page-hero__container {
 		min-height: 250px;
@@ -2086,7 +2086,7 @@ ul.event-meta {
 		display: none;
 	}
 	.civa-banner {
-		height: 465px;
+		height: 400px;
 	}
 	.countdown-timer__widget .timer-container:not(:first-child):after { 
 		background: unset; 

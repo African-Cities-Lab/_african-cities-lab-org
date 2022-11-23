@@ -65,10 +65,10 @@
                         <span class="visuallyhidden">secondary menu</span>
                       </label>
                       <ul class="list-inline">
-                        <li class="list-inline-item">
+                        <!--li class="list-inline-item">
                           {% url 'civa-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                        </li>
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                        </li-->
                         <li class="list-inline-item">
                           {% url 'civa-speakers' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
@@ -85,14 +85,14 @@
                           {% url 'civa-papers' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
                         </li>
-                        <li class="list-inline-item">
+                        <!--li class="list-inline-item">
                             {% url 'civa-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                        </li>
-                        <li class="list-inline-item">
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                        </li-->
+                        <!--li class="list-inline-item">
                             {% url 'civa-informations' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                        </li>
+                        </li-->
                       </ul>
                     </nav>
                 </div>
@@ -115,444 +115,30 @@
     </div>
 </section>
 
-<section class="pt-5">
-    <div class="container">
-      <div class="row justify-content-center py-3">
-        <div class="col-12 col-md-8">
-          <h3 class="section-title text-center">
-            {% translate "CIVA's chairs" %}
-          </h3>
-        </div>
-      </div>
-      <div class="row event-speakers__list justify-content-center py-3">
-  
-        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#chairs_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_1">
-                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
-  
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr. Jérôme Chenal</h4>
-              <p class="speaker-designation">
-                {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
-              </p>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="chairs_modal_1" tabindex="-1" aria-labelledby="chairs_modal_1" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">``
-                          <h2>Mr. Jérôme Chenal</h2>
-  
-                          <p class="my-2">
-                            {% translate 'Architecht/urbanist & Prof à EPFL, Laussanne - Suisse' %}
-                            
-                          </p>
-  
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jerome-chenal/?originalSubdomain=ch">
-                              <i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                          </ul>
-  
-                          <span class="xs-hr-line"></span>
-  
-                          <p>
-                            {% blocktranslate %}
-                            Jérôme Chenal studied architecture at the École Polytechnique Fédérale de Lausanne, where he obtained a degree in architecture in 1997. He defended a doctoral thesis on the urban planning challenges of African cities.
-                            He proposes a pragmatic vision of African cities, suggesting to leave the models conceived in international conferences to invent cities from their own realities.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#chairs_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_2">
-                    <img class="speaker-avatar" src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
-  
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr Khalid Badour</h4>
-              <p class="speaker-designation">
-                {% blocktranslate %}
-                Director of the President's Cabinet, Mohammed VI Polytechnic University
-                {% endblocktranslate %}
-              </p>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="chairs_modal_2" tabindex="-1" aria-labelledby="chairs_modal_2" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/civa/khalid-baddou.jpeg' %}" alt="Mr Khalid Badour">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr Khalid Badour</h2>
-  
-                          <p class="my-2">
-                            {% blocktranslate %}
-                            Director of the President's Cabinet, Mohammed VI Polytechnic University
-                            {% endblocktranslate %}
-                          </p>
-  
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/khalidbaddou/fr?originalSubdomain=ma">
-                              <i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                          </ul>
-  
-                          <span class="xs-hr-line"></span>
-  
-                          <p>
-                            {% blocktranslate %}
-                            Executive Director who has held for more than 20 years positions of responsibility in large multinational companies (FMCG, Pharma and Finance) 
-                            with regional functions, managing multidisciplinary teams and strategic and operational initiatives in Morocco and Africa.
-                            Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and communication.
-                            {% endblocktranslate %}
-                          </p>
-                          <p>
-                            {% blocktranslate %}
-                            Member of the Board of Directors of regional and international professional organizations in the fields of education, entrepreneurship and 
-                            communication.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#chairs_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_3">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
-  
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Claude Borna</h4>
-              <p class="speaker-designation">
-                {% blocktranslate %}
-                Managing Director and Chief Innovation Officer at Sèmè City
-                {% endblocktranslate %}
-              </p>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="chairs_modal_3" tabindex="-1" aria-labelledby="chairs_modal_3" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Claude_Borna.png' %}" alt="Claude Borna">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Claude Borna</h2>
-  
-                          <p class="my-2">
-                            {% blocktranslate %}
-                            Managing Director and Chief Innovation Officer at Sèmè City
-                            {% endblocktranslate %}
-                          </p>
-  
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/claude-borna-4785096/?originalSubdomain=bj">
-                              <i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                          </ul>
-  
-                          <span class="xs-hr-line"></span>
-  
-                          <p>
-                            {% blocktranslate %}
-                            A self-described entrepreneurial-minded strategist, Claude is passionate about creating and leading disruptive businesses. 
-                            With an MBA from UCLA and a bachelor's from McGill University, she started as a senior consultant with Deloitte in London, 
-                            then joined Amazon to drive highly strategic categories, and eventually moved to Sony Pictures where she was appointed Senior 
-                            Vice President for Global Customers and Worldwide Commercial Strategy.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-</section>
-  
-<section class="py-5">
-    <div class="container">
-      <div class="row justify-content-center py-3">
-        <div class="col-12 col-md-8">
-          <h3 class="section-title text-center">
-            {% translate "Global Coordinators" %}
-          </h3>
-        </div>
-      </div>
-      <div class="row event-speakers__list justify-content-center py-3">
-  
-        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#coordinators_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#coordinators_modal_1">
-                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
-  
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Dr. Rida AZMI</h4>
-              <p class="speaker-designation">
-                {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
-              </p>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="coordinators_modal_1" tabindex="-1" aria-labelledby="coordinators_modal_1" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/civa/Rida-AZMI.jpeg' %}" alt="Dr. Rida AZMI">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">``
-                          <h2>Dr. Rida AZMI</h2>
-  
-                          <p class="my-2">
-                            {% translate 'Postdoctoral Researcher at Mohammed VI Polytechnic University' %}
-                            
-                          </p>
-  
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/rida-azmi-05847a3a/">
-                              <i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                          </ul>
-  
-                          <span class="xs-hr-line"></span>
-  
-                          <p>
-                            {% blocktranslate %}
-                            GIS consultant in the national agricultural census project / member of the team in charge of the implementation of the 
-                            spatial database of the national agricultural register - RNA 2016 at the Ministry of Agriculture. 
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#chairs_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#chairs_modal_5">
-                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
-  
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
-                          <i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Dr. Martí Bosch</h4>
-              <p class="speaker-designation">
-                {% blocktranslate %}
-                Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
-                {% endblocktranslate %}
-              </p>
-            </div>
-  
-            <!-- Modal -->
-            <div class="modal fade" id="chairs_modal_5" tabindex="-1" aria-labelledby="chairs_modal_5" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/civa/Marti-Bosch.jpeg' %}" alt="Dr. Martí Bosch">
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Dr. Martí Bosch</h2>
-  
-                          <p class="my-2">
-                            {% blocktranslate %}
-                            Doctor in Civil and Environmental Engineering (École polytechnique fédérale de Lausanne)
-                            {% endblocktranslate %}
-                          </p>
-  
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mart%C3%AD-bosch-b9960891/?originalSubdomain=ch">
-                              <i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                          </ul>
-  
-                          <span class="xs-hr-line"></span>
-  
-                          <p>
-                            {% blocktranslate %}
-                            I am a Doctor in Civil and Environmental Engineering from the École polytechnique fédérale de Lausanne (EPFL). 
-                            My PhD thesis, undertaken in the CEAT team, focused the spatiotemporal patterns of urbanization and their impacts on the 
-                            environment and human well being, with a focus on the urban heat island effect. From February to July 2016 I have been 
-                            intern in the STEEP group of the INRIA Rhone-Alpes, working on a project to evaluate different aspects of Urban Sprawl through 
-                            the analysis of spatial data obtained from crowd-sourcing sites. This internship served as my Master's Thesis from the Artificial Intelligence 
-                            and the Web specialization of the Master of Science in Informatics at Grenoble.
-                            {% endblocktranslate %}
-                          </p>
-                          <p>
-                            {% blocktranslate %}
-                            I was a Summer Student in 2015 at the European Organization for Nuclear Research (CERN), working on a project to visualize the data flows among the several experiment detectors and computing facilities in the center.
-                            {% endblocktranslate %}
-                          </p>
-                          <p>
-                            {% blocktranslate %}
-                            My research career started in February 2014 in an internship in the Tyrex team, in the French institute of Research in Informatics INRIA, that focuses on web data, algorithms and reasoning.
-                            {% endblocktranslate %}
-                          </p>
-                          <p>
-                            {% blocktranslate %}
-                            In October 2014 I received my Bachelor's Degree in Industrial Engineering from the Universitat Politècnica de Catalunya.
-                            {% endblocktranslate %}
-                          </p>
-                          <p>
-                            {% blocktranslate %}
-                            My areas of interest are Computer Science, Applied Maths and Engineering, more precisely Machine Learning, Optimization and Science and Engineering Simulations. Always willing to learn.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
 
 <section class="civa-form__section">
   <div class="container-xl">
-    <div class="row justify-content-center align-items-center justify-content-lg-between py-5">
-      <div class="col-lg-7 text-white ">
-        <p class="font-size-22 font-weight-500">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-white text-center">
+        <div class="h1 pt-lg-5">
           {% blocktranslate %}
-          Join us for two days of dynamic dialogues with leading scientists, policymakers, practitioners, 
-          influencers and advocates working on the scientific frontiers of human flourishing.
+          Join the International Conference of African Cities (CIVA) - Digital Cities
           {% endblocktranslate %}
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="text-center">
-          <a href="#" class="btn btn__primary btn__big">
-              {% translate "Register to attend" %}
-          </a>
         </div>
+        <div class="mt-5 text-center">
+          <!--a href="#" class="btn btn__primary btn__small">
+            {% translate "Register now" %}
+          </a-->
+        </div>
+        <p class="font-size-18 pt-3 pb-5">
+          {% blocktranslate %}
+            If you wish to have more information,<br> 
+            you can contact us directly on :<br>
+          {% endblocktranslate %}
+          <a class="text-white" href="mailto:info@africancitieslab.org">
+            <strong>contact@africancitieslab.org</strong>
+          </a>
+        </p>
       </div>
     </div>
   </div>

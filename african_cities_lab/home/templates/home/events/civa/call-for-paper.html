@@ -10,23 +10,24 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
+
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
-<meta name="twitter:site" content="@AfricanCtiesLab"/>
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
 <meta property="og:site_name" content="African Cities Lab" />
-<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
-<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
 
 {% block css %}
@@ -66,18 +67,18 @@
                         <span class="visuallyhidden">secondary menu</span>
                       </label>
                       <ul class="list-inline">
-                        <li class="list-inline-item">
+                        <!--li class="list-inline-item">
                           {% url 'civa-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                        </li>
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                        </li-->
                         <li class="list-inline-item">
                           {% url 'civa-speakers' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
                         </li>
-                        <li class="list-inline-item">
+                        <!--li class="list-inline-item">
                           {% url 'civa-guests' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
-                        </li>
+                        </li-->
                         <li class="list-inline-item">
                           {% url 'civa-commitee' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
@@ -86,14 +87,14 @@
                           {% url 'civa-papers' as url %}
                           <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
                         </li>
-                        <li class="list-inline-item">
+                        <!--li class="list-inline-item">
                             {% url 'civa-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                        </li>
-                        <li class="list-inline-item">
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                        </li-->
+                        <!--li class="list-inline-item">
                             {% url 'civa-informations' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                        </li>
+                        </li-->
                       </ul>
                     </nav>
                 </div>
@@ -117,55 +118,108 @@
 </section>
 
 <section class="py-5">
-    <div class="container pt-5">
-        <div class="row justify-content-center py-3">
+    <div class="container-fluid">
+        <div class="row py-3">
             <div class="col-12 col-md-8">
                 <p class="font-size-16 my-3">
                     {% blocktranslate %}
-                    Accepted papers will be published in the conference proceedings which will be indexed by Ei Compendex, Scopus, 
-                    CPCI (Thomson Reuters, WoS) and other academic databases (Waiting for confirmation)
+                    <strong class="h4 text_primary">CIVA 2023</strong> will promote scientific excellence in Africa through the communication and publication of 
+                    and publication of the best research results and works written in original scientific articles in its 
+                    conference proceedings, its book proceedings and its special issues which follow:
                     {% endblocktranslate %}
                 </p>
-                <p class="font-size-16 my-3">
-                  {% blocktranslate %}
-                  Papers are reviewed on the basis that they do not contain plagiarized material (max. 15&#37; from all sources + 
-                  max. 5&#37; from one source), Urkund tool will be used to detect plagiarism. Each paper will be reviewed by 
-                  two/three regular PC members in two rounds of review. The acceptance decisions will take into account paper 
-                  novelty, technical depth, elegance, practical or theoretical impact, and presentation. Authors of 
-                  high quality papers will be invited to submit an extended version (60&#37;) of their work for potential 
-                  publication in a special issue/section of an international journal.
-                  {% endblocktranslate %}
-                </p>
-                <p class="font-size-16 my-3">
-                  {% blocktranslate %}
-                  The direct link for paper submission is:
-                  {% endblocktranslate %}
-                </p>
-                <a href="#" class="d-block"><img src="{% static 'images/assets/civa/easychair.png' %}"></a>
+                <ul class="font-size-16 my-3">
+                  <li>
+                    {% blocktranslate %}
+                    All accepted and presented conference papers will be eligible for publication in our <a class="text_primary" href="https://www.e3s-conferences.org/">E3S web of conference </a>
+                    proceedings indexed in Scopus, Scimago, IET INSPEC, Ei Compendex, EBSCO, Google Scholar, CPCI (Web of Science) 
+                    (Subject to acceptance - as for all proceedings journals)
+                    {% endblocktranslate %}
+                  </li>
+                  <li class="pt-3">
+                    {% blocktranslate %}
+                    A category of best papers will be published in our proceedings book by <a class="text_primary" href="https://www.springer.com/series/6007">Springer book GeoJournal Library</a> (Pending confirmation) indexed in Scopus, 
+                    Scimago, IET INSPEC, Ei Compendex, EBSCO, Google Scholar, CPCI (Web of Science) (Subject to acceptance - as for all proceedings journals)
+                    {% endblocktranslate %}
+                  </li>
+                  <li class="pt-3">
+                    {% blocktranslate %}
+                    High quality papers may be invited to be submitted to one of our special issues in the following list depending on the theme of the paper and its 
+                    ranking in the order of quality. The authors of the selected papers will be invited after the conclusion of the conference steering committee 
+                    and their papers extended according to the percentage required by the special issue will be subjected to a normal submission and review process.
+                    {% endblocktranslate %}
+                  </li>
+                </ul>
             </div>
         </div>
-      
     </div>
   </section>
 
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-11">
+          <div class="event-overview font-size-16">
+            <h3 class="section-title mb-3">{% translate "Important Dates" %}</h3>
+          </div>
+
+          <div class="timeline-wrapper" dir="ltr">
+            <ul class="list-inline timeline-container">
+              <li class="list-inline-item timeline-step">
+                <div class="timeline-pointer"></div>
+                <h4 class="font-size-24 font-weight-500">{% translate "January 15, 2023" %}</h4>
+                <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Papers submission deadline" %}</h3> 
+              </li>
+              <li class="list-inline-item timeline-step">
+                <div class="timeline-pointer"></div>
+                <h4 class="font-size-24 font-weight-500">{% translate "January 30, 2023" %}</h4>
+                <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Notification of acceptance" %}</h3> 
+              </li>
+              <li class="list-inline-item timeline-step">
+                <div class="timeline-pointer"></div>
+                <h4 class="font-size-24 font-weight-500">{% translate "February 15, 2023" %}</h4>
+                <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Camera-ready Submission" %}</h3> 
+              </li>
+              <li class="list-inline-item timeline-step">
+                <div class="timeline-pointer"></div>
+                <h4 class="font-size-24 font-weight-500">{% translate "February 28, 2023" %}</h4>
+                <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Registration due date" %}</h3> 
+              </li>
+              <li class="list-inline-item timeline-step">
+                <div class="timeline-pointer"></div>
+                <h4 class=" font-weight-500">{% translate "March 21, 22 & 23, 2023" %}</h4>
+                <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Conference date" %}</h3> 
+              </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="civa-form__section">
     <div class="container-xl">
-      <div class="row justify-content-center align-items-center justify-content-lg-between py-5">
-        <div class="col-lg-7 text-white ">
-          <p class="font-size-22 font-weight-500">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-white text-center">
+          <div class="h1 pt-lg-5">
             {% blocktranslate %}
-            Join us for two days of dynamic dialogues with leading scientists, policymakers, practitioners, 
-            influencers and advocates working on the scientific frontiers of human flourishing.
+            Join the International Conference of African Cities (CIVA) - Digital Cities
             {% endblocktranslate %}
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <div class="text-center">
-            <a href="#" class="btn btn__primary btn__big">
-                {% translate "Register to attend" %}
-            </a>
           </div>
+          <div class="mt-5 text-center">
+            <!--a href="#" class="btn btn__primary btn__small">
+              {% translate "Register now" %}
+            </a-->
+          </div>
+          <p class="font-size-18 pt-3 pb-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>contact@africancitieslab.org</strong>
+            </a>
+          </p>
         </div>
       </div>
     </div>

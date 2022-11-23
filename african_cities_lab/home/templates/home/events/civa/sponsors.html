@@ -65,18 +65,18 @@
                             <span class="visuallyhidden">secondary menu</span>
                         </label>
                         <ul class="list-inline">
-                            <li class="list-inline-item">
+                            <!--li class="list-inline-item">
                               {% url 'civa-agenda' as url %}
-                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Agenda" %}</a>
-                            </li>
+                              <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                            </li-->
                             <li class="list-inline-item">
                               {% url 'civa-speakers' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
                             </li>
-                            <li class="list-inline-item">
+                            <!--li class="list-inline-item">
                               {% url 'civa-guests' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
-                            </li>
+                            </li-->
                             <li class="list-inline-item">
                               {% url 'civa-commitee' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
@@ -85,14 +85,14 @@
                               {% url 'civa-papers' as url %}
                               <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
                             </li>
-                            <li class="list-inline-item">
-                                {% url 'civa-registration' as url %}
-                                <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Attend" %}</a>
-                            </li>
-                            <li class="list-inline-item">
+                            <!--li class="list-inline-item">
+                            {% url 'civa-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                        </li-->
+                            <!--li class="list-inline-item">
                                 {% url 'civa-informations' as url %}
                                 <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
-                            </li>
+                            </li-->
                         </ul>
                     </nav>
                 </div>
@@ -237,21 +237,27 @@
 
 <section class="civa-form__section">
     <div class="container-xl">
-      <div class="row justify-content-center align-items-center justify-content-lg-between py-5">
-        <div class="col-lg-7 text-white">
-          <p class="font-size-22 font-weight-500">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-white text-center">
+          <div class="h1 pt-lg-5">
             {% blocktranslate %}
-            Join us for two days of dynamic dialogues with leading scientists, policymakers, practitioners, 
-            influencers and advocates working on the scientific frontiers of human flourishing.
+            Join the International Conference of African Cities (CIVA) - Digital Cities
             {% endblocktranslate %}
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <div class="text-center">
-            <a href="#" class="btn btn__primary btn__big">
-                {% translate "Register to attend" %}
-            </a>
           </div>
+          <div class="mt-5 text-center">
+            <!--a href="#" class="btn btn__primary btn__small">
+              {% translate "Register now" %}
+            </a-->
+          </div>
+          <p class="font-size-18 pt-3 pb-5">
+            {% blocktranslate %}
+              If you wish to have more information,<br> 
+              you can contact us directly on :<br>
+            {% endblocktranslate %}
+            <a class="text-white" href="mailto:info@africancitieslab.org">
+              <strong>contact@africancitieslab.org</strong>
+            </a>
+          </p>
         </div>
       </div>
     </div>
