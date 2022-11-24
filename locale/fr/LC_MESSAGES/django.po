@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 19:41+0100\n"
+"POT-Creation-Date: 2022-11-24 09:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:119
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:948
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:945
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:141
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:211
 #: african_cities_lab/home/templates/home/events/civa/civa.html:1032
@@ -973,7 +973,7 @@ msgstr "CEO Open data Africa"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:342
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:339
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:74
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:76
 #: african_cities_lab/home/templates/home/events/civa/civa.html:265
@@ -2404,8 +2404,8 @@ msgid "Cities for forest: the relation between cities and forests"
 msgstr "Villes et forêts : la relation entre les villes et les forêts"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:215
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:735
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:758
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:732
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:755
 msgid ""
 "Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal "
 "Danish Academy - Architecture, Design, Conservation"
@@ -2422,8 +2422,8 @@ msgid "Realizing Walkable and Bikeable Cities in Africa"
 msgstr "Rendre les villes praticables à pied et à vélo en Afrique"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:225
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:431
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:454
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:428
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:451
 msgid "Program Coordinator for Share the Road Program at UNEP"
 msgstr "Coordinateur du programme Share the Road au PNUE"
 
@@ -2437,8 +2437,8 @@ msgstr ""
 "Un plan directeur d'urbanisme résilient et durable à Saint Louis du Sénégal"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:235
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:585
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:608
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:582
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:605
 msgid "Architect Urbanist"
 msgstr "Architecte Urbaniste"
 
@@ -2455,8 +2455,8 @@ msgstr ""
 "l'accent sur les solutions innovantes et intelligentes."
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:245
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:652
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:675
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:649
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:672
 msgid ""
 "Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and "
 "country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat"
@@ -2478,8 +2478,8 @@ msgid "Initiative of the Youth of Climate in Morocco"
 msgstr "Initiative de la Jeunesse pour le Climat au Maroc"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:277
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:365
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:388
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:362
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:385
 msgid "Environmental Engineer & Climate activist"
 msgstr "Ingénieur en environnement et Activiste du Climat"
 
@@ -2492,8 +2492,8 @@ msgid "Nature will be an integral part of cities in the future"
 msgstr "La nature comme partie intégrante des villes à l'avenir"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:287
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:878
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:901
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:875
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:898
 msgid ""
 "Associate Professor of international urban development and planning, Norway"
 msgstr ""
@@ -2510,8 +2510,8 @@ msgstr ""
 "L'agriculture dans les villes africaines : facteurs, effets et adaptations"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:297
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:504
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:527
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:501
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:524
 msgid ""
 "Assistant Professor and Chair of Climate Change Adaptation and "
 "Sustainability Strategies in (IWRI)/UM6P and Director of (ACCA) Lab"
@@ -2531,8 +2531,8 @@ msgstr ""
 "changement climatique"
 
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:307
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:802
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:825
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:799
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:822
 msgid ""
 "Visiting Adjunct Professor in the University of the Witwatersrand Graduate "
 "School of Governance"
@@ -2540,11 +2540,7 @@ msgstr ""
 "Professeur assistant invité à la Graduate School of Governance de "
 "l'Université de Witwatersrand."
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:332
-msgid "This agenda is the object of modification"
-msgstr "Ce programme est susceptible de modifications"
-
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:397
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:394
 msgid ""
 "\n"
 "                            Fatna Ikrame El Fanne student in 2ᵉ year Master "
@@ -2560,7 +2556,7 @@ msgstr ""
 " Cofondatrice de Youth for Climate Morocco. et activiste climatique.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:463
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:460
 msgid ""
 "\n"
 "                            She is a passionate urban/ transport Planner and "
@@ -2578,7 +2574,7 @@ msgstr ""
 "particulier des enfants. \n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:467
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:464
 msgid ""
 "\n"
 "                            Her inspiration is to advocate for socially "
@@ -2604,7 +2600,7 @@ msgstr ""
 "bidonvilles et l'assainissement de l'eau et l'hygiène (WASH).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:536
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:533
 msgid ""
 "\n"
 "                            Dr. Epule is currently an Assistant Professor of "
@@ -2620,7 +2616,7 @@ msgstr ""
 "l'Université Mohammed VI polytechnique  de Benguerir (UM6P) au Maroc.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:540
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:537
 msgid ""
 "\n"
 "                            He was previously an Associate Professor of "
@@ -2640,7 +2636,7 @@ msgstr ""
 "l'environnement.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:545
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:542
 msgid ""
 "\n"
 "                            His research is at the interface between "
@@ -2662,7 +2658,7 @@ msgstr ""
 "d'atténuation/adaptation au changement climatique.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:550
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:547
 msgid ""
 "\n"
 "                            He is also keen on the contributions of "
@@ -2688,7 +2684,7 @@ msgstr ""
 "terenceepuleepule.wixsite.com/epuleterenceepule</a>).\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:617
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:614
 msgid ""
 "\n"
 "                            Ludovic Jonard is an urban architect and "
@@ -2709,7 +2705,7 @@ msgstr ""
 "écologiques et aux crises urbaines dans les contextes de développement.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:684
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:681
 msgid ""
 "\n"
 "                            Fruzsina Straus has over 18 years of experience "
@@ -2733,7 +2729,7 @@ msgstr ""
 "institutionnelle.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:691
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:688
 msgid ""
 "\n"
 "                            Additionally, having initiated and implemented "
@@ -2762,7 +2758,7 @@ msgstr ""
 "développement (PEID) africains.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:700
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:697
 msgid ""
 "\n"
 "                            Prior to joining UN-Habitat, she spent five "
@@ -2782,7 +2778,7 @@ msgstr ""
 "et relations internationales.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:767
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:764
 msgid ""
 "\n"
 "                            Johan Mottelson is an award-winning architect "
@@ -2805,7 +2801,7 @@ msgstr ""
 "de subsistance dans la région.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:834
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:831
 msgid ""
 "\n"
 "                            Mike Muller, is a professional engineer and "
@@ -2827,7 +2823,7 @@ msgstr ""
 "et a travaillé pour le gouvernement du Mozambique (1979/88)\n"
 ".                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:841
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:838
 msgid ""
 "\n"
 "                            He has participated in global dialogues on "
@@ -2858,7 +2854,7 @@ msgstr ""
 "org/0000-0002-4252-3200\">https://orcid.org/0000-0002-4252-3200</a>\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:910
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:907
 msgid ""
 "\n"
 "                            Gilbert Siame is an Associate Professor of "
@@ -2883,7 +2879,7 @@ msgstr ""
 "obtenus à l'université du Cap.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:918
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:915
 msgid ""
 "\n"
 "                            Before joining NTNU, Gilbert Siame was a "
@@ -2904,7 +2900,7 @@ msgstr ""
 "urbains.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:925
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:922
 msgid ""
 "\n"
 "                            His specialty is in urban governance and "
@@ -4425,10 +4421,8 @@ msgid "Upcoming"
 msgstr "À venir"
 
 #: african_cities_lab/home/templates/home/home.html:235
-#, fuzzy
-#| msgid "Nov 21"
 msgid "Nov 24"
-msgstr "21 Nov"
+msgstr "24 Nov"
 
 #: african_cities_lab/home/templates/home/home.html:259
 msgid "Past"
