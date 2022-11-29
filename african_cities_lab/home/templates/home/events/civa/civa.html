@@ -52,109 +52,77 @@
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.98),rgba(64, 39, 129, 0.85)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
-    .feature-card__exerpt li {
-      margin: 8px 0px;
+    .info-media-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      row-gap: 15px;
+      -webkit-column-gap: 42px;
+      -moz-column-gap: 42px;
+      column-gap: 35px;
+      border-top: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+      padding: 23px 0;
+      margin-bottom: 40px;
     }
-    .feature-card__exerpt li:first-child {
-      margin-top: 0px;
+    .info-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 310px;
     }
-    .partners-wrapper {
+    .info-media_icon {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      background-color: rgba(190, 55, 18, 0.08);
+      color: #BE3712;
+      text-align: center;
+      font-size: 32px;
+      border-radius: 50%;
+    }
+    .media-body {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+    .info-media_title {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    .civa-partners-wrapper {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 2.5rem;
+      justify-content: center;
     }
     .partners-item {
       width: 50%;
       height: 12rem;
-      border-left: 0.0625rem solid #E5E5E5;
-      border-top: 0.0625rem solid #E5E5E5;
-      border-bottom: 0.0625rem solid #E5E5E5;
+      border: 0.0325rem solid #E5E5E5;;
       margin-top: -0.0625rem;
       padding: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .partners-wrapper .partners-item:nth-child(4n+4) {
-      border-right: 0.0625rem solid #E5E5E5;
-    }
-    .swiper, .swiper-wrapper, .swipper-slide {
-      z-index: 0;
-    }
-    .civa-date__row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 24px;
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .civa-date__row .item {
-      border: 1px solid #ececec;
-      border-radius: 4px;
-    }
-    .civa-date__row .item .top {
-      padding-top: 1rem;
-      padding-left: 1rem;
-      padding-bottom: 1rem;
-    }
-    .civa-date__row .item > p{
-      padding: 1rem;
-      background: #BE3712;
-      color: #FFF;
+    .civa-partners-wrapper.row-title h3 {
       width: 100%;
-      font-size: 18px;
+      margin-top: -0.0625rem;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .text-box {
-      min-height: 325px;
+    .civa-partners-wrapper.row-title .partners-item {
+      width: 100%;
     }
-    .focus-areas__container {
-      margin-top: 2rem;
-    }
-    .focus-areas__item {
-      height: 10.5rem;
-      margin-bottom: 1.5rem;
-      border: 1px solid #ececec;
-      border-radius: 4px;
-      background: #fff;
-      padding: 1rem;
-    }
-    .focus-areas__row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 24px;
-      margin-top: 1.5rem;
-    }
-    .focus-areas__row.first .focus-areas__item {
-      background: rgba(255,115,0,.2);
-    }
-    .swiper-button-next, .swiper-button-prev {
-      height: 10.4rem;
-      padding: 0.5rem;
-      top: 12%;
-    }
-    .swiper-button-next, .swiper-rtl .swiper-button-prev {
-      right: 0px;
-    }
-    .swiper-button-prev, .swiper-rtl .swiper-button-next {
-      left: 0px;
-    }
-    .swiper-button-next:after, 
-    .swiper-button-prev:after {
-      color: #BE3712;
-      font-size: 18px;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-    }
-    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-      content: "\f061";
-    }
-    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-      content: "\f060";
-    }
-    .swiper-button-next.swiper-button-disabled, 
-    .swiper-button-prev.swiper-button-disabled {
-      display: none;
-    }
+    
     #civa-highlights .accordion-item {
       border: none;
     }
@@ -164,7 +132,7 @@
       padding: 1.5rem;
       margin: 0.75rem 0;
     }
-    .accordion-button::after {
+    #civa-highlights .accordion-button::after {
       width: 1.25rem;
       height: 1.25rem;
       content: "\f078";
@@ -173,7 +141,7 @@
       font-size: 16px;
       background-image: unset;
   }
-  .accordion-button:not(.collapsed)::after {
+  #civa-highlights .accordion-button:not(.collapsed)::after {
     background-image: unset;
   }
   .count-box {
@@ -199,18 +167,24 @@
   .count-box .count-box__content {
     margin-top: 1rem;
   }
+  .platform-feature__card .card:hover h4 {
+    color: #BE3712;
+  }
   @media (max-width: 600px) {
     .focus-areas__item p.h5 {
       font-size: 16px;
     }
   }
   @media (min-width: 600px) {
-    .count-box { grid-template-columns: 85px 1fr; }
-    .partners-wrapper {
-      justify-content: center;
+    .count-box { 
+      grid-template-columns: 65px 1fr; 
     }
-    .partners-item {
+    .partners-item,
+    .civa-partners-wrapper.row-title h3 {
       width: 33%;
+    }
+    .civa-partners-wrapper.row-title .partners-item {
+      width: 66%;
     }
   }
   @media (min-width: 992px){
@@ -221,14 +195,20 @@
     .partners-item {
       width: 21%;
     }
+    .civa-partners-wrapper.row-title h3 {
+      width: 26%;
+    }
+    .civa-partners-wrapper.row-title .partners-item {
+      width: 58%;
+    }
     .count-box {
-      gap: 2rem;
+      gap: 1.5rem;
       margin-top: 1.5rem;
     }
     .count-box .count-box__order > h3 {
-      width: 85px;
-      height: 85px;
-      font-size: 38px;
+      width: 65px;
+      height: 65px;
+      font-size: 30px;
     }
   }
   </style>
@@ -293,54 +273,71 @@
     </div>
 </div>
 
-<section class="civa-banner">
-    <div class="banner-overlay"></div>
-    <div class="container-lg position-relative">
-        <div class="row">
-            <div class="col-12 col-md-11 col-xl-8">
-                <p class="font-size-16">{% translate "March 21, 22 & 23 - Cotonou, Bénin" %}</p>
-                <h1 class="font-size-3-50em pt-4">
-                    {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}
-                </h1>
-                <!--a class="btn btn__primary btn__small mt-4" href="">
-                    {% translate "Register to attend" %}
-                </a-->
-            </div>
+<section class="civa-banner mt-5">
+  <div class="banner-overlay"></div>
+  <div class="container-lg position-relative">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-8 text-center">
+        <h1 class="font-size-3-50em mt-4">
+          {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}
+        </h1>
+
+        <div class="countdown-timer__widget">
+          <div class="timer-container position-relative">
+            <span id="days" class="h1"></span>
+            <p>{% translate "Days" %}</p>
+          </div>
+          <div class="timer-container position-relative">
+            <span id="hours" class="h1">230</span>
+            <p>{% translate "Hours" %}</p>
+          </div>
+          <div class="timer-container position-relative"> 
+            <span id="minutes" class="h1">230</span>
+            <p>{% translate "Minutes" %}</p>
+          </div>
+          <div class="timer-container position-relative">
+            <span id="seconds" class="h1">230</span>
+            <p>{% translate "Seconds" %}</p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="py-5">
   <div class="container-xl py-md-5">
     <div class="row">
       <div class="col-12 col-lg-5">
-        <h3 class="section-title">{% translate "CIVA 2023" %}</h3>
-  
+        
         <p class="font-size-24 py-4 text_primary ">
           {% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}
         </p>
       </div>
       <div class="col-12 col-lg-5 offset-lg-1">
-        <div class="civa-date__row">
-          <a href="#" class="item">
-            <div class="top">
-                <div class="h1">21</div>
-                <p class="font-size-18">{% translate "March" %}</p>
+
+        <div class="info-media-wrap">
+          <div class="info-media">
+            <div class="info-media_icon">
+              <i class="fas fa-calendar-alt"></i>
             </div>
-          </a>
-          <a href="#" class="item">
-            <div class="top">
-                <div class="h1">22</div>
-                <p class="font-size-18">{% translate "March" %}</p>
+            <div class="media-body">
+              <h3 class="info-media_title">{% translate "When" %}</h3>
+              <p class="info-media_text font-size-18">{% translate "March 21, 22 & 23" %}</p>
             </div>
-          </a>
-          <a href="#" class="item">
-            <div class="top">
-                <div class="h1">23</div>
-                <p class="font-size-18">{% translate "March" %}</p>
+          </div>
+
+          <div class="info-media">
+            <div class="info-media_icon">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
-          </a>
+            <div class="media-body">
+              <h3 class="info-media_title">{% translate "Location" %}</h3>
+              <p class="info-media_text font-size-18">{% translate "Cotonou, Benin" %}</p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
 
@@ -376,50 +373,36 @@
             cultures of the humanities, sciences and application-oriented research, but also the sectoral gap between urban development actors in Africa.
             {% endblocktranslate %}
           </p>
-
-          <!--div class="civa-date-area"> 
-            <h4><span class="xl-counter" >21</span></h4>
-            <p><span class="d-block font-size-16 font-weight-bold">{% translate "March 2023" %}</span>{% translate "Cotonou, Benin" %}</p>
-          </div-->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="countdowntimer__widget" class="bg_secondary text-white text-center">
+<section class="bg_secondary text-white">
   <div class="container-xl py-5">
-      <div class="row justify-content-center">
-          <div class="col-12 col-md-9">
-              <p class="font-size-16">{% translate "March 21, 22 & 23 - Cotonou, Bénin" %}</p>
-              <div class="h1 pt-3">
-                  {% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}
-              </div>
-
-              <div class="countdown-timer__widget">
-                  <div class="timer-container position-relative">
-                      <span id="days" class="h1"></span>
-                      <p>{% translate "Days" %}</p>
-                  </div>
-                  <div class="timer-container position-relative">
-                      <span id="hours" class="h1">230</span>
-                      <p>{% translate "Hours" %}</p>
-                  </div>
-                  <div class="timer-container position-relative"> 
-                      <span id="minutes" class="h1">230</span>
-                      <p>{% translate "Minutes" %}</p>
-                  </div>
-                  <div class="timer-container position-relative">
-                      <span id="seconds" class="h1">230</span>
-                      <p>{% translate "Seconds" %}</p>
-                  </div>
-              </div>
-          </div>
+    <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-7">
+          <h1 class="font-size-2-75em">{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %}</h1>    
+          <p class="pt-3 font-size-18">
+            {% blocktranslate %}
+            The conference organizers cordially invite you to submit your scientific work to 
+            International Conference of African Cities (CIVA) - Digital Cities to be held 
+            in Cotonou, Benin, next March 21 -23
+            {% endblocktranslate %}
+          </p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a class="btn btn__primary btn__small my-4" href="{% url 'civa-papers' %}">
+            {% translate "Call for papers" %}
+          </a>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 
-<section class="py-md-5">
+<section class="py-md-5 d-none">
   <div class="container">
     <div class="row d-flex justify-content-center pt-5">
       <h3 class="section-title text-center">
@@ -429,10 +412,10 @@
         {% endblocktranslate %}
       </h3>
     </div>
-    <div class="row d-flex justify-content-center py-5">
+    <div class="row d-flex justify-content-center pt-5">
 
-      <div class="col-12 col-md-5 d-flex" >
-        <img src="{% static 'images/assets/who-expect.jpg' %}" style="object-fit: cover;">
+      <div class="col-12 col-md-5 text-center" >
+        <img src="{% static 'images/assets/who-expect.jpg' %}">
       </div>
       
       <div class="col-12 col-md-5">
@@ -442,10 +425,7 @@
               <h3>1</h3>
             </div>
             <div class="count-box__content">
-              <h3>{% translate "Networking" %}</h3>
-              <p class="py-3">
-                
-              </p>
+              <h4>{% translate "Networking" %}</h4>
             </div>
           </div>
           <div class="count-box">
@@ -453,10 +433,7 @@
               <h3>2</h3>
             </div>
             <div class="count-box__content">
-              <h3>{% translate "Skilled speakers" %}</h3>
-              <p class="py-3">
-                
-              </p>
+              <h4>{% translate "Skilled speakers" %}</h4>
             </div>
           </div>
           <div class="count-box">
@@ -464,10 +441,15 @@
               <h3>3</h3>
             </div>
             <div class="count-box__content">
-              <h3>{% translate "Usefull sessions" %}</h3>
-              <p class="py-3">
-               
-              </p>
+              <h4>{% translate "Usefull sessions" %}</h4>
+            </div>
+          </div>
+          <div class="count-box">
+            <div class="count-box__order">
+              <h3>4</h3>
+            </div>
+            <div class="count-box__content">
+              <h4>{% translate "Venue tour" %}</h4>
             </div>
           </div>
         </div>
@@ -476,8 +458,8 @@
   </div>
 </section>
 
-<section class="py-5 position-relative bg-light">
-  <div class="container-xl">
+<section class="py-5 position-relative">
+  <div class="container-xl py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-8 text-center">
         <h3 class="section-title mb-3">
@@ -488,231 +470,99 @@
       </div>
     </div>
 
-    <div class="focus-areas__container">
-      <div>
-        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Digitalization of cities and urban planning" %}</p>
-      </div>
-    
-      <div class="swiper focus-areas__list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">01</div>
-            <p class="h5 font-weight-400">{% translate "Digital water and energy management" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">02</div>
-            <p class="h5 font-weight-400">{% translate "Smart waste management and sanitation" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">03</div>
-            <p class="h5 font-weight-400">{% translate "Digital management of education and health" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">04</div>
-            <p class="h5 font-weight-400">{% translate "Digital mobility and transport management" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">05</div>
-            <p class="h5 font-weight-400">{% translate "Land use and land cover management" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">06</div>
-            <p class="h5 font-weight-400">{% translate "Informality & precarious neighbourhoods" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">07</div>
-            <p class="h5 font-weight-400"> {% translate "Land tenure and cadastral management" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">08</div>
-            <p class="h5 font-weight-400">{% translate "Quality of Life and Social Layer" %}</p>
+    <div class="row mt-3">
+      <div class="col-12 col-md-4 platform-feature__card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="py-3">{% translate "Digitalization of cities and urban planning" %}</h4>
+            <ul class="px-3">
+              <li>{% translate "Digital water and energy management" %}</li>
+              <li class="pt-2">{% translate "Smart waste management and sanitation" %}</li>
+              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
+              <li class="pt-2">{% translate "Digital mobility and transport management" %}</li>
+              <li class="pt-2">{% translate "Land use and land cover management" %}</li>
+              <li class="pt-2">{% translate "Informality & precarious neighbourhoods" %}</li>
+              <li class="pt-2">{% translate "Land tenure and cadastral management" %}</li>
+              <li class="pt-2">{% translate "Quality of Life and Social Layer" %}</li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-
-      <div>
-        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Digital and smart african cities" %}</p>
-      </div>
-      <div class="swiper focus-areas__list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">01</div>
-            <p class="h5 font-weight-400">{% translate "Digital and smart cities strategies in Africa" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">02</div>
-            <p class="h5 font-weight-400">{% translate "Digital and Smart african city stakeholders" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">03</div>
-            <p class="h5 font-weight-400">{% translate "Digital management of education and health" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">04</div>
-            <p class="h5 font-weight-400">{% translate "Digital and Smart city infrastructure" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">05</div>
-            <p class="h5 font-weight-400">{% translate "IoT for digital and smart cities" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">06</div>
-            <p class="h5 font-weight-400">{% translate "Robotics, blockchain and crytomoney" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">07</div>
-            <p class="h5 font-weight-400"> {% translate "Artificial intelligence and application integration" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">08</div>
-            <p class="h5 font-weight-400">{% translate "Cybersecurity & IS governance for smart cities" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">09</div>
-            <p class="h5 font-weight-400">{% translate "Advanced technologies for African smart cities" %}</p>
+      <div class="col-12 col-md-4 platform-feature__card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="py-3">{% translate "Digital and smart african cities" %}</h4>
+            <ul class="px-3">
+              <li>{% translate "Digital and smart cities strategies in Africa" %}</li>
+              <li class="pt-2">{% translate "Digital and Smart african city stakeholders" %}</li>
+              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
+              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
+              <li class="pt-2">{% translate "Digital and Smart city infrastructure" %}</li>
+              <li class="pt-2">{% translate "IoT for digital and smart cities" %}</li>
+              <li class="pt-2">{% translate "Robotics, blockchain and crytomoney" %}</li>
+              <li class="pt-2">{% translate "Quality of Life and Social Layer" %}</li>
+              <li class="pt-2">{% translate "Artificial intelligence and application integration" %}</li>
+              <li class="pt-2">{% translate "Cybersecurity & IS governance for smart cities" %}</li>
+              <li class="pt-2">{% translate "Advanced technologies for African smart cities" %}</li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-
-      <div>
-        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Smart geo-information systems (Smart GIS)" %}</p>
-      </div>
-      <div class="swiper focus-areas__list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">01</div>
-            <p class="h5 font-weight-400">{% translate "GIS and remote sensing" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">02</div>
-            <p class="h5 font-weight-400">{% translate "Citizen sensing and Citizen engagement" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">03</div>
-            <p class="h5 font-weight-400">{% translate "Geo AI and applications" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">04</div>
-            <p class="h5 font-weight-400">{% translate "Interactive visualization and 3D modeling" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">05</div>
-            <p class="h5 font-weight-400">{% translate "Geo Artificial intelligence (Geo AI)" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">06</div>
-            <p class="h5 font-weight-400">{% translate "GIS application (GIS API)" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">07</div>
-            <p class="h5 font-weight-400">{% translate "Collective sensing & spatial big urban data" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">08</div>
-            <p class="h5 font-weight-400">{% translate "Smart geo-addressing and participatory addressing" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">09</div>
-            <p class="h5 font-weight-400">{% translate "SIG and geolocalisation" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">10</div>
-            <p class="h5 font-weight-400">{% translate "Digital twins & twin cities" %}</p>
+      <div class="col-12 col-md-4 platform-feature__card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h4>
+            <ul class="px-3">
+              <li>{% translate "GIS and remote sensing" %}</li>
+              <li class="pt-2">{% translate "Citizen sensing and Citizen engagement" %}</li>
+              <li class="pt-2">{% translate "Geo AI and applications" %}</li>
+              <li class="pt-2">{% translate "Interactive visualization and 3D modeling" %}</li>
+              <li class="pt-2">{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
+              <li class="pt-2">{% translate "GIS application (GIS API)" %}</li>
+              <li class="pt-2">{% translate "Collective sensing & spatial big urban data" %}</li>
+              <li class="pt-2">{% translate "SIG and geolocalisation" %}</li>
+              <li class="pt-2">{% translate "Digital twins & twin cities" %}</li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-
-      <div>
-        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "Transitions digitales and smart Gouvernance" %}</p>
-      </div>
-      <div class="swiper focus-areas__list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">01</div>
-            <p class="h5 font-weight-400">{% translate "Citizens and Collaborative Governance" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">02</div>
-            <p class="h5 font-weight-400">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">03</div>
-            <p class="h5 font-weight-400">{% translate "Data Governance for smart cities" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">04</div>
-            <p class="h5 font-weight-400">{% translate "Digitalisation and internet 5.0" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">05</div>
-            <p class="h5 font-weight-400">{% translate "Digital tools for smart urban development" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">06</div>
-            <p class="h5 font-weight-400">{% translate "Socio-cultural transformations and social inclusion" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">07</div>
-            <p class="h5 font-weight-400"> {% translate "Crowdsourcing and citizen participation" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">08</div>
-            <p class="h5 font-weight-400">{% translate "Digital governance and digital citizenship" %}</p>
+      <div class="col-12 col-md-4 platform-feature__card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h4>
+            <ul class="px-3">
+              <li>{% translate "Citizens and Collaborative Governance" %}</li>
+              <li class="pt-2">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
+              <li class="pt-2">{% translate "Data Governance for smart cities" %}</li>
+              <li class="pt-2">{% translate "Digitalisation and internet 5.0" %}</li>
+              <li class="pt-2">{% translate "Digital tools for smart urban development" %}</li>
+              <li class="pt-2">{% translate "Socio-cultural transformations and social inclusion" %}</li>
+              <li class="pt-2">{% translate "Crowdsourcing and citizen participation" %}</li>
+              <li class="pt-2">{% translate "Digital governance and digital citizenship" %}</li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
-
-      <div>
-        <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-        <p class="h4 d-inline-block font-weight-500 px-2 py-4">{% translate "African digital cities challenges" %}</p>
-      </div>
-      <div class="swiper focus-areas__list">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">01</div>
-            <p class="h5 font-weight-400">{% translate "Resilience of African digital cities" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">02</div>
-            <p class="h5 font-weight-400">{% translate "Waste management and sanitation" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">03</div>
-            <p class="h5 font-weight-400">{% translate "Renewable energy and use" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">04</div>
-            <p class="h5 font-weight-400">{% translate "Energy and environmental efficiency" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">05</div>
-            <p class="h5 font-weight-400">{% translate "Sustainable development and adaptation of smart cities" %}</p>
-          </div>
-          <div class="swiper-slide focus-areas__item">
-            <div class="mb-3">06</div>
-            <p class="h5 font-weight-400">{% translate "Urban pollution et heat monitoring" %}</p>
+      <div class="col-12 col-md-4 platform-feature__card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="py-3">{% translate "African digital cities challenges" %}</h4>
+            <ul class="px-3">
+              <li >{% translate "Resilience of African digital cities" %}</li>
+              <li class="pt-2">{% translate "Waste management and sanitation" %}</li>
+              <li class="pt-2">{% translate "Renewable energy and use" %}</li>
+              <li class="pt-2">{% translate "Energy and environmental efficiency" %}</li>
+              <li class="pt-2">{% translate "Sustainable development and adaptation of smart cities" %}</li>
+              <li class="pt-2">{% translate "Urban pollution et heat monitoring" %}</li>
+            </ul>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="acl-section-pattern"> 
+<section class="bg-light py-5"> 
     <div class="container-xl">
         <div class="row d-flex justify-content-around">
             <div class="col-12 col-lg-4 py-5">
@@ -832,107 +682,6 @@
     </div>
 </section>
 
-{% comment %}
-<section class="py-5">
-  <div class="container-xl">
-      <div class="row justify-content-center py-3">
-          <div class="col-12 col-md-8">
-              <h3 class="section-title">
-                {% translate "CIVA News Feeds" %}
-              </h3>
-          </div>
-          <div class="col-12 col-md-4 d-none d-md-block">
-              <a class="float-end btn btn__small btn__primary" role="button" href="{% localized_slugurl 'blog' %}">{% translate "More articles" %}</a>
-          </div>
-      </div>
-
-      <div class="row py-3">
-          <div class="col-12 col-lg-4 col-md-6 article-card">
-              <div class="card border-0">
-                  <div class="card-header article-preview-img p-0">
-                      <a href="#" class="d-block">
-                          <img src="{% static 'images/assets/acl-default-img.png' %}">
-                      </a>
-                  </div>
-                  <div class="card-body">
-                      <div class="article-meta d-flex align-items-center">
-                          <div class="article__date">21/03/2022</div>
-                          <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
-                      </div>
-                      <h5 class="article-title py-3">
-                          <a href="" class="d-block text-black">
-                              Mauris dolor leo, laoreet non eros vitae
-                          </a>
-                      </h5>
-                      <div class="article-exerpt">
-                          Mauris dolor leo, laoreet non eros vitae, aliquet scelerisque nisi. 
-                          Curabitur velit felis, commodo id erat vel, dignissim facilisis nisi.
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-12 col-lg-4 col-md-6 article-card">
-              <div class="card border-0">
-                  <div class="card-header article-preview-img p-0">
-                      <a href="#" class="d-block">
-                          <img src="{% static 'images/assets/acl-default-img.png' %}">
-                      </a>
-                  </div>
-                  <div class="card-body">
-                      <div class="article-meta d-flex align-items-center">
-                          <div class="article__date">21/03/2022</div>
-                          <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
-                      </div>
-                      <h5 class="article-title py-3">
-                          <a href="" class="d-block text-black">
-                              Mauris dolor leo, laoreet non eros vitae
-                          </a>
-                      </h5>
-                      <div class="article-exerpt">
-                          Mauris dolor leo, laoreet non eros vitae, aliquet scelerisque nisi. 
-                          Curabitur velit felis, commodo id erat vel, dignissim facilisis nisi.
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-12 col-lg-4 col-md-6 article-card">
-              <div class="card border-0">
-                  <div class="card-header article-preview-img p-0">
-                      <a href="#" class="d-block">
-                          <img src="{% static 'images/assets/acl-default-img.png' %}">
-                      </a>
-                  </div>
-                  <div class="card-body">
-                      <div class="article-meta d-flex align-items-center">
-                          <div class="article__date">21/03/2022</div>
-                          <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
-                          <div class="article__category text_primary font-weight-bold">CIVA 2023</div>
-                      </div>
-                      <h5 class="article-title py-3">
-                          <a href="" class="d-block text-black">
-                              Mauris dolor leo, laoreet non eros vitae
-                          </a>
-                      </h5>
-                      <div class="article-exerpt">
-                          Mauris dolor leo, laoreet non eros vitae, aliquet scelerisque nisi. 
-                          Curabitur velit felis, commodo id erat vel, dignissim facilisis nisi.
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="mt-5 text-center d-md-none">
-          <a class="btn btn__small btn__primary" role="button" href="{% localized_slugurl 'blog' %}">{% translate "More articles" %}</a>
-      </div>
-  </div>
-</section>
-{% endcomment %}
-
 <section class="py-5">
   <div class="container">
     <div class="row justify-content-center py-3">
@@ -942,7 +691,7 @@
         </h3>
       </div>
     </div>
-    <div class="partners-wrapper"> 
+    <div class="civa-partners-wrapper mt-4"> 
       <div class="partners-item">
         <a href="{% url 'about' %}" class="d-block">
           <img src="{% static "images/assets/logo.png" %}">
@@ -963,22 +712,22 @@
 </section>
 
 <section class="py-5">
-  <div class="container">
+  <div class="container ">
     <div class="row justify-content-center py-3">
       <div class="col-12 col-md-8">
         <h3 class="section-title text-center">
-          {% blocktranslate %}
-                Big thanks to our sponsors <br>
-            {% endblocktranslate %}
+          {% translate "Big thanks to our sponsors" %}
         </h3>
       </div>
     </div>
-    <div class="partners-wrapper"> 
+    <div class="civa-partners-wrapper row-title mt-4"> 
       <div class="partners-item">
-        <a href="https://seco.admin.ch/seco/en/home.html" class="d-block">
-          <img src="{% static "images/assets/partners/seco-small.png" %}">
+        <a href="https://seco.admin.ch/seco/en/home.html" class="d-block w-75">
+          <img src="{% static "images/assets/partners/seco.png" %}">
         </a> 
-      </div>                                        
+      </div>
+    </div>
+    <div class="civa-partners-wrapper">                                   
       <div class="partners-item">
         <a href="https://epfl.ch" class="d-block">
           <img src="{% static "images/assets/partners/epfl.png" %}">
@@ -1028,9 +777,9 @@
           {% endblocktranslate %}
         </div>
         <div class="mt-5 text-center">
-          <!--a href="#" class="btn btn__primary btn__small">
-            {% translate "Register now" %}
-          </a-->
+          <a class="btn btn__primary btn__small my-4" href="{% url 'civa-papers' %}">
+            {% translate "Call for papers" %}
+          </a>
         </div>
         <p class="font-size-18 pt-3 pb-5">
           {% blocktranslate %}

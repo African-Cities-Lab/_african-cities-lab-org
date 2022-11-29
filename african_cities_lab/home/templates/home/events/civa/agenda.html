@@ -127,6 +127,7 @@
 </section>
 
 
+
 <section class="civa-form__section">
   <div class="container-xl">
     <div class="row justify-content-center">
@@ -137,9 +138,9 @@
           {% endblocktranslate %}
         </div>
         <div class="mt-5 text-center">
-          <!--a href="#" class="btn btn__primary btn__small">
-            {% translate "Register now" %}
-          </a-->
+          <a class="btn btn__primary btn__small my-4" href="{% url 'civa-papers' %}">
+            {% translate "Call for papers" %}
+          </a>
         </div>
         <p class="font-size-18 pt-3 pb-5">
           {% blocktranslate %}
@@ -154,5 +155,6 @@
     </div>
   </div>
 </section>
+
 {% endblock content %}
   

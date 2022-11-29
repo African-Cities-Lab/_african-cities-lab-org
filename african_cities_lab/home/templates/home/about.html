@@ -40,16 +40,14 @@
 {% endblock css %}
 
 {% block hellobar %}
-    <div class="hellobar d-none">
+    <!--div class="hellobar d-none">
         <span class="content-hellobar">
             <span class="badge-hellobar">{% translate "Webinar" %}</span>
 
-            {% translate "How to build resilient African Cities in response to climate change?" %}
-
-            <a class="link-hellobar mx-2 font-weight-bold text-white" href="{% url 'how-to-build-resilient-african-cities' %}">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
         </span>
         <span id="close_hellobar"><a href="#">+</a></span>
-    </div>
+    </div-->
 {% endblock hellobar %}
 
 {% block content %}
@@ -217,18 +215,18 @@
                 <div class="col-12 col-lg-8 pt-lg-3">
                     <div class="content-holder">
                         <h1 class="font-size-3-50em">
-                            {% translate "The International Conference of African Cities (ICAC)" %}
+                            {% translate "The International Conference of African Cities (CIVA)" %}
                         </h1>
                         <div class="hidden-details py-3">
                             <p>{% blocktranslate %}
                             Challenging the current vision of African cities, digital cities are presented as a rational response to future demographic projections.
-                            African Cities Lab creates the "International Conference on African Cities (ICAC) - Digital Cities" ,
+                            African Cities Lab creates the "International Conference on African Cities (CIVA) - Digital Cities" ,
                             a major event that aims to increase the scope and develop synergies between research and entrepreneurship on the African continent.
                             It is all about accelerating digitization of cities and promoting scientific excellence
                             in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin.
                             {% endblocktranslate %}</p>
 
-                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}" class="btn mt-3 btn__primary btn-small d-none">
+                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}" class="btn mt-3 btn__primary btn-small">
                                 {% translate "Learn more" %}
                             </a>
                         </div>

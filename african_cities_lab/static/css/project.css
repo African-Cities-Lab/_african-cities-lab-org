@@ -1674,52 +1674,19 @@ ul.event-meta {
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 525px;
-	padding-bottom: 25px !important;
-	padding-top: 25px !important;
+	padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
 	color: #fff;
 	display: flex;
 	align-items: center;
-}
-.civa-date-area {
-	padding-top: 2.5rem;
-	padding-bottom: 1.6rem;
-	display: flex;
-}
-.civa-date-area h4 {
-	position: relative;
-	font-size: 5rem;
-	line-height: 9rem;
-	color: #BE3712;
-	margin-right: -6px;
-	margin-top: 0;
-	min-width: 72px;
-}
-.civa-date-area h4:before {
-	content: "";
-	background:url('../images/assets/calendar.svg') no-repeat center;
-	background-size: contain;
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	left: 0;
-	top: -25px;
-	z-index: 0;
-}
-.civa-date-area h4 > span.xl-counter {
-	position: relative;
-	right: -95px;
-}
-.civa-date-area p {
-	margin-top: 2.8rem;
-	padding-left: 7rem;
 }
 .countdown-timer__widget {
 	position: relative;
 	margin: 50px auto; 
 	display: grid; 
-	grid-template-columns: repeat(auto-fit, minmax(178px, 1fr)); 
-	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 685px;
 } 
 .countdown-timer__widget .timer-container:not(:first-child):after {
 	content:"";
@@ -1733,7 +1700,7 @@ ul.event-meta {
 	z-index: 0;
 }
 .countdown-timer__widget  .timer-container > span.h1 {
-	font-size: 78px
+	font-size: 62px
 }
 .highlights-item {
 	background-color: #fff; 
@@ -2046,11 +2013,11 @@ ul.event-meta {
 	}
 	.home-banner__title,
 	.page-banner__title {
-		font-size: 2.28em;
+		font-size: 1.5em;
 	}
 	.home-banner__left,
 	.page-banner__left {
-		font-size: 2.28em;
+		font-size: 1.5em;
 	}
 	.section-title {
 		font-size: 2.3em;
@@ -2084,9 +2051,6 @@ ul.event-meta {
 	}
 	.speaker-hover-content {
 		display: none;
-	}
-	.civa-banner {
-		height: 400px;
 	}
 	.countdown-timer__widget .timer-container:not(:first-child):after { 
 		background: unset; 
@@ -2160,9 +2124,6 @@ ul.event-meta {
 	}
 	.font-size-3-50em {
 		font-size: 2.5em;
-	}
-	.civa-banner {
-		height: 475px;
 	}
 	.mdl-speaker-avatar > img {
 		width: 65%;
