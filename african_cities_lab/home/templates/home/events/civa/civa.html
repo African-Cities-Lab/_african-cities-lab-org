@@ -33,69 +33,15 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .shadow-sm {
-        box-shadow: unset !important;
-    }
+    
     .civa-banner {
       background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
       position: relative;
     }
-    .banner-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgb(64, 39, 129);
-      opacity: .78;
-    }
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.98),rgba(64, 39, 129, 0.85)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
-    .info-media-wrap {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      row-gap: 15px;
-      -webkit-column-gap: 42px;
-      -moz-column-gap: 42px;
-      column-gap: 35px;
-      border-top: 1px solid #ececec;
-      border-bottom: 1px solid #ececec;
-      padding: 23px 0;
-      margin-bottom: 40px;
-    }
-    .info-media {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      gap: 20px;
-      max-width: 310px;
-    }
-    .info-media_icon {
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      background-color: rgba(190, 55, 18, 0.08);
-      color: #BE3712;
-      text-align: center;
-      font-size: 32px;
-      border-radius: 50%;
-    }
-    .media-body {
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-    }
-    .info-media_title {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
+    
     .civa-partners-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -123,27 +69,7 @@
       width: 100%;
     }
     
-    #civa-highlights .accordion-item {
-      border: none;
-    }
-    #civa-highlights .accordion-button {
-      background: #402781;
-      color: #fff;
-      padding: 1.5rem;
-      margin: 0.75rem 0;
-    }
-    #civa-highlights .accordion-button::after {
-      width: 1.25rem;
-      height: 1.25rem;
-      content: "\f078";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      font-size: 16px;
-      background-image: unset;
-  }
-  #civa-highlights .accordion-button:not(.collapsed)::after {
-    background-image: unset;
-  }
+   
   .count-box {
     max-width: 100%;
     min-height: 140px;
@@ -167,7 +93,7 @@
   .count-box .count-box__content {
     margin-top: 1rem;
   }
-  .platform-feature__card .card:hover h4 {
+  .platform-feature__card .card:hover h5 {
     color: #BE3712;
   }
   @media (max-width: 600px) {
@@ -474,7 +400,7 @@
       <div class="col-12 col-md-4 platform-feature__card">
         <div class="card">
           <div class="card-body">
-            <h4 class="py-3">{% translate "Digitalization of cities and urban planning" %}</h4>
+            <h5 class="py-3">{% translate "Digitalization of cities and urban planning" %}</h5>
             <ul class="px-3">
               <li>{% translate "Digital water and energy management" %}</li>
               <li class="pt-2">{% translate "Smart waste management and sanitation" %}</li>
@@ -491,7 +417,7 @@
       <div class="col-12 col-md-4 platform-feature__card">
         <div class="card">
           <div class="card-body">
-            <h4 class="py-3">{% translate "Digital and smart african cities" %}</h4>
+            <h5 class="py-3">{% translate "Digital and smart african cities" %}</h5>
             <ul class="px-3">
               <li>{% translate "Digital and smart cities strategies in Africa" %}</li>
               <li class="pt-2">{% translate "Digital and Smart african city stakeholders" %}</li>
@@ -511,7 +437,7 @@
       <div class="col-12 col-md-4 platform-feature__card">
         <div class="card">
           <div class="card-body">
-            <h4 class="py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h4>
+            <h5 class="py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h5>
             <ul class="px-3">
               <li>{% translate "GIS and remote sensing" %}</li>
               <li class="pt-2">{% translate "Citizen sensing and Citizen engagement" %}</li>
@@ -529,7 +455,7 @@
       <div class="col-12 col-md-4 platform-feature__card">
         <div class="card">
           <div class="card-body">
-            <h4 class="py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h4>
+            <h5 class="py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h5>
             <ul class="px-3">
               <li>{% translate "Citizens and Collaborative Governance" %}</li>
               <li class="pt-2">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
@@ -546,7 +472,7 @@
       <div class="col-12 col-md-4 platform-feature__card">
         <div class="card">
           <div class="card-body">
-            <h4 class="py-3">{% translate "African digital cities challenges" %}</h4>
+            <h5 class="py-3">{% translate "African digital cities challenges" %}</h5>
             <ul class="px-3">
               <li >{% translate "Resilience of African digital cities" %}</li>
               <li class="pt-2">{% translate "Waste management and sanitation" %}</li>
