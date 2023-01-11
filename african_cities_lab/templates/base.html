@@ -85,11 +85,10 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                             </li>
-                            
+                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link"  href="https://courses.africancitieslab.org/">{% translate "Moocs" %}</a>
-                            </li>
-                            {% comment %}
+                            </li> 
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
                             </li>

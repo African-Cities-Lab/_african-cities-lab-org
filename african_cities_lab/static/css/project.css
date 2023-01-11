@@ -1119,10 +1119,10 @@ a.novashare-button {
 	color: #fff;
 }
 .topic-wrapper .card.topic-item {
-	height: 85px;
+	height: 60px;
 	font-weight: 700;
 	color: #000;
-	font-size: 18px;
+	font-size: 16px;
 	border-radius: 4px;
 	text-align: center;
 	justify-content: center;
@@ -1236,20 +1236,6 @@ a.novashare-button {
 .upcoming-event__home .card {
 	border: 1px solid #eee
 }
-.upcoming-event__home .card .card-footer:after {
-	content: '';
-	position: absolute;
-	right: -50px;
-	bottom: -50px;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 50px;
-	border-color: transparent transparent #BE3712 transparent;
-	color: #ffffff;
-	display: block;
-	transform: rotate(135deg);
-}
 .upcoming-event__home .card .card-header {
 	background: #fff; 
 	border: unset; 
@@ -1274,9 +1260,8 @@ a.novashare-button {
 }
 .upcoming-event__home .card .card-footer > a:hover,
 .events-listing__desc a.text_link:hover {
-	font-weight: 700;
-	text-decoration: underline !important;
-	font-size: 18px;
+	font-weight: 500; 
+	font-size: 16px;
 }
 .past-event__home {
 	display: grid;
@@ -1352,7 +1337,7 @@ li.events-listing__item .events-listing__desc {
 }
 .events-listing__desc .event-title {
   padding-top: 15px;
-  font-size: 28px;
+  font-size: 26px;
 }
 .events-listing__desc .event-location:before,
 .event-location.__black-ico:before {
@@ -1836,13 +1821,13 @@ ul.event-meta {
 	max-width: 300px;
   }
   .info-media_icon {
-	width: 65px;
-	height: 65px;
-	line-height: 70px;
+	width: 55px;
+	height: 55px;
+	line-height: 56px;
 	background-color: rgba(190, 55, 18, 0.08);
 	color: #BE3712;
 	text-align: center;
-	font-size: 28px;
+	font-size: 20px;
 	border-radius: 50%;
   }
   .media-body {
