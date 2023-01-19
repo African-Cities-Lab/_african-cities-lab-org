@@ -53,135 +53,96 @@ urlpatterns = [
     ),
     path("webinar-subscribe/", views.subscribe_webinar, name="subscribe-webinar"),
     path(
-        "the-international-conference-of-african-cities-2023/",
+        "african-cities-conference-2023/",
         TemplateView.as_view(template_name="home/events/civa/civa.html"),
-        name="the-international-conference-of-african-cities-2023",
+        name="african-cities-conference-2023",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-agenda/",
+        "african-cities-conference-2023-agenda/",
         TemplateView.as_view(template_name="home/events/civa/agenda.html"),
-        name="civa-agenda",
+        name="acc-agenda",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-speakers/",
+        "african-cities-conference-2023-speakers/",
         TemplateView.as_view(template_name="home/events/civa/speakers.html"),
-        name="civa-speakers",
+        name="acc-speakers",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-sponsors/",
+        "african-cities-conference-2023-sponsors/",
         TemplateView.as_view(template_name="home/events/civa/sponsors.html"),
-        name="civa-sponsors",
+        name="acc-sponsors",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-contact/",
+        "african-cities-conference-2023-contact/",
         TemplateView.as_view(template_name="home/events/civa/contact.html"),
-        name="civa-informations",
+        name="acc-informations",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-registration/",
+        "african-cities-conference-2023-registration/",
         TemplateView.as_view(template_name="home/events/civa/form.html"),
-        name="civa-registration",
+        name="acc-registration",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-special-guests/",
+        "african-cities-conference-2023-special-guests/",
         TemplateView.as_view(template_name="home/events/civa/guests.html"),
-        name="civa-guests",
+        name="acc-guests",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-commitee/",
+        "african-cities-conference-2023-commitee/",
         TemplateView.as_view(template_name="home/events/civa/commitee.html"),
-        name="civa-commitee",
+        name="acc-commitee",
     ),
     path(
-        "the-international-conference-of-african-cities-2023-call-for-papers/",
+        "african-cities-conference-2023-call-for-papers/",
         TemplateView.as_view(template_name="home/events/civa/call-for-paper.html"),
-        name="civa-papers",
+        name="acc-papers",
     ),
     # Moocs url
     path(
-        "moocs/introduction-to-sanitazation-economy-systems-markets/",
+        "moocs/introduction-a-la-planification-urbaine/",
         TemplateView.as_view(
-            template_name="home/moocs/introduction_to_sanitazation_economy_systems_markets.html"
+            template_name="home/moocs/introduction_a_la_planification_urbaine.html"
         ),
-        name="introduction-to-sanitazation-economy-systems-markets",
+        name="introduction-a-la-planification-urbaine",
     ),
     path(
-        "moocs/urban-data-management-for-smart-city-developpement-in-africa/",
+        "moocs/planification-a-la-gestion-urbaine/",
+        TemplateView.as_view(template_name="home/moocs/planification_a_la_gestion_urbaine.html"),
+        name="planification-a-la-gestion-urbaine",
+    ),
+    path(
+        "moocs/mobilites-et-transports-urbains/",
         TemplateView.as_view(
-            template_name="home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html"
+            template_name="home/moocs/mobilites_et_transports_urbains.html"
         ),
-        name="urban-data-management-for-smart-city-developpement-in-africa",
+        name="mobilites-et-transports-urbains",
     ),
     path(
-        "moocs/eco-construction-en-afrique/",
+        "moocs/systemes-dinformation-geographique-partie-1/",
         TemplateView.as_view(
-            template_name="home/moocs/eco_construction_en_afrique.html"
+            template_name="home/moocs/systemes_dinformation_geographique_1.html"
         ),
-        name="eco-construction-en-afrique",
+        name="systemes-dinformation-geographique-partie-1",
     ),
     path(
-        "moocs/making-housing-work-in-african-cities/",
+        "moocs/systemes-dinformation-geographique-partie-2/",
         TemplateView.as_view(
-            template_name="home/moocs/making_housing_work_in_african_cities.html"
+            template_name="home/moocs/systemes_dinformation_geographique_2.html"
         ),
-        name="making-housing-work-in-african-cities",
+        name="systemes-dinformation-geographique-partie-2",
     ),
     path(
-        "moocs/how-can-cities-in-africa-be-smarter/",
+        "moocs/restructuration-des-quartiers-precaires/",
         TemplateView.as_view(
-            template_name="home/moocs/how_can_cities_in_africa_be_smarter.html"
+            template_name="home/moocs/restructuration_des_quartiers_precaires.html"
         ),
-        name="how-can-cities-in-africa-be-smarter",
+        name="restructuration-des-quartiers-precaires",
     ),
     path(
-        "moocs/what-can-food-tell-us-about-cities-in-africa/",
-        TemplateView.as_view(
-            template_name="home/moocs/what_can_food_tell_us_about_cities_in_africa.html"
-        ),
-        name="what-can-food-tell-us-about-cities-in-africa",
+        "moocs/environnement-et-enjeux-de-developpement-durable/",
+        TemplateView.as_view(template_name="home/moocs/environnement_et_enjeux_de_developpement_durable.html"),
+        name="environnement-et-enjeux-de-developpement-durable",
     ),
-    path(
-        "moocs/la-fabrique-urbaine-collective/",
-        TemplateView.as_view(
-            template_name="home/moocs/la_fabrique_urbaine_collective.html"
-        ),
-        name="la-fabrique-urbaine-collective",
-    ),
-    path(
-        "moocs/urban-economic-development-in-the-context-of-climate-change/",
-        TemplateView.as_view(
-            template_name="home/moocs/urban_economic_development_in_the_context_of_climate_change.html"
-        ),
-        name="urban-economic-development-in-the-context-of-climate-change",
-    ),
-    path(
-        "moocs/digital-governance-for-a-better-public-participation-and-urban-services-delivery-in-african-cities/",
-        TemplateView.as_view(
-            template_name="home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html"
-        ),
-        name="digital-governance-for-a-better-public-participation-and-urban-services-delivery-in-african-cities",
-    ),
-    path(
-        "moocs/le-solaire-photovoltaïque-et-ses-applications-au-profit-du-developpement-urbain/",
-        TemplateView.as_view(
-            template_name="home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html"
-        ),
-        name="le-solaire-photovoltaïque-et-ses-applications-au-profit-du-developpement-urbain",
-    ),
-    path(
-        "moocs/sustainable-urban-systems/",
-        TemplateView.as_view(template_name="home/moocs/sustainable_urban_systems.html"),
-        name="sustainable-urban-systems",
-    ),
-    path(
-        "moocs/habitat-resilient/",
-        TemplateView.as_view(template_name="home/moocs/habitat_resilient.html"),
-        name="habitat-resilient",
-    ),
-    path(
-        "moocs/urban-ai/",
-        TemplateView.as_view(template_name="home/moocs/urban_ai.html"),
-        name="urban-ai",
-    ),
+    ########
     path("moocs/subscribe/", views.subscribe_moocs, name="subscribe-moocs"),
 ]

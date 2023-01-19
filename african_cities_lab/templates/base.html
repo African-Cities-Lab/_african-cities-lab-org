@@ -87,8 +87,9 @@
                             </li>
                             {% comment %}
                             <li class="nav-item mx-3">
-                                <a class="nav-link"  href="https://courses.africancitieslab.org/">{% translate "Moocs" %}</a>
-                            </li> 
+                                <a class="nav-link"  href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
+                            </li>
+                            {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
                             </li>
@@ -102,6 +103,7 @@
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
                             {% endcomment %}
+                            
                             <li class="nav-item mx-3 dropdown">
                                 <a class="nav-link dropdown-toggle" role="button" href="#" id="event-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     {% translate "Events" %}
@@ -111,12 +113,13 @@
                                         {% url 'events' as url %}
                                         <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
                                     </li>
-                                    <li class="pt-2">
-                                        {% url 'the-international-conference-of-african-cities-2023' as url %}
-                                        <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">{% translate "CIVA 2023" %}</a>
+                                    <li class="pt-2"> 
+                                        {% url 'african-cities-conference-2023' as url %}
+                                        <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023'%}">{% translate "ACC 2023" %}</a>
                                     </li>
                                 </ul>
                             </li>
+                            
                             {% url 'contact' as url %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'contact' %}">{% translate "Contact" %}</a>
@@ -191,13 +194,13 @@
                                         <li>
                                             <a href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                                         </li>
-                                       {% endcomment %}
+                                        {% endcomment %}
                                         <li>
                                             <a href="{% url 'events' %}">{% translate "Webinars" %}</a>
-                                        </li>
+                                        </li> 
                                         <li >
-                                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}">{% translate "CIVA 2023" %}</a>
-                                        </li>
+                                            <a href="{% url 'african-cities-conference-2023' %}">{% translate "ACC 2023" %}</a>
+                                        </li> 
                                         <li>
                                             <a href="{% url 'contact' %}">{% translate "Contact" %}</a> 
                                         </li> 

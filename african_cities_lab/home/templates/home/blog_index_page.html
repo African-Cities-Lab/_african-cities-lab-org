@@ -12,8 +12,10 @@
 {% block css %}
     {{ block.super }}
     <style>
-        .page-banner__right {
-            background-image: url({% static 'images/assets/acl-contact-banner.jpg' %});
+        .page-banner {
+            background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+              url({% static 'images/assets/acl-blogbanner.jpg' %});
+            background-position: bottom center;
         }
     </style> 
 {% endblock css %}
@@ -21,21 +23,26 @@
 {% block content %}
 
     <!-- Page banner area-->
-    <section class="page-banner__area bg_primary">
-        <div class="row justify-content-between align-item-center">
-            <div class="page-banner__left align-self-center">
-                <h1 class="page-hero__title text-white">{% translate "Blog" %}</h1>
-            </div>
-            <div class="page-banner__right">
-                <div class="d-none d-lg-block banner-angle__left">
-                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+    <section class="page-banner"> 
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6 col-md-10"> 
+                    <div class="position-relative h1">
+                        {% translate "Blog" %}
+                        <span class="dash-accent"></span>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="acl-sharpes right-sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
         </div>
     </section>
     <!-- End Page banner area -->
 
     {% if page.localized.get_children %}
+
+    {% comment %}
     <section class="filter-wrapper py-5">
         <div class="container-xl">
             <div class="row justify-content-md-between align-content-center">
@@ -43,7 +50,7 @@
                     <h2>{% translate "All articles" %}</h2> 
                 </div> 
 
-                {% comment %}
+                
                     {% if categories %}
                     <div class="col-12 col-sm-3 position-relative">
                         <select id="blog-filter" name="article__category" class="form-control">
@@ -57,12 +64,13 @@
                         </div>
                     </div> 
                     {% endif %}
-                {% endcomment %}
+                
             </div>
         </div>
     </section>
+    {% endcomment %}
 
-    <section class="pb-5">
+    <section class="py-5">
         <div class="container-xl">
             <div class="row "> 
                 {% for article in page.localized.get_children %} 

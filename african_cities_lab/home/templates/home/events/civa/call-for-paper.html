@@ -6,27 +6,28 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "Call for papers | The International Conference of African Cities" %} - African Cities Lab
+        {% translate "Call for papers | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}" />
-<meta property="og:description" content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities (CIVA) - Digital Cities" %} - African Cities Lab{% endif %}">
-<meta itemprop='description' content="{% translate "CIVA is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
 
@@ -39,9 +40,10 @@
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
-
-    .page-banner__right {
-        background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+    .page-banner {
+      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-position: top center;
     }
   </style>
 {% endblock css %}
@@ -60,40 +62,40 @@
                 <div class="overflow-wrap col-10 col-xl-11">
                     <nav aria-labelledby="nav2">
                       <label id="nav2">
-                        {% url 'the-international-conference-of-african-cities-2023' as url %}
-                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">
-                          {% translate "CIVA 2023" %}
+                        {% url 'african-cities-conference-2023' as url %}
+                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">
+                          {% translate "ACC 2023" %}
                         </a>
                         <span class="visuallyhidden">secondary menu</span>
                       </label>
                       <ul class="list-inline">
                         <!--li class="list-inline-item">
-                          {% url 'civa-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                          {% url 'acc-agenda' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
                         </li-->
                         <li class="list-inline-item">
-                          {% url 'civa-speakers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                          {% url 'acc-speakers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
                         </li>
                         <!--li class="list-inline-item">
-                          {% url 'civa-guests' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                          {% url 'acc-guests' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-guests' %}">{% translate "Special guests" %}</a>
                         </li-->
                         <li class="list-inline-item">
-                          {% url 'civa-commitee' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
+                          {% url 'acc-commitee' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
                         </li>
                         <li class="list-inline-item">
-                          {% url 'civa-papers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                          {% url 'acc-papers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
                         </li>
                         <!--li class="list-inline-item">
-                            {% url 'civa-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                            {% url 'acc-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>
                         </li-->
                         <!--li class="list-inline-item">
-                            {% url 'civa-informations' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
+                            {% url 'acc-informations' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contact" %}</a>
                         </li-->
                       </ul>
                     </nav>
@@ -104,34 +106,37 @@
     </div>
 </div>
 
-<section class="page-banner__area bg_primary mt-5">
-    <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left align-self-center">
-            <h1 class="page-hero__title text-white">{% translate "Call for papers" %}</h1>
-        </div>
-        <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left">
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
-            </div>
-        </div>
-    </div>
+<section class="page-banner"> 
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6"> 
+              <div class="position-relative h1">
+                  {% translate "Call for papers" %}
+                  <span class="dash-accent"></span>
+              </div> 
+          </div>
+      </div>
+  </div>
+  <div class="acl-sharpes right-sharpe">
+      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+  </div>
 </section>
 
 <section class="py-5">
     <div class="container-fluid">
-        <div class="row py-3">
+        <div class="row py-3 justify-content-center">
             <div class="col-12 col-lg-11 font-size-16">
                   <p class="mt-3">
                     {% blocktranslate %}
-                    The  « <strong>International Conference on African Cities (CIVA) - Digital Cities</strong>» is the first annual forum for international discussion and exchange of 
-                    experts specializing in African cities that will take place from 21 to 23 March 2023 in the city of Cotonou in Benin. The ultimate goal of the CIVA conference
+                    The  « <strong>African Cities Conference (ACC) - Digital Cities</strong>» is the first annual forum for international discussion and exchange of 
+                    experts specializing in African cities that will take place 23 and 24 May 2023 in the city of Cotonou in Benin. The ultimate goal of the ACC 2023
                     is to increase the scope and influence of research and entrepreneurial innovation activities on the African continent related to the digitalization of cities. 
                     The 2023 edition focuses on the African digital city as a potential solution to urban challenges in Africa.
                     {% endblocktranslate %}
                   </p>
                   <p>
                     {% blocktranslate %}
-                    The CIVA 2023 conference covers all topics related to digital cities in Africa, including work associated with the transition to digital cities and urban planning, 
+                    The ACC 2023 conference covers all topics related to digital cities in Africa, including work associated with the transition to digital cities and urban planning, 
                     African smart cities, Smart geo-information systems (Smart GIS), smart governance, challenges of digital cities in Africa, urban sustainability, planning/management 
                     issues of emerging cities in Africa, urban socio-economic challenges (education, health, employment, youth, economy, food security, etc.), urban environment, 
                     information and communication technologies applied to the urban. 
@@ -145,7 +150,7 @@
                   </p>
                   <p class="mt-4">
                       {% blocktranslate %}
-                      CIVA 2023 will promote scientific excellence in Africa through the communication and publication of 
+                      ACC 2023 will promote scientific excellence in Africa through the communication and publication of 
                       and publication of the best research results and works written in original scientific articles in its 
                       conference proceedings, its book proceedings and its special issues which follow:
                       {% endblocktranslate %}
@@ -174,15 +179,15 @@
                 </ul>
             </div>
         </div>
-        <div class="my-4">
-          <a class="btn btn__primary btn__small" target="_blank" href="https://easychair.org/conferences/?conf=civa2023">
+        <div class="my-4 text-center">
+          <a class="btn btn__primary btn__big" target="_blank" href="https://easychair.org/conferences/?conf=ACC2023">
             {% translate "Submit your Paper" %}
           </a>
         </div>
     </div>
   </section>
 
-  <section class="py-5">
+  <!--section class="py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-11">
@@ -192,27 +197,27 @@
             <ul class="list-inline timeline-container">
               <li class="list-inline-item timeline-step">
                 <div class="timeline-pointer"></div>
-                <h4 class="font-size-18 font-weight-500">{% translate "January 15, 2023" %}</h4>
+                <h4 class="font-size-18">{% translate "January 15, 2023" %}</h4>
                 <h3 class="text_primary pt-3 font-size-18 font-weight-500">{% translate "Papers submission deadline" %}</h3> 
               </li>
               <li class="list-inline-item timeline-step">
                 <div class="timeline-pointer"></div>
-                <h4 class="font-size-18 font-weight-500">{% translate "January 30, 2023" %}</h4>
+                <h4 class="font-size-18">{% translate "January 30, 2023" %}</h4>
                 <h3 class="text_primary pt-3 font-size-18 font-weight-500">{% translate "Notification of acceptance" %}</h3> 
               </li>
               <li class="list-inline-item timeline-step">
                 <div class="timeline-pointer"></div>
-                <h4 class="font-size-18 font-weight-500">{% translate "February 15, 2023" %}</h4>
+                <h4 class="font-size-18">{% translate "February 15, 2023" %}</h4>
                 <h3 class="text_primary pt-3 font-size-18 font-weight-500">{% translate "Camera-ready Submission" %}</h3> 
               </li>
               <li class="list-inline-item timeline-step">
                 <div class="timeline-pointer"></div>
-                <h4 class="font-size-18 font-weight-500">{% translate "February 28, 2023" %}</h4>
+                <h4 class="font-size-18">{% translate "February 28, 2023" %}</h4>
                 <h3 class="text_primary pt-3 font-size-18 font-weight-500">{% translate "Registration due date" %}</h3> 
               </li>
               <li class="list-inline-item timeline-step">
                 <div class="timeline-pointer"></div>
-                <h4 class="font-weight-500">{% translate "March 21, 22 & 23, 2023" %}</h4>
+                <h4>{% translate "March 21, 22 & 23, 2023" %}</h4>
                 <h3 class="text_primary pt-3 font-size-22 font-weight-500">{% translate "Conference date" %}</h3> 
               </li>
             </ul>
@@ -220,7 +225,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section-->
   
 {% endblock content %}
   

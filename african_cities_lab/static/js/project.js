@@ -58,7 +58,7 @@
         },
     });
 
-    //CIVA Focus areas swipper
+    //ACC Focus areas swipper
     var swiper = new Swiper(".focus-areas__list", {
         slidesPerView: 2,
         spaceBetween: 10,

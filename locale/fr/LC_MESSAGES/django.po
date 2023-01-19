@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-29 11:16+0100\n"
+"POT-Creation-Date: 2023-01-19 16:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/about.html:15
 #: african_cities_lab/home/templates/home/about.html:20
 #: african_cities_lab/home/templates/home/about.html:25
-#: african_cities_lab/templates/base.html:101
-#: african_cities_lab/templates/base.html:189
+#: african_cities_lab/templates/base.html:100
+#: african_cities_lab/templates/base.html:190
 msgid "About"
 msgstr "À propos"
 
@@ -51,19 +51,14 @@ msgstr "À propos"
 #: african_cities_lab/home/templates/home/home.html:7
 #: african_cities_lab/home/templates/home/home.html:12
 #: african_cities_lab/home/templates/home/home.html:17
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:8
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:8
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:8
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:8
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:8
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:8
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:8
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:8
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:8
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:8
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:8
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:8
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:8
+#: african_cities_lab/home/templates/home/moocs.html:15
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:9
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:9
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:9
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:9
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:9
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:9
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:9
 #: african_cities_lab/home/templates/home/static_contact.html:16
 #: african_cities_lab/home/templates/home/static_contact.html:21
 #: african_cities_lab/home/templates/home/static_contact.html:26
@@ -82,73 +77,62 @@ msgstr ""
 "l’urbanisation galopante du continent et faire face aux défis "
 "architecturaux, sociaux et environnementaux des villes africaines de 2050."
 
-#: african_cities_lab/home/templates/home/about.html:45
+#: african_cities_lab/home/templates/home/about.html:47
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:48
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:50
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:50
-#: african_cities_lab/home/templates/home/home.html:30
-#: african_cities_lab/home/templates/home/home.html:241
-#: african_cities_lab/home/templates/home/home.html:268
-#: african_cities_lab/home/templates/home/home.html:285
-#: african_cities_lab/home/templates/home/moocs.html:28
-#: african_cities_lab/home/templates/home/static_contact.html:45
-#: african_cities_lab/home/templates/home/static_gdpr.html:45
-#: african_cities_lab/home/templates/home/static_terms.html:46
+#: african_cities_lab/home/templates/home/home.html:35
+#: african_cities_lab/home/templates/home/moocs.html:30
+#: african_cities_lab/home/templates/home/static_contact.html:44
+#: african_cities_lab/home/templates/home/static_gdpr.html:42
+#: african_cities_lab/home/templates/home/static_terms.html:42
 msgid "Webinar"
 msgstr "Webinaire"
 
-#: african_cities_lab/home/templates/home/about.html:47
+#: african_cities_lab/home/templates/home/about.html:49
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:119
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:945
-#: african_cities_lab/home/templates/home/home.html:32
-#: african_cities_lab/home/templates/home/moocs.html:30
-#: african_cities_lab/home/templates/home/static_contact.html:47
-#: african_cities_lab/home/templates/home/static_gdpr.html:47
-#: african_cities_lab/home/templates/home/static_terms.html:48
+#: african_cities_lab/home/templates/home/home.html:37
+#: african_cities_lab/home/templates/home/moocs.html:32
+#: african_cities_lab/home/templates/home/static_contact.html:46
+#: african_cities_lab/home/templates/home/static_gdpr.html:44
+#: african_cities_lab/home/templates/home/static_terms.html:44
 msgid "Register now"
 msgstr "S'inscrire maintenant"
 
-#: african_cities_lab/home/templates/home/about.html:59
-msgid "By 2050 , African cities will be home to"
-msgstr "D’ici 2050, les villes africaines abriteront"
+#: african_cities_lab/home/templates/home/about.html:62
+msgid "By 2050, African cities will be home to 2.5 billion people"
+msgstr "D’ici 2050, les villes africaines abriteront 2,5 milliards d'habitants"
 
-#: african_cities_lab/home/templates/home/about.html:59
-msgid "2.5 billion"
-msgstr "2,5 milliards"
-
-#: african_cities_lab/home/templates/home/about.html:59
-msgid "people."
-msgstr "d’habitants."
-
-#: african_cities_lab/home/templates/home/about.html:64
+#: african_cities_lab/home/templates/home/about.html:68
 msgid "700 million"
 msgstr "700 millions"
 
-#: african_cities_lab/home/templates/home/about.html:64
+#: african_cities_lab/home/templates/home/about.html:68
 msgid " new homes"
 msgstr " de nouveaux logements"
 
-#: african_cities_lab/home/templates/home/about.html:68
+#: african_cities_lab/home/templates/home/about.html:72
 msgid "300,000"
 msgstr "300 000"
 
-#: african_cities_lab/home/templates/home/about.html:68
+#: african_cities_lab/home/templates/home/about.html:72
 msgid " schools"
 msgstr " écoles"
 
-#: african_cities_lab/home/templates/home/about.html:71
+#: african_cities_lab/home/templates/home/about.html:75
 msgid " and almost "
 msgstr " et presque"
 
-#: african_cities_lab/home/templates/home/about.html:75
+#: african_cities_lab/home/templates/home/about.html:79
 msgid "100,000"
 msgstr "100 000"
 
-#: african_cities_lab/home/templates/home/about.html:75
+#: african_cities_lab/home/templates/home/about.html:79
 msgid " health centers"
 msgstr " centres de santé"
 
-#: african_cities_lab/home/templates/home/about.html:78
+#: african_cities_lab/home/templates/home/about.html:82
 msgid "remain to be built."
 msgstr "restent à construire."
 
@@ -281,52 +265,11 @@ msgstr ""
 "approfondir et contextualiser les connaissances.\n"
 "                                "
 
-#: african_cities_lab/home/templates/home/about.html:218
-msgid "The International Conference of African Cities (CIVA)"
-msgstr "Conférence Internationale des Villes Africaines (CIVA)"
-
-#: african_cities_lab/home/templates/home/about.html:221
-msgid ""
-"\n"
-"                            Challenging the current vision of African "
-"cities, digital cities are presented as a rational response to future "
-"demographic projections.\n"
-"                            African Cities Lab creates the \"International "
-"Conference on African Cities (CIVA) - Digital Cities\" ,\n"
-"                            a major event that aims to increase the scope "
-"and develop synergies between research and entrepreneurship on the African "
-"continent.\n"
-"                            It is all about accelerating digitization of "
-"cities and promoting scientific excellence\n"
-"                            in Africa. The first edition of the Conference "
-"will take place in 2023 in Cotonou, Benin.\n"
-"                            "
-msgstr ""
-"\n"
-"Les villes digitales africaines sont présentées comme une réponse "
-"rationnelle aux projections démographiques futures. Remettant en question la "
-"vision actuelle des villes en Afrique, les villes digitales semblent être "
-"des acteurs majeurs de l'urbanisation de l'Afrique. African Cities Lab crée "
-"la « Conférence Internationale des Villes Africaines (CIVA) – Villes "
-"digitales », événement phare qui vise à accroître la portée et le "
-"rayonnement des activités de recherche et entrepreneuriale sur le continent "
-"africain relative à la numérisation des villes, ainsi qu’à promouvoir "
-"l’excellence scientifique en Afrique. La première Edition aura lieu en 2023 "
-"et se tiendra à Cotonou au Bénin."
-
-#: african_cities_lab/home/templates/home/about.html:230
-#: african_cities_lab/home/templates/home/event_index_page.html:90
-#: african_cities_lab/home/templates/home/event_index_page.html:121
-#: african_cities_lab/home/templates/home/event_index_page.html:150
-#: african_cities_lab/home/templates/home/home.html:249
-msgid "Learn more"
-msgstr "En savoir plus"
-
-#: african_cities_lab/home/templates/home/about.html:243
+#: african_cities_lab/home/templates/home/about.html:209
 msgid "African Cities Lab Webinars"
 msgstr "Les webinaires African Cities Lab"
 
-#: african_cities_lab/home/templates/home/about.html:246
+#: african_cities_lab/home/templates/home/about.html:212
 msgid ""
 "\n"
 "                        Through a series of 4 webinars, the partners of the "
@@ -359,15 +302,15 @@ msgstr ""
 "ou pourraient être plus efficaces dans l'exploitation du numérique pour "
 "atteindre les ODD localement."
 
-#: african_cities_lab/home/templates/home/about.html:269
+#: african_cities_lab/home/templates/home/about.html:235
 msgid "July 2022"
 msgstr "5 Juillet 2022"
 
-#: african_cities_lab/home/templates/home/about.html:270
+#: african_cities_lab/home/templates/home/about.html:236
 msgid "1st webinar"
 msgstr "1er Webinaire"
 
-#: african_cities_lab/home/templates/home/about.html:271
+#: african_cities_lab/home/templates/home/about.html:237
 msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa."
@@ -375,62 +318,117 @@ msgstr ""
 "Intégration de l'open data et de l’intelligence artificielle dans le "
 "développement des smart cities en Afrique."
 
-#: african_cities_lab/home/templates/home/about.html:277
+#: african_cities_lab/home/templates/home/about.html:243
 msgid "October 2022"
 msgstr "Octobre 2022"
 
-#: african_cities_lab/home/templates/home/about.html:278
+#: african_cities_lab/home/templates/home/about.html:244
 msgid "2nd webinar"
 msgstr "2nd Webinaire"
 
-#: african_cities_lab/home/templates/home/about.html:279
-#: african_cities_lab/home/templates/home/event_index_page.html:105
+#: african_cities_lab/home/templates/home/about.html:245
+#: african_cities_lab/home/templates/home/event_index_page.html:126
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:5
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:13
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:18
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:271
 msgid "African Cities: What role for the youth?"
 msgstr "Villes africaines : Quelle place pour les jeunes ?"
 
-#: african_cities_lab/home/templates/home/about.html:285
+#: african_cities_lab/home/templates/home/about.html:251
 msgid "November 2022"
 msgstr "Novembre 2022"
 
-#: african_cities_lab/home/templates/home/about.html:286
+#: african_cities_lab/home/templates/home/about.html:252
 msgid "3rd webinar"
 msgstr "3ème Webinaire"
 
-#: african_cities_lab/home/templates/home/about.html:293
+#: african_cities_lab/home/templates/home/about.html:254
+#: african_cities_lab/home/templates/home/event_index_page.html:86
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:5
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:13
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:18
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:23
+#: african_cities_lab/home/templates/home/home.html:444
+#: african_cities_lab/home/templates/home/webinar_form.html:19
+#: african_cities_lab/home/templates/home/webinar_form.html:24
+#: african_cities_lab/home/templates/home/webinar_form.html:29
+msgid "How to build resilient African Cities in response to climate change?"
+msgstr ""
+"Comment construire des villes africaines résilientes face aux changements "
+"climatiques ?"
+
+#: african_cities_lab/home/templates/home/about.html:261
 msgid "February 2023"
 msgstr "Février 2023"
 
-#: african_cities_lab/home/templates/home/about.html:294
+#: african_cities_lab/home/templates/home/about.html:262
 msgid "4th webinar"
 msgstr "4ème Webinaire"
 
-#: african_cities_lab/home/templates/home/about.html:301
-msgid "March 2023"
-msgstr "Mars 2023"
+#: african_cities_lab/home/templates/home/about.html:269
+msgid "May 2023"
+msgstr "Mai 2023"
 
-#: african_cities_lab/home/templates/home/about.html:302
-msgid "International Conference of African Cities"
-msgstr "Conférence Internationale des Villes Africaines (CIVA)"
+#: african_cities_lab/home/templates/home/about.html:270
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:17
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:22
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:27
+#: african_cities_lab/home/templates/home/events/civa/contact.html:17
+#: african_cities_lab/home/templates/home/events/civa/contact.html:22
+#: african_cities_lab/home/templates/home/events/civa/contact.html:27
+#: african_cities_lab/home/templates/home/events/civa/form.html:17
+#: african_cities_lab/home/templates/home/events/civa/form.html:22
+#: african_cities_lab/home/templates/home/events/civa/form.html:27
+#: african_cities_lab/home/templates/home/events/civa/guests.html:17
+#: african_cities_lab/home/templates/home/events/civa/guests.html:22
+#: african_cities_lab/home/templates/home/events/civa/guests.html:27
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:17
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:22
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:27
+msgid "African Cities Conference"
+msgstr ""
 
-#: african_cities_lab/home/templates/home/about.html:310
+#: african_cities_lab/home/templates/home/about.html:278
 msgid "Register for the next webinar"
 msgstr "Inscrivez-vous au prochain webinaire"
 
-#: african_cities_lab/home/templates/home/blog_index_page.html:9
-#: african_cities_lab/home/templates/home/blog_index_page.html:27
-msgid "Blog"
+#: african_cities_lab/home/templates/home/about.html:297
+msgid "African Cities Conference (ACC)"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/blog_index_page.html:43
-#: african_cities_lab/home/templates/home/home.html:367
-#: african_cities_lab/home/templates/home/home.html:413
-msgid "All articles"
-msgstr "Tous les articles"
+#: african_cities_lab/home/templates/home/about.html:300
+msgid ""
+"\n"
+"                            Challenging the current vision of African "
+"cities, digital cities are presented as a rational response to future "
+"demographic projections.\n"
+"                            African Cities Lab creates the \"African Cities "
+"Conference (ACC) - Digital Cities\" ,\n"
+"                            a major event that aims to increase the scope "
+"and develop synergies between research and entrepreneurship on the African "
+"continent.\n"
+"                            It is all about accelerating digitization of "
+"cities and promoting scientific excellence\n"
+"                            in Africa. The first edition of the Conference "
+"will take place in 2023 in Cotonou, Benin.\n"
+"                            "
+msgstr ""
+"\n"
+"Les villes digitales africaines sont présentées comme une réponse "
+"rationnelle aux projections démographiques futures. Remettant en question la "
+"vision actuelle des villes en Afrique, les villes digitales semblent être "
+"des acteurs majeurs de l'urbanisation de l'Afrique. African Cities Lab crée "
+"« African Cities Conference (ACC) – Villes digitales », événement phare qui "
+"vise à accroître la portée et le rayonnement des activités de recherche et "
+"entrepreneuriale sur le continent africain relative à la numérisation des "
+"villes, ainsi qu’à promouvoir l’excellence scientifique en Afrique. La "
+"première Edition aura lieu en 2023 et se tiendra à Cotonou au Bénin."
+
+#: african_cities_lab/home/templates/home/blog_index_page.html:9
+#: african_cities_lab/home/templates/home/blog_index_page.html:31
+msgid "Blog"
+msgstr ""
 
 #: african_cities_lab/home/templates/home/blog_page.html:57
 msgid "Tags:"
@@ -457,73 +455,33 @@ msgstr "Aucune page trouvée avec ce tag."
 #: african_cities_lab/home/templates/home/event_index_page.html:15
 #: african_cities_lab/home/templates/home/event_index_page.html:20
 #: african_cities_lab/home/templates/home/event_index_page.html:25
-#: african_cities_lab/home/templates/home/home.html:218
 #: african_cities_lab/templates/base.html:111
 msgid "Events"
 msgstr "Événements"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:47
+#: african_cities_lab/home/templates/home/event_index_page.html:48
+#: african_cities_lab/home/templates/home/home.html:414
 #: african_cities_lab/templates/base.html:116
-#: african_cities_lab/templates/base.html:202
+#: african_cities_lab/templates/base.html:203
 msgid "Webinars"
 msgstr "Webinaires"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:73
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:5
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:13
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:18
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:244
-#: african_cities_lab/home/templates/home/webinar_form.html:19
-#: african_cities_lab/home/templates/home/webinar_form.html:24
-#: african_cities_lab/home/templates/home/webinar_form.html:29
-msgid "How to build resilient African Cities in response to climate change?"
-msgstr ""
-"Comment construire des villes africaines résilientes face aux changements "
-"climatiques ?"
+#: african_cities_lab/home/templates/home/event_index_page.html:68
+#, fuzzy
+#| msgid "Nov 24"
+msgid "Nov"
+msgstr "24 Nov"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:75
-msgid "November 24, 2022"
-msgstr "24 Novembre 2022"
-
-#: african_cities_lab/home/templates/home/event_index_page.html:77
-#: african_cities_lab/home/templates/home/event_index_page.html:109
-#: african_cities_lab/home/templates/home/event_index_page.html:140
-#: african_cities_lab/home/templates/home/events/1st_webinar.html:58
-#: african_cities_lab/home/templates/home/events/2nd_webinar.html:70
-#: african_cities_lab/home/templates/home/events/3rd_webinar.html:70
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:50
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:50
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:50
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:50
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:50
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:50
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:50
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:50
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:50
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:50
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:50
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:50
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:50
-msgid "Online"
-msgstr "En ligne"
-
-#: african_cities_lab/home/templates/home/event_index_page.html:80
+#: african_cities_lab/home/templates/home/event_index_page.html:90
 msgid ""
 "\n"
-"                      Our planet will host 80&#37; of the global population "
+"                    Our planet will host 80&#37; of the global population "
 "living in densely packed cities. According to the OECD, \n"
-"                      African cities are expected to house an additional 950 "
+"                    African cities are expected to house an additional 950 "
 "million people by 2050. With cities housing more than \n"
-"                      half of the world's population, urban areas will play "
-"a critical role to fight against climate change. \n"
-"                      This need is reinforced by the release of the third "
-"part of the sixth: The Intergovernmental Panel on Climate \n"
-"                      Change - IPCC report, which places Africa among the "
-"regions with the fastest urban growth and calls for a \n"
-"                      profound transformation of cities to deal with climate "
-"change and its consequences.\n"
-"                      "
+"                    half of the world's population, urban areas will play a "
+"critical role to fight against climate change. \n"
+"                  "
 msgstr ""
 "\n"
 "Les perspectives à long terme laissent présager que 80&#37; de la population "
@@ -532,20 +490,19 @@ msgstr ""
 "supplémentaires d'ici 2050. Les villes abritant plus de \n"
 "la moitié de la population mondiale, et les zones urbaines joueront un rôle "
 "essentiel dans la lutte contre le changement climatique. \n"
-"Cette nécessité est renforcée par la publication de la troisième partie du "
-"sixième rapport du groupe d'experts intergouvernemental sur l'évolution du "
-"climat \n"
-"GIEC -2022, qui place l'Afrique parmi les régions à la croissance urbaine la "
-"plus rapide et appelle à une \n"
-"transformation profonde des villes pour faire face aux conséquences du  "
-"changement climatique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:107
-msgid "October 11, 2022"
-msgstr "11 Octobre 2022"
+#: african_cities_lab/home/templates/home/event_index_page.html:97
+#: african_cities_lab/home/templates/home/event_index_page.html:140
+#: african_cities_lab/home/templates/home/event_index_page.html:181
+msgid "Learn more"
+msgstr "En savoir plus"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:112
+#: african_cities_lab/home/templates/home/event_index_page.html:108
+msgid "Oct"
+msgstr "Oct"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:130
 msgid ""
 "\n"
 "                        By 2050, 35&#37; of the world's population will be "
@@ -558,7 +515,7 @@ msgid ""
 "the age of 24. This peculiarity of the African continent \n"
 "                        is an essential fact to be taken into account in "
 "urban planning.\n"
-"                        "
+"            "
 msgstr ""
 "\n"
 " A l’horizon 2050, 35&#37; de la population mondiale sera jeune et "
@@ -571,12 +528,16 @@ msgstr ""
 "donnée essentielle à prendre en compte dans la planification urbaine. \n"
 "                      "
 
-#: african_cities_lab/home/templates/home/event_index_page.html:136
+#: african_cities_lab/home/templates/home/event_index_page.html:151
+msgid "Jul"
+msgstr "Juil"
+
+#: african_cities_lab/home/templates/home/event_index_page.html:169
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:5
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:13
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:18
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:288
+#: african_cities_lab/home/templates/home/home.html:506
 msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa"
@@ -584,20 +545,16 @@ msgstr ""
 "Intégration de l'open data et de l’intelligence artificielle dans le "
 "développement des smart cities en Afrique"
 
-#: african_cities_lab/home/templates/home/event_index_page.html:138
-msgid "July 5, 2022"
-msgstr "5 Juillet 2022"
-
-#: african_cities_lab/home/templates/home/event_index_page.html:143
+#: african_cities_lab/home/templates/home/event_index_page.html:173
 msgid ""
 "\n"
-"                              In the era of new technologies, the growth of "
-"African cities will not only be sustainable but also smart.\n"
-"                              The rapid urban growth represents one of the "
-"greatest challenges of the 21st century in Africa.\n"
-"                              A new paradigm of urban development is taking "
-"place, where intrinsic challenges remain....\n"
-"                          "
+"            In the era of new technologies, the growth of African cities "
+"will not only be sustainable but also smart.\n"
+"            The rapid urban growth represents one of the greatest challenges "
+"of the 21st century in Africa.\n"
+"            A new paradigm of urban development is taking place, where "
+"intrinsic challenges remain....\n"
+"            "
 msgstr ""
 "\n"
 "À l'ère des nouvelles technologies, la croissance des villes africaines sera "
@@ -637,6 +594,12 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:57
 msgid "5 July, 2022"
 msgstr "5 Juillet 2022"
+
+#: african_cities_lab/home/templates/home/events/1st_webinar.html:58
+#: african_cities_lab/home/templates/home/events/2nd_webinar.html:70
+#: african_cities_lab/home/templates/home/events/3rd_webinar.html:70
+msgid "Online"
+msgstr "En ligne"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:62
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:86
@@ -814,8 +777,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:159
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:296
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:318
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:214
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:236
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:219
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:241
 msgid "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation"
 msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
@@ -959,21 +922,21 @@ msgstr "CEO Open data Africa"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:275
 #: african_cities_lab/home/templates/home/events/2nd_webinar.html:323
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:339
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:74
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:76
-#: african_cities_lab/home/templates/home/events/civa/civa.html:245
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:88
-#: african_cities_lab/home/templates/home/events/civa/contact.html:75
-#: african_cities_lab/home/templates/home/events/civa/form.html:75
-#: african_cities_lab/home/templates/home/events/civa/guests.html:74
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:75
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:109
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:74
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:76
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:78
+#: african_cities_lab/home/templates/home/events/civa/civa.html:173
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:91
+#: african_cities_lab/home/templates/home/events/civa/contact.html:76
+#: african_cities_lab/home/templates/home/events/civa/form.html:76
+#: african_cities_lab/home/templates/home/events/civa/guests.html:76
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:78
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:114
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:76
 msgid "Speakers"
 msgstr "Intervenants"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:327
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:245
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:250
 msgid ""
 "\n"
 "                            Is a lecturer at Bordeaux INP since 2006 and "
@@ -1088,8 +1051,8 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:497
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:519
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:284
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:306
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:289
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:311
 msgid ""
 "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure"
 msgstr ""
@@ -1097,7 +1060,7 @@ msgstr ""
 "géospatiales"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:528
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:315
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:320
 msgid ""
 "\n"
 "                            Graduated in 2013 from the school of surveyors "
@@ -1133,13 +1096,13 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:566
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:588
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:149
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:171
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:154
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:176
 msgid "Founder and President at the Future Cities Council"
 msgstr "Professeur et PDG de Future Cities"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:597
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:180
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:185
 msgid ""
 "\n"
 "                            He's a futurist, technologist, future cities "
@@ -2918,133 +2881,115 @@ msgstr ""
 "                            "
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:9
-msgid "Agenda | The International Conference of African Cities"
-msgstr "Programme | Conférence Internationale des Villes Africaines"
+msgid "Agenda | African Cities Conference"
+msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:17
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:22
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:27
-#: african_cities_lab/home/templates/home/events/civa/contact.html:17
-#: african_cities_lab/home/templates/home/events/civa/contact.html:22
-#: african_cities_lab/home/templates/home/events/civa/contact.html:27
-#: african_cities_lab/home/templates/home/events/civa/form.html:17
-#: african_cities_lab/home/templates/home/events/civa/form.html:22
-#: african_cities_lab/home/templates/home/events/civa/form.html:27
-#: african_cities_lab/home/templates/home/events/civa/guests.html:17
-#: african_cities_lab/home/templates/home/events/civa/guests.html:22
-#: african_cities_lab/home/templates/home/events/civa/guests.html:27
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:17
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:22
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:27
-msgid "The International Conference of African Cities"
-msgstr "Conférence Internationale des Villes Africaines"
-
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:63
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:65
-#: african_cities_lab/home/templates/home/events/civa/civa.html:234
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:77
-#: african_cities_lab/home/templates/home/events/civa/contact.html:64
-#: african_cities_lab/home/templates/home/events/civa/form.html:64
-#: african_cities_lab/home/templates/home/events/civa/guests.html:63
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:64
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:63
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:65
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:67
+#: african_cities_lab/home/templates/home/events/civa/civa.html:162
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:80
+#: african_cities_lab/home/templates/home/events/civa/contact.html:65
+#: african_cities_lab/home/templates/home/events/civa/form.html:65
+#: african_cities_lab/home/templates/home/events/civa/guests.html:65
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:67
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:65
 #: african_cities_lab/templates/base.html:120
-#: african_cities_lab/templates/base.html:205
-msgid "CIVA 2023"
-msgstr "CIVA 2023"
+#: african_cities_lab/templates/base.html:206
+msgid "ACC 2023"
+msgstr "ACC 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:70
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:108
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:72
-#: african_cities_lab/home/templates/home/events/civa/civa.html:241
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:84
-#: african_cities_lab/home/templates/home/events/civa/contact.html:71
-#: african_cities_lab/home/templates/home/events/civa/form.html:71
-#: african_cities_lab/home/templates/home/events/civa/guests.html:70
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:71
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:70
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:72
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:112
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:74
+#: african_cities_lab/home/templates/home/events/civa/civa.html:169
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:87
+#: african_cities_lab/home/templates/home/events/civa/contact.html:72
+#: african_cities_lab/home/templates/home/events/civa/form.html:72
+#: african_cities_lab/home/templates/home/events/civa/guests.html:72
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:74
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:72
 msgid "Program"
 msgstr "Programme"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:78
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:80
-#: african_cities_lab/home/templates/home/events/civa/civa.html:249
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:92
-#: african_cities_lab/home/templates/home/events/civa/contact.html:79
-#: african_cities_lab/home/templates/home/events/civa/form.html:79
-#: african_cities_lab/home/templates/home/events/civa/guests.html:78
-#: african_cities_lab/home/templates/home/events/civa/guests.html:108
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:79
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:78
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:80
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:82
+#: african_cities_lab/home/templates/home/events/civa/civa.html:177
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:95
+#: african_cities_lab/home/templates/home/events/civa/contact.html:80
+#: african_cities_lab/home/templates/home/events/civa/form.html:80
+#: african_cities_lab/home/templates/home/events/civa/guests.html:80
+#: african_cities_lab/home/templates/home/events/civa/guests.html:112
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:82
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:80
 msgid "Special guests"
 msgstr "Invités d'honneur"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:82
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:84
-#: african_cities_lab/home/templates/home/events/civa/civa.html:253
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:96
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:122
-#: african_cities_lab/home/templates/home/events/civa/contact.html:83
-#: african_cities_lab/home/templates/home/events/civa/form.html:83
-#: african_cities_lab/home/templates/home/events/civa/guests.html:82
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:83
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:82
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:84
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:86
+#: african_cities_lab/home/templates/home/events/civa/civa.html:181
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:99
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:128
+#: african_cities_lab/home/templates/home/events/civa/contact.html:84
+#: african_cities_lab/home/templates/home/events/civa/form.html:84
+#: african_cities_lab/home/templates/home/events/civa/guests.html:84
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:86
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:84
 msgid "Committee"
 msgstr "Comité d'organisation"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:86
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:142
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:88
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:110
-#: african_cities_lab/home/templates/home/events/civa/civa.html:257
-#: african_cities_lab/home/templates/home/events/civa/civa.html:397
-#: african_cities_lab/home/templates/home/events/civa/civa.html:781
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:100
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:829
-#: african_cities_lab/home/templates/home/events/civa/contact.html:87
-#: african_cities_lab/home/templates/home/events/civa/contact.html:131
-#: african_cities_lab/home/templates/home/events/civa/form.html:87
-#: african_cities_lab/home/templates/home/events/civa/guests.html:86
-#: african_cities_lab/home/templates/home/events/civa/guests.html:131
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:87
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:356
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:86
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:250
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:88
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:147
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:90
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:114
+#: african_cities_lab/home/templates/home/events/civa/civa.html:185
+#: african_cities_lab/home/templates/home/events/civa/civa.html:324
+#: african_cities_lab/home/templates/home/events/civa/civa.html:708
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:103
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:836
+#: african_cities_lab/home/templates/home/events/civa/contact.html:88
+#: african_cities_lab/home/templates/home/events/civa/contact.html:134
+#: african_cities_lab/home/templates/home/events/civa/form.html:88
+#: african_cities_lab/home/templates/home/events/civa/guests.html:88
+#: african_cities_lab/home/templates/home/events/civa/guests.html:134
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:90
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:361
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:88
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:255
 msgid "Call for papers"
 msgstr "Appel à contributions"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:90
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:92
-#: african_cities_lab/home/templates/home/events/civa/civa.html:261
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:104
-#: african_cities_lab/home/templates/home/events/civa/contact.html:91
-#: african_cities_lab/home/templates/home/events/civa/form.html:91
-#: african_cities_lab/home/templates/home/events/civa/guests.html:90
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:91
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:90
-#: african_cities_lab/home/templates/home/home.html:199
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:92
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:94
+#: african_cities_lab/home/templates/home/events/civa/civa.html:189
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:107
+#: african_cities_lab/home/templates/home/events/civa/contact.html:92
+#: african_cities_lab/home/templates/home/events/civa/form.html:92
+#: african_cities_lab/home/templates/home/events/civa/guests.html:92
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:94
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:92
+#: african_cities_lab/home/templates/home/home.html:395
 #: african_cities_lab/home/templates/home/webinar_form.html:144
 msgid "Register"
 msgstr "S'inscrire"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:94
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:96
-#: african_cities_lab/home/templates/home/events/civa/civa.html:265
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:108
-#: african_cities_lab/home/templates/home/events/civa/contact.html:95
-#: african_cities_lab/home/templates/home/events/civa/contact.html:109
-#: african_cities_lab/home/templates/home/events/civa/form.html:95
-#: african_cities_lab/home/templates/home/events/civa/guests.html:94
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:95
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:94
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:96
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:98
+#: african_cities_lab/home/templates/home/events/civa/civa.html:193
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:111
+#: african_cities_lab/home/templates/home/events/civa/contact.html:96
+#: african_cities_lab/home/templates/home/events/civa/contact.html:112
+#: african_cities_lab/home/templates/home/events/civa/form.html:96
+#: african_cities_lab/home/templates/home/events/civa/guests.html:96
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:98
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:96
 msgid "Venue & Contact"
 msgstr "Lieu & Contact"
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:121
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:126
 msgid ""
 "\n"
 "                Information of <br>\n"
-"                CIVA 2023 shedules\n"
+"                ACC 2023 shedules\n"
 "            "
 msgstr ""
 "\n"
@@ -3052,29 +2997,24 @@ msgstr ""
 "                CIVA 2023\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:136
-#: african_cities_lab/home/templates/home/events/civa/civa.html:775
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:823
-#: african_cities_lab/home/templates/home/events/civa/contact.html:125
-#: african_cities_lab/home/templates/home/events/civa/guests.html:125
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:350
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:141
+#: african_cities_lab/home/templates/home/events/civa/contact.html:128
+#: african_cities_lab/home/templates/home/events/civa/guests.html:128
 msgid ""
 "\n"
-"          Join the International Conference of African Cities (CIVA) - "
-"Digital Cities\n"
+"          Join African Cities Conference (ACC) - Digital Cities\n"
 "          "
 msgstr ""
 "\n"
-"Rejoignez la Conférence Internationale des Villes Africaines (CIVA) - Villes "
-"digitales\n"
+"Rejoignez l'African Cities Conference (ACC) - Villes digitales\n"
 "          "
 
-#: african_cities_lab/home/templates/home/events/civa/agenda.html:146
-#: african_cities_lab/home/templates/home/events/civa/civa.html:785
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:833
-#: african_cities_lab/home/templates/home/events/civa/contact.html:135
-#: african_cities_lab/home/templates/home/events/civa/guests.html:135
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:360
+#: african_cities_lab/home/templates/home/events/civa/agenda.html:151
+#: african_cities_lab/home/templates/home/events/civa/civa.html:712
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:840
+#: african_cities_lab/home/templates/home/events/civa/contact.html:138
+#: african_cities_lab/home/templates/home/events/civa/guests.html:138
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:365
 msgid ""
 "\n"
 "            If you wish to have more information,<br> \n"
@@ -3087,62 +3027,59 @@ msgstr ""
 "          "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:9
-msgid "Call for papers | The International Conference of African Cities"
-msgstr ""
-"Appel à contributions | Conférence Internationale des Villes Africaines"
+msgid "Call for papers | African Cities Conference"
+msgstr "Appel à contributions | African Cities Conference"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:13
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:14
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:20
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:25
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:30
+#: african_cities_lab/home/templates/home/events/civa/civa.html:14
+#: african_cities_lab/home/templates/home/events/civa/civa.html:20
+#: african_cities_lab/home/templates/home/events/civa/civa.html:25
+#: african_cities_lab/home/templates/home/events/civa/civa.html:30
+#: african_cities_lab/home/templates/home/events/civa/civa.html:241
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:14
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:20
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:25
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:30
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:14
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:20
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:25
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:30
+msgid ""
+"ACC is the first international conference on urban and sustainable "
+"development in Africa."
+msgstr ""
+"ACC est la première conférence internationale sur le développement urbain et "
+"durable en Afrique."
+
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:19
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:24
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:29
-#: african_cities_lab/home/templates/home/events/civa/civa.html:13
+#: african_cities_lab/home/templates/home/events/civa/civa.html:9
 #: african_cities_lab/home/templates/home/events/civa/civa.html:19
 #: african_cities_lab/home/templates/home/events/civa/civa.html:24
 #: african_cities_lab/home/templates/home/events/civa/civa.html:29
-#: african_cities_lab/home/templates/home/events/civa/civa.html:314
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:13
+#: african_cities_lab/home/templates/home/events/civa/civa.html:313
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:19
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:24
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:29
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:13
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:19
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:24
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:29
-msgid ""
-"CIVA is the first international conference on urban and sustainable "
-"development in Africa."
-msgstr ""
-"CIVA est la première conférence internationale sur le développement urbain "
-"et durable en Afrique."
+msgid "African Cities Conference (ACC) - Digital Cities"
+msgstr "African Cities Conference (ACC) - Villes Digitales"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:18
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:23
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:28
-#: african_cities_lab/home/templates/home/events/civa/civa.html:9
-#: african_cities_lab/home/templates/home/events/civa/civa.html:18
-#: african_cities_lab/home/templates/home/events/civa/civa.html:23
-#: african_cities_lab/home/templates/home/events/civa/civa.html:28
-#: african_cities_lab/home/templates/home/events/civa/civa.html:282
-#: african_cities_lab/home/templates/home/events/civa/civa.html:386
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:18
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:23
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:28
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:18
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:23
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:28
-msgid "The International Conference of African Cities (CIVA) - Digital Cities"
-msgstr ""
-"Conférence Internationale des Villes Africaines (CIVA) - Villes Digitales"
-
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:125
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:130
 msgid ""
 "\n"
-"                    The  « <strong>International Conference on African "
-"Cities (CIVA) - Digital Cities</strong>» is the first annual forum for "
-"international discussion and exchange of \n"
+"                    The  « <strong>African Cities Conference (ACC) - Digital "
+"Cities</strong>» is the first annual forum for international discussion and "
+"exchange of \n"
 "                    experts specializing in African cities that will take "
-"place from 21 to 23 March 2023 in the city of Cotonou in Benin. The ultimate "
-"goal of the CIVA conference\n"
+"place 23 and 24 May 2023 in the city of Cotonou in Benin. The ultimate goal "
+"of the ACC 2023\n"
 "                    is to increase the scope and influence of research and "
 "entrepreneurial innovation activities on the African continent related to "
 "the digitalization of cities. \n"
@@ -3151,23 +3088,22 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"La « <strong>Conférence Internationale sur les Villes Africaines "
-"(CIVA) – Villes digitales</strong> » est le premier forum "
-"annuel de discussion et d’échange \n"
+"L' « <strong>African Cities Conference (ACC) – Villes digitales</strong> » "
+"est le premier forum annuel de discussion et d’échange \n"
 "internationaux des experts spécialisé sur les villes africaines qui aura "
-"lieu du 21 au 23 Mars 2023 dans la ville de Cotonou au Bénin. La conférence "
+"lieu le 23 et 24 Mai 2023 dans la ville de Cotonou au Bénin. La conférence "
 "CIVA a pour objectifs ultime\n"
 " d’accroître la portée et le rayonnement des activités de recherche, "
-"d’innovation entrepreneuriale sur le continent africain relative "
-"à la numérisation des villes.\n"
+"d’innovation entrepreneuriale sur le continent africain relative à la "
+"numérisation des villes.\n"
 " L’édition 2023 met l’emphase sur la ville numérique africaine comme "
 "potentielle solution pour relever les défis urbains en Afrique.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:133
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:138
 msgid ""
 "\n"
-"                    The CIVA 2023 conference covers all topics related to "
+"                    The ACC 2023 conference covers all topics related to "
 "digital cities in Africa, including work associated with the transition to "
 "digital cities and urban planning, \n"
 "                    African smart cities, Smart geo-information systems "
@@ -3181,20 +3117,19 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"La conférence CIVA 2023 couvre tous les sujets ayant un lien avec "
-"les villes digitales en Afrique, notamment les travaux associés à "
-"la transition digitalisation des villes et planification urbaine, \n"
-"smart city africaine, Smart geo-information systems "
-"(Smart GIS), smart Gouvernance, challenges des villes digitales en Afrique, durabilité "
-"urbaine, problématique de planification/gestion \n"
-"des villes émergeantes en Afrique, challenges socio-"
-"économiques urbains (éducation, santé, emploi, jeunesse, économie, sécurité "
-"alimentaire, etc ), environnement urbains, \n"
-"technologies de l'information et de la communication appliquées "
-"à l’urbain.\n"
+"L'ACC 2023 couvre tous les sujets ayant un lien avec les villes digitales en "
+"Afrique, notamment les travaux associés à la transition digitalisation des "
+"villes et planification urbaine, \n"
+"smart city africaine, Smart geo-information systems (Smart GIS), smart "
+"Gouvernance, challenges des villes digitales en Afrique, durabilité urbaine, "
+"problématique de planification/gestion \n"
+"des villes émergeantes en Afrique, challenges socio-économiques urbains "
+"(éducation, santé, emploi, jeunesse, économie, sécurité alimentaire, etc ), "
+"environnement urbains, \n"
+"technologies de l'information et de la communication appliquées à l’urbain.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:141
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:146
 msgid ""
 "\n"
 "                    Apart from its thematic focus, it aims to advance "
@@ -3205,7 +3140,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Ainsi, au-delà de son orientation thématique, la CIVA a pour but de faire "
+"Ainsi, au-delà de son orientation thématique, l'ACC a pour but de faire "
 "progresser la recherche interdisciplinaire en comblant le fossé "
 "disciplinaire entre les différentes cultures académiques \n"
 "des sciences humaines, des sciences et de la recherche orientée vers "
@@ -3213,10 +3148,10 @@ msgstr ""
 "développement urbain en Afrique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:147
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:152
 msgid ""
 "\n"
-"                      CIVA 2023 will promote scientific excellence in Africa "
+"                      ACC 2023 will promote scientific excellence in Africa "
 "through the communication and publication of \n"
 "                      and publication of the best research results and works "
 "written in original scientific articles in its \n"
@@ -3225,15 +3160,14 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"CIVA 2023 veut promouvoir "
-"l'excellence scientifique en Afrique par la communication et la publication "
-"des \n"
+"ACC 2023 veut promouvoir l'excellence scientifique en Afrique par la "
+"communication et la publication des \n"
 "meilleurs résultats de recherche et des articles scientifiques originaux "
 "dans les actes des conférences, \n"
 "les actes des livres et les numéros spéciaux :\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:155
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:160
 msgid ""
 "\n"
 "                    All accepted and presented conference papers will be "
@@ -3254,7 +3188,7 @@ msgstr ""
 "(Subject to acceptance - as for all proceedings journals)\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:162
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:167
 msgid ""
 "\n"
 "                    A category of best papers will be published in our "
@@ -3275,7 +3209,7 @@ msgstr ""
 "Science) (Subject to acceptance - as for all proceedings journals)\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:168
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:173
 msgid ""
 "\n"
 "                    High quality papers may be invited to be submitted to "
@@ -3300,87 +3234,91 @@ msgstr ""
 "processus normal de soumission et d'examen.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:179
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:184
 msgid "Submit your Paper"
 msgstr "Soumettez votre article"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:189
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:194
 msgid "Important Dates"
 msgstr "Les dates importantes"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:195
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:200
 msgid "January 15, 2023"
 msgstr "15 Janvier 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:196
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:201
 msgid "Papers submission deadline"
 msgstr "Date limite de soumission des articles"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:200
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:205
 msgid "January 30, 2023"
 msgstr "30 Janvier 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:201
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:206
 msgid "Notification of acceptance"
 msgstr "Avis d'acceptation"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:205
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:210
 msgid "February 15, 2023"
 msgstr "15 Février 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:206
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:211
 msgid "Camera-ready Submission"
 msgstr "Soumission prête à impression"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:210
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:215
 msgid "February 28, 2023"
 msgstr "28 Février 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:211
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:216
 msgid "Registration due date"
 msgstr "Date limite d'inscription"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:215
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:220
 msgid "March 21, 22 & 23, 2023"
 msgstr "21, 22 & 23 Mars"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:216
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:221
 msgid "Conference date"
 msgstr "Date de la conférence"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:288
+#: african_cities_lab/home/templates/home/events/civa/civa.html:209
+msgid "The African Cities Conference (ACC) - Digital Cities"
+msgstr "African Cities Conference (ACC) - Villes Digitales"
+
+#: african_cities_lab/home/templates/home/events/civa/civa.html:215
 msgid "Days"
 msgstr "Jours"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:292
+#: african_cities_lab/home/templates/home/events/civa/civa.html:219
 msgid "Hours"
 msgstr "Heures"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:296
+#: african_cities_lab/home/templates/home/events/civa/civa.html:223
 msgid "Minutes"
 msgstr "Minutes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:300
+#: african_cities_lab/home/templates/home/events/civa/civa.html:227
 msgid "Seconds"
 msgstr "Secondes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:325
+#: african_cities_lab/home/templates/home/events/civa/civa.html:252
 msgid "When"
 msgstr "Quand?"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:326
-msgid "March 21, 22 & 23"
-msgstr "21, 22 & 23 Mars"
+#: african_cities_lab/home/templates/home/events/civa/civa.html:253
+msgid "May 23 & 24"
+msgstr "23 & 24 Mai"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:335
+#: african_cities_lab/home/templates/home/events/civa/civa.html:262
 msgid "Location"
 msgstr "Où?"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:336
+#: african_cities_lab/home/templates/home/events/civa/civa.html:263
 msgid "Cotonou, Benin"
 msgstr "Cotonou, Bénin"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:348
+#: african_cities_lab/home/templates/home/events/civa/civa.html:275
 msgid ""
 "\n"
 "            African digital cities are presented as a reasonable response to "
@@ -3400,7 +3338,7 @@ msgstr ""
 "l’insertion socio-professionnelle, etc.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:353
+#: african_cities_lab/home/templates/home/events/civa/civa.html:280
 msgid ""
 "\n"
 "            Challenging the current vision of cities in Africa, digital "
@@ -3421,7 +3359,7 @@ msgstr ""
 "urbain en Afrique est à établir. \n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:358
+#: african_cities_lab/home/templates/home/events/civa/civa.html:285
 msgid ""
 "\n"
 "            There is today a tangible and growing demand for talented and "
@@ -3439,12 +3377,11 @@ msgstr ""
 "transformation numérique du continent.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:364
+#: african_cities_lab/home/templates/home/events/civa/civa.html:291
 msgid ""
 "\n"
-"            The « <strong>International Conference on African Cities (CIVA) "
-"- Digital Cities</strong> » aims to increase the scope and influence of "
-"research, \n"
+"            The « <strong>African Cities Conference (ACC) - Digital Cities</"
+"strong> » aims to increase the scope and influence of research, \n"
 "            innovation and entrepreneurial activities on the African "
 "continent related to the digitization of cities, as well as to promote "
 "scientific excellence \n"
@@ -3452,18 +3389,17 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"La « <strong>Conférence Internationale sur les Villes Africaines (CIVA) – "
-"Villes digitales</strong> » vise à accroître la portée et le rayonnement des "
-"activités de recherche, d’innovation et entrepreneuriale sur le continent "
-"africain relative à la numérisation des villes, ainsi qu’à promouvoir "
-"l’excellence \n"
+"L' «<strong>African Cities Conference (ACC) – Villes digitales</strong> » "
+"vise à accroître la portée et le rayonnement des activités de recherche, "
+"d’innovation et entrepreneuriale sur le continent africain relative à la "
+"numérisation des villes, ainsi qu’à promouvoir l’excellence \n"
 "scientifique en Afrique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:371
+#: african_cities_lab/home/templates/home/events/civa/civa.html:298
 msgid ""
 "\n"
-"            Therefore, beyond its thematic focus, CIVA aims to advance "
+"            Therefore, beyond its thematic focus, ACC aims to advance "
 "interdisciplinary research by bridging the disciplinary gap between the "
 "different academic \n"
 "            cultures of the humanities, sciences and application-oriented "
@@ -3472,7 +3408,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"Ainsi, au-delà de son orientation thématique, la CIVA a pour but de faire "
+"Ainsi, au-delà de son orientation thématique, la ACC a pour but de faire "
 "progresser la recherche interdisciplinaire en comblant le fossé "
 "disciplinaire entre les différentes cultures académiques \n"
 "des sciences humaines, des sciences et de la recherche orientée vers "
@@ -3480,53 +3416,51 @@ msgstr ""
 "développement urbain en Afrique.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:388
+#: african_cities_lab/home/templates/home/events/civa/civa.html:315
 msgid ""
 "\n"
 "            The conference organizers cordially invite you to submit your "
 "scientific work to \n"
-"            International Conference of African Cities (CIVA) - Digital "
-"Cities to be held \n"
-"            in Cotonou, Benin, next March 21 -23\n"
+"            African Cities Conference (ACC) - Digital Cities to be held \n"
+"            in Cotonou, Benin, next May 23 & 24\n"
 "            "
 msgstr ""
 "\n"
 "Les organisateurs de la conférence vous invitent cordialement à soumettre "
 "vos travaux scientifiques à \n"
-"la Conférence internationale des villes africaines (CIVA) - Villes "
-"digitales qui se tiendra \n"
-"à Cotonou, au Bénin, du 21 au 23 mars prochain.\n"
+"l'African Cities Conference (ACC)' - Villes digitales qui se tiendra \n"
+"à Cotonou, au Bénin, les 23 et 24 mai prochain.\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:409
+#: african_cities_lab/home/templates/home/events/civa/civa.html:336
 msgid ""
 "\n"
 "          Why should attend <br>\n"
-"          <span class=\"text_primary\">CIVA 2023</span>?\n"
+"          <span class=\"text_primary\">ACC 2023</span>?\n"
 "        "
 msgstr ""
 "\n"
 "              Pourquoi participer <br>\n"
-"              à la<span class=\"text_primary\"> CIVA 2023 </span>?\n"
+"              à la<span class=\"text_primary\"> ACC 2023 </span>?\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:428
+#: african_cities_lab/home/templates/home/events/civa/civa.html:355
 msgid "Networking"
 msgstr "Réseautage"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:436
+#: african_cities_lab/home/templates/home/events/civa/civa.html:363
 msgid "Skilled speakers"
 msgstr "Des intervenants qualifiés"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:444
+#: african_cities_lab/home/templates/home/events/civa/civa.html:371
 msgid "Usefull sessions"
 msgstr "Des sessions utiles"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:452
+#: african_cities_lab/home/templates/home/events/civa/civa.html:379
 msgid "Venue tour"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:466
+#: african_cities_lab/home/templates/home/events/civa/civa.html:393
 msgid ""
 "\n"
 "            Topics\n"
@@ -3536,197 +3470,197 @@ msgstr ""
 "Thématiques\n"
 "                  "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:477
+#: african_cities_lab/home/templates/home/events/civa/civa.html:404
 msgid "Digitalization of cities and urban planning"
 msgstr "Digitalisation des villes et planification urbaine"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:479
+#: african_cities_lab/home/templates/home/events/civa/civa.html:406
 msgid "Digital water and energy management"
 msgstr "Gestion numérisée des eaux et de l'énergie"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:480
+#: african_cities_lab/home/templates/home/events/civa/civa.html:407
 msgid "Smart waste management and sanitation"
 msgstr "Gestion intelligente des déchets et assainissement"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:481
-#: african_cities_lab/home/templates/home/events/civa/civa.html:498
-#: african_cities_lab/home/templates/home/events/civa/civa.html:499
+#: african_cities_lab/home/templates/home/events/civa/civa.html:408
+#: african_cities_lab/home/templates/home/events/civa/civa.html:425
+#: african_cities_lab/home/templates/home/events/civa/civa.html:426
 msgid "Digital management of education and health"
 msgstr "Gestion de l'éducation et de la santé"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:482
+#: african_cities_lab/home/templates/home/events/civa/civa.html:409
 msgid "Digital mobility and transport management"
 msgstr "Mobilité digitale et gestion des transports"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:483
+#: african_cities_lab/home/templates/home/events/civa/civa.html:410
 msgid "Land use and land cover management"
 msgstr "Gestion de l'utilisation et de la couverture des sols"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:484
+#: african_cities_lab/home/templates/home/events/civa/civa.html:411
 msgid "Informality & precarious neighbourhoods"
 msgstr "Informalité & quartiers précaires"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:485
+#: african_cities_lab/home/templates/home/events/civa/civa.html:412
 msgid "Land tenure and cadastral management"
 msgstr "Gestion du régime foncier et du cadastre"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:486
-#: african_cities_lab/home/templates/home/events/civa/civa.html:503
+#: african_cities_lab/home/templates/home/events/civa/civa.html:413
+#: african_cities_lab/home/templates/home/events/civa/civa.html:430
 msgid "Quality of Life and Social Layer"
 msgstr "Qualité de vie et couches sociales"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:494
+#: african_cities_lab/home/templates/home/events/civa/civa.html:421
 msgid "Digital and smart african cities"
 msgstr "Villes africaines numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:496
+#: african_cities_lab/home/templates/home/events/civa/civa.html:423
 msgid "Digital and smart cities strategies in Africa"
 msgstr "Stratégies pour les villes numériques et intelligentes en Afrique"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:497
+#: african_cities_lab/home/templates/home/events/civa/civa.html:424
 msgid "Digital and Smart african city stakeholders"
 msgstr "Les acteurs de la ville africaine numérique et intelligente"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:500
+#: african_cities_lab/home/templates/home/events/civa/civa.html:427
 msgid "Digital and Smart city infrastructure"
 msgstr "Infrastructures des villes numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:501
+#: african_cities_lab/home/templates/home/events/civa/civa.html:428
 msgid "IoT for digital and smart cities"
 msgstr "IoT pour les villes numériques et intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:502
+#: african_cities_lab/home/templates/home/events/civa/civa.html:429
 msgid "Robotics, blockchain and crytomoney"
 msgstr "Robotique, blockchain et cryptomonnaie"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:504
+#: african_cities_lab/home/templates/home/events/civa/civa.html:431
 msgid "Artificial intelligence and application integration"
 msgstr "Intelligence artificielle et intégration des applications"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:505
+#: african_cities_lab/home/templates/home/events/civa/civa.html:432
 msgid "Cybersecurity & IS governance for smart cities"
 msgstr "Cybersécurité et gouvernance des SI pour les villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:506
+#: african_cities_lab/home/templates/home/events/civa/civa.html:433
 msgid "Advanced technologies for African smart cities"
 msgstr "Technologies avancées pour les villes intelligentes africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:514
+#: african_cities_lab/home/templates/home/events/civa/civa.html:441
 msgid "Smart geo-information systems (Smart GIS)"
 msgstr "Systèmes intelligents de géo-information (Smart GIS)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:516
+#: african_cities_lab/home/templates/home/events/civa/civa.html:443
 msgid "GIS and remote sensing"
 msgstr "SIG et télédétection"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:517
+#: african_cities_lab/home/templates/home/events/civa/civa.html:444
 msgid "Citizen sensing and Citizen engagement"
 msgstr "La perception des citoyens et l'engagement des citoyens"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:518
+#: african_cities_lab/home/templates/home/events/civa/civa.html:445
 msgid "Geo AI and applications"
 msgstr "Géo IA et applications"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:519
+#: african_cities_lab/home/templates/home/events/civa/civa.html:446
 msgid "Interactive visualization and 3D modeling"
 msgstr "Visualisation interactive et modélisation 3D"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:520
+#: african_cities_lab/home/templates/home/events/civa/civa.html:447
 msgid "Geo Artificial intelligence (Geo AI)"
 msgstr "Intelligence géo-artificielle (Geo AI)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:521
+#: african_cities_lab/home/templates/home/events/civa/civa.html:448
 msgid "GIS application (GIS API)"
 msgstr "Application SIG (API SIG)"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:522
+#: african_cities_lab/home/templates/home/events/civa/civa.html:449
 msgid "Collective sensing & spatial big urban data"
 msgstr "Détection collective et grandes données spatiales urbaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:523
+#: african_cities_lab/home/templates/home/events/civa/civa.html:450
 msgid "SIG and geolocalisation"
 msgstr "SIG et géolocalisation"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:524
+#: african_cities_lab/home/templates/home/events/civa/civa.html:451
 msgid "Digital twins & twin cities"
 msgstr "Jumeaux numériques et villes jumelles"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:532
+#: african_cities_lab/home/templates/home/events/civa/civa.html:459
 msgid "Transitions digitales and smart Gouvernance"
 msgstr "Transitions digitales et smart Gouvernance"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:534
+#: african_cities_lab/home/templates/home/events/civa/civa.html:461
 msgid "Citizens and Collaborative Governance"
 msgstr "Citoyens et gouvernance collaborative"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:535
+#: african_cities_lab/home/templates/home/events/civa/civa.html:462
 msgid "Geopolitics, democratic processes and cyber-citizenship"
 msgstr "Géopolitique, processus démocratiques et cybercitoyenneté"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:536
+#: african_cities_lab/home/templates/home/events/civa/civa.html:463
 msgid "Data Governance for smart cities"
 msgstr "Gouvernance des données pour les villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:537
+#: african_cities_lab/home/templates/home/events/civa/civa.html:464
 msgid "Digitalisation and internet 5.0"
 msgstr "Digitalisation et internet 5.0"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:538
+#: african_cities_lab/home/templates/home/events/civa/civa.html:465
 msgid "Digital tools for smart urban development"
 msgstr "Des outils numériques pour un développement urbain intelligent"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:539
+#: african_cities_lab/home/templates/home/events/civa/civa.html:466
 msgid "Socio-cultural transformations and social inclusion"
 msgstr "Transformations socioculturelles et inclusion sociale"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:540
+#: african_cities_lab/home/templates/home/events/civa/civa.html:467
 msgid "Crowdsourcing and citizen participation"
 msgstr "Crowdsourcing et participation citoyenne"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:541
+#: african_cities_lab/home/templates/home/events/civa/civa.html:468
 msgid "Digital governance and digital citizenship"
 msgstr "Gouvernance et citoyenneté numériques"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:549
+#: african_cities_lab/home/templates/home/events/civa/civa.html:476
 msgid "African digital cities challenges"
 msgstr "Défis des villes numériques africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:551
+#: african_cities_lab/home/templates/home/events/civa/civa.html:478
 msgid "Resilience of African digital cities"
 msgstr "Résilience des villes numériques africaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:552
+#: african_cities_lab/home/templates/home/events/civa/civa.html:479
 msgid "Waste management and sanitation"
 msgstr "Gestion des déchets et assainissement"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:553
+#: african_cities_lab/home/templates/home/events/civa/civa.html:480
 msgid "Renewable energy and use"
 msgstr "Énergies renouvelables et utilisation"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:554
+#: african_cities_lab/home/templates/home/events/civa/civa.html:481
 msgid "Energy and environmental efficiency"
 msgstr "Efficacité énergétique et environnementale"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:555
+#: african_cities_lab/home/templates/home/events/civa/civa.html:482
 msgid "Sustainable development and adaptation of smart cities"
 msgstr "Développement durable et adaptation des villes intelligentes"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:556
+#: african_cities_lab/home/templates/home/events/civa/civa.html:483
 msgid "Urban pollution et heat monitoring"
 msgstr "Surveillance de la pollution et de la température urbaines"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:570
+#: african_cities_lab/home/templates/home/events/civa/civa.html:497
 msgid ""
 "\n"
-"                  <span class=\"text_primary\">CIVA 2023</span> side events\n"
+"                  <span class=\"text_primary\">ACC 2023</span> side events\n"
 "                  "
 msgstr ""
 "\n"
 "                    Événements spéciaux de la <span class=\"text_primary"
-"\">CIVA 2023</span>\n"
+"\">ACC 2023</span>\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:576
+#: african_cities_lab/home/templates/home/events/civa/civa.html:503
 msgid ""
 "\n"
 "                    This conference is virtual and presential and open to "
@@ -3738,7 +3672,7 @@ msgstr ""
 "à tous.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:581
+#: african_cities_lab/home/templates/home/events/civa/civa.html:508
 msgid ""
 "\n"
 "                    It will include….\n"
@@ -3748,56 +3682,67 @@ msgstr ""
 "                    Elle inclura....\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:588
+#: african_cities_lab/home/templates/home/events/civa/civa.html:515
 msgid "View conference agenda"
 msgstr "Voir l'agenda de la conférence"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:597
+#: african_cities_lab/home/templates/home/events/civa/civa.html:524
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:609
+#: african_cities_lab/home/templates/home/events/civa/civa.html:536
 msgid "B2B Meetings & Partnerships"
 msgstr "Rencontres et partenariats B2B"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:621
-#: african_cities_lab/home/templates/home/events/civa/civa.html:633
+#: african_cities_lab/home/templates/home/events/civa/civa.html:548
+#: african_cities_lab/home/templates/home/events/civa/civa.html:560
 msgid "African smart cities’ Innovation Expo-2023"
 msgstr ""
 "Exposition sur l'innovation dans les villes intelligentes d'Afrique - 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:645
-#: african_cities_lab/home/templates/home/events/civa/civa.html:657
+#: african_cities_lab/home/templates/home/events/civa/civa.html:572
+#: african_cities_lab/home/templates/home/events/civa/civa.html:584
 msgid "Online Spring school"
 msgstr "École de printemps en ligne"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:669
+#: african_cities_lab/home/templates/home/events/civa/civa.html:596
 msgid "Research and innovation competition on digital cities"
 msgstr "Concours de recherche et d'innovation sur les villes numériques"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:690
+#: african_cities_lab/home/templates/home/events/civa/civa.html:617
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:719
+#: african_cities_lab/home/templates/home/events/civa/civa.html:646
 msgid "Big thanks to our sponsors"
 msgstr "Un grand merci à nos partenaires"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:9
-msgid "Organization Committee | The International Conference of African Cities"
+#: african_cities_lab/home/templates/home/events/civa/civa.html:702
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:830
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:355
+msgid ""
+"\n"
+"          Join the African Cities Conference (ACC) - Digital Cities\n"
+"          "
 msgstr ""
-"Comité d'organisation | Conférence Internationale des Villes Africaines"
+"\n"
+"Rejoignez l'African Cities Conference (ACC) - Villes digitales\n"
+"          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:137
-msgid "CIVA's chairs"
-msgstr "Chaires de la CIVA"
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:9
+msgid "Organization Committee | African Cities Conference"
+msgstr "Comité d'organisation | African Cities Conference"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:162
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:185
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:144
+msgid "ACC's chairs"
+msgstr "Chaires de l'ACC"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:169
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:192
 msgid "Architecht/urbanist & Prof à EPFL, Laussanne - Suisse"
 msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:198
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:205
 msgid ""
 "\n"
 "                          Jérôme Chenal studied architecture at the École "
@@ -3818,7 +3763,7 @@ msgstr ""
 "des villes à partir de leurs propres réalités.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:232
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:239
 msgid ""
 "\n"
 "              Director of the President's Cabinet, Mohammed VI Polytechnic "
@@ -3829,7 +3774,7 @@ msgstr ""
 "Directeur du Cabinet du Président, Université Polytechnique Mohammed VI\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:257
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:264
 msgid ""
 "\n"
 "                          Director of the President's Cabinet, Mohammed VI "
@@ -3840,7 +3785,7 @@ msgstr ""
 "Directeur du Cabinet du Président, Université Polytechnique Mohammed VI\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:271
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:278
 msgid ""
 "\n"
 "                          Executive Director who has held for more than 20 "
@@ -3865,7 +3810,7 @@ msgstr ""
 "l'entrepreneuriat et de la communication.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:278
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:285
 msgid ""
 "\n"
 "                          Member of the Board of Directors of regional and "
@@ -3881,7 +3826,7 @@ msgstr ""
 " et de la communication.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:312
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:319
 msgid ""
 "\n"
 "              Managing Director and Chief Innovation Officer at Sèmè City\n"
@@ -3891,7 +3836,7 @@ msgstr ""
 "Directrice générale et chef de l'innovation de Sèmè City\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:337
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:344
 msgid ""
 "\n"
 "                          Managing Director and Chief Innovation Officer at "
@@ -3903,7 +3848,7 @@ msgstr ""
 "Sèmè City\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:351
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:358
 msgid ""
 "\n"
 "                          A self-described entrepreneurial-minded "
@@ -3929,110 +3874,102 @@ msgstr ""
 "pour les clients mondiaux et la stratégie commerciale mondiale.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:377
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:384
 msgid "Technical Program Committee"
 msgstr "Comité du Programme Technique"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:389
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:409
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:489
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:396
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:416
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:496
 msgid "CEAT, EPFL"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:399
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:439
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:406
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:446
 msgid "Center of Urban System CUS, UM6P"
 msgstr "Centre du Système Urbain, UM6P"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:419
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:426
 msgid "World Bank"
 msgstr "Banque Mondiale"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:429
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:436
 msgid "Bordeaux INP"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:449
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:456
 msgid "University of Tartu"
 msgstr "Université de Tartu"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:459
-#: african_cities_lab/home/templates/home/moocs.html:318
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:107
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:191
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:255
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:191
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:466
 msgid "UN Habitat"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:469
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:476
 msgid "CUS, UM6P"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:479
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:486
 msgid "EIGSI"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:499
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:506
 msgid "Sémé City"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:509
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:516
 msgid "IDC, UM6P"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:519
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:526
 msgid "ENS"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:529
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:536
 msgid "SADV"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:539
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:546
 msgid "ISTEUB, University of Carthage"
 msgstr "ISTEUB, Université de Carthage"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:549
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:559
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:609
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:556
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:566
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:616
 msgid "African Centre for Cities"
 msgstr "Centre Africain pour les Villes"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:569
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:576
 msgid "Sèmè city"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:579
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:589
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:586
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:596
 msgid "Gret"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:599
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:606
 msgid "Water Research Commission"
 msgstr "Commission de Recherche sur l'Eau"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:619
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:626
 msgid "Centre for Affordable Housing Finance in Africa"
 msgstr "Centre pour le Financement du Logement Abordable en Afrique"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:629
-#: african_cities_lab/home/templates/home/moocs.html:449
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:255
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:107
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:636
 msgid "Ain Shams University"
 msgstr "Université Ain Shams"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:641
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:648
 msgid "Global Coordinators"
 msgstr "Coordinateurs globaux"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:666
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:689
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:673
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:696
 msgid "Postdoctoral Researcher at Mohammed VI Polytechnic University"
 msgstr "Chercheur postdoctoral à l'Université Polytechnique Mohammed VI"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:702
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:709
 msgid ""
 "\n"
 "                          GIS consultant in the national agricultural census "
@@ -4048,7 +3985,7 @@ msgstr ""
 "ministère de l'agriculture.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:736
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:743
 msgid ""
 "\n"
 "              Doctor in Civil and Environmental Engineering (École "
@@ -4060,7 +3997,7 @@ msgstr ""
 "fédérale de Lausanne)\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:761
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:768
 msgid ""
 "\n"
 "                          Doctor in Civil and Environmental Engineering "
@@ -4072,7 +4009,7 @@ msgstr ""
 "fédérale de Lausanne)\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:775
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:782
 msgid ""
 "\n"
 "                          I am a Doctor in Civil and Environmental "
@@ -4106,7 +4043,7 @@ msgstr ""
 "Artificielle et Web du Master of Science in Informatics de "
 "Grenoble.                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:785
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:792
 msgid ""
 "\n"
 "                          I was a Summer Student in 2015 at the European "
@@ -4122,7 +4059,7 @@ msgstr ""
 "installations de calcul du centre.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:790
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:797
 msgid ""
 "\n"
 "                          My research career started in February 2014 in an "
@@ -4136,7 +4073,7 @@ msgstr ""
 "INRIA, qui s'intéresse aux données, algorithmes et raisonnements du web.\n"
 "                          "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:795
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:802
 msgid ""
 "\n"
 "                          In October 2014 I received my Bachelor's Degree in "
@@ -4148,7 +4085,7 @@ msgstr ""
 "l'Universitat Politècnica de Catalunya.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:800
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:807
 msgid ""
 "\n"
 "                          My areas of interest are Computer Science, Applied "
@@ -4164,71 +4101,73 @@ msgstr ""
 "                          "
 
 #: african_cities_lab/home/templates/home/events/civa/contact.html:9
-msgid "Venue & Contact | The International Conference of African Cities"
+msgid "Venue & Contact | African Cities Conference"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/form.html:9
-msgid "Registration | The International Conference of African Cities"
-msgstr "Inscription | Conférence Internationale des Villes Africaines"
+msgid "Registration | African Cities Conference"
+msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:109
+#: african_cities_lab/home/templates/home/events/civa/form.html:112
 msgid "Registration"
 msgstr "Inscription"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:126
+#: african_cities_lab/home/templates/home/events/civa/form.html:130
 #: african_cities_lab/home/templates/home/webinar_form.html:92
 msgid "First name"
 msgstr "Nom"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:130
+#: african_cities_lab/home/templates/home/events/civa/form.html:134
 #: african_cities_lab/home/templates/home/webinar_form.html:86
 msgid "Last name"
 msgstr "Prénoms"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:135
+#: african_cities_lab/home/templates/home/events/civa/form.html:139
 #: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:17
 #: african_cities_lab/home/templates/home/webinar_form.html:99
 msgid "Email Address"
 msgstr "Entrer votre adresse email"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:139
+#: african_cities_lab/home/templates/home/events/civa/form.html:143
 msgid "Institution"
 msgstr "Institution"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:143
+#: african_cities_lab/home/templates/home/events/civa/form.html:147
 #: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:34
 #: african_cities_lab/home/templates/home/webinar_form.html:114
 msgid "Function"
 msgstr "Fonction"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:147
+#: african_cities_lab/home/templates/home/events/civa/form.html:151
 #: african_cities_lab/home/templates/home/webinar_form.html:110
 msgid "Title"
 msgstr "Titre"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:151
+#: african_cities_lab/home/templates/home/events/civa/form.html:155
 #: african_cities_lab/home/templates/home/webinar_form.html:118
 msgid "Country"
 msgstr "Pays"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:155
+#: african_cities_lab/home/templates/home/events/civa/form.html:159
 #: african_cities_lab/home/templates/home/webinar_form.html:130
 msgid "LinkedIn account"
 msgstr "Compte LinkedIn"
 
-#: african_cities_lab/home/templates/home/events/civa/form.html:159
+#: african_cities_lab/home/templates/home/events/civa/form.html:163
 msgid "Submit"
 msgstr "Envoyer"
 
 #: african_cities_lab/home/templates/home/events/civa/guests.html:9
-msgid "Special guests | The International Conference of African Cities"
+#, fuzzy
+#| msgid "Special guests | The International Conference of African Cities"
+msgid "Special guests | African Cities Conference"
 msgstr "Invités d'honneur | Conférence Internationale des Villes Africaines"
 
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:9
-msgid "Speakers | The International Conference of African Cities"
-msgstr "Intervenants | Conférence Internationale des Villes Africaines"
+msgid "Speakers | African Cities Conference"
+msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:124
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:129
 msgid ""
 "\n"
 "            These experts will inspire <br>\n"
@@ -4240,19 +4179,19 @@ msgstr ""
 "            pour créer les villes africaines de demain.\n"
 "        "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:338
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:343
 msgid "More speakers to be announced"
 msgstr "Plus d'intervenants à venir"
 
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:9
-msgid "Sponsors | The International Conference of African Cities"
-msgstr "Partenaires | Conférence Internationale des Villes Africaines"
+msgid "Sponsors | African Cities Conference"
+msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:108
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:112
 msgid "Sponsors"
 msgstr "Partenaires"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:122
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:127
 msgid ""
 "\n"
 "                Big thanks to our sponsors <br>\n"
@@ -4262,111 +4201,88 @@ msgstr ""
 "                Un grand merci à nos partenaires <br>\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:134
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:139
 msgid "State Secretariat for Economic Affairs"
 msgstr "Secrétariat d'État à l'économie"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:137
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:150
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:163
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:176
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:189
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:202
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:215
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:229
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:142
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:155
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:168
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:181
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:194
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:207
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:220
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:234
 msgid "Visit website"
 msgstr "Consulter le site"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:147
-#: african_cities_lab/home/templates/home/moocs.html:65
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:191
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:107
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:152
+#: african_cities_lab/home/templates/home/moocs.html:73
+#: african_cities_lab/home/templates/home/moocs.html:104
+#: african_cities_lab/home/templates/home/moocs.html:135
+#: african_cities_lab/home/templates/home/moocs.html:166
+#: african_cities_lab/home/templates/home/moocs.html:197
+#: african_cities_lab/home/templates/home/moocs.html:228
+#: african_cities_lab/home/templates/home/moocs.html:259
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:129
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:160
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:191
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:200
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:231
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:262
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:154
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:185
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:215
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:145
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:176
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:207
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:140
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:171
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:201
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:125
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:156
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:187
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:129
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:160
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:191
 msgid "École Polytechnique Fédérale de Lausanne"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:160
-#: african_cities_lab/home/templates/home/moocs.html:125
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:107
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:192
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:192
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:223
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:223
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:223
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:165
 msgid "Sèmè City"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:173
-#: african_cities_lab/home/templates/home/moocs.html:96
-#: african_cities_lab/home/templates/home/moocs.html:285
-#: african_cities_lab/home/templates/home/moocs.html:353
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:192
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:223
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:256
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:223
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:191
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:107
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:191
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:255
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:224
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:255
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:191
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:107
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:107
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:191
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:178
 msgid "UM6P"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:186
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:191
 msgid "University of Carthage"
 msgstr "Université de Carthage"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:199
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:204
 msgid "Kwame Nkrumah University of Science and Technology"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:212
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:217
 msgid "University of Rwanda"
 msgstr "Université de Rwanda"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:226
-#: african_cities_lab/home/templates/home/moocs.html:156
-#: african_cities_lab/home/templates/home/moocs.html:188
-#: african_cities_lab/home/templates/home/moocs.html:220
-#: african_cities_lab/home/templates/home/moocs.html:385
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:225
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:258
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:192
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:254
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:223
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:107
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:223
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:223
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:191
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:255
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:107
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:224
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:107
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:224
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:191
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:223
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:107
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:255
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:231
 msgid "University of Cape Town"
 msgstr "Université de Cape Town"
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:244
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:249
 msgid ""
 "\n"
-"            Join the International Conference of African Cities (CIVA) - "
-"Digital Cities\n"
+"            Join African Cities Conference (ACC) - Digital Cities\n"
 "            "
 msgstr ""
 "\n"
-"Rejoignez la Conférence internationale des villes africaines (CIVA) - Villes "
-"numériques\n"
+"Rejoignez l'African Cities Conference (ACC)' - Villes numériques\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:254
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:259
 msgid ""
 "\n"
 "              If you wish to have more information,<br> \n"
@@ -4384,19 +4300,20 @@ msgstr ""
 #: african_cities_lab/home/templates/home/static_gdpr.html:15
 #: african_cities_lab/home/templates/home/static_gdpr.html:20
 #: african_cities_lab/home/templates/home/static_gdpr.html:25
-#: african_cities_lab/home/templates/home/static_gdpr.html:59
+#: african_cities_lab/home/templates/home/static_gdpr.html:58
 #: african_cities_lab/home/templates/home/webinar_form.html:139
-#: african_cities_lab/templates/base.html:239
+#: african_cities_lab/templates/base.html:240
 msgid "GDPR"
 msgstr "RGPD"
 
-#: african_cities_lab/home/templates/home/home.html:45
+#: african_cities_lab/home/templates/home/home.html:50
+#: african_cities_lab/home/templates/home/moocs.html:48
 msgid ""
 "Drive the change and contribute to the transformation of tomorrow’s African "
 "cities"
 msgstr "Devenez acteur de la transformation des villes africaines de demain"
 
-#: african_cities_lab/home/templates/home/home.html:49
+#: african_cities_lab/home/templates/home/home.html:54
 msgid ""
 "Advanced online training to take advantage of the opportunities and face the "
 "architectural, social and environmental challenges of African cities in 2050."
@@ -4405,16 +4322,11 @@ msgstr ""
 "l’urbanisation galopante du continent et faire face aux défis "
 "architecturaux, sociaux et environnementaux des villes africaines de 2050."
 
-#: african_cities_lab/home/templates/home/home.html:52
-#: african_cities_lab/home/templates/home/moocs.html:41
-msgid "Explore our MOOCs"
-msgstr "Nos MOOCs"
-
-#: african_cities_lab/home/templates/home/home.html:73
+#: african_cities_lab/home/templates/home/home.html:69
 msgid "What we offer"
 msgstr "Ce que nous offrons"
 
-#: african_cities_lab/home/templates/home/home.html:76
+#: african_cities_lab/home/templates/home/home.html:72
 msgid ""
 "Top-quality educational content to understand and provide practical "
 "solutions to the challenges presented by the accelerated urbanization of the "
@@ -4424,12 +4336,12 @@ msgstr ""
 "pratiques aux enjeux que présente l’urbanisation accélérée du continent "
 "Africain"
 
-#: african_cities_lab/home/templates/home/home.html:92
+#: african_cities_lab/home/templates/home/home.html:88
 #: african_cities_lab/home/templates/home/moocs.html:9
 msgid "MOOCs"
 msgstr "MOOCs"
 
-#: african_cities_lab/home/templates/home/home.html:95
+#: african_cities_lab/home/templates/home/home.html:91
 msgid ""
 "A collection of free video courses ranging from eco-construction to waste "
 "management and given by subject-matter experts."
@@ -4438,29 +4350,29 @@ msgstr ""
 "africains, chacun étant expert dans son domaine, allant de l'éco-"
 "construction à la gestion des déchets."
 
-#: african_cities_lab/home/templates/home/home.html:110
+#: african_cities_lab/home/templates/home/home.html:106
 msgid "Learn from the experts"
 msgstr "Apprendre des experts"
 
-#: african_cities_lab/home/templates/home/home.html:113
+#: african_cities_lab/home/templates/home/home.html:109
 msgid "Experts on urban and sustainable development in Africa"
 msgstr "Experts du développement urbain et durable en Afrique"
 
-#: african_cities_lab/home/templates/home/home.html:125
+#: african_cities_lab/home/templates/home/home.html:121
 msgid "6 African Universities"
 msgstr "6 Universités africaines"
 
-#: african_cities_lab/home/templates/home/home.html:128
+#: african_cities_lab/home/templates/home/home.html:124
 msgid "Partners of the African Cities Lab's knowledge hub "
 msgstr ""
 "Qui s’unissent pour transmettre leurs connaissances sur les problématiques "
 "urbaines des villes africaines de demain."
 
-#: african_cities_lab/home/templates/home/home.html:140
+#: african_cities_lab/home/templates/home/home.html:136
 msgid "A large community"
 msgstr "Une vaste communauté"
 
-#: african_cities_lab/home/templates/home/home.html:143
+#: african_cities_lab/home/templates/home/home.html:139
 msgid ""
 "An active community of more than 5000 professionals concerned with the "
 "living environment that African cities will offer to their populations in "
@@ -4469,11 +4381,11 @@ msgstr ""
 "Une communauté active de plus de 5000 professionnels soucieux du cadre de "
 "vie que les villes africaines offriront à leurs populations en 2050"
 
-#: african_cities_lab/home/templates/home/home.html:157
+#: african_cities_lab/home/templates/home/home.html:153
 msgid "Our MOOCs"
 msgstr "Nos MOOCs"
 
-#: african_cities_lab/home/templates/home/home.html:161
+#: african_cities_lab/home/templates/home/home.html:157
 msgid ""
 "We cover all aspects of urban development, considering into account issues "
 "related to housing, employment, transportation, access to water, sanitation, "
@@ -4483,15 +4395,15 @@ msgstr ""
 "une approche qui tient compte des problématiques transverses de logement, "
 "transport, accès à l’eau et l’électricité, emploi et la qualité de vie."
 
-#: african_cities_lab/home/templates/home/home.html:170
+#: african_cities_lab/home/templates/home/home.html:367
 msgid "Coming"
 msgstr "Disponible"
 
-#: african_cities_lab/home/templates/home/home.html:171
+#: african_cities_lab/home/templates/home/home.html:368
 msgid "soon"
 msgstr "bientôt"
 
-#: african_cities_lab/home/templates/home/home.html:176
+#: african_cities_lab/home/templates/home/home.html:373
 msgid ""
 "To receive notification of our new course catalog or to register for our "
 "newsletter, please register here:"
@@ -4499,44 +4411,34 @@ msgstr ""
 "Pour recevoir la notification d'un nouveau catalogue de cours ou pour vous "
 "inscrire à notre newsletter, veuillez vous inscrire ici :"
 
-#: african_cities_lab/home/templates/home/home.html:193
+#: african_cities_lab/home/templates/home/home.html:389
 msgid "Your First and Last Name"
 msgstr "Votre nom et prénoms"
 
-#: african_cities_lab/home/templates/home/home.html:196
+#: african_cities_lab/home/templates/home/home.html:392
 msgid "Your email here"
 msgstr "Votre adresse email"
 
-#: african_cities_lab/home/templates/home/home.html:222
-#: african_cities_lab/home/templates/home/home.html:298
+#: african_cities_lab/home/templates/home/home.html:418
+#: african_cities_lab/home/templates/home/home.html:517
 msgid "All events"
 msgstr "Voir tous"
 
-#: african_cities_lab/home/templates/home/home.html:229
-msgid "Upcoming"
-msgstr "À venir"
+#: african_cities_lab/home/templates/home/home.html:474
+msgid ""
+"\n"
+"                                        African Cities: <br> What role for "
+"the youth? \n"
+"                                        "
+msgstr ""
+"\n"
+"Villes africaines : <br>Quelle place pour les jeunes?"
 
-#: african_cities_lab/home/templates/home/home.html:233
-msgid "Nov 24"
-msgstr "24 Nov"
-
-#: african_cities_lab/home/templates/home/home.html:257
-msgid "Past"
-msgstr "Passés"
-
-#: african_cities_lab/home/templates/home/home.html:264
-msgid "Oct 11"
-msgstr "11 Oct"
-
-#: african_cities_lab/home/templates/home/home.html:281
-msgid "Jul 5"
-msgstr "5 Juil"
-
-#: african_cities_lab/home/templates/home/home.html:310
+#: african_cities_lab/home/templates/home/home.html:528
 msgid "Focus Areas"
 msgstr "Thématiques"
 
-#: african_cities_lab/home/templates/home/home.html:313
+#: african_cities_lab/home/templates/home/home.html:531
 msgid ""
 "8 topics that address cross-cutting and multidisciplinary issues of urban "
 "transformation in Africa in an environmentally safe way."
@@ -4544,87 +4446,43 @@ msgstr ""
 "8 thématiques qui abordent des sujets transverses et pluridisciplinaires de "
 "la mutation urbaine en Afrique, dans une démarche environnementale durable."
 
-#: african_cities_lab/home/templates/home/home.html:322
-#: african_cities_lab/home/templates/home/moocs.html:162
-#: african_cities_lab/home/templates/home/moocs.html:423
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:231
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:198
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:69
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:229
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:262
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:261
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:261
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:69
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:260
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:261
+#: african_cities_lab/home/templates/home/home.html:540
 msgid "Housing"
 msgstr "Logement"
 
-#: african_cities_lab/home/templates/home/home.html:325
-#: african_cities_lab/home/templates/home/moocs.html:101
-#: african_cities_lab/home/templates/home/moocs.html:194
-#: african_cities_lab/home/templates/home/moocs.html:455
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:198
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:264
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:69
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:229
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:229
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:261
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:197
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:230
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:69
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:197
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:230
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:69
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:197
+#: african_cities_lab/home/templates/home/home.html:543
 msgid "Digital"
 msgstr "Digital"
 
-#: african_cities_lab/home/templates/home/home.html:328
-#: african_cities_lab/home/templates/home/moocs.html:131
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:69
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:198
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:198
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:229
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:229
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:229
+#: african_cities_lab/home/templates/home/home.html:546
 msgid "Building"
 msgstr "Construction"
 
-#: african_cities_lab/home/templates/home/home.html:331
+#: african_cities_lab/home/templates/home/home.html:549
 msgid "Climate change"
 msgstr "Changement climatique"
 
-#: african_cities_lab/home/templates/home/home.html:334
-#: african_cities_lab/home/templates/home/moocs.html:259
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:69
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:262
+#: african_cities_lab/home/templates/home/home.html:552
 msgid "Planning"
 msgstr "Planification"
 
-#: african_cities_lab/home/templates/home/home.html:337
+#: african_cities_lab/home/templates/home/home.html:555
 msgid "Urban System"
 msgstr "Système urbain"
 
-#: african_cities_lab/home/templates/home/home.html:340
+#: african_cities_lab/home/templates/home/home.html:558
 msgid "Gouvernance"
 msgstr "Gouvernance"
 
-#: african_cities_lab/home/templates/home/home.html:343
-#: african_cities_lab/home/templates/home/moocs.html:359
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:262
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:197
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:69
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:230
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:197
+#: african_cities_lab/home/templates/home/home.html:561
 msgid "Energy"
 msgstr "Énergie"
 
-#: african_cities_lab/home/templates/home/home.html:359
+#: african_cities_lab/home/templates/home/home.html:577
 msgid "Latest News"
 msgstr "Derniers articles"
 
-#: african_cities_lab/home/templates/home/home.html:362
+#: african_cities_lab/home/templates/home/home.html:580
 msgid ""
 "Stay up to date with our newsletter and explore our blog posts to learn more "
 "about African urban and environmental development."
@@ -4632,267 +4490,100 @@ msgstr ""
 "Recevez notre newsletter et consultez nos articles de blog pour en savoir "
 "plus sur le développement urbain et environnemental en Afrique."
 
-#: african_cities_lab/home/templates/home/moocs.html:70
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:197
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:69
+#: african_cities_lab/home/templates/home/home.html:585
+#: african_cities_lab/home/templates/home/home.html:631
+msgid "All articles"
+msgstr "Tous les articles"
+
+#: african_cities_lab/home/templates/home/moocs.html:45
+msgid "Explore our MOOCs"
+msgstr "Explorez nos MOOCs"
+
+#: african_cities_lab/home/templates/home/moocs.html:78
+#: african_cities_lab/home/templates/home/moocs.html:109
+#: african_cities_lab/home/templates/home/moocs.html:140
+#: african_cities_lab/home/templates/home/moocs.html:171
+#: african_cities_lab/home/templates/home/moocs.html:202
+#: african_cities_lab/home/templates/home/moocs.html:233
+#: african_cities_lab/home/templates/home/moocs.html:264
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:134
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:165
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:196
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:205
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:236
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:267
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:159
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:190
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:220
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:150
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:181
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:212
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:145
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:176
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:206
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:130
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:161
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:192
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:134
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:165
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:196
 msgid "Sanitation"
 msgstr "Assainissement"
 
-#: african_cities_lab/home/templates/home/moocs.html:75
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:202
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:5
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:30
-msgid "Introduction to Sanitazation Economy Systems & Markets"
+#: african_cities_lab/home/templates/home/moocs.html:83
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:139
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:210
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:195
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:5
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:181
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:139
+msgid "Villes africaines 2 : Planification et gestion urbaines"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/moocs.html:81
-#: african_cities_lab/home/templates/home/moocs.html:110
-#: african_cities_lab/home/templates/home/moocs.html:141
-#: african_cities_lab/home/templates/home/moocs.html:172
-#: african_cities_lab/home/templates/home/moocs.html:204
-#: african_cities_lab/home/templates/home/moocs.html:236
+#: african_cities_lab/home/templates/home/moocs.html:114
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:272
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:225
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:217
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:5
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:201
+msgid "Systèmes d'Information Géographique - Partie 1"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/moocs.html:145
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:135
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:5
+msgid "Systèmes d'Information Géographique - Partie 2"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/moocs.html:176
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:170
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:241
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:5
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:186
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:170
+msgid "Villes africaines : Mobilités et transports urbains"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/moocs.html:207
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:5
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:211
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:197
+msgid "Villes africaines : Environnement et enjeux de développement durable"
+msgstr ""
+
+#: african_cities_lab/home/templates/home/moocs.html:238
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:201
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:5
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:166
+msgid "Villes africaines : Restructuration des quartiers précaires"
+msgstr ""
+
 #: african_cities_lab/home/templates/home/moocs.html:269
-#: african_cities_lab/home/templates/home/moocs.html:301
-#: african_cities_lab/home/templates/home/moocs.html:336
-#: african_cities_lab/home/templates/home/moocs.html:369
-#: african_cities_lab/home/templates/home/moocs.html:401
-#: african_cities_lab/home/templates/home/moocs.html:433
-#: african_cities_lab/home/templates/home/moocs.html:465
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:60
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:210
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:243
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:274
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:60
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:208
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:239
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:270
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:60
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:208
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:241
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:272
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:60
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:207
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:241
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:272
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:60
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:207
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:239
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:271
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:60
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:208
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:239
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:271
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:60
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:207
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:239
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:273
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:60
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:209
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:240
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:271
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:60
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:209
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:240
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:271
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:60
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:209
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:240
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:273
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:60
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:207
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:239
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:272
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:60
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:207
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:239
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:270
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:60
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:207
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:239
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:273
-msgid "Available soon"
-msgstr "Disponible bientôt"
-
-#: african_cities_lab/home/templates/home/moocs.html:105
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:204
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:235
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:203
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:203
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:5
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:30
-msgid "Urban Data Management for Smart City Developpement in Africa"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:136
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:5
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:30
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:203
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:203
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:234
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:234
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:234
-msgid "Eco construction en Afrique"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:167
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:237
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:203
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:235
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:267
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:5
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:30
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:267
-msgid ""
-"Making housing work in African cities: understanding the role and "
-"opportunity of finance"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:199
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:269
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:5
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:30
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:234
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:235
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:235
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:202
-msgid "How can cities in Africa be smarter?"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:226
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:229
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:69
-msgid "Food Systems"
-msgstr "Systèmes d'alimentation"
-
-#: african_cities_lab/home/templates/home/moocs.html:231
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:234
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:5
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:30
-msgid "What can food tell us about cities in Africa?"
-msgstr "Que peut nous apprendre les aliments sur les villes d'Afrique ?"
-
-#: african_cities_lab/home/templates/home/moocs.html:253
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:107
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:256
-msgid "Université Cheikh Anta Diop de Dakar"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:264
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:5
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:30
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:267
-msgid ""
-"La fabrique urbaine collective : Idées et outils pour co-produire la ville"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:291
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:229
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:261
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:261
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:69
-msgid "Climate Change"
-msgstr "Changement climatique"
-
-#: african_cities_lab/home/templates/home/moocs.html:296
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:234
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:266
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:266
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:5
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:30
-msgid "Urban Economic Development in the Context of Climate Change"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:324
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:69
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:197
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:261
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:197
-msgid "Governance"
-msgstr "Gouvernance"
-
-#: african_cities_lab/home/templates/home/moocs.html:330
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:5
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:30
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:203
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:267
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:202
-msgid ""
-"Digital Governance for a better public participation and urban services "
-"delivery in African cities"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:364
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:267
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:202
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:5
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:30
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:235
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:202
-msgid ""
-"Le solaire photovoltaïque et ses application au profit du développement "
-"urbain"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:391
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:260
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:229
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:197
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:69
-msgid "Urban Systems"
-msgstr "Système urbain"
-
-#: african_cities_lab/home/templates/home/moocs.html:396
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:265
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:234
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:202
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:5
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:30
-msgid ""
-"Sustainable Urban Systems: How can urban sustainability become possible in "
-"Africa?"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:417
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:107
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:256
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:255
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:254
-msgid "Université Virtuelle de Tunis"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:428
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:267
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:266
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:265
-msgid "Habitat résilient (Résilent Housing)"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:460
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:266
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:5
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:30
-msgid "Urban AI: Inspiring Smart Action for Just African Cities"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:488
-msgid "Interested by "
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs.html:492
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:165
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:165
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:165
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:165
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:165
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:165
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:165
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:165
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:165
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:165
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:165
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:165
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:165
-msgid "Please complete this form to stay up to date on its launch."
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:5
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:164
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:155
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:150
+msgid "Villes africaines : Introduction à la planification urbaine"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:9
@@ -4922,7 +4613,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs/_moocs_waiting_list.html:39
 #: african_cities_lab/home/templates/home/webinar_form.html:138
-#: african_cities_lab/templates/base.html:236
+#: african_cities_lab/templates/base.html:237
 msgid "Terms & Condition"
 msgstr "Termes & Conditions"
 
@@ -4944,250 +4635,29 @@ msgstr ""
 msgid "Send"
 msgstr "Envoyer"
 
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:34
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:34
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:34
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:34
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:34
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:34
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:34
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:34
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:34
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:34
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:34
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:34
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:34
-msgid "Enroll now"
-msgstr "S'inscrire maintenant"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:54
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:54
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:54
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:54
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:54
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:54
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:54
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:54
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:54
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:54
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:54
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:54
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:54
-msgid "Free"
-msgstr "Gratuit"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:66
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:66
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:66
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:66
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:66
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:66
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:66
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:66
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:66
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:66
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:66
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:66
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:66
-msgid "Topics"
-msgstr "Thématiques"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:73
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:73
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:73
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:73
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:73
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:73
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:73
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:73
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:73
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:73
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:73
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:73
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:73
-msgid "Duration"
-msgstr "Durée"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:74
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:74
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:74
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:74
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:74
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:74
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:74
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:74
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:74
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:74
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:74
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:74
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:74
-msgid "1 week long"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:79
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:79
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:79
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:79
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:79
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:79
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:79
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:79
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:79
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:79
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:79
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:79
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:79
-msgid "Course language"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:82
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:91
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:91
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:82
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:82
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:91
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:91
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:82
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:82
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:82
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:82
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:82
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:82
-msgid "English"
-msgstr "Anglais"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:88
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:88
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:88
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:88
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:88
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:88
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:88
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:88
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:88
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:88
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:88
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:88
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:88
-msgid "Video transcript"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:91
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:82
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:82
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:91
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:91
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:82
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:82
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:91
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:91
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:91
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:91
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:91
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:91
-msgid "French"
-msgstr "Français"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:95
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:95
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:95
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:95
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:95
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:95
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:95
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:95
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:95
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:95
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:95
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:95
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:95
-msgid "Difficulty"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:96
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:96
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:96
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:96
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:96
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:96
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:96
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:96
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:96
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:96
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:96
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:96
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:96
-msgid "Introductory"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:99
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:99
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:99
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:99
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:99
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:99
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:99
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:99
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:99
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:99
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:99
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:99
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:99
-msgid "Associated University"
-msgstr "6 Universités africaines"
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:125
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:125
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:125
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:125
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:125
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:125
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:125
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:125
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:125
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:125
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:125
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:125
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:125
-msgid "Course description"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:161
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:161
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:161
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:161
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:161
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:161
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:161
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:161
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:161
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:161
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:161
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:161
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:161
-msgid "Are you interested in this MOOC?"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/digital_governance_for_a_better_public_participation_and_urban_services_delivery_in_african_cities.html:179
-#: african_cities_lab/home/templates/home/moocs/eco_construction_en_afrique.html:178
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:178
-#: african_cities_lab/home/templates/home/moocs/how_can_cities_in_africa_be_smarter.html:178
-#: african_cities_lab/home/templates/home/moocs/introduction_to_sanitazation_economy_systems_markets.html:178
-#: african_cities_lab/home/templates/home/moocs/la_fabrique_urbaine_collective.html:178
-#: african_cities_lab/home/templates/home/moocs/le_solaire_photovoltaïque_et_ses_applications_au_profit_du_developpement_urbain.html:178
-#: african_cities_lab/home/templates/home/moocs/making_housing_work_in_african_cities.html:178
-#: african_cities_lab/home/templates/home/moocs/sustainable_urban_systems.html:178
-#: african_cities_lab/home/templates/home/moocs/urban_ai.html:178
-#: african_cities_lab/home/templates/home/moocs/urban_data_management_for_smart_city_developpement_in_africa.html:178
-#: african_cities_lab/home/templates/home/moocs/urban_economic_development_in_the_context_of_climate_change.html:178
-#: african_cities_lab/home/templates/home/moocs/what_can_food_tell_us_about_cities_in_africa.html:178
-msgid "You may also like"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:5
-#: african_cities_lab/home/templates/home/moocs/habitat_resilient.html:30
-msgid "Habitat résilient"
-msgstr ""
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:144
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:175
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:206
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:215
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:246
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:277
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:169
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:200
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:230
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:160
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:191
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:222
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:155
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:186
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:216
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:140
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:171
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:202
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:144
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:175
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:206
+msgid "Available now"
+msgstr "Disponible bientôt"
 
 #: african_cities_lab/home/templates/home/parts/partners_section.html:3
 msgid "Our Partners"
@@ -5197,27 +4667,26 @@ msgstr "Nos Partenaires"
 #: african_cities_lab/home/templates/home/static_contact.html:15
 #: african_cities_lab/home/templates/home/static_contact.html:20
 #: african_cities_lab/home/templates/home/static_contact.html:25
-#: african_cities_lab/home/templates/home/static_contact.html:60
-#: african_cities_lab/home/templates/home/static_contact.html:73
-#: african_cities_lab/templates/base.html:126
-#: african_cities_lab/templates/base.html:208
+#: african_cities_lab/home/templates/home/static_contact.html:59
+#: african_cities_lab/templates/base.html:127
+#: african_cities_lab/templates/base.html:209
 msgid "Contact"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/static_contact.html:87
+#: african_cities_lab/home/templates/home/static_contact.html:74
 msgid "We’re here to help"
 msgstr "Nous sommes là pour vous aider"
 
-#: african_cities_lab/home/templates/home/static_contact.html:88
+#: african_cities_lab/home/templates/home/static_contact.html:75
 msgid "Please contact us in case of any query. We are happy to help"
 msgstr ""
 "Merci de nous contacter en cas de question. Nous serons heureux de vous aider"
 
-#: african_cities_lab/home/templates/home/static_contact.html:95
+#: african_cities_lab/home/templates/home/static_contact.html:82
 msgid "Email Us To Get Information"
 msgstr "Écrivez-nous"
 
-#: african_cities_lab/home/templates/home/static_contact.html:109
+#: african_cities_lab/home/templates/home/static_contact.html:96
 msgid "Follow us on"
 msgstr "Suivez-nous"
 
@@ -5225,7 +4694,7 @@ msgstr "Suivez-nous"
 #: african_cities_lab/home/templates/home/static_terms.html:15
 #: african_cities_lab/home/templates/home/static_terms.html:20
 #: african_cities_lab/home/templates/home/static_terms.html:25
-#: african_cities_lab/home/templates/home/static_terms.html:59
+#: african_cities_lab/home/templates/home/static_terms.html:57
 #: african_cities_lab/home/templates/home/terms.html:9
 msgid "Terms & Conditions"
 msgstr "Termes & Conditions"
@@ -5301,19 +4770,19 @@ msgstr ""
 msgid "Home"
 msgstr "Accueil"
 
-#: african_cities_lab/templates/base.html:186
+#: african_cities_lab/templates/base.html:187
 msgid "Get to know us"
 msgstr "En savoir plus"
 
-#: african_cities_lab/templates/base.html:233
+#: african_cities_lab/templates/base.html:234
 msgid "Legal"
 msgstr "Mentions légales"
 
-#: african_cities_lab/templates/base.html:247
+#: african_cities_lab/templates/base.html:248
 msgid "Stay updated with our newsletter"
 msgstr "Recevez la newsletter ACL"
 
-#: african_cities_lab/templates/base.html:249
+#: african_cities_lab/templates/base.html:250
 msgid ""
 "Stay up to date with all the recent news, updates, and courses by simply "
 "your email address to our mailing list. We promise to never spam you."
@@ -5321,26 +4790,14 @@ msgstr ""
 "Restez informés de la mise à jour des cours. Et suivez toute l’actualité de "
 "la transformation des villes africaines."
 
-#: african_cities_lab/templates/base.html:256
+#: african_cities_lab/templates/base.html:257
 msgid "Enter your email address"
 msgstr "Entrer votre adresse email"
 
-#: african_cities_lab/templates/base.html:264
+#: african_cities_lab/templates/base.html:265
 msgid "Connect with us :"
 msgstr "Suivez-nous"
 
-#: african_cities_lab/templates/base.html:284
+#: african_cities_lab/templates/base.html:285
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
-
-#~ msgid "March 21, 22 & 23 - Cotonou, Bénin"
-#~ msgstr "21, 22 & 23 Mars - Cotonou, Bénin"
-
-#~ msgid "Register to attend"
-#~ msgstr "Inscrivez-vous pour participer"
-
-#~ msgid "March"
-#~ msgstr "Mars"
-
-#~ msgid "Smart geo-addressing and participatory addressing"
-#~ msgstr "Géo-adressage intelligent et adressage participatif"

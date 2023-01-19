@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Villes africaines 2 : Planification et gestion urbaines" %} - African Cities Lab{% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+{% endblock %}
+
+{% block static_meta_tag %}
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+    <section class="moocs-page__banner">
+        <div class="container-lg p-3 p-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-8 col-md-10">
+                    <h1 class="moocs-title">Villes africaines 2 : <br> Planification et gestion urbaines</h1>
+
+                    <div class="moocs-university">
+                        Offert par : <span class="font-weight-500">École Polytechnique Fédérale de Lausanne</span>
+                    </div>
+
+                    <a href="https://apps.courses.africancitieslab.org/authn/login?next=%2Fcourses%2Fcourse-v1%3AEPFL%2BVA_PGU%2B2022%2Fabout" target="_blank" class="btn btn__secondary btn__big">
+                        S'inscrire gratuitement
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="moocs-page__main">
+        <div class="container-lg p-3 p-md-5">
+            <div class="row justify-content-lg-between">
+                <div class="col-12 col-lg-7">
+                    <div class="moocs-overview font-size-16 py-4"> 
+                        <div class="pb-5">
+                            <h3 class="mb-3">Description</h3>
+                            <p class="font-weight-bold pb-3">
+                                Ce cours, conçu en 2023, prolonge les connaissances de base acquises en planification 
+                                urbaine à travers ses dimensions techniques, environnementale et sociale. Il fait suite 
+                                au cours « Villes africaines : introduction à la planification urbaine ».
+                            </p>
+                            <p class="pb-3">
+                                “Villes africaines” propose un cours sur la gestion et la planification urbaine. Après un 
+                                passage par les grandes thématiques urbaines (changement climatique, infrastructures et services, 
+                                énergie, droit à la ville, foncier, habitat, économie informelle), nous ferons une lecture critique 
+                                des outils actuellement utilisés dans la gestion et planification urbaines. Nous verrons ensuite 
+                                comment gérer et planifier une ville plus inclusive, productive, résiliente et respectueuse de 
+                                l’environnement, et faiblement consommatrice en ressources.
+                            </p>
+                            <p class="pb-3">
+                                Enfin, nous aborderons successivement les questions du financement des villes, le jeu des acteurs 
+                                dans la gouvernance des projets urbains, et la mise en œuvre des documents de planification urbaine. 
+                            </p>
+                            <p>
+                                La planification urbaine ne relevant pas d’une unique discipline, l’approche du cours n’est donc 
+                                disciplinaire, mais consiste à discuter des articulations entre les principales entrées thématiques 
+                                permettant de comprendre et accompagner les processus de fabrication de la ville. Le cours est dispensé 
+                                par deux enseignants ayant une bonne expérience dans le domaine, et enrichi par la contribution de 
+                                plusieurs experts internationaux chevronnés. Il a pour objectif global de présenter une approche 
+                                pérationnelle d’élaboration de documents de planification, en particulier des schémas directeurs.
+                            </p>
+                        </div>
+                        <div class="pb-5">
+                            <h3 class="mb-3">Ce que vous apprendrez</h3>
+                            <ul>
+                                <li>Comprendre le processus d’élaboration d’un schéma directeur d’urbanisme</li>
+                                <li>Développer un diagnostic urbain efficace pour l’élaboration d’un document d’urbanisme</li>
+                                <li>Définir une approche appropriée pour la planification des transports et l’intégration de l’économie informelle</li>
+                                <li>Définir une approche d’organisation spatiale intégrée et durable</li>
+                                <li>Comprendre les rôles des différents acteurs de la mise en œuvre des schémas directeurs</li>
+                            </ul>
+                        </div>
+                        <div class="pb-5">
+                            <h3 class="mb-3">Enseignants</h3>
+                            
+                            <div class="row">
+                                <div class="col-12 col-md-6 instructor-card p-3">
+                                    <div class="card"> 
+                                        <div class="card-header">
+                                            <div class="instructor-profil">
+                                                <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+                                            </div>
+                                        </div> 
+                                        <div class="card-body">
+                                            <h5 class="instructor-name">Jérôme Chenal</h5>
+                                            <div class="instructors-desc pt-3">Architecte et doctorant EPFL Lausanne, Suisse</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 instructor-card p-3">
+                                    <div class="card">
+
+                                        <div class="card-header">
+                                            <div class="instructor-profil">
+                                                <img src="{% static 'images/assets/moocs/instructors/Armel-Kemajou.jpeg' %}" alt="Armel Kemajou"> 
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h5 class="instructor-name">Armel Kemajou</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="moocs-featured__img">
+                        <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommended-moocs">
+        <div class="container-lg p-3 p-md-5">
+            <h3 class="section-title mb-3">Voir aussi</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="{% url 'introduction-a-la-planification-urbaine' %}" class="d-block">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div> 
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div--> 
+                            <h5 class="moocsCard-title">
+                                <a href="{% url 'introduction-a-la-planification-urbaine' %}" class="d-block">
+                                    {% translate "Villes africaines : Introduction à la planification urbaine" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Available now" %}
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="" class="d-block">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div> 
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div--> 
+                            <h5 class="moocsCard-title">
+                                <a href="" class="d-block">
+                                    {% translate "Villes africaines : Mobilités et transports urbains" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Available now" %}
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
+                            <a href="" class="d-block">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"> 
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div> 
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div> 
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div--> 
+                            <h5 class="moocsCard-title">
+                                <a href="" class="d-block">
+                                    {% translate "Systèmes d'Information Géographique - Partie 1" %}
+                                </a> 
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Available now" %}
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <p class="pt-3 font-size-16">Vous trouverez <a href="https://moocs.epfl.ch/" class="text_primary" target="_blank">ici</a> plus d'informations sur les MOOCs de l'EPFL.</p>
+        </div>
+    </section>
+ 
+
+{% endblock content %}

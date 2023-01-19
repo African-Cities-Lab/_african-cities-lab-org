@@ -1,5 +1,5 @@
 
-//Count Down Timer for CIVA
+//Count Down Timer for ACC
 const second = 1000,
           minute = second * 60,
           hour = minute * 60,
@@ -12,7 +12,7 @@ const second = 1000,
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "03/21/",
+        dayMonth = "05/23/",
         deadline = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;

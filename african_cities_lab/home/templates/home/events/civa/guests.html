@@ -6,7 +6,7 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "Special guests | The International Conference of African Cities" %} - African Cities Lab
+        {% translate "Special guests | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
@@ -14,17 +14,17 @@
 {% endblock %}
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
 <meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab"/>
 <meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "The International Conference of African Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 {% endblock %}
@@ -38,8 +38,10 @@
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
-    .page-banner__right {
-        background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+    .page-banner {
+      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-position: top center;
     }
   </style>
 {% endblock css %}
@@ -60,38 +62,38 @@
                       <label id="nav2">
                         {% url 'the-international-conference-of-african-cities-2023' as url %}
                         <a class="{% if request.path == url %}active{% endif %}" href="{% url 'the-international-conference-of-african-cities-2023' %}">
-                          {% translate "CIVA 2023" %}
+                          {% translate "ACC 2023" %}
                         </a>
                         <span class="visuallyhidden">secondary menu</span>
                       </label>
                       <ul class="list-inline">
                         <!--li class="list-inline-item">
-                          {% url 'civa-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-agenda' %}">{% translate "Program" %}</a>
+                          {% url 'acc-agenda' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
                         </li-->
                         <li class="list-inline-item">
-                          {% url 'civa-speakers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-speakers' %}">{% translate "Speakers" %}</a>
+                          {% url 'acc-speakers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
                         </li>
                         <li class="list-inline-item">
-                          {% url 'civa-guests' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-guests' %}">{% translate "Special guests" %}</a>
+                          {% url 'acc-guests' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-guests' %}">{% translate "Special guests" %}</a>
                         </li>
                         <li class="list-inline-item">
-                          {% url 'civa-commitee' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-commitee' %}">{% translate "Committee" %}</a>
+                          {% url 'acc-commitee' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
                         </li>
                         <li class="list-inline-item">
-                          {% url 'civa-papers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-papers' %}">{% translate "Call for papers" %}</a>
+                          {% url 'acc-papers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
                         </li>
                         <!--li class="list-inline-item">
-                            {% url 'civa-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-registration' %}">{% translate "Register" %}</a>
+                            {% url 'acc-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>
                         </li-->
                         <!--li class="list-inline-item">
-                            {% url 'civa-informations' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'civa-informations' %}">{% translate "Venue & Contact" %}</a>
+                            {% url 'acc-informations' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contact" %}</a>
                         </li-->
                       </ul>
                     </nav>
@@ -102,36 +104,37 @@
     </div>
 </div>
 
-<section class="page-banner__area bg_primary mt-5">
-    <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left align-self-center">
-            <h1 class="page-hero__title text-white">{% translate "Special guests" %}</h1>
-        </div>
-        <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left">
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
-            </div>
-        </div>
-    </div>
+<section class="page-banner"> 
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6"> 
+              <div class="position-relative h1">
+                  {% translate "Special guests" %}
+                  <span class="dash-accent"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="acl-sharpes right-sharpe">
+      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+  </div>
 </section>
-
-
 
 <section class="civa-form__section">
   <div class="container-xl">
     <div class="row justify-content-center">
-      <div class="col-lg-7 text-white text-center">
+      <div class="col-lg-8 text-white text-center">
         <div class="h1 pt-lg-5">
           {% blocktranslate %}
-          Join the International Conference of African Cities (CIVA) - Digital Cities
+          Join African Cities Conference (ACC) - Digital Cities
           {% endblocktranslate %}
         </div>
         <div class="mt-5 text-center">
-          <a class="btn btn__primary btn__small my-4" href="{% url 'civa-papers' %}">
+          <a class="btn btn__primary btn__small my-4" href="{% url 'acc-papers' %}">
             {% translate "Call for papers" %}
           </a>
         </div>
-        <p class="font-size-18 pt-3 pb-5">
+        <p class="font-size-16 pt-3 pb-5">
           {% blocktranslate %}
             If you wish to have more information,<br> 
             you can contact us directly on :<br>

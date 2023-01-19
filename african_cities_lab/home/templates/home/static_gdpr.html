@@ -30,11 +30,8 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .page-hero__container{
-      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
-    }
-    .page-banner__right {
-        background-image: url({% static 'images/assets/pages-header.jpg' %});
+    .page-banner {
+        min-height: 335px;
     }
   </style> 
 {% endblock css %}
@@ -53,18 +50,21 @@
 {% block content %}
 
   <!-- Page banner area-->
-  <section class="page-banner__area bg_primary">
-    <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left align-self-center">
-            <h1 class="page-hero__title text-white">{% translate "GDPR" %}</h1>
-        </div>
-        <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left">
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
-            </div>
+  <section class="page-banner bg_primary">
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 col-md-10">
+                <div class="position-relative h1">
+                    {% translate "GDPR" %}
+                    <span class="dash-accent__"></span>
+                </div>
+            </div>  
         </div>
     </div>
-  </section>
+    <div class="acl-sharpes bottom-right__sharpe">
+        <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-bottom#d29675.svg' %}">
+    </div>
+</section>
   <!-- End Page banner area -->
 
     <section class="py-5">

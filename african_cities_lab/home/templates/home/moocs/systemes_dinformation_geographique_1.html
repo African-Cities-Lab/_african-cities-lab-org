@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Systèmes d'Information Géographique - Partie 1" %} - African Cities Lab{% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+{% endblock %}
+
+{% block static_meta_tag %}
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+<section class="moocs-page__banner">
+    <div class="container-lg">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-md-10">
+                <h1 class="moocs-title">Systèmes d'Information Géographique <br> - Partie 1</h1>
+
+                <div class="moocs-university">
+                    Offert par : <span class="font-weight-500">École Polytechnique Fédérale de Lausanne</span>
+                </div>
+
+                <a href="https://apps.courses.africancitieslab.org/authn/login?next=%2Fcourses%2Fcourse-v1%3AEPFL%2Bsig1%2B2022%2Fabout" target="_blank" class="btn btn__secondary btn__big">
+                    S'inscrire gratuitement
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="moocs-page__main">
+    <div class="container-lg p-3 p-md-5">
+        <div class="row justify-content-lg-between">
+            <div class="col-12 col-lg-7">
+                <div class="moocs-overview font-size-16 py-4"> 
+                    <div>
+                        <h3 class="mb-3">Description</h3>
+                        <p class="pb-3">
+                            Organisé en deux parties, ce cours présente les bases théoriques et pratiques des systèmes d’information géographique.
+                        </p>
+                        <ul>
+                            <li>Il propose une introduction aux systèmes d’information géographique qui ne requiert 
+                                pas de connaissances préalables en informatique
+                            </li>
+                            <li>Il donne la possibilité d’acquérir rapidement les notions de base qui vous permettent 
+                                de créer des bases de données spatiales et de fabriquer des cartes géographiques
+                            </li>
+                            <li>Il s’agit d’un cours pratique qui repose sur l’utilisation de logiciels libres, notamment QGIS</li>
+                        </ul>
+                        <p class="pb-3">
+                            En somme, si vos études ou votre profession comprennent des activités liées à la gestion de territoires, 
+                            à l’analyse d’objets distribués dans l’espace géographique (aménagement du territoire, biologie, 
+                            santé publique, écologie, énergie, etc.), ce cours est fait pour vous!
+                        </p>
+                        <p class="pb-3">
+                            En suivant cette première partie du cours, vous explorerez les principes de base de la numérisation 
+                            du territoire et du stockage des géodonnées. Vous apprendrez notamment à :
+                        </p>
+                        <ul class="pb-3">
+                            <li>
+                                Caractériser des objets et/ou phénomènes spatiaux (modélisation du territoire) du point de vue de leur 
+                                positionnement dans l’espace (systèmes de coordonnées et projections, relations spatiales) et en fonction 
+                                de leur nature intrinsèque (mode objet ou vecteur vs. mode image ou raster),
+                            </li>
+                            <li>
+                                Utiliser les diverses méthodes d’acquisition de données (mesure directe, géoréférencement d’images, 
+                                digitalisation, source de données existantes, etc.)
+                            </li>
+                            <li>
+                                Utiliser les divers modes de stockage des géodonnées – Fichiers simples et/ou bases de données relationnelles
+                            </li>
+                            <li>Utiliser des outils de modélisation des données pour décrire et implémenter une base de données</li>
+                            <li>Créer des requêtes dans le langage d’interrogation et de manipulation des données</li>
+                        </ul>
+                        <p class="pb-3">
+                            La seconde partie du cours portera sur les méthodes d'analyse spatiale et les techniques de représentation des géo-données. 
+                            Vous apprendrez notamment à:
+                        </p>
+                        <ul>
+                            <li>Analyser les propriétés spatiales de variables discrètes, par exemple en quantifiant l’autocorrélation spatiale</li>
+                            <li>Travailler avec les variables continues (échantillonnage, construction de courbes d’isovaleurs, méthodes d’interpolation)</li>
+                            <li>Utiliser les modèles numériques d'altitude et leurs dérivées (pente, orientation, etc.)</li>
+                            <li>Utiliser les techniques de superposition de géodonnées et d'interaction entre elles</li>
+                            <li>Produire des documents cartographiques selon les règles de la sémiologie graphique</li>
+                            <li>Explorer d’autres formes de représentation spatiale (cartographie interactive sur internet, représentations 3D, etc.)</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="moocs-featured__img">
+                    <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recommended-moocs">
+    <div class="container-lg p-3 p-md-5">
+        <h3 class="section-title mb-3">Voir aussi</h3>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                <div class="card">
+                    <div class="card-header p-0 border-0"> 
+                        <a href="" class="d-block">
+                            <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"> 
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="moocsCard-university d-flex align-items-center">
+                            <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                            <div class="university__divider"></div> 
+                            <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                        </div> 
+                        <!--div class="moocsCard-meta py-2">
+                            <div class="meta__values">
+                                <i class="fas fa-tags text_primary"></i>
+                                <span class="meta__unit">{% translate "Sanitation" %}</span>
+                            </div>
+                        </div--> 
+                        <h5 class="moocsCard-title">
+                            <a href="" class="d-block">
+                                {% translate "Systèmes d'Information Géographique - Partie 2" %}
+                            </a> 
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        {% translate "Available now" %}
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                <div class="card">
+                    <div class="card-header p-0 border-0"> 
+                        <a href="" class="d-block">
+                            <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}"> 
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="moocsCard-university d-flex align-items-center">
+                            <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                            <div class="university__divider"></div> 
+                            <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                        </div> 
+                        <!--div class="moocsCard-meta py-2">
+                            <div class="meta__values">
+                                <i class="fas fa-tags text_primary"></i>
+                                <span class="meta__unit">{% translate "Sanitation" %}</span>
+                            </div>
+                        </div--> 
+                        <h5 class="moocsCard-title">
+                            <a href="" class="d-block">
+                                {% translate "Villes africaines : Restructuration des quartiers précaires" %}
+                            </a> 
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        {% translate "Available now" %}
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                <div class="card">
+                    <div class="card-header p-0 border-0"> 
+                        <a href="" class="d-block">
+                            <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}"> 
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="moocsCard-university d-flex align-items-center">
+                            <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                            <div class="university__divider"></div> 
+                            <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                        </div> 
+                        <!--div class="moocsCard-meta py-2">
+                            <div class="meta__values">
+                                <i class="fas fa-tags text_primary"></i>
+                                <span class="meta__unit">{% translate "Sanitation" %}</span>
+                            </div>
+                        </div--> 
+                        <h5 class="moocsCard-title ">
+                            <a href="" class="d-block">
+                                {% translate "Villes africaines : Environnement et enjeux de développement durable" %}
+                            </a> 
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        {% translate "Available now" %}
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <p class="pt-3 font-size-16">Vous trouverez <a href="https://moocs.epfl.ch/" class="text_primary" target="_blank">ici</a> plus d'informations sur les MOOCs de l'EPFL.</p>
+    </div>
+</section>
+
+{% endblock content %}

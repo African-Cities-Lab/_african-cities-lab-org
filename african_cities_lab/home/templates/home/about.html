@@ -30,12 +30,14 @@
 {% block css %}
     {{ block.super }}
     <style>
-        .acl-conference {
-            background-image: url({% static 'images/assets/conference-bg.jpg' %});
-        } 
-        .page-banner__right {
-            background-image: url({% static 'images/assets/about-v2.jpeg' %});
+        .page-banner {
+            background-image: linear-gradient(rgba(84,84,84,0.25) 12%, rgba(0,0,0,.5) 100%),
+              url({% static 'images/assets/acl-aboutpage-banner.jpg' %});
+            background-position: bottom center;
         }
+        .acl-conference {
+            background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+        } 
     </style>
 {% endblock css %}
 
@@ -52,48 +54,46 @@
 
 {% block content %}
 
-<section class="page-banner__area"> 
-    <div class="row justify-content-between align-item-center">
-        <div class="page-banner__left"> 
-            <div class="page-banner__title h1">
-                {% translate "By 2050 , African cities will be home to" %} <span class="text_primary">{% translate "2.5 billion" %}</span> {% translate "people." %}
-            </div>
-            <ul class="banner-text-list">
-                <li class="banner-text__item one">
-                    <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-                    <h2 class="bannner__add-text"><span class="text_primary">{% translate "700 million" %}</span>{% translate " new homes" %}</h2>
-                </li> 
-                <li class="banner-text__item two">
-                    <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-                    <h2 class="bannner__add-text"><span class="text_primary">{% translate "300,000" %}</span>{% translate " schools" %}</h2>
-                </li>
-                <li class="banner-text__item three">
-                    <h2 class="bannner__add-text">{% translate " and almost " %}</h2>
-                </li>
-                <li class="banner-text__item four">
-                    <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
-                    <h2 class="bannner__add-text"><span class="text_primary">{% translate "100,000" %}</span>{% translate " health centers" %}</h2>
-                </li>
-                <li class="banner-text__item five">
-                    <h2 class="bannner__add-text">{% translate "remain to be built." %}</h2>
-                </li>
-            </ul>
-        </div>
-        <div class="page-banner__right">
-            <div class="d-none d-lg-block banner-angle__left"> 
-                <img class="d-none d-lg-block" src="{% static 'images/assets/banner-angle-left.svg' %}">
+<section class="page-banner"> 
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12 col-lg-6 col-md-10"> 
+                <div class="position-relative h1">
+                    {% translate "By 2050, African cities will be home to 2.5 billion people" %}
+                    <span class="dash-accent"></span>
+                </div>
+                <ul class="banner-text-list">
+                    <li class="banner-text__item one">
+                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <h2 class="bannner__add-text"><span>{% translate "700 million" %}</span>{% translate " new homes" %}</h2>
+                    </li> 
+                    <li class="banner-text__item two">
+                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <h2 class="bannner__add-text"><span>{% translate "300,000" %}</span>{% translate " schools" %}</h2>
+                    </li>
+                    <li class="banner-text__item three">
+                        <h2 class="bannner__add-text">{% translate " and almost " %}</h2>
+                    </li>
+                    <li class="banner-text__item four">
+                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <h2 class="bannner__add-text"><span>{% translate "100,000" %}</span>{% translate " health centers" %}</h2>
+                    </li>
+                    <li class="banner-text__item five">
+                        <h2 class="bannner__add-text">{% translate "remain to be built." %}</h2>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="acl-sharpes right-sharpe">
+        <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
     </div>
 </section>
 
     <section class="p-lg-5 position-relative">
-        <!--div class="acl-sharpes red-left__sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/red-sharpe-left.svg' %}">
-        </div-->
         <div class="container-xl py-md-5">
             <div class="row justify-content-around">
-                <div class="col-12 col-md-3 col-lg-4">
+                <div class="col-12 col-md-3 col-lg-4 p-3">
                     <img class="about-mission__img" src="{% static 'images/assets/about-mission.jpg' %}">
                 </div>
                 <div class="col-12 col-md-9 col-lg-8 pt-5 px-lg-5">
@@ -152,9 +152,9 @@
              </div>
         </div>
 
-        <div class="container-xl pb-5">
-             <div class="row justify-content-lg-center">
-                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+        <div class="container-xl">
+             <div class="row justify-content-lg-center mb-5">
+                 <div class="col-12 col-md-6 col-lg-4 p-3 platform-feature__card d-flex">
                      <div class="card">
                          <div class="card-body">
                              <h5 class="feature-card__title text_primary py-3">
@@ -170,7 +170,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+                 <div class="col-12 col-md-6 col-lg-4 p-3 platform-feature__card d-flex">
                      <div class="card">
                          <div class="card-body">
                              <h5 class="feature-card__title text_primary py-3">
@@ -184,7 +184,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 platform-feature__card">
+                 <div class="col-12 col-md-6 col-lg-4 p-3 platform-feature__card d-flex">
                      <div class="card">
                          <div class="card-body">
                              <h5 class="feature-card__title text_primary py-3">
@@ -202,43 +202,9 @@
         </div>
     </section>
 
-    <section class="acl-conference">
-
-        <div class="img-overlay__bottomToTop"></div>
-
-        <div class="acl-sharpes top-right__sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-triange__.svg' %}">
-        </div>
-
-        <div class="container position-relative">
-            <div class="row p-3 py-5 p-md-5">
-                <div class="col-12 col-lg-8 pt-lg-3">
-                    <div class="content-holder">
-                        <h1 class="font-size-3-50em">
-                            {% translate "The International Conference of African Cities (CIVA)" %}
-                        </h1>
-                        <div class="hidden-details py-3">
-                            <p>{% blocktranslate %}
-                            Challenging the current vision of African cities, digital cities are presented as a rational response to future demographic projections.
-                            African Cities Lab creates the "International Conference on African Cities (CIVA) - Digital Cities" ,
-                            a major event that aims to increase the scope and develop synergies between research and entrepreneurship on the African continent.
-                            It is all about accelerating digitization of cities and promoting scientific excellence
-                            in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin.
-                            {% endblocktranslate %}</p>
-
-                            <a href="{% url 'the-international-conference-of-african-cities-2023' %}" class="btn mt-3 font-size-14 btn__primary btn-small">
-                                {% translate "Learn more" %}
-                            </a>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section>
         <div class="container p-lg-5">
-            <div class="row d-flex justify-content-center pt-5">
+            <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-10 text-center">
                     <h3 class="section-title">{% translate "African Cities Lab Webinars" %}</h3>
 
@@ -284,7 +250,9 @@
                             <div class="timeline-pointer"></div>
                             <h5>{% translate "November 2022" %}</h5> 
                             <span>{% translate "3rd webinar" %}</span>
-                            <p class="text-muted"></p>
+                            <p class="text-muted">
+                                {% translate "How to build resilient African Cities in response to climate change?" %}
+                            </p>
                         </a>
                     </li>
                     <li class="list-inline-item timeline-step">
@@ -298,8 +266,8 @@
                     <li class="list-inline-item timeline-step">
                         <a href="#" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
-                            <h4 class="text_primary">{% translate "March 2023" %}</h4> 
-                            <span class="font-size-16">{% translate "International Conference of African Cities" %}</span>
+                            <h4 class="text_primary">{% translate "May 2023" %}</h4> 
+                            <span class="font-size-16">{% translate "African Cities Conference" %}</span>
                         </a>
                     </li>
                 </ul>
@@ -310,6 +278,36 @@
                     {% translate "Register for the next webinar" %}
                 </a>
             </div-->
+        </div>
+    </section>
+
+    <section class="acl-conference">
+
+        <div class="img-overlay__bottomToTop"></div>
+
+        <div class="acl-sharpes top-right__sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-top.svg' %}">
+        </div>
+
+        <div class="container position-relative">
+            <div class="row p-3 py-5 p-md-5">
+                <div class="col-12 col-lg-8 pt-lg-3">
+                    <div class="content-holder">
+                        <h1 class="font-size-3-50em">
+                            {% translate "African Cities Conference (ACC)" %}
+                        </h1>
+                        <div class="hidden-details py-3">
+                            <p class="font-size-16">{% blocktranslate %}
+                            Challenging the current vision of African cities, digital cities are presented as a rational response to future demographic projections.
+                            African Cities Lab creates the "African Cities Conference (ACC) - Digital Cities" ,
+                            a major event that aims to increase the scope and develop synergies between research and entrepreneurship on the African continent.
+                            It is all about accelerating digitization of cities and promoting scientific excellence
+                            in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin.
+                            {% endblocktranslate %}</p> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
         </div>
     </section>
 

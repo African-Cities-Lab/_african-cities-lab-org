@@ -30,11 +30,10 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .page-hero__container{
-      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
-    }
-    .page-banner__right {
-        background-image: url({% static 'images/assets/pages-header.jpg' %});
+    .page-banner {
+        background-image: linear-gradient(rgba(84,84,84,0.10) 12%, rgba(0,0,0,0.10) 100%),
+          url({% static 'images/assets/acl-contactpage-banner.jpg' %});
+        background-position: bottom center;
     }
   </style>
 {% endblock css %}
@@ -52,31 +51,19 @@
 
 {% block content %}
 
-  <!-- Page banner area
-  <section class="page-hero__container">
-    <div class="container p-md-5">
-        <div class="row px-lg-5 pt-5 align-items-end">
-            <div class="col">
-                <h1 class="page-hero__title">{% translate "Contact" %}</h1>
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-lg-6 col-md-10">
+                    <div class="position-relative h1">
+                        {% translate "Contact" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                </div>  
             </div>
         </div>
-    </div>
-    <div class="page-hero__shape">
-        <img src="{% static "images/assets/sharpe-on-hero.svg" %}">
-    </div> 
-  </section>
-  < End Page banner area -->
-
-    <section class="page-banner__area bg_primary">
-        <div class="row justify-content-between align-item-center">
-            <div class="page-banner__left align-self-center">
-                <h1 class="page-hero__title text-white">{% translate "Contact" %}</h1>
-            </div>
-            <div class="page-banner__right">
-                <div class="d-none d-lg-block banner-angle__left">
-                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
-                </div>
-            </div>
+        <div class="acl-sharpes bottom-right__sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}">
         </div>
     </section>
 
