@@ -784,7 +784,7 @@ a:hover {
 }
 .acl-sharpes.right-sharpe {
 	right: 0;
-	width: 225px;
+	width: 195px;
 }
 .acl-sharpes.middle-sharpe {
 	left: 34%;
@@ -993,7 +993,7 @@ a.novashare-button {
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
-    min-height: 450px;
+    min-height: 388px;
     color: #fff;
     display: flex;
 	align-items: center;
@@ -1261,7 +1261,7 @@ a.novashare-button {
 }
 .featured-event__content .featured-event-inner {
     padding-top: 8px;
-	margin-left: -40px;
+	margin-left: -30px;
 }
 .featured-event__content .featured-event-inner > a {
 	display: block; 
@@ -2076,6 +2076,9 @@ h2.bannner__add-text {
 /*----------------------------------------*/
 
 @media (max-width: 576px) {
+	.moocs-page__banner { 
+		background: linear-gradient(28deg, rgba(190,55,18,0.98) 0%, rgba(128,47,72,0.98) 54%, rgba(64,39,129,1) 100%);
+	}
 	.page-banner .event-title {
 		font-size: 2em;
 	}
@@ -2241,6 +2244,11 @@ h2.bannner__add-text {
 	.right-header .dropdown-menu .dropdown-item {
 		padding: 0 3rem;
 	}
+	.right-header .register-link {
+		display: block;
+		text-align: center;
+		padding: 3rem 0;
+	}
 	li.events-listing__item .events-listing__logo {
 		margin: 0 25px 0 0;
 	}
@@ -2288,6 +2296,7 @@ h2.bannner__add-text {
 		display: inline;
 		margin-right: 1rem;	
 	}
+
 }
 @media (min-width: 768px) {
 	.pl-md-0 {
@@ -2298,6 +2307,9 @@ h2.bannner__add-text {
 	}
 }
 @media (min-width: 992px){
+	.right-header .register-link {
+		display: inline-block;
+	}
 	.widget-share {
 		display: inline-block;
 		padding: 0;

@@ -21,266 +21,273 @@
 
 {% block content %}
 
-    <section class="moocs-page__banner">
-        <div class="container-lg p-3 p-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-8 col-md-10">
-                    <h1 class="moocs-title">Villes africaines : <br> Introduction à la planification urbaine</h1>
+    <section id="moocs_page">
 
-                    <div class="moocs-university">
-                        Offert par : <span class="font-weight-500">École Polytechnique Fédérale de Lausanne</span>
-                    </div>
+        <div class="moocs-page__banner">
+            <div class="container-lg p-3 p-md-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8 col-md-10">
+                        <h1 class="moocs-title">Villes africaines : <br> Introduction à la planification urbaine</h1>
 
-                    <a href="https://apps.courses.africancitieslab.org/authn/login?next=%2Fcourses%2Fcourse-v1%3AEPFL%2BVA_IPU%2B2022%2Fabout" target="_blank" class="btn btn__secondary btn__big">
-                        S'inscrire gratuitement
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        {% comment %}
-        <div class="moocs-page__top">
-            <div class="position-relative">
-                <div class="moocs-content__top">
-                    <div class="page-top__inner">
-                        <div class="block-content">
-                            <h1>{% translate "Villes africaines : Introduction à la planification urbaine" %}</h1>
-
-                            <div class="mt-5">
-                                <a href="" class="btn btn__primary btn__small">
-                                    {% translate "Learn more" %}
-                                </a>
-                            </div>
+                        <div class="moocs-university">
+                            Offert par : <span class="font-weight-500">École Polytechnique Fédérale de Lausanne</span>
                         </div>
-                    </div>
-                </div>
 
-                <div class="moocs-details">
-                    <div class="page-top__inner">
-                        <div class="moocs-details__card">
-                            <div class="field-details moocs-img__field">
-                                <img src="{% static 'images/assets/moocs/introduction-a-la-planification-urbaine.jpeg' %}">
-                            </div>
-                            <div class="field-details moocs-date-range__field">
-                                <div class="label-inline">
-                                    <i class="far fa-calendar-alt  "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Available now" %}</span>
-                                </div>
-                            </div>
-                            <div class="field-details">
-                                <div class="label-inline moocs-modality__field">
-                                    <i class="fas fa-chalkboard-teacher  "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Online" %}</span>
-                                </div>
-                                <div class="label-inline moocs-price__field">
-                                    <i class="fas fa-money-bill-wave-alt  "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Free" %}</span> 
-                                </div>
-                            </div>
-                            <div class="field-details moocs-topics__field">
-                                <div class="label-inline">
-                                    <i class="fas fa-tags  "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Time commitment" %}</span>
-                                </div>
-                                <ul class="field-details field-type-list list-inline">
-                                    <li class="list-inline-item mx-2 font-size-16">{% translate "5-6 heures / semaine" %}</li>
-                                </ul>
-                            </div>
-                            <div class="field-details moocs-topics__field">
-                                <div class="label-inline">
-                                    <i class="fas fa-tags  "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Topics" %}</span>
-                                </div>
-                                <ul class="field-details field-type-list list-inline">
-                                    <li class="list-inline-item mx-2 font-size-16">{% translate "Building" %}</li>
-                                </ul>
-                            </div>
-                            <div class="field-details moocs-language__field">
-                                <div class="label-inline">
-                                    <i class="far fa-comment "></i>
-                                    <span class="mx-2 font-size-16">{% translate "Course language" %}</span>
-                                </div>
-                                <ul class="field-details field-type-list list-inline">
-                                    <li class="list-inline-item mx-2 font-size-16">{% translate "French" %}</li>
-                                </ul>
-                            </div>
-                            <div class="field-details moocs-university__field">
-                                <ul class="list-inline d-flex justify-content-center mt-2">
-                                    <li>
-                                        <div>
-                                            <div class="field-details moocs-logo__field">
-                                                <img src="{% static "images/assets/partners/epfl.png" %}">
-                                            </div>
-                                            <div class="field-details moocs-name__field">
-                                                <p>{% translate "École Polytechnique Fédérale de Lausanne" %}</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <a id="moocs_register_link" href="https://apps.courses.africancitieslab.org/authn/login?next=%2Fcourses%2Fcourse-v1%3AEPFL%2BVA_IPU%2B2022%2Fabout" target="_blank" class="btn btn__secondary btn__big">
+                            S'inscrire gratuitement
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        {% endcomment %}
-    </section>
 
-    <section class="moocs-page__main">
-        <div class="container-lg p-3 p-md-5">
-            <div class="row justify-content-lg-between">
-                <div class="col-12 col-lg-7">
-                    <div class="moocs-overview font-size-16 py-4"> 
-                        <div class="pb-5">
-                            <h3 class="mb-3">Description</h3>
-                            <p>
-                                Ce cours, conçu en 2014, permet d'apprendre les bases de la planification urbaine à 
-                                travers ses dimensions techniques, environnementales, sociales, économiques et symboliques. 
-                                Le cours parle uniquement des villes africaines et même si celles-ci ont valeurs d'exemple 
-                                pour les ville du Sud, voire toutes les villes, nous nous efforçons à remettre les problématiques 
-                                dans un contexte africain.
-                            </p>
+            {% comment %}
+            <div class="moocs-page__top">
+                <div class="position-relative">
+                    <div class="moocs-content__top">
+                        <div class="page-top__inner">
+                            <div class="block-content">
+                                <h1>{% translate "Villes africaines : Introduction à la planification urbaine" %}</h1>
+
+                                <div class="mt-5">
+                                    <a href="" class="btn btn__primary btn__small">
+                                        {% translate "Learn more" %}
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pb-5">
-                            <h3 class="mb-3">Ce que vous apprendrez</h3>
-                            <ul>
-                                <li>Appréhender la gestion et la planification de la ville dans toute sa complexité</li>
-                                <li>Analyser les enjeux et défis posés par les transformations urbaines en Afrique dans une perspective de développement durable</li>
-                                <li>Proposer des méthodes de diagnostic de la ville et élaborer des outils de planification appropriés</li>
-                                <li>Comprendre les problématiques environnementales de la ville en relation avec les changements climatiques et les enjeux internationaux</li>
-                            </ul>
-                        </div>
-                        <div class="pb-5">
-                            <h3 class="mb-3">Enseignants</h3>
-                            
-                            <div class="row">
-                                <div class="col-12 col-md-6 instructor-card p-3">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <div class="instructor-profil">
-                                                <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+                    </div>
+
+                    <div class="moocs-details">
+                        <div class="page-top__inner">
+                            <div class="moocs-details__card">
+                                <div class="field-details moocs-img__field">
+                                    <img src="{% static 'images/assets/moocs/introduction-a-la-planification-urbaine.jpeg' %}">
+                                </div>
+                                <div class="field-details moocs-date-range__field">
+                                    <div class="label-inline">
+                                        <i class="far fa-calendar-alt  "></i>
+                                        <span class="mx-2 font-size-16">Début: 1 janv. 2023</span>
+                                    </div>
+                                </div>
+                                <div class="field-details">
+                                    <div class="label-inline moocs-modality__field">
+                                        <i class="fas fa-chalkboard-teacher  "></i>
+                                        <span class="mx-2 font-size-16">{% translate "Online" %}</span>
+                                    </div>
+                                    <div class="label-inline moocs-price__field">
+                                        <i class="fas fa-money-bill-wave-alt  "></i>
+                                        <span class="mx-2 font-size-16">{% translate "Free" %}</span> 
+                                    </div>
+                                </div>
+                                <div class="field-details moocs-topics__field">
+                                    <div class="label-inline">
+                                        <i class="fas fa-tags  "></i>
+                                        <span class="mx-2 font-size-16">{% translate "Time commitment" %}</span>
+                                    </div>
+                                    <ul class="field-details field-type-list list-inline">
+                                        <li class="list-inline-item mx-2 font-size-16">{% translate "5-6 heures / semaine" %}</li>
+                                    </ul>
+                                </div>
+                                <div class="field-details moocs-topics__field">
+                                    <div class="label-inline">
+                                        <i class="fas fa-tags  "></i>
+                                        <span class="mx-2 font-size-16">{% translate "Topics" %}</span>
+                                    </div>
+                                    <ul class="field-details field-type-list list-inline">
+                                        <li class="list-inline-item mx-2 font-size-16">{% translate "Building" %}</li>
+                                    </ul>
+                                </div>
+                                <div class="field-details moocs-language__field">
+                                    <div class="label-inline">
+                                        <i class="far fa-comment "></i>
+                                        <span class="mx-2 font-size-16">{% translate "Course language" %}</span>
+                                    </div>
+                                    <ul class="field-details field-type-list list-inline">
+                                        <li class="list-inline-item mx-2 font-size-16">{% translate "French" %}</li>
+                                    </ul>
+                                </div>
+                                <div class="field-details moocs-university__field">
+                                    <ul class="list-inline d-flex justify-content-center mt-2">
+                                        <li>
+                                            <div>
+                                                <div class="field-details moocs-logo__field">
+                                                    <img src="{% static "images/assets/partners/epfl.png" %}">
+                                                </div>
+                                                <div class="field-details moocs-name__field">
+                                                    <p>{% translate "École Polytechnique Fédérale de Lausanne" %}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="instructor-name">Jérôme Chenal</h5>
-                                            <div class="instructors-desc pt-3">Architecte et doctorant EPFL Lausanne, Suisse</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endcomment %}
+        </div>
+
+        <div class="moocs-page__main">
+            <div class="container-lg p-3 p-md-5">
+                <div class="row justify-content-lg-between">
+                    <div class="col-12 col-lg-7 order-5 order-lg-1">
+                        <div class="moocs-overview font-size-16 py-4"> 
+                            <div class="pb-5">
+                                <h3 class="mb-3">Description</h3>
+                                <p>
+                                    Ce cours, conçu en 2014, permet d'apprendre les bases de la planification urbaine à 
+                                    travers ses dimensions techniques, environnementales, sociales, économiques et symboliques. 
+                                    Le cours parle uniquement des villes africaines et même si celles-ci ont valeurs d'exemple 
+                                    pour les ville du Sud, voire toutes les villes, nous nous efforçons à remettre les problématiques 
+                                    dans un contexte africain.
+                                </p>
+                            </div>
+                            <div class="pb-5">
+                                <h3 class="mb-3">Ce que vous apprendrez</h3>
+                                <ul>
+                                    <li>Appréhender la gestion et la planification de la ville dans toute sa complexité</li>
+                                    <li>Analyser les enjeux et défis posés par les transformations urbaines en Afrique dans une perspective de développement durable</li>
+                                    <li>Proposer des méthodes de diagnostic de la ville et élaborer des outils de planification appropriés</li>
+                                    <li>Comprendre les problématiques environnementales de la ville en relation avec les changements climatiques et les enjeux internationaux</li>
+                                </ul>
+                            </div>
+                            <div class="pb-5">
+                                <h3 class="mb-3">Enseignants</h3>
+                                
+                                <div class="row">
+                                    <div class="col-12 col-md-6 instructor-card p-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="instructor-profil">
+                                                    <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Mr. Jérôme Chenal">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="instructor-name">Jérôme Chenal</h5>
+                                                <div class="instructors-desc pt-3">Architecte et doctorant EPFL Lausanne, Suisse</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
-                        
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="moocs-featured__img">
-                        <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}">
+                    <div class="col-12 col-lg-4 order-1 order-lg-5 py-4">
+                        <div class="moocs-featured__img">
+                            <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="recommended-moocs">
-        <div class="container-lg p-3 p-md-5">
-            <h3 class="section-title mb-3">Voir aussi</h3>
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0"> 
-                            <a href="" class="d-block">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"> 
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div> 
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div> 
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+        <div class="recommended-moocs">
+            <div class="container-lg p-3 p-md-5">
+                <h3 class="section-title mb-3">Voir aussi</h3>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                        <div class="card">
+                            <div class="card-header p-0 border-0"> 
+                                <div class="ribbon-wrapper">
+                                    <div class="ribbon">NEW</div>
                                 </div>
-                            </div--> 
-                            <h5 class="moocsCard-title">
-                                <a href="" class="d-block">
-                                    {% translate "Villes africaines 2 : Planification et gestion urbaines" %}
-                                </a> 
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            {% translate "Available now" %}
-                        </div>
-                    </div> 
+                                <a href="{% url 'planification-a-la-gestion-urbaine' %}" class="d-block">
+                                    <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"> 
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="moocsCard-university d-flex align-items-center">
+                                    <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                    <div class="university__divider"></div> 
+                                    <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                                </div> 
+                                <!--div class="moocsCard-meta py-2">
+                                    <div class="meta__values">
+                                        <i class="fas fa-tags text_primary"></i>
+                                        <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                    </div>
+                                </div--> 
+                                <h5 class="moocsCard-title">
+                                    <a href="{% url 'planification-a-la-gestion-urbaine' %}" class="d-block">
+                                        {% translate "Villes africaines 2 : Planification et gestion urbaines" %}
+                                    </a> 
+                                </h5>
+                            </div>
+                            <div class="card-footer">
+                                Début: 1 janv. 2023
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                        <div class="card">
+                            <div class="card-header p-0 border-0"> 
+                                <a href="{% url 'mobilites-et-transports-urbains' %}" class="d-block">
+                                    <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"> 
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="moocsCard-university d-flex align-items-center">
+                                    <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                    <div class="university__divider"></div> 
+                                    <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                                </div> 
+                                <!--div class="moocsCard-meta py-2">
+                                    <div class="meta__values">
+                                        <i class="fas fa-tags text_primary"></i>
+                                        <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                    </div>
+                                </div--> 
+                                <h5 class="moocsCard-title">
+                                    <a href="{% url 'mobilites-et-transports-urbains' %}" class="d-block">
+                                        {% translate "Villes africaines : Mobilités et transports urbains" %}
+                                    </a> 
+                                </h5>
+                            </div>
+                            <div class="card-footer">
+                                Début: 1 janv. 2023
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                        <div class="card">
+                            <div class="card-header p-0 border-0"> 
+                                <a href="{% url 'systemes-dinformation-geographique-partie-1' %}" class="d-block">
+                                    <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"> 
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="moocsCard-university d-flex align-items-center">
+                                    <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                    <div class="university__divider"></div> 
+                                    <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                                </div> 
+                                <!--div class="moocsCard-meta py-2">
+                                    <div class="meta__values">
+                                        <i class="fas fa-tags text_primary"></i>
+                                        <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                    </div>
+                                </div--> 
+                                <h5 class="moocsCard-title">
+                                    <a href="{% url 'systemes-dinformation-geographique-partie-1' %}" class="d-block">
+                                        {% translate "Systèmes d'Information Géographique - Partie 1" %}
+                                    </a> 
+                                </h5>
+                            </div>
+                            <div class="card-footer">
+                                Début: 1 janv. 2023
+                            </div>
+                        </div> 
+                    </div>
                 </div>
 
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0"> 
-                            <a href="" class="d-block">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"> 
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div> 
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div> 
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div--> 
-                            <h5 class="moocsCard-title">
-                                <a href="" class="d-block">
-                                    {% translate "Villes africaines : Mobilités et transports urbains" %}
-                                </a> 
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            {% translate "Available now" %}
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0"> 
-                            <a href="" class="d-block">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"> 
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div> 
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div> 
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div--> 
-                            <h5 class="moocsCard-title">
-                                <a href="" class="d-block">
-                                    {% translate "Systèmes d'Information Géographique - Partie 1" %}
-                                </a> 
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            {% translate "Available now" %}
-                        </div>
-                    </div> 
-                </div>
+                <p class="pt-3 font-size-16">Vous trouverez <a href="https://moocs.epfl.ch/" class="text_primary" target="_blank">ici</a> plus d'informations sur les MOOCs de l'EPFL.</p>
             </div>
-
-            <p class="pt-3 font-size-16">Vous trouverez <a href="https://moocs.epfl.ch/" class="text_primary" target="_blank">ici</a> plus d'informations sur les MOOCs de l'EPFL.</p>
         </div>
+
     </section>
  
 
