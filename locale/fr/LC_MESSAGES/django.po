@@ -3740,7 +3740,7 @@ msgstr "Chaires de l'ACC"
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:169
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:192
 msgid "Architecht/urbanist & Prof à EPFL, Laussanne - Suisse"
-msgstr "Architecte et doctorant EPFL Lausanne, Suisse"
+msgstr "Architecte et docteur EPFL Lausanne, Suisse"
 
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:205
 msgid ""
