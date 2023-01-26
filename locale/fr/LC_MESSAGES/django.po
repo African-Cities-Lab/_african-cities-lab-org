@@ -4280,12 +4280,12 @@ msgstr "MOOCs"
 
 #: african_cities_lab/home/templates/home/home.html:91
 msgid ""
-"A collection of free video courses ranging from eco-construction to waste "
-"management and given by subject-matter experts."
+"A MOOCs' catalogue delivered by African speakers, each an expert in his or "
+"her field, ranging from eco-construction to waste management."
 msgstr ""
-"Une collection de cours vidéo gratuits donnés par des intervenants "
-"africains, chacun étant expert dans son domaine, allant de l'éco-"
-"construction à la gestion des déchets."
+"Un catalogue de formation en ligne délivré par des intervenants africains, "
+"chacun étant expert dans son domaine, allant de l'éco-construction à la "
+"gestion des déchets."
 
 #: african_cities_lab/home/templates/home/home.html:106
 msgid "Learn from the experts"
