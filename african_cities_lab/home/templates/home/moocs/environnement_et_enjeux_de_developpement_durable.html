@@ -33,7 +33,19 @@
                             Offert par : <span class="font-weight-500">École Polytechnique Fédérale de Lausanne</span>
                         </div>
 
-                        <a id="moocs_register_link" href="https://apps.courses.africancitieslab.org/authn/login?next=%2Fcourses%2Fcourse-v1%3AEPFL%2BVA_EDD%2B2022%2Fabout" target="_blank" class="btn btn__secondary btn__big">
+			<div style="display: none">
+			    <form id="class_enroll_form" method="post" data-remote="true" action="courses.africancitieslab.org/change_enrollment" target="_blank">
+				<fieldset class="enroll_fieldset">
+				    <legend class="sr">Enroll</legend>
+				    <input name="course_id" type="hidden" value="course-v1:EPFL+VA_EDD+2022">
+				    <input name="enrollment_action" type="hidden" value="enroll">
+				</fieldset>
+				<div class="submit">
+				    <input name="submit" type="submit" value="enroll">
+				</div>
+			    </form>
+			</div>
+                        <a id="moocs_register_link" href="#" class="btn btn__secondary btn__big"  onclick="document.getElementById('class_enroll_form').submit();">
                             S'inscrire gratuitement
                         </a>
                     </div>
