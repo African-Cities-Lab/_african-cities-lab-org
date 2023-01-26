@@ -15,7 +15,7 @@
 {% block css %}
   {{ block.super }}
   <style>
-    
+
   </style>
 {% endblock css %}
 
@@ -47,49 +47,32 @@
                     <div class="col-12 col-lg-7 order-5 order-lg-1">
                         <div class="moocs-overview font-size-16 py-4">
                             <div class="pb-5">
-                                <h3 class="mb-3">Description</h3>
+                                <h3 class="mb-3">Au sujet de ce cours</h3>
                                 <p class="pb-3">
                                     Organisé en deux parties, ce cours présente les bases théoriques et pratiques des systèmes d’information géographique.
                                 </p>
                                 <ul>
-                                    <li>Il propose une introduction aux systèmes d’information géographique qui ne requiert 
+                                    <li>Il propose une introduction aux systèmes d’information géographique qui ne requiert
                                         pas de connaissances préalables en informatique
                                     </li>
-                                    <li>Il donne la possibilité d’acquérir rapidement les notions de base qui vous permettent 
+                                    <li>Il donne la possibilité d’acquérir rapidement les notions de base qui vous permettent
                                         de créer des bases de données spatiales et de fabriquer des cartes géographiques
                                     </li>
                                     <li>Il s’agit d’un cours pratique qui repose sur l’utilisation de logiciels libres, notamment QGIS</li>
                                 </ul>
                                 <p class="pb-3">
-                                    En somme, si vos études ou votre profession comprennent des activités liées à la gestion de territoires, 
-                                    à l’analyse d’objets distribués dans l’espace géographique (aménagement du territoire, biologie, 
+                                    En somme, si vos études ou votre profession comprennent des activités liées à la gestion de territoires,
+                                    à l’analyse d’objets distribués dans l’espace géographique (aménagement du territoire, biologie,
                                     santé publique, écologie, énergie, etc.), ce cours est fait pour vous!
                                 </p>
                                 <p class="pb-3">
-                                    En suivant cette première partie du cours, vous explorerez les principes de base de la numérisation 
+                                    En suivant cette première partie du cours, vous explorerez les principes de base de la numérisation
                                     du territoire et du stockage des géodonnées. Vous apprendrez notamment à :
                                 </p>
-                                <ul class="pb-3">
-                                    <li>
-                                        Caractériser des objets et/ou phénomènes spatiaux (modélisation du territoire) du point de vue de leur 
-                                        positionnement dans l’espace (systèmes de coordonnées et projections, relations spatiales) et en fonction 
-                                        de leur nature intrinsèque (mode objet ou vecteur vs. mode image ou raster),
-                                    </li>
-                                    <li>
-                                        Utiliser les diverses méthodes d’acquisition de données (mesure directe, géoréférencement d’images, 
-                                        digitalisation, source de données existantes, etc.)
-                                    </li>
-                                    <li>
-                                        Utiliser les divers modes de stockage des géodonnées – Fichiers simples et/ou bases de données relationnelles
-                                    </li>
-                                    <li>Utiliser des outils de modélisation des données pour décrire et implémenter une base de données</li>
-                                    <li>Créer des requêtes dans le langage d’interrogation et de manipulation des données</li>
-                                </ul>
-                                <p class="pb-3">
-                                    La seconde partie du cours portera sur les méthodes d'analyse spatiale et les techniques de représentation 
-                                    des géo-données. Vous apprendrez notamment à:
-                                </p>
-                                <ul class="pb-3">
+                            </div>
+			    <div>
+                                <h3 class="mb-3">Objectifs d'apprentissage</h3>
+                                <ul>
                                     <li>Analyser les propriétés spatiales de variables discrètes, par exemple en quantifiant l’autocorrélation spatiale</li>
                                     <li>Travailler avec les variables continues (échantillonnage, construction de courbes d’isovaleurs, méthodes d’interpolation)</li>
                                     <li>Utiliser les modèles numériques d'altitude et leurs dérivées (pente, orientation, etc.)</li>
@@ -97,11 +80,13 @@
                                     <li>Produire des documents cartographiques selon les règles de la sémiologie graphique</li>
                                     <li>Explorer d’autres formes de représentation spatiale (cartographie interactive sur internet, représentations 3D, etc.)</li>
                                 </ul>
-                                <p>
-                                    La page <a href="www.facebook.com/moocsig" class="text_primary" target="_blank">www.facebook.com/moocsig</a> propose un forum interactif pour les participants à ce cours.
-                                </p>
                             </div>
-                            
+                            <div class="pb-5">
+                                <h3 class="mb-3">Comment naviguer dans ce cours</h3>
+                                <p class="pb-3">
+				    S’il s’agit de votre premier cours sur la plateforme edX, nous vous suggérons de vous inscrire au <a href="https://www.edx.org/course/demox-edx-demox-1">cours démo d’edX</a>. Ce cours démo vous permet d’explorer la plateforme edX, d’apprendre comment répondre aux questions d’exercices et de suivre votre progrès.
+                                </p>
+			    </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 order-1 order-lg-5 py-4">
@@ -119,98 +104,98 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-4 col-md-6 moocs-card">
                         <div class="card">
-                            <div class="card-header p-0 border-0"> 
+                            <div class="card-header p-0 border-0">
                                 <div class="ribbon-wrapper">
                                     <div class="ribbon">NEW</div>
-                                </div>  
+                                </div>
                                 <a href="{% url 'planification-a-la-gestion-urbaine' %}" class="d-block">
-                                    <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"> 
+                                    <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}">
                                 </a>
                             </div>
                             <div class="card-body">
                                 <div class="moocsCard-university d-flex align-items-center">
                                     <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                    <div class="university__divider"></div> 
+                                    <div class="university__divider"></div>
                                     <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                                </div> 
+                                </div>
                                 <!--div class="moocsCard-meta py-2">
                                     <div class="meta__values">
                                         <i class="fas fa-tags text_primary"></i>
                                         <span class="meta__unit">{% translate "Sanitation" %}</span>
                                     </div>
-                                </div--> 
+                                </div-->
                                 <h5 class="moocsCard-title">
                                     <a href="{% url 'planification-a-la-gestion-urbaine' %}" class="d-block">
                                         {% translate "Villes africaines 2 : Planification et gestion urbaines" %}
-                                    </a> 
+                                    </a>
                                 </h5>
                             </div>
                             <div class="card-footer">
                                 Début: 1 janv. 2023
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="col-12 col-lg-4 col-md-6 moocs-card">
                         <div class="card">
-                            <div class="card-header p-0 border-0"> 
+                            <div class="card-header p-0 border-0">
                                 <a href="{% url 'mobilites-et-transports-urbains' %}" class="d-block">
-                                    <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"> 
+                                    <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}">
                                 </a>
                             </div>
                             <div class="card-body">
                                 <div class="moocsCard-university d-flex align-items-center">
                                     <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                    <div class="university__divider"></div> 
+                                    <div class="university__divider"></div>
                                     <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                                </div> 
+                                </div>
                                 <!--div class="moocsCard-meta py-2">
                                     <div class="meta__values">
                                         <i class="fas fa-tags text_primary"></i>
                                         <span class="meta__unit">{% translate "Sanitation" %}</span>
                                     </div>
-                                </div--> 
+                                </div-->
                                 <h5 class="moocsCard-title">
                                     <a href="{% url 'mobilites-et-transports-urbains' %}" class="d-block">
                                         {% translate "Villes africaines : Mobilités et transports urbains" %}
-                                    </a> 
+                                    </a>
                                 </h5>
                             </div>
                             <div class="card-footer">
                                 Début: 1 janv. 2023
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div class="col-12 col-lg-4 col-md-6 moocs-card">
                         <div class="card">
-                            <div class="card-header p-0 border-0"> 
+                            <div class="card-header p-0 border-0">
                                 <a href="{% url 'systemes-dinformation-geographique-partie-1' %}" class="d-block">
-                                    <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"> 
+                                    <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}">
                                 </a>
                             </div>
                             <div class="card-body">
                                 <div class="moocsCard-university d-flex align-items-center">
                                     <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                    <div class="university__divider"></div> 
+                                    <div class="university__divider"></div>
                                     <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                                </div> 
+                                </div>
                                 <!--div class="moocsCard-meta py-2">
                                     <div class="meta__values">
                                         <i class="fas fa-tags text_primary"></i>
                                         <span class="meta__unit">{% translate "Sanitation" %}</span>
                                     </div>
-                                </div--> 
+                                </div-->
                                 <h5 class="moocsCard-title">
                                     <a href="{% url 'systemes-dinformation-geographique-partie-1' %}" class="d-block">
                                         {% translate "Systèmes d'Information Géographique - Partie 1" %}
-                                    </a> 
+                                    </a>
                                 </h5>
                             </div>
                             <div class="card-footer">
                                 Début: 1 janv. 2023
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
