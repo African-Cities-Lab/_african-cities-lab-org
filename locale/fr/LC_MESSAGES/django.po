@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-26 09:45+0100\n"
+"POT-Creation-Date: 2023-01-26 16:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,8 +359,8 @@ msgstr ""
 "climatiques ?"
 
 #: african_cities_lab/home/templates/home/about.html:261
-msgid "February 2023"
-msgstr "Février 2023"
+msgid "March 2023"
+msgstr "Mars 2023"
 
 #: african_cities_lab/home/templates/home/about.html:262
 msgid "4th webinar"
@@ -4161,27 +4161,27 @@ msgstr "Consulter le site"
 #: african_cities_lab/home/templates/home/moocs.html:197
 #: african_cities_lab/home/templates/home/moocs.html:228
 #: african_cities_lab/home/templates/home/moocs.html:259
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:187
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:218
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:249
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:250
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:281
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:312
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:197
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:231
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:261
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:181
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:212
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:243
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:189
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:223
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:253
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:126
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:157
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:188
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:134
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:165
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:196
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:206
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:237
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:268
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:255
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:286
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:317
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:202
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:236
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:266
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:201
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:232
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:263
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:194
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:228
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:258
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:123
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:154
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:185
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:119
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:150
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:181
 msgid "École Polytechnique Fédérale de Lausanne"
 msgstr ""
 
@@ -4362,10 +4362,16 @@ msgid "All events"
 msgstr "Voir tous"
 
 #: african_cities_lab/home/templates/home/home.html:474
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                        African Cities: <br> What role "
+#| "for the youth? \n"
+#| "                                        "
 msgid ""
 "\n"
 "                                        African Cities: <br> What role for "
-"the youth? \n"
+"the youth?\n"
 "                                        "
 msgstr ""
 "\n"
@@ -4443,83 +4449,83 @@ msgstr "Explorez nos MOOCs"
 #: african_cities_lab/home/templates/home/moocs.html:202
 #: african_cities_lab/home/templates/home/moocs.html:233
 #: african_cities_lab/home/templates/home/moocs.html:264
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:192
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:223
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:254
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:255
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:286
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:317
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:202
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:236
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:266
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:186
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:217
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:248
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:194
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:228
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:258
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:131
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:162
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:193
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:139
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:170
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:201
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:211
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:242
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:273
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:260
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:291
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:322
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:207
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:241
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:271
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:206
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:237
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:268
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:199
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:233
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:263
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:128
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:159
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:190
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:124
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:155
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:186
 msgid "Sanitation"
 msgstr "Assainissement"
 
 #: african_cities_lab/home/templates/home/moocs.html:83
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:197
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:260
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:241
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:216
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:265
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:246
 #: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:5
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:233
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:144
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:238
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:129
 msgid "Villes africaines 2 : Planification et gestion urbaines"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:114
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:322
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:271
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:253
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:327
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:276
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:273
 #: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:5
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:206
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:191
 msgid "Systèmes d'Information Géographique - Partie 1"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:145
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:136
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:133
 #: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:5
 msgid "Systèmes d'Information Géographique - Partie 2"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:176
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:228
-#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:291
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:247
+#: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:296
 #: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:5
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:222
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:175
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:242
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_2.html:160
 msgid "Villes africaines : Mobilités et transports urbains"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:207
 #: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:5
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:263
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:198
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:268
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:195
 msgid "Villes africaines : Environnement et enjeux de développement durable"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:238
-#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:259
+#: african_cities_lab/home/templates/home/moocs/environnement_et_enjeux_de_developpement_durable.html:278
 #: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:5
-#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:167
+#: african_cities_lab/home/templates/home/moocs/systemes_dinformation_geographique_1.html:164
 msgid "Villes africaines : Restructuration des quartiers précaires"
 msgstr ""
 
 #: african_cities_lab/home/templates/home/moocs.html:269
 #: african_cities_lab/home/templates/home/moocs/introduction_a_la_planification_urbaine.html:5
-#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:207
-#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:191
-#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:199
+#: african_cities_lab/home/templates/home/moocs/mobilites_et_transports_urbains.html:212
+#: african_cities_lab/home/templates/home/moocs/planification_a_la_gestion_urbaine.html:211
+#: african_cities_lab/home/templates/home/moocs/restructuration_des_quartiers_precaires.html:204
 msgid "Villes africaines : Introduction à la planification urbaine"
 msgstr ""
 
