@@ -324,7 +324,7 @@ msgstr "11 Octobre 2022"
 
 #: african_cities_lab/home/templates/home/about.html:244
 msgid "2nd webinar"
-msgstr "2nd Webinaire"
+msgstr "2ème webinaire"
 
 #: african_cities_lab/home/templates/home/about.html:245
 #: african_cities_lab/home/templates/home/event_index_page.html:126
