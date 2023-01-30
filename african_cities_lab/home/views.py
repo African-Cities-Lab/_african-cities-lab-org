@@ -7,6 +7,8 @@ from django.apps import apps
 from django.conf import settings
 from django.contrib import messages
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from django.http import JsonResponse
 from django.shortcuts import render
 from django.utils.datastructures import MultiValueDictKeyError
 from django.utils.translation import gettext_lazy as _
@@ -133,3 +135,32 @@ def subscribe_webinar(request):
         "home/webinar_form.html",
         context={"title": _("Subscribe to the webinar")},
     )
+
+
+def newsletter(request): 
+    
+    if request.method == "POST":
+        email = request.POST["EMAIL"] 
+
+        if request.POST["site_language"] == "en":
+            list_id = settings.MAILCHIMP_NEWSLETTER_EN_ID
+        else:  # "fr"
+            list_id = settings.MAILCHIMP_NEWSLETTER_FR_ID
+
+        status = _subscribe(email, list_id)
+        if status == "subscribed":
+            messages.success(
+                request,
+                _(
+                    "Thank you for subscribed to the ACL newsletter."
+                ),
+            )  # message
+        elif status == "exists":
+            messages.info(
+                request,
+                _(
+                    "Your email is already subscribed. Thank you!"
+                ),
+            )  # message
+
+    return JsonResponse(request)

@@ -144,4 +144,68 @@
         time: 1000
     });
 
+    /* Function is for submitting moocs waiting list
+    $('#moocs_list_for').submit(function(e){
+        e.preventDefault();
+        var data = {
+            'FNAME' : $('input[name="FNAME"]').val(),
+            'EMAIL' : $('input[name="EMAIL"]').val(),
+            'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
+        };
+
+        $.ajax({
+            type : 'POST',
+            url :  '/moocs/registered/',
+            data : data,
+            success : function(response){
+              if(response.status == "404"){
+                alert("This Email is already been subscribed!");
+              }
+              else{
+                alert("Thank you for Subscribing! Please Check your Email to Confirm the Subscription");
+              }
+            },
+            error: function(response) {
+              alert("Sorry Something went Wrong");
+            }
+        });
+        return false;
+    });
+
+    var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+    function csrfSafeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    })
+   
+    $('#newsletter-form').on('submit', function(e) {
+      e.preventDefault();
+
+      var data = {
+        'EMAIL' : $('input[name="EMAIL"]').val(),
+        'LANGUAGE' : $('input[name="site_language"]').val(),
+        'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
+      };
+      
+      $.ajax({
+        type: "POST",
+        headers: { "X-CSRFToken": data.csrfmiddlewaretoken },
+        url:'/newsletter ',
+        data: { EMAIL: data.EMAIL, LANGUAGE: data.LANGUAGE},
+        success: function (data) {
+        
+          console.log(data);
+          
+        },
+        error: function (data) {},
+        });
+    });
+    */
+
 })(jQuery);

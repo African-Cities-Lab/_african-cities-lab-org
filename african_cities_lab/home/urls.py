@@ -144,5 +144,7 @@ urlpatterns = [
         name="environnement-et-enjeux-de-developpement-durable",
     ),
     ########
+    path("newsletter/", views.newsletter, name="newsletter"),
+    
     path("moocs/subscribe/", views.subscribe_moocs, name="subscribe-moocs"),
 ]

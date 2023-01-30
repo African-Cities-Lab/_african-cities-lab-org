@@ -95,10 +95,7 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% localized_slugurl 'home' %}">{% translate "Home" %}</a>
                             </li>
-                            {% comment %}
-                            <li class="nav-item mx-3">
-                                <a class="nav-link"  href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
-                            </li>
+                            
                             {% comment %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% url 'programs' %}">{% translate "Programs" %}</a>
@@ -107,6 +104,10 @@
                             {% url 'about' as url %}
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'about' %}">{% translate "About" %}</a>
+                            </li>
+                            {% url 'moocs' as url %}
+                            <li class="nav-item mx-3">
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'moocs' %}">{% translate "Moocs" %}</a>
                             </li>
                             {% comment %}
                             <li class="nav-item mx-3">
@@ -259,11 +260,11 @@
                                     {% translate "Stay up to date with all the recent news, updates, and courses by simply your email address to our mailing list. We promise to never spam you." %} 
                                 </p>
                                 <div class="articleletter-form py-3">
-                                    <form id="newsletter-form" class="append-form">
+                                    <form id="newsletter-form" action="" class="append-form">
                                         {% csrf_token %}
                                         <div class="input-group">
-                                            <input type="email" class="form-control" name="articleletter"
-                                                   placeholder="{% translate 'Enter your email address' %}">
+                                            <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Enter your email address' %}">
+                                            <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
                                             <div class="input-group-append bg_primary">
                                                 <button class="btn" type="submit">OK</button>
                                             </div>
