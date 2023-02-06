@@ -97,52 +97,27 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/events/civa/call-for-paper.html"),
         name="acc-papers",
     ),
-    # Moocs url
     path(
-        "moocs/introduction-a-la-planification-urbaine/",
-        TemplateView.as_view(
-            template_name="home/moocs/introduction_a_la_planification_urbaine.html"
-        ),
-        name="introduction-a-la-planification-urbaine",
+        "african-cities-conference-2023-call-for-papers-details/",
+        TemplateView.as_view(template_name="home/events/civa/cfp-details.html"),
+        name="cfp-details",
     ),
     path(
-        "moocs/planification-a-la-gestion-urbaine/",
-        TemplateView.as_view(template_name="home/moocs/planification_a_la_gestion_urbaine.html"),
-        name="planification-a-la-gestion-urbaine",
+        "african-cities-conference-2023-call-for-poster-demos/",
+        TemplateView.as_view(template_name="home/events/civa/call-for-poster.html"),
+        name="cfpd-details",
     ),
     path(
-        "moocs/mobilites-et-transports-urbains/",
-        TemplateView.as_view(
-            template_name="home/moocs/mobilites_et_transports_urbains.html"
-        ),
-        name="mobilites-et-transports-urbains",
+        "african-cities-conference-2023-call-for-workshops-tutorials/",
+        TemplateView.as_view(template_name="home/events/civa/call-for-workshops.html"),
+        name="cfwt-details",
     ),
     path(
-        "moocs/systemes-dinformation-geographique-partie-1/",
-        TemplateView.as_view(
-            template_name="home/moocs/systemes_dinformation_geographique_1.html"
-        ),
-        name="systemes-dinformation-geographique-partie-1",
+        "african-cities-conference-2023-call-for-doctoral-consortium/",
+        TemplateView.as_view(template_name="home/events/civa/call-for-doctoral.html"),
+        name="cfdc-details",
     ),
-    path(
-        "moocs/systemes-dinformation-geographique-partie-2/",
-        TemplateView.as_view(
-            template_name="home/moocs/systemes_dinformation_geographique_2.html"
-        ),
-        name="systemes-dinformation-geographique-partie-2",
-    ),
-    path(
-        "moocs/restructuration-des-quartiers-precaires/",
-        TemplateView.as_view(
-            template_name="home/moocs/restructuration_des_quartiers_precaires.html"
-        ),
-        name="restructuration-des-quartiers-precaires",
-    ),
-    path(
-        "moocs/environnement-et-enjeux-de-developpement-durable/",
-        TemplateView.as_view(template_name="home/moocs/environnement_et_enjeux_de_developpement_durable.html"),
-        name="environnement-et-enjeux-de-developpement-durable",
-    ),
+
     ########
     path("newsletter/", views.newsletter, name="newsletter"),
     

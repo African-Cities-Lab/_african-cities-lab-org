@@ -69,8 +69,6 @@
     .civa-partners-wrapper.row-title .partners-item {
       width: 100%;
     }
-    
-   
   .count-box {
     max-width: 100%;
     min-height: 140px;
@@ -97,10 +95,29 @@
   .platform-feature__card .card:hover h5 {
     color: #BE3712;
   }
+  .focus-topics-area {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    grid-column-gap: 24px; 
+    margin: 1.5rem auto;
+  }
+  .focus-topics-area > .item {
+    height: 10.5rem;
+    margin-bottom: 1.5rem;
+    background: #FFF;
+    padding: 1rem;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 4px solid #BE3712;
+    border-radius: 0.25rem;
+  }
+  .focus-topics-area > .item h4 {
+    font-weight: 500;
+    font-size: 20px;
+  }
   @media (max-width: 600px) {
-    .focus-areas__item p.h5 {
-      font-size: 16px;
-    }
+    
   }
   @media (min-width: 600px) {
     .count-box { 
@@ -243,13 +260,13 @@
       <div class="col-12 col-lg-5 offset-lg-1">
 
         <div class="info-media-wrap">
-          <div class="info-media">
+          <div class="info-media" style="margin-right: 1rem">
             <div class="info-media_icon">
               <i class="fas fa-calendar-alt"></i>
             </div>
             <div class="media-body">
               <h3 class="info-media_title">{% translate "When" %}</h3>
-              <p class="info-media_text font-size-18">{% translate "May 23 & 24" %}</p>
+              <p class="info-media_text font-size-16">{% translate "May 23 & 24" %}</p>
             </div>
           </div>
 
@@ -259,7 +276,7 @@
             </div>
             <div class="media-body">
               <h3 class="info-media_title">{% translate "Location" %}</h3>
-              <p class="info-media_text font-size-18">{% translate "Cotonou, Benin" %}</p>
+              <p class="info-media_text font-size-16">{% translate "Golden Tulip Hotel, Cotonou, Benin" %}</p>
             </div>
           </div>
         </div>
@@ -328,6 +345,7 @@
   </div>
 </section>
 
+{% comment %}
 <section class="py-md-5 d-none">
   <div class="container">
     <div class="row d-flex justify-content-center pt-5">
@@ -383,8 +401,9 @@
     </div>
   </div>
 </section>
+{% endcomment %}
 
-<section class="py-5 position-relative">
+<section class="pt-5 position-relative">
   <div class="container-fluid py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-8 text-center">
@@ -396,93 +415,28 @@
       </div>
     </div>
 
-    <div class="row mt-3">
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Digitalization of cities and urban planning" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Digital water and energy management" %}</li>
-              <li class="pt-2">{% translate "Smart waste management and sanitation" %}</li>
-              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
-              <li class="pt-2">{% translate "Digital mobility and transport management" %}</li>
-              <li class="pt-2">{% translate "Land use and land cover management" %}</li>
-              <li class="pt-2">{% translate "Informality & precarious neighbourhoods" %}</li>
-              <li class="pt-2">{% translate "Land tenure and cadastral management" %}</li>
-              <li class="pt-2">{% translate "Quality of Life and Social Layer" %}</li>
-            </ul>
-          </div>
-        </div>
+    <div class="focus-topics-area">
+      <div class="item">
+        <h4 class="pt-4">{% translate "Digitalization of cities and urban planning" %}</h4>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Digital and smart african cities" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Digital and smart cities strategies in Africa" %}</li>
-              <li class="pt-2">{% translate "Digital and Smart african city stakeholders" %}</li>
-              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
-              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
-              <li class="pt-2">{% translate "Digital and Smart city infrastructure" %}</li>
-              <li class="pt-2">{% translate "IoT for digital and smart cities" %}</li>
-              <li class="pt-2">{% translate "Robotics, blockchain and crytomoney" %}</li>
-              <li class="pt-2">{% translate "Quality of Life and Social Layer" %}</li>
-              <li class="pt-2">{% translate "Artificial intelligence and application integration" %}</li>
-              <li class="pt-2">{% translate "Cybersecurity & IS governance for smart cities" %}</li>
-              <li class="pt-2">{% translate "Advanced technologies for African smart cities" %}</li>
-            </ul>
-          </div>
-        </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "Digital and smart african cities" %}</h4>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Smart geo-information systems (Smart GIS)" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "GIS and remote sensing" %}</li>
-              <li class="pt-2">{% translate "Citizen sensing and Citizen engagement" %}</li>
-              <li class="pt-2">{% translate "Geo AI and applications" %}</li>
-              <li class="pt-2">{% translate "Interactive visualization and 3D modeling" %}</li>
-              <li class="pt-2">{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
-              <li class="pt-2">{% translate "GIS application (GIS API)" %}</li>
-              <li class="pt-2">{% translate "Collective sensing & spatial big urban data" %}</li>
-              <li class="pt-2">{% translate "SIG and geolocalisation" %}</li>
-              <li class="pt-2">{% translate "Digital twins & twin cities" %}</li>
-            </ul>
-          </div>
-        </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "Remote sensing and Smart geo - information systems " %}</h4>
+        
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Transitions digitales and smart Gouvernance" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Citizens and Collaborative Governance" %}</li>
-              <li class="pt-2">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
-              <li class="pt-2">{% translate "Data Governance for smart cities" %}</li>
-              <li class="pt-2">{% translate "Digitalisation and internet 5.0" %}</li>
-              <li class="pt-2">{% translate "Digital tools for smart urban development" %}</li>
-              <li class="pt-2">{% translate "Socio-cultural transformations and social inclusion" %}</li>
-              <li class="pt-2">{% translate "Crowdsourcing and citizen participation" %}</li>
-              <li class="pt-2">{% translate "Digital governance and digital citizenship" %}</li>
-            </ul>
-          </div>
-        </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "Digital Citizen and digital gouvernance" %}</h4> 
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "African digital cities challenges" %}</h5>
-            <ul class="px-3">
-              <li >{% translate "Resilience of African digital cities" %}</li>
-              <li class="pt-2">{% translate "Waste management and sanitation" %}</li>
-              <li class="pt-2">{% translate "Renewable energy and use" %}</li>
-              <li class="pt-2">{% translate "Energy and environmental efficiency" %}</li>
-              <li class="pt-2">{% translate "Sustainable development and adaptation of smart cities" %}</li>
-              <li class="pt-2">{% translate "Urban pollution et heat monitoring" %}</li>
-            </ul>
-          </div>
-        </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "African digital cities challenges" %}</h4> 
+      </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "Urban mobility, transportation and ITS" %}</h4> 
+      </div>
+      <div class="item">
+        <h4 class="pt-4">{% translate "Emerging urban technologies" %}</h4> 
       </div>
     </div>
   </div>
@@ -556,7 +510,7 @@
                 <div class="accordion-item">
                   <h4 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button font-size-22 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                      {% translate "African smart cities’ Innovation Expo-2023" %}
+                      {% translate "Doctoral Consortium & Spring school" %}
                     </button>
                   </h4>
                   <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#ACC-highlights">
@@ -568,7 +522,7 @@
                 <div class="accordion-item">
                   <h4 class="accordion-header" id="flush-headingFive">
                     <button class="accordion-button font-size-22 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                      {% translate "Online Spring school" %}
+                      {% translate "Poster & Demos Session" %}
                     </button>
                   </h4>
                   <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#ACC-highlights">
@@ -580,7 +534,7 @@
                 <div class="accordion-item">
                   <h4 class="accordion-header" id="flush-headingFive">
                     <button class="accordion-button font-size-22 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                      {% translate "Online Spring school" %}
+                      {% translate "Worshops & Tutorials session" %}
                     </button>
                   </h4>
                   <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#ACC-highlights">
@@ -592,10 +546,22 @@
                 <div class="accordion-item">
                   <h4 class="accordion-header" id="flush-headingSix">
                     <button class="accordion-button font-size-22 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                      {% translate "Research and innovation competition on digital cities" %}
+                      {% translate "ACC’s Cotonou City Tour" %}
                     </button>
                   </h4>
                   <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#ACC-highlights">
+                    <div class="accordion-body">
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="flush-headingSept">
+                    <button class="accordion-button font-size-22 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-headingSept" aria-expanded="false" aria-controls="flush-headingSept">
+                      {% translate "Gala Diner" %}
+                    </button>
+                  </h4>
+                  <div id="flush-headingSept" class="accordion-collapse collapse" aria-labelledby="flush-headingSept" data-bs-parent="#ACC-highlights">
                     <div class="accordion-body">
                       
                     </div>

@@ -1743,9 +1743,9 @@ ul.event-meta {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	row-gap: 15px;
-	-webkit-column-gap: 42px;
-	-moz-column-gap: 42px;
-	column-gap: 15px;
+	-webkit-column-gap: 24px;
+	-moz-column-gap: 24px;
+	column-gap: 24px;
 	border-top: 1px solid #ececec;
 	border-bottom: 1px solid #ececec;
 	padding: 23px 0;
@@ -1755,10 +1755,10 @@ ul.event-meta {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	gap: 20px;
+	-webkit-box-align: top;
+	-ms-flex-align: top;
+	align-items: top;
+	gap: 12px;
 	max-width: 300px;
   }
   .info-media_icon {
@@ -1778,7 +1778,6 @@ ul.event-meta {
   }
   .info-media_title {
 	font-size: 20px;
-	margin-bottom: 5px;
   }
   #ACC-highlights .accordion-item {
 	border: none;

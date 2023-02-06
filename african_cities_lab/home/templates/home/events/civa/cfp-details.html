@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Call for papers | African Cities Conference" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %} 
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+{% endblock %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .shadow-sm {
+        box-shadow: unset !important;
+    }
+    .civa-form__section {
+      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
+    }
+    .page-banner {
+      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-position: top center;
+    }
+  </style>
+{% endblock css %}
+
+{% block javascript %}
+  {{ block.super }}
+  <script defer src="{% static 'js/subnavigation.js' %}"></script>
+{% endblock javascript %}
+
+{% block content %}
+
+<div class="subnavigation">
+    <div class="hz-scroll-container">
+        <div class="container-fluid hz-scroll-content">
+            <div class="row no-gutters">
+                <div class="overflow-wrap col-10 col-xl-11">
+                    <nav aria-labelledby="nav2">
+                      <label id="nav2">
+                        {% url 'african-cities-conference-2023' as url %}
+                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">
+                          {% translate "ACC 2023" %}
+                        </a>
+                        <span class="visuallyhidden">secondary menu</span>
+                      </label>
+                      <ul class="list-inline">
+                        <!--li class="list-inline-item">
+                          {% url 'acc-agenda' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
+                        </li-->
+                        <li class="list-inline-item">
+                          {% url 'acc-speakers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
+                        </li>
+                        <!--li class="list-inline-item">
+                          {% url 'acc-guests' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-guests' %}">{% translate "Special guests" %}</a>
+                        </li-->
+                        <li class="list-inline-item">
+                          {% url 'acc-commitee' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
+                        </li>
+                        <li class="list-inline-item">
+                          {% url 'acc-papers' as url %}
+                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
+                        </li>
+                        <!--li class="list-inline-item">
+                            {% url 'acc-registration' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>
+                        </li-->
+                        <!--li class="list-inline-item">
+                            {% url 'acc-informations' as url %}
+                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contact" %}</a>
+                        </li-->
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
+    </div>
+</div>
+
+<section class="page-banner"> 
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6"> 
+              <div class="position-relative h1">
+                  {% translate "Call for papers" %}
+                  <span class="dash-accent"></span>
+              </div> 
+          </div>
+      </div>
+  </div>
+  <div class="acl-sharpes right-sharpe">
+      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-lg-9 font-size-16">
+          <p class="mt-4">
+            {% blocktranslate %}
+            ACC 2023 will promote scientific excellence in Africa through the communication and publication of and publication 
+            of the best research results and works written in original scientific articles in its conference proceedings, 
+            its book proceedings and its special issues.
+            {% endblocktranslate %}
+          </p>
+        </div>
+      </div>
+      <div class="row p-3 p-md-5">
+        <div class="col-12 col-lg-9 font-size-16">
+          <div>
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Types of papers" %}
+            </h6>
+
+            <p class="my-3">
+              {% blocktranslate %}
+              We wish to stimulate the exchange of new ideas and interdisciplinary perspectives on all themes associated 
+              with African cities. To do so, we will accept three different types of papers:
+              {% endblocktranslate %}
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <span class="mx-2">a.</span>
+                {% blocktranslate %}
+                The <strong>complete articles</strong> present original and impactful work (<span class="text_primary">6 pages except references</span>)
+                {% endblocktranslate %}
+              </li>
+              <li>
+                <span class="mx-2">b.</span>
+                {% blocktranslate %}
+                Working papers present <strong>work in progress</strong> or <strong>new and visionary ideas</strong> (<span class="text_primary">4 pages except references</span>).
+                {% endblocktranslate %}
+              </li>
+              <li>
+                <span class="mx-2">c.</span>
+                {% blocktranslate %}
+                Detailed abstracts <strong>present existing and pre-published work</strong> (<span class="text_primary">2 pages except references</span>)
+                {% endblocktranslate %}
+              </li>
+            </ul>
+            <p class="pt-3">
+              {% blocktranslate %}
+              <strong>NB:</strong> excess pages will be overcharged at 10 CHF per page and may not exceed 30% of the number of pages required for each type of article.
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Presentations & Publications" %}
+            </h6>
+
+            <p class="my-3">
+              {% blocktranslate %}
+              All accepted papers will be given a minimum slot for an oral presentation. Depending on the content and quality of the work, papers will be selected for long or short presentations.
+              {% endblocktranslate %}
+            </p>
+            <ul class="list-unstyled">
+                <li>
+                  <span class="mx-2">a.</span>
+                  {% blocktranslate %}
+                  All accepted and presented conference papers will be eligible for publication in our <a class="text_primary" target="_blank" href="https://www.e3s-conferences.org/">E3S web of conference </a>
+                  proceedings indexed in Scopus, Scimago, IET INSPEC, Ei Compendex, EBSCO, Google Scholar, CPCI (Web of Science) 
+                  (Subject to acceptance - as for all proceedings journals)
+                  {% endblocktranslate %}
+                </li>
+                <li class="pt-3">
+                  <span class="mx-2">b.</span>
+                  {% blocktranslate %}
+                  A category of best papers will be published in our proceedings book by <a class="text_primary" target="_blank" href="https://www.springer.com/series/6007">Springer book GeoJournal Library</a> (Pending confirmation) indexed in Scopus, 
+                  Scimago, IET INSPEC, Ei Compendex, EBSCO, Google Scholar, CPCI (Web of Science) (Subject to acceptance - as for all proceedings journals)
+                  {% endblocktranslate %}
+                </li>
+              </ul>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Soumission Guidelines and Instructions" %}
+            </h6>
+
+            <p>
+              {% blocktranslate %}
+              We invite potential authors to send in original work already finalized but also work in progress or already published (See article types details). 
+              Authors should choose, according to their preference and the requirements of their affiliating institutions, to publish their paper in the 
+              <a class="text_primary" target="_blank" href="https://www.e3s-conferences.org/">E3S web of conference </a> proceeding or in our book to 
+              be published by the <a class="text_primary" target="_blank" href="https://www.springer.com/series/6007">Springer book GeoJournal Library</a>.
+              {% endblocktranslate %}
+            </p>
+            <p class="pt-3">
+              {% blocktranslate %}
+              If you choose to publish your paper in the proceeding <a class="text_primary" target="_blank" href="https://www.e3s-conferences.org/">E3S web of conference </a> 
+              we ask you to follow the instructions of the authors given <a class="text_primary" target="_blank" href="https://www.webofconferences.org/authors">HERE</a>. 
+              Otherwise you use directly one of the templates <strong>[Template ACC2023.docx]</strong> Word_woc-2col or <strong>[Latex template Web of Conferences A4 paper size, two columns format.zip]</strong> 
+              LATEX_woc-2col depending on the text editor you master.
+              {% endblocktranslate %}
+            </p>
+            <p class="pt-3">
+              {% blocktranslate %}
+              If you choose instead to publish your work in the <a class="text_primary" target="_blank" href="https://www.springer.com/series/6007">Springer book GeoJournal Library</a>. 
+              The manuscript must follow <a class="text_primary" target="_blank" href="https://medi-ast.org/SCA22/Springer_Guidelines_for_Authors_of_Proceedings.pdf">Springer template guidelines</a>. 
+              The manuscript must be written using one of the <a class="text_primary" target="_blank" href="https://medi-ast.org/SCA22/splnproc1703.zip">MS Word</a> or 
+              <a class="text_primary" target="_blank" href="https://medi-ast.org/SCA22/ProcSci_TeX.zip">LaTeX templates</a>. The maximum number of pages in this case is 12.
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Submission Link" %}
+            </h6>
+            <p>
+              {% blocktranslate %}
+              Once your paper is finalized, you could first send us the pdf version through <a class="text_primary font-weight-bold" target="_blank" href="https://easychair.org/conferences/?conf=civa2023">easychair</a> 
+              for evaluation and the source file will then be requested by our committee as needed.
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Plagiarism Check" %}
+            </h6>
+            <p>
+              {% blocktranslate %}
+              We remind you once again that a strict plagiarism check will be performed on all papers and will only be tolerated if there is a similarity of max. 
+              15% of all sources + max. 5% of one source. The plagiarism control tool <a class="text_primary" target="_blank" href="https://www.ithenticate.com/">Ithenticate</a> 
+              or <a class="text_primary" target="_blank" href="https://www.turnitin.com">Turnitin</a> will be used to check the similarity between the papers.
+              {% endblocktranslate %}
+            </p>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Important dates" %}
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mx-3">
+                {% translate "Submission deadline :" %}
+                {% translate "March 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Notification of acceptance :" %}
+                {% translate "March 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Camera-ready Submission :" %}
+                {% translate "March 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Registration due date :" %}
+                {% translate "March 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Conference date :" %}
+                {% translate "March 15, 2023" %}
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-5">
+            <h6 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Special Issues" %}
+            </h6>
+            <p>
+              {% blocktranslate %}
+              High-quality papers may be invited to be submitted to one of our special issues in the following list depending on the theme of the paper and its ranking in the order of quality. 
+              The authors of the selected papers will be invited after the conclusion of the conference steering committee and their papers extended according to the percentage required by 
+              the special issue will be subjected to a normal submission and review process. Our Special Issues include but are not limited to:
+              {% endblocktranslate %}
+            </p>
+
+            <ol class="mt-3">
+              <li><a class="text_primary" target="_blank" href="https://www.mdpi.com/journal/sustainability/special_issues/2F6GOQZ998">
+                Sustainability (MDIPI) for the Special Issue "Digital Transition of African Cities in the Era of Sustainable Development Goals"</a> (IF : 3.889; CiteScore : 5.00) 
+              </li>
+              <li class="pt-3"><a class="text_primary" target="_blank" href="https://www.cambridge.org/core/journals/data-and-policy">
+                Data & Policy (Waiting to be posted online)</a> (Indexed WoS)
+              </li>
+              <li class="pt-3"><a class="text_primary" target="_blank" href="https://africancitiesjournal.org/index.php/africancitiesjournal/issue/archive">
+                African Cities Journal</a>
+              </li>
+              <li class="pt-3">{% translate "More to be posted soon!" %}</li>
+            </ol>
+
+            <p class="pt-3">
+              {% translate "CFP Chairs:" %}
+              <ul class="px-4 pt-3">
+                <li >Jérôme Chenal, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+                <li >Stéphane C. K. Tékouabou, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+                <li >Rike Sitas, {% translate " African Centre for Cities, Cape Town, South Africa" %}</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+ 
+{% endblock content %}
+  

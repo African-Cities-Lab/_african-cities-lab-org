@@ -15,17 +15,17 @@
 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Speakers | African Cities Conference" %} - African Cities Lab{% endif %}">
 <meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}" />
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Speakers | African Cities Conference" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference (ACC) - Digital Cities" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Speakers | African Cities Conference" %} - African Cities Lab{% endif %}">
 <meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 {% endblock %}
