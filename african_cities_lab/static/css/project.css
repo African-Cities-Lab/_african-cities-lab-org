@@ -1097,6 +1097,7 @@ a.novashare-button {
 .platform-feature__card .card {
 	transition: 0.5s;
 	min-height: 285px;
+	width: 100%;
 }
 .moocs-card .card {
 	border: unset;

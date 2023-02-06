@@ -45,6 +45,10 @@
         url({% static 'images/assets/icac-banner-image.jpg' %});
       background-position: top center;
     }
+    .cfp-card {
+      display: flex;
+      padding: 1rem;
+    }
     .cfp-card .card {
       min-height: 218px;
       cursor: pointer;
@@ -277,7 +281,7 @@
 <section class="py-5 position-relative my-5">
   <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-      <div class="col-12 col-lg-8 text-center">
+      <div class="col-12 col-lg-10 text-center">
         <h3 class="section-title mb-3">
           {% blocktranslate %}
             Topics
@@ -344,7 +348,7 @@
               <li class="pt-2">{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
               <li class="pt-2">{% translate "GIS application (GIS API)" %}</li>
               <li class="pt-2">{% translate "Collective sensing & spatial big urban data" %}</li>
-              <li class="pt-2">{% translate "Smartt geo-addressing and participatory addressing" %}</li>
+              <li class="pt-2">{% translate "Smart geo-addressing and participatory addressing" %}</li>
               <li class="pt-2">{% translate "SIG and geolocalisation" %}</li>
               <li class="pt-2">{% translate "Digital twins & twin cities" %}</li>
             </ul>
@@ -391,7 +395,7 @@
             <ul class="px-3">
               <li >{% translate "ITS" %}</li>
               <li class="pt-2">{% translate "Urban mobility" %}</li>
-              <li class="pt-2">{% translate "Urban transportantion patterns" %}</li>
+              <li class="pt-2">{% translate "Urban transportation patterns" %}</li>
               <li class="pt-2">{% translate "Transportation mode" %}</li>
               <li class="pt-2">{% translate "Bike sharing" %}</li> 
               <li class="pt-2">{% translate "Transportation and Traffic Engineering" %}</li>
