@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "civa-base.html" %}
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
     {% if self.seo_title %}
@@ -33,9 +33,6 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .shadow-sm {
-        box-shadow: unset !important;
-    }
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
@@ -47,63 +44,7 @@
   </style>
 {% endblock css %}
 
-{% block javascript %}
-  {{ block.super }}
-  <script defer src="{% static 'js/subnavigation.js' %}"></script>
-{% endblock javascript %}
-
 {% block content %}
-
-<div class="subnavigation">
-    <div class="hz-scroll-container">
-        <div class="container-fluid hz-scroll-content">
-            <div class="row no-gutters">
-                <div class="overflow-wrap col-10 col-xl-11">
-                    <nav aria-labelledby="nav2">
-                      <label id="nav2">
-                        {% url 'african-cities-conference-2023' as url %}
-                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">
-                          {% translate "ACC 2023" %}
-                        </a>
-                        <span class="visuallyhidden">secondary menu</span>
-                      </label>
-                      <ul class="list-inline">
-                        <!--li class="list-inline-item">
-                          {% url 'acc-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
-                        </li-->
-                        <li class="list-inline-item">
-                          {% url 'acc-speakers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
-                        </li>
-                        <!--li class="list-inline-item">
-                          {% url 'acc-guests' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-guests' %}">{% translate "Special guests" %}</a>
-                        </li-->
-                        <li class="list-inline-item">
-                          {% url 'acc-commitee' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
-                        </li>
-                        <li class="list-inline-item">
-                          {% url 'acc-papers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
-                        </li>
-                        <!--li class="list-inline-item">
-                            {% url 'acc-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>
-                        </li-->
-                        <!--li class="list-inline-item">
-                            {% url 'acc-informations' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contact" %}</a>
-                        </li-->
-                      </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
-    </div>
-</div>
 
 <section class="page-banner"> 
   <div class="container-fluid">
@@ -123,34 +64,369 @@
 
 <section class="event-speakers pt-5">
     <div class="container-xl position-relative py-5">
+      
+      <h3 class="section-title text-center mb-3">
+        {% translate "Planary Session Speakers" %}
+      </h3>
 
-      <!--div class="text-center h1 mb-3">
-        {% blocktranslate %}
-            These experts will inspire <br>
-            you to create tomorrow african cities
-        {% endblocktranslate %}
-      </div-->
+      <div class="text-center font-size-18 pt-3 mb-3">{% translate "Pending" %}</div>
+
+
+      <h3 class="section-title text-center pt-5 mb-3">
+        {% translate "Professional Keynote Speakers" %}
+      </h3>
 
       <div class="row event-speakers__list justify-content-center py-5">
         
         <div class="col-lg-3 col-md-4 speakers-card">
           <div class="card border-0 bg-transparent">
             <div class="card-header p-0">
-                <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}">
+                <a href="#speaker_modal_9" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_9">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Vivien Deparday.jpg' %}">
 
                     <div class="speaker-hover-content">
                       <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
                       <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
+                          <i class="fab fa-twitter"></i></a>
+                        </li>
                       </ul>
                     </div>
                 </a>
             </div>
             <div class="card-body border-0">
-              <h4 class="speaker-title">Dr. Oualid Ali</h4>
+              <h4 class="speaker-title">Mr. Vivien Deparday</h4>
               <p class="speaker-designation">
-                {% translate "Founder and President at the Future Cities Council" %}
+                {% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_9" tabindex="-1" aria-labelledby="speaker_modal_9" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Vivien Deparday.jpg' %}" alt="Mr. Vivien Deparday"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr. Vivien Deparday</h2>
+                            
+                          <p class="my-2">{% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
+                              <i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Vivien Deparday is a Disaster Risk Management Specialist with the World Bank’s
+                            Urban, Resilience, and Land Global Practice, currently working in the Africa region.
+                            In his current role, Vivien leads urban resilience investment operations focused on
+                            cities in Cameroon, Côte d’Ivoire, and Mali engaging in integrated flood risk
+                            management, urban upgrading, solid waste management, and urban planning at the
+                            national and subnational level. He also leads the Africa Disruptive Technology
+                            Program for Urban Resilience bringing open innovation and youth engagement to
+                            resilience projects.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
+                    <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mr Willy Franck SOB</h4>
+              <p class="speaker-designation">
+                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mr Willy Franck SOB</h2>
+                            
+                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
+                            GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
+                            digital ecosystem in order to achieve sustainable development through open innovation. 
+                            Recently deployed on a global scale, this open platform for technological innovations 
+                            aims to accelerate the appropriation of geospatial data by those actors who depend 
+                            heavily on it (startups, universities, municipalities, civil society). His expertise 
+                            is recognized by several international institutions where he regularly works as a consultant. 
+                            These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="text-center font-size-18 mb-3">{% translate "More speakers to be announced" %}</div>
+
+      <h3 class="section-title text-center pt-5 mb-3">
+        {% translate "Academic Keynotes Speakers" %}
+      </h3>
+
+      <div class="row event-speakers__list justify-content-center py-5">
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Hassan-Radoine.jpeg' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/dr-hassan-radoine-66731839/">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Hassan Radoine</h4>
+              <p class="speaker-designation">
+                {% translate "Director of the School of Architecture, Planning and Design (SAP+D) at the Polytechnic University (UM6P) of Benguerir - Morocco" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_2" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/civa/Hassan-Radoine.jpeg' %}" alt="Hassan Radoine"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Hassan Radoine</h2>
+                            
+                          <p class="my-2">{% translate "Director of the School of Architecture, Planning and Design (SAP+D) at the Polytechnic University (UM6P) of Benguerir - Morocco" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item">
+                              <a href="https://www.linkedin.com/in/dr-hassan-radoine-66731839/">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Hassan Radoine is an architecture curator, critic, author and consultant. He is currently the Director of the School of Architecture, 
+                            Planning and Design at the Polytechnic University of Benguerir, Morocco. He was previously the director of the Ecole Nationale 
+                            d’Architecture in Morocco and the Head of the Architecture Department at University of Sharjah, UAE. His research and practice 
+                            interests include Smart and sustainable Urban Planning, Urban Conservation & Development, Smart and resilient human establishments, 
+                            Sustainable Contemporary Architecture and Urbanism in the MENA region.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            Hassan holds an MPhil. degree in Planning, Growth and Regeneration from the Department of Land Economy, University of Cambridge, 
+                            UK where he was a Commonwealth Shared Scholar; an Architecture Diploma from the National School of Architecture, Rabat, Morocco 
+                            where he was a Joint Ghana - Morocco Government Scholar. He has previously practised in Rabat with Atelier Sens-Espace and in 
+                            Accra with Mawums Ltd, Incept Architectural Consult as well as with Atelier VI Design and Build
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_7" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_7">
+                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Patrizia-Ingallina.png' %}">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/patrizia-ingallina-76b5884a/">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Patrizia Ingallina</h4>
+              <p class="speaker-designation">
+                {% translate "Professor of Spatial Planning and Urbanism" %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_7" tabindex="-1" aria-labelledby="speaker_modal_7" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-5">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/civa/Patrizia-Ingallina.png' %}" alt="Patrizia Ingallina"> 
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-7">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Patrizia Ingallina</h2>
+                            
+                          <p class="my-2">{% translate "Professor of Spatial Planning and Urbanism" %}</p>
+                            
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item">
+                              <a href="https://www.linkedin.com/in/patrizia-ingallina-76b5884a/">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
+                          </ul> 
+                
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Patrizia Ingalina is an architect and state planner in Italy since 1982, attached to the teaching at the University of Florence between 1982 and 1985, 
+                            I obtained my PhD in Geography and Spatial Planning at Paris 1 Panthéon - Sorbonne in 1993.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            As a lecturer at the Institut d'Urbanisme de Paris, from 1995 to 2007, she was able to set up the first courses on the urban project, her main research subject. 
+                            She then joined the University of Lille as a Professor, and then Sorbonne University in 2013, where she currently directs the Master's degree in Urban Planning and Development.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            She has carried out her academic career in parallel with her professional activity: first in Florence with design offices, architectural agencies, but also with the 
+                            Direction du Patrimoine as an architect of historical monuments; then in Paris in architectural agencies and design offices.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            With a background in research, higher education and professional activities, the professor is now committed to promoting dialogue between professionals and the academic world. 
+                            This priority has led to the involvement of AREP, Resillience, EMBIX and Icade through a skills sponsorship by the Sorbonne University Foundation.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
+                    <img class="speaker-avatar" src="{% static 'images/assets/civa/Kenneth-Amaeshi.jpeg' %}" alt="Pr Kenneth Amaeshi">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/kenneth-amaeshi-4aa7241/">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Pr Kenneth Amaeshi</h4>
+              <p class="speaker-designation">
+                {% translate "Professor of Spatial Planning and Urbanism" %}
               </p>
             </div>
 
@@ -163,30 +439,50 @@
                   </div>
                   <div class="modal-body pb-5">
                     <div class="row">
-                      <div class="col-lg-4 col-md-7">
+                      <div class="col-lg-4 col-md-5">
                         <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Dr. Oualid-Ali.jpg' %}" alt="Dr. Oualid Ali"> 
+                          <img src="{% static 'images/assets/civa/Kenneth-Amaeshi.jpeg' %}" alt="Pr Kenneth Amaeshi"> 
                         </div>
                       </div>
-                      <div class="col-lg-8">
+                      <div class="col-lg-8 col-md-7">
                         <div class="mdl-speaker-details p-3">
-                          <h2>Dr. Oualid Ali</h2>
+                          <h2>Pr Kenneth Amaeshi</h2>
                             
-                          <p class="my-2">{% translate "Founder and President at the Future Cities Council" %}</p>
+                          <p class="my-2">{% translate "Professor of Spatial Planning and Urbanism" %}</p>
                             
                           <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="http://www.dr-oualid-ali.com/"><i class="fas fa-globe"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="https://www.linkedin.com/in/kenneth-amaeshi-4aa7241/">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </li>
                           </ul> 
                 
                           <span class="xs-hr-line"></span>
 
                           <p>
                             {% blocktranslate %}
-                            He's a futurist, technologist, future cities expert, and considered as one of the international
-                            well-recognized experts in the fields of Future foresight, Scenarios planning, Trends watching,
-                            Emerging technologies & innovations, Industrial Revolution 4.0, Future cities (Smart, Sustainable
-                            and innovative Cities), Education 4.0, Artificial Intelligence (AI), etc.
-                          {% endblocktranslate %}
+                            Kenneth Amaeshi is a Professor of Sustainable Finance and Governance at the School of Transnational Governance. He is currently on leave from the University of Edinburgh, where he is the Chair in
+                             Business and Sustainable Development and Director Scaling Business in Africa. He is also a Visiting Professor of Leadership and Financial Markets in Africa at the London School of Economics and 
+                             an Honorary Professor of Business in Africa at the Graduate School of Business, University of Cape Town, South Africa.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            Kenneth is a leading scholar on sustainable business and finance in the global south. His research interest currently focuses on financial market reforms and governance, as well as on sector - 
+                            level policies for sustainability and sustainability strategy in organisations. He has an expert level knowledge of developing and emerging economies. His research has a very strong interface 
+                            between business and society, particularly national governments in Africa, where he has an extensive network. Since 2015, he has significantly contributed to developing the intellectual 
+                            foundations of Africapitalism – an economic philosophy for the development of Africa – and championed its mainstreaming in the global academia.
+                            {% endblocktranslate %}
+                          </p>
+
+                          <p class="pt-2">
+                            {% blocktranslate %}
+                            Besides teaching and researching, Kenneth works closely with businesses and governments in Africa, Europe, and Asia. He leads executive capacity building engagements and consultancy projects 
+                            in the broad areas of sustainable finance, sustainability strategy, leadership, ethics, and governance formultinational corporations and institutions. Between 2016 and 2017, he was a Scholar 
+                            in Residence at the National Pension Commission, Nigeria. For more on Kenneth, kindly visit his personal website <a href="https://www.kennethamaeshi.com/" class="text_primary">https://www.kennethamaeshi.com/</a>.
+                            {% endblocktranslate %}
                           </p>
                         </div>
                       </div>
@@ -267,111 +563,10 @@
             </div>
           </div>
         </div>
-        
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
 
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr Willy Franck SOB</h4>
-              <p class="speaker-designation">
-                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-5">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8 col-md-7">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr Willy Franck SOB</h2>
-                            
-                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
-                            GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
-                            digital ecosystem in order to achieve sustainable development through open innovation. 
-                            Recently deployed on a global scale, this open platform for technological innovations 
-                            aims to accelerate the appropriation of geospatial data by those actors who depend 
-                            heavily on it (startups, universities, municipalities, civil society). His expertise 
-                            is recognized by several international institutions where he regularly works as a consultant. 
-                            These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
       </div>
 
-      <div class="text-center font-size-18 mb-3">{% translate "More speakers to be announced" %}</div>
-
     </div>
-</section>
-
-
-
-<section class="civa-form__section">
-  <div class="container-xl">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-white text-center">
-        <div class="h1 pt-lg-5">
-          {% blocktranslate %}
-          Join the African Cities Conference (ACC) - Digital Cities
-          {% endblocktranslate %}
-        </div>
-        <div class="mt-3 text-center">
-          <a class="btn btn__primary btn__small my-4" href="{% url 'acc-papers' %}">
-            {% translate "Call for papers" %}
-          </a>
-        </div>
-        <p class="font-size-16 pt-3 pb-5">
-          {% blocktranslate %}
-            If you wish to have more information,<br> 
-            you can contact us directly on :<br>
-          {% endblocktranslate %}
-          <a class="text-white" href="mailto:info@africancitieslab.org">
-            <strong>contact@africancitieslab.org</strong>
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
 </section>
   
 {% endblock content %}

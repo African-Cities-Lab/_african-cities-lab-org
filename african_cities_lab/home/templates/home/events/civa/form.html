@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "civa-base.html" %}
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
     {% if self.seo_title %}
@@ -32,9 +32,7 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .shadow-sm {
-        box-shadow: unset !important;
-    }
+ 
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
@@ -45,11 +43,6 @@
     }
   </style>
 {% endblock css %}
-
-{% block javascript %}
-  {{ block.super }}
-  <script defer src="{% static 'js/subnavigation.js' %}"></script>
-{% endblock javascript %}
 
 {% block content %}
 

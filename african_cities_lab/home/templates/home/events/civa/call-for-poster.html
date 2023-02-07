@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "civa-base.html" %}
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
     {% if self.seo_title %}
@@ -33,9 +33,7 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .shadow-sm {
-        box-shadow: unset !important;
-    }
+ 
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
@@ -47,63 +45,7 @@
   </style>
 {% endblock css %}
 
-{% block javascript %}
-  {{ block.super }}
-  <script defer src="{% static 'js/subnavigation.js' %}"></script>
-{% endblock javascript %}
-
 {% block content %}
-
-<div class="subnavigation">
-    <div class="hz-scroll-container">
-        <div class="container-fluid hz-scroll-content">
-            <div class="row no-gutters">
-                <div class="overflow-wrap col-10 col-xl-11">
-                    <nav aria-labelledby="nav2">
-                      <label id="nav2">
-                        {% url 'african-cities-conference-2023' as url %}
-                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">
-                          {% translate "ACC 2023" %}
-                        </a>
-                        <span class="visuallyhidden">secondary menu</span>
-                      </label>
-                      <ul class="list-inline">
-                        <!--li class="list-inline-item">
-                          {% url 'acc-agenda' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
-                        </li-->
-                        <li class="list-inline-item">
-                          {% url 'acc-speakers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
-                        </li>
-                        <!--li class="list-inline-item">
-                          {% url 'acc-guests' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-guests' %}">{% translate "Special guests" %}</a>
-                        </li-->
-                        <li class="list-inline-item">
-                          {% url 'acc-commitee' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
-                        </li>
-                        <li class="list-inline-item">
-                          {% url 'acc-papers' as url %}
-                          <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
-                        </li>
-                        <!--li class="list-inline-item">
-                            {% url 'acc-registration' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>
-                        </li-->
-                        <!--li class="list-inline-item">
-                            {% url 'acc-informations' as url %}
-                            <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contact" %}</a>
-                        </li-->
-                      </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
-    </div>
-</div>
 
 <section class="page-banner"> 
   <div class="container-fluid">

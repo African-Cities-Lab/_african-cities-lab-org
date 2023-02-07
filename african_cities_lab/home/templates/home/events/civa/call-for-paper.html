@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "civa-base.html" %}
 {% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
 {% block title %}
     {% if self.seo_title %}
@@ -34,9 +34,7 @@
 {% block css %}
   {{ block.super }}
   <style>
-    .shadow-sm {
-        box-shadow: unset !important;
-    }
+ 
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
@@ -84,6 +82,7 @@
 
 {% block content %}
 
+{% comment %}
 <div class="subnavigation">
     <div class="hz-scroll-container">
         <div class="container-fluid hz-scroll-content">
@@ -134,6 +133,7 @@
         <button class="overflowButton js-scroll-button" tabindex="-1">Scroll Subnavigation</button>
     </div>
 </div>
+{% endcomment %}
 
 <section class="page-banner"> 
   <div class="container-fluid">
