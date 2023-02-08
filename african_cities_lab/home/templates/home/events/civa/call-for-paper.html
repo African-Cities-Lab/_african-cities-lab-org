@@ -50,6 +50,7 @@
     .cfp-card .card {
       min-height: 218px;
       cursor: pointer;
+      background-position: center;
     }
     .cfp-card .card .card-header {
       background: #FFF;
@@ -90,8 +91,8 @@
                 <div class="overflow-wrap col-10 col-xl-11">
                     <nav aria-labelledby="nav2">
                       <label id="nav2">
-                        {% url 'african-cities-conference-2023' as url %}
-                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">
+                        {% url 'acc-2023' as url %}
+                        <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-2023' %}">
                           {% translate "ACC 2023" %}
                         </a>
                         <span class="visuallyhidden">secondary menu</span>
@@ -140,7 +141,7 @@
       <div class="row py-5">
           <div class="col-12 col-md-6"> 
               <div class="position-relative h1">
-                  {% translate "Call for papers" %}
+                  {% translate "ACC Calls" %}
                   <span class="dash-accent"></span>
               </div> 
           </div>
@@ -153,8 +154,8 @@
 
 <section class="py-5 ">
     <div class="container-fluid">
-          <div class="row py-3">
-            <div class="col-12 col-lg-11 justify-content-center font-size-16">
+          <div class="row justify-content-center py-3">
+            <div class="col-12 col-lg-11 font-size-16">
                   <p class="mt-3">
                     {% blocktranslate %}
                     The  « <strong>African Cities Conference (ACC) - Digital Cities</strong>» is the first annual forum for international discussion and exchange of 
@@ -182,13 +183,13 @@
     </div>
 </section>
 
-<section class="py-5 bg-light mt-3">
-  <div class="container-fluid py-3">
+<section class="py-5 bg-light my-3">
+  <div class="container-fluid py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-8 text-center">
         <h3 class="section-title mb-3">
           {% blocktranslate %}
-          Types of contributions
+          Call of papers
           {% endblocktranslate %}
         </h3>
       </div>
@@ -199,7 +200,7 @@
       <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12 cfp-card">
         <div class="card">
           <div class="card-header">
-            <a href="" class="h4"> 
+            <a href="{% url 'cfp-details' %}" class="h4"> 
               {% blocktranslate %}
                 Call for papers
               {% endblocktranslate %}
@@ -219,7 +220,7 @@
       <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12 cfp-card">
         <div class="card">
           <div class="card-header">
-            <a href="" class="h4"> 
+            <a href="{% url 'cfpd-details' %}" class="h4"> 
               {% blocktranslate %}
                 Call for Poster & Demos
               {% endblocktranslate %}
@@ -238,7 +239,7 @@
       <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12 cfp-card">
         <div class="card">
           <div class="card-header">
-            <a href="" class="h4"> 
+            <a href="{% url 'cfwt-details' %}" class="h4"> 
               {% blocktranslate %}
               Call for Workshops & Tutorials
             {% endblocktranslate %}
@@ -257,15 +258,15 @@
       <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12 cfp-card">
         <div class="card">
           <div class="card-header">
-            <a href="" class="h4">
-            {% blocktranslate %}
-              Call for Doctoral Consortium & Spring School 
-            {% endblocktranslate %}
+            <a href="{% url 'cfdc-details' %}" class="h4">
+              {% blocktranslate %}
+                Call for Doctoral Consortium & Spring School 
+              {% endblocktranslate %}
             </a>
           </div>
           <div class="card-body">
             {% blocktranslate %}
-            Learn more about types of papers, soumission guidelines and instructions...
+              Learn more about types of papers, soumission guidelines and instructions...
             {% endblocktranslate %}
           </div>
           <div class="card-footer">

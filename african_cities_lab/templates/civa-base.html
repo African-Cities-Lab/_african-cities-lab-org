@@ -73,7 +73,7 @@
             <nav id="main-nav"
                  class="navbar w-100 navbar-expand-lg text-center py-3 shadow-sm z-index-2">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{% url 'african-cities-conference-2023' %}">
+                    <a class="navbar-brand" href="{% url 'acc-2023' %}">
                         <img src="{% static 'images/assets/civa/logo-acc.png' %}"
                              alt="African Cities Conference"
                              class="navbar-brand-image"
@@ -91,9 +91,9 @@
                     </button>
                     <div id="navbar-responsive" class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav text-uppercase mx-5">
-                            {%  url 'home' as url %}
-                            <li class="nav-item mx-3">
-                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'african-cities-conference-2023' %}">{% translate "Overview" %}</a>
+                            {%  url 'acc-2023' as url %}
+                            <li class="nav-item mx-2">
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-2023' %}">{% translate "Overview" %}</a>
                             </li>
                             <!--li class="list-inline-item">
                             {% url 'acc-agenda' as url %}
@@ -102,7 +102,7 @@
 
 
                           {% url 'acc-speakers' as url %}
-                          <li class="nav-item mx-3">
+                          <li class="nav-item mx-2">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
                           </li>
                           <!--li class="list-inline-item">
@@ -111,14 +111,16 @@
                           </li-->
 
                           {% url 'acc-commitee' as url %}
-                          <li class="nav-item mx-3">
+                          <li class="nav-item mx-2">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-commitee' %}">{% translate "Committee" %}</a>
                           </li>
 
                           {% url 'acc-papers' as url %}
-                          <li class="nav-item mx-3">
-                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a>
+                          <li class="nav-item mx-2">
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "ACC Calls" %}</a>
                           </li>
+
+
                           <!--li class="list-inline-item">
                             {% url 'acc-registration' as url %}
                             <a class="{% if request.path == url %}active{% endif %}" href="{% url 'acc-registration' %}">{% translate "Register" %}</a>

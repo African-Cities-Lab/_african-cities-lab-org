@@ -62,155 +62,86 @@
   </div>
 </section>
 
-<section class="event-speakers pt-5">
-    <div class="container-xl position-relative py-5">
-      
-      <h3 class="section-title text-center mb-3">
-        {% translate "Planary Session Speakers" %}
-      </h3>
+<section class="my-5">
+  <div class="container-xl position-relative py-5">
+    <h3 class="section-title text-center mb-3">
+      {% translate "Plenary Session Speakers" %}
+    </h3>
 
-      <div class="text-center font-size-18 pt-3 mb-3">{% translate "Pending" %}</div>
+    <div class="text-center font-size-18 py-5">{% translate "Pending" %}</div>
+  </div>
+</section>
 
+<section class="py-5 bg-gradient-1">
+  <div class="container-xl position-relative py-5">
+    <h3 class="section-title text-white text-center mb-3">
+      {% translate "Professional Keynote Speakers" %}
+    </h3>
 
-      <h3 class="section-title text-center pt-5 mb-3">
-        {% translate "Professional Keynote Speakers" %}
-      </h3>
+    <div class="row event-speakers__list justify-content-center py-3">
+      <div class="col-lg-3 col-md-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#speaker_modal_9" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_9">
+                  <img class="speaker-avatar" src="{% static 'images/assets/event/Vivien Deparday.jpg' %}">
 
-      <div class="row event-speakers__list justify-content-center py-5">
-        
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_9" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_9">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Vivien Deparday.jpg' %}">
-
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
-                          <i class="fab fa-twitter"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr. Vivien Deparday</h4>
-              <p class="speaker-designation">
-                {% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_9" tabindex="-1" aria-labelledby="speaker_modal_9" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
+                        <i class="fab fa-twitter"></i></a>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-7">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Vivien Deparday.jpg' %}" alt="Mr. Vivien Deparday"> 
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr. Vivien Deparday</h2>
-                            
-                          <p class="my-2">{% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
-                              <i class="fab fa-twitter"></i></a>
-                            </li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
-
-                          <p>
-                            {% blocktranslate %}
-                            Vivien Deparday is a Disaster Risk Management Specialist with the World Bank’s
-                            Urban, Resilience, and Land Global Practice, currently working in the Africa region.
-                            In his current role, Vivien leads urban resilience investment operations focused on
-                            cities in Cameroon, Côte d’Ivoire, and Mali engaging in integrated flood risk
-                            management, urban upgrading, solid waste management, and urban planning at the
-                            national and subnational level. He also leads the Africa Disruptive Technology
-                            Program for Urban Resilience bringing open innovation and youth engagement to
-                            resilience projects.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </a>
           </div>
-        </div>    
-        
-        <div class="col-lg-3 col-md-4 speakers-card">
-          <div class="card border-0 bg-transparent">
-            <div class="card-header p-0">
-                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
-                    <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
+          <div class="card-body border-0">
+            <h4 class="speaker-title text-white">Mr. Vivien Deparday</h4>
+            <p class="speaker-designation text-white">
+              {% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}
+            </p>
+          </div>
 
-                    <div class="speaker-hover-content">
-                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
-                      <ul class="speakers-social-lists list-inline p-0 mb-0">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                      </ul>
-                    </div>
-                </a>
-            </div>
-            <div class="card-body border-0">
-              <h4 class="speaker-title">Mr Willy Franck SOB</h4>
-              <p class="speaker-designation">
-                {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
-              </p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body pb-5">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-5">
-                        <div class="mdl-speaker-avatar">
-                          <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
-                        </div>
+          <!-- Modal -->
+          <div class="modal fade" id="speaker_modal_9" tabindex="-1" aria-labelledby="speaker_modal_9" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-7">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/event/Vivien Deparday.jpg' %}" alt="Mr. Vivien Deparday"> 
                       </div>
-                      <div class="col-lg-8 col-md-7">
-                        <div class="mdl-speaker-details p-3">
-                          <h2>Mr Willy Franck SOB</h2>
-                            
-                          <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
-                            
-                          <ul class="mdl-speaker-social-list list-inline m-0">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
-                          </ul> 
-                
-                          <span class="xs-hr-line"></span>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Mr. Vivien Deparday</h2>
+                          
+                        <p class="my-2">{% translate "Disaster Risk Management Specialist, Global Facility for Disaster Risk Reduction and Recovery" %}</p>
+                          
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://twitter.com/intent/follow?screen_name=vdeparday">
+                            <i class="fab fa-twitter"></i></a>
+                          </li>
+                        </ul> 
+              
+                        <span class="xs-hr-line"></span>
 
-                          <p>
-                            {% blocktranslate %}
-                            Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
-                            GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
-                            digital ecosystem in order to achieve sustainable development through open innovation. 
-                            Recently deployed on a global scale, this open platform for technological innovations 
-                            aims to accelerate the appropriation of geospatial data by those actors who depend 
-                            heavily on it (startups, universities, municipalities, civil society). His expertise 
-                            is recognized by several international institutions where he regularly works as a consultant. 
-                            These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
-                            {% endblocktranslate %}
-                          </p>
-                        </div>
+                        <p>
+                          {% blocktranslate %}
+                          Vivien Deparday is a Disaster Risk Management Specialist with the World Bank’s
+                          Urban, Resilience, and Land Global Practice, currently working in the Africa region.
+                          In his current role, Vivien leads urban resilience investment operations focused on
+                          cities in Cameroon, Côte d’Ivoire, and Mali engaging in integrated flood risk
+                          management, urban upgrading, solid waste management, and urban planning at the
+                          national and subnational level. He also leads the Africa Disruptive Technology
+                          Program for Urban Resilience bringing open innovation and youth engagement to
+                          resilience projects.
+                          {% endblocktranslate %}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -219,10 +150,84 @@
             </div>
           </div>
         </div>
-        
-      </div>
+      </div>    
+      
+      <div class="col-lg-3 col-md-4 speakers-card">
+        <div class="card border-0 bg-transparent">
+          <div class="card-header p-0">
+              <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
+                  <img class="speaker-avatar" src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}">
 
-      <div class="text-center font-size-18 mb-3">{% translate "More speakers to be announced" %}</div>
+                  <div class="speaker-hover-content">
+                    <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                  </div>
+              </a>
+          </div>
+          <div class="card-body border-0">
+            <h4 class="speaker-title text-white">Mr Willy Franck SOB</h4>
+            <p class="speaker-designation text-white">
+              {% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}
+            </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pb-5">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                      <div class="mdl-speaker-avatar">
+                        <img src="{% static 'images/assets/event/Willy Franck SOB.jpg' %}" alt="Mr Willy Franck SOB"> 
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                      <div class="mdl-speaker-details p-3">
+                        <h2>Mr Willy Franck SOB</h2>
+                          
+                        <p class="my-2">{% translate "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure" %}</p>
+                          
+                        <ul class="mdl-speaker-social-list list-inline m-0">
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/willy-franck-sob-b400bb85/"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul> 
+              
+                        <span class="xs-hr-line"></span>
+
+                        <p>
+                          {% blocktranslate %}
+                          Graduated in 2013 from the school of surveyors in Le Mans (France). He is the promoter of 
+                          GeOsm (https://geo.sm/) the very first geolocated social network aimed at players in the 
+                          digital ecosystem in order to achieve sustainable development through open innovation. 
+                          Recently deployed on a global scale, this open platform for technological innovations 
+                          aims to accelerate the appropriation of geospatial data by those actors who depend 
+                          heavily on it (startups, universities, municipalities, civil society). His expertise 
+                          is recognized by several international institutions where he regularly works as a consultant. 
+                          These include: The World Bank, GIZ, UNESCO, UN-Habitat, AFD, etc.
+                          {% endblocktranslate %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="text-center text-white font-size-18 mb-3">{% translate "More speakers to be announced" %}</div>
+  </div>
+</section>
+
+<section class="py-5">
+    <div class="container-xl position-relative py-5">
 
       <h3 class="section-title text-center pt-5 mb-3">
         {% translate "Academic Keynotes Speakers" %}

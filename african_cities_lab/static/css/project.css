@@ -766,6 +766,11 @@ a:hover {
 	color: #bf0000;
 	padding-left: 5px;
   }
+.bg-gradient-1 {
+	background: linear-gradient(90deg, rgba(190,55,18,0.98) 0%, rgba(128,47,72,0.98) 54%, rgba(64,39,129,1) 100%);
+}
+
+
 /*----------------------------------------*/
 /*  Patterns
 /*----------------------------------------*/
@@ -857,7 +862,7 @@ a.nav-link:focus, a.nav-link.active, a.nav-link:hover {
 }
 .dropdown-item {
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 500;
 }
 .dropdown-item:focus, .dropdown-item:hover {
 	background-color: unset !important;
