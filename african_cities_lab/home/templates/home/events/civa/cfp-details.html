@@ -12,7 +12,7 @@
 {% block meta_tag_description %} 
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
-
+ 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}">
@@ -34,13 +34,8 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
   </style>
@@ -58,33 +53,26 @@
               </div> 
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
 <section class="py-5">
-  <div class="container-fluid">
+  <div class="container-fluid pb-5">
     <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 font-size-16">
-          <p class="mt-4">
+        <div class="col-12 col-lg-8 font-size-16">
+          <p class="my-4">
             {% blocktranslate %}
             ACC 2023 will promote scientific excellence in Africa through the communication and publication of and publication 
             of the best research results and works written in original scientific articles in its conference proceedings, 
             its book proceedings and its special issues.
             {% endblocktranslate %}
           </p>
-        </div>
-      </div>
-      <div class="row justify-content-center p-3 p-md-5">
-        <div class="col-12 col-lg-9 font-size-16">
           
           <div>
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Types of papers" %}
-            </h6>
+            </h5>
       
             <p class="my-3">
               {% blocktranslate %}
@@ -120,10 +108,10 @@
           </div>
           
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Presentations & Publications" %}
-            </h6>
+            </h5>
       
             <p class="my-3">
               {% blocktranslate %}
@@ -150,10 +138,10 @@
           </div>
       
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
-              {% translate "Soumission Guidelines and Instructions" %}
-            </h6>
+              {% translate "Submission Guidelines and Instructions" %}
+            </h5>
       
             <p>
               {% blocktranslate %}
@@ -182,10 +170,10 @@
           </div>
       
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Submission" %}
-            </h6>
+            </h5>
             <p>
               {% blocktranslate %}
               Once your paper is finalized, you could first send us the pdf version through <a class="text_primary font-weight-bold" target="_blank" href="https://easychair.org/conferences/?conf=civa2023">easychair</a> 
@@ -200,10 +188,10 @@
           </div>
       
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Plagiarism Check" %}
-            </h6>
+            </h5>
             <p>
               {% blocktranslate %}
               We remind you once again that a strict plagiarism check will be performed on all papers and will only be tolerated if there is a similarity of max. 
@@ -214,10 +202,10 @@
           </div>
       
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Important dates" %}
-            </h6>
+            </h5>
             <ul class="list-unstyled">
               <li class="mx-3">
                 {% translate "Submission deadline :" %}
@@ -243,10 +231,10 @@
           </div>
       
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Special Issues" %}
-            </h6>
+            </h5>
             <p>
               {% blocktranslate %}
               High-quality papers may be invited to be submitted to one of our special issues in the following list depending on the theme of the paper and its ranking in the order of quality. 
@@ -284,6 +272,21 @@
               </ul>
             </div>
           </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          
+            <aside class="sidebar-menu my-5">
+              <a href="{% url 'cfpd-details' %}" class="sidebar-item h4">
+                {% blocktranslate %} Call for Poster & Demos {% endblocktranslate %}
+              </a>
+              <a href="{% url 'cfwt-details' %}" class="sidebar-item h4">
+                {% blocktranslate %} Call for Workshops & Tutorials {% endblocktranslate %}
+              </a>
+              <a href="{% url 'cfdc-details' %}" class="sidebar-item h4">
+                {% blocktranslate %} Call for Doctoral Consortium & Spring School {% endblocktranslate %}
+              </a>
+            </aside>
         </div>
       </div>
   </div>

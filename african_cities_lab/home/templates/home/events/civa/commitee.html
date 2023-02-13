@@ -35,12 +35,8 @@
   {{ block.super }}
   <style>
  
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
     .tpc-item {
@@ -71,14 +67,11 @@
               </div>
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
-<section class="pb-5">
-  <div class="container pt-5">
+<section class="py-5">
+  <div class="container py-5">
     <div class="row pt-3">
       <div class="col-md-5 col-lg-4 p-4">
         <h4 class="font-weight-500">
@@ -150,7 +143,7 @@
         </ul>
 
         <h4 class="font-weight-500 pt-4">
-          {% translate "Publication Co-Chair" %}
+          {% translate "Publication Co-Chairs" %}
        </h4>
        <ul class="px-4 pt-3">
          <li class="h5 font-size-16 font-weight-400" >Stéphane C. K. Tékouabou, {% translate " Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>

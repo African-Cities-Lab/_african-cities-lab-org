@@ -12,7 +12,7 @@
 {% block meta_tag_description %} 
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
-
+ 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab{% endif %}">
@@ -33,13 +33,8 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
   </style>
@@ -57,16 +52,13 @@
               </div> 
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
 <section class="py-5">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 font-size-16">
+        <div class="col-12 col-lg-8 font-size-16">
           <p class="mt-4">
             {% blocktranslate %}
             In the context of the 1st African Cities Conference, we are launching a call for proposals for the organization of workshop sessions, 
@@ -90,10 +82,10 @@
           </p>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Workshops traditionnels" %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -104,10 +96,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Creative, Interactive or Thinking Events" %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -132,10 +124,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Tutorials" %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -147,10 +139,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Important dates" %}
-            </h6>
+            </h5>
             <ul class="list-unstyled">
               <li class="mx-3">
                 {% translate "Workshop proposal deadline:" %}
@@ -184,10 +176,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Submission Proposal Guidelines" %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -290,10 +282,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Evaluation criteria for proposals" %}
-            </h6>
+            </h5>
   
             <ul class="px-5 pt-3">
               <li>
@@ -321,10 +313,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Proceedings of the workshops and tutorials" %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -336,16 +328,31 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Workshop & Tutorial chairs" %}
-            </h6>
+            </h5>
             <ul class="px-5">
               <li >Rida Azmi, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
             </ul>
           </div>
   
         </div>
+
+        <div class="col-12 col-lg-4">
+          
+          <aside class="sidebar-menu my-5">
+            <a href="{% url 'cfp-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for papers {% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfpd-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Poster & Demos {% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfdc-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Doctoral Consortium & Spring School {% endblocktranslate %}
+            </a>
+          </aside>
+      </div>
       </div>
     </div>
   </section>

@@ -12,7 +12,7 @@
 {% block meta_tag_description %} 
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
-
+ 
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Poster & Demos | African Cities Conference" %} - African Cities Lab{% endif %}">
@@ -33,14 +33,9 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
-      background-position: top center;
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
+      background-position: top center; 
     }
   </style>
 {% endblock css %}
@@ -57,16 +52,13 @@
               </div> 
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
 <section class="py-5">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-9 font-size-16">
+      <div class="col-12 col-lg-8 font-size-16">
         <p class="mt-4">
           {% blocktranslate %}
           The poster and demo session at the 1st African Cities Conference complements the research session and provides an opportunity to 
@@ -89,10 +81,10 @@
         </p>
 
         <div class="pt-5">
-          <h6 class="mb-3 font-size-18">
+          <h5 class="mb-3 font-size-18">
             <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
             {% translate "Important dates" %}
-          </h6>
+          </h5>
           <ul class="list-unstyled">
             <li class="mx-3">
               {% translate "Submission deadline:" %}
@@ -122,10 +114,10 @@
         </div>
 
         <div class="pt-5">
-          <h6 class="mb-3 font-size-18">
+          <h5 class="mb-3 font-size-18">
             <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
             {% translate "Submission guidilines & Review process of Posters & Demos" %}
-          </h6>
+          </h5>
 
           <p>
             {% blocktranslate %}
@@ -166,10 +158,10 @@
         </div>
         
         <div class="pt-5">
-          <h6 class="mb-3 font-size-18">
+          <h5 class="mb-3 font-size-18">
             <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
             {% translate "Presentations and Publication of Posters & Demos" %}
-          </h6>
+          </h5>
 
           <p>
             {% blocktranslate %}
@@ -187,10 +179,10 @@
         </div>
 
         <div class="pt-5">
-          <h6 class="mb-3 font-size-18">
+          <h5 class="mb-3 font-size-18">
             <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
             {% translate "Posters & Demos Session Chairs" %}
-          </h6>
+          </h5>
           <ul class="px-5">
             <li >Stéphane C. K. Tékouabou, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
             <li >Antoine de Padoue Nsegbe, {% translate "University of Dschang, Camerooon" %}</li>
@@ -198,6 +190,21 @@
         </div>
 
       </div>
+
+      <div class="col-12 col-lg-4">
+          
+        <aside class="sidebar-menu my-5">
+          <a href="{% url 'cfp-details' %}" class="sidebar-item h4">
+            {% blocktranslate %} Call for papers {% endblocktranslate %}
+          </a>
+          <a href="{% url 'cfwt-details' %}" class="sidebar-item h4">
+            {% blocktranslate %} Call for Workshops & Tutorials{% endblocktranslate %}
+          </a>
+          <a href="{% url 'cfdc-details' %}" class="sidebar-item h4">
+            {% blocktranslate %} Call for Doctoral Consortium & Spring School {% endblocktranslate %}
+          </a>
+        </aside>
+    </div>
     </div>
   </div>
 </section>

@@ -34,12 +34,8 @@
   {{ block.super }}
   <style>
  
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
   </style>
@@ -57,16 +53,13 @@
               </div> 
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
 <section class="py-5">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-12 col-lg-9 font-size-16">
+        <div class="col-12 col-lg-8 font-size-16">
           <p class="mt-4">
             {% blocktranslate %}
             The ACC 2023 Doctoral & Spring School Consortium (DC) will take place virtually within the framework of the 1st International Conference on 
@@ -93,10 +86,10 @@
           </p>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "ACC’s DC Submission Details " %}
-            </h6>
+            </h5>
   
             <p>
               {% blocktranslate %}
@@ -174,10 +167,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "ACC’s DC important dates" %}
-            </h6>
+            </h5>
             <ul class="list-unstyled">
               <li class="mx-3">
                 {% translate "Submission deadline:" %}
@@ -203,10 +196,10 @@
           </div>
   
           <div class="pt-5">
-            <h6 class="mb-3 font-size-18">
+            <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Doctoral Consortium & Spring School chairs " %}
-            </h6>
+            </h5>
             <ul class="px-5">
               <li >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
             </ul>
@@ -214,6 +207,21 @@
   
           
         </div>
+
+        <div class="col-12 col-lg-4">
+          
+          <aside class="sidebar-menu my-5">
+            <a href="{% url 'cfp-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for papers{% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfpd-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Poster & Demos {% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfwt-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Workshops & Tutorials {% endblocktranslate %}
+            </a>
+          </aside>
+      </div>
       </div>
     </div>
   </section>

@@ -9,9 +9,10 @@
         {% translate "Venue & Contact | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+{% block meta_tag_description %} 
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
+
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
@@ -32,13 +33,8 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
   </style>
@@ -57,35 +53,125 @@
               </div>
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+  </div> 
+</section>
+
+<section class="py-5 mb-3 font-size-16">
+  <div class="container-xl">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <p>
+          {% blocktranslate %}
+          The first annual meeting of the academic and professional world on African cities, 
+          will highlight the solutions brought by urban actors to create new city models capable 
+          of accommodating the 950 million additional inhabitants who will populate urban environments by 2050.
+          {% endblocktranslate %}
+        </p>
+        <p class="pt-2">
+          {% blocktranslate %}
+          The first edition of this international event will present digital and smart cities as sustainable, 
+          inclusive and innovative solutions to the urban challenges facing Africa.
+          {% endblocktranslate %}
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="civa-form__section">
+<section class="py-5 font-size-16 bg-light__">
+  <div class="container-xl">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-5">
+        <h4 class="mb-3">
+          {% translate "Golden Tulip le Diplomate" %}
+        </h4>
+        <p>
+          {% blocktranslate %}
+          The welcome of the participants of the 1st Edition of the African Cities Conference will 
+          be in the Madiba Room of the Golden Tulip, Le Diplomate Hotel in Cotonou. Located on 
+          the famous Boulevard de la Marina, a few steps away from the emblematic statue of the 
+          Amazon, the Golden Tulip, Le Diplomate hotel is an ultramodern setting with 
+          state-of-the-art technological equipment, capable of hosting large-scale events.
+          {% endblocktranslate %}
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 p-5">
+        <img src="{% static 'images/assets/civa/golden-tulip.jpeg' %}">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 font-size-16 ">
+  <div class="container-xl">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-6 p-5 order-1 order-lg-0"> 
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-xs-12">
+            <div class="pt-md-5">
+              <img class="pt-md-4" src="{% static 'images/assets/civa/golden-4.jpg' %}">
+              <img class="pt-4" src="{% static 'images/assets/civa/golden-3.jpg' %}">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-xs-12">
+            <img class="pt-4" src="{% static 'images/assets/civa/golden-2.jpg' %}">
+            <img class="pt-4" src="{% static 'images/assets/civa/golden-1.jpg' %}">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 order-0 order-lg-1">
+        <h4 class="mb-3">
+          {% translate "Hosting" %}
+        </h4>
+        <p>
+          {% blocktranslate %}
+          A part of the rooms of the Golden Tulip Hotel, Le Diplomate has been reserved for the African Cities 
+          Conference. Other hotels will soon be 3 and 4 star hotels will be announced and booking 
+          details will be communicated to participants.
+          {% endblocktranslate %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 font-size-16 bg-light__">
+  <div class="container-xl">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-5">
+        <h4 class="mb-3">
+          {% translate "Visa" %}
+        </h4>
+        <p>
+          {% blocktranslate %}
+          Nationals of countries subject to the visa application procedure can now apply for a visa online (e-visa) 
+          at <a href="https://evisa.bj/" class="text_primary" target="_blank">https://evisa.bj/</a>. It takes 7 days to obtain a visa. 
+          The maximum validity of a visa varies from 30 to 90 days depending on your nationality. If necessary, 
+          the organisers will send you an official letter of participation, justifying your travel 
+          from your country of origin to Benin.
+          {% endblocktranslate %}
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 p-5">
+        <img src="{% static 'images/assets/civa/visa-passport.jpeg' %}">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 mb-3 font-size-16">
   <div class="container-xl">
     <div class="row justify-content-center">
-      <div class="col-lg-8 text-white text-center">
-        <div class="h1 pt-lg-5">
+      <div class="col-12 col-md-8 col-lg-6 mb-5 text-center">
+        <p>
           {% blocktranslate %}
-          Join African Cities Conference (ACC) - Digital Cities
+          Follow us on social networks or write to us for any more information or request about 
+          the event and how to become a partner.
           {% endblocktranslate %}
-        </div>
-        <div class="mt-5 text-center">
-          <a class="btn btn__primary btn__small my-4" href="{% url 'acc-papers' %}">
-            {% translate "Call for papers" %}
-          </a>
-        </div>
-        <p class="font-size-16 pt-3 pb-5">
-          {% blocktranslate %}
-            If you wish to have more information,<br> 
-            you can contact us directly on :<br>
-          {% endblocktranslate %}
-          <a class="text-white" href="mailto:info@africancitieslab.org">
-            <strong>contact@africancitieslab.org</strong>
-          </a>
-        </p>
+        </p> 
+        <h6 class="mt-2">{% translate "For any request:" %}</h6>
+        <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
       </div>
     </div>
   </div>

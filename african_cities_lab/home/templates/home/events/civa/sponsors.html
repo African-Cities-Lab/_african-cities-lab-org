@@ -32,13 +32,8 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-        background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-          url({% static 'images/assets/icac-banner-image.jpg' %});
+        background-image: url({% static 'images/assets/banner-pattern.png' %});
         background-position: top center;
       }
   </style>
@@ -56,10 +51,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="acl-sharpes right-sharpe">
-        <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-    </div>
+    </div> 
 </section>
 
 <section class="py-5">

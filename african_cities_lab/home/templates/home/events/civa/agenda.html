@@ -6,11 +6,11 @@
     {% elif self.title %}
         {{ self.title }}
     {% else %}
-        {% translate "Agenda | African Cities Conference" %} - African Cities Lab
+        {% translate "Program | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+{% block meta_tag_description %} 
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
 {% block static_meta_tag %}
 <meta name="twitter:card" content="summary_large_image">
@@ -32,14 +32,86 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
     .page-banner {
-      background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-        url({% static 'images/assets/icac-banner-image.jpg' %});
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
+    }
+    .program-block {
+      margin: auto;
+      padding: 1rem 0 4rem;
+      display: flex;
+      max-width: 60rem;
+      flex-direction: column;
+      word-break: break-word;
+    }
+    .program-block .program-inner {
+      padding: 0.5rem 1rem;
+      position: relative; 
+      margin-left: 8rem;
+      margin-top: 1rem;
+    }
+    .program-block .program-inner:before {
+      border: 0.1rem solid #e0e0e0;
+      top: -0.1rem;
+      left: -1rem;
+      width: 0.5rem;
+      height: 100%;
+      content: "";
+      position: absolute;
+      border-radius: 5rem;
+    }
+    .program-block .program-inner .program-timeline {
+      position: relative;
+    }
+    .program-block .program-inner .program-timeline:before {
+      top: -0.1rem;
+      left: -2rem;
+      width: 0.5rem;
+      height: 3rem;
+      content: "";
+      position: absolute;
+      border-radius: 5rem;
+      border: 0.1rem solid #3b424A;
+      background: #3b424A;
+    }
+    .leftInfo {
+      position: absolute;
+      text-align: right;
+      left: -9rem;
+      width: 6rem;
+    }
+    .rightInfo {
+      min-height: 6.4rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .speaker-list__speaker {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 5px;
+      margin-bottom: 1rem;
+    }
+    .speaker-list__speaker .speaker-list__speaker__img {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;  
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .speaker-list__speaker .speaker-list__speaker__img > img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden; object-fit: cover;
+    }
+    .speaker-list__speaker__name {
+      display: inline-block; 
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
     }
   </style>
 {% endblock css %}
@@ -56,52 +128,161 @@
               </div>
           </div>
       </div>
-  </div>
-  <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
-  </div>
+  </div> 
 </section>
 
-<section class="py-5">
-    <div class="container-xl py-5">
+<section class="pt-5">
+    <div class="container-xl pt-5 pb-3">
         <div class="text-center h1 mb-3">
             {% blocktranslate %}
-                Information of <br>
-                ACC 2023 shedules
+              ACC2023 – Conference trails
             {% endblocktranslate %}
           </div>
     </div>
 </section>
 
+<section class="pb-5">
+  <div class="program-block">
 
+    <div class="program-inner">
 
-<section class="civa-form__section">
-  <div class="container-xl">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-white text-center">
-        <div class="h1 pt-lg-5">
-          {% blocktranslate %}
-          Join African Cities Conference (ACC) - Digital Cities
-          {% endblocktranslate %}
+      <div class="program-timeline">
+
+        <div class="leftInfo">
+          <p class="time"></p> 
         </div>
-        <div class="mt-5 text-center">
-          <a class="btn btn__primary btn__small my-4" href="{% url 'acc-papers' %}">
-            {% translate "Call for papers" %}
-          </a>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Digital city transition and urban planning" %}</h4>
+
+          <div class="font-size-16">
+            {% blocktranslate %}
+            In Africa, the digital transformation of cities is still minimal, but initiatives in this 
+            direction are beginning to emerge. For example, in Morocco and Tunisia smart homes and 
+            connected mobility are already being developed.
+            {% endblocktranslate %}
+          </div>
+
+          {% comment %}
+          <div class="speaker-list mt-3">
+            <div class="speaker-list__speaker">
+              <div class="speaker-list__speaker__img"> 
+                <img src="{% static 'images/assets/webinar-2/Pr.David-Goeury.png' %}" alt="Pr. David Goeury"> 
+              </div>
+              <span class="speaker-list__speaker__name">
+                {% translate 'David Goeury' %} -
+                <span class="font-size-12">
+                  {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}
+                </span>      
+              </span> 
+            </div>
+          </div>
+          {% endcomment %}
+
         </div>
-        <p class="font-size-16 pt-3 pb-5">
-          {% blocktranslate %}
-            If you wish to have more information,<br> 
-            you can contact us directly on :<br>
-          {% endblocktranslate %}
-          <a class="text-white" href="mailto:info@africancitieslab.org">
-            <strong>contact@africancitieslab.org</strong>
-          </a>
-        </p>
+
       </div>
+
+      <div class="program-timeline">
+
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Digital and smart african cities" %}</h4>
+
+          <div class="font-size-16">
+            {% blocktranslate %}
+            We hear increasingly about "smart" cities, but what are they really about? Smart cities in Africa 
+            represent a challenge for the development of urban territories, for the economy, but also to gain 
+            international visibility.
+            {% endblocktranslate %}
+          </div>
+ 
+        </div>
+
+      </div>
+
+      <div class="program-timeline">
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Remote sensing and geo – information systems (smart GIS)" %}</h4>
+        </div>
+      </div>
+
+      <div class="program-timeline">
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Digital Citizen and digital gouvernance" %}</h4>
+        </div>
+      </div>
+
+      <div class="program-timeline">
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "African digital cities challenge" %}</h4>
+
+          <div class="font-size-16">
+            {% blocktranslate %}
+            Digital technology has great potential for innovation in areas such as health, agriculture, 
+            education, energy, financial services, and transport in the cities and towns of tomorrow. 
+            The rapid spread of mobile and digital technology in Africa should enable African countries 
+            to make a rapid leap in economic development.
+            {% endblocktranslate %}
+          </div>
+        </div>
+      </div>
+
+      <div class="program-timeline">
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Urban mobility, transportation and ITS" %}</h4>
+
+          <div class="font-size-16">
+            {% blocktranslate %}
+            The African continent is on the verge of unprecedented growth, making it necessary to develop 
+            the urban mobility sector. The predictions of demographic and economic growth on the continent 
+            do not leave the global players in the transport sector indifferent.
+            {% endblocktranslate %}
+          </div>
+        </div>
+      </div>
+
+      <div class="program-timeline">
+        <div class="leftInfo">
+          <p class="time"></p> 
+        </div>
+
+        <div class="rightInfo">
+          <h6 class="mb-3 font-size-18">{% translate "Emerging urban technologies" %}</h4>
+
+          <div class="font-size-16">
+            {% blocktranslate %}
+            As global warming increasingly affects African cities, new cooling technologies 
+            are being developed to combat climate change.
+            {% endblocktranslate %}
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+
 </section>
+
 
 {% endblock content %}
   
