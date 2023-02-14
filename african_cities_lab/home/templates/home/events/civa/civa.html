@@ -198,8 +198,8 @@
     <div class="row justify-content-between">
       <div class="col-12 col-lg-5">
         
-        <p class="font-size-24 py-4 text_primary ">
-          {% translate "ACC is the first international conference on urban and sustainable development in Africa." %}
+        <p class="font-size-22 py-4 text_primary ">
+          {% translate "African Cities Conference (ACC) is the first international conference on urban and sustainable development in Africa." %}
         </p>
       </div>
       <div class="col-12 col-lg-6 ">
@@ -221,7 +221,7 @@
             </div>
             <div class="media-body">
               <h3 class="info-media_title">{% translate "Location" %}</h3>
-              <p class="info-media_text font-size-16">{% translate "Golden Tulip Hotel, Cotonou, Benin" %}</p>
+              <p class="info-media_text font-size-16">{% translate "Golden Tulip Le Diplomate, Cotonou, Benin" %}</p>
             </div>
           </div>
         </div>
@@ -454,13 +454,14 @@
       <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="py-3">{% translate "Urban mobility, transportation and ITS" %}</h5>
+            <h5 class="py-3">{% translate "Urban mobility and transportation" %}</h5>
             <ul class="px-3">
-              <li >{% translate "ITS" %}</li>
+              <li >{% translate "ITS (Intelligent Transport Systems)" %}</li>
               <li class="pt-2">{% translate "Urban mobility" %}</li>
-              <li class="pt-2">{% translate "Urban transportation patterns" %}</li>
-              <li class="pt-2">{% translate "Transportation mode" %}</li>
-              <li class="pt-2">{% translate "Bike sharing" %}</li> 
+              <li class="pt-2">{% translate "Travel behavior (travel patterns, route choice, mode choice, etc.)" %}</li>
+              <li class="pt-2">{% translate "Multimodal transportation" %}</li>
+              <li class="pt-2">{% translate "Non-motorized and informal transportation" %}</li>
+              <li class="pt-2">{% translate "Shared mobility (carsharing, bike sharing, etc.)" %}</li> 
               <li class="pt-2">{% translate "Transportation and Traffic Engineering" %}</li>
             </ul>
           </div>
@@ -472,9 +473,8 @@
             <h5 class="py-3">{% translate "Emerging urban technologies" %}</h5>
             <ul class="px-3">
               <li >{% translate "Construction Robotics" %}</li>
-              <li class="pt-2">{% translate "Digital twings" %}</li>
               <li class="pt-2">{% translate "AI-based solutions" %}</li>
-              <li class="pt-2">{% translate "Mobile money solution" %}</li>
+              <li class="pt-2">{% translate "Mobile currency solutions" %}</li>
               <li class="pt-2">{% translate "Infrastructure Design tools" %}</li> 
               <li class="pt-2">{% translate "Construction Technology & Engineering" %}</li>
             </ul>
@@ -652,7 +652,7 @@
     <div class="row justify-content-center pb-5">
       <div class="col-12 col-md-8">
         <h3 class="section-title text-center">
-          {% translate "Big thanks to our sponsors" %}
+          {% translate "Academic and institutional partners" %}
         </h3>
       </div>
     </div>
@@ -711,21 +711,21 @@
           {% translate "Venue & Contacts" %}
         </h3>
 
-        <h4 class="mb-2 text_secondary">{% translate "Golden Tulip le Diplomate" %}</h4>
-        <p>{% translate "Cotonou, Benin" %} </p>
-        <p>{% translate "May 23 & 24" %} </p>
+        <h4 class="mb-2 text_secondary">{% translate "Golden Tulip Le Diplomate" %}</h4>
+        <p><i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "Cotonou, Benin" %} </p>
+        <p class="pt-2"><i class="fas fa-circle text_primary mx-2 font-size-12"></i>{% translate "May 23 & 24" %} </p>
 
         <div class="mt-3 mb-4">
           {% blocktranslate %}
           Follow us on social networks or write to us for any more information or request about 
           the event and how to become a partner.
           {% endblocktranslate %}
-          <a href="{% url 'acc-informations' %}" class="text_primary">Learn more</a>
+          <a href="{% url 'acc-informations' %}" class="text_primary">{% translate "Learn more" %}</a>
         </div>
 
         <div>
           <h6 class="mb-2">{% translate "For any request:" %}</h6>
-          <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
+          <a href="mailto:contact@africancitieslab.org" class="text_primary">contact@africancitieslab.org</a>
         </div>
 
       </div>
