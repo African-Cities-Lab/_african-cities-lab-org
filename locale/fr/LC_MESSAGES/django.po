@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-14 09:54+0100\n"
+"POT-Creation-Date: 2023-02-14 11:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -918,7 +918,6 @@ msgstr "CEO Open data Africa"
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:339
 #: african_cities_lab/home/templates/home/events/civa/speakers.html:50
 #: african_cities_lab/templates/civa-base.html:106
-#: african_cities_lab/templates/civa-base.html:192
 msgid "Speakers"
 msgstr "Intervenants"
 
@@ -2994,16 +2993,17 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"La télédétection et les données spatiales jouent un rôle important dans la planification "
-"urbaine en fournissant des informations précises et actualisées \n"
-"sur les caractéristiques physiques et environnementales "
-"des zones urbaines. Ces informations peuvent être utilisées \n"
+"La télédétection et les données spatiales jouent un rôle important dans la "
+"planification urbaine en fournissant des informations précises et "
+"actualisées \n"
+"sur les caractéristiques physiques et environnementales des zones urbaines. "
+"Ces informations peuvent être utilisées \n"
 "pour cartographier et surveiller l'utilisation et la couverture des sols, "
-"évaluer les caractéristiques physiques des zones urbaines, "
-"surveiller la qualité de l'environnement, soutenir la gestion des urgences "
-"et améliorer la planification des transports. \n"
-"En utilisant la télédétection et les données spatiales, les planificateurs urbains peuvent prendre "
-"des décisions éclairées qui mènent au \n"
+"évaluer les caractéristiques physiques des zones urbaines, surveiller la "
+"qualité de l'environnement, soutenir la gestion des urgences et améliorer la "
+"planification des transports. \n"
+"En utilisant la télédétection et les données spatiales, les planificateurs "
+"urbains peuvent prendre des décisions éclairées qui mènent au \n"
 "développement de villes plus durables et plus résilientes.\n"
 "            "
 
@@ -3390,10 +3390,8 @@ msgstr ""
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:164
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:155
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:265
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:185
-msgid "Submit your paper"
+msgid "Submit your article"
 msgstr "Soumettez votre article"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:172
@@ -4118,6 +4116,11 @@ msgstr ""
 "recommandation des chairs de session Poster & Demos.\n"
 "            "
 
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:155
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:265
+msgid "Submit your proposal"
+msgstr "Soumettez votre proposition"
+
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:163
 msgid "Presentations and Publication of Posters & Demos"
 msgstr "Présentations et publication de posters et de démos"
@@ -4358,24 +4361,23 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"Dans cette catégorie d’événement, contrairement aux ateliers traditionnels, "
-"aux événements créatifs, les tutoriels sont destinés à des sujets "
-"raisonnablement bien établis. \n"
-"Cependant, étant donné que les sujets sur les défis des villes africaines "
-"sont des sujets de recherche émergents, nous espérons accueillir ici "
-"particulièrement les tutoriels qui relient des sujets bien établis d'autres "
-"disciplines \n"
-"aux sujets des villes africaines. Nous encourageons les tutoriels à être "
-"interactifs afin d'impliquer le public.\n"
+"Dans cette catégorie d’événement, contrairement aux ateliers traditionnels "
+"et aux événements créatifs, les tutoriels sont destinés à des sujets "
+"raisonnablement bien établis. Cependant, étant donné que les sujets \n"
+"sur les défis des villes africaines sont des sujets de recherche émergents, "
+"nous souhaitons accueillir ici particulièrement les tutoriels qui relient "
+"des sujets bien établis d'autres disciplines aux sujets des villes "
+"africaines. Nous encourageons les tutoriels à être interactifs afin "
+"d'impliquer le public.\n"
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:146
 msgid "Workshop submission deadline:"
-msgstr "Date limite de soumission des ateliers :"
+msgstr "Date limite pour les propositions d'ateliers :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:154
 msgid "Deadline for camera-ready submission:"
-msgstr "Date limite pour l'envoi des articles prêts pour impression :"
+msgstr "Le papier de l'atelier recommandé est prêt à être diffusé :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:158
 msgid "ACC’s 2023 Workshop & Tutorial Date:"
@@ -4523,7 +4525,7 @@ msgid ""
 msgstr ""
 "\n"
 "                <strong>Une brève description du format de l'atelier ou "
-"tutorial,</strong>  par exemple, la combinaison d'événements tels que des "
+"tutoriel,</strong> par exemple, la combinaison d'événements tels que des "
 "présentations de documents, des exposés invités, des panels et des "
 "discussions générales.\n"
 "                "
@@ -4666,9 +4668,9 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"Chaque atelier, de son propre chef, peut envisager d'archiver les "
-"contributions à l'atelier et de documenter les idées générées pendant "
-"l'atelier. Si l'intérêt est suffisant, \n"
+"Chaque organisateur d'atelier peut envisager d'archiver les contributions à "
+"l'atelier et de documenter les idées générées pendant l'atelier. Si "
+"l'intérêt est suffisant, \n"
 "nous pouvons archiver (avec une option d'exclusion) toutes les contributions "
 "à l'atelier ACC 2023, ainsi que les résumés des ateliers et des tutoriels, "
 "sous la forme d'un compte rendu combiné de \n"
@@ -5073,7 +5075,6 @@ msgstr "Chaires du CFP"
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:81
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:89
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:108
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:158
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:168
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:185
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:206
@@ -5259,7 +5260,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/civa.html:285
 #: african_cities_lab/home/templates/home/events/civa/guests.html:81
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:189
-#: african_cities_lab/templates/civa-base.html:193
+#: african_cities_lab/templates/civa-base.html:192
 msgid "Call for papers"
 msgstr "Appels à contributions"
 
@@ -5342,7 +5343,7 @@ msgid "Academic and institutional partners"
 msgstr "Partenaires académiques et institutionnels"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:711
-#: african_cities_lab/templates/civa-base.html:194
+#: african_cities_lab/templates/civa-base.html:193
 msgid "Venue & Contacts"
 msgstr "Lieu & Contacts"
 
@@ -5463,13 +5464,14 @@ msgstr "Co-présidents de la publication"
 msgid "Global Coordinators"
 msgstr "Coordinateurs globaux"
 
-#: african_cities_lab/home/templates/home/events/civa/commitee.html:165
-msgid "TPC"
-msgstr ""
-
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:158
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:170
 msgid "EXAF, EPFL, Lausanne, Switzerland"
 msgstr "EXAF, EPFL Lausanne, Suisse"
+
+#: african_cities_lab/home/templates/home/events/civa/commitee.html:165
+msgid "TPC"
+msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:171
 msgid "World Bank, New York, USA"
@@ -6595,7 +6597,7 @@ msgid "Connect with us :"
 msgstr "Suivez-nous"
 
 #: african_cities_lab/templates/base.html:300
-#: african_cities_lab/templates/civa-base.html:199
+#: african_cities_lab/templates/civa-base.html:198
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
 
