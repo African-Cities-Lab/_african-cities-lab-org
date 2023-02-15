@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-14 18:04+0100\n"
+"POT-Creation-Date: 2023-02-15 18:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -773,8 +773,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:159
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:296
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:318
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:512
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:534
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:357
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:379
 msgid "MC, Bordeaux INP Specialist in Geomatics and IA Earth Observation"
 msgstr ""
 "MC, Bordeaux INP Spécialiste en géomatique et IA l'observation de la Terre"
@@ -922,7 +922,6 @@ msgid "Speakers"
 msgstr "Intervenants"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:327
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:543
 msgid ""
 "\n"
 "                            Is a lecturer at Bordeaux INP since 2006 and "
@@ -1037,8 +1036,8 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:497
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:519
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:165
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:187
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:513
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:535
 msgid ""
 "Founder GeOsm Family - The First Open Geospatial Knowledge Infrastructure"
 msgstr ""
@@ -1046,6 +1045,7 @@ msgstr ""
 "géospatiales"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:528
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:544
 msgid ""
 "\n"
 "                            Graduated in 2013 from the school of surveyors "
@@ -1215,8 +1215,8 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:843
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:865
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:94
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:116
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:442
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:464
 msgid ""
 "Disaster Risk Management Specialist, Global Facility for Disaster Risk "
 "Reduction and Recovery"
@@ -1225,6 +1225,7 @@ msgstr ""
 "réduction des risques de catastrophes et le relèvement"
 
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:876
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:475
 msgid ""
 "\n"
 "                            Vivien Deparday is a Disaster Risk Management "
@@ -2911,7 +2912,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:126
 #: african_cities_lab/templates/civa-base.html:101
-#: african_cities_lab/templates/civa-base.html:191
+#: african_cities_lab/templates/civa-base.html:195
 msgid "Program"
 msgstr "Programme"
 
@@ -2942,10 +2943,10 @@ msgstr ""
 "\n"
 "En Afrique, la transformation digitale des villes est encore minime mais les "
 "initiatives oeuvrant \n"
-"dans ce sens commencent à émerger. A titre d’exemple au Maroc, l’un des pays "
-"qui bénéficie d’une excellente couverture en électricité, \n"
-"on développe déjà des maisons intelligentes et la mobilité connectée à "
-"Casablanca.\n"
+"dans ce sens commencent à émerger. A titre d’exemple le Maroc et la Tunisie "
+"sont des pays qui, bénéficiant d’une excellente couverture en électricité, \n"
+"développent déjà des maisons intelligentes et des services de mobilité "
+"connectée.\n"
 "            "
 
 #: african_cities_lab/home/templates/home/events/civa/agenda.html:194
@@ -3147,7 +3148,7 @@ msgstr ""
 "virtuellement dans le cadre de la 1ère édition de l'African Cities - Digital "
 "and Smart Cities - \n"
 "villes digitale et intelligente, qui aura lieu les 23 et 24 Mai 2023 à "
-"l’hotel Novotel de Cotonou, Benin. Ce forum \n"
+"l’hôtel Novotel de Cotonou, Bénin. Ce forum \n"
 "permettra aux étudiants doctorants en début de carrière ainsi qu'aux "
 "étudiants en fin de carrière de se concentrer sur l'étude d’une "
 "problématique en rapport avec les villes africaines et ce, \n"
@@ -3210,7 +3211,7 @@ msgstr ""
 "l'événement, qui comprendra une série d'activités interactives avec un "
 "<strong>spring school</strong>. <br> Les détails de \n"
 " la soumission se trouvent ci-dessous sous \"Détails de la soumission des "
-"Doctoral Consortium de la ACC\".\n"
+"Doctoral Consortium de l'ACC\".\n"
 "            "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:91
@@ -3470,18 +3471,26 @@ msgstr "Consortium doctoral et présidents de l'école de printemps "
 msgid "Center of Urban System CUS, UM6P, Benguérir, Morocco"
 msgstr "Centre du Système Urbain, UM6P, Benguérir, Maroc"
 
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:215
+#: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:216
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:198
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:332
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:51
+msgid " Call for papers "
+msgstr "Appel à papiers"
+
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:218
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:235
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:335
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:277
 msgid " Call for Poster & Demos "
-msgstr "Appels à posters et démos"
+msgstr "Appel à posters et démos"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:221
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:254
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:280
 msgid " Call for Workshops & Tutorials "
-msgstr "Appels à ateliers & formations"
+msgstr "Appel à ateliers & formations"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:9
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:18
@@ -3492,7 +3501,7 @@ msgstr "Appels à ateliers & formations"
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:24
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:29
 msgid "Call for papers | African Cities Conference"
-msgstr "Appels à contributions | African Cities Conference"
+msgstr "Appel à contributions | African Cities Conference"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:161
 #: african_cities_lab/templates/civa-base.html:116
@@ -3518,7 +3527,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"African Cities Conference (ACC) est la première conférence internationale "
+"L'African Cities Conference (ACC) est la première conférence internationale "
 "annuelle de discussions et d’échanges \n"
 "entre les acteurs urbains, le secteur privé et le monde académique sur les "
 "problématiques des villes africaines. \n"
@@ -3527,8 +3536,8 @@ msgstr ""
 "d’accroître la portée et le rayonnement des activités de recherche, \n"
 "d’innovation entrepreneuriale et de création de solutions sur le continent "
 "africain relatives \n"
-"à la numérisation des villes. L’édition 2023 met l’accent sur les différents "
-"modèles de villes numériques africaines comme \n"
+"à la numérisation des villes. <br> L’édition 2023 met l’accent sur les "
+"différents modèles de villes numériques africaines comme \n"
 "potentielle solution pour relever les défis urbains en Afrique.\n"
 "                    "
 
@@ -3551,9 +3560,9 @@ msgstr ""
 "L'ACC 2023 couvre tous les sujets ayant un lien avec les villes digitales en "
 "Afrique, notamment la transition digitale \n"
 "des villes et planification urbaine, les smart cities africaines, Smart geo-"
-"information systems (Smart GIS), smart Gouvernance, \n"
-"challenges des villes digitales en Afrique, durabilité urbaine, "
-"problématiques de planification/gestion des villes émergeantes \n"
+"information systems (Smart GIS), smart governance, \n"
+"défis des villes digitales en Afrique, durabilité urbaine, problématiques de "
+"planification/gestion des villes émergentes \n"
 "en Afrique, challenges socio-économiques urbains (éducation, santé, emploi, "
 "jeunesse, économie, sécurité alimentaire, etc ), \n"
 "environnements urbains, technologies de l'information et de la communication "
@@ -3567,7 +3576,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"                Appels à contributions\n"
+"                Appel à contributions\n"
 "            "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:219
@@ -3679,7 +3688,7 @@ msgstr "Développement de l'énergie pour le bâtiment et la construction"
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:328
 #: african_cities_lab/home/templates/home/events/civa/civa.html:379
 msgid "Computer-Aided Civil and Infrastructure Engineering"
-msgstr "Génie civil et infrastructures assistés par ordinateur"
+msgstr "Génie civil et infrastructures assistées par ordinateur"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:338
 #: african_cities_lab/home/templates/home/events/civa/civa.html:389
@@ -3931,11 +3940,11 @@ msgstr "Technologie et ingénierie de la construction"
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:23
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:28
 msgid "Call for Poster & Demos | African Cities Conference"
-msgstr "Appels à posters et démos | African Cities Conference"
+msgstr "Appel à posters et démos | African Cities Conference"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:50
 msgid "Call for Poster & Demos"
-msgstr "Appels à posters et démos"
+msgstr "Appel à posters et démos"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:63
 msgid ""
@@ -3949,7 +3958,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"La session de posters et de démos de la 1ère Edition de la African Cities "
+"La session de posters et de démos de la 1ère édition de l'African Cities "
 "Conference complète la session de recherche et offre l'occasion de \n"
 "présenter des résultats récents et des mises en œuvre innovantes dans un "
 "cadre informel et interactif. Au cours de la séance de posters et de "
@@ -4018,7 +4027,7 @@ msgstr "Soumission finale de la vidéo et du poster :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:107
 msgid "May 10, 2023"
-msgstr "10 May 2023"
+msgstr "10 Mai 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:110
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:223
@@ -4049,7 +4058,7 @@ msgstr ""
 "anglais, \n"
 "en suivant les directives de formatage de <a class=\"text_primary\" target="
 "\"_blank\" href=\"https://www.e3s-conferences.org/\">E3S web of conference</"
-"a>, et soumises électroniquement via le système de Soumission <a class="
+"a>, et soumises électroniquement via le système de soumission <a class="
 "\"text_primary font-weight-bold\" target=\"_blank\" href=\"https://easychair."
 "org/conferences/?conf=civa2023\">Easychair</a>.\n"
 "            "
@@ -4177,7 +4186,7 @@ msgstr "Université de Dschang, Cameroun"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:201
 msgid " Call for Workshops & Tutorials"
-msgstr "Appels à ateliers & formations"
+msgstr "Appel à ateliers & formations"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:204
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:338
@@ -4190,11 +4199,11 @@ msgstr "Appel au Consortium doctoral et à l'école de printemps"
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:23
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:28
 msgid "Call for Workshops & Tutorials | African Cities Conference"
-msgstr "Appels à ateliers & formations | African Cities Conference"
+msgstr "Appel à ateliers & formations | African Cities Conference"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:50
 msgid "Call for Workshops & Tutorials"
-msgstr "Appels à ateliers & formations"
+msgstr "Appel à ateliers & formations"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:63
 msgid ""
@@ -4209,11 +4218,11 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"Dans le cadre de la 1ère Édition de la African Cities Conference, nous "
+"Dans le cadre de la 1ère édition de l'African Cities Conference, nous "
 "lançons un appel à propositions pour l’organisation des sessions "
 "d’ateliers, \n"
-"d’événements créatifs, de reflexion ou d’interaction et des tutoriels. Ce "
-"type d’événement de l’ACC 2023 offre une plate-forme pour discuter \n"
+"d’événements créatifs, de réflexion ou d’interaction et des tutoriels. Ce "
+"type d’événement de l’ACC 2023 offre une plateforme pour discuter \n"
 "d'un sujet pointu lié aux villes africaines avec un public spécifiquement "
 "intéressé par ce sujet dans un cadre informel.\n"
 "            "
@@ -4280,8 +4289,8 @@ msgid ""
 msgstr ""
 "\n"
 "Les ateliers traditionnels correspondent généralement aux sujets et aux "
-"défis de l'appel général à communicationde la conférence principale. Dans le "
-"cadre d'un atelier traditionnel, \n"
+"défis de l'appel général à communication de la conférence principale. Dans "
+"le cadre d'un atelier traditionnel, \n"
 "les organisateurs peuvent envisager un programme comprenant un ensemble de "
 "conférences invitées autour d'une thématique définie (avec ou sans "
 "présentation de documents).\n"
@@ -4306,11 +4315,11 @@ msgstr ""
 "\n"
 "Dans l'esprit de la réflexion et de la construction de la communauté, nous "
 "invitons les universitaires de toutes les disciplines et les personnes "
-"représentant différentes communautés de pratique \n"
+"représentants différentes communautés de pratique \n"
 "(y compris le journalisme, la gestion, la santé, le plaidoyer, l'activisme, "
 "l'éducation, l'art, le droit et la politique) à contribuer à des événements "
-"créatifs et de réflexion liés à aux thématiques \n"
-"de la African Cities Conference 2023. \n"
+"créatifs et de réflexion liés aux thématiques \n"
+"de l'African Cities Conference 2023. \n"
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:112
@@ -4339,7 +4348,7 @@ msgstr "Atelier interactif"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:120
 msgid "Urban Art Exhibition or other Urban Art Intervention"
-msgstr "Exposition d'art Urbain ou autre Intervention artistique Urbaine."
+msgstr "Exposition d'art urbain ou autre Intervention artistique urbaine."
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:127
 msgid "Tutorials"
@@ -4476,7 +4485,7 @@ msgid ""
 msgstr ""
 "\n"
 "                <strong>Les sujets et les questions</strong> sur lesquels "
-"portera l'atelier ou le tutoriel.\n"
+"porteront l'atelier ou le tutoriel.\n"
 "                "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:211
@@ -4861,7 +4870,7 @@ msgstr ""
 "finalisés mais également ceux en cours ou ceux déjà publiés (Voir les "
 "détails des types d'articles). \n"
 "Les auteurs doivent choisir selon leur préférence et les exigences de leurs "
-"établissement d’affiliation, de publier leur papier dans le proceeding\n"
+"établissements d’affiliation, de publier leur papier dans le proceeding\n"
 "<a class=\"text_primary\" target=\"_blank\" href=\"https://www.e3s-"
 "conferences.org/\">E3S web of conference </a> ou dans notre livre qui \n"
 "sera publié par la série <a class=\"text_primary\" target=\"_blank\" href="
@@ -4919,10 +4928,11 @@ msgstr ""
 "\n"
 "Si vous choisissez plutôt de publier votre travail dans le <a class="
 "\"text_primary\" target=\"_blank\" href=\"https://www.springer.com/"
-"series/6007\">Springer book GeoJournal Library</a>. \n"
-" Le manuscrit doit suivre <a class=\"text_primary\" target=\"_blank\" href="
-"\"https://medi-ast.org/SCA22/Springer_Guidelines_for_Authors_of_Proceedings."
-"pdf\">Springer template guidelines</a>. \n"
+"series/6007\">Springer book GeoJournal Library</a>, \n"
+" le manuscrit doit suivre les <a class=\"text_primary\" target=\"_blank\" "
+"href=\"https://medi-ast.org/SCA22/"
+"Springer_Guidelines_for_Authors_of_Proceedings.pdf\">Springer template "
+"guidelines</a>. \n"
 "La rédaction du manuscrit doit se faire en utilisant l’un des templates <a "
 "class=\"text_primary\" target=\"_blank\" href=\"https://medi-ast.org/SCA22/"
 "splnproc1703.zip\">MS Word</a> ou \n"
@@ -4946,7 +4956,7 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"Une fois votre papier finalisé, vous pourrai tout d’abord nous envoyer la "
+"Une fois votre papier finalisé, vous pourrez tout d’abord nous envoyer la "
 "version pdf via <a class=\"text_primary font-weight-bold\" target=\"_blank\" "
 "href=\"https://easychair.org/conferences/?conf=civa2023\">easychair</a> \n"
 " pour évaluation et le fichier source vous sera demandé ensuite par notre "
@@ -4976,7 +4986,7 @@ msgstr ""
 "effectué sur tous les papiers et ne sera tolérée qu’une similarité de "
 "maximum \n"
 "15&#37; de toutes les sources + maximum 5&#37; d’une seule source. L’outil "
-"contrôle du plagiat <a class=\"text_primary\" target=\"_blank\" href="
+"de contrôle du plagiat <a class=\"text_primary\" target=\"_blank\" href="
 "\"https://www.ithenticate.com/\">Ithenticate</a> \n"
 "              ou <a class=\"text_primary\" target=\"_blank\" href=\"https://"
 "www.turnitin.com\">Turnitin</a> sera utilisé pour vérifier la similarité "
@@ -5014,8 +5024,8 @@ msgid ""
 msgstr ""
 "\n"
 "Des articles de haute qualité pourraient être invités à être soumis à l'un "
-"de nos numéros spéciaux dans liste qui suit selon la thématique de l'article "
-"et son classement \n"
+"de nos numéros spéciaux dans la liste qui suit selon la thématique de "
+"l'article et son classement \n"
 "dans l'ordre de qualité. Les auteurs des articles sélectionnés seront "
 "invités après la conclusion du comité de pilotage de la conférence et leurs "
 "articles étendu\n"
@@ -5171,8 +5181,8 @@ msgid ""
 msgstr ""
 "\n"
 "Remettant en question la vision actuelle des villes en Afrique, les villes "
-"digitales semblent être des acteurs majeurs de l'urbanisation de l'Afrique. "
-"À l'heure où un \n"
+"digitales semblent jouer un rôle majeur dans l'urbanisation de l'Afrique. À "
+"l'heure où un \n"
 "nouveau paradigme urbain est mis en œuvre mais où des défis intrinsèques "
 "demeurent, le rôle des villes digitales en tant que moteurs du "
 "développement \n"
@@ -5210,9 +5220,9 @@ msgid ""
 msgstr ""
 "\n"
 "La 1ère édition de l’African Cities Conference portera sur la thématique des "
-"<strong>Villes digitales africaines.</strong> Elle vise à accroître  la "
+"<strong>Villes digitales africaines.</strong> Elle vise à accroître la "
 "portée et le rayonnement des activités de recherche, d’innovation et "
-"entrepreneuriale sur le continent africain relative à la numérisation des "
+"d'entrepreneuriat sur le continent africain relative à la numérisation des "
 "villes, ainsi qu’à promouvoir l’excellence \n"
 "scientifique en Afrique.\n"
 "                "
@@ -5229,7 +5239,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"Ainsi, au-delà de son orientation thématique, la ACC a pour but de faire "
+"Ainsi, au-delà de son orientation thématique, l'ACC a pour but de faire "
 "progresser la recherche interdisciplinaire en comblant le fossé "
 "disciplinaire entre les différentes cultures académiques \n"
 "des sciences humaines, des sciences et de la recherche orientée vers "
@@ -5248,19 +5258,15 @@ msgid ""
 msgstr ""
 "\n"
 "Les organisateurs de la conférence invitent tous les acteurs du monde "
-"académique, scientifiques, chercheurs, étudiants, doctorants et post-"
-"doctorants à soumettre \n"
+"académique, scientifiques à soumettre \n"
 "leurs contributions sur le thème des villes digitales dans le cadre de "
 "l'African Cities \n"
 "Conference qui se tiendra à Cotonou, au Bénin, les 23 et 24 mai 2023.\n"
 "            "
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:285
-#: african_cities_lab/home/templates/home/events/civa/guests.html:81
-#: african_cities_lab/home/templates/home/events/civa/sponsors.html:189
-#: african_cities_lab/templates/civa-base.html:192
-msgid "Call for papers"
-msgstr "Appels à contributions"
+msgid "Call for papers "
+msgstr "Appel à contributions"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:493
 msgid ""
@@ -5341,7 +5347,8 @@ msgid "Academic and institutional partners"
 msgstr "Partenaires académiques et institutionnels"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:711
-#: african_cities_lab/templates/civa-base.html:193
+#: african_cities_lab/templates/civa-base.html:120
+#: african_cities_lab/templates/civa-base.html:197
 msgid "Venue & Contacts"
 msgstr "Lieu & Contacts"
 
@@ -5585,7 +5592,7 @@ msgid ""
 msgstr ""
 "\n"
 "L’accueil des participants à la 1ère édition de l'African Cities Conference "
-"se fera à l'hotel Novotel \n"
+"se fera à l'hôtel Novotel \n"
 "Cotonou. Situé sur le très célèbre boulevard de la Marina, à quelques mètres "
 "de la statue emblématique \n"
 "de l’Amazone, il est un cadre ultramoderne doté d’équipements technologiques "
@@ -5607,9 +5614,9 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"Une partie des chambres de l’hôtel Novotel de Cotonou été réservée pour "
+"Une partie des chambres de l’hôtel Novotel de Cotonou a été réservée pour "
 "l'African Cities \n"
-"Conference. D’autres hôtels 3 et 4 étoiles seront bientôt annoncées et les "
+"Conference. D’autres hôtels 3 et 4 étoiles seront bientôt annoncés et les "
 "modalités de réservation seront \n"
 "communiquées aux participants dans les meilleurs délais.\n"
 "          "
@@ -5636,7 +5643,7 @@ msgstr ""
 "Les ressortissants des pays soumis à la procédure de demande de visa peuvent "
 "effectuer les démarches de demande de visa en ligne (e-visa) sur le site <a "
 "href=\"https://evisa.bj/\" class=\"text_primary\" target=\"_blank\">https://"
-"evisa.bj/</a>. Le délais d’obtention du visa est de 7 jours. \n"
+"evisa.bj/</a>. Le délai d’obtention du visa est de 7 jours. \n"
 "La durée maximale de validité d’un visa varie de 30 à 90 jours selon votre "
 "nationalité. Si nécessaire, \n"
 "les organisateurs vous transmettront une lettre officielle de participation, "
@@ -5679,6 +5686,12 @@ msgstr ""
 "Rejoignez l'African Cities Conference (ACC) - Villes digitales\n"
 "          "
 
+#: african_cities_lab/home/templates/home/events/civa/guests.html:81
+#: african_cities_lab/home/templates/home/events/civa/sponsors.html:189
+#: african_cities_lab/templates/civa-base.html:196
+msgid "Call for papers"
+msgstr "Appel à papiers"
+
 #: african_cities_lab/home/templates/home/events/civa/guests.html:85
 msgid ""
 "\n"
@@ -5710,80 +5723,8 @@ msgstr "En attente"
 msgid "Professional Keynote Speakers"
 msgstr "Intervenants professionnels"
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:127
-msgid ""
-"\n"
-"                          Vivien Deparday is a Disaster Risk Management "
-"Specialist with the World Bank’s\n"
-"                          Urban, Resilience, and Land Global Practice, "
-"currently working in the Africa region.\n"
-"                          In his current role, Vivien leads urban resilience "
-"investment operations focused on\n"
-"                          cities in Cameroon, Côte d’Ivoire, and Mali "
-"engaging in integrated flood risk\n"
-"                          management, urban upgrading, solid waste "
-"management, and urban planning at the\n"
-"                          national and subnational level. He also leads the "
-"Africa Disruptive Technology\n"
-"                          Program for Urban Resilience bringing open "
-"innovation and youth engagement to\n"
-"                          resilience projects.\n"
-"                          "
-msgstr ""
-"\n"
-"Vivien Deparday est un spécialiste de la gestion des risques de catastrophe "
-"au sein de la pratique mondiale Urban, Resilience, and Land de la Banque "
-"mondiale, qui travaille actuellement dans la région Afrique. Dans son rôle "
-"actuel, Vivien dirige les opérations d'investissement dans la résilience "
-"urbaine axées sur les villes du Cameroun, de la Côte d'Ivoire et du Mali qui "
-"s'engagent dans la gestion intégrée des risques d'inondation, la "
-"modernisation urbaine, la gestion des déchets solides et la planification "
-"urbaine aux niveaux national et infranational."
-
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:196
-msgid ""
-"\n"
-"                          Graduated in 2013 from the school of surveyors in "
-"Le Mans (France). He is the promoter of \n"
-"                          GeOsm (https://geo.sm/) the very first geolocated "
-"social network aimed at players in the \n"
-"                          digital ecosystem in order to achieve sustainable "
-"development through open innovation. \n"
-"                          Recently deployed on a global scale, this open "
-"platform for technological innovations \n"
-"                          aims to accelerate the appropriation of geospatial "
-"data by those actors who depend \n"
-"                          heavily on it (startups, universities, "
-"municipalities, civil society). His expertise \n"
-"                          is recognized by several international "
-"institutions where he regularly works as a consultant. \n"
-"                          These include: The World Bank, GIZ, UNESCO, UN-"
-"Habitat, AFD, etc.\n"
-"                          "
-msgstr ""
-"\n"
-"Diplômé en 2013 de l’école des géomètres du Mans (France). Il est le "
-"promoteur de GeOsm (https://geo.sm/) le tout premier réseau social "
-"géolocalisé destiné aux acteurs de l'écosystème digital afin de parvenir à "
-"un développement durable par l'innovation ouverte. Déployée récemment à "
-"l'échelle mondiale, cette plateforme ouverte d'innovations technologiques "
-"vise à accélérer l’appropriation de données géospatiales à ces acteurs qui "
-"en dépendent fortement (startups, universités, municipalités, société "
-"civile).Son expertise est reconnue par plusieurs institutions "
-"internationales où il intervient régulièrement comme consultant. On peut "
-"notamment citer : La Banque Mondiale, la GIZ, l'UNESCO, l’UN-Habitat, l'AFD, "
-"etc."
-
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:218
-msgid "More speakers to be announced"
-msgstr "Plus d'intervenants à venir"
-
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:226
-msgid "Academic Keynotes Speakers"
-msgstr "Intervenants académiques"
-
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:252
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:274
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:97
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:119
 msgid ""
 "Director of the School of Architecture, Planning and Design (SAP+D) at the "
 "Polytechnic University (UM6P) of Benguerir - Morocco"
@@ -5791,24 +5732,24 @@ msgstr ""
 "Directeur de l'École d'architecture, d'urbanisme et de design (SAP+D) à "
 "l'Université polytechnique (UM6P) de Benguerir - Maroc"
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:287
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:132
 msgid ""
 "\n"
-"                            Hassan Radoine is an architecture curator, "
-"critic, author and consultant. He is currently the Director of the School of "
+"                          Hassan Radoine is an architecture curator, critic, "
+"author and consultant. He is currently the Director of the School of "
 "Architecture, \n"
-"                            Planning and Design at the Polytechnic "
-"University of Benguerir, Morocco. He was previously the director of the "
-"Ecole Nationale \n"
-"                            d’Architecture in Morocco and the Head of the "
+"                          Planning and Design at the Polytechnic University "
+"of Benguerir, Morocco. He was previously the director of the Ecole "
+"Nationale \n"
+"                          d’Architecture in Morocco and the Head of the "
 "Architecture Department at University of Sharjah, UAE. His research and "
 "practice \n"
-"                            interests include Smart and sustainable Urban "
+"                          interests include Smart and sustainable Urban "
 "Planning, Urban Conservation & Development, Smart and resilient human "
 "establishments, \n"
-"                            Sustainable Contemporary Architecture and "
-"Urbanism in the MENA region.\n"
-"                            "
+"                          Sustainable Contemporary Architecture and Urbanism "
+"in the MENA region.\n"
+"                          "
 msgstr ""
 "\n"
 "Hassan Radoine est un commissaire d'architecture, critique, auteur et "
@@ -5824,21 +5765,21 @@ msgstr ""
 "l'architecture contemporaine durable et l'urbanisme dans la région MENA.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:297
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:142
 msgid ""
 "\n"
-"                            Hassan holds an MPhil. degree in Planning, "
-"Growth and Regeneration from the Department of Land Economy, University of "
+"                          Hassan holds an MPhil. degree in Planning, Growth "
+"and Regeneration from the Department of Land Economy, University of "
 "Cambridge, \n"
-"                            UK where he was a Commonwealth Shared Scholar; "
-"an Architecture Diploma from the National School of Architecture, Rabat, "
+"                          UK where he was a Commonwealth Shared Scholar; an "
+"Architecture Diploma from the National School of Architecture, Rabat, "
 "Morocco \n"
-"                            where he was a Joint Ghana - Morocco Government "
+"                          where he was a Joint Ghana - Morocco Government "
 "Scholar. He has previously practised in Rabat with Atelier Sens-Espace and "
 "in \n"
-"                            Accra with Mawums Ltd, Incept Architectural "
+"                          Accra with Mawums Ltd, Incept Architectural "
 "Consult as well as with Atelier VI Design and Build\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Hassan est titulaire d'une maîtrise en planification, croissance et "
@@ -5852,22 +5793,22 @@ msgstr ""
 "Design and Build.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:335
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:357
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:427
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:449
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:180
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:202
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:272
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:294
 msgid "Professor of Spatial Planning and Urbanism"
 msgstr "Professeur d'aménagement du territoire et d'urbanisme"
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:370
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:215
 msgid ""
 "\n"
-"                            Patrizia Ingalina is an architect and state "
+"                          Patrizia Ingalina is an architect and state "
 "planner in Italy since 1982, attached to the teaching at the University of "
 "Florence between 1982 and 1985, \n"
-"                            I obtained my PhD in Geography and Spatial "
+"                          I obtained my PhD in Geography and Spatial "
 "Planning at Paris 1 Panthéon - Sorbonne in 1993.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Patrizia Ingalina est architecte et urbaniste de l’État en Italie depuis "
@@ -5877,16 +5818,16 @@ msgstr ""
 "Panthéon - Sorbonne en 1993.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:377
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:222
 msgid ""
 "\n"
-"                            As a lecturer at the Institut d'Urbanisme de "
+"                          As a lecturer at the Institut d'Urbanisme de "
 "Paris, from 1995 to 2007, she was able to set up the first courses on the "
 "urban project, her main research subject. \n"
-"                            She then joined the University of Lille as a "
+"                          She then joined the University of Lille as a "
 "Professor, and then Sorbonne University in 2013, where she currently directs "
 "the Master's degree in Urban Planning and Development.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Maîtresse de conférences à l’Institut d’Urbanisme de Paris, de 1995 à 2007, "
@@ -5897,16 +5838,16 @@ msgstr ""
 "Urbanisme et Aménagement.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:384
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:229
 msgid ""
 "\n"
-"                            She has carried out her academic career in "
+"                          She has carried out her academic career in "
 "parallel with her professional activity: first in Florence with design "
 "offices, architectural agencies, but also with the \n"
-"                            Direction du Patrimoine as an architect of "
+"                          Direction du Patrimoine as an architect of "
 "historical monuments; then in Paris in architectural agencies and design "
 "offices.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Elle a mené sa carrière universitaire en parallèle de son activité "
@@ -5917,16 +5858,16 @@ msgstr ""
 "d’études.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:391
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:236
 msgid ""
 "\n"
-"                            With a background in research, higher education "
+"                          With a background in research, higher education "
 "and professional activities, the professor is now committed to promoting "
 "dialogue between professionals and the academic world. \n"
-"                            This priority has led to the involvement of "
-"AREP, Resillience, EMBIX and Icade through a skills sponsorship by the "
-"Sorbonne University Foundation.\n"
-"                            "
+"                          This priority has led to the involvement of AREP, "
+"Resillience, EMBIX and Icade through a skills sponsorship by the Sorbonne "
+"University Foundation.\n"
+"                          "
 msgstr ""
 "\n"
 "Forte d’un parcours entre recherche, enseignement supérieur et activités "
@@ -5938,20 +5879,19 @@ msgstr ""
 "Sorbonne Université.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:462
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:307
 msgid ""
 "\n"
-"                            Kenneth Amaeshi is a Professor of Sustainable "
+"                          Kenneth Amaeshi is a Professor of Sustainable "
 "Finance and Governance at the School of Transnational Governance. He is "
 "currently on leave from the University of Edinburgh, where he is the Chair "
 "in\n"
-"                             Business and Sustainable Development and "
-"Director Scaling Business in Africa. He is also a Visiting Professor of "
-"Leadership and Financial Markets in Africa at the London School of Economics "
-"and \n"
-"                             an Honorary Professor of Business in Africa at "
+"                           Business and Sustainable Development and Director "
+"Scaling Business in Africa. He is also a Visiting Professor of Leadership "
+"and Financial Markets in Africa at the London School of Economics and \n"
+"                           an Honorary Professor of Business in Africa at "
 "the Graduate School of Business, University of Cape Town, South Africa.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Kenneth Amaeshi est professeur de finance durable et de gouvernance à "
@@ -5964,23 +5904,23 @@ msgstr ""
 "de l'université du Cap, en Afrique du Sud.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:470
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:315
 msgid ""
 "\n"
-"                            Kenneth is a leading scholar on sustainable "
+"                          Kenneth is a leading scholar on sustainable "
 "business and finance in the global south. His research interest currently "
 "focuses on financial market reforms and governance, as well as on sector - \n"
-"                            level policies for sustainability and "
+"                          level policies for sustainability and "
 "sustainability strategy in organisations. He has an expert level knowledge "
 "of developing and emerging economies. His research has a very strong "
 "interface \n"
-"                            between business and society, particularly "
+"                          between business and society, particularly "
 "national governments in Africa, where he has an extensive network. Since "
 "2015, he has significantly contributed to developing the intellectual \n"
-"                            foundations of Africapitalism – an economic "
+"                          foundations of Africapitalism – an economic "
 "philosophy for the development of Africa – and championed its mainstreaming "
 "in the global academia.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Kenneth est un éminent spécialiste du commerce et de la finance durables "
@@ -5999,20 +5939,20 @@ msgstr ""
 "mondial.\n"
 "                            "
 
-#: african_cities_lab/home/templates/home/events/civa/speakers.html:479
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:324
 msgid ""
 "\n"
-"                            Besides teaching and researching, Kenneth works "
+"                          Besides teaching and researching, Kenneth works "
 "closely with businesses and governments in Africa, Europe, and Asia. He "
 "leads executive capacity building engagements and consultancy projects \n"
-"                            in the broad areas of sustainable finance, "
+"                          in the broad areas of sustainable finance, "
 "sustainability strategy, leadership, ethics, and governance formultinational "
 "corporations and institutions. Between 2016 and 2017, he was a Scholar \n"
-"                            in Residence at the National Pension Commission, "
+"                          in Residence at the National Pension Commission, "
 "Nigeria. For more on Kenneth, kindly visit his personal website <a href="
 "\"https://www.kennethamaeshi.com/\" class=\"text_primary\">https://www."
 "kennethamaeshi.com/</a>.\n"
-"                            "
+"                          "
 msgstr ""
 "\n"
 "Outre l'enseignement et la recherche, Kenneth travaille en étroite "
@@ -6028,6 +5968,52 @@ msgstr ""
 "\"https://www.kennethamaeshi.com/\" class=\"text_primary\">https://www."
 "kennethamaeshi.com/</a>.\n"
 "                            "
+
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:388
+msgid ""
+"\n"
+"                          Is a lecturer at Bordeaux INP since 2006 and "
+"specializes in geomatics and AI for Earth observation.\n"
+"                          She defended her thesis in 2005 with CNES (Centre "
+"National des Etudes Spatiales) and IGN\n"
+"                          (Institut Géographique National) on 3D modeling of "
+"buildings from satellite data THR.\n"
+"                          She is president and founding member of the "
+"association AGEOS - African Association for Geospatial\n"
+"                          Development since November 2016. She organizes "
+"many seminars of awareness and technology watch in\n"
+"                          geospatial in Tunisia and open to the African "
+"scale. She advocates for opengeodata in Tunisia and\n"
+"                          the animation of the community of reusers via the "
+"organization of Tunisia Opengeodatahack.\n"
+"                          She coordinates several projects to support "
+"ministries and local authorities in Tunisia for\n"
+"                          the implementation of their GIS, with the "
+"inclusion of citizens via openstreetmap.\n"
+"                          "
+msgstr ""
+"\n"
+"Elle est maître de conférences à Bordeaux INP depuis 2006 et se spécialise "
+"en géomatique et IA pour l'observation de la Terre. Elle a soutenu sa thèse "
+"en 2005 avec le CNES (Centre National des Etudes Spatiales) et l'IGN "
+"(Institut Géographique National) sur la modélisation 3D de bâtiments à "
+"partir de données satellitaires THR .Elle est présidente et membre "
+"fondatrice de l'association AGEOS- African Association for Geospatial "
+"Development depuis Novembre 2016. Elle organise de nombreux séminaires de "
+"sensibilisation et veille technologique en géospatial en Tunisie et ouverts "
+"à l'échelle africaine. Elle milite pour l'opengeodata en Tunisie et "
+"l'animation de la  communauté des réutilisateurs via l'organisation de  "
+"Tunisia Opengeodatahack. Elle coordonne plusieurs projets d'appui aux "
+"ministères et collectivités locales en Tunisie pour la mise en place de leur "
+"SIG, avec l'inclusion des citoyens via la cartographie openstreetmap."
+
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:419
+msgid "Academic Keynotes Speakers"
+msgstr "Intervenants académiques"
+
+#: african_cities_lab/home/templates/home/events/civa/speakers.html:566
+msgid "More speakers to be announced"
+msgstr "Plus d'intervenants à venir"
 
 #: african_cities_lab/home/templates/home/events/civa/sponsors.html:9
 msgid "Sponsors | African Cities Conference"
@@ -6588,14 +6574,14 @@ msgid "Connect with us :"
 msgstr "Suivez-nous"
 
 #: african_cities_lab/templates/base.html:300
-#: african_cities_lab/templates/civa-base.html:198
+#: african_cities_lab/templates/civa-base.html:202
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
 
-#: african_cities_lab/templates/civa-base.html:170
+#: african_cities_lab/templates/civa-base.html:174
 msgid "An event by"
 msgstr "Un événement de"
 
-#: african_cities_lab/templates/civa-base.html:190
+#: african_cities_lab/templates/civa-base.html:194
 msgid "About African Cities Lab"
 msgstr "À propos d'African Cities Lab"

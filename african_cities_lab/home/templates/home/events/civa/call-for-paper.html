@@ -44,10 +44,10 @@
     }
     .cfp-card > a {
       position: relative;
-      display: flex;
+      display: flex;                                
       flex-direction: column;
       width: 100%;
-      min-height: 275px;
+      min-height: 325px;
       border-radius: 5px;
       background-color: #fff;
       box-shadow: 0 3px 10px hsl(5deg 13% 82% / 34%);
@@ -213,7 +213,7 @@
           <div class="cfp-card">
             <a href="{% url 'cfp-details' %}">
               <div class="cfp-card__header"> 
-                <span class="h4">Call for papers</span>
+                <span class="h4">{% blocktranslate %} Call for papers {% endblocktranslate %}</span>
               </div>
               <div class="cfp-card__body"> 
                 {% blocktranslate %}

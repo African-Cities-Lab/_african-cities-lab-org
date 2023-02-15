@@ -114,6 +114,10 @@
                           {% url 'acc-papers' as url %}
                           <li class="nav-item mx-2">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "ACC Calls" %}</a>
+                          </li>   
+                          {% url 'acc-informations' as url %}
+                          <li class="nav-item mx-2">
+                            <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contacts" %}</a>
                           </li>                             
                         </ul>
 
