@@ -522,7 +522,18 @@
                   </h4>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#ACC-highlights">
                     <div class="accordion-body">
-                    
+                      {% blocktranslate %}
+                        Through a series of 4 webinars, the partners of the African Cities Lab,
+                        in collaboration with EPFL, are providing insights for the political and scientific
+                        dialogue in the run-up to the Cotonou conference in 2023.
+                        The objective of these webinars is to discuss the major themes that make
+                        up the African digital city and set the framework for the agenda of the
+                        Conference. This webinar series will present research, trends, use cases
+                        and critical insights on how cities are or could be more effective in
+                        harnessing and leveraging digital technologies to promote sustainable
+                        development and achieve SDGs.
+                        {% endblocktranslate %}
+                        <a href="{% url 'events' %}" class="text_primary">{% translate "Learn more" %}</a>
                     </div>
                   </div>
                 </div>
@@ -585,32 +596,7 @@
                      
                     </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h4 class="accordion-header" id="flush-headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                      {% translate "ACC’s Cotonou City Tour" %}
-                    </button>
-                  </h4>
-                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#ACC-highlights">
-                    <div class="accordion-body">
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h4 class="accordion-header" id="flush-headingSept">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-headingSept" aria-expanded="false" aria-controls="flush-headingSept">
-                      {% translate "Gala Diner" %}
-                    </button>
-                  </h4>
-                  <div id="flush-headingSept" class="accordion-collapse collapse" aria-labelledby="flush-headingSept" data-bs-parent="#ACC-highlights">
-                    <div class="accordion-body">
-                      
-                    </div>
-                  </div>
-                </div>
-
+                </div> 
               </div>
             </div>
           </div>

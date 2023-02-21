@@ -2543,11 +2543,11 @@ h2.bannner__add-text {
 }
 
 @media (min-width: 1200px) {
-	.container-fluid {
-		padding-right: 50px;
-		padding-left: 50px;
+	.container-fluid, #main-nav>.container-fluid {
+		padding-right: 85px;
+		padding-left: 85px;
 	}
-	#main-nav>.container-fluid {
+	#main-nav>.civa-header.container-fluid {
 		padding-right: 30px;
 		padding-left: 30px;
 	}

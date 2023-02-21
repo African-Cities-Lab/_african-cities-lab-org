@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 18:15+0100\n"
+"POT-Creation-Date: 2023-02-21 13:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,6 +266,7 @@ msgid "African Cities Lab Webinars"
 msgstr "Les webinaires African Cities Lab"
 
 #: african_cities_lab/home/templates/home/about.html:212
+#: african_cities_lab/home/templates/home/events/civa/civa.html:525
 msgid ""
 "\n"
 "                        Through a series of 4 webinars, the partners of the "
@@ -489,7 +490,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/event_index_page.html:97
 #: african_cities_lab/home/templates/home/event_index_page.html:140
 #: african_cities_lab/home/templates/home/event_index_page.html:181
-#: african_cities_lab/home/templates/home/events/civa/civa.html:723
+#: african_cities_lab/home/templates/home/events/civa/civa.html:536
+#: african_cities_lab/home/templates/home/events/civa/civa.html:709
 msgid "Learn more"
 msgstr "En savoir plus"
 
@@ -3132,15 +3134,14 @@ msgstr "Appel au Consortium doctoral et à l'école de printemps"
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:64
 msgid ""
 "\n"
-"            The ACC 2023 Doctoral & Spring School Consortium (DC) will take "
-"place virtually within the framework of the 1st International Conference "
-"on \n"
-"            African Cities - Digital and Smart Cities, which will take place "
-"on May 23-24, 2023 at the Novotel hotel in Cotonou, Benin. This forum \n"
-"            will allow early career doctoral students as well as post-"
-"graduate students to focus on the study of an issue related to African "
-"cities within \n"
-"            the scope of the ACC 2023 conference themes.\n"
+"            The ACC 2023 Doctoral Consortium (DC) & Spring School will be "
+"held virtually as part of the 1st International Conference on African Cities "
+"- \n"
+"            Digital and Smart Cities, which will take place on 23 and 24 May "
+"2023 at the Novotel hotel in Cotonou, Benin. This forum will allow \n"
+"            early career PhD students as well as postgraduate students to "
+"focus on an issue related to African cities within the scope of the ACC 2023 "
+"conference themes.\n"
 "            "
 msgstr ""
 "\n"
@@ -3155,20 +3156,18 @@ msgstr ""
 "dans le scope des thématiques de l'ACC 2023.\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:72
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:71
 msgid ""
 "\n"
 "            The DC offers the opportunity to present and discuss their "
-"doctoral research ideas and progress in a supportive, formative, yet "
-"critical environment, \n"
-"            and to receive feedback from examiners, mentors, and peers in "
-"the field of their thesis topic. The doctoral consortium will also provide "
-"opportunities \n"
-"            for networking and collaboration with other members of the ACC "
-"community. We welcome submissions in all areas of research related to "
-"African cities \n"
-"            and particularly those of digital and smart cities (see \"Topics "
-"of Interest\").\n"
+"doctoral research ideas and progress in a supportive, formative yet \n"
+"            critical environment, and to receive feedback from examiners, "
+"mentors and peers in the field of their thesis topic. The doctoral \n"
+"            consortium will also provide opportunities for networking and "
+"collaboration with other members of the ACC community. \n"
+"            We welcome submissions in all areas of research related to "
+"African cities and particularly in digital and smart cities (see \"Topics of "
+"Interest\").\n"
 "            "
 msgstr ""
 "\n"
@@ -3184,20 +3183,19 @@ msgstr ""
 "villes digitales et intelligentes (voir \"Thématiques\").\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:80
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:79
 msgid ""
 "\n"
-"            The event is open to both early career and late career doctoral "
-"candidates and asks them to formulate and submit a concrete research "
-"proposal, preferably \n"
-"            supported by preliminary results. The proposal will be reviewed "
-"by the conference program committee. Accepted papers will be mentored by a "
-"designated mentor, \n"
-"            usually an experienced researcher in the field.  If accepted, "
-"students will be required to register and attend the event, which will "
-"include a series of \n"
-"            interactive activities with a spring school. Submission details "
-"can be found below under \"ACC's DC Submission Details\".\n"
+"            The event is open to both early-career and late-career PhD "
+"candidates and asks them to formulate and submit a concrete research \n"
+"            proposal, preferably supported by preliminary results. The "
+"submission will be reviewed by the conference programme committee. \n"
+"            Accepted papers will be supervised by a designated mentor, "
+"usually an experienced researcher in the field.  \n"
+"            If accepted, students will be required to register and attend "
+"the event, which will include a series of interactive activities \n"
+"            with a spring school. Details of the submission can be found "
+"below under \"ACC's DC Submission Details\".\n"
 "            "
 msgstr ""
 "\n"
@@ -3215,20 +3213,20 @@ msgstr ""
 "            "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:91
-msgid "DC Submission Details - ACC 2023"
+msgid "ACC’s DC Submission Details "
 msgstr "Détails de la soumission des DC - ACC 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:95
 msgid ""
 "\n"
-"              Students must submit a 5-8 page (Not including references and "
-"appendices) description of their doctoral research proposal. Papers must be "
-"written \n"
-"              in English and follow the <a class=\"text_primary\" target="
-"\"_blank\" href=\"https://www.e3s-conferences.org/\">E3S web of conference </"
-"a> formatting \n"
-"              guidelines available <a class=\"text_primary\" target=\"_blank"
-"\" href=\"https://www.webofconferences.org/authors\">HERE</a>.\n"
+"              Students must submit a 3 - 6 page description (excluding "
+"references and appendices) of their doctoral research proposal. \n"
+"              Papers must be written in English and follow the <a class="
+"\"text_primary\" target=\"_blank\" href=\"https://www.e3s-conferences.org/"
+"\">E3S web of conference </a> \n"
+"              formatting guidelines available <a class=\"text_primary\" "
+"target=\"_blank\" href=\"https://www.webofconferences.org/authors\">HERE</"
+"a>.\n"
 "              "
 msgstr ""
 "\n"
@@ -3245,8 +3243,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:102
 msgid ""
 "\n"
-"              Articles must have a single author (the doctoral candidate). "
-"Supervisors, others involved and funders should be acknowledged in an "
+"              Papers must have a single author (the PhD candidate). "
+"Supervisors, other persons involved and funders should be acknowledged in an "
 "Acknowledgements section.\n"
 "              "
 msgstr ""
@@ -3260,7 +3258,7 @@ msgstr ""
 msgid ""
 "\n"
 "              All proposals must be submitted electronically via the "
-"EasyChair conference submission system. \n"
+"EasyChair conference submission system.\n"
 "              <a class=\"text_primary\" target=\"_blank\" href=\"https://"
 "easychair.org/conferences/?conf=civa2023\">https://easychair.org/"
 "conferences/?conf=civa2023</a>\n"
@@ -3277,7 +3275,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:113
 msgid ""
 "\n"
-"              All DC paper submissions must contain the following:\n"
+"              All submissions of papers for the DC must contain the "
+"following elements:\n"
 "              "
 msgstr ""
 "\n"
@@ -3288,8 +3287,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:119
 msgid ""
 "\n"
-"                <strong>Context and motivation:</strong> What is the social "
-"and research context of the research?\n"
+"                <strong>Background and motivation:</strong> What is the "
+"societal and research context of the research?\n"
 "                "
 msgstr ""
 "\n"
@@ -3300,8 +3299,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:124
 msgid ""
 "\n"
-"                <strong>Statement of the problem:</strong> What is the "
-"general problem that the research addresses?\n"
+"                <strong>Problem statement:</strong> What is the general "
+"problem that the research addresses?\n"
 "                "
 msgstr ""
 "\n"
@@ -3324,8 +3323,8 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:134
 msgid ""
 "\n"
-"                <strong>Research Questions/Challenges:</strong> What "
-"questions does the research answer?\n"
+"                <strong>Research questions/challenges:</strong> What are the "
+"questions the research answers?\n"
 "                "
 msgstr ""
 "\n"
@@ -3360,7 +3359,7 @@ msgstr ""
 msgid ""
 "\n"
 "                <strong>Discussion and future work:</strong> What are the "
-"intermediate conclusions, what are the next steps planned?\n"
+"intermediate findings, and what are the next steps planned?\n"
 "                "
 msgstr ""
 "\n"
@@ -3372,24 +3371,26 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:155
 msgid ""
 "\n"
-"              The accepted CD papers will be published in the main "
-"proceedings of the 1st International Conference on African Cities and more "
-"precisely \n"
-"              in the proceeding E3S web of conference indexed in Scopus, WoS "
-"and many others. Authors will have the opportunity to decline to \n"
-"              be included in these proceedings.\n"
+"              Accepted CD papers will be published in the main proceedings "
+"of the 1st International Conference on African Cities and \n"
+"              more specifically in the proceeding <a class=\"text_primary\" "
+"target=\"_blank\" href=\"https://www.e3s-conferences.org/\">E3S web of "
+"conference</a> \n"
+"              indexed in Scopus, WoS and many others. Authors will have the "
+"opportunity to decline to be included in these proceedings.\n"
 "              "
 msgstr ""
 "\n"
 "Les articles de Doctoral Consortium acceptés seront publiés dans les "
 "principaux actes de l'African Cities Conference et plus précisément \n"
-"dans le proceeding E3S web of conference indexé dans Scopus, WoS et bien "
-"d’autres. Les auteurs auront la possibilité de refuser \n"
-"d'être inclus dans ces actes.\n"
+"dans le proceeding <a class=\"text_primary\" target=\"_blank\" href="
+"\"https://www.e3s-conferences.org/\">E3S web of conference</a> \n"
+" indexé dans Scopus, WoS et bien d’autres. Les auteurs auront la possibilité "
+"de refuser d'être inclus dans ces actes.\n"
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:164
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:185
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:187
 msgid "Submit your article"
 msgstr "Soumettez votre article"
 
@@ -3398,8 +3399,8 @@ msgid "ACC’s DC important dates"
 msgstr "Les dates importantes"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:176
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:90
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:211
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:89
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:227
 msgid "Submission deadline:"
 msgstr "Date limite de soumission des articles :"
 
@@ -3408,37 +3409,37 @@ msgid "March 25, 2023"
 msgstr "25 Mars 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:180
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:94
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:150
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:215
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:93
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:151
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:231
 msgid "Notification of acceptance:"
 msgstr "Avis d'acceptation :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:181
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:147
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:148
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:236
 msgid "April 15, 2023"
 msgstr "15 Avril 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:184
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:98
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:219
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:97
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:235
 msgid "Camera-ready Submission:"
 msgstr "Soumission prête à diffuser :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:185
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:99
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:98
 msgid "May 05, 2023"
 msgstr "05 Mai 2023"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:188
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:102
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:101
 msgid "Registration due date:"
 msgstr "Date limite d'inscription :"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:189
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:103
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:155
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:220
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:102
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:156
 msgid "May 15, 2023"
 msgstr "15 Mai 2023"
 
@@ -3447,7 +3448,7 @@ msgid "DC & Spring School date:"
 msgstr "Date du DC & Ecole de printemps"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:193
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:111
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:110
 msgid "May 23-24, 2023"
 msgstr "23-24 Mai 2023"
 
@@ -3456,9 +3457,11 @@ msgid "Doctoral Consortium & Spring School chairs "
 msgstr "Consortium doctoral et présidents de l'école de printemps "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:204
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:187
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:322
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:266
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:205
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:185
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:324
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:325
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:295
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:111
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:115
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:134
@@ -3471,24 +3474,24 @@ msgstr "Consortium doctoral et présidents de l'école de printemps "
 msgid "Center of Urban System CUS, UM6P, Benguérir, Morocco"
 msgstr "Centre du Système Urbain, UM6P, Benguérir, Maroc"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:215
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:216
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:216
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:198
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:332
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:196
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:335
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:51
 msgid " Call for papers "
 msgstr "Appel à papiers"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:218
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:219
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:235
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:335
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:277
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:338
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:306
 msgid " Call for Poster & Demos "
 msgstr "Appel à posters et démos"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:221
+#: african_cities_lab/home/templates/home/events/civa/call-for-doctoral.html:222
 #: african_cities_lab/home/templates/home/events/civa/call-for-paper.html:254
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:280
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:309
 msgid " Call for Workshops & Tutorials "
 msgstr "Appel à ateliers & formations"
 
@@ -3949,12 +3952,12 @@ msgstr "Appel à posters et démos"
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:63
 msgid ""
 "\n"
-"          The poster and demo session at the 1st African Cities Conference "
-"complements the research session and provides an opportunity to \n"
-"          present recent findings and innovative implementations in an "
-"informal and interactive setting. During the poster and demo session, \n"
-"          authors are encouraged to engage directly with conference "
-"participants and discuss their work.\n"
+"          The poster and demo session of the 1st African Cities Conference "
+"complements the research session and provides an opportunity to present \n"
+"          recent results and innovative implementations in an informal and "
+"interactive setting. During the poster and demo session, authors are \n"
+"          encouraged to engage directly with conference participants and "
+"discuss their work.\n"
 "          "
 msgstr ""
 "\n"
@@ -3971,11 +3974,12 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:70
 msgid ""
 "\n"
-"          We invite authors to submit work related to African cities: "
-"digital and smart cities that address, but are not limited to, the \n"
-"          conference's research themes (See ACC's topics). However, we also "
-"welcome papers that have already been seen in other venues \n"
-"          but are to be shared with the ACC 2023 community.\n"
+"          We invite authors to submit work related to African Cities: "
+"Digital and Smart Cities that addresses, but is not limited to, the "
+"conference \n"
+"          research themes (See ACC's topics). However, we also welcome "
+"papers that have already been seen in other venues but are to be shared with "
+"the ACC 2023 community.\n"
 "          "
 msgstr ""
 "\n"
@@ -3987,14 +3991,14 @@ msgstr ""
 "mais qui doivent être partagés avec la communauté ACC 2023.\n"
 "          "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:77
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:76
 msgid ""
 "\n"
 "          <strong>NB:</strong> Authors of research papers accepted for the "
-"Research track are explicitly invited to present their work through a poster "
-"or \n"
-"          demo at the Poster and Demo session to further discuss their work "
-"with the community and expand their network with other researchers.\n"
+"Research Track are explicitly invited to present their work through a poster "
+"or demo in the Poster and \n"
+"          Demo session to further discuss their work with the community and "
+"expand their network with other researchers.\n"
 "          "
 msgstr ""
 "\n"
@@ -4006,50 +4010,51 @@ msgstr ""
 "d’autres chercheurs.\n"
 "          "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:86
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:142
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:207
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:85
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:143
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:223
 msgid "Important dates"
 msgstr "Les dates importantes"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:91
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:90
 msgid "April 20, 2023"
 msgstr "20 Avril 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:95
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:151
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:94
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:152
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:240
 msgid "April 30, 2023"
 msgstr "30 Avril 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:106
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:105
 msgid "Final video and poster submission:"
 msgstr "Soumission finale de la vidéo et du poster :"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:107
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:106
 msgid "May 10, 2023"
 msgstr "10 Mai 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:110
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:223
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:109
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:243
 msgid "Conference date:"
 msgstr "Date de la conférence"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:119
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:118
 msgid "Submission guidilines & Review process of Posters & Demos"
 msgstr "Directives de soumission et processus d'examen des posters et démos"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:123
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:122
 msgid ""
 "\n"
 "            Authors should submit an abstract of no more than two pages "
-"(excluding references) for review. All submissions must be written in "
-"English, \n"
-"            following the <a class=\"text_primary\" target=\"_blank\" href="
-"\"https://www.e3s-conferences.org/\">E3S web of conference </a> formatting "
-"guidelines, \n"
-"            and submitted electronically via the <a class=\"text_primary "
-"font-weight-bold\" target=\"_blank\" href=\"https://easychair.org/"
-"conferences/?conf=civa2023\">Easychair Submission system</a>.\n"
+"(excluding references) for review. All submissions should be written in "
+"English, following the\n"
+"            <a class=\"text_primary\" target=\"_blank\" href=\"https://www."
+"e3s-conferences.org/\">E3S web of conference </a>, formatting guidelines, "
+"and submitted electronically \n"
+"            via the <a class=\"text_primary font-weight-bold\" target="
+"\"_blank\" href=\"https://easychair.org/conferences/?"
+"conf=civa2023\">Easychair Submission system</a>.\n"
 "            "
 msgstr ""
 "\n"
@@ -4063,16 +4068,17 @@ msgstr ""
 "org/conferences/?conf=civa2023\">Easychair</a>.\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:131
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:130
 msgid ""
 "\n"
 "              <strong>Demos:</strong> Demo papers should present mature or "
 "prototype systems in which practical problems of African cities are "
-"addressed. Submissions should clearly define \n"
-"              the objective, scope and audience. All submissions must "
-"provide a URL to an online version of their demo or, alternatively, provide "
-"a URL to a video \n"
-"              showcasing the key features of their demo.\n"
+"addressed. \n"
+"              Submissions should clearly define the objective, scope and "
+"audience. All submissions should provide a URL to an online version of "
+"their \n"
+"              demo or, alternatively, provide a URL to a video presenting "
+"the main features of their demo.\n"
 "              "
 msgstr ""
 "\n"
@@ -4085,14 +4091,14 @@ msgstr ""
 "présentant les principales caractéristiques de leur démo.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:138
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:137
 msgid ""
 "\n"
 "              <strong>Posters:</strong> Posters submitted should describe "
-"recent research findings, ongoing research projects, or work in progress "
-"related to African cities. Additional links \n"
-"              to relevant resources are encouraged to be included in the "
-"submission.\n"
+"recent research findings, current research projects or work in progress "
+"related \n"
+"              to African cities. Additional links to relevant resources are "
+"encouraged to be included in the submission.\n"
 "              "
 msgstr ""
 "\n"
@@ -4103,14 +4109,15 @@ msgstr ""
 "soumission.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:146
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:145
 msgid ""
 "\n"
 "            Authors should indicate whether their submission is a poster or "
-"a demonstration article. Submissions should not be anonymized. Each "
-"submission will be \n"
-"            reviewed by at least 2 members of the TPC via a single blind "
-"review process and the program chair will decide on final acceptance under \n"
+"a demonstration article. Submissions should not be anonymised. Each "
+"submission \n"
+"            will be reviewed by at least 2 TPC members via a single-blind "
+"review process and the program chair will decide on final acceptance under "
+"the \n"
 "            recommendation of the Poster & Demos session chairs.\n"
 "            "
 msgstr ""
@@ -4123,29 +4130,27 @@ msgstr ""
 "recommandation des chairs de session Poster & Demos.\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:155
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:265
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:154
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:266
 msgid "Submit your proposal"
 msgstr "Soumettez votre proposition"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:163
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:162
 msgid "Presentations and Publication of Posters & Demos"
 msgstr "Présentations et publication de posters et de démos"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:167
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:166
 msgid ""
 "\n"
-"            The authors of accepted demos and posters will be published in "
-"the proceedings of the 1st African Cities Conference, in the <a class="
+"            Accepted two-page Posters and Demos will be published in the "
+"proceedings of the 1st African Cities Conference, in the <a class="
 "\"text_primary\" target=\"_blank\" href=\"https://www.e3s-conferences.org/"
 "\">E3S web of conference </a>, \n"
 "            in open access. All accepted papers will also be available on "
-"the conference website. Authors are encouraged to upload additional "
-"materials \n"
-"            (e.g., images, videos) that will be available on the conference "
-"website. The authors of accepted demos and posters will be asked to provide "
-"a final version \n"
-"            of their videos and posters two weeks before the conference.\n"
+"the conference website. Authors are encouraged to upload additional material "
+"(e.g. images, videos) which will be available on the conference website. \n"
+"            Accepted demos and posters will be required to provide a final "
+"version of their videos and posters two weeks before the conference.\n"
 "            "
 msgstr ""
 "\n"
@@ -4162,7 +4167,7 @@ msgstr ""
 "et posters deux semaines avant la conférence.\n"
 "            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:175
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:173
 msgid ""
 "\n"
 "            At least one of the authors must be a registered conference "
@@ -4173,24 +4178,24 @@ msgstr ""
 "Au moins un des auteurs doit être un participant inscrit à la conférence, et "
 "assister à la session de posters/démos pour présenter le travail.            "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:184
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:182
 msgid "Posters & Demos Session Chairs"
 msgstr "Présidents des sessions de posters et de démos "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:188
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:186
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:113
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:127
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:184
 msgid "University of Dschang, Camerooon"
 msgstr "Université de Dschang, Cameroun"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:201
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:199
 msgid " Call for Workshops & Tutorials"
 msgstr "Appel à ateliers & formations"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:204
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:338
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:283
+#: african_cities_lab/home/templates/home/events/civa/call-for-poster.html:202
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:341
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:312
 msgid " Call for Doctoral Consortium & Spring School "
 msgstr "Appel au Consortium doctoral et à l'école de printemps"
 
@@ -4208,13 +4213,15 @@ msgstr "Appel à ateliers & formations"
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:63
 msgid ""
 "\n"
-"            In the context of the 1st African Cities Conference, we are "
-"launching a call for proposals for the organization of workshop sessions, \n"
+"            In the framework of the 1st African Cities Conference (ACC "
+"2023), we are launching a call for proposals for the organisation of "
+"workshop sessions, \n"
 "            creative or reflective events and tutorials during ACC 2023.  "
-"These types of events at ACC 2023 will provide a platform to discuss \n"
-"            a specific topic related to African cities with an audience "
-"specifically interested in that topic in an informal setting (as opposed to "
-"the main conference).\n"
+"These types of ACC 2023 events will provide a platform to discuss a specific "
+"topic \n"
+"            related to African cities with an audience specifically "
+"interested in that topic in an informal setting (as opposed to the leading "
+"conference).\n"
 "            "
 msgstr ""
 "\n"
@@ -4231,16 +4238,16 @@ msgstr ""
 msgid ""
 "\n"
 "            We invite proposals for events that promote discussion, "
-"interdisciplinary exchange and interaction, scientific discourse, and "
-"creative and critical thinking, \n"
-"            rather than simply being mini-conferences. In order to vary and "
-"diversify the activities of ACC 2023, we offer potential organizers of such "
-"events flexibility \n"
-"            in the formats that best suit the objectives of their proposal. "
-"We also welcome proposals from research communities that are not always "
-"featured in African \n"
-"            cities events and conferences so that the conference is not "
-"limited to typical researchers.\n"
+"interdisciplinary exchange and interaction, scholarly discourse, and "
+"creative and critical \n"
+"            thinking, rather than being mere mini-conferences. To vary and "
+"diversify the activities of the ACC 2023, we offer potential organisers of "
+"such \n"
+"            events flexibility in the formats that best suit the objectives "
+"of their proposal. We also welcome proposals from research communities that "
+"are \n"
+"            not always featured in African cities' events and conferences so "
+"that the conference is not limited to typical researchers.\n"
 "            "
 msgstr ""
 "\n"
@@ -4260,10 +4267,10 @@ msgstr ""
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:78
 msgid ""
 "\n"
-"            So in this category of events, we hope to welcome three types of "
-"contributions: traditional workshops, creative events and tutorials, each "
-"with its own \n"
-"            particularities as described below.\n"
+"            Thus, within this category of events, we hope to welcome three "
+"types of contributions: traditional workshops, creative events and "
+"tutorials, \n"
+"            each with its own particularities as described below.\n"
 "            "
 msgstr ""
 "\n"
@@ -4280,11 +4287,12 @@ msgstr "Ateliers classiques"
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:91
 msgid ""
 "\n"
-"              Traditional workshops generally correspond to the topics and "
-"challenges of the general call for papers of the main conference. In a "
-"traditional workshop, \n"
-"              organizers may consider a program consisting of a set of "
-"invited talks around a certain theme (with or without paper presentations).\n"
+"              Traditional workshops usually correspond to the topics and "
+"challenges of the general call for papers of the main conference. In the "
+"context of a \n"
+"              traditional workshop, the organisers may consider a programme "
+"consisting of a set of invited talks around a certain theme (with or without "
+"paper presentations).\n"
 "              "
 msgstr ""
 "\n"
@@ -4297,7 +4305,7 @@ msgstr ""
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:101
-msgid "Creative, Interactive or Thinking Events"
+msgid "Creative, Interactive or Reflective Events"
 msgstr "Evénements Créatifs, Interactifs ou de réflexion"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:105
@@ -4305,11 +4313,12 @@ msgid ""
 "\n"
 "              In the spirit of reflection and community building, we invite "
 "academics from all disciplines and individuals representing different "
-"communities of practice \n"
-"              (including journalism, management, health, advocacy, activism, "
-"education, art, law, and politics) to contribute to creative and reflective "
-"events related \n"
-"              to the African Cities Conference 2023. \n"
+"communities \n"
+"              of practice (including journalism, management, health, "
+"advocacy, activism, education, art, law and politics) to contribute to "
+"creative and \n"
+"              reflective events related to the African Cities Conference "
+"2023. \n"
 "              "
 msgstr ""
 "\n"
@@ -4335,36 +4344,40 @@ msgstr ""
 "              "
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:117
-msgid "Speeches, Presentations, Urban Quick Talks"
+msgid "Speeches, Presentations, Urban lightning talks"
 msgstr "Discours, Présentations, Argumentaires urbains éclairs"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:118
-msgid "Discussions or brainstorming sessions"
+msgid "Debates or brainstorming sessions,"
 msgstr "Débats ou séances de réflexion,"
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:119
-msgid "Interactive workshop"
-msgstr "Atelier interactif"
+msgid "Non-conference,"
+msgstr ""
 
 #: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:120
-msgid "Urban Art Exhibition or other Urban Art Intervention"
+msgid "Interactive workshop,"
+msgstr "Atelier interactif"
+
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:121
+msgid "Urban art exhibition or other urban art intervention."
 msgstr "Exposition d'art urbain ou autre Intervention artistique urbaine."
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:127
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:128
 msgid "Tutorials"
 msgstr "Tutoriels"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:131
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:132
 msgid ""
 "\n"
-"              In this category of event, unlike traditional workshops, "
-"creative events, tutorials are intended for reasonably well established "
-"topics. However, given that topics \n"
-"              on the challenges of African cities are emerging research "
-"topics, we hope to welcome tutorials here that link well-established topics "
-"from other disciplines \n"
-"              to African city topics. We encourage tutorials to be "
-"interactive in order to engage the audience.\n"
+"              In this category of event, unlike traditional workshops, and "
+"creative events, tutorials are aimed at reasonably well-established "
+"topics. \n"
+"              However, given that topics on the challenges of African cities "
+"are emerging research topics, we hope to welcome them here, \n"
+"              especially tutorials that link well-established topics from "
+"other disciplines to African city topics. We encourage tutorials to be "
+"interactive to engage the audience.\n"
 "              "
 msgstr ""
 "\n"
@@ -4378,27 +4391,27 @@ msgstr ""
 "d'impliquer le public.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:146
-msgid "Workshop submission deadline:"
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:147
+msgid "Workshop proposal deadline:"
 msgstr "Date limite pour les propositions d'ateliers :"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:154
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:155
 msgid "Deadline for camera-ready submission:"
 msgstr "Le papier de l'atelier recommandé est prêt à être diffusé :"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:158
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:159
 msgid "ACC’s 2023 Workshop & Tutorial Date:"
 msgstr "Date de l'Atelier et tutorat de l'ACC 2023 :"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:159
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:160
 msgid "May 24, 2023"
 msgstr "24 Mai 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:167
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:168
 msgid "Submission Proposal Guidelines"
 msgstr "Directives pour les propositions de soumission"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:171
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:172
 msgid ""
 "\n"
 "              Proposals should be submitted via Easychair: \n"
@@ -4414,11 +4427,13 @@ msgstr ""
 "conf=hhai2023</a>.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:177
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:178
 msgid ""
 "\n"
 "              Your proposal should not exceed 8 pages (excluding references) "
-"in IOS format, and should include the following information:\n"
+"in the <a class=\"text_primary\" target=\"_blank\" href=\"https://www."
+"webofconferences.org/authors\">Web of conference template</a>\n"
+"               and should include the following information:\n"
 "              "
 msgstr ""
 "\n"
@@ -4426,7 +4441,7 @@ msgstr ""
 "IOS, et doit inclure les informations suivantes :\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:184
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:186
 msgid ""
 "\n"
 "                <strong>Title and summary</strong> of the workshop or "
@@ -4438,11 +4453,11 @@ msgstr ""
 "tutoriel.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:189
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:191
 msgid ""
 "\n"
 "                <strong>Name, affiliation and short biography</strong> of "
-"each organizer.\n"
+"any organiser.\n"
 "                "
 msgstr ""
 "\n"
@@ -4450,11 +4465,11 @@ msgstr ""
 "chaque organisateur.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:194
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:196
 msgid ""
 "\n"
-"                    We recommend at least two organizers who are familiar "
-"with the field and have complementary skills.\n"
+"                    We recommend at least two organisers, who know the field "
+"well and have complementary skills.\n"
 "                    "
 msgstr ""
 "\n"
@@ -4462,12 +4477,12 @@ msgstr ""
 "domaine et ont des compétences complémentaires.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:199
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:201
 msgid ""
 "\n"
-"                    In addition to the primary organizers, workshops may "
-"involve an additional organization, such as a program committee, to evaluate "
-"contributions.\n"
+"                    In addition to the main organisers, workshops may "
+"involve an additional organisation, e.g. a programme committee to evaluate "
+"the contributions.\n"
 "                    "
 msgstr ""
 "\n"
@@ -4476,11 +4491,11 @@ msgstr ""
 "évaluer les contributions.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:206
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:208
 msgid ""
 "\n"
-"                <strong>The topics and questions</strong> that the workshop "
-"or tutorial will address.\n"
+"                <strong>The topics and questions</strong> to be covered in "
+"the workshop or tutorial.\n"
 "                "
 msgstr ""
 "\n"
@@ -4488,7 +4503,7 @@ msgstr ""
 "porteront l'atelier ou le tutoriel.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:211
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:213
 msgid ""
 "\n"
 "                <strong>The expected duration of the workshop or tutorial</"
@@ -4500,7 +4515,7 @@ msgstr ""
 "(1h à 1h30 minutes).\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:216
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:218
 msgid ""
 "\n"
 "                <strong>A link to the previous iteration of this workshop or "
@@ -4512,7 +4527,7 @@ msgstr ""
 "ou tutoriel</strong>, le cas échéant.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:221
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:223
 msgid ""
 "\n"
 "                    You can also discuss other closely related workshops.\n"
@@ -4522,12 +4537,12 @@ msgstr ""
 "Vous pouvez également discuter d'autres ateliers étroitement liés.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:228
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:230
 msgid ""
 "\n"
 "                <strong>A brief description of the format of the workshop or "
 "tutorial,</strong> e.g., the combination of events such as paper "
-"presentations, invited talks, panels, and general discussions.\n"
+"presentations, invited talks, panels and general discussions.\n"
 "                "
 msgstr ""
 "\n"
@@ -4537,7 +4552,7 @@ msgstr ""
 "discussions générales.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:233
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:235
 msgid ""
 "\n"
 "                <strong>Size of the target audience</strong>.\n"
@@ -4547,10 +4562,10 @@ msgstr ""
 "                <strong>La taille du public visé</strong>.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:237
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:239
 msgid ""
 "\n"
-"                <strong>Special requirements,</strong> where applicable.\n"
+"                <strong>Special requirements,</strong> , if any.\n"
 "                "
 msgstr ""
 "\n"
@@ -4558,11 +4573,11 @@ msgstr ""
 "échéant.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:242
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:244
 msgid ""
 "\n"
 "                    Include a note if you have special requirements for your "
-"session that are not addressed elsewhere.\n"
+"session that are not covered elsewhere.\n"
 "                    "
 msgstr ""
 "\n"
@@ -4570,23 +4585,22 @@ msgstr ""
 "qui ne sont pas abordées ailleurs.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:249
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:251
 msgid ""
 "\n"
-"                <strong>Supporting material,</strong> where applicable.\n"
+"                <strong>Supporting material,</strong> if any.\n"
 "                "
 msgstr ""
 "\n"
 "                <strong>Matériel d'appui,</strong> le cas échéant.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:254
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:256
 msgid ""
 "\n"
-"                    If you have additional materials that would support your "
-"proposal, such as a video example of the animation, \n"
-"                    a website, or written workbooks, you can also include "
-"that in your proposal.\n"
+"                    If you have additional material that could support your "
+"proposals, such as a video example of the animation, a website, or written "
+"workbooks, you can also include this in your proposal.\n"
 "                    "
 msgstr ""
 "\n"
@@ -4596,16 +4610,16 @@ msgstr ""
 "l'inclure dans votre proposition.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:273
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:274
 msgid "Evaluation criteria for proposals"
 msgstr "Critères d'évaluation des propositions"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:278
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:279
 msgid ""
 "\n"
-"                <strong>Pertinence:</strong> Relationship and pertinence to "
-"the HHAI conference objectives and the objectives listed in this particular "
-"call.\n"
+"                <strong>Relevance:</strong> Link and relevance to the "
+"objectives of the ACC conference and the objectives listed in this "
+"particular call.\n"
 "                "
 msgstr ""
 "\n"
@@ -4614,12 +4628,12 @@ msgstr ""
 "particulier.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:283
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:284
 msgid ""
 "\n"
-"                <strong>Scientific quality:</strong> The potential of the "
+"                <strong>Scientific Quality:</strong> The potential of the "
 "proposal to generate stimulating discussions and useful results on "
-"scientific problems related to HHAI.\n"
+"scientific issues related to ACC.\n"
 "                "
 msgstr ""
 "\n"
@@ -4628,11 +4642,11 @@ msgstr ""
 "sur des problèmes scientifiques liés à HHAI.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:288
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:289
 msgid ""
 "\n"
-"                <strong>Organisation:</strong> Is the plan clear, "
-"appropriate and complete?\n"
+"                <strong>Organisation:</strong> Is the plan clear, sensible, "
+"sound and comprehensive?\n"
 "                "
 msgstr ""
 "\n"
@@ -4640,13 +4654,13 @@ msgstr ""
 "judicieux et complet ?\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:293
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:294
 msgid ""
 "\n"
-"                <strong>Diversity and inclusion:</strong> Reflection on the "
-"detailed approach to ensure engagement and participation of a broad "
-"audience. Diversity of background \n"
-"                of workshop organizers and intended presenters/"
+"                <strong>Diversity & Inclusion:</strong> Reflection on the "
+"detailed approach to ensure engagement and participation of a wide audience. "
+"Diversity of background \n"
+"                of workshop organisers and intended presenters/"
 "contributors.\n"
 "                "
 msgstr ""
@@ -4657,21 +4671,21 @@ msgstr ""
 "des organisateurs de l'atelier et des présentateurs/contributeurs prévus.\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:304
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:305
 msgid "Proceedings of the workshops and tutorials"
 msgstr "Comptes rendus des ateliers et des travaux dirigés"
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:308
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:309
 msgid ""
 "\n"
-"              Each workshop, on its own, may consider archiving workshop "
-"contributions and documenting the ideas generated during the workshop. If "
-"there is sufficient interest, \n"
-"              we may archive (with an opt-out option) all contributions to "
-"the ACC 2023 workshop, along with the workshop and tutorial summaries, as a "
-"combined \n"
-"              <a class=\"text_primary\" target=\"_blank\" href=\"https://"
-"ceur-ws.org/\">CEUR Workshop Proceeding</a>.\n"
+"              Each workshop, on its own, may consider archiving the workshop "
+"contributions and documenting the ideas generated during the workshop. \n"
+"              If there is sufficient interest, we can archive (with an opt-"
+"out option) all contributions to the ACC 2023 workshop, together with the \n"
+"              workshop and tutorial summaries, as a combined record of <a "
+"class=\"text_primary\" target=\"_blank\" href=\"https://ceur-ws.org/\">CEUR "
+"Workshop Proceeding</a> \n"
+"              or our Web of Conference proceeding.\n"
 "              "
 msgstr ""
 "\n"
@@ -4685,7 +4699,7 @@ msgstr ""
 "ceur-ws.org/\">CEUR Workshop Proceeding</a>.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:319
+#: african_cities_lab/home/templates/home/events/civa/call-for-workshops.html:321
 msgid "Workshop & Tutorial chairs"
 msgstr "Présidents d'ateliers et de travaux dirigés"
 
@@ -4693,10 +4707,12 @@ msgstr "Présidents d'ateliers et de travaux dirigés"
 msgid ""
 "\n"
 "            ACC 2023 will promote scientific excellence in Africa through "
-"the communication and publication \n"
-"            of the best research results and works written in original "
-"scientific articles in its conference proceedings, \n"
-"            its book proceedings and its special issues.\n"
+"the communication and \n"
+"            publication of and publication of the best research results and "
+"works written in \n"
+"            original scientific articles in its conference proceedings, its "
+"book proceedings and\n"
+"             its special issues which follow:\n"
 "            "
 msgstr ""
 "\n"
@@ -4707,17 +4723,18 @@ msgstr ""
 "les actes des livres et les numéros spéciaux :\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:74
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:75
 msgid "Types of papers"
 msgstr "Types de contributions"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:78
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:79
 msgid ""
 "\n"
-"              We wish to stimulate the exchange of new ideas and "
-"interdisciplinary perspectives on all themes associated \n"
-"              with African cities. To do so, we will accept three different "
-"types of papers:\n"
+"              At the ACC International Conference, we aim to stimulate the "
+"exchange of new ideas and \n"
+"              interdisciplinary perspectives on all issues related to "
+"African cities. To this end,\n"
+"               we will accept three different types of papers:\n"
 "              "
 msgstr ""
 "\n"
@@ -4727,11 +4744,11 @@ msgstr ""
 "d'articles différents :\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:86
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:88
 msgid ""
 "\n"
-"                The <strong>complete articles</strong> present original and "
-"impactful work (<span class=\"text_primary\">6 pages except references</"
+"                <strong>Full papers </strong> that present original and high-"
+"quality work(<span class=\"text_primary\">6 pages without references</"
 "span>)\n"
 "                "
 msgstr ""
@@ -4741,12 +4758,12 @@ msgstr ""
 "références</span>)\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:92
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:94
 msgid ""
 "\n"
-"                Working papers present <strong>work in progress</strong> or "
-"<strong>new and visionary ideas</strong> (<span class=\"text_primary\">4 "
-"pages except references</span>).\n"
+"                <strong>Working papers </strong>present work in progress or "
+"new and visionary ideas(<span class=\"text_primary\">4 pages without "
+"references</span>).\n"
 "                "
 msgstr ""
 "\n"
@@ -4755,12 +4772,12 @@ msgstr ""
 "(<span class=\"text_primary\">4 pages hors références</span>).\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:98
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:100
 msgid ""
 "\n"
-"                Detailed abstracts <strong>present existing and pre-"
-"published work</strong> (<span class=\"text_primary\">2 pages except "
-"references</span>)\n"
+"                <strong>Extended abstracts </strong>present existing and pre-"
+"published work (<span class=\"text_primary\">2 pages without references</"
+"span>)\n"
 "                "
 msgstr ""
 "\n"
@@ -4769,12 +4786,12 @@ msgstr ""
 "hors références</span>)\n"
 "                "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:104
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:106
 msgid ""
 "\n"
-"              <strong>NB:</strong> excess pages will be overcharged at 10 "
-"CHF per page and may not exceed 30&#37; of the number of pages required for "
-"each type of article.\n"
+"              <strong>NB:</strong> Extra pages will be overcharged at CHF 10 "
+"per page and may not exceed 30&#37; of the required number of pages for each "
+"type of paper.\n"
 "              "
 msgstr ""
 "\n"
@@ -4783,16 +4800,16 @@ msgstr ""
 "du nombre de pages requises pour chaque type d'article.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:113
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:115
 msgid "Presentations & Publications"
 msgstr "Présentations & Publications"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:117
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:119
 msgid ""
 "\n"
-"              All accepted papers will be given a minimum slot for an oral "
-"presentation. Depending on the content and quality of the work, papers will "
-"be selected for long or short presentations.\n"
+"              All accepted papers will be allocated a minimum slot for an "
+"oral presentation. Depending on the content and quality of the work, papers "
+"will be selected for long or short presentations.\n"
 "              "
 msgstr ""
 "\n"
@@ -4801,15 +4818,15 @@ msgstr ""
 "articles seront sélectionnés pour des présentations longues ou courtes.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:124
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:126
 msgid ""
 "\n"
 "                  All accepted and presented conference papers will be "
 "eligible for publication in our <a class=\"text_primary\" target=\"_blank\" "
 "href=\"https://www.e3s-conferences.org/\">E3S web of conference </a>\n"
 "                  proceedings indexed in Scopus, Scimago, IET INSPEC, Ei "
-"Compendex, EBSCO, Google Scholar, CPCI (Web of Science) \n"
-"                  (Subject to acceptance - as for all proceedings journals)\n"
+"Compendex, EBSCO, Google Scholar, CPCI (Web of Science) (Subject to "
+"acceptance - as for all proceedings journals).\n"
 "                  "
 msgstr ""
 "\n"
@@ -4822,16 +4839,16 @@ msgstr ""
 "(Subject to acceptance - as for all proceedings journals)\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:132
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:133
 msgid ""
 "\n"
 "                  A category of best papers will be published in our "
-"proceedings book by <a class=\"text_primary\" target=\"_blank\" href="
+"proceedings book by  <a class=\"text_primary\" target=\"_blank\" href="
 "\"https://www.springer.com/series/6007\">Springer book GeoJournal Library</"
 "a> (Pending confirmation) indexed in Scopus, \n"
 "                  Scimago, IET INSPEC, Ei Compendex, EBSCO, Google Scholar, "
 "CPCI (Web of Science) (Subject to acceptance - as for all proceedings "
-"journals)\n"
+"journals).\n"
 "                  "
 msgstr ""
 "\n"
@@ -4844,25 +4861,23 @@ msgstr ""
 "d'actes.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:143
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:144
 msgid "Submission guidelines"
 msgstr "Directives pour la soumission"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:147
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:148
 msgid ""
 "\n"
-"              We invite potential authors to send in original work finalized "
-"but also work in progress or already published (See article types "
-"details). \n"
-"              Authors should choose, according to their preference and the "
-"requirements of their affiliating institutions, to publish their paper in "
-"the \n"
-"              <a class=\"text_primary\" target=\"_blank\" href=\"https://www."
-"e3s-conferences.org/\">E3S web of conference </a> proceeding or in our book "
-"to \n"
-"              be published by the <a class=\"text_primary\" target=\"_blank"
-"\" href=\"https://www.springer.com/series/6007\">Springer book GeoJournal "
-"Library</a>.\n"
+"              We invite potential authors to send original papers that have "
+"already been finalised but also those in progress or those \n"
+"              already published (See article types details). Authors should "
+"choose, according to their preference and the requirements \n"
+"              of their affiliating institution, to publish their paper in "
+"the <a class=\"text_primary\" target=\"_blank\" href=\"https://www.e3s-"
+"conferences.org/\">E3S web of conference </a> \n"
+"              proceedings or in our book to be published by the <a class="
+"\"text_primary\" target=\"_blank\" href=\"https://www.springer.com/"
+"series/6007\">Springer book GeoJournal Library</a>.\n"
 "              "
 msgstr ""
 "\n"
@@ -4878,20 +4893,22 @@ msgstr ""
 "a>.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:155
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:156
 msgid ""
 "\n"
-"              If you choose to publish your paper in the proceeding <a class="
+"              If you choose to publish your paper in the <a class="
 "\"text_primary\" target=\"_blank\" href=\"https://www.e3s-conferences.org/"
 "\">E3S web of conference </a> \n"
-"              we ask you to follow the instructions of the authors given <a "
+"              proceedings please follow the authors' instructions given <a "
 "class=\"text_primary\" target=\"_blank\" href=\"https://www.webofconferences."
 "org/authors\">HERE</a>. \n"
-"              Otherwise you use directly one of the templates "
-"<strong>[Template ACC2023.docx]</strong> Word_woc-2col or <strong>[Latex "
-"template Web of Conferences A4 paper size, two columns format.zip]</"
-"strong> \n"
-"              LATEX_woc-2col depending on the text editor you master.\n"
+"              Otherwise, you can use one of the templates <strong>[Template "
+"ACC2023.docx]</strong> <a class=\"text_primary\" target=\"_blank\" href="
+"\"https://www.webofconferences.org/authors\">Word_woc-2col</a> or \n"
+"              <strong>[Latex template Web of Conferences A4 paper size, two "
+"columns format.zip]</strong> <a class=\"text_primary\" target=\"_blank\" "
+"href=\"https://www.webofconferences.org/authors\">LATEX_woc-2col</a> \n"
+"              depending on the text editor you use.\n"
 "              "
 msgstr ""
 "\n"
@@ -4907,7 +4924,7 @@ msgstr ""
 " LATEX_woc-2col selon l’éditeur de texte que vous maitrisez.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:163
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:165
 msgid ""
 "\n"
 "              If you choose instead to publish your work in the <a class="
@@ -4941,16 +4958,16 @@ msgstr ""
 "étant fixé à 12 dans ce cas.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:175
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:177
 msgid "Submission"
 msgstr "Soumission"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:178
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:180
 msgid ""
 "\n"
 "              Once your paper is finalized, you could first send us the pdf "
 "version through <a class=\"text_primary font-weight-bold\" target=\"_blank\" "
-"href=\"https://easychair.org/conferences/?conf=civa2023\">easychair</a> \n"
+"href=\"https://easychair.org/conferences/?conf=civa2023\">Easychair</a> \n"
 "              for evaluation and the source file will then be requested by "
 "our committee as needed.\n"
 "              "
@@ -4963,22 +4980,21 @@ msgstr ""
 "comité selon le besoin.\n"
 "              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:193
-msgid "Plagiarism Check"
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:195
+msgid "Plagiarism Control"
 msgstr "Contrôle du Plagiat"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:196
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:198
 msgid ""
 "\n"
 "              We remind you once again that a strict plagiarism check will "
-"be performed on all papers and will only be tolerated if there is a "
-"similarity of max. \n"
-"              15&#37; of all sources + max. 5&#37; of one source. The "
-"plagiarism control tool <a class=\"text_primary\" target=\"_blank\" href="
-"\"https://www.ithenticate.com/\">Ithenticate</a> \n"
+"be carried out on all papers and only a similarity of max.\n"
+"              15&#37; of all sources + max. 5&#37; of one source will be "
+"tolerated. The plagiarism checker <a class=\"text_primary\" target=\"_blank"
+"\" href=\"https://www.ithenticate.com/\">Ithenticate</a> \n"
 "              or <a class=\"text_primary\" target=\"_blank\" href=\"https://"
 "www.turnitin.com\">Turnitin</a> will be used to check the similarity between "
-"the papers.\n"
+"papers.\n"
 "              "
 msgstr ""
 "\n"
@@ -4993,33 +5009,61 @@ msgstr ""
 "entre les documents.\n"
 "              "
 
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:209
+msgid "Paper Evaluation"
+msgstr "Évaluation du papier"
+
 #: african_cities_lab/home/templates/home/events/civa/cfp-details.html:212
-msgid "April 10, 2023"
-msgstr "10 Avril 2023"
+msgid ""
+"\n"
+"              Each paper will be evaluated by at least two regular TCP "
+"members in two rounds of evaluations and the program chair will \n"
+"              decide on the acceptance/review/rejection of each paper based "
+"on their feedback. Acceptance decisions will take into \n"
+"              account the paper's novelty, technical depth, elegance, "
+"practical or theoretical impact and presentation.\n"
+"              "
+msgstr ""
+"\n"
+"Chaque article sera évalué par au moins deux membres réguliers du TPC en "
+"deux tours d'évaluation et le président du programme décidera \n"
+"de l'acceptation/révision/rejet de chaque article sur la base de leurs "
+"commentaires. Les décisions d'acceptation prendront en compte \n"
+"la nouveauté, la profondeur technique, l'élégance, l'impact pratique ou "
+"théorique et la présentation de la communication.\n"
+"              "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:216
-msgid "April 27, 2023"
-msgstr "27 Avril 2023"
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:228
+msgid "March 15, 2023"
+msgstr "15 Mars 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:224
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:232
+msgid "March 30, 2023"
+msgstr "30 Mars 2023"
+
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:239
+msgid "Registration due date: "
+msgstr "Date limite d'inscription :"
+
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:244
 msgid "May 23 - 24, 2023"
 msgstr "23-24 Mai 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:232
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:252
 msgid "Special Issues"
 msgstr "Articles spéciaux"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:235
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:255
 msgid ""
 "\n"
 "              High-quality papers may be invited to be submitted to one of "
-"our special issues in the following list depending on the theme of the paper "
-"and its ranking in the order of quality. \n"
-"              The authors of the selected papers will be invited after the "
-"conclusion of the conference steering committee and their papers extended "
-"according to the percentage required by \n"
-"              the special issue will be subjected to a normal submission and "
-"review process. Our Special Issues include but are not limited to:\n"
+"our special issues in the following list depending on the theme \n"
+"              of the paper and its ranking in the order of quality. The "
+"authors of the selected papers will be invited after the conclusion \n"
+"              of the conference steering committee and their papers extended "
+"according to the percentage required by the special issue will \n"
+"              be subjected to a regular submission and review process. Our "
+"Special Issues include but are not limited to the following:\n"
 "              "
 msgstr ""
 "\n"
@@ -5033,53 +5077,48 @@ msgstr ""
 "processus normal de soumission et d'examen.\n"
 "                    "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:244
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:265
 msgid ""
 "\n"
 "                <a class=\"text_primary\" target=\"_blank\" href=\"https://"
 "www.mdpi.com/journal/sustainability/special_issues/2F6GOQZ998\">\n"
-"                Sustainability (MDIPI) for the Special Issue \"Digital "
-"Transition of African Cities in the Era of Sustainable Development Goals\"</"
-"a> (IF : 3.889; CiteScore : 5.00) \n"
+"                  Sustainability (MDIPI) for the Special Issue \"Digital "
+"Transition of African Cities in the Era of Sustainable Development Goals\n"
+"                </a>\n"
 "                "
 msgstr ""
-"\n"
-"                <a class=\"text_primary\" target=\"_blank\" href=\"https://"
-"www.mdpi.com/journal/sustainability/special_issues/2F6GOQZ998\">\n"
-"  Sustainability (MDIPI) pour le numéro spécial \"Transition numérique des "
-"villes africaines à l'ère des objectifs de développement durable\"</a> (IF : "
-"3.889; CiteScore : 5.00) \n"
-"                "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:250
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:272
+msgid ""
+"\n"
+"                City and Environment Interactions (Elsevier) indexed Scopus, "
+"Web of Sciences and moreover.\n"
+"                "
+msgstr ""
+
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:278
 msgid ""
 "\n"
 "                <a class=\"text_primary\" target=\"_blank\" href=\"https://"
 "www.cambridge.org/core/journals/data-and-policy\">\n"
-"                Data & Policy (Waiting to be posted online)</a> (Indexed "
-"WoS)\n"
+"                  Data & Policy (Waiting to be posted online)</a> indexed "
+"Web of Science and moreover.\n"
 "                "
 msgstr ""
-"\n"
-"                <a class=\"text_primary\" target=\"_blank\" href=\"https://"
-"www.cambridge.org/core/journals/data-and-policy\">\n"
-"                Données et politique (en attente de mise en ligne)</a> "
-"(Indexed WoS)\n"
-"                "
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:257
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:285
 msgid "African Cities Journal"
 msgstr "African Cities Journal"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:259
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:288
 msgid "More to be posted soon!"
 msgstr "Plus d'informations seront bientôt disponibles !"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:263
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:292
 msgid "CFP Chairs:"
 msgstr "Chaires du CFP"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:265
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:294
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:81
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:89
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:108
@@ -5090,7 +5129,7 @@ msgstr "Chaires du CFP"
 msgid "CEAT, EPFL, Lausanne, Switzerland"
 msgstr "CEAT, EPFL, Lausanne, Suisse"
 
-#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:267
+#: african_cities_lab/home/templates/home/events/civa/cfp-details.html:296
 #: african_cities_lab/home/templates/home/events/civa/commitee.html:190
 msgid " African Centre for Cities, Cape Town, South Africa"
 msgstr "Centre Africain pour les Villes, Cape Town, Afrique du Sud"
@@ -5136,7 +5175,7 @@ msgid "Date"
 msgstr "Date"
 
 #: african_cities_lab/home/templates/home/events/civa/civa.html:214
-#: african_cities_lab/home/templates/home/events/civa/civa.html:716
+#: african_cities_lab/home/templates/home/events/civa/civa.html:702
 msgid "May 23 & 24"
 msgstr "23 & 24 Mai"
 
@@ -5309,59 +5348,51 @@ msgstr "Voir l'agenda de la conférence"
 msgid "Preliminary Webinars"
 msgstr "Webinaires préliminaires"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:532
+#: african_cities_lab/home/templates/home/events/civa/civa.html:543
 msgid "B2B Meetings & Partnerships"
 msgstr "Rencontres et partenariats B2B"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:544
+#: african_cities_lab/home/templates/home/events/civa/civa.html:555
 msgid "African smart cities’ Innovation Expo-2023"
 msgstr ""
 "Exposition sur l'innovation dans les villes intelligentes d'Afrique - 2023"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:556
+#: african_cities_lab/home/templates/home/events/civa/civa.html:567
 msgid "Doctoral Consortium & Spring school"
 msgstr "Consortium doctoral & école de printemps"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:568
+#: african_cities_lab/home/templates/home/events/civa/civa.html:579
 msgid "Poster & Demos Session"
 msgstr "Session posters et démos"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:580
+#: african_cities_lab/home/templates/home/events/civa/civa.html:591
 msgid "Worshops & Tutorials session"
 msgstr "Session Ateliers & Didacticiels"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:592
-msgid "ACC’s Cotonou City Tour"
-msgstr "Visite guidée de Cotonou"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:604
-msgid "Gala Diner"
-msgstr "Dîner de Gala"
-
-#: african_cities_lab/home/templates/home/events/civa/civa.html:626
+#: african_cities_lab/home/templates/home/events/civa/civa.html:612
 msgid "Organizations"
 msgstr "Organisateurs"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:655
+#: african_cities_lab/home/templates/home/events/civa/civa.html:641
 msgid "Academic and institutional partners"
 msgstr "Partenaires académiques et institutionnels"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:711
+#: african_cities_lab/home/templates/home/events/civa/civa.html:697
 #: african_cities_lab/templates/civa-base.html:120
 #: african_cities_lab/templates/civa-base.html:197
 msgid "Venue & Contacts"
 msgstr "Lieu & Contacts"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:714
+#: african_cities_lab/home/templates/home/events/civa/civa.html:700
 #: african_cities_lab/home/templates/home/events/civa/contact.html:86
 msgid "Novotel Cotonou Orisha"
 msgstr "Novotel Cotonou Orisha"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:715
+#: african_cities_lab/home/templates/home/events/civa/civa.html:701
 msgid "Cotonou, Benin"
 msgstr "Cotonou, Bénin"
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:719
+#: african_cities_lab/home/templates/home/events/civa/civa.html:705
 #: african_cities_lab/home/templates/home/events/civa/contact.html:166
 msgid ""
 "\n"
@@ -5376,7 +5407,7 @@ msgstr ""
 " sur l’événement et comment en devenir partenaire.\n"
 "          "
 
-#: african_cities_lab/home/templates/home/events/civa/civa.html:727
+#: african_cities_lab/home/templates/home/events/civa/civa.html:713
 #: african_cities_lab/home/templates/home/events/civa/contact.html:171
 msgid "For any request:"
 msgstr "Pour toute demande :"
