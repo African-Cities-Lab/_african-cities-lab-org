@@ -183,29 +183,6 @@
             }
         }
     })
-   
-    $('#newsletter-form').on('submit', function(e) {
-      e.preventDefault();
-
-      var data = {
-        'EMAIL' : $('input[name="EMAIL"]').val(),
-        'LANGUAGE' : $('input[name="site_language"]').val(),
-        'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
-      };
-      
-      $.ajax({
-        type: "POST",
-        headers: { "X-CSRFToken": data.csrfmiddlewaretoken },
-        url:'/newsletter ',
-        data: { EMAIL: data.EMAIL, LANGUAGE: data.LANGUAGE},
-        success: function (data) {
-        
-          console.log(data);
-          
-        },
-        error: function (data) {},
-        });
-    });
-    */
+    */      
 
 })(jQuery);

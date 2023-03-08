@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Newsletter" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+ 
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Newsletter" %} - African Cities Lab{% endif %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Newsletter" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Newsletters" %} - African Cities Lab{% endif %}">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-banner {
+      min-height: 335px;
+    }
+  </style>
+{% endblock css %}
+
+{% block hellobar %}
+<!--div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div-->
+{% endblock hellobar %}
+
+{% block content %}
+
+    <section class="page-banner bg_primary">
+      <div class="container-fluid">
+          <div class="row py-5">
+              <div class="col-12 col-lg-6 col-md-10">
+                  <div class="position-relative h1">
+                      {% translate "Newsletter" %}
+                      <span class="dash-accent__"></span>
+                  </div>
+              </div>  
+          </div>
+      </div>
+      <div class="acl-sharpes bottom-right__sharpe">
+          <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-bottom#d29675.svg' %}">
+      </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container p-md-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                      <!-- message if email is sent -->
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="my-5 alert alert-success">
+                            <h6 class="m-0 font-size-18">
+                                {{ message }}
+                            </h6>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    <h3 class="section-title pt-3 mb-3">
+                        {% translate "Want to stay informed?" %}
+                    </h3>
+                    <p class="font-size-18 pb-5">
+                        {% translate "Leave us your e-mail, so we can send you your new all recent news, updates, and courses when they are published! " %} 
+                    </p>
+                    <form action="{% url 'suscribe-newsletter' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                            <label>{% translate "Last name" %}
+                                <div class="form-asterix">*</div>
+                            </label>
+                            <input type="text" name="LNAME" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                            <label>{% translate "First name" %}
+                                <div class="form-asterix">*</div>
+                            </label>
+                            <input type="text" name="FNAME" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group" required="required">
+                            <label>{% translate "Email Address" %}
+                            <div class="form-asterix">*</div>
+                            </label>
+                            <input type="email" name="EMAIL" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
+                        </div>
+                        <p>
+                            {% translate "By submitting your info in the form above, you agree to our" %}
+                            <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
+                            </a> {% translate "and" %} <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
+                            {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
+                        </p>
+                        <div class="mt-5">
+                            <button type="submit" class="btn btn__primary btn__small">{% translate "Suscribe" %}</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}

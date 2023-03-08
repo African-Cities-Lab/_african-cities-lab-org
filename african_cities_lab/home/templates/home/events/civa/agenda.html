@@ -10,6 +10,7 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %} 
+<meta name="robots" content="noindex,nofollow">
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
 {% block static_meta_tag %}
@@ -36,83 +37,6 @@
       background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
-    .program-block {
-      margin: auto;
-      padding: 1rem 0 4rem;
-      display: flex;
-      max-width: 60rem;
-      flex-direction: column;
-      word-break: break-word;
-    }
-    .program-block .program-inner {
-      padding: 0.5rem 1rem;
-      position: relative; 
-      margin-left: 8rem;
-      margin-top: 1rem;
-    }
-    .program-block .program-inner:before {
-      border: 0.1rem solid #ECF1F9;
-      top: -0.1rem;
-      left: -1rem;
-      width: 0.5rem;
-      height: 100%;
-      content: "";
-      position: absolute;
-      border-radius: 5rem;
-    }
-    .program-block .program-inner .program-timeline {
-      position: relative;
-    }
-    .program-block .program-inner .program-timeline:before {
-      top: -0.1rem;
-      left: -2rem;
-      width: 0.5rem;
-      height: 3rem;
-      content: "";
-      position: absolute;
-      border-radius: 5rem;
-      border: 0.1rem solid #ECF1F9;
-      background: #402781;
-    }
-    .leftInfo {
-      position: absolute;
-      text-align: right;
-      left: -9rem;
-      width: 6rem;
-    }
-    .rightInfo {
-      min-height: 6.4rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    .speaker-list__speaker {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 5px;
-      margin-bottom: 1rem;
-    }
-    .speaker-list__speaker .speaker-list__speaker__img {
-      -ms-flex-negative: 0;
-      flex-shrink: 0;  
-      display: inline-block;
-      margin-right: 5px;
-      vertical-align: middle;
-    }
-    .speaker-list__speaker .speaker-list__speaker__img > img {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      overflow: hidden; object-fit: cover;
-    }
-    .speaker-list__speaker__name {
-      display: inline-block; 
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-      -ms-flex-negative: 1;
-      flex-shrink: 1;
-    }
   </style>
 {% endblock css %}
 
@@ -131,176 +55,731 @@
   </div> 
 </section>
 
-<section class="pt-5">
-    <div class="container-xl pt-5 pb-3">
-        <div class="text-center h1 mb-3">
-            {% blocktranslate %}
-              ACC 2023 – Conference trails
-            {% endblocktranslate %}
-          </div>
-    </div>
+<section>
+
 </section>
 
-<section class="pb-5">
-  <div class="program-block">
+<section id="acc-program" class="py-5">
 
-    <div class="program-inner">
+  <div class="container">
 
-      <div class="program-timeline">
+    <ul class="nav nav-tabs" id="acc-program-tab" role="tablist">
 
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="1" aria-selected="true">
+            <h3 class="mb-1">{% translate "Day 01" %}</h3>
+            <span>{% translate "May 23, 2023" %}</span>
+        </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="2" aria-selected="false">
+          <h3 class="mb-1">{% translate "Day 02" %}</h3>
+          <span>{% translate "May 24, 2023" %}</span>
+        </a>
+      </li>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Digital city transition and urban planning" %}</h6>
+    </ul>
 
-          <div class="">
-            {% blocktranslate %}
-            In Africa, the digital transformation of cities is still minimal, but initiatives in this 
-            direction are beginning to emerge. For example, in Morocco and Tunisia smart homes and 
-            connected mobility are already being developed.
-            {% endblocktranslate %}
-          </div>
+    <div class="tab-content" id="acc-program-content">
 
-          {% comment %}
-          <div class="speaker-list mt-3">
-            <div class="speaker-list__speaker">
-              <div class="speaker-list__speaker__img"> 
-                <img src="{% static 'images/assets/webinar-2/Pr.David-Goeury.png' %}" alt="Pr. David Goeury"> 
+      <div class="tab-pane p-md-4 fade show active" id="tab1" role="tabpanel" aria-labelledby="1-tab">
+
+        <div class="program-session h4">{% translate "Session 1: Opening ceremony" %}</div>
+
+        <ul class="program-list">
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:00 - 09:10" %}
+                <small>(GMT+1)</small>
               </div>
-              <span class="speaker-list__speaker__name">
-                {% translate 'David Goeury' %} -
-                <span class="font-size-12">
-                  {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}
-                </span>      
-              </span> 
             </div>
-          </div>
-          {% endcomment %}
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Welcome from the Morning Chair" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                <div class="col-12 col-md-6 p-3">
+                  <div class="speaker-list__speaker">
+                    <div class="speaker-list__speaker__img"> 
+                      <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Jérôme Chenal"> 
+                    </div>
+                    <span class="speaker-list__speaker__name">
+                      {% translate 'Jérôme Chenal' %} -
+                      <span class="font-size-12">
+                        {% translate 'Director of CEAT,EPFL, Director of CUS, UM6P' %}
+                      </span>      
+                    </span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:10 - 09:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Mains guest’s speech" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
 
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:30 - 09:45" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Official’s speech 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:30 - 09:45" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Official’s speech 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "10:00 - 10:15" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Presentation of the ACL project (Objectives, Webinars, Conference, MOOCS, …)" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "10:15 - 10:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Signature of conventions" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "10:30 - 11:10" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Coffee/Tea and Visit of stands" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="program-session h4">{% translate "Session 2: Forum of professionals: Public Sector" %}</div>
+
+        <ul class="program-list">
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "11:10 - 11:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote speech Pro 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "11:30 - 11:50" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote speech Pro 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "11:50 - 12:10" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:10 - 12:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:30 - 12:40" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 3" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:40 - 14:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Lunch and Networking" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="program-session h4">{% translate "Session 3: Forum of Professional: Private Sector" %}</div>
+
+        <ul class="program-list">
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "14:00 - 14:10" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Welcome from the Afternoon Chair" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "14:10 - 14:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote speech Pro 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "14:30 - 14:50" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote speech Pro 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "14:50 - 15:10" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "15:10 - 15:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "15:30 - 15:50" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Start-up 3" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "15:40 - 16:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Q&amp;A" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "15:40 - 16:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Cotonou City Tour" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="program-timeline">
+      <div class="tab-pane p-md-4 fade" id="tab2" role="tabpanel" aria-labelledby="2-tab">
 
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+        <div class="program-session h4">{% translate "Academic Keynote Presentations" %}</div>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Digital and smart african cities" %}</h6>
+        <ul class="program-list">
 
-          <div class="">
-            {% blocktranslate %}
-            We hear increasingly about "smart" cities, but what are they really about? Smart cities in Africa 
-            represent a challenge for the development of urban territories, for the economy, but also to gain 
-            international visibility.
-            {% endblocktranslate %}
-          </div>
- 
-        </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "08:15 - 09:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote Presentation 1" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                <div class="col-12 col-md-6 p-3">
+                  <div class="speaker-list__speaker">
+                    <div class="speaker-list__speaker__img"> 
+                      <img src="{% static 'images/assets//civa/Hassan-Radoine.jpeg' %}" alt="Hassan Radoine"> 
+                    </div>
+                    <span class="speaker-list__speaker__name">
+                      {% translate 'Hassan Radoine' %} -
+                      <span class="font-size-12">
+                        {% translate 'Director of the School of Architecture, Planning and Design (SAP+D) at the Polytechnic University (UM6P) of Benguerir - Morocco' %}
+                      </span>      
+                    </span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-      </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:00 - 09:45" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote Presentation 2" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
 
-      <div class="program-timeline">
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "09:45 - 10:30" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Keynote Presentation 3" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+                
+              </div>
+            </div>
+          </li>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Remote sensing and geo – information systems (smart GIS)" %}</h6>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "10:30 - 11:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Coffee/Tea and Networking/Posters" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
 
-          <div class="">
-            {% blocktranslate %}
-            Remote sensing and spatial data play an important role in urban planning by providing accurate and up-to-date 
-            information about the physical and environmental characteristics of urban areas. This information can be 
-            used for mapping and monitoring land use and land cover, assessing the physical characteristics of urban areas, 
-            monitoring environmental quality, supporting emergency management, and improving transportation planning. 
-            By utilizing remote sensing and spatial data, urban planners can make informed decisions that lead to the 
-            development of more sustainable and resilient cities.
-            {% endblocktranslate %}
-          </div>
-        </div>
-      </div>
+        <div class="program-session h4">{% translate "Paper presentations" %}</div>
 
-      <div class="program-timeline">
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "11:00 - 12:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Session 1A: Transition digitalisation des villes et planification" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 1B : Digital and smart African cities" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 1C : Smart geo-information systems (Smart GIS)" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 1D : Transitions digitales et smart Gouvernance" %}</h6>
+              <div class="program-text mb-4">
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Digital citizenship and digital gouvernance" %}</h6>
+            </div>
+          </li>
 
-          <div class="">
-            {% blocktranslate %}
-            Digital citizenship refers to responsible and ethical use of technology and the internet. It encompasses 
-            values, behaviors, and skills such as internet safety, digital literacy, digital etiquette, digital rights 
-            and responsibilities, and digital activism. By developing these skills, individuals can engage in the digital 
-            world effectively, protect their rights and interests, and contribute to a more inclusive and equitable digital 
-            society. Digital citizenship education is important for individuals, particularly students, to become informed 
-            and effective members of a digital society.
-            {% endblocktranslate %}
-          </div>
-        </div>
-      </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:20 - 14:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Lunch and Networking/Posters" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
 
-      <div class="program-timeline">
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+        <div class="program-session h4">{% translate "Workshops" %}</div>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "African digital cities challenge" %}</h6>
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "14:00 - 15:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Workshop 1: Title" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Workshop 2: Title" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Workshop 3: Title" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Workshop 4: Title" %}</h6>
+              <div class="program-text mb-4">
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
 
-          <div class="">
-            {% blocktranslate %}
-            Digital technology has great potential for innovation in areas such as health, agriculture, 
-            education, energy, financial services, and transport in the cities and towns of tomorrow. 
-            The rapid spread of mobile and digital technology in Africa should enable African countries 
-            to make a rapid leap in economic development.
-            {% endblocktranslate %}
-          </div>
-        </div>
-      </div>
+            </div>
+          </li>
 
-      <div class="program-timeline">
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:20 - 14:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Coffee/Tea and Networking/Posters" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Urban mobility and transportation" %}</h6>
+        <div class="program-session h4">{% translate "Paper presentations" %}</div>
 
-          <div class="">
-            {% blocktranslate %}
-            The African continent is on the verge of unprecedented growth, making it necessary to develop 
-            the urban mobility sector. The predictions of demographic and economic growth on the continent 
-            do not leave the global players in the transport sector indifferent.
-            {% endblocktranslate %}
-          </div>
-        </div>
-      </div>
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "16:00 - 17:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Session 2A: African digital cities challenges" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 2B: Emerging African urban planning issues" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 2C: Urban transportation in African cities" %}</h6>
+              <h6 class="mb-3 program-title">{% translate "Session 2D: Urban data collection In Africa: methods, progress, and challenges" %}</h6>
+              <div class="program-text mb-4">
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
 
-      <div class="program-timeline">
-        <div class="leftInfo">
-          <p class="time"></p> 
-        </div>
+            </div>
+          </li>
 
-        <div class="rightInfo">
-          <h6 class="mb-3 font-size-18">{% translate "Emerging urban technologies" %}</h6>
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "12:20 - 14:00" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Coffee/Tea and Networking/Posters" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
 
-          <div class="">
-            {% blocktranslate %}
-            As global warming increasingly affects African cities, new cooling technologies 
-            are being developed to combat climate change.
-            {% endblocktranslate %}
-          </div>
-        </div>
+        <div class="program-session h4">{% translate "Closing Ceremony" %}</div>
+
+        <ul class="program-list">
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "19:00 - 19:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Closing remarks" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "19:00 - 19:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Award ceremony" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+
+          <li class="program-item">
+            <div class="program-hour">
+              <div class="program-hour-text">
+                {% translate "19:00 - 19:20" %}
+                <small>(GMT+1)</small>
+              </div>
+            </div>
+            <div class="program-content">
+              <h6 class="mb-3 program-title">{% translate "Dinner" %}</h6>
+              <div class="program-text mb-4">
+                {% blocktranslate %}
+                {% endblocktranslate %}
+              </div>
+              <div class="row speaker-list mt-3">
+              </div>
+            </div>
+          </li>
+        </ul>
+
       </div>
 
     </div>
+
   </div>
 
 </section>

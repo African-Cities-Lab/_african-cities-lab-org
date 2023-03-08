@@ -117,9 +117,14 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/events/civa/call-for-doctoral.html"),
         name="cfdc-details",
     ),
+    path(
+        "newsletter/",
+        TemplateView.as_view(template_name="home/newsletter.html"),
+        name="newsletter",
+    ),
 
     ########
-    path("newsletter/", views.newsletter, name="newsletter"),
+    path("newsletter/submission/", views.newsletter_submission, name="suscribe-newsletter"),
     
     path("moocs/subscribe/", views.subscribe_moocs, name="subscribe-moocs"),
 ]

@@ -10,6 +10,7 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %} 
+<meta name="robots" content="noindex,nofollow">
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
 
@@ -38,58 +39,6 @@
       background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
     }
-    .cfp-card {
-      transition: transform .23s cubic-bezier(.24,.98,.34,.99); 
-      margin: 10px;
-    }
-    .cfp-card > a {
-      position: relative;
-      display: flex;                                
-      flex-direction: column;
-      width: 100%;
-      min-height: 325px;
-      border-radius: 5px;
-      background-color: #fff;
-      box-shadow: 0 3px 10px hsl(5deg 13% 82% / 34%);
-      overflow: hidden;
-    }
-    .cfp-card .cfp-card__header {
-      display: flex;
-      padding: 24px 25px 15px; 
-      z-index: 1; 
-    }
-    .cfp-card .cfp-card__header span.h4 {
-      font-weight: 500;
-    }
-    .cfp-card .cfp-card__body {
-      overflow: hidden;
-      flex-grow: 1;
-      padding: 18px 26px 10px 26px;
-      color: #72797a;
-      z-index: 1;
-      font-size: 15px;
-    }
-    .cfp-card a:hover .hover-bg {
-      opacity: 1;
-      transition: opacity .23s cubic-bezier(.24,.98,.34,.99) .1s;
-    } 
-    .cfp-card a:hover, .cfp-card a:hover .cfp-card__body,
-    .cfp-card a:hover .cfp-card__body >p  {
-      color:#fff !important;
-    } 
-    .hover-bg {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #402781;
-      opacity: 0;
-      transition: opacity .23s cubic-bezier(.64,.04,.7,.09);
-      z-index: 0;
-    }
-    
   </style>
 {% endblock css %}
 

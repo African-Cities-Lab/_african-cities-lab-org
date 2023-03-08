@@ -113,7 +113,6 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
-                            {% endcomment %}
                             
                             <li class="nav-item mx-3 dropdown">
                                 <a class="nav-link dropdown-toggle" role="button" href="#" id="event-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -129,6 +128,11 @@
                                         <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'acc-2023'%}">{% translate "ACC 2023" %}</a>
                                     </li>
                                 </ul>
+                            </li>
+                            {% endcomment %}
+                            {% url 'events' as url %}
+                            <li class="nav-item mx-3">
+                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
                             </li>
                             
                             {% url 'contact' as url %}
@@ -213,9 +217,6 @@
                                         <li>
                                             <a href="{% url 'events' %}">{% translate "Webinars" %}</a>
                                         </li> 
-                                        <li >
-                                            <a href="{% url 'acc-2023' %}">{% translate "ACC 2023" %}</a>
-                                        </li> 
                                         <li>
                                             <a href="{% url 'contact' %}">{% translate "Contact" %}</a> 
                                         </li> 
@@ -259,17 +260,17 @@
                                 <p class="footer__col-text">
                                     {% translate "Stay up to date with all the recent news, updates, and courses by simply your email address to our mailing list. We promise to never spam you." %} 
                                 </p>
-                                <div class="articleletter-form py-3">
-                                    <form id="newsletter-form" action="" class="append-form">
-                                        {% csrf_token %}
-                                        <div class="input-group">
-                                            <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Enter your email address' %}">
-                                            <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
-                                            <div class="input-group-append bg_primary">
-                                                <button class="btn" type="submit">OK</button>
-                                            </div>
+                                <div class="newsletter-widget my-3">
+                                    <a href="{% url 'newsletter' %}" class="input-group">
+                                        <span class="newsletter-widget__title">
+                                            {% translate 'Subscribe to our newsletter!' %}
+                                        </span>
+                                        <div class="input-group-append">
+                                            <span class="btn">
+                                                {% translate "Sign up" %}
+                                            </span>
                                         </div>
-                                    </form>
+                                    </a>
                                 </div>
                                 <div class="social-media__wrapper">
                                     <span>{% translate "Connect with us :" %}</span>

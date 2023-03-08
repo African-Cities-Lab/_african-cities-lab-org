@@ -137,30 +137,38 @@ def subscribe_webinar(request):
     )
 
 
-def newsletter(request): 
+def newsletter_submission(request): 
     
     if request.method == "POST":
-        email = request.POST["EMAIL"] 
-
+        email = request.POST["EMAIL"]
+        merge_fields = {
+            "LNAME": request.POST["LNAME"],
+            "FNAME": request.POST["FNAME"],
+        }
+        
         if request.POST["site_language"] == "en":
             list_id = settings.MAILCHIMP_NEWSLETTER_EN_ID
         else:  # "fr"
             list_id = settings.MAILCHIMP_NEWSLETTER_FR_ID
 
-        status = _subscribe(email, list_id)
+        status = _subscribe(email, list_id, merge_fields)
         if status == "subscribed":
-            messages.success(
+                messages.success(
                 request,
                 _(
-                    "Thank you for subscribed to the ACL newsletter."
+                    "Thank you for subscribing to our newsletter. Watch your mailbox for news, updates and courses from the African Cities Lab very soon!"
                 ),
             )  # message
         elif status == "exists":
             messages.info(
                 request,
                 _(
-                    "Your email is already subscribed. Thank you!"
+                    "Your email is already registered. Watch your mailbox for news, updates and courses from the African Cities Lab very soon!"
                 ),
             )  # message
 
-    return JsonResponse(request)
+    return render(
+        request,
+        "home/newsletter.html"
+    )
+

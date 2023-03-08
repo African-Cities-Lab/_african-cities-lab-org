@@ -10,6 +10,7 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %} 
+<meta name="robots" content="noindex,nofollow">
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 {% endblock %}
 
@@ -37,120 +38,6 @@
       background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%), url({% static 'images/assets/icac-banner-image.jpg' %});
       position: relative;
     }
-    .civa-form__section {
-      background-image: linear-gradient(rgba(64, 39, 129, 0.78),rgba(64, 39, 129, 0.65)),url({% static 'images/assets/conference_form_bg.jpg' %});
-    }
-    .civa-partners-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .partners-item {
-      width: 50%;
-      height: 8rem;
-      margin-top: -0.0625rem;
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .civa-partners-wrapper.row-title h3 {
-      width: 100%;
-      margin-top: -0.0625rem;
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .civa-partners-wrapper.row-title .partners-item {
-      width: 100%;
-    }
-  .count-box {
-    max-width: 100%;
-    min-height: 140px;
-    margin: 0 auto;
-    display: grid;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  .count-box .count-box__order > h3 {
-    width: 50px;
-    height: 50px;
-    background: #BE3712;
-    color: #fff;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;    
-    place-content: center;
-  }
-  .count-box .count-box__content {
-    margin-top: 1rem;
-  }
-  .platform-feature__card .card:hover h5 {
-    color: #BE3712;
-  }
-  .focus-topics-area {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
-    grid-column-gap: 24px; 
-    margin: 1.5rem auto;
-  }
-  .focus-topics-area > .item {
-    height: 10.5rem;
-    margin-bottom: 1.5rem;
-    background: #FFF;
-    padding: 1rem;
-    border-top: 1px solid #ececec;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
-    border-bottom: 4px solid #BE3712;
-    border-radius: 0.25rem;
-  }
-  .focus-topics-area > .item h4 {
-    font-weight: 500;
-    font-size: 20px;
-  }
-  @media (max-width: 600px) {
-    
-  }
-  @media (min-width: 600px) {
-    .count-box { 
-      grid-template-columns: 65px 1fr; 
-    }
-    .partners-item,
-    .civa-partners-wrapper.row-title h3 {
-      width: 33%;
-    }
-    .civa-partners-wrapper.row-title .partners-item {
-      width: 66%;
-    }
-  }
-  @media (min-width: 992px){
-    #column-2 {
-      column-count: 2; 
-      column-gap: 3.5em;
-    }
-    .partners-item {
-      width: 18%;
-    }
-    .civa-partners-wrapper.row-title h3 {
-      width: 26%;
-    }
-    .civa-partners-wrapper.row-title .partners-item {
-      width: 48%;
-    }
-    .count-box {
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-    .count-box .count-box__order > h3 {
-      width: 65px;
-      height: 65px;
-      font-size: 30px;
-    }
-  }
   </style>
 {% endblock css %}
 
@@ -280,7 +167,7 @@
             {% endblocktranslate %}
           </p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 text-center">
           <a class="btn btn__primary btn__big my-4" href="{% url 'acc-papers' %}">
             {% translate "Call for papers " %}
           </a>
@@ -290,203 +177,121 @@
   </div>
 </section>
 
-{% comment %}
-<section class="py-md-5 d-none">
-  <div class="container">
+<section class="py-5">
+  <div class="container-fluid">
     <div class="row d-flex justify-content-center pt-5">
-      <h3 class="section-title text-center">
-        {% blocktranslate %}
-          Why should attend <br>
-          <span class="text_primary">ACC 2023</span>?
-        {% endblocktranslate %}
-      </h3>
-    </div>
-    <div class="row d-flex justify-content-center pt-5">
-
-      <div class="col-12 col-md-5 text-center" >
-        <img src="{% static 'images/assets/who-expect.jpg' %}">
-      </div>
-      
-      <div class="col-12 col-md-5">
-        <div class="m-5">
-          <div class="count-box">
-            <div class="count-box__order">
-              <h3>1</h3>
-            </div>
-            <div class="count-box__content">
-              <h4>{% translate "Networking" %}</h4>
-            </div>
-          </div>
-          <div class="count-box">
-            <div class="count-box__order">
-              <h3>2</h3>
-            </div>
-            <div class="count-box__content">
-              <h4>{% translate "Skilled speakers" %}</h4>
-            </div>
-          </div>
-          <div class="count-box">
-            <div class="count-box__order">
-              <h3>3</h3>
-            </div>
-            <div class="count-box__content">
-              <h4>{% translate "Usefull sessions" %}</h4>
-            </div>
-          </div>
-          <div class="count-box">
-            <div class="count-box__order">
-              <h3>4</h3>
-            </div>
-            <div class="count-box__content">
-              <h4>{% translate "Venue tour" %}</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endcomment %}
-
-<section class="py-5 position-relative">
-  <div class="container-fluid py-5">
-    <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-8 text-center">
         <h3 class="section-title mb-3">
           {% blocktranslate %}
-            Topics
+          ACC 2023 – Conference trails
           {% endblocktranslate %}
         </h3>
       </div>
     </div>
 
-    <div class="row mt-3">
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Digitalization of cities and urban planning" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Digital water and energy management" %}</li>
-              <li class="pt-2">{% translate "Smart waste management and sanitation" %}</li>
-              <li class="pt-2">{% translate "Digital management of education and health" %}</li>
-              <li class="pt-2">{% translate "Digital mobility and transport management" %}</li>
-              <li class="pt-2">{% translate "Land use and land cover management" %}</li>
-              <li class="pt-2">{% translate "Informality & precarious neighbourhoods" %}</li>
-              <li class="pt-2">{% translate "Land tenure and cadastral management" %}</li>
-              <li class="pt-2">{% translate "Quality of Life and Social Layer" %}</li>
-              <li class="pt-2">{% translate "Architecture & Urban Planning" %}</li>
-              <li class="pt-2">{% translate "Energy for Building and Construction Development" %}</li>
-              <li class="pt-2">{% translate "Computer-Aided Civil and Infrastructure Engineering" %}</li>
-            </ul>
+    <div class="acc-trails-block">
+      <div class="acc-trails-inner">
+        <div class="acc-trails-timeline">
+
+          <div class="acc-trails-content">
+            <h4 class="mb-3">{% translate "Digital city transition and urban planning" %}</h4>
+
+            {% blocktranslate %}
+              In Africa, the digital transformation of cities is still minimal, but initiatives in this 
+              direction are beginning to emerge. For example, in Morocco and Tunisia smart homes and 
+              connected mobility are already being developed.
+            {% endblocktranslate %}
           </div>
+      </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "Digital and smart african cities" %}</h4>
+
+          {% blocktranslate %}
+            We hear increasingly about "smart" cities, but what are they really about? Smart cities in Africa 
+            represent a challenge for the development of urban territories, for the economy, but also to gain 
+            international visibility.
+          {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Digital and smart african cities" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Digital and smart cities strategies in Africa" %}</li>
-              <li class="pt-2">{% translate "Digital and Smart african city stakeholders" %}</li>
-              <li class="pt-2">{% translate "Digital and Smart city infrastructure" %}</li>
-              <li class="pt-2">{% translate "IoT for digital and smart cities" %}</li>
-              <li class="pt-2">{% translate "Robotics, blockchain and crytomoney" %}</li>
-              <li class="pt-2">{% translate "Artificial intelligence and application integration" %}</li>
-              <li class="pt-2">{% translate "Cybersecurity & IS governance for smart cities" %}</li>
-              <li class="pt-2">{% translate "Advanced technologies for African smart cities" %}</li>
-            </ul>
-          </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "Remote sensing and geo – information systems (smart GIS)" %}</h4>
+
+          {% blocktranslate %}
+            Remote sensing and spatial data play an important role in urban planning by providing accurate and up-to-date 
+            information about the physical and environmental characteristics of urban areas. This information can be 
+            used for mapping and monitoring land use and land cover, assessing the physical characteristics of urban areas, 
+            monitoring environmental quality, supporting emergency management, and improving transportation planning. 
+            By utilizing remote sensing and spatial data, urban planners can make informed decisions that lead to the 
+            development of more sustainable and resilient cities.
+            {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Remote sensing and Smart geo - information systems " %}</h5>
-            <ul class="px-3">
-              <li>{% translate "GIS and remote sensing" %}</li>
-              <li class="pt-2">{% translate "Citizen sensing and Citizen engagement" %}</li>
-              <li class="pt-2">{% translate "Geo AI and applications" %}</li>
-              <li class="pt-2">{% translate "Spatial data Infrastructures (SDI)" %}</li>
-              <li class="pt-2">{% translate "Interactive visualization and 3D modeling" %}</li>
-              <li class="pt-2">{% translate "Geo Artificial intelligence (Geo AI)" %}</li>
-              <li class="pt-2">{% translate "GIS application (GIS API)" %}</li>
-              <li class="pt-2">{% translate "Collective sensing & spatial big urban data" %}</li>
-              <li class="pt-2">{% translate "Smart geo-addressing and participatory addressing" %}</li>
-              <li class="pt-2">{% translate "SIG and geolocalisation" %}</li>
-              <li class="pt-2">{% translate "Digital twins & twin cities" %}</li>
-            </ul>
-          </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "Digital citizenship and digital gouvernance" %}</h4>
+
+          {% blocktranslate %}
+            Digital citizenship refers to responsible and ethical use of technology and the internet. It encompasses 
+            values, behaviors, and skills such as internet safety, digital literacy, digital etiquette, digital rights 
+            and responsibilities, and digital activism. By developing these skills, individuals can engage in the digital 
+            world effectively, protect their rights and interests, and contribute to a more inclusive and equitable digital 
+            society. Digital citizenship education is important for individuals, particularly students, to become informed 
+            and effective members of a digital society.
+            {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Digital Citizen and digital gouvernance" %}</h5>
-            <ul class="px-3">
-              <li>{% translate "Citizens and Collaborative Governance" %}</li>
-              <li class="pt-2">{% translate "Geopolitics, democratic processes and cyber-citizenship" %}</li>
-              <li class="pt-2">{% translate "Data Governance for smart cities" %}</li>
-              <li class="pt-2">{% translate "Digitalisation and internet 5.0" %}</li>
-              <li class="pt-2">{% translate "Digital tools for smart urban development" %}</li>
-              <li class="pt-2">{% translate "Socio-cultural transformations and social inclusion" %}</li>
-              <li class="pt-2">{% translate "Crowdsourcing and citizen participation" %}</li>
-              <li class="pt-2">{% translate "Digital governance and digital citizenship" %}</li>
-            </ul>
-          </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "African digital cities challenge" %}</h4>
+
+          {% blocktranslate %}
+            Digital technology has great potential for innovation in areas such as health, agriculture, 
+            education, energy, financial services, and transport in the cities and towns of tomorrow. 
+            The rapid spread of mobile and digital technology in Africa should enable African countries 
+            to make a rapid leap in economic development.
+            {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "African digital cities challenges" %}</h5>
-            <ul class="px-3">
-              <li >{% translate "Resilience of African digital cities" %}</li>
-              <li class="pt-2">{% translate "Waste management and sanitation" %}</li>
-              <li class="pt-2">{% translate "Renewable energy and use" %}</li>
-              <li class="pt-2">{% translate "Housing and wellbeing" %}</li>
-              <li class="pt-2">{% translate "Energy and environmental efficiency" %}</li>
-              <li class="pt-2">{% translate "Sustainable development and adaptation of smart cities" %}</li>
-              <li class="pt-2">{% translate "Urban pollution and heat monitoring" %}</li>
-            </ul>
-          </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "Urban mobility and transportation" %}</h4>
+
+          {% blocktranslate %}
+          The African continent is on the verge of unprecedented growth, making it necessary to develop 
+          the urban mobility sector. The predictions of demographic and economic growth on the continent 
+          do not leave the global players in the transport sector indifferent.
+            {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Urban mobility and transportation" %}</h5>
-            <ul class="px-3">
-              <li >{% translate "ITS (Intelligent Transport Systems)" %}</li>
-              <li class="pt-2">{% translate "Urban mobility" %}</li>
-              <li class="pt-2">{% translate "Travel behavior (travel patterns, route choice, mode choice, etc.)" %}</li>
-              <li class="pt-2">{% translate "Multimodal transportation" %}</li>
-              <li class="pt-2">{% translate "Non-motorized and informal transportation" %}</li>
-              <li class="pt-2">{% translate "Shared mobility (carsharing, bike sharing, etc.)" %}</li> 
-              <li class="pt-2">{% translate "Transportation and Traffic Engineering" %}</li>
-            </ul>
-          </div>
+
+      <div class="acc-trails-timeline">
+        <div class="acc-trails-content">
+          <h4 class="mb-3">{% translate "Emerging urban technologies" %}</h4>
+
+          {% blocktranslate %}
+            As global warming increasingly affects African cities, new cooling technologies 
+            are being developed to combat climate change.
+          {% endblocktranslate %}
         </div>
       </div>
-      <div class="col-12 col-md-4 platform-feature__card d-flex p-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="py-3">{% translate "Emerging urban technologies" %}</h5>
-            <ul class="px-3">
-              <li >{% translate "Construction Robotics" %}</li>
-              <li class="pt-2">{% translate "AI-based solutions" %}</li>
-              <li class="pt-2">{% translate "Mobile currency solutions" %}</li>
-              <li class="pt-2">{% translate "Infrastructure Design tools" %}</li> 
-              <li class="pt-2">{% translate "Construction Technology & Engineering" %}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="text-center">
+      <a class="btn btn__primary btn__big mt-5" href="{% url 'acc-agenda' %}">
+        {% translate "View conference program" %}
+      </a>
     </div>
   </div>
 </section>
 
-<section class="bg-light__ py-5"> 
-    <div class="container-xl">
+<section class="bg-light__ py-5 my-5"> 
+    <div class="container-xl py-4">
         <div class="row d-flex justify-content-around">
             <div class="col-12 col-lg-4 py-5">
                 <h3 class="section-title mb-3">
@@ -505,11 +310,6 @@
                     It will include….
                     {% endblocktranslate %}
                   </p>
-                </div>
-                <div class="mt-4">
-                  <!--a class="btn btn__primary btn__small" href="">
-                    {% translate "View conference agenda" %}
-                  </a-->
                 </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -689,10 +489,10 @@
   </div>
 </section>
 
-<section class="bg-light__ py-5">
+<section class="py-5">
   <div class="container-xl">
     <div class="row d-flex justify-content-center">
-      <div class="col-12 col-lg-5 pt-5 font-size-16">
+      <div class="col-12 col-lg-6 pt-5 font-size-16">
         <h3 class="section-title mb-4">
           {% translate "Venue & Contacts" %}
         </h3>
@@ -721,6 +521,6 @@
       </div>
     </div>
   </div>
-</section
+</section>
 
 {% endblock content %}
