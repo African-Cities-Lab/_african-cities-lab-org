@@ -113,6 +113,7 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="{% localized_slugurl 'blog' %}">{% translate "Blog" %}</a>
                             </li>
+                            {% endcomment %}
                             
                             <li class="nav-item mx-3 dropdown">
                                 <a class="nav-link dropdown-toggle" role="button" href="#" id="event-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -124,15 +125,9 @@
                                         <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
                                     </li>
                                     <li class="pt-2"> 
-                                        {% url 'acc-2023' as url %}
-                                        <a class="dropdown-item {% if request.path == url %}active{% endif %}" href="{% url 'acc-2023'%}">{% translate "ACC 2023" %}</a>
+                                        <a class="dropdown-item" href="https://acc2023.africancitieslab.org/" target="_blank">ACC2023</a>
                                     </li>
                                 </ul>
-                            </li>
-                            {% endcomment %}
-                            {% url 'events' as url %}
-                            <li class="nav-item mx-3">
-                                <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'events' %}">{% translate "Webinars" %}</a>
                             </li>
                             
                             {% url 'contact' as url %}
@@ -216,6 +211,9 @@
                                         {% endcomment %}
                                         <li>
                                             <a href="{% url 'events' %}">{% translate "Webinars" %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://acc2023.africancitieslab.org/" target="_blank">ACC2023</a>
                                         </li> 
                                         <li>
                                             <a href="{% url 'contact' %}">{% translate "Contact" %}</a> 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-08 09:32+0100\n"
+"POT-Creation-Date: 2023-03-09 17:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/about.html:20
 #: african_cities_lab/home/templates/home/about.html:25
 #: african_cities_lab/templates/base.html:107
-#: african_cities_lab/templates/base.html:209
+#: african_cities_lab/templates/base.html:204
 msgid "About"
 msgstr "À propos"
 
@@ -406,12 +406,11 @@ msgid ""
 "cities, digital cities are presented as a rational response to future "
 "demographic projections.\n"
 "                            African Cities Lab creates the \"African Cities "
-"Conference (ACC) - Digital Cities\" ,\n"
-"                            a major event that aims to increase the scope "
-"and develop synergies between research and entrepreneurship on the African "
-"continent.\n"
-"                            It is all about accelerating digitization of "
-"cities and promoting scientific excellence\n"
+"Conference (ACC)\", a major event that aims to increase the scope and "
+"develop synergies \n"
+"                            between research and entrepreneurship on the "
+"African continent.  It is all about accelerating digitization of cities and "
+"promoting scientific excellence\n"
 "                            in Africa. The first edition of the Conference "
 "will take place in 2023 in Cotonou, Benin.\n"
 "                            "
@@ -421,11 +420,20 @@ msgstr ""
 "rationnelle aux projections démographiques futures. Remettant en question la "
 "vision actuelle des villes en Afrique, les villes digitales semblent être "
 "des actrices majeures de l'urbanisation de l'Afrique. African Cities Lab "
-"crée « African Cities Conference (ACC) – Villes digitales », événement phare "
-"qui vise à accroître la portée et le rayonnement des activités de recherche "
-"et entrepreneuriale sur le continent africain relative à la numérisation des "
+"crée « African Cities Conference (ACC) », événement phare qui vise à "
+"accroître la portée et le rayonnement des activités de recherche et "
+"entrepreneuriale sur le continent africain relative à la numérisation des "
 "villes, ainsi qu’à promouvoir l’excellence scientifique en Afrique. La "
-"première Edition aura lieu en 2023 et se tiendra à Cotonou au Bénin."
+"première édition aura lieu en 2023 et se tiendra à Cotonou au Bénin."
+
+#: african_cities_lab/home/templates/home/about.html:309
+#: african_cities_lab/home/templates/home/event_index_page.html:97
+#: african_cities_lab/home/templates/home/event_index_page.html:140
+#: african_cities_lab/home/templates/home/event_index_page.html:181
+#: african_cities_lab/home/templates/home/events/civa/civa.html:335
+#: african_cities_lab/home/templates/home/events/civa/civa.html:508
+msgid "Learn more"
+msgstr "En savoir plus"
 
 #: african_cities_lab/home/templates/home/blog_index_page.html:9
 #: african_cities_lab/home/templates/home/blog_index_page.html:31
@@ -457,13 +465,14 @@ msgstr "Aucune page trouvée avec ce tag."
 #: african_cities_lab/home/templates/home/event_index_page.html:15
 #: african_cities_lab/home/templates/home/event_index_page.html:20
 #: african_cities_lab/home/templates/home/event_index_page.html:25
+#: african_cities_lab/templates/base.html:122
 msgid "Events"
 msgstr "Événements"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:48
 #: african_cities_lab/home/templates/home/home.html:413
-#: african_cities_lab/templates/base.html:137
-#: african_cities_lab/templates/base.html:222
+#: african_cities_lab/templates/base.html:127
+#: african_cities_lab/templates/base.html:217
 msgid "Webinars"
 msgstr "Webinaires"
 
@@ -490,14 +499,6 @@ msgstr ""
 "la moitié de la population mondiale, et les zones urbaines joueront un rôle "
 "essentiel dans la lutte contre le changement climatique. \n"
 "                "
-
-#: african_cities_lab/home/templates/home/event_index_page.html:97
-#: african_cities_lab/home/templates/home/event_index_page.html:140
-#: african_cities_lab/home/templates/home/event_index_page.html:181
-#: african_cities_lab/home/templates/home/events/civa/civa.html:335
-#: african_cities_lab/home/templates/home/events/civa/civa.html:508
-msgid "Learn more"
-msgstr "En savoir plus"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:108
 msgid "Oct"
@@ -6454,7 +6455,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/static_gdpr.html:25
 #: african_cities_lab/home/templates/home/static_gdpr.html:58
 #: african_cities_lab/home/templates/home/webinar_form.html:139
-#: african_cities_lab/templates/base.html:256
+#: african_cities_lab/templates/base.html:254
 msgid "GDPR"
 msgstr "RGPD"
 
@@ -6697,13 +6698,15 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/newsletter.html:83
 msgid "Want to stay informed?"
-msgstr ""
+msgstr "Vous souhaitez rester informé ?"
 
 #: african_cities_lab/home/templates/home/newsletter.html:86
 msgid ""
 "Leave us your e-mail, so we can send you your new all recent news, updates, "
 "and courses when they are published! "
 msgstr ""
+"Laissez-nous votre e-mail, pour que nous puissions vous envoyer nos nouveaux "
+"articles au moment de leur publication !"
 
 #: african_cities_lab/home/templates/home/newsletter.html:92
 #: african_cities_lab/home/templates/home/webinar_form.html:86
@@ -6729,7 +6732,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/newsletter.html:115
 #: african_cities_lab/home/templates/home/webinar_form.html:138
-#: african_cities_lab/templates/base.html:253
+#: african_cities_lab/templates/base.html:251
 msgid "Terms & Condition"
 msgstr "Termes & Conditions"
 
@@ -6760,8 +6763,8 @@ msgstr "Nos Partenaires"
 #: african_cities_lab/home/templates/home/static_contact.html:20
 #: african_cities_lab/home/templates/home/static_contact.html:25
 #: african_cities_lab/home/templates/home/static_contact.html:59
-#: african_cities_lab/templates/base.html:142
-#: african_cities_lab/templates/base.html:225
+#: african_cities_lab/templates/base.html:137
+#: african_cities_lab/templates/base.html:223
 msgid "Contact"
 msgstr ""
 
@@ -6909,23 +6912,23 @@ msgstr "Accueil"
 msgid "Moocs"
 msgstr ""
 
-#: african_cities_lab/templates/base.html:184
+#: african_cities_lab/templates/base.html:179
 msgid "S'inscrire gratuitement"
 msgstr ""
 
-#: african_cities_lab/templates/base.html:206
+#: african_cities_lab/templates/base.html:201
 msgid "Get to know us"
 msgstr "En savoir plus"
 
-#: african_cities_lab/templates/base.html:250
+#: african_cities_lab/templates/base.html:248
 msgid "Legal"
 msgstr "Mentions légales"
 
-#: african_cities_lab/templates/base.html:264
+#: african_cities_lab/templates/base.html:262
 msgid "Stay updated with our newsletter"
 msgstr "Recevez la newsletter ACL"
 
-#: african_cities_lab/templates/base.html:266
+#: african_cities_lab/templates/base.html:264
 msgid ""
 "Stay up to date with all the recent news, updates, and courses by simply "
 "your email address to our mailing list. We promise to never spam you."
@@ -6933,19 +6936,19 @@ msgstr ""
 "Restez informés de la mise à jour des cours. Et suivez toute l’actualité de "
 "la transformation des villes africaines."
 
-#: african_cities_lab/templates/base.html:271
+#: african_cities_lab/templates/base.html:269
 msgid "Subscribe to our newsletter!"
 msgstr "Inscrivez-vous à notre newsletter !"
 
-#: african_cities_lab/templates/base.html:275
+#: african_cities_lab/templates/base.html:273
 msgid "Sign up"
 msgstr "S'inscrire"
 
-#: african_cities_lab/templates/base.html:281
+#: african_cities_lab/templates/base.html:279
 msgid "Connect with us :"
 msgstr "Suivez-nous"
 
-#: african_cities_lab/templates/base.html:301
+#: african_cities_lab/templates/base.html:299
 #: african_cities_lab/templates/civa-base.html:202
 msgid "© Copyright 2022 African Cities Lab. All rights reserved. "
 msgstr "© Copyright 2022 African Cities Lab. Tous droits réservés. "
