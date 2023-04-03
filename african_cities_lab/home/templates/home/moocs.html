@@ -11,30 +11,21 @@
 {% endblock title %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
-
-{% block css %}
-  {{ block.super }}
-  <style>
-    .page-banner {
-        min-height: 335px;
-    }
-  </style>
-{% endblock css %}
+{% endblock static_meta_tag %}
 
 {% block hellobar %}
 <!--div class="hellobar d-none">
@@ -75,7 +66,7 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -106,7 +97,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -137,7 +128,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -168,7 +159,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -199,7 +190,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -230,7 +221,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -261,7 +252,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_IPU+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">

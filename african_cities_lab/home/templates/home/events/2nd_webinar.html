@@ -6,24 +6,24 @@
 {% endblock title %}
 {% block meta_tag_description %}
   <meta name="description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
-{% endblock %}
+{% endblock meta_tag_description %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}"/>
 <meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
@@ -44,7 +44,7 @@
 
 
   <section class="page-banner">
-    <div class="container-fluid"> 
+    <div class="container-fluid">
       <div class="row align-item-center py-5">
         <div class="col-12 col-lg-10 col-xl-8 pt-4">
           <div class="meta-badge bg-transparent" style="border: 1px solid #fff">{% translate "Webinar" %}</div>
@@ -58,7 +58,7 @@
           <div class="row">
             <div class="col-12 col-md-4 mt-3">
               <div class="d-inline-flex align-items-start">
-                <img width="50" height="33" src="{% static 'images/assets/big-pointer.svg' %}">
+                <img width="50" height="33" src="{% static 'images/assets/big-pointer.svg' %}"/>
                 <div class="font-size-18 d-inline-block font-weight-bold px-3">
                   {% blocktranslate %}
                     11 October<br>2022
@@ -66,7 +66,7 @@
                 </div>
               </div>
               <div class="mt-3 d-inline-flex">
-                <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
                 <span class="font-size-18 font-weight-500 p-3">{% translate "Online" %}</span>
               </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="col-12 col-md-8 mt-3 d-none d-md-block">
               <div class="row my-3">
                 <div class="col-12 col-md-4 d-flex align-items-start">
-                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
                   <div class="font-size-16 font-weight-500 px-3 d-inline-block">
                     {% blocktranslate %}
                     10AM | 12PM <br>
@@ -93,7 +93,7 @@
               </div>
               <div class="row my-3">
                 <div class="col-12 col-md-4 d-flex align-items-start">
-                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
                   <div class="font-size-16 font-weight-500 px-3 d-inline-block">
                     {% blocktranslate %}
                     3PM | 5PM <br>
@@ -171,7 +171,7 @@
           <div class="tab-content" id="agenda-content">
             <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
 
-              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
               <div class="h5 d-inline-block px-2 py-4">{% translate "Urban youth identity and participation in democratization &amp; development" %}</div>
 
               <div>
@@ -242,7 +242,7 @@
 
             <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
 
-              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
               <div class="h5 d-inline-block px-2 py-4">{% translate "Challenges of the urban youth" %}</div>
 
               <div>
@@ -367,7 +367,7 @@
 
                           <p class="my-2">
                             {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}
-                            
+
                           </p>
 
                           <ul class="mdl-speaker-social-list list-inline m-0">
@@ -382,19 +382,19 @@
                             {% blocktranslate %}
                             David Goeury has a doctoral degree in geography and is a teacher-researcher at the Espace Nature et Culture laboratory
                             at the Paris-La Sorbonne. He also teaches a preparatory class for the Business prestigious universities at the Lycée
-                            Descartes in Rabat (Morocco). 
+                            Descartes in Rabat (Morocco).
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             He is also an associate researcher at the Jacques Berque Centre in Rabat. He leads
                             research on the margins and marginalities in low-income countries (India and Morocco). He is currently studying the
                             transformation of oasis spaces through the action research program "Preservation of sacred and collective oasis sites".
-                            He is also co-sponsoring the ZERKA project (The blue spring and the urbanization of Mediterranean oases). 
+                            He is also co-sponsoring the ZERKA project (The blue spring and the urbanization of Mediterranean oases).
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             He has also been involved in the study of political change in Morocco since 2011, first in the PROCELEC program (Electoral processes
                             in North Africa, comparative research in electoral geography and sociology) and then in the TARICA program (Political
                             and socio- institutional change in North Africa: competition of models and diversity of trajectories) directed by Alia
-                            Gana. 
+                            Gana.
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             Finally, he was the principal investigator of the ANRS 12 305 program (Income-generating activities and key
@@ -475,7 +475,7 @@
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             After graduating his master’s degree, Johannes joined the DFG graduate program “Critical Junctures of Globalization”
-                            as a research fellow with the Centre for Area Studies at Leipzig University. 
+                            as a research fellow with the Centre for Area Studies at Leipzig University.
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             His doctoral thesis, defended in May 2021, revolves around urban inequality, informality, and precarity with a special focus on the role of youth in postrevolutionary
@@ -553,8 +553,8 @@
                             Formation et de Recherches (UFR) Sciences économiques et sociales (SES).
                             {% endblocktranslate %}
                             {% blocktranslate %}
-                            His expertise and research work focus on public policies, administrative reforms, development policies, mobility and social movements, 
-                            particularly youth movements. 
+                            His expertise and research work focus on public policies, administrative reforms, development policies, mobility and social movements,
+                            particularly youth movements.
                             {% endblocktranslate %}
                             {% blocktranslate %}
                             Member of several professional networks in Senegal and abroad, Ibrahima Touré regularly participates in
@@ -951,7 +951,7 @@
 
                           <p>
                             {% blocktranslate %}
-                            His research interests include African soccer, migration, soccer and youth education, sport for development and the phenomenon 
+                            His research interests include African soccer, migration, soccer and youth education, sport for development and the phenomenon
                             of self-giving. He has published several academic articles in reputable journals and has served as a reviewer for some scientific journals.
                             His current book is 'African Footballers ii Europe: Migration, Community, and Give Back Behaviours' published by Routledge (2020).
                             {% endblocktranslate %}

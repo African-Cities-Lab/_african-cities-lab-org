@@ -11,21 +11,21 @@
 {% endblock title %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "About" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "About" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "About" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "About" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "About" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
     {{ block.super }}
@@ -36,7 +36,9 @@
             background-position: bottom center;
         }
         .acl-conference {
-            background-image: url({% static 'images/assets/icac-banner-image.jpg' %});
+            background-image: linear-gradient(rgba(64, 39, 129, 0.25),rgba(64, 39, 129, 0.55)),
+              url({% static 'images/assets/2023_summit_img.jpeg' %});
+            background-position: top center;
         }
     </style>
 {% endblock css %}
@@ -64,18 +66,18 @@
                 </div>
                 <ul class="banner-text-list">
                     <li class="banner-text__item one">
-                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <img width="12" height="30" alt="icon" src="{% static 'images/assets/small-pointer.svg' %}"/>
                         <h2 class="bannner__add-text"><span>{% translate "700 million" %}</span>{% translate " new homes" %}</h2>
                     </li>
                     <li class="banner-text__item two">
-                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <img width="12" height="30" alt="icon" src="{% static 'images/assets/small-pointer.svg' %}"/>
                         <h2 class="bannner__add-text"><span>{% translate "300,000" %}</span>{% translate " schools" %}</h2>
                     </li>
                     <li class="banner-text__item three">
                         <h2 class="bannner__add-text">{% translate " and almost " %}</h2>
                     </li>
                     <li class="banner-text__item four">
-                        <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}">
+                        <img width="12" height="30" alt="icon" src="{% static 'images/assets/small-pointer.svg' %}"/>
                         <h2 class="bannner__add-text"><span>{% translate "100,000" %}</span>{% translate " health centers" %}</h2>
                     </li>
                     <li class="banner-text__item five">
@@ -86,7 +88,7 @@
         </div>
     </div>
     <div class="acl-sharpes right-sharpe">
-        <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+        <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/outline-sharpe-right.svg' %}"/>
     </div>
 </section>
 
@@ -94,7 +96,7 @@
         <div class="container-xl">
             <div class="row justify-content-around">
                 <div class="col-12 col-md-3 col-lg-4 p-5 p-md-3 order-1 order-md-0">
-                    <img class="about-mission__img" src="{% static 'images/assets/about-mission.jpg' %}">
+                    <img class="about-mission__img" alt="about-mission" src="{% static 'images/assets/about-mission.jpg' %}"/>
                 </div>
                 <div class="col-12 col-md-9 col-lg-8 order-0 order-md-1 pt-5 px-lg-5">
 
@@ -131,8 +133,6 @@
             </div>
         </div>
     </section>
-
-
     <section>
         <div class="container p-md-5">
              <div class="row d-flex justify-content-center pt-5 pt-md-0">
@@ -225,7 +225,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container-fluid">
             <div class="timeline-wrapper" dir="ltr">
                 <ul class="list-inline timeline-container">
@@ -267,12 +266,11 @@
                         <a href="#" class="px-2 d-block">
                             <div class="timeline-pointer"></div>
                             <h4 class="text_primary">{% translate "23 & 24 May 2023" %}</h4>
-                            <span class="font-size-16">{% translate "African Cities Conference" %}</span>
+                            <span class="font-size-16">African Cities lab - 2023 SUMMIT</span>
                         </a>
                     </li>
                 </ul>
             </div>
-
             <!--div class="mt-5 text-center">
                 <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="btn btn__primary my-5 btn__small">
                     {% translate "Register for the next webinar" %}
@@ -282,30 +280,27 @@
     </section>
 
     <section class="acl-conference">
-
-        <div class="img-overlay__bottomToTop"></div>
-
         <div class="acl-sharpes top-right__sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-top.svg' %}">
+            <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/outline-sharpe-top.svg' %}"/>
         </div>
-
         <div class="container position-relative">
             <div class="row p-3 py-5 p-md-5">
                 <div class="col-12 col-lg-8 pt-lg-3 pb-3">
                     <div class="content-holder">
-                        <h1 class="font-size-3-50em">
-                            {% translate "African Cities Conference (ACC)" %}
+                        <h1 class="font-size-2-75em">
+                            {% translate "African Cities lab - 2023 SUMMIT" %}
                         </h1>
                         <div class="hidden-details py-3">
-                            <p class="font-size-16">{% blocktranslate %}
+                            <p class="font-size-16">
+                            {% blocktranslate %}
                             Challenging the current vision of African cities, digital cities are presented as a rational response to future demographic projections.
-                            African Cities Lab creates the "African Cities Conference (ACC)", a major event that aims to increase the scope and develop synergies 
+                            African Cities Lab creates the "African Cities lab - 2023 SUMMIT", a major event that aims to increase the scope and develop synergies
                             between research and entrepreneurship on the African continent.  It is all about accelerating digitization of cities and promoting scientific excellence
                             in Africa. The first edition of the Conference will take place in 2023 in Cotonou, Benin.
                             {% endblocktranslate %}</p>
                         </div>
                         <div class="mt-2">
-                            <a href="https://acc2023.africancitieslab.org/" target="_blank" class="btn btn__primary btn-small font-size-14">
+                            <a href="https://summit.africancitieslab.org/" target="_blank" class="btn btn__primary btn-small font-size-14">
                                 {% translate "Learn more" %}
                             </a>
                         </div>

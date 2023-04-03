@@ -2,15 +2,14 @@
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
-    <head> 
+    <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            {% block title %} African Cities Lab{% endblock title %} 
-        </title> 
+            {% block title %} African Cities Lab{% endblock title %}
+        </title>
         {% block meta_tag_description %}
-        <meta name="robots" content="noindex,nofollow">
             <meta name="description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
         {% endblock %}
         {% block static_meta_tag %}
@@ -31,9 +30,9 @@
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            
+
             <link rel="stylesheet"
-                href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>  
+                href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         {% endblock css %}
         <!-- Le javascript
              ================================================== -->
@@ -47,8 +46,8 @@
             <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
             </script>
             <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-            <script defer src="{% static 'js/jquery.waypoints.min.js' %}"></script> 
-            <script defer src="{% static 'js/jquery.counterup.min.js' %}"></script>  
+            <script defer src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+            <script defer src="{% static 'js/jquery.counterup.min.js' %}"></script>
             <!-- Your stuff: Third-party javascript libraries go here -->
             <!-- place project specific Javascript in this file -->
             <script defer src="{% static 'js/project.js' %}"></script>
@@ -63,13 +62,13 @@
 
     gtag('config', 'G-476VN6QQ4Y');
     </script>
-    
+
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--> 
+        <![endif]-->
         {% block hellobar %}
-        {% endblock hellobar %} 
+        {% endblock hellobar %}
         <header id="header">
             <nav id="main-nav"
                  class="navbar w-100 navbar-expand-lg text-center py-3 shadow-sm z-index-2">
@@ -92,20 +91,20 @@
                     </button>
                     <div id="navbar-responsive" class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav text-uppercase mx-5">
-                            {%  url 'acc-2023' as url %} 
+                            {%  url 'acc-2023' as url %}
                             <li class="nav-item mx-2">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-2023' %}">{% translate "Overview" %}</a>
                             </li>
 
                             {% url 'acc-agenda' as url %}
-                            <li class="list-inline-item"> 
+                            <li class="list-inline-item">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-agenda' %}">{% translate "Program" %}</a>
-                            </li> 
+                            </li>
 
                             {% url 'acc-speakers' as url %}
                             <li class="nav-item mx-2">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-speakers' %}">{% translate "Speakers" %}</a>
-                            </li> 
+                            </li>
 
                           {% url 'acc-commitee' as url %}
                           <li class="nav-item mx-2">
@@ -115,11 +114,11 @@
                           {% url 'acc-papers' as url %}
                           <li class="nav-item mx-2">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-papers' %}">{% translate "ACC Calls" %}</a>
-                          </li>   
+                          </li>
                           {% url 'acc-informations' as url %}
                           <li class="nav-item mx-2">
                             <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'acc-informations' %}">{% translate "Venue & Contacts" %}</a>
-                          </li>                             
+                          </li>
                         </ul>
 
                         <div class="right-header">
@@ -163,8 +162,8 @@
 
         <main>
             {% block content %}
-            {% endblock content %} 
-        </main> 
+            {% endblock content %}
+        </main>
 
         <footer>
             <div class="acc-footer">
@@ -177,8 +176,8 @@
                             <a href="{% localized_slugurl 'home' %}">
                                 <img src="{% static 'images/assets/logo-white.png' %}"
                                      alt="African Cities Lab" style="width: 250px;"/>
-                            </a> 
-    
+                            </a>
+
                             <div class="social-media__wrapper pt-4">
                                 <ul class="list-inline mt-3 mb-5">
                                     <li class="list-inline-item mx-2 mx-lg-3"><a  href="https://twitter.com/AfricanCtiesLab" class="text-white"><i class="fab fa-twitter"></i></a></li>
@@ -189,20 +188,20 @@
                                     <li class="list-inline-item mx-2 mx-lg-3"><a href="https://www.youtube.com/channel/UC22_61it3OdPBNj3CwkndUA" class="text-white"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
-    
+
                             <div class="menu-footer-container my-3">
                                 <ul class="menu-footer">
                                     <li class="menu-item"><a href="{% localized_slugurl 'home' %}">{% translate "About African Cities Lab" %}</a></li>
-                                    <li class="menu-item"><a href="{% url 'acc-agenda' %}">{% translate "Program" %}</a></li> 
+                                    <li class="menu-item"><a href="{% url 'acc-agenda' %}">{% translate "Program" %}</a></li>
                                     <li class="menu-item"><a href="{% url 'acc-papers' %}">{% translate "Call for papers" %}</a></li>
-                                    <li class="menu-item"><a href="{% url 'acc-informations' %}">{% translate "Venue & Contacts" %}</a></li> 
-                                </ul> 
+                                    <li class="menu-item"><a href="{% url 'acc-informations' %}">{% translate "Venue & Contacts" %}</a></li>
+                                </ul>
                             </div>
-    
+
                             <div class="text-center mt-4">
                                 <p class="font-size-12">{% translate "© Copyright 2022 African Cities Lab. All rights reserved. " %}</p>
-                            </div> 
-    
+                            </div>
+
                         </div>
                     </div>
                 </div>

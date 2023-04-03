@@ -16,9 +16,9 @@
           $("#main-nav").addClass("sticky-nav");
           $("#moocs_register_link_onmenu").removeClass("d-none");
 
-          var moocs_register_link = $('#moocs_register_link').attr('href'); 
+          var moocs_register_link = $('#moocs_register_link').attr('href');
 
-          $('#moocs_register_link_onmenu').attr('href', moocs_register_link); 
+          $('#moocs_register_link_onmenu').attr('href', moocs_register_link);
 
         } else {
           $("#main-nav").removeClass("sticky-nav");
@@ -35,7 +35,7 @@
         startPx >= 95 ? $("#main-nav").addClass("sticky-nav") :  $("#main-nav").removeClass("sticky-nav");
       });
     }
-    
+
 
     // HelloBar
     setup_hellobar();
@@ -82,6 +82,23 @@
               spaceBetween: 60,
             },
         },
+    });
+
+    //Home silder
+    var swiper = new Swiper(".home-swiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: {
+        delay: 7000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
 
     //ACC Focus areas swipper
@@ -183,6 +200,6 @@
             }
         }
     })
-    */      
+    */
 
 })(jQuery);

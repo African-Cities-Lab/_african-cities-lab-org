@@ -22,19 +22,19 @@
 
     <!-- Page banner area-->
     <section class="page-hero__container">
-        {% include "home/parts/page_header.html" with page_title=self.title %} 
+        {% include "home/parts/page_header.html" with page_title=self.title %}
     </section>
     <!-- End Page banner area -->
 
     <section class="py-5">
         <div class="container p-md-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 col-md-10">  
+                <div class="col-12 col-lg-6 col-md-10">
                     <div class="font-size-18">
                         {{ page.body|richtext }}
                     </div>
-                </div>  
-            </div> 
+                </div>
+            </div>
         </div>
     </section>
 
@@ -43,5 +43,5 @@
         {% include "home/parts/partners_section.html" %}
     </section>
     <!-- End Partners Area -->
-    
+
 {% endblock content %}

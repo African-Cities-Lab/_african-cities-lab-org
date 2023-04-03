@@ -9,23 +9,23 @@
         {% translate "Terms & Conditions" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
- 
+
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Terms & Conditions" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
@@ -57,11 +57,11 @@
                       {% translate "Terms & Conditions" %}
                       <span class="dash-accent__"></span>
                   </div>
-              </div>  
+              </div>
           </div>
       </div>
       <div class="acl-sharpes bottom-right__sharpe">
-          <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-bottom#d29675.svg' %}">
+          <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-bottom#d29675.svg' %}"/>
       </div>
     </section>
 

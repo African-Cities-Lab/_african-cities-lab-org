@@ -137,15 +137,15 @@ def subscribe_webinar(request):
     )
 
 
-def newsletter_submission(request): 
-    
+def newsletter_submission(request):
+
     if request.method == "POST":
         email = request.POST["EMAIL"]
         merge_fields = {
             "LNAME": request.POST["LNAME"],
             "FNAME": request.POST["FNAME"],
         }
-        
+
         if request.POST["site_language"] == "en":
             list_id = settings.MAILCHIMP_NEWSLETTER_EN_ID
         else:  # "fr"
@@ -171,4 +171,3 @@ def newsletter_submission(request):
         request,
         "home/newsletter.html"
     )
-

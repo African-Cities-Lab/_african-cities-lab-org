@@ -9,22 +9,23 @@
         {% translate "Program | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %} 
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab"/>
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 {% endblock %}
@@ -41,17 +42,17 @@
 
 {% block content %}
 
-<section class="page-banner"> 
+<section class="page-banner">
   <div class="container-fluid">
       <div class="row py-5">
-          <div class="col-12 col-md-6"> 
+          <div class="col-12 col-md-6">
               <div class="position-relative h1">
                   {% translate "Program" %}
                   <span class="dash-accent"></span>
               </div>
           </div>
       </div>
-  </div> 
+  </div>
 </section>
 
 <section>
@@ -103,15 +104,15 @@
               <div class="row speaker-list mt-3">
                 <div class="col-12 col-md-6 p-3">
                   <div class="speaker-list__speaker">
-                    <div class="speaker-list__speaker__img"> 
-                      <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Jérôme Chenal"> 
+                    <div class="speaker-list__speaker__img">
+                      <img src="{% static 'images/assets/civa/Jerome-chenal.png' %}" alt="Jérôme Chenal">
                     </div>
                     <span class="speaker-list__speaker__name">
                       {% translate 'Jérôme Chenal' %} -
                       <span class="font-size-12">
                         {% translate 'Director of CEAT,EPFL, Director of CUS, UM6P' %}
-                      </span>      
-                    </span> 
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -132,7 +133,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -151,7 +152,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -170,7 +171,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -189,7 +190,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -208,7 +209,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -227,7 +228,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -519,15 +520,15 @@
               <div class="row speaker-list mt-3">
                 <div class="col-12 col-md-6 p-3">
                   <div class="speaker-list__speaker">
-                    <div class="speaker-list__speaker__img"> 
-                      <img src="{% static 'images/assets//civa/Hassan-Radoine.jpeg' %}" alt="Hassan Radoine"> 
+                    <div class="speaker-list__speaker__img">
+                      <img src="{% static 'images/assets//civa/Hassan-Radoine.jpeg' %}" alt="Hassan Radoine">
                     </div>
                     <span class="speaker-list__speaker__name">
                       {% translate 'Hassan Radoine' %} -
                       <span class="font-size-12">
                         {% translate 'Director of the School of Architecture, Planning and Design (SAP+D) at the Polytechnic University (UM6P) of Benguerir - Morocco' %}
-                      </span>      
-                    </span> 
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -548,7 +549,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -567,7 +568,7 @@
                 {% endblocktranslate %}
               </div>
               <div class="row speaker-list mt-3">
-                
+
               </div>
             </div>
           </li>
@@ -785,4 +786,3 @@
 
 
 {% endblock content %}
-  

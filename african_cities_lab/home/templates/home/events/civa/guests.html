@@ -10,21 +10,21 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="noindex,nofollow"/>
 {% endblock %}
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab"/>
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 {% endblock %}
@@ -32,7 +32,7 @@
 {% block css %}
   {{ block.super }}
   <style>
- 
+
     .civa-form__section {
       background-image: linear-gradient(rgba(64, 39, 129, 0.9),rgba(64, 39, 129, 0.6)) ,url({% static 'images/assets/conference_form_bg.jpg' %});
     }
@@ -51,10 +51,10 @@
 
 {% block content %}
 
-<section class="page-banner"> 
+<section class="page-banner">
   <div class="container-fluid">
       <div class="row py-5">
-          <div class="col-12 col-md-6"> 
+          <div class="col-12 col-md-6">
               <div class="position-relative h1">
                   {% translate "Special guests" %}
                   <span class="dash-accent"></span>
@@ -63,7 +63,7 @@
       </div>
   </div>
   <div class="acl-sharpes right-sharpe">
-      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+      <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}"/>
   </div>
 </section>
 
@@ -83,7 +83,7 @@
         </div>
         <p class="font-size-16 pt-3 pb-5">
           {% blocktranslate %}
-            If you wish to have more information,<br> 
+            If you wish to have more information,<br>
             you can contact us directly on :<br>
           {% endblocktranslate %}
           <a class="text-white" href="mailto:info@africancitieslab.org">
@@ -96,4 +96,3 @@
 </section>
 
 {% endblock content %}
-  

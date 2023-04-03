@@ -125,6 +125,6 @@ urlpatterns = [
 
     ########
     path("newsletter/submission/", views.newsletter_submission, name="suscribe-newsletter"),
-    
+
     path("moocs/subscribe/", views.subscribe_moocs, name="subscribe-moocs"),
 ]

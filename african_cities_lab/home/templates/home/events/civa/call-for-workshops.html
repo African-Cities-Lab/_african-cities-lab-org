@@ -9,14 +9,15 @@
         {% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %} 
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
-{% endblock %}
- 
+{% endblock static_meta_tag %}
+
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
@@ -25,10 +26,10 @@
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Workshops & Tutorials | African Cities Conference" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
@@ -42,17 +43,17 @@
 
 {% block content %}
 
-<section class="page-banner"> 
+<section class="page-banner">
   <div class="container-fluid">
       <div class="row py-5">
-          <div class="col-12 col-md-6"> 
+          <div class="col-12 col-md-6">
               <div class="position-relative h1">
                   {% translate "Call for Workshops & Tutorials" %}
                   <span class="dash-accent"></span>
-              </div> 
+              </div>
           </div>
       </div>
-  </div> 
+  </div>
 </section>
 
 <section class="py-5">
@@ -61,51 +62,51 @@
         <div class="col-12 col-lg-8 font-size-16">
           <p class="mt-4">
             {% blocktranslate %}
-            In the framework of the 1st African Cities Conference (ACC 2023), we are launching a call for proposals for the organisation of workshop sessions, 
-            creative or reflective events and tutorials during ACC 2023.  These types of ACC 2023 events will provide a platform to discuss a specific topic 
+            In the framework of the 1st African Cities Conference (ACC 2023), we are launching a call for proposals for the organisation of workshop sessions,
+            creative or reflective events and tutorials during ACC 2023.  These types of ACC 2023 events will provide a platform to discuss a specific topic
             related to African cities with an audience specifically interested in that topic in an informal setting (as opposed to the leading conference).
             {% endblocktranslate %}
           </p>
           <p class="pt-3">
             {% blocktranslate %}
-            We invite proposals for events that promote discussion, interdisciplinary exchange and interaction, scholarly discourse, and creative and critical 
-            thinking, rather than being mere mini-conferences. To vary and diversify the activities of the ACC 2023, we offer potential organisers of such 
-            events flexibility in the formats that best suit the objectives of their proposal. We also welcome proposals from research communities that are 
+            We invite proposals for events that promote discussion, interdisciplinary exchange and interaction, scholarly discourse, and creative and critical
+            thinking, rather than being mere mini-conferences. To vary and diversify the activities of the ACC 2023, we offer potential organisers of such
+            events flexibility in the formats that best suit the objectives of their proposal. We also welcome proposals from research communities that are
             not always featured in African cities' events and conferences so that the conference is not limited to typical researchers.
             {% endblocktranslate %}
           </p>
           <p class="pt-3">
             {% blocktranslate %}
-            Thus, within this category of events, we hope to welcome three types of contributions: traditional workshops, creative events and tutorials, 
+            Thus, within this category of events, we hope to welcome three types of contributions: traditional workshops, creative events and tutorials,
             each with its own particularities as described below.
             {% endblocktranslate %}
           </p>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Traditional Workshops" %}
             </h5>
-  
+
             <p>
               {% blocktranslate %}
-              Traditional workshops usually correspond to the topics and challenges of the general call for papers of the main conference. In the context of a 
+              Traditional workshops usually correspond to the topics and challenges of the general call for papers of the main conference. In the context of a
               traditional workshop, the organisers may consider a programme consisting of a set of invited talks around a certain theme (with or without paper presentations).
               {% endblocktranslate %}
             </p>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Creative, Interactive or Reflective Events" %}
             </h5>
-  
+
             <p>
               {% blocktranslate %}
-              In the spirit of reflection and community building, we invite academics from all disciplines and individuals representing different communities 
-              of practice (including journalism, management, health, advocacy, activism, education, art, law and politics) to contribute to creative and 
-              reflective events related to the African Cities Conference 2023. 
+              In the spirit of reflection and community building, we invite academics from all disciplines and individuals representing different communities
+              of practice (including journalism, management, health, advocacy, activism, education, art, law and politics) to contribute to creative and
+              reflective events related to the African Cities Conference 2023.
               {% endblocktranslate %}
             </p>
             <p class="pt-3">
@@ -121,22 +122,22 @@
               <li >{% translate "Urban art exhibition or other urban art intervention." %}</li>
             </ul>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Tutorials" %}
             </h5>
-  
+
             <p>
               {% blocktranslate %}
-              In this category of event, unlike traditional workshops, and creative events, tutorials are aimed at reasonably well-established topics. 
-              However, given that topics on the challenges of African cities are emerging research topics, we hope to welcome them here, 
+              In this category of event, unlike traditional workshops, and creative events, tutorials are aimed at reasonably well-established topics.
+              However, given that topics on the challenges of African cities are emerging research topics, we hope to welcome them here,
               especially tutorials that link well-established topics from other disciplines to African city topics. We encourage tutorials to be interactive to engage the audience.
               {% endblocktranslate %}
             </p>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
@@ -161,16 +162,16 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Submission Proposal Guidelines" %}
             </h5>
-  
+
             <p>
               {% blocktranslate %}
-              Proposals should be submitted via Easychair: 
+              Proposals should be submitted via Easychair:
               <a class="text_primary" target="_blank" href="https://easychair.org/my/conference?conf=hhai2023">https://easychair.org/my/conference?conf=hhai2023</a>.
               {% endblocktranslate %}
             </p>
@@ -180,7 +181,7 @@
                and should include the following information:
               {% endblocktranslate %}
             </p>
-  
+
             <ol class="mt-3">
               <li>
                 {% blocktranslate %}
@@ -267,13 +268,13 @@
               </a>
             </div>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Evaluation criteria for proposals" %}
             </h5>
-  
+
             <ul class="px-5 pt-3">
               <li>
                 {% blocktranslate %}
@@ -292,29 +293,29 @@
               </li>
               <li class="pt-3">
                 {% blocktranslate %}
-                <strong>Diversity & Inclusion:</strong> Reflection on the detailed approach to ensure engagement and participation of a wide audience. Diversity of background 
+                <strong>Diversity & Inclusion:</strong> Reflection on the detailed approach to ensure engagement and participation of a wide audience. Diversity of background
                 of workshop organisers and intended presenters/contributors.
                 {% endblocktranslate %}
               </li>
             </ul>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
               {% translate "Proceedings of the workshops and tutorials" %}
             </h5>
-  
+
             <p>
               {% blocktranslate %}
-              Each workshop, on its own, may consider archiving the workshop contributions and documenting the ideas generated during the workshop. 
-              If there is sufficient interest, we can archive (with an opt-out option) all contributions to the ACC 2023 workshop, together with the 
-              workshop and tutorial summaries, as a combined record of <a class="text_primary" target="_blank" href="https://ceur-ws.org/">CEUR Workshop Proceeding</a> 
+              Each workshop, on its own, may consider archiving the workshop contributions and documenting the ideas generated during the workshop.
+              If there is sufficient interest, we can archive (with an opt-out option) all contributions to the ACC 2023 workshop, together with the
+              workshop and tutorial summaries, as a combined record of <a class="text_primary" target="_blank" href="https://ceur-ws.org/">CEUR Workshop Proceeding</a>
               or our Web of Conference proceeding.
               {% endblocktranslate %}
             </p>
           </div>
-  
+
           <div class="pt-5">
             <h5 class="mb-3 font-size-18">
               <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
@@ -325,11 +326,11 @@
               <li>Stéphane C. K. Tékouabou, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
             </ul>
           </div>
-  
+
         </div>
 
         <div class="col-12 col-lg-4">
-          
+
           <aside class="sidebar-menu my-5">
             <a href="{% url 'cfp-details' %}" class="sidebar-item h4">
               {% blocktranslate %} Call for papers {% endblocktranslate %}
@@ -346,6 +347,5 @@
     </div>
   </section>
 
- 
+
 {% endblock content %}
-  

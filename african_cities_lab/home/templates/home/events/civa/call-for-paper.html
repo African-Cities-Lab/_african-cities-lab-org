@@ -9,14 +9,15 @@
         {% translate "Call for papers | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %} 
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
@@ -26,14 +27,14 @@
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for papers | African Cities Conference" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
-  <style> 
+  <style>
     .page-banner {
       background-image: url({% static 'images/assets/banner-pattern.png' %});
       background-position: top center;
@@ -101,17 +102,17 @@
 </div>
 {% endcomment %}
 
-<section class="page-banner"> 
+<section class="page-banner">
   <div class="container-fluid">
       <div class="row py-5">
-          <div class="col-12 col-md-6"> 
+          <div class="col-12 col-md-6">
               <div class="position-relative h1">
                   {% translate "ACC Calls" %}
                   <span class="dash-accent"></span>
-              </div> 
+              </div>
           </div>
       </div>
-  </div> 
+  </div>
 </section>
 
 <section class="py-5 ">
@@ -120,22 +121,22 @@
             <div class="col-12 col-md-11 font-size-16">
                   <p class="mt-3">
                     {% blocktranslate %}
-                    African Cities Conference (ACC) is the first annual international conference for discussion and exchange 
-                    between urban actors, the private sector and the academic world on the issues of African cities. 
-                    The first edition on the theme of "Digital Cities" will take place on May 23 and 24, 2023 in Cotonou, 
-                    Benin. The ultimate goal of this conference is to increase the scope and influence of research, 
-                    entrepreneurial innovation and solution creation activities on the African continent related to the 
-                    digitization of cities. The 2023 edition focuses on different models of African digital cities as 
+                    African Cities Conference (ACC) is the first annual international conference for discussion and exchange
+                    between urban actors, the private sector and the academic world on the issues of African cities.
+                    The first edition on the theme of "Digital Cities" will take place on May 23 and 24, 2023 in Cotonou,
+                    Benin. The ultimate goal of this conference is to increase the scope and influence of research,
+                    entrepreneurial innovation and solution creation activities on the African continent related to the
+                    digitization of cities. The 2023 edition focuses on different models of African digital cities as
                     potential solutions to urban challenges in Africa.
                     {% endblocktranslate %}
                   </p>
                   <p class="pt-2">
                     {% blocktranslate %}
-                    The ACC 2023 covers all topics related to digital cities in Africa, including the digital transition of cities 
-                    and urban planning, African smart cities, Smart geo-information systems (Smart GIS), smart governance, 
-                    challenges of digital cities in Africa, urban sustainability, planning/management issues of emerging cities 
-                    in Africa, urban socio-economic challenges (education, health, employment, youth, economy, food security, etc.), 
-                    urban environments, information and communication technologies applied to the urban. 
+                    The ACC 2023 covers all topics related to digital cities in Africa, including the digital transition of cities
+                    and urban planning, African smart cities, Smart geo-information systems (Smart GIS), smart governance,
+                    challenges of digital cities in Africa, urban sustainability, planning/management issues of emerging cities
+                    in Africa, urban socio-economic challenges (education, health, employment, youth, economy, food security, etc.),
+                    urban environments, information and communication technologies applied to the urban.
                     {% endblocktranslate %}
                   </p>
             </div>
@@ -160,18 +161,18 @@
         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-10">
           <div class="cfp-card">
             <a href="{% url 'cfp-details' %}">
-              <div class="cfp-card__header"> 
+              <div class="cfp-card__header">
                 <span class="h4">{% blocktranslate %} Call for papers {% endblocktranslate %}</span>
               </div>
-              <div class="cfp-card__body"> 
+              <div class="cfp-card__body">
                 {% blocktranslate %}
                   Learn more about types of papers, submission guidelines and instructions...
                 {% endblocktranslate %}
                 <p class="mt-4 text_primary">
                   {% translate "Read more" %}
                 </p>
-              </div> 
-              <div class="hover-bg"></div> 
+              </div>
+              <div class="hover-bg"></div>
             </a>
           </div>
         </div>
@@ -179,18 +180,18 @@
         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-10">
           <div class="cfp-card">
             <a href="{% url 'cfpd-details' %}">
-              <div class="cfp-card__header"> 
+              <div class="cfp-card__header">
                 <span class="h4">{% blocktranslate %} Call for Poster & Demos {% endblocktranslate %}</span>
               </div>
-              <div class="cfp-card__body"> 
+              <div class="cfp-card__body">
                 {% blocktranslate %}
                   Learn more about types of papers, submission guidelines and instructions...
                 {% endblocktranslate %}
                 <p class="mt-4 text_primary">
                   {% translate "Read more" %}
                 </p>
-              </div> 
-              <div class="hover-bg"></div> 
+              </div>
+              <div class="hover-bg"></div>
             </a>
           </div>
         </div>
@@ -198,18 +199,18 @@
         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-10">
           <div class="cfp-card">
             <a href="{% url 'cfwt-details' %}">
-              <div class="cfp-card__header"> 
+              <div class="cfp-card__header">
                 <span class="h4">{% blocktranslate %} Call for Workshops & Tutorials {% endblocktranslate %}</span>
               </div>
-              <div class="cfp-card__body"> 
+              <div class="cfp-card__body">
                 {% blocktranslate %}
                   Learn more about types of papers, submission guidelines and instructions...
                 {% endblocktranslate %}
                 <p class="mt-4 text_primary">
                   {% translate "Read more" %}
                 </p>
-              </div> 
-              <div class="hover-bg"></div> 
+              </div>
+              <div class="hover-bg"></div>
             </a>
           </div>
         </div>
@@ -217,18 +218,18 @@
         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-10">
           <div class="cfp-card">
             <a href="{% url 'cfdc-details' %}">
-              <div class="cfp-card__header"> 
+              <div class="cfp-card__header">
                 <span class="h4">{% blocktranslate %}Call for Doctoral Consortium & Spring School{% endblocktranslate %}</span>
               </div>
-              <div class="cfp-card__body"> 
+              <div class="cfp-card__body">
                 {% blocktranslate %}
                   Learn more about types of papers, submission guidelines and instructions...
                 {% endblocktranslate %}
                 <p class="mt-4 text_primary">
                   {% translate "Read more" %}
                 </p>
-              </div> 
-              <div class="hover-bg"></div> 
+              </div>
+              <div class="hover-bg"></div>
             </a>
           </div>
         </div>
@@ -358,7 +359,7 @@
               <li class="pt-2">{% translate "Travel behavior (travel patterns, route choice, mode choice, etc.)" %}</li>
               <li class="pt-2">{% translate "Multimodal transportation" %}</li>
               <li class="pt-2">{% translate "Non-motorized and informal transportation" %}</li>
-              <li class="pt-2">{% translate "Shared mobility (carsharing, bike sharing, etc.)" %}</li> 
+              <li class="pt-2">{% translate "Shared mobility (carsharing, bike sharing, etc.)" %}</li>
               <li class="pt-2">{% translate "Transportation and Traffic Engineering" %}</li>
             </ul>
           </div>
@@ -372,7 +373,7 @@
               <li >{% translate "Construction Robotics" %}</li>
               <li class="pt-2">{% translate "AI-based solutions" %}</li>
               <li class="pt-2">{% translate "Mobile currency solutions" %}</li>
-              <li class="pt-2">{% translate "Infrastructure Design tools" %}</li> 
+              <li class="pt-2">{% translate "Infrastructure Design tools" %}</li>
               <li class="pt-2">{% translate "Construction Technology & Engineering" %}</li>
             </ul>
           </div>
@@ -381,6 +382,5 @@
     </div>
   </div>
 </section>
- 
+
 {% endblock content %}
-  

@@ -10,13 +10,13 @@
     {% endif %}
 {% endblock title %}
 {% block meta_tag_description %}
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="noindex,nofollow"/>
   <meta name="description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
-{% endblock %}
+{% endblock meta_tag_description %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
 <meta name="twitter:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}">
 <meta name="twitter:site" content="@AfricanCtiesLab" />
 <meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
@@ -26,10 +26,10 @@
 <meta property="og:site_name" content="African Cities Lab" />
 <meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
 <meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
@@ -58,7 +58,7 @@
           </div>
           <div class="page-banner__right">
               <div class="d-none d-lg-block banner-angle__left">
-                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}"/>
               </div>
           </div>
       </div>
@@ -86,33 +86,33 @@
                 <label>{% translate "Last name" %}
                   <div class="form-asterix">*</div>
                 </label>
-                <input type="text" name="LNAME" class="form-control" required>
+                <input type="text" name="LNAME" class="form-control" required/>
               </div>
               <div class="col-12 col-md-6 form-group">
                 <label>{% translate "First name" %}
                   <div class="form-asterix">*</div>
                 </label>
-                <input type="text" name="FNAME" class="form-control" required>
+                <input type="text" name="FNAME" class="form-control" required/>
               </div>
             </div>
             <div class="form-group" required="required">
               <label>{% translate "Email Address" %}
                 <div class="form-asterix">*</div>
               </label>
-              <input type="email" name="EMAIL" class="form-control" required>
+              <input type="email" name="EMAIL" class="form-control" required/>
             </div>
 
             <div class="form-group">
               <label>{% translate "Organization Name" %}</label>
-              <input type="text" name="INSTITUT" class="form-control">
+              <input type="text" name="INSTITUT" class="form-control"/>
             </div>
             <div class="form-group">
               <label>{% translate "Title" %}</label>
-              <input type="text" name="TITLE" class="form-control">
+              <input type="text" name="TITLE" class="form-control"/>
             </div>
             <div class="form-group">
               <label>{% translate "Function" %}</label>
-              <input type="text" name="FUNCTION" class="form-control">
+              <input type="text" name="FUNCTION" class="form-control"/>
             </div>
             <div class="form-group">
               <label>{% translate "Country" %}
@@ -128,7 +128,7 @@
             </div>
             <div class="form-group">
               <label>{% translate "LinkedIn account" %}</label>
-              <input type="text" name="LINKEDIN" class="form-control">
+              <input type="text" name="LINKEDIN" class="form-control"/>
             </div>
             <div class="form-group">
               <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />

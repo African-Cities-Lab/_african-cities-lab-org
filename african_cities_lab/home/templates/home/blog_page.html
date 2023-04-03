@@ -6,16 +6,16 @@
     {% else %}
         {{ self.title }}
     {% endif %}
-{% endblock title %} 
+{% endblock title %}
 
-{% block content %} 
+{% block content %}
 
-    <section id="single-post">  
-        <div class="post-hero__container" > 
+    <section id="single-post">
+        <div class="post-hero__container" >
              <div class="acl-sharpes top-right__sharpe">
-                 <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-top.svg' %}">
+                 <img class="d-none d-lg-block" src="{% static 'images/assets/sharpe-top.svg' %}"/>
              </div>
-             
+
             <div class="container p-md-5">
                 <div class="row">
                     <div class="col">
@@ -43,15 +43,15 @@
         <div class="container  p-md-5">
             <div class="row post-content__container position-relative">
                 <div class="col col-xl-10 position-relative">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="col-12 col-lg-10 p-3 p-lg-5 ">
                             <article>
                                 <div class="post-thumbnail text-center my-2">
                                     {% image page.main_image original %}
                                 </div>
-                                <div class="post-content__body my-5">   
+                                <div class="post-content__body my-5">
                                     {{ page.body|richtext }}
-                                </div> 
+                                </div>
                                 {% if page.tags.all.count %}
                                     <div class="post-tags__wrapper">
                                         <span class="h6">{% translate "Tags:" %}</span>
@@ -64,7 +64,7 @@
                             </article>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="widget-share">
                     <span class="widget-share__title">
                         <i class="fa fa-share-alt mx-2" aria-hidden="true"></i>{% translate "Share" %}
@@ -82,10 +82,10 @@
                         <a  href="mailto:?subject={{self.title}}&amp;body={{self.full_url}}" target="_self" rel="nofollow noopener noreferrer" class="novashare-button">
                             <i class="fas fa-envelope"></i>
                         </a>
-                    </div> 
+                    </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </section>
 
 {% endblock content %}

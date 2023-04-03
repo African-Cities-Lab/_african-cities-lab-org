@@ -9,26 +9,27 @@
         {% translate "Venue & Contact | African Cities Conference" %} - African Cities Lab
     {% endif %}
 {% endblock title %}
-{% block meta_tag_description %} 
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
   <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab"/>
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta property="og:site_name" content="African Cities Lab" />
 <meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
-<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}">
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
   {{ block.super }}
@@ -43,17 +44,17 @@
 {% block content %}
 
 
-<section class="page-banner"> 
+<section class="page-banner">
   <div class="container-fluid">
       <div class="row py-5">
-          <div class="col-12 col-md-6"> 
+          <div class="col-12 col-md-6">
               <div class="position-relative h1">
                   {% translate "Venue & Contact" %}
                   <span class="dash-accent"></span>
               </div>
           </div>
       </div>
-  </div> 
+  </div>
 </section>
 
 <section class="py-5 mb-3 font-size-16">
@@ -62,14 +63,14 @@
       <div class="col-12 col-md-10 col-lg-8">
         <p>
           {% blocktranslate %}
-          The first annual meeting of the academic and professional world on African cities, 
-          will highlight the solutions brought by urban actors to create new city models capable 
+          The first annual meeting of the academic and professional world on African cities,
+          will highlight the solutions brought by urban actors to create new city models capable
           of accommodating the 950 million additional inhabitants who will populate urban environments by 2050.
           {% endblocktranslate %}
         </p>
         <p class="pt-2">
           {% blocktranslate %}
-          The first edition of this international event will present digital and smart cities as sustainable, 
+          The first edition of this international event will present digital and smart cities as sustainable,
           inclusive and innovative solutions to the urban challenges facing Africa.
           {% endblocktranslate %}
         </p>
@@ -87,34 +88,33 @@
         </h4>
         <p>
           {% blocktranslate %}
-          The welcome of the participants to the 1st edition of the African Cities Conference will be done at the Novotel 
-          hotel. Located on the famous boulevard of the Marina, a few meters from the emblematic statue of 
+          The welcome of the participants to the 1st edition of the African Cities Conference will be done at the Novotel
+          hotel. Located on the famous boulevard of the Marina, a few meters from the emblematic statue of
           the Amazon, it is an ultramodern setting with state-of-the-art technological equipment, capable of hosting large-scale events.
           {% endblocktranslate %}
         </p>
       </div>
       <div class="col-12 col-lg-6 p-5">
-        <img src="{% static 'images/assets/civa/novotel-benin.jpeg' %}">
+        <img src="{% static 'images/assets/civa/novotel-benin.jpeg' %}"/>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="py-5 font-size-16 ">
   <div class="container-xl">
     <div class="row justify-content-center align-items-center">
-      <div class="col-12 col-lg-6 p-5 order-1 order-lg-0"> 
+      <div class="col-12 col-lg-6 p-5 order-1 order-lg-0">
         <div class="row">
           <div class="col-sm-6 col-md-6 col-xs-12">
             <div class="pt-md-5">
-              <img class="pt-md-4" src="{% static 'images/assets/civa/novotel-benin-1.jpeg' %}">
-              <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-2.jpeg' %}">
+              <img class="pt-md-4" src="{% static 'images/assets/civa/novotel-benin-1.jpeg' %}"/>
+              <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-2.jpeg' %}"/>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-xs-12">
-            <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-3.jpeg' %}">
-            <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-4.jpeg' %}">
+            <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-3.jpeg' %}"/>
+            <img class="pt-4" src="{% static 'images/assets/civa/novotel-benin-4.jpeg' %}"/>
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@
         </h4>
         <p>
           {% blocktranslate %}
-          A part of the rooms of the Novotel Hotel in Cotonou has been reserved for the African Cities 
-          Conference. Other 3 and 4 star hotels will be announced soon and reservation details will be 
+          A part of the rooms of the Novotel Hotel in Cotonou has been reserved for the African Cities
+          Conference. Other 3 and 4 star hotels will be announced soon and reservation details will be
           communicated to participants as soon as possible.
           {% endblocktranslate %}
         </p>
@@ -143,16 +143,16 @@
         </h4>
         <p>
           {% blocktranslate %}
-          Nationals of countries subject to the visa application procedure can now apply for a visa online (e-visa) 
-          at <a href="https://evisa.bj/" class="text_primary" target="_blank">https://evisa.bj/</a>. It takes 7 days to obtain a visa. 
-          The maximum validity of a visa varies from 30 to 90 days depending on your nationality. If necessary, 
-          the organisers will send you an official letter of participation, justifying your travel 
+          Nationals of countries subject to the visa application procedure can now apply for a visa online (e-visa)
+          at <a href="https://evisa.bj/" class="text_primary" target="_blank">https://evisa.bj/</a>. It takes 7 days to obtain a visa.
+          The maximum validity of a visa varies from 30 to 90 days depending on your nationality. If necessary,
+          the organisers will send you an official letter of participation, justifying your travel
           from your country of origin to Benin.
           {% endblocktranslate %}
         </p>
       </div>
       <div class="col-12 col-lg-6 p-5">
-        <img src="{% static 'images/assets/civa/visa-passport.jpeg' %}">
+        <img src="{% static 'images/assets/civa/visa-passport.jpeg' %}"/>
       </div>
     </div>
   </div>
@@ -164,16 +164,15 @@
       <div class="col-12 col-md-8 col-lg-6 mb-5 text-center">
         <p>
           {% blocktranslate %}
-          Follow us on social networks or write to us for any more information or request about 
+          Follow us on social networks or write to us for any more information or request about
           the event and how to become a partner.
           {% endblocktranslate %}
-        </p> 
+        </p>
         <h6 class="mt-2">{% translate "For any request:" %}</h6>
         <a href="mailto:info-acc@africancitieslab.org" class="text_primary">info-acc@africancitieslab.org</a>
       </div>
     </div>
   </div>
 </section>
-  
+
 {% endblock content %}
-  

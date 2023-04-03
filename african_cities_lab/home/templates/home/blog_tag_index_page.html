@@ -4,7 +4,7 @@
     {% if self.seo_title %}
         {{ self.seo_title }}
     {% elif self.title %}
-        {{ self.title }} 
+        {{ self.title }}
     {% else %}
         {% translate "Tags" %}
     {% endif %}
@@ -15,7 +15,7 @@
         .page-banner__right {
             background-image: url({% static 'images/assets/acl-contact-banner.jpg' %});
         }
-    </style> 
+    </style>
 {% endblock css %}
 
 {% block content %}
@@ -28,7 +28,7 @@
             </div>
             <div class="page-banner__right">
                 <div class="d-none d-lg-block banner-angle__left">
-                    <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}">
+                    <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/banner-red-angle-left.svg' %}"/>
                 </div>
             </div>
         </div>
@@ -41,17 +41,15 @@
                 {% if request.GET.tag %}
                     <h2>{% translate "Showing pages tagged" %} "{{ request.GET.tag }}"</h2>
                 {% endif %}
-
                 {% for blogpage in blogpages %}
-
                     <div class="col-12 col-lg-4 col-md-6 article-card">
                         <div class="card border-0">
-                            <div class="card-header article-preview-img p-0"> 
+                            <div class="card-header article-preview-img p-0">
                                 <a href="{% pageurl blogpage %}" class="d-block">
-                                    {% image blogpage.specific.main_image original %} 
+                                    {% image blogpage.specific.main_image original %}
                                 </a>
                             </div>
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <div class="article-meta d-flex align-items-center">
                                     <div class="article__date">{{ blogpage.specific.date }}</div>
                                     <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
@@ -70,18 +68,18 @@
                                             {% endif %}
                                         {% endwith %}
                                     </div>
-                                </div>  
+                                </div>
                                 <h5 class="article-title py-3">
                                     <a href="{% pageurl blogpage %}" class="d-block text-black">
                                         {{ blogpage.title }}
-                                    </a> 
+                                    </a>
                                 </h5>
                                 <div class="article-exerpt">
                                     {{ blogpage.specific.summary }}
                                 </div>
-                            </div> 
-                        </div> 
-                    </div> 
+                            </div>
+                        </div>
+                    </div>
 
                 {% empty %}
                     <div class="py-5">

@@ -53,30 +53,30 @@ class BlogIndexPage(MetadataPageMixin, Page):
         "home.HomePage",
     ]
     max_count = 1
-    
+
     def get_context(self, request):
-        
+
         # Get current language
         current_lang = Locale.get_active()
-        
+
         # Get categories
         categories = BlogCategory.objects.filter(language=current_lang).all()
-        
+
         # Update template context
         context = super().get_context(request)
         context["categories"] = categories
-        return context    
+        return context
 
-    
+
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey(
         "BlogPage",
         related_name="tagged_items",
         on_delete=models.CASCADE
     )
-    
+
 class BlogTagIndexPage(Page):
-    
+
     def get_context(self, request):
 
         # Get current language
@@ -88,7 +88,7 @@ class BlogTagIndexPage(Page):
         # Update template context
         context = super().get_context(request)
         context["blogpages"] = blogpages
-        return context    
+        return context
 
 class BlogPage(MetadataPageMixin, Page):
     summary = models.CharField(max_length=255)
@@ -110,7 +110,7 @@ class BlogPage(MetadataPageMixin, Page):
         FieldPanel("summary"),
         ImageChooserPanel("main_image"),
         FieldPanel("body"),
-        
+
     ]
 
     parent_page_type = [
@@ -140,7 +140,7 @@ class BlogCategory(models.Model):
         max_length=255,
         help_text="A slug to identify posts by this category",
     )
-    
+
     panels = [
         FieldPanel("name"),
         FieldPanel("language", widget=forms.Select),
@@ -154,5 +154,3 @@ class BlogCategory(models.Model):
         verbose_name = "Blog Category"
         verbose_name_plural = "blog categories"
         ordering = ["name"]
-        
-        

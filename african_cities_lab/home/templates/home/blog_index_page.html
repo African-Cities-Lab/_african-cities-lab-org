@@ -4,7 +4,7 @@
     {% if self.seo_title %}
         {{ self.seo_title }}
     {% elif self.title %}
-        {{ self.title }} 
+        {{ self.title }}
     {% else %}
         {% translate "Blog" %}
     {% endif %}
@@ -17,16 +17,16 @@
               url({% static 'images/assets/acl-blogbanner.jpg' %});
             background-position: bottom center;
         }
-    </style> 
+    </style>
 {% endblock css %}
 
 {% block content %}
 
     <!-- Page banner area-->
-    <section class="page-banner"> 
+    <section class="page-banner">
         <div class="container-fluid">
             <div class="row py-5">
-                <div class="col-12 col-lg-6 col-md-10"> 
+                <div class="col-12 col-lg-6 col-md-10">
                     <div class="position-relative h1">
                         {% translate "Blog" %}
                         <span class="dash-accent"></span>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="acl-sharpes right-sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-right.svg' %}"/>
         </div>
     </section>
     <!-- End Page banner area -->
@@ -47,24 +47,24 @@
         <div class="container-xl">
             <div class="row justify-content-md-between align-content-center">
                 <div class="col-12 col-sm-4 align-self-center">
-                    <h2>{% translate "All articles" %}</h2> 
-                </div> 
+                    <h2>{% translate "All articles" %}</h2>
+                </div>
 
-                
+
                     {% if categories %}
                     <div class="col-12 col-sm-3 position-relative">
-                        <select id="blog-filter" name="article__category" class="form-control">
+                        <select id="blog-filter" name="article__category" class="form-control"/>
                             <option value="">--- {% translate "Select a category" %} ---</option>
                             {% for category in categories %}
                                 <option value="{{category.slug}}">{{ category.name }}</option>
                             {% endfor %}
                         </select>
-                        <div class="select-angle"> 
+                        <div class="select-angle">
                             <i class="fas fa-arrow-down"></i>
                         </div>
-                    </div> 
+                    </div>
                     {% endif %}
-                
+
             </div>
         </div>
     </section>
@@ -72,18 +72,18 @@
 
     <section class="py-5">
         <div class="container-xl">
-            <div class="row "> 
-                {% for article in page.localized.get_children %} 
+            <div class="row ">
+                {% for article in page.localized.get_children %}
                 <div class="col-12 col-lg-4 col-md-6 article-card">
                     <div class="card border-0">
-                        <div class="card-header article-preview-img p-0"> 
+                        <div class="card-header article-preview-img p-0">
                             <a href="{% pageurl article %}" class="d-block">
-                                {% image article.specific.main_image original %} 
+                                {% image article.specific.main_image original %}
                             </a>
                         </div>
-                        <div class="card-body"> 
+                        <div class="card-body">
                             <div class="article-meta d-flex align-items-center">
-                                <div class="article__date">{{ article.specific.date }}</div> 
+                                <div class="article__date">{{ article.specific.date }}</div>
                                 <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
                                 <div class="article__category">
                                     {% with categories=article.specific.categories.all %}
@@ -98,18 +98,18 @@
                                         {% endif %}
                                     {% endwith %}
                                 </div>
-                            </div>  
+                            </div>
                             <h5 class="article-title py-3">
                                 <a href="{% pageurl article %}" class="d-block text-black">
                                     {{ article.title }}
-                                </a> 
+                                </a>
                             </h5>
                             <div class="article-exerpt">
                                 {{ article.specific.summary }}
                             </div>
-                        </div> 
-                    </div> 
-                </div> 
+                        </div>
+                    </div>
+                </div>
                 {% endfor %}
             </div>
         </div>

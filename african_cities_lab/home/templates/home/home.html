@@ -2,11 +2,11 @@
 {% load home_tags i18n static wagtailcore_tags wagtailimages_tags %}
 
 {% block static_meta_tag %}
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="African Cities Lab">
-<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
 <meta name="twitter:site" content="@AfricanCtiesLab" />
-<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}">
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
 
 <meta property="og:title" content="African Cities Lab" />
 <meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
@@ -16,7 +16,7 @@
 <meta itemprop="name" content="African Cities Lab">
 <meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
 <meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
-{% endblock %}
+{% endblock static_meta_tag %}
 
 {% block css %}
     {{ block.super }}
@@ -25,7 +25,19 @@
             background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
               url({% static 'images/assets/acl-homepage-banner.jpg' %});
             background-position: bottom center;
+            min-height: 462px;
         }
+        .homepage-slider .slide-1 {
+            background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+              url({% static 'images/assets/acl-homepage-banner.jpg' %});
+            background-position: bottom center;
+        }
+        .homepage-slider .slide-2 {
+            background-image: linear-gradient(rgba(64, 39, 129, 0.25),rgba(64, 39, 129, 0.45)),
+              url({% static 'images/assets/2023_summit_img.jpeg' %});
+            background-position: top center;
+        }
+
     </style>
 {% endblock css %}
 
@@ -42,6 +54,70 @@
 
 {% block content %}
 
+    <section class="homepage-slider">
+        <div class="swiper home-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-image slide-1">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-12 col-xl-6 col-md-10">
+                                    <div class="position-relative h1">
+                                        {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %}
+                                        <span class="dash-accent"></span>
+                                    </div>
+                                    <p class="my-4 font-size-16">
+                                        {% translate "Advanced online training to take advantage of the opportunities and face the architectural, social and environmental challenges of African cities in 2050." %}
+                                    </p>
+                                    <div class="pt-3">
+                                        <a class="btn btn-small font-size-14 btn-outline__white"
+                                            href="{% url 'moocs' %}">
+                                            {% translate "Explore our MOOCs" %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acl-sharpes bottom-right__sharpe">
+                            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image slide-2">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-12 col-md-10 col-lg-6">
+                                    <div class="logo-wrapper mb-5">
+                                        <img src="{% static 'images/assets/logo-acl2023-summit-white.png' %}"
+                                            alt="African Cities Lab - 2023 Summit"
+                                            width="300"
+                                            height="43.42">
+                                    </div>
+                                    <h5 class="font-weight-500 mb-2">
+                                        {% translate "Hybrid event" %}<span class="text_primary mx-2">|</span>{% translate "May 23-24" %}
+                                    </h5>
+                                    <div class="pt-4 h1 position-relative">
+                                        {% translate "Join the movement to transform African cities" %}
+                                        <span class="dash-accent"></span>
+                                    </div>
+                                    <div class="pt-5">
+                                        <a class="btn btn-small font-size-14 btn-outline__white" target="_blank"
+                                            href="https://summit.africancitieslab.org/">
+                                            {% translate "Learn more" %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    {% comment %}
     <section class="page-banner">
         <div class="container-fluid">
             <div class="row py-5">
@@ -57,9 +133,10 @@
             </div>
         </div>
         <div class="acl-sharpes bottom-right__sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
         </div>
-    </section> 
+    </section>
+    {% endcomment %}
 
     <section class="position-relative">
         <div class="container-lg py-5">
@@ -171,7 +248,7 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -202,7 +279,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -233,7 +310,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -264,7 +341,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -295,7 +372,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -326,7 +403,7 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
@@ -384,10 +461,10 @@
                                 {% csrf_token %}
                                 <div class="row">
                                     <div class="col-12 col-lg-5 mt-3">
-                                        <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required>
+                                        <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required/>
                                     </div>
                                     <div class="col-12 col-lg-5 mt-3">
-                                        <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required>
+                                        <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required/>
                                     </div>
                                     <div class="col-12 col-lg-2 mt-3 text-center">
                                         <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
@@ -423,7 +500,7 @@
                         <div class="featured-img">
                             <a href="{% url 'how-to-build-resilient-african-cities' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}">
+                                    <img src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}"/>
                                 </div>
                             </a>
                         </div>
@@ -453,7 +530,7 @@
                         <div class="featured-img">
                             <a href="{% url 'african-cities-what-role-for-the-youth' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %}">
+                                    <img src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %}"/>
                                 </div>
                             </a>
                         </div>
@@ -485,7 +562,7 @@
                         <div class="featured-img">
                             <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}">
+                                    <img src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}"/>
                                 </div>
                             </a>
                         </div>
