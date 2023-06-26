@@ -1,0 +1,182 @@
+{% extends "civa-base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Registration | African Cities Conference" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="robots" content="noindex,nofollow"/>
+{% endblock %}
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
+<meta name="twitter:site" content="@AfricanCtiesLab"/>
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+
+    .page-banner {
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
+      background-position: top center;
+    }
+    .pricing-card__inner_top:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 0;
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, rgba(4, 26, 87, 0.2)), color-stop(0%, rgba(255, 255, 255, 0)));
+      background-image: linear-gradient(to right, rgba(4, 26, 87, 0.2) 33%, rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 28px 1px;
+      background-repeat: repeat-x;
+      width: calc(100% - 40px);
+      z-index: 2;
+      height: 1px;
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+<section class="page-banner">
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6">
+              <div class="position-relative h1">
+                  {% translate "Registration" %}
+                  <span class="dash-accent"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container-xl pt-5 pb-3">
+    <div class="text-center h1 mb-3">
+        {% blocktranslate %}
+        Explore event ticket price
+        {% endblocktranslate %}
+    </div>
+
+    <div class="row justify-content-center pt-5">
+
+      <div class="col-sm-4">
+        <div class="pricing-card" style="margin-bottom: 30px;
+          -webkit-transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+          transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+          -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+          transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+          transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;">
+
+          <div class="pricing-card__inner" style="text-align: center;
+            -webkit-filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0px 20px 60px rgba(0, 0, 0, 0.2));">
+
+            <div class="pricing-card__inner_top" style="position: relative;">
+
+              <div class="pricing-card__header" style="position: relative;
+                background: #fff;
+                background-size: 100%;
+                padding-top: 51px;
+                padding-bottom: 51px;
+                border-radius: 6px 6px 0 0;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;">
+
+                <div class="pricing-card__name" style="color: #BE3712;
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-bottom: 14px;
+                  -webkit-transition: all 0.4s ease;
+                  transition: all 0.4s ease;">
+                  Super Early bird
+                </div>
+
+                <div class="pricing-card__price h3" style="
+                  color: #402781;
+                  font-size: 64px;
+                  letter-spacing: -1.6px;
+                  line-height: 1;
+                  font-weight: 600;
+                  -webkit-transition: all 0.4s ease;
+                  transition: all 0.4s ease;">
+                    $150
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="pricing-card__inner_bottom" style="background: #FFF;
+                padding: 40px 74px 48px;
+                border-radius: 0 0 6px 6px;">
+
+                <div class="pricing-card__content" style="text-align: left;
+                  margin: 0px 0px 30px 0px;">
+
+                  <ul class="pricing-lists" style="color: #404040; padding: 0; margin-bottom: 0;">
+                    <li class="">
+                      One catered lunch
+                    </li>
+                    <li class="">
+                      Afternoon snacks
+                    </li>
+                    <li class="">
+                      Fun swag
+                    </li>
+                    <li class="">
+                      Entrance Afterparty
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="pricing-btn-wrapper">
+                    <a href="#" style="background-color: #402781;
+                      color: #041A57;
+                      font-weight: 500;
+                      border-radius: 6px;
+                      padding: 15px 36px;">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17.778" height="16" viewBox="0 0 17.778 16" style="top: 2px;position: relative;margin-right: 5px;">
+                        <path d="M3.778,16.333V19H6.444V16.333h8.889V19H18V13.667H3.778ZM17.111,9.222h2.667v2.667H17.111ZM2,9.222H4.667v2.667H2Zm13.333,2.667H6.444V4.778A1.783,1.783,0,0,1,8.222,3h5.333a1.783,1.783,0,0,1,1.778,1.778Z" transform="translate(-2 -3)" fill="#fff"></path>
+                      </svg>
+
+                      Purchase Ticket
+                    </a>
+                  </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{% endblock content %}

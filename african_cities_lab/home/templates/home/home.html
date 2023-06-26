@@ -1,0 +1,726 @@
+{% extends "base.html" %}
+{% load home_tags i18n static wagtailcore_tags wagtailimages_tags %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="African Cities Lab">
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta property="og:title" content="African Cities Lab" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content="African Cities Lab">
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+    {{ block.super }}
+    <style>
+        .page-banner {
+            background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+              url({% static 'images/assets/acl-homepage-banner.jpg' %});
+            background-position: bottom center;
+            min-height: 465px;
+        }
+        .homepage-slider .slide-1 {
+            background-image: linear-gradient(90deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.25) 100%),
+              url({% static 'images/assets/acl-homepage-banner.jpg' %});
+            background-position: bottom center;
+        }
+        .homepage-slider .slide-2 {
+            background-image: linear-gradient(105deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.10) 60%),
+              url({% static 'images/assets/city-of-port-louis-mauritius.jpg' %});
+            background-position: bottom center;
+        }
+
+    </style>
+{% endblock css %}
+
+{% block hellobar %}
+<!--div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div-->
+{% endblock hellobar %}
+
+{% block content %}
+
+    <section class="homepage-slider">
+        <div class="swiper home-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-image slide-1">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-12 col-lg-7 col-md-10">
+                                    <div class="position-relative h1">
+                                        {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %}
+                                        <span class="dash-accent"></span>
+                                    </div>
+                                    <p class="my-4 font-size-16">
+                                        {% translate "Advanced online training to take advantage of the opportunities and face the architectural, social and environmental challenges of African cities in 2050." %}
+                                    </p>
+                                    <div class="pt-3">
+                                        <a class="btn btn-small font-size-14 btn-outline__white"
+                                            href="{% url 'moocs' %}">
+                                            {% translate "Explore our MOOCs" %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acl-sharpes bottom-right__sharpe">
+                            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image slide-2">
+                        <div class="container-fluid">
+                            <div class="row py-5">
+                                <div class="col-12 col-lg-7 col-md-10">
+                                    <div class="font-size-16 py-3">
+                                        <span class="font-weight-bold font-size-18">{% translate "MAY 23-24" %}</span>
+                                        <span class="mx-4">{% translate "COTONOU" %} <span class="mx-2">/</span> {% translate "BEN GUERIR" %}</span>
+                                    </div>
+                                    <div class="h1 position-relative">
+                                        {% translate "Join the movement to transform African cities" %}
+                                        <span class="dash-accent"></span>
+                                    </div>
+                                    <p class="my-4 font-size-16">
+                                        {% translate "On May 23rd and 24th 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}
+                                    </p>
+                                    <div class="pt-3">
+                                        <a class="btn btn-small font-size-14 btn-outline__white" target="_blank"
+                                            href="https://summit.africancitieslab.org/">
+                                            {% translate "Learn more" %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    {% comment %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-12 col-lg-7 col-md-10">
+                    <div class="position-relative h1">
+                        {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %}
+                        <span class="dash-accent"></span>
+                    </div>
+                    <p class="mt-4 mb-5 font-size-16">
+                        {% translate "Advanced online training to take advantage of the opportunities and face the architectural, social and environmental challenges of African cities in 2050." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="acl-sharpes bottom-right__sharpe">
+            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
+        </div>
+    </section>
+    {% endcomment %}
+
+    <section class="position-relative">
+        <div class="container-lg py-5">
+            <div class="row d-flex justify-content-center p-md-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h3 class="section-title">
+                        {% translate "What we offer" %}
+                    </h3>
+                    <div class="my-3 font-size-16 text-align-left__max-576">
+                        {% translate "Top-quality educational content to understand and provide practical solutions to the challenges presented by the accelerated urbanization of the African continent." %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-4 justify-content-center">
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 20 20">
+                                <path fill="#BE3712" d="M14.5 18h-10c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h10c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path>
+                                <path fill="#BE3712" d="M16.5 3c-0.276 0-0.5 0.224-0.5 0.5v15c0 0.276-0.224 0.5-0.5 0.5h-11c-0.827 0-1.5-0.673-1.5-1.5s0.673-1.5 1.5-1.5h9c0.827 0 1.5-0.673 1.5-1.5v-12c0-0.827-0.673-1.5-1.5-1.5h-10c-0.827 0-1.5 0.673-1.5 1.5v15c0 1.378 1.122 2.5 2.5 2.5h11c0.827 0 1.5-0.673 1.5-1.5v-15c0-0.276-0.224-0.5-0.5-0.5zM3.5 2h10c0.276 0 0.5 0.224 0.5 0.5v12c0 0.276-0.224 0.5-0.5 0.5h-9c-0.562 0-1.082 0.187-1.5 0.501v-13.001c0-0.276 0.224-0.5 0.5-0.5z"></path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h6>{% translate "MOOCs" %}</h6>
+                            </div>
+                            <div class="icon-box__desc text-align-left__max-576">
+                                {% translate "A catalog of online training courses delivered by experts in the fields of urban planning on topics from eco-construction to sustainable development." %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 17 17">
+                                <g></g>
+                                <path d="M17 16.488c-0.063-2.687-2.778-4.999-6.521-5.609v-1.374c0.492-0.473 0.842-1.207 1.071-1.833 0.332-0.166 0.624-0.536 0.794-1.033 0.238-0.688 0.146-1.323-0.206-1.629 0.028-0.238 0.046-0.481 0.015-0.723-0.079-0.663 0.065-1.038 0.194-1.368 0.106-0.277 0.229-0.591 0.106-0.945-0.442-1.273-1.727-1.974-3.618-1.974l-0.264 0.005c-1.313 0.047-1.707 0.6-1.971 1.115-0.033 0.062-0.077 0.146-0.077 0.151-1.712 0.153-1.697 1.569-1.684 2.707l0.003 0.369c0 0.205 0.009 0.419 0.026 0.639-0.425 0.3-0.504 1.005-0.179 1.737 0.185 0.415 0.452 0.729 0.749 0.892 0.243 0.674 0.625 1.47 1.179 1.965v1.283c-3.798 0.589-6.554 2.907-6.617 5.625l-0.012 0.512h17.023l-0.011-0.512zM1.054 16c0.392-2.094 2.859-3.821 6.122-4.204l0.441-0.052v-2.666l-0.216-0.15c-0.393-0.272-0.791-0.947-1.090-1.851l-0.083-0.281-0.294-0.051c-0.053-0.019-0.208-0.153-0.33-0.428-0.075-0.168-0.104-0.312-0.112-0.415l0.51 0.143-0.096-0.749c-0.042-0.33-0.064-0.651-0.064-0.95l-0.003-0.38c-0.015-1.341 0.051-1.634 0.773-1.699 0.545-0.048 0.752-0.449 0.876-0.689 0.15-0.292 0.28-0.543 1.12-0.574l0.227-0.004c0.829 0 2.279 0.169 2.669 1.282 0 0.043-0.052 0.177-0.090 0.275-0.145 0.374-0.364 0.939-0.254 1.853 0.024 0.188-0.007 0.424-0.040 0.675l-0.089 0.805 0.441-0.048c0.008 0.104-0.004 0.269-0.075 0.472-0.097 0.289-0.242 0.438-0.237 0.454h-0.36l-0.114 0.342c-0.283 0.853-0.65 1.497-1.009 1.768l-0.198 0.15v2.726l0.438 0.055c3.211 0.401 5.641 2.123 6.030 4.192h-14.893z" fill="#BE3712"></path>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h6>{% translate "Learn from the experts" %}</h6>
+                            </div>
+                            <div class="icon-box__desc">
+                                {% translate "Experts on urban and sustainable development in Africa" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card ">
+                        <div class="card-header icon-container">
+                            <img src="{% static 'images/assets/university.svg' %}" height="62" width="62">
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h6>{% translate "6 African Universities" %}</h6>
+                            </div>
+                            <div class="icon-box__desc">
+                                {% translate "Partners of the African Cities Lab's knowledge hub " %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 icon-box">
+                    <div class="card">
+                        <div class="card-header icon-container">
+                            <img src="{% static 'images/assets/people-ico.svg' %}" height="78" width="78">
+                        </div>
+                        <div class="card-body">
+                            <div class="icon-box__title">
+                                <h6>{% translate "A large community" %}</h6>
+                            </div>
+                            <div class="icon-box__desc">
+                                {% translate "An active community of more than 5000 professionals concerned with the living environment that African cities will offer to their populations in 2050" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-moocs position-relative bg_secondary py-5">
+        <div class="container-lg pt-5 ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10 text-center">
+                    <h3 class="section-title text-white">
+                        {% translate "Our MOOCs" %}
+                    </h3>
+
+                    <div class="font-size-16 text-white my-3 text-align-left__max-576">
+                        {% translate "We cover all aspects of urban development, considering into account issues related to housing, employment, transportation, access to water, sanitation, electricity, and quality of life." %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pb-5">
+
+            <div class="row justify-content-xl-center pt-5">
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/urban-data-management-for-smart-city-development-in-africa.png' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                    {% translate "La gestion des données urbaines : clé du développement de villes africaines plus intelligentes" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 16 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.jpeg' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/unhabitat.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UN-HABITAT" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                    {% translate "Digital Governance for inclusive and sustainable African cities" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 10 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon">NEW</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines 2 : Planification et gestion urbaines" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
+                                    {% translate "Systèmes d'Information Géographique - Partie 1" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2016
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
+                                    {% translate "Systèmes d'Information Géographique - Partie 2" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2016
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines : Mobilités et transports urbains" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2015
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-center">
+                    <a href="{% url 'moocs' %}" class="btn btn__primary btn__big">
+                        {% translate "More MOOCs" %}
+                    </a>
+                </div>
+
+                {% comment %}
+                <div class="row justify-content-center align-items-center text-white">
+                    <div class="col-12 col-lg-3">
+                        <div class="coming-soon__block position-relative h1">{% translate "Coming" %}<br>
+                            {% translate "soon" %}
+                            <span class="dash-accent"></span>
+                        </div>
+                    </div>
+                    <div class="col-10 col-lg-7 px-lg-5 pt-4">
+                        <p>{% translate "To receive notification of our new course catalog or to register for our newsletter, please register here:" %}</p>
+
+                        <div class="moocs-waiting-list pb-3">
+                            {% if messages %}
+                                {% for message in messages %}
+                                    <div class="my-2 alert">
+                                    <h5 class="m-0">
+                                        {{ message }}
+                                    </h5>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                            <form method="post" action="{% url 'subscribe-moocs' %}">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-12 col-lg-5 mt-3">
+                                        <input type="text" name="NAME" class="form-control" placeholder="{% translate 'Your First and Last Name' %}" required/>
+                                    </div>
+                                    <div class="col-12 col-lg-5 mt-3">
+                                        <input type="email" name="EMAIL" class="form-control" placeholder="{% translate 'Your email here' %}" required/>
+                                    </div>
+                                    <div class="col-12 col-lg-2 mt-3 text-center">
+                                        <button type="submit" class="btn h-100 btn__primary btn__small">{% translate "Register" %}</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                {% endcomment %}
+            </div>
+        </div>
+    </section>
+
+    <!-- start Event Section -->
+    <section class="featured-events pt-5">
+        <div class="container-lg py-md-5">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h3 class="section-title mb-3">
+                        {% translate "Webinars" %}
+                    </h3>
+                </div>
+                <!--div class="col-12 col-md-4 d-none d-md-block">
+                    <a class="float-end btn btn__small btn__primary" role="button" href="{% url 'events' %}">{% translate "All events" %}</a>
+                </div-->
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="featured-event__content">
+                        <div class="featured-img">
+                            <a href="{% url 'how-to-build-resilient-african-cities' %}">
+                                <div class="featured-img__inner">
+                                    <img src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="event-meta__card">
+
+                                    <div class="date-d">24</div>
+                                    <div class="date-m">Nov</div>
+                                    <div class="date-y">2022</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-9 col-sm-8 col-xs-12 ">
+                                <div class="featured-event-inner">
+                                    <a href="{% url 'how-to-build-resilient-african-cities' %}" class="h4">
+                                        {% translate "How to build resilient African Cities in response to climate change?" %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="featured-event__content">
+                        <div class="featured-img">
+                            <a href="{% url 'african-cities-what-role-for-the-youth' %}">
+                                <div class="featured-img__inner">
+                                    <img src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %}"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="event-meta__card">
+
+                                    <div class="date-d">11</div>
+                                    <div class="date-m">Oct</div>
+                                    <div class="date-y">2022</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-9 col-sm-8 col-xs-12">
+                                <div class="featured-event-inner">
+                                    <a href="{% url 'african-cities-what-role-for-the-youth' %}" class="h4">
+                                        {% blocktranslate %}
+                                        African Cities: <br> What role for the youth?
+                                        {% endblocktranslate %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="featured-event__content">
+                        <div class="featured-img">
+                            <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}">
+                                <div class="featured-img__inner">
+                                    <img src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}"/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="event-meta__card">
+
+                                    <div class="date-d">5</div>
+                                    <div class="date-m">Jul</div>
+                                    <div class="date-y">2022</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-9 col-sm-8 col-xs-12">
+                                <div class="featured-event-inner">
+                                    <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}" class="h4">
+                                        {% translate "Integration of open data and artificial intelligence in the development of smart cities in Africa" %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--div class="my-5 text-center d-md-none">
+                <a class="btn btn__small btn__primary" role="button" href="{% url 'events' %}">{% translate "All events" %}</a>
+            </div-->
+        </div>
+    </section>
+    <!-- End Event Section -->
+
+     <!-- Start Topics Area-->
+        <section class="explore-topic position-relative bg-light__ py-5">
+            <div class="container-lg p-md-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h3 class="section-title mb-3">{% translate "Focus Areas" %}</h3>
+
+                        <div class="font-size-16 my-3 text-align-left__max-576">
+                            {% translate "8 topics that address cross-cutting and multidisciplinary issues of urban transformation in Africa in an environmentally safe way." %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center py-3">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center">
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Housing" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Digital" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Building" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Climate change" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Planning" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Urban System" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Gouvernance" %}</span></p>
+                            </div>
+                            <div class="topic-wrapper col-lg-3 col-md-4 col-sm-4 col-6 p-3">
+                                <p class="card topic-item"><span>{% translate "Energy" %}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End Topics Section -->
+
+    <!-- Start News Section -->
+    {% if blog_ %}
+    <section class="latest-article pt-5">
+        <div class="container-xl py-5">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h3 class="section-title">
+                        {% translate "Latest News" %}
+                    </h3>
+                    <!--div class="font-size-16 my-3">
+                        {% translate "Stay up to date with our newsletter and explore our blog posts to learn more about African urban and environmental development." %}
+
+                    </div-->
+                </div>
+                <!--div class="col-12 col-md-4 d-none d-md-block">
+                    <a class="float-end btn btn__small btn__primary" role="button" href="{% localized_slugurl 'blog' %}">{% translate "All articles" %}</a>
+                </div-->
+            </div>
+
+            <div class="row latest-article__list mt-3">
+                {% for article in blog %}
+                <div class="col-12 col-lg-4 col-md-6 article-card">
+                    <div class="card border-0">
+                        <div class="card-header article-preview-img p-0">
+                            <a href="{{ article.url }}" class="d-block">
+                                {% image article.main_image original %}
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="article-meta d-flex align-items-center">
+                                <div class="article__date">{{ article.date }}</div>
+                                <div class="fas fa-circle text_primary mx-2" style="font-size: 5px;"></div>
+                                <div class="article__category">
+                                    {% with categories=article.categories.all %}
+                                        {% if categories %}
+                                            <ul class="list-inline mb-0">
+                                                {% for category in categories %}
+                                                    <li class="post-info__item list-inline-item mr-2">
+                                                        <span class="text_primary font-weight-bold">{{ category.name }}</span>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    {% endwith %}
+                                </div>
+                            </div>
+                            <h5 class="article-title py-3">
+                                <a href="{{ article.url }}" class="d-block text-black">
+                                    {{ article.title }}
+                                </a>
+                            </h5>
+                            <div class="article-exerpt">
+                                {{ article.summary }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!--div class="my-5 text-center d-md-none">
+                <a class="btn btn__small btn__primary" role="button" href="{% localized_slugurl 'blog' %}">{% translate "All articles" %}</a>
+            </div-->
+        </div>
+    </section>
+    {% endif %}
+    <!-- End News Section -->
+
+
+    <!-- Start Partners Area-->
+    <section class="our-partners">
+        {% include "home/parts/partners_section.html" %}
+    </section>
+    <!-- End Partners Area -->
+
+{% endblock content %}

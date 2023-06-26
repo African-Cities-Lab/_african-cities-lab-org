@@ -1,0 +1,202 @@
+{% extends "civa-base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Organization Committee | African Cities Conference" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+{% endblock static_meta_tag %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Organization Committee | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Organization Committee | African Cities Conference" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Organization Committee | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+
+    .page-banner {
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
+      background-position: top center;
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+<section class="page-banner">
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6">
+              <div class="position-relative h1">
+                  {% translate "Committee" %}
+                  <span class="dash-accent"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container py-5">
+    <div class="row pt-3">
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "General Conference chair" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Jérôme Chenal, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "Plenary co-chairs" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Jérôme Chenal, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Claude Borna, {% translate "Sèmè City, Cotonou, Benin" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Khalid Baddou, {% translate "UM6P, Benguérir, Morocco" %}</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "Program Co-chairs" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Thierry D’Almeida, {% translate "Sèmè City, Cotonou, Benin" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Stéphane C. K. Tékouabou, {% translate " Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "Steering Committee" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Jérôme Chenal, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Thierry D’Almeida, {% translate "Sèmè City, Cotonou, Benin" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Stéphane C. K. Tékouabou, {% translate " Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Rida Azmi, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Edgar Pieterse, {% translate "African Centre for Cities, Cape Town, South Africa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Antoine de Padoue Nsegbe, {% translate "University of Dschang, Camerooon" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Anastasija Nikiforova, {% translate "University of Tartu, Estonia" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Ştefan Cristian Gherghina, {% translate "University of Economic Studies, Bucharest, Romania" %}</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "Special Issues Co-chairs" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Ştefan Cristian Gherghina, {% translate "University of Economic Studies, Bucharest, Romania" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Anastasija Nikiforova, {% translate "University of Tartu, Estonia" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >El Arbi Allaoui Abdellaoui, {% translate "ENS, mouley Ismail University, Meknes, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Antoine de Padoue Nsegbe, {% translate "University of Dschang, Camerooon" %}</li>
+        </ul>
+
+        <h4 class="font-weight-500 pt-4">
+          {% translate "Doctoral Consortium & Spring School Chairs" %}
+       </h4>
+       <ul class="px-4 pt-3">
+        <li class="h5 font-size-16 font-weight-400" >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+       </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "Workshops & Tutorials chairs" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Rida Azmi, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+        </ul>
+
+        <h4 class="font-weight-500 pt-4">
+          {% translate "Publication Co-Chairs" %}
+       </h4>
+       <ul class="px-4 pt-3">
+         <li class="h5 font-size-16 font-weight-400" >Stéphane C. K. Tékouabou, {% translate " Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+         <li class="h5 font-size-16 font-weight-400" >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+         <li class="h5 font-size-16 font-weight-400" >Rida Azmi, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+       </ul>
+
+       <h4 class="font-weight-500 pt-4">
+        {% translate "Global Coordinators" %}
+      </h4>
+      <ul class="px-4 pt-3">
+        <li class="h5 font-size-16 font-weight-400" >Chiara Ciriminna, {% translate "EXAF, EPFL, Lausanne, Switzerland" %}</li>
+      </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-lg-4 p-4">
+        <h4 class="font-weight-500">
+           {% translate "TPC" %}
+        </h4>
+        <ul class="px-4 pt-3">
+          <li class="h5 font-size-16 font-weight-400" >Jérôme Chenal, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Rida Azmi, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Marti Bosch, {% translate "EXAF, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Vivien Depardey, {% translate "World Bank, New York, USA" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Nesrine cherata, {% translate "Bordeaux INP, Bordeaux, France" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Anastasija Nikiforova, {% translate "University of Tartu, Estonia" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Olajide Akanji, {% translate "University of Ibadan, Nigeria" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Leandry Jieutsa, {% translate "UN Habitat, Nairobi, Kenya" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Ştefan Cristian Gherghina, {% translate "University of Economic Studies, Bucharest, Romania" %}</li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-lg-4 p-4">
+        <ul class="px-4 pt-5">
+          <li class="h5 font-size-16 font-weight-400" >Stéphane C. K. Tékouabou, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Hamza Toulni, {% translate "EIGSI, Casablanca, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Antoine de Padoue Nsegbe, {% translate "University of Dschang, Camerooon" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Munyaka Baraka Jean-Claude, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Fouad Ayadi, {% translate "IDC, UM6P, Benguerir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Elarbi Abdellaoui Alaoui, {% translate "ENS, mouley Ismail University, Meknes, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Younouss Lahboub, {% translate "SADV, Benguerir, Morocco" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Hatem KAHLOUN, {% translate "ISTEUB, University of Carthage, Tunisia" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Rike Sitas, {% translate " African Centre for Cities, Cape Town, South Africa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Edgar Pieterse, {% translate "African Centre for Cities, Cape Town, South Africa" %}</li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 col-lg-4 p-4">
+        <ul class="px-4 pt-5">
+          <li class="h5 font-size-16 font-weight-400" >Thierry D’Almeida, {% translate "Sèmè City, Cotonou, Benin" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Sarah LECOURT, {% translate "Gret, Dakar, Senegal" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Réné Joly Assako Assako, {% translate "Vice Chancelor, University of Douala, Douala Cameroon" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Guy Bakumba Mangitukulu, {% translate "ISAU, Kinshasa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Virginie RACHMUHL, {% translate "Gret, Dakar, Senegal" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Dhesigen Naidoo, {% translate "Water Research Commission, Cape Town, South Africa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Gareth Haysom, {% translate "African Centre for Cities, Cape Town, South Africa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Kecia Rust, {% translate "Centre for Affordable Housing Finance in Africa, South Africa" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Mennatullah Hendawy, {% translate "Ain Shams University, Egypt" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Vitor Pesoa Colombo, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+          <li class="h5 font-size-16 font-weight-400" >Akuto Akpedze Konou, {% translate "CEAT, EPFL, Lausanne, Switzerland" %}</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

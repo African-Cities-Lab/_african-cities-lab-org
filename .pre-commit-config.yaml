@@ -10,6 +10,25 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
 
+  - repo: https://github.com/Riverside-Healthcare/djLint
+    rev: 0.7.0
+    hooks:
+      - id: djlint-django
+      - id: djlint-django
+        args: ['.', '--reformat']
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.5.1
+    hooks:
+      - id: prettier
+        types_or: [css, javascript]
+
+  - repo: https://github.com/awebdeveloper/pre-commit-stylelint
+    rev: '8f63da4'
+    hooks:
+      - id: stylelint
+        additional_dependencies: ['stylelint', 'stylelint-prettier', 'stylelint-config-prettier']
+
   - repo: https://github.com/psf/black
     rev: 21.9b0
     hooks:
@@ -27,10 +46,11 @@ repos:
         args: ['--config=setup.cfg']
         additional_dependencies: [flake8-isort]
 
-  - repo: https://github.com/ansible-community/ansible-lint.git
-    rev: v5.2.1
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.58.0
     hooks:
-      - id: ansible-lint
+      - id: terraform_fmt
+      - id: terraform_validate
 
 # sets up .pre-commit-ci.yaml to ensure pre-commit dependencies stay up to date
 ci:

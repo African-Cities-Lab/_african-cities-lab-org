@@ -3,7 +3,8 @@ python-slugify==5.0.2  # https://github.com/un33k/python-slugify
 Pillow==8.3.2  # https://github.com/python-pillow/Pillow
 argon2-cffi==21.1.0  # https://github.com/hynek/argon2_cffi
 redis==3.5.3  # https://github.com/andymccurdy/redis-py
-hiredis==2.0.0  # https://github.com/redis/hiredis-py
+hiredis==2.0.0  # https://github.com/redis/hiredis-p
+mailchimp-marketing==3.0.75  # https://github.com/mailchimp/mailchimp-marketing-python
 
 # Django
 # ------------------------------------------------------------------------------
@@ -12,8 +13,10 @@ django-environ==0.7.0  # https://github.com/joke2k/django-environ
 django-model-utils==4.2.0  # https://github.com/jazzband/django-model-utils
 django-crispy-forms==1.13.0  # https://github.com/django-crispy-forms/django-crispy-forms
 django-redis==5.0.0  # https://github.com/jazzband/django-redis
+django-countries==7.3.2
 
 # Wagtail
 # ------------------------------------------------------------------------------
-wagtail>=2.15.1 # https://docs.wagtail.io/en/stable/releases/2.15.1.html
-wagtail-localize>=1.0 # https://www.wagtail-localize.org/
+wagtail==2.15.1  # https://docs.wagtail.io/en/stable/releases/2.15.1.html
+wagtail-localize==1.0  # https://www.wagtail-localize.org/
+wagtail-metadata==3.5.0 # https://pypi.org/project/wagtail-metadata/

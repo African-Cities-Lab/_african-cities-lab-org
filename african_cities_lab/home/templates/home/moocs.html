@@ -1,0 +1,362 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "MOOCs" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}"/>
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}"/>
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "MOOCs" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate 'Online training to respond to the architectural, social and environmental challenges of the future African cities.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block hellobar %}
+<!--div class="hellobar d-none">
+        <span class="content-hellobar">
+            <span class="badge-hellobar">{% translate "Webinar" %}</span>
+
+            <a class="link-hellobar mx-2 font-weight-bold text-white" href="">{% translate "Register now" %}<i class="fas fa-arrow-right mx-2"></i></a>
+        </span>
+        <span id="close_hellobar"><a href="#">+</a></span>
+    </div-->
+{% endblock hellobar %}
+
+{% block content %}
+
+    <section class="page-banner bg_secondary">
+        <div class="container-fluid">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-6">
+                    <h1 class="position-relative text-center font-size-3-50em">
+                        {% translate "Explore our MOOCs" %}
+                    </h1>
+                    <p class="font-size-16 text-center">
+                        {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-fluid py-3">
+            <div class="row justify-content-xl-center">
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/urban-data-management-for-smart-city-development-in-africa.png' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                    {% translate "La gestion des données urbaines : clé du développement de villes africaines plus intelligentes" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 16 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.jpeg' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/unhabitat.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UN-HABITAT" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                    {% translate "Digital Governance for inclusive and sustainable African cities" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 10 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon">NEW</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-2-planification-et-gestion-urbaines.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines 2 : Planification et gestion urbaines" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
+                                    {% translate "Systèmes d'Information Géographique - Partie 1" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2016
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
+                                    {% translate "Systèmes d'Information Géographique - Partie 2" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2016
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-mobilites-et-transports-urbains.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_MTU+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines : Mobilités et transports urbains" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2015
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title ">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines : Environnement et enjeux de développement durable" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2015
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines : Restructuration des quartiers précaires" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2015
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_IPU+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/villes-africaines-introduction-a-la-planification-urbaine.png' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_IPU+2022/about" class="d-block" target="_blank">
+                                    {% translate "Villes africaines : Introduction à la planification urbaine" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 1 Jan. 2014
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}

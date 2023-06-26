@@ -27,7 +27,7 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 # In Windows, this must be set to your system time zone.
 TIME_ZONE = "CET"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
@@ -64,6 +64,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 # ------------------------------------------------------------------------------
 # wagtail apps
 WAGTAIL = [
+    # wagtail localize before forms and redirects
+    "wagtail_localize",
+    "wagtail_localize.locales",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
@@ -77,9 +80,8 @@ WAGTAIL = [
     "wagtail.core",
     "modelcluster",
     "taggit",
-    # wagtail localize
-    "wagtail_localize",
-    "wagtail_localize.locales",
+    "wagtailmetadata",
+    "wagtail.contrib.routable_page",
 ]
 
 DJANGO_APPS = [
@@ -92,6 +94,7 @@ DJANGO_APPS = [
     # "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
     "django.forms",
+    "django_countries",
 ]
 THIRD_PARTY_APPS = [
     "crispy_forms",
@@ -289,6 +292,16 @@ WAGTAILSEARCH_BACKENDS = {
         "BACKEND": "wagtail.search.backends.database",
     }
 }
+
+# Mailchimp
+# ------------------------------------------------------------------------------
+MAILCHIMP_API_KEY = env("MAILCHIMP_API_KEY")
+MAILCHIMP_DATA_CENTER = env("MAILCHIMP_DATA_CENTER")
+MAILCHIMP_WEBINAR_EN_LIST_ID = env("MAILCHIMP_WEBINAR_EN_LIST_ID")
+MAILCHIMP_WEBINAR_FR_LIST_ID = env("MAILCHIMP_WEBINAR_FR_LIST_ID")
+MAILCHIMP_MOOCS_LIST_ID = env("MAILCHIMP_MOOCS_LIST_ID")
+MAILCHIMP_NEWSLETTER_FR_ID = env("MAILCHIMP_NEWSLETTER_FR_ID")
+MAILCHIMP_NEWSLETTER_EN_ID = env("MAILCHIMP_NEWSLETTER_EN_ID")
 
 # Your stuff...
 # ------------------------------------------------------------------------------

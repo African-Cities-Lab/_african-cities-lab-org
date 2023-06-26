@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags countries %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Webinar Registration" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="robots" content="noindex,nofollow"/>
+  <meta name="description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+{% endblock meta_tag_description %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-hero__container{
+      background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
+    }
+    .page-banner__right {
+      background-image: url({% static 'images/assets/pages-header.jpg' %});
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+  <!-- Page banner area
+  <section class="page-hero__container">
+    {% include "home/parts/page_header.html" with page_title=title %}
+  </section>
+  <End Page banner area -->
+
+  <section class="page-banner__area bg_primary">
+      <div class="row justify-content-between align-item-center">
+          <div class="page-banner__left align-self-center">
+              <h1 class="page-hero__title text-white">{% translate "Webinar Registration" %}</h1>
+          </div>
+          <div class="page-banner__right">
+              <div class="d-none d-lg-block banner-angle__left">
+                  <img class="d-none d-lg-block" src="{% static 'images/assets/banner-red-angle-left.svg' %}"/>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="upcoming-events">
+    <div class="container-lg p-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <!-- message if email is sent -->
+          {% if messages %}
+            {% for message in messages %}
+              <div class="my-5 alert alert-success">
+                <h5 class="m-0">
+                  {{ message }}
+                </h5>
+              </div>
+            {% endfor %}
+          {% endif %}
+          <p class="font-size-18 pt-3 pb-5 text-center">{% translate "Please fill out the form so that your registration can be validated." %}</p>
+          <form action="{% url 'subscribe-webinar' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12 col-md-6 form-group">
+                <label>{% translate "Last name" %}
+                  <div class="form-asterix">*</div>
+                </label>
+                <input type="text" name="LNAME" class="form-control" required/>
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <label>{% translate "First name" %}
+                  <div class="form-asterix">*</div>
+                </label>
+                <input type="text" name="FNAME" class="form-control" required/>
+              </div>
+            </div>
+            <div class="form-group" required="required">
+              <label>{% translate "Email Address" %}
+                <div class="form-asterix">*</div>
+              </label>
+              <input type="email" name="EMAIL" class="form-control" required/>
+            </div>
+
+            <div class="form-group">
+              <label>{% translate "Organization Name" %}</label>
+              <input type="text" name="INSTITUT" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <label>{% translate "Title" %}</label>
+              <input type="text" name="TITLE" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <label>{% translate "Function" %}</label>
+              <input type="text" name="FUNCTION" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <label>{% translate "Country" %}
+                <div class="form-asterix">*</div>
+              </label>
+              {% get_countries as countries %}
+              <select name="COUNTRY" class="form-select" required>
+                <option disabled selected>{% translate "Select your country" %}</option>
+              {% for country in countries %}
+                  <option value="{{ country.name }}">{{ country.name }}</option>
+              {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label>{% translate "LinkedIn account" %}</label>
+              <input type="text" name="LINKEDIN" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <input name="site_language" type="hidden" value="{{ LANGUAGE_CODE }}" />
+            </div>
+            <p>
+              {% translate "By submitting your info in the form above, you agree to our" %}
+              <a class="text_primary" href="{% url 'terms-conditions' %}">{% translate "Terms & Condition" %}</a>
+              </a> {% translate "and" %} <a class="text_primary" href="{% url 'gdpr' %}">{% translate "GDPR" %}</a>.
+              {% translate "We may use this info to contact you and/or use data from third parties to personalize your experience." %}
+            </p>
+
+            <div class="mt-5">
+              <button type="submit" class="btn btn__primary btn__small">{% translate "Register" %}</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Partners Area-->
+  <section class="our-partners">
+    {% include "home/parts/partners_section.html" %}
+  </section>
+  <!-- End Partners Area -->
+
+{% endblock content %}

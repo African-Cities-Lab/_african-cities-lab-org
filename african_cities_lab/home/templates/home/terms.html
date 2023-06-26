@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Terms & Conditions" %}
+    {% endif %}
+{% endblock title %}
+{% block css %}
+    {{ block.super }}
+    <style>
+        .page-hero__container{
+            background-image: linear-gradient(rgba(191, 55, 18, 0.4),rgba(191, 55, 18, 0.4)) ,url({% static 'images/assets/bg-pattern.png' %});
+        }
+    </style>
+{% endblock css %}
+
+{% block content %}
+
+    <!-- Page banner area-->
+    <section class="page-hero__container">
+        {% include "home/parts/page_header.html" with page_title=self.title %} 
+    </section>
+    <!-- End Page banner area -->
+
+    <section class="py-5">
+        <div class="container p-md-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">  
+                    <div class="font-size-18">
+                        {{ page.body|richtext }}
+                    </div>
+                </div>  
+            </div> 
+        </div>
+    </section>
+
+     <!-- Start Partners Area-->
+     <section class="our-partners">
+        {% include "home/parts/partners_section.html" %}
+    </section>
+    <!-- End Partners Area -->
+    
+{% endblock content %}

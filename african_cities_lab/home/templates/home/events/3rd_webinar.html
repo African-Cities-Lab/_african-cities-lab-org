@@ -1,0 +1,951 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+{% endblock meta_tag_description %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "How to build resilient African Cities in response to climate change?" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate "On November 24, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: How to build resilient African Cities in response to climate change?." %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints-preview.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-banner {
+      background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
+        url({% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %});
+    }
+    #video_player .btn-close{
+      color: #fff;
+      background: unset;
+    }
+
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+
+  <section class="page-banner">
+    <div class="container-fluid">
+      <div class="row align-item-center py-5">
+        <div class="col-12 col-lg-10 col-xl-8 pt-4">
+          <div class="meta-badge bg-transparent" style="border: 1px solid #fff">{% translate "Webinar" %}</div>
+
+          <div class="py-3 h2">
+            {% blocktranslate %}
+            How to build resilient African Cities in response to climate change?
+            {% endblocktranslate %}
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4 mt-3">
+              <div class="d-inline-flex align-items-start">
+                <img width="50" height="33" src="{% static 'images/assets/big-pointer.svg' %}"/>
+                <div class="font-size-18 d-inline-block font-weight-bold px-3">
+                  {% blocktranslate %}
+                    November 24 <br>2022
+                  {% endblocktranslate %}
+                </div>
+              </div>
+              <div class="mt-3 d-inline-flex">
+                <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                <span class="font-size-18 font-weight-500 p-3">{% translate "Online" %}</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 mt-3 d-none d-md-block">
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    10AM | 12PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session I:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                    Digital Technologies for Urban Resilience in Africa
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    3PM | 5PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session II:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                    Environmental impact of cities
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--div class="my-5">
+            <a href="" class="btn btn__primary btn__small">
+              {% translate "Register now" %}
+            </a>
+          </!div-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row py-md-5">
+        <div class="col-12 col-lg-11">
+          <div class="event-overview font-size-16">
+            <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
+            <div class="text-justify">
+                <p>
+                {% blocktranslate %}
+                Our planet will host 80&#37; of the global population living in densely packed cities. According to the OECD,
+                African cities are expected to house an additional 950 million people by 2050. With cities housing more than
+                half of the world's population, urban areas will play a critical role to fight against climate change.
+                This need is reinforced by the release of the third part of the sixth: The Intergovernmental Panel on Climate
+                Change - IPCC report, which places Africa among the regions with the fastest urban growth and calls for a
+                profound transformation of cities to deal with climate change and its consequences.
+                {% endblocktranslate %}
+                </p>
+                <p class="py-3">
+                {% blocktranslate %}
+                With many African cities already struggling to meet basic human needs, development and climate challenges are increasingly
+                becoming urban issues. The ability to shift from business as usual to a more transformative approach is critical to the
+                development of sustainable cities. However, researchers and policy makers need to be more concerned about the future of
+                African cities by helping municipal governments, private and public investors, and donors make informed decisions
+                about urban planning and policy.
+                {% endblocktranslate %}
+                </p>
+                <p>
+                {% blocktranslate %}
+                Join us for a live discussion with global experts on the most recent research and thinking on resilient cities.
+                Our webinar will broaden the discussion on priority topics that contribute to the successful development of African cities
+                and make cities more sustainable and resilient.
+                {% endblocktranslate %}
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-agenda bg-light__ py-5">
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-12 col-lg-11">
+
+          <h3 class="section-title">{% translate "On the agenda" %}</h3>
+
+          <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">
+                  <h4>{% translate "Session I" %}</h4>
+                  <span>{% translate "10am - 12pm" %}</span> GMT+1
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">
+                  <h4>{% translate "Session II" %}</h4>
+                  <span>{% translate "3pm - 5pm" %}</span> GMT+1
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="agenda-content">
+            <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Digital Technologies for Urban Resilience in Africa" %}</div>
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "English session" %}</span>
+              </div>
+
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Opening Statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "10.05 - 10.25 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Cities for forest: the relation between cities and forests" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Johan Mottelson</p>
+                  <small>{% translate 'Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal Danish Academy - Architecture, Design, Conservation' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "10.25 - 11.45 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Realizing Walkable and Bikeable Cities in Africa" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Peninah Ndegwa</p>
+                  <small>{% translate 'Program Coordinator for Share the Road Program at UNEP' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "11.45 - 12.05 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "A resilient and susbtainable urban master plan in Saint Louis, Senegal" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Ludovic Jonard</p>
+                  <small>{% translate 'Architect Urbanist' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "12.05 - 12.25 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "SDG11 and resilient cities/ climate challenges in Africa with a focus on innovative and smart solutions" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Fruzsina Straus</p>
+                  <small>{% translate 'Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Ludovic Jonard</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Environmental impact of cities" %}</div>
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "English session" %}</span>
+              </div>
+
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "3.05 - 3.25 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Initiative of the Youth of Climate in Morocco" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Fatna Ikrame El Fanne</p>
+                  <small>{% translate 'Environmental Engineer & Climate activist' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "3.25 - 3.45 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Nature will be an integral part of cities in the future" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Gilbert Siame</p>
+                  <small>{% translate 'Associate Professor of international urban development and planning, Norway' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "3.45 - 4.05 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Agriculture in African cities: drivers, effects and adaptations" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Epule Terence</p>
+                  <small>{% translate 'Assistant Professor and Chair of Climate Change Adaptation and Sustainability Strategies in (IWRI)/UM6P and Director of (ACCA) Lab' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "4.05 - 4.25 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Challenges for urban Water security under climate change" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Mike Muller</p>
+                  <small>{% translate 'Visiting Adjunct Professor in the University of the Witwatersrand Graduate School of Governance' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Closing statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Rémi Jaligot</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-speakers py-5">
+    <div class="container-fluid position-relative py-5">
+
+      <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
+
+      <div class="row event-speakers__list py-3">
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Fatna Ikrame El Fanne.jpg' %}" alt="Fatna Ikrame El Fanne">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/fatna-ikrame-el-fanne-7474b018b/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Fatna Ikrame El Fanne</h4>
+              <p class="speaker-designation">
+                {% translate 'Environmental Engineer & Climate activist' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Fatna Ikrame El Fanne.jpg' %}" alt="Fatna Ikrame El Fanne">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Fatna Ikrame El Fanne</h2>
+
+                          <p class="my-2">
+                            {% translate 'Environmental Engineer & Climate activist' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/fatna-ikrame-el-fanne-7474b018b/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Fatna Ikrame El Fanne student in 2ᵉ year Master (Engineering and management of water and environment at Mohamed 5 University
+                            Rabat. Co-founder of Youth for Climate Morocco and climate activist.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Peninah Ndegwa.jpg' %}" alt="Peninah Ndegwa">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/peninah-ndegwa-997874b0/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Peninah Ndegwa</h4>
+              <p class="speaker-designation">
+                {% translate 'Program Coordinator for Share the Road Program at UNEP' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_2" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Peninah Ndegwa.jpg' %}" alt="Peninah Ndegwa">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Peninah Ndegwa</h2>
+
+                          <p class="my-2">
+                            {% translate 'Program Coordinator for Share the Road Program at UNEP' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/peninah-ndegwa-997874b0/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            She is a passionate urban/ transport Planner and sustainability enthusiast with a social focus keen on the use
+                            of new technologies that build resilient, adaptive and sustainable cities that improve quality of life for all especially Children.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            Her inspiration is to advocate for socially inclusive, locally desired and environmentally benign projects in the field of
+                            urban/transport planning. Her professional experience includes sustainable transport planning and design including
+                            Public transport (BRT), Non-motorised transport (NMT), Parking management, Transit-oriented Development (TOD),
+                            Policy planning and Implementation, Slum upgrading and Water Sanitation and Hygiene (WASH).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_3">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Epule Terence.jpeg' %}" alt="Dr. Epule Terence">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/terence-epule-epule-ph-d-b6069127/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Epule Terence</h4>
+              <p class="speaker-designation">
+                {% translate 'Assistant Professor and Chair of Climate Change Adaptation and Sustainability Strategies in (IWRI)/UM6P and Director of (ACCA) Lab' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_3" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Epule Terence.jpeg' %}" alt="Dr. Epule Terence">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Epule Terence</h2>
+
+                          <p class="my-2">
+                            {% translate 'Assistant Professor and Chair of Climate Change Adaptation and Sustainability Strategies in (IWRI)/UM6P and Director of (ACCA) Lab' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/terence-epule-epule-ph-d-b6069127/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Dr. Epule is currently an Assistant Professor of Climate Change Adaptation and Sustainability Strategies in
+                            Agriculture at the International Water Research Institute (IWRI) at Mohammed VI Polytechnic University (UM6P) in Morocco.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He was previously an Associate Professor of International Farming Systems at UniLaSalle in France and a postdoctoral
+                            scholar at McGill University (2016-2019) and University of Montreal (2014-2016), Canada. He obtained his PhD in 2014
+                            from University of Quebec in Montreal (UQAM), Institute of Environmental Sciences.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            His research is at the interface between climate, agriculture, and adaptations. As such, he works on a variety of topics
+                            such as crop yield and precipitation gaps, cropping systems vulnerability to droughts and the creation of readiness and
+                            climate change mitigation/adaptation performance indexes.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He is also keen on the contributions of agroecology and conventional agricultural methods in impacting crop yields and the environment.
+                            He is author of 3 books and about 47 peer review articles as lead author and three book chapters. At IWRI, he leads the Agriculture and
+                             Climate Change and Adaptation Lab (ACCA Lab: <a href="https://terenceepuleepule.wixsite.com/epuleterenceepule">https://terenceepuleepule.wixsite.com/epuleterenceepule</a>).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_7" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_7">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Ludovic Jonard.jpg' %}" alt="Ludovic Jonard">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ludovic-jonard-9b0988a8/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Ludovic Jonard</h4>
+              <p class="speaker-designation">
+                {% translate 'Architect Urbanist' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_7" tabindex="-1" aria-labelledby="speaker_modal_7" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Ludovic Jonard.jpg' %}" alt="Ludovic Jonard">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Ludovic Jonard</h2>
+
+                          <p class="my-2">
+                            {% translate 'Architect Urbanist' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ludovic-jonard-9b0988a8/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Ludovic Jonard is an urban architect and independent consultant for international cooperation projects,
+                            specializing in urban resilience and sustainable housing. He founded Architecture & Development,
+                            a professional NGO dedicated to affordable housing, ecological technologies and urban crises in development contexts.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Fruzsina Straus.jpg' %}" alt="Fruzsina Straus">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/fruzsina-straus-86587465/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Fruzsina Straus</h4>
+              <p class="speaker-designation">
+                {% translate 'Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Fruzsina Straus.jpg' %}" alt="Fruzsina Straus">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Fruzsina Straus</h2>
+
+                          <p class="my-2">
+                            {% translate 'Africa Regional Focal Point for Urban Resilience, Climate Action and DRR and country programme manager Malawi, Rwanda, Indian Ocean at UN-Habitat' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/fruzsina-straus-86587465/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Fruzsina Straus has over 18 years of experience with the United Nations, international NGOs, and the private sector. Her background is
+                            multi-disciplinary, with a focus on urban resilience, disaster risk management, climate action, socioeconomic development,
+                            public governance, post-conflict national development planning, and institutional reform.
+                            {% endblocktranslate %}
+                          </p>
+                          <p>
+                            {% blocktranslate %}
+                            Additionally, having initiated and implemented multiple large-scale development cooperation projects involving a range
+                            of partners and donors, she has strong professional experience in all aspects of programme management.
+                            Fruzsina joined UN-Habitat in 2018, where she is leading the portfolio on urban climate resilience and
+                            DRR within the Regional Office for Africa in 16+ countries and managing the Country Programmes in
+                            Madagascar, Malawi, Rwanda and the African Small Island Developing States (SIDS).
+                            {% endblocktranslate %}
+                          </p>
+                          <p>
+                            {% blocktranslate %}
+                            Prior to joining UN-Habitat, she spent five years in the Middle East with the UN Regional Commission (ESCWA) and a
+                            decade in New York working at the global-level with UNDP and various NGOs.
+                            She holds a BA in Political Science and an MA in Diplomacy and International Relations.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Johan Mottelson.jpg' %}" alt="Johan Mottelson">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/johan-mottelson-29855b69/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Johan Mottelson</h4>
+              <p class="speaker-designation">
+                {% translate 'Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal Danish Academy - Architecture, Design, Conservation' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_5" tabindex="-1" aria-labelledby="speaker_modal_5" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Johan Mottelson.jpg' %}" alt="Johan Mottelson">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Johan Mottelson</h2>
+
+                          <p class="my-2">
+                            {% translate 'Assistant Professor, Institute of Architecture, Urbanism and Landscape Royal Danish Academy - Architecture, Design, Conservation' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/johan-mottelson-29855b69/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Johan Mottelson is an award-winning architect and researcher whose work centers on the multitude of challenges linked to the
+                            comprehensive urban development trends in East Africa. In parallel with his academic work, Mottelson works with practice-based
+                            design, architecture, and spatial planning projects seeking to enhance livelihood in the region.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_6" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_6">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Mike Muller.jpg' %}" alt="Mike Muller">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/mike-muller-07941710/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Mike Muller</h4>
+              <p class="speaker-designation">
+                {% translate 'Visiting Adjunct Professor in the University of the Witwatersrand Graduate School of Governance' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_6" tabindex="-1" aria-labelledby="speaker_modal_6" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Mike Muller.jpg' %}" alt="Mike Muller">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Mike Muller</h2>
+
+                          <p class="my-2">
+                            {% translate 'Visiting Adjunct Professor in the University of the Witwatersrand Graduate School of Governance' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mike-muller-07941710/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Mike Muller, is a professional engineer and Visiting Adjunct Professor at the University of Witwatersrand’s School of Governance in
+                            Johannesburg, South Africa. He was a National Planning Commissioner (2010/15), Director General of South Africa’s Department of
+                            Water and Forestry (1997-2005) and worked for the Mozambican government (1979/88).
+                            {% endblocktranslate %}
+                          </p>
+                          <p>
+                            {% blocktranslate %}
+                            He has participated in global dialogues on water, climate, regional integration and sustainable development issues including
+                            climate COPs and the United Nations Commission on Sustainable Development. He chaired the World Economic Forum’s Water Agenda
+                            Task Force (2012-14) and was a member of the Technical Committee of the Global Water Partnership (2006-2012). Some of
+                            his publications are cited in the IPCC’s 6th Assessment Report; more publication details at:
+                            <a href="https://orcid.org/0000-0002-4252-3200">https://orcid.org/0000-0002-4252-3200</a>
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_8" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_8">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-3/Gilbert Siame.jpeg' %}" alt="Gilbert Siame">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gilbert-siame-754ab24a/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Gilbert Siame</h4>
+              <p class="speaker-designation">
+                {% translate 'Associate Professor of international urban development and planning, Norway' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_8" tabindex="-1" aria-labelledby="speaker_modal_8" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-3/Gilbert Siame.jpeg' %}" alt="Gilbert Siame">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Gilbert Siame</h2>
+
+                          <p class="my-2">
+                            {% translate 'Associate Professor of international urban development and planning, Norway' %}
+                          </p>
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/gilbert-siame-754ab24a/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+                          <span class="xs-hr-line"></span>
+                          <p>
+                            {% blocktranslate %}
+                            Gilbert Siame is an Associate Professor of international urban development and planning at the Norwegian
+                            University of Science and Technology (NTNU) in Norway. He teaches on the MSc in Urban Ecological Planning
+                            international programme in the Department of Architecture and Planning. He holds a Master of City and
+                            Regional Planning and a doctoral degree in Architecture and Planning, both from the University of Cape Town.
+                            {% endblocktranslate %}
+                          </p>
+                          <p>
+                            {% blocktranslate %}
+                            Before joining NTNU, Gilbert Siame was a programme leader in the MSc in Spatial Planning programme and coordinator
+                            of graduate studies in the Department of Geography and Environmental Studies at the University of Zambia.
+                            He has extensive experience in research, teaching, and policy formulation in urban development and planning.
+                            {% endblocktranslate %}
+                          </p>
+                          <p>
+                            {% blocktranslate %}
+                            His specialty is in urban governance and Decentralisation, urban informality, state-society relationships, climate
+                            change and urban transitions in Africa, urban corruption, and urban food systems. He has served as a consultant
+                            for the World Bank, UN Food and Agriculture Organization (FAO), UN-Habitat, Habitat for Humanity, GFA Consulting Group
+                            (Germany), GIZ, Hivos international, Lusaka City Council, University of Cape Town (UCT), among many others.
+                            He is a visiting lecturer at the University of the Witwatersrand, Johannesburg. He was a 2021 International
+                            Fellow of Urban Studies Foundation at UCT.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--div class="my-5 text-center">
+        <a class="btn btn__primary btn__big" href="{% url 'webinar-registration' %}">
+          {% translate "Register now" %}
+        </a>
+      </div-->
+    </div>
+  </section>
+
+{% endblock content %}

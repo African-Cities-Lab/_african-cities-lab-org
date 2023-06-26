@@ -1,0 +1,979 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block title %}
+    {% translate "African Cities: What role for the youth?" %} - African Cities Lab
+{% endblock title %}
+{% block meta_tag_description %}
+  <meta name="description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+{% endblock meta_tag_description %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}">
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta name="twitter:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}"/>
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta property="og:image" content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "African Cities: What role for the youth?" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate 'On October 11, 2022, African Cities Lab, Sèmè City and the Center of Urban Systems of Mohammed VI Polytechnic University will organise a webinar on the theme: African Cities: What role for the youth?.' %}" />
+<meta itemprop='image' content="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth-preview.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+    .page-banner {
+      background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
+        url({% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %});
+    }
+    #video_player .btn-close{
+      color: #fff;
+      background: unset;
+    }
+
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+
+  <section class="page-banner">
+    <div class="container-fluid">
+      <div class="row align-item-center py-5">
+        <div class="col-12 col-lg-10 col-xl-8 pt-4">
+          <div class="meta-badge bg-transparent" style="border: 1px solid #fff">{% translate "Webinar" %}</div>
+
+          <div class="py-3 h2">
+            {% blocktranslate %}
+              African Cities: <br>What role for the youth?
+            {% endblocktranslate %}
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4 mt-3">
+              <div class="d-inline-flex align-items-start">
+                <img width="50" height="33" src="{% static 'images/assets/big-pointer.svg' %}"/>
+                <div class="font-size-18 d-inline-block font-weight-bold px-3">
+                  {% blocktranslate %}
+                    11 October<br>2022
+                  {% endblocktranslate %}
+                </div>
+              </div>
+              <div class="mt-3 d-inline-flex">
+                <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                <span class="font-size-18 font-weight-500 p-3">{% translate "Online" %}</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 mt-3 d-none d-md-block">
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    10AM | 12PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session I:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                      Urban youth identity and participation <br> in democratization &amp; development
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-12 col-md-4 d-flex align-items-start">
+                  <img width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+                  <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+                    {% blocktranslate %}
+                    3PM | 5PM <br>
+                    GMT + 1
+                    {% endblocktranslate %}
+                  </div>
+                </div>
+                <div class="col-12 col-md-8">
+                  <span class="font-size-18 font-weight-bold">{% translate "Session II:" %}</span>
+                  <p class="font-size-16">
+                    {% blocktranslate %}
+                    Challenges of the urban youth
+                    {% endblocktranslate %}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <a href="https://www.youtube.com/watch?v=U-0SuoKMZBM" target="_blank" class="btn btn__primary btn__small">
+              {% translate "Watch the replay" %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row py-md-5">
+        <div class="col-12 col-lg-11">
+          <div class="event-overview font-size-16">
+            <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
+            <div class="text-justify">
+              {% blocktranslate %}By 2050, 35&#37; of the world population will be young and African, compared to 15&#37; in 2000.{% endblocktranslate %}
+              {% blocktranslate %}The accelerated urbanisation that Africa has been experiencing in recent years goes along with an increase in the youngest part of its population, bringing new challenges to the cities.{% endblocktranslate %}
+              <p>{% blocktranslate %}Today, 60&#37; of the African population is under the age of 24. This peculiarity of the continent is an essential fact to be taken into account in urban planning. Young people should have an important role in the development of African cities models. It is therefore legitimate to position them as actors and authors of the transformation of spaces and living environments that respond to the urban challenges facing the continent (sustainability, well-being, access to essential education services and inclusion.{% endblocktranslate %}</p>
+              <p>{% blocktranslate %}In this webinar entitled "African cities: what place for young people?" experts will answer the questions of:</p>{% endblocktranslate %}
+            </div>
+
+            <ul class="py-4">
+              <li>{% translate "Youth engagement through different movements;" %}</li>
+              <li>{% translate "Gender and equity in urban areas;" %}</li>
+              <li>{% translate "Urban youth activities." %}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-agenda py-5 bg-light__">
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-12 col-lg-11">
+
+          <h3 class="section-title">{% translate "On the agenda" %}</h3>
+
+          <ul class="nav nav-tabs" id="agenda-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="one-tab" data-bs-toggle="tab" href="#one" role="tab" aria-controls="one" aria-selected="true">
+                  <h4>{% translate "Session I" %}</h4>
+                  <span>{% translate "10am - 12pm" %}</span> GMT+1
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="two-tab" data-bs-toggle="tab" href="#two" role="tab" aria-controls="two" aria-selected="false">
+                  <h4>{% translate "Session II" %}</h4>
+                  <span>{% translate "3pm - 5pm" %}</span> GMT+1
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="agenda-content">
+            <div class="tab-pane p-md-4 fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Urban youth identity and participation in democratization &amp; development" %}</div>
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "French translated to English" %}</span>
+              </div>
+
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Opening Statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "10.05 - 10.30 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Political identity and participation of urban youth" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} David Goeury</p>
+                  <small>
+                    {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "10.30 - 10.55 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Is there an urban youth? A reflection in the Maghreb context" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Johannes Frische </p>
+                  <small>{% translate "Postdoctoral researcher from Leipzig University" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "10.55 - 11.20 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "African youth movements and the test of citizenship, democracy and development" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Ibrahima Touré</p>
+                  <small>{% translate "Teacher-researcher at the Department of Sociology of the Assane Seck University of Ziguinchor (Senegal)" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "11.20 - 11.45 AM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "The youth paradox: a challenge for public policy in Africa" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Francis Akindès</p>
+                  <small>{% translate "Beninese-Ivorian Professor of Sociology at Alassane Ouattara University (Bouaké, Côte d'Ivoire)" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Jawad Agdal</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane p-md-4 fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+              <img class="d-none d-md-inline-block" width="12" height="30" src="{% static 'images/assets/small-pointer.svg' %}"/>
+              <div class="h5 d-inline-block px-2 py-4">{% translate "Challenges of the urban youth" %}</div>
+
+              <div>
+                <h6 class="d-inline-block">{% translate "Language:" %}</h6>
+                <span>{% translate "English translated to French" %}</span>
+              </div>
+
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "3.00 - 3.25 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Challenging Cities: Young Men, Masculinity and Violence" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Deevia Bhana</p>
+                  <small>{% translate "DSI/NRF South African Research Chair in Gender and Childhood Sexuality" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <div class="meta-badge">{% translate "3.25 - 3.50 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Tackling the challenges of the urban youth through music: the case of the hip hop movement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Marc Sommers </p>
+                  <small>{% translate "Youth, peacebuilding, security, CVE and Africa specialist" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "3.50 - 4.15 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Urban youth unemployment" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Zuzana Brixiova Schwidrowski</p>
+                  <small>{% translate "Director of the North Africa Office at the United Nations Economic Commission for Africa" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "4.15 - 4.40 PM" %}</div>
+                  <p class="font-size-18 font-weight-500"> {% translate "Young sports African migrants: challenges and constraints of the 'unknown' career abroad" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 py-4 p-3">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Ernest Yeboah Acheampong</p>
+                  <small>{% translate "Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana" %}</small>
+                </div>
+              </div>
+              <div class="row border-bottom_grey">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <div class="meta-badge">{% translate "QUESTIONS & DISCUSSION" %}</div>
+                </div>
+              </div>
+              <div class="row mt-3 border-bottom_grey">
+                <div class="col-12 col-sm-8 p-3 py-4">
+                  <p class="font-size-18 font-weight-500"> {% translate "Closing statement" %}</p>
+                </div>
+                <div class="col-12 col-sm-4 p-3 py-4">
+                  <p class="font-weight-500" ><span class="speaker-ico"></span>{% translate "Speaker:" %} Jérôme CHENAL</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-8 py-4 p-3">
+                  <p class="font-weight-500 font-size-16" ><span class="moderator-ico"></span>{% translate "Moderator:" %} Seddik DARAI</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-speakers py-5">
+    <div class="container-fluid position-relative py-5">
+
+      <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
+
+      <div class="row event-speakers__list py-3">
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_1" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_1">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr.David-Goeury.png' %}" alt="Pr. David Goeury">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/goeury-david-0aaa5a87/?originalSubdomain=fr">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">David Goeury</h4>
+              <p class="speaker-designation">
+                {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_1" tabindex="-1" aria-labelledby="speaker_modal_1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Pr.David-Goeury.png' %}" alt="Pr. David Goeury">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">``
+                          <h2>David Goeury</h2>
+
+                          <p class="my-2">
+                            {% translate 'Researcher in the laboratory "Médiations. Sciences des liens, sciences des lieux" of Sorbonne University. In charge of the "Identifications et sociabilités" axis.' %}
+
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/goeury-david-0aaa5a87/?originalSubdomain=fr">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            David Goeury has a doctoral degree in geography and is a teacher-researcher at the Espace Nature et Culture laboratory
+                            at the Paris-La Sorbonne. He also teaches a preparatory class for the Business prestigious universities at the Lycée
+                            Descartes in Rabat (Morocco).
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He is also an associate researcher at the Jacques Berque Centre in Rabat. He leads
+                            research on the margins and marginalities in low-income countries (India and Morocco). He is currently studying the
+                            transformation of oasis spaces through the action research program "Preservation of sacred and collective oasis sites".
+                            He is also co-sponsoring the ZERKA project (The blue spring and the urbanization of Mediterranean oases).
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He has also been involved in the study of political change in Morocco since 2011, first in the PROCELEC program (Electoral processes
+                            in North Africa, comparative research in electoral geography and sociology) and then in the TARICA program (Political
+                            and socio- institutional change in North Africa: competition of models and diversity of trajectories) directed by Alia
+                            Gana.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            Finally, he was the principal investigator of the ANRS 12 305 program (Income-generating activities and key
+                            populations infected, affected or threatened by HIV in Morocco) as part of a community-based research.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_2" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_2">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Johannes-Frische.jpeg' %}" alt="Dr. Johannes Frische">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/johannes-frische/?originalSubdomain=de">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Johannes Frische</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Postdoctoral researcher from Leipzig University
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_2" tabindex="-1" aria-labelledby="speaker_modal_2" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Johannes-Frische.jpeg' %}" alt="Dr. Johannes Frische">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Johannes Frische</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            Postdoctoral researcher from Leipzig University
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/johannes-frische/?originalSubdomain=de">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Dr. Johannes Frische is a postdoctoral researcher from Leipzig University with a background in Middle Eastern Studies,
+                            History and Religious Studies. During his graduate studies, he specialized in human geography of the MENA region.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            After graduating his master’s degree, Johannes joined the DFG graduate program “Critical Junctures of Globalization”
+                            as a research fellow with the Centre for Area Studies at Leipzig University.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            His doctoral thesis, defended in May 2021, revolves around urban inequality, informality, and precarity with a special focus on the role of youth in postrevolutionary
+                            Tunisia. In September 2021 he became a junior fellow member of the Merian Center for Advanced Studies in the Maghreb (MECAM).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_3" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_3">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Dr.Ibrahima-Touré.jpg' %}" alt="Dr. Ibrahima Touré">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Ibrahima Touré</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Teacher-researcher at the Department of Sociology of the Assane Seck University of Ziguinchor (Senegal)
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_3" tabindex="-1" aria-labelledby="speaker_modal_3" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Dr.Ibrahima-Touré.jpg' %}" alt="Dr. Ibrahima Touré">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Ibrahima Touré</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            Teacher-researcher at the Department of Sociology of the Assane Seck University of Ziguinchor (Senegal)
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Ibrahima Touré is a teacher-researcher in the Department of Sociology at the Assane Seck University in Ziguinchor
+                            (Senegal). He defended his doctoral thesis in Sociology at the Université Gaston Berger de Saint-Louis.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He is a member of the Laboratoire d'Étude et de Recherche en Sciences Économiques et Sociales (LARSES) of the Unité de
+                            Formation et de Recherches (UFR) Sciences économiques et sociales (SES).
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            His expertise and research work focus on public policies, administrative reforms, development policies, mobility and social movements,
+                            particularly youth movements.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            Member of several professional networks in Senegal and abroad, Ibrahima Touré regularly participates in
+                            the activities of CODESRIA.and was Head of the Department of Sociology from 2019 to 2021 at the University Assane
+                            Seck of Ziguinchor.
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_4" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_4">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr.Francis-Akindès.jpg' %}" alt="Pr. Francis Akindès">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/francis-akindes-885233a5/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Francis Akindès</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Beninese-Ivorian Professor of Sociology at Alassane Ouattara University (Bouaké, Côte d'Ivoire)
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_4" tabindex="-1" aria-labelledby="speaker_modal_4" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Pr.Francis-Akindès.jpg' %}" alt="Pr. Francis Akindès">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Francis Akindès</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            Beninese-Ivorian Professor of Sociology at Alassane Ouattara University (Bouaké, Côte d'Ivoire)
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/francis-akindes-885233a5/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% translate "Francis Akindès is a Beninese-Ivorian Professor of Sociology at Alassane Ouattara University (Bouaké, Côte d'Ivoire), born in 1961, and the author of several political science essays, including Côte d'Ivoire: la réinvention de soi dans la violence (Codesria, Dakar, 2011) and Les Racines de la crise militaro-politique en Côte d'Ivoire (Codesria, Dakar, 2006)." %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_5" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_5">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}" alt="Pr. Deevia Bhana">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Deevia Bhana</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                DSI/NRF South African Research Chair in Gender and Childhood Sexuality
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_5" tabindex="-1" aria-labelledby="speaker_modal_5" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Pr. Deevia Bhana.jpg' %}" alt="Pr. Deevia Bhana">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Deevia Bhana</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            DSI/NRF South African Research Chair in Gender and Childhood Sexuality
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% translate "Deevia Bhana is the DSI/NRF South African Research Chair in Gender and Childhood Sexuality." %}
+                            {% blocktranslate %}
+                            She has written extensively on the experience of gender and sexuality in the young life course bringing a broad interdisciplinary
+                            social science lens to understanding how gender and sexuality is experienced by children and young people and the
+                            implications thereof for addressing violence, sex education and sexual health interventions.
+                            {% endblocktranslate %}
+                            {% translate "Her latest book is entitled, Girls and the Negotiation of Porn in South Africa: Power, Play and Sexuality (2022, Routledge)." %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_6" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_6">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Dr.Marc-Sommers.jpg' %}" alt="Dr. Marc Sommers">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/marc-sommers-862a9030/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Marc Sommers</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Youth, peacebuilding, security, CVE and Africa specialist
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_6" tabindex="-1" aria-labelledby="speaker_modal_6" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Dr.Marc-Sommers.jpg' %}" alt="Dr. Marc Sommers">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Marc Sommers</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            Youth, peacebuilding, security, CVE and Africa specialist
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/marc-sommers-862a9030/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Marc is an internationally recognized youth, peacebuilding, security, CVE and Africa specialist. He has provided strategic
+                            and technical advice, and expertise in training and conflict negotiation, including:
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                              • As a peacebuilder, designing and assessing programs for marginalized youth and coordinating discreet, high-level meetings on peace and stabilization.
+                              • As a diplomat, serving as a back-channel negotiator and peacebuilding strategist.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                              • As a field researcher and evaluator, where he regularly uncovers vital issues that previously had been overlooked or unknown. His trust-based methods are detailed in a recent book.
+                              • As a violent extremism and CVE expert, revealing new insights in a seminal report on youth and CVE and leading a major research workshop for IGAD in Djibouti.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            • As a security and risk management analyst, applying expertise on non-state military actors, informal economic sectors and youth exclusion to pressing challenges.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            Marc has served as a senior advisor and officer in the U.S. Department of State. He is a former member of the UN Advisory Group
+                            of Experts for the Progress Study on Youth, Peace and Security and was a Fellow at The Wilson Center, U.S. Institute of Peace
+                            and The Bellagio Center.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            He taught for many years at The Fletcher School (Tufts University) and has consulted for 20+ NGOs,
+                            5 UN agencies, 6 policy institutes, OSCE and the World Bank.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            Marc is the author of 9 books (on youth, war, development, education in emergencies, refugees, VE/CVE and coordination) and the
+                            recipient of 4 book awards. His next book is called "We the Young Fighters: Pop Culture, Terror &amp; the War in Sierra Leone" (forthcoming, 2022).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_7" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_7">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Dr.Zuzana-Brixiova-Schwidrowski.jpg' %}" alt="Dr. Zuzana Brixiova Schwidrowski">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/zuzana-brixiova-schwidrowski-69a95438/">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Zuzana Brixiova Schwidrowski</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Director of the North Africa Office at the United Nations Economic Commission for Africa
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_7" tabindex="-1" aria-labelledby="speaker_modal_7" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Dr.Zuzana-Brixiova-Schwidrowski.jpg' %}" alt="Dr. Zuzana Brixiova Schwidrowski">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Zuzana Brixiova Schwidrowski</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                            Director of the North Africa Office at the United Nations Economic Commission for Africa
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/zuzana-brixiova-schwidrowski-69a95438/">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            Zuzana Brixiova Schwidrowski is Director of the North Africa Office at the United Nations Economic Commission for Africa.
+                             Her current research interests are entrepreneurship, labour economics, family economics and development.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                            She has published in journals such as Development Policy Review, Development Southern Africa, Economics Letters,
+                             Economic Modelling, Economic Systems, Journal of Family and Economic Issues, Macroeconomic Dynamics, Review of
+                             Development Economics, Small Business Economics, Structural Change and Economic Dynamics, and World Development.
+                            {% endblocktranslate %}
+                            {% blocktranslate %}
+                             She holds Ph.D. in Economics from the University of Minnesota and MA (Ing.) in Finance from the Prague University
+                             of Economics (VSE).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+          <div class="card border-0 bg-transparent">
+            <div class="card-header p-0">
+                <a href="#speaker_modal_8" type="button" class="d-block" data-bs-toggle="modal" data-bs-target="#speaker_modal_8">
+                    <img class="speaker-avatar" src="{% static 'images/assets/webinar-2/Ernest Yeboah ACHEAMPONG.png' %}" alt="Dr. Ernest Yeboah ACHEAMPONG">
+
+                    <div class="speaker-hover-content">
+                      <img class="pb-5" src="{% static 'images/assets/icon-plus-circle.svg' %}" width="50" height="50">
+                      <ul class="speakers-social-lists list-inline p-0 mb-0">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ernest-yeboah-acheampong-phd-82a1271b/?originalSubdomain=gh">
+                          <i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body border-0">
+              <h4 class="speaker-title">Ernest Yeboah ACHEAMPONG</h4>
+              <p class="speaker-designation">
+                {% blocktranslate %}
+                Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana
+                {% endblocktranslate %}
+              </p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="speaker_modal_8" tabindex="-1" aria-labelledby="speaker_modal_8" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pb-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-7">
+                        <div class="mdl-speaker-avatar">
+                          <img src="{% static 'images/assets/webinar-2/Ernest Yeboah ACHEAMPONG.png' %}" alt="Dr. Ernest Yeboah ACHEAMPONG">
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="mdl-speaker-details p-3">
+                          <h2>Ernest Yeboah ACHEAMPONG</h2>
+
+                          <p class="my-2">
+                            {% blocktranslate %}
+                              Senior Lecturer/Research Associate in the Department of Health, Physical Education, Recreation and Sports at the University of Education, Winneba, Ghana
+                            {% endblocktranslate %}
+                          </p>
+
+                          <ul class="mdl-speaker-social-list list-inline m-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ernest-yeboah-acheampong-phd-82a1271b/?originalSubdomain=gh">
+                              <i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                          </ul>
+
+                          <span class="xs-hr-line"></span>
+
+                          <p>
+                            {% blocktranslate %}
+                            His research interests include African soccer, migration, soccer and youth education, sport for development and the phenomenon
+                            of self-giving. He has published several academic articles in reputable journals and has served as a reviewer for some scientific journals.
+                            His current book is 'African Footballers ii Europe: Migration, Community, and Give Back Behaviours' published by Routledge (2020).
+                            {% endblocktranslate %}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="my-5 text-center">
+        <a class="btn btn__primary btn__big" target="_blank" href="https://www.youtube.com/watch?v=U-0SuoKMZBM" class="d-block">
+          {% translate "Watch the replay" %}
+        </a>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

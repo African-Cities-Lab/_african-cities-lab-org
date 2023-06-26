@@ -1,0 +1,224 @@
+{% extends "civa-base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% if self.seo_title %}
+        {{ self.seo_title }}
+    {% elif self.title %}
+        {{ self.title }}
+    {% else %}
+        {% translate "Call for Doctoral Consortium & Spring School | African Cities Conference" %} - African Cities Lab
+    {% endif %}
+{% endblock title %}
+{% block meta_tag_description %}
+<meta name="robots" content="noindex,nofollow"/>
+  <meta name="description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+{% endblock static_meta_tag %}
+
+{% block static_meta_tag %}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Doctoral Consortium & Spring School | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta name="twitter:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}"/>
+<meta name="twitter:site" content="@AfricanCtiesLab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta property="og:title" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Doctoral Consortium & Spring School | African Cities Conference" %} - African Cities Lab{% endif %}" />
+<meta property="og:description" content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta property="og:site_name" content="African Cities Lab" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+
+<meta itemprop="name" content=" {% if self.seo_title %}{{ self.seo_title }}{% elif self.title %}{{ self.title }}{% else %}{% translate "Call for Doctoral Consortium & Spring School | African Cities Conference" %} - African Cities Lab{% endif %}"/>
+<meta itemprop='description' content="{% translate "ACC is the first international conference on urban and sustainable development in Africa." %}" />
+<meta itemprop='image' content="{% static 'images/assets/acl-logo-square256x256.png' %}" />
+{% endblock static_meta_tag %}
+
+{% block css %}
+  {{ block.super }}
+  <style>
+
+    .page-banner {
+      background-image: url({% static 'images/assets/banner-pattern.png' %});
+      background-position: top center;
+    }
+  </style>
+{% endblock css %}
+
+{% block content %}
+
+<section class="page-banner">
+  <div class="container-fluid">
+      <div class="row py-5">
+          <div class="col-12 col-md-6">
+              <div class="position-relative h1">
+                  {% translate "Call for Doctoral Consortium & Spring School" %}
+                  <span class="dash-accent"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 font-size-16">
+          <p class="mt-4">
+            {% blocktranslate %}
+            The ACC 2023 Doctoral Consortium (DC) & Spring School will be held virtually as part of the 1st International Conference on African Cities -
+            Digital and Smart Cities, which will take place on 23 and 24 May 2023 at the Novotel hotel in Cotonou, Benin. This forum will allow
+            early career PhD students as well as postgraduate students to focus on an issue related to African cities within the scope of the ACC 2023 conference themes.
+            {% endblocktranslate %}
+          </p>
+          <p class="pt-3">
+            {% blocktranslate %}
+            The DC offers the opportunity to present and discuss their doctoral research ideas and progress in a supportive, formative yet
+            critical environment, and to receive feedback from examiners, mentors and peers in the field of their thesis topic. The doctoral
+            consortium will also provide opportunities for networking and collaboration with other members of the ACC community.
+            We welcome submissions in all areas of research related to African cities and particularly in digital and smart cities (see "Topics of Interest").
+            {% endblocktranslate %}
+          </p>
+          <p class="pt-3">
+            {% blocktranslate %}
+            The event is open to both early-career and late-career PhD candidates and asks them to formulate and submit a concrete research
+            proposal, preferably supported by preliminary results. The submission will be reviewed by the conference programme committee.
+            Accepted papers will be supervised by a designated mentor, usually an experienced researcher in the field.
+            If accepted, students will be required to register and attend the event, which will include a series of interactive activities
+            with a spring school. Details of the submission can be found below under "ACC's DC Submission Details".
+            {% endblocktranslate %}
+          </p>
+          <div class="pt-5">
+            <h5 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "ACC’s DC Submission Details " %}
+            </h5>
+            <p>
+              {% blocktranslate %}
+              Students must submit a 3 - 6 page description (excluding references and appendices) of their doctoral research proposal.
+              Papers must be written in English and follow the <a class="text_primary" target="_blank" href="https://www.e3s-conferences.org/">E3S web of conference </a>
+              formatting guidelines available <a class="text_primary" target="_blank" href="https://www.webofconferences.org/authors">HERE</a>.
+              {% endblocktranslate %}
+            </p>
+            <p class="pt-3">
+              {% blocktranslate %}
+              Papers must have a single author (the PhD candidate). Supervisors, other persons involved and funders should be acknowledged in an Acknowledgements section.
+              {% endblocktranslate %}
+            </p>
+            <p class="pt-3">
+              {% blocktranslate %}
+              All proposals must be submitted electronically via the EasyChair conference submission system.
+              <a class="text_primary" target="_blank" href="https://easychair.org/conferences/?conf=civa2023">https://easychair.org/conferences/?conf=civa2023</a>
+              {% endblocktranslate %}
+            </p>
+            <p class="pt-3">
+              {% blocktranslate %}
+              All submissions of papers for the DC must contain the following elements:
+              {% endblocktranslate %}
+            </p>
+            <ul class="px-5 pt-3">
+              <li>
+                {% blocktranslate %}
+                <strong>Background and motivation:</strong> What is the societal and research context of the research?
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Problem statement:</strong> What is the general problem that the research addresses?
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Related work:</strong> How does the research fit into the state of the art?
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Research questions/challenges:</strong> What are the questions the research answers?
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Method/approach and evaluation:</strong> How are each of the research questions answered? How are the results evaluated?
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Preliminary results:</strong> (if available).
+                {% endblocktranslate %}
+              </li>
+              <li class="pt-3">
+                {% blocktranslate %}
+                <strong>Discussion and future work:</strong> What are the intermediate findings, and what are the next steps planned?
+                {% endblocktranslate %}
+              </li>
+            </ul>
+            <p class="pt-3">
+              {% blocktranslate %}
+              Accepted CD papers will be published in the main proceedings of the 1st International Conference on African Cities and
+              more specifically in the proceeding <a class="text_primary" target="_blank" href="https://www.e3s-conferences.org/">E3S web of conference</a>
+              indexed in Scopus, WoS and many others. Authors will have the opportunity to decline to be included in these proceedings.
+              {% endblocktranslate %}
+            </p>
+
+            <div class="mt-5 text-center">
+              <a class="btn btn__secondary btn__small" target="_blank" href="https://easychair.org/my/conference?conf=hhai2023">
+                {% translate "Submit your article" %}
+              </a>
+            </div>
+          </div>
+          <div class="pt-5">
+            <h5 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "ACC’s DC important dates" %}
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mx-3">
+                {% translate "Submission deadline:" %}
+                {% translate "March 25, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Notification of acceptance:" %}
+                {% translate "April 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Camera-ready Submission:" %}
+                {% translate "May 05, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "Registration due date:" %}
+                {% translate "May 15, 2023" %}
+              </li>
+              <li class="mx-3 pt-2">
+                {% translate "DC & Spring School date:" %}
+                {% translate "May 23-24, 2023" %}
+              </li>
+            </ul>
+          </div>
+          <div class="pt-5">
+            <h5 class="mb-3 font-size-18">
+              <i class="fas fa-circle text_primary mx-2 font-size-12"></i>
+              {% translate "Doctoral Consortium & Spring School chairs " %}
+            </h5>
+            <ul class="px-5">
+              <li >El Bachir Diop, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+              <li>Stéphane C. K. Tékouabou, {% translate "Center of Urban System CUS, UM6P, Benguérir, Morocco" %}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <aside class="sidebar-menu my-5">
+            <a href="{% url 'cfp-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for papers {% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfpd-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Poster & Demos {% endblocktranslate %}
+            </a>
+            <a href="{% url 'cfwt-details' %}" class="sidebar-item h4">
+              {% blocktranslate %} Call for Workshops & Tutorials {% endblocktranslate %}
+            </a>
+          </aside>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
