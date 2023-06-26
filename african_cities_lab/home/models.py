@@ -46,6 +46,7 @@ class FlatPage(MetadataPageMixin, Page):
     parent_page_type = [
         "home.HomePage",
     ]
+    
 class BlogIndexPage(MetadataPageMixin, Page):
 
     subpage_types = ["home.BlogPage"]

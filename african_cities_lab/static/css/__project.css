@@ -720,11 +720,14 @@ a:hover {
   font-size: 1.3rem;
 }
 .bg_primary {
-  background-color: #be3712;
+  background-color: #BE3712 !important;
 }
 .bg_secondary {
-  background-color: #402781;
+  background-color: #402781 !important;
 }
+.bg_tertiary {
+  background-color: #1CA199 !important;
+ }
 .btn-arrow > i {
   margin-left: 23px;
 }
@@ -1055,7 +1058,7 @@ a.nav-link:hover {
   object-fit: cover;
 }
 .post-hero__container {
-  background-color: #402781;
+  background-color: #442683;
   position: relative;
   min-height: 350px;
   border-style: solid;
@@ -1293,9 +1296,10 @@ a.novashare-button {
   padding: 0 0.88rem 1rem;
 }
 .moocs-card .moocsCard-university .brand-icon {
-  width: 85px;
-  height: 85px;
+  width: 95px;
+  height: 95px;
   object-fit: contain;
+  padding: 1rem;
 }
 .moocs-card .moocsCard-university .university__divider {
   height: 50px;
@@ -1553,6 +1557,10 @@ a.novashare-button {
   border-bottom: unset;
   background-color: transparent;
   position: relative;
+}
+.speakers-card .card {
+  max-width: 288px;
+  margin: 0 auto;
 }
 .speaker-hover-content {
   text-align: center;
@@ -2485,16 +2493,14 @@ h2.bannner__add-text {
   width: 100%;
 }
 .ribbon-wrapper {
-  width: 85px;
-  height: 88px;
+  width: 140px;
+  height: 120px;
   overflow: hidden;
   position: absolute;
-  top: -3px;
-  left: -3px;
 }
 .ribbon {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 11px;
   text-align: center;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -2502,12 +2508,25 @@ h2.bannner__add-text {
   -o-transform: rotate(-45deg);
   position: relative;
   padding: 7px 0;
-  top: 15px;
-  left: -30px;
-  width: 120px;
+  top: 34px;
+  left: -54px;
+  width: 205px;
   background-color: #f4980e;
   color: #fff;
   box-shadow: 0 3px 6px -3px rgb(0 0 0 / 50%);
+}
+.mooc-status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 2px 4px;
+    min-width: 47px;
+    background-color: #BE3712;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 4px;
 }
 /*----------------------------------------*/
 /*  Footer

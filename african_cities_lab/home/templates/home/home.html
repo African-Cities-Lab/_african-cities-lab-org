@@ -28,14 +28,14 @@
             min-height: 465px;
         }
         .homepage-slider .slide-1 {
-            background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
+            background-image: linear-gradient(90deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.25) 100%),
               url({% static 'images/assets/acl-homepage-banner.jpg' %});
             background-position: bottom center;
         }
         .homepage-slider .slide-2 {
-            background-image: linear-gradient(rgba(64, 39, 129, 0.25),rgba(64, 39, 129, 0.45)),
-              url({% static 'images/assets/2023_summit_img.jpeg' %});
-            background-position: top center;
+            background-image: linear-gradient(105deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.10) 60%),
+              url({% static 'images/assets/city-of-port-louis-mauritius.jpg' %});
+            background-position: bottom center;
         }
 
     </style>
@@ -61,7 +61,7 @@
                     <div class="slide-image slide-1">
                         <div class="container-fluid">
                             <div class="row py-5">
-                                <div class="col-12 col-xl-6 col-md-10">
+                                <div class="col-12 col-lg-7 col-md-10">
                                     <div class="position-relative h1">
                                         {% translate "Drive the change and contribute to the transformation of tomorrow’s African cities" %}
                                         <span class="dash-accent"></span>
@@ -86,21 +86,19 @@
                     <div class="slide-image slide-2">
                         <div class="container-fluid">
                             <div class="row py-5">
-                                <div class="col-12 col-md-10 col-lg-6">
-                                    <div class="logo-wrapper mb-5">
-                                        <img src="{% static 'images/assets/logo-acl2023-summit-white.png' %}"
-                                            alt="African Cities Lab - 2023 Summit"
-                                            width="300"
-                                            height="43.42">
+                                <div class="col-12 col-lg-7 col-md-10">
+                                    <div class="font-size-16 py-3">
+                                        <span class="font-weight-bold font-size-18">{% translate "MAY 23-24" %}</span>
+                                        <span class="mx-4">{% translate "COTONOU" %} <span class="mx-2">/</span> {% translate "BEN GUERIR" %}</span>
                                     </div>
-                                    <h5 class="font-weight-500 mb-2">
-                                        {% translate "Hybrid event" %}<span class="text_primary mx-2">|</span>{% translate "May 23-24" %}
-                                    </h5>
-                                    <div class="pt-4 h1 position-relative">
+                                    <div class="h1 position-relative">
                                         {% translate "Join the movement to transform African cities" %}
                                         <span class="dash-accent"></span>
                                     </div>
-                                    <div class="pt-5">
+                                    <p class="my-4 font-size-16">
+                                        {% translate "On May 23rd and 24th 2023, the African Cities Lab platform will bring together governments, urban professionals, academic researchers, entrepreneurs, public and private actors and youth from all over the world in order to uplift african cities development." %}
+                                    </p>
+                                    <div class="pt-3">
                                         <a class="btn btn-small font-size-14 btn-outline__white" target="_blank"
                                             href="https://summit.africancitieslab.org/">
                                             {% translate "Learn more" %}</a>
@@ -245,6 +243,76 @@
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/urban-data-management-for-smart-city-development-in-africa.png' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
+                                    {% translate "La gestion des données urbaines : clé du développement de villes africaines plus intelligentes" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 16 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.jpeg' %}"/>
+                            </a>
+                            <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/unhabitat.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UN-HABITAT" %}</div>
+                            </div>
+                            <!--div class="moocsCard-meta py-2">
+                                <div class="meta__values">
+                                    <i class="fas fa-tags text_primary"></i>
+                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
+                                </div>
+                            </div-->
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
+                                    {% translate "Digital Governance for inclusive and sustainable African cities" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 10 Jul. 2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_PGU+2022/about" class="d-block" target="_blank">
@@ -270,7 +338,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                            Début: 1 janv. 2023
+                            {% translate "Start date:" %} 1 Jan. 2023
                         </div>
                     </div>
                 </div>
@@ -301,7 +369,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                            Début: 1 janv. 2016
+                            {% translate "Start date:" %} 1 Jan. 2016
                         </div>
                     </div>
                 </div>
@@ -332,7 +400,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                            Début: 1 janv. 2016
+                            {% translate "Start date:" %} 1 Jan. 2016
                         </div>
                     </div>
                 </div>
@@ -363,69 +431,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                            Début: 1 janv. 2015
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0">
-                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-environnement-et-enjeux-de-developpement-durable.png' %}"/>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div>
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div>
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div-->
-                            <h5 class="moocsCard-title ">
-                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_EDD+2022/about" class="d-block" target="_blank">
-                                    {% translate "Villes africaines : Environnement et enjeux de développement durable" %}
-                                </a>
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            Début: 1 janv. 2015
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0">
-                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/villes-africaines-restructuration-des-quartiers-precaires.png' %}"/>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div>
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div>
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div-->
-                            <h5 class="moocsCard-title">
-                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+VA_RCP+2022/about" class="d-block" target="_blank">
-                                    {% translate "Villes africaines : Restructuration des quartiers précaires" %}
-                                </a>
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            Début: 1 janv. 2015
+                            {% translate "Start date:" %} 1 Jan. 2015
                         </div>
                     </div>
                 </div>
