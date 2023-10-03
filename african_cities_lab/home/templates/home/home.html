@@ -239,8 +239,35 @@
 
             <div class="row justify-content-xl-center pt-5">
 
-
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon">NEW</div>
+                            </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+002+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/african-urban-economic-development-in-the-context-of-climate-change.jpeg' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
+                            </div>
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+002+2022/about" class="d-block" target="_blank">
+                                    {% translate "African Urban Economic Development in the Context of Climate Change" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 18 Oct. 2023
+                        </div>
+                    </div>
+                </div>
+
+		        <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <div class="ribbon-wrapper">
@@ -268,12 +295,37 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+		        <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0">
                             <div class="ribbon-wrapper">
                                 <div class="ribbon">NEW</div>
                             </div>
+                            <a href="https://courses.africancitieslab.org/courses/course-v1:CAHF+001+2022/about" class="d-block" target="_blank">
+                                <img src="{% static 'images/assets/moocs/making-housing-markets-work-in-african-cities.jpg' %}"/>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="moocsCard-university d-flex align-items-center">
+                                <img class="brand-icon" src="{% static "images/assets/partners/cahf.png" %}">
+                                <div class="university__divider"></div>
+                                <div class="university__label">{% translate "Centre for Affordable Housing Finance in Africa" %}</div>
+                            </div>
+                            <h5 class="moocsCard-title">
+                                <a href="https://courses.africancitieslab.org/courses/course-v1:CAHF+001+2022/about" class="d-block" target="_blank">
+                                    {% translate "Making housing markets work in African cities: understanding the role and opportunity of finance" %}
+                                </a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            {% translate "Start date:" %} 15 Aug. 2023
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-4 col-md-6 moocs-card">
+                    <div class="card">
+                        <div class="card-header p-0 border-0"> 
                             <!--div class="ribbon-wrapper">
                                 <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
                             </div-->
@@ -308,10 +360,7 @@
 
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
-                        <div class="card-header p-0 border-0">
-                            <div class="ribbon-wrapper">
-                                <div class="ribbon">NEW</div>
-                            </div>
+                        <div class="card-header p-0 border-0"> 
                             <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
                                 <img src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.jpeg' %}"/>
                             </a>
@@ -340,7 +389,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-lg-4 col-md-6 moocs-card">
                     <div class="card">
                         <div class="card-header p-0 border-0">
@@ -368,68 +416,6 @@
                         </div>
                         <div class="card-footer">
                             {% translate "Start date:" %} 1 Jan. 2023
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0">
-                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-1.png' %}"/>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div>
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div>
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div-->
-                            <h5 class="moocsCard-title">
-                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig1+2022/about" class="d-block" target="_blank">
-                                    {% translate "Systèmes d'Information Géographique - Partie 1" %}
-                                </a>
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            {% translate "Start date:" %} 1 Jan. 2016
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 moocs-card">
-                    <div class="card">
-                        <div class="card-header p-0 border-0">
-                            <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/systeme-dinformation-geographique-partie-2.png' %}"/>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/epfl.png" %}">
-                                <div class="university__divider"></div>
-                                <div class="university__label">{% translate "École Polytechnique Fédérale de Lausanne" %}</div>
-                            </div>
-                            <!--div class="moocsCard-meta py-2">
-                                <div class="meta__values">
-                                    <i class="fas fa-tags text_primary"></i>
-                                    <span class="meta__unit">{% translate "Sanitation" %}</span>
-                                </div>
-                            </div-->
-                            <h5 class="moocsCard-title">
-                                <a href="https://courses.africancitieslab.org/courses/course-v1:EPFL+sig2+2022/about" class="d-block" target="_blank">
-                                    {% translate "Systèmes d'Information Géographique - Partie 2" %}
-                                </a>
-                            </h5>
-                        </div>
-                        <div class="card-footer">
-                            {% translate "Start date:" %} 1 Jan. 2016
                         </div>
                     </div>
                 </div>

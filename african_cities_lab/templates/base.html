@@ -25,7 +25,7 @@
                   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
                   crossorigin="anonymous"/>
             <!-- This file stores project-specific CSS -->
-            <link href="{% static 'css/__project.css' %}" rel="stylesheet" />
+            <link href="{% static 'css/___project.css' %}" rel="stylesheet" />
             <link rel="stylesheet"
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
             <link rel="stylesheet"
@@ -134,6 +134,20 @@
                             <li class="nav-item mx-3">
                                 <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'contact' %}">{% translate "Contact" %}</a>
                             </li>
+
+                            <li class="nav-item register-link-lg mx-3">
+                                <span class="nav-link">
+                                    <a target="_blank" 
+                                        href="https://apps.courses.africancitieslab.org/authn/login">
+                                        {% translate "Login" %}
+                                    </a> 
+                                    <span> | </span>
+                                    <a target="_blank" 
+                                        href="https://apps.courses.africancitieslab.org/authn/register">
+                                            {% translate "Register" %}
+                                    </a> 
+                                </span> 
+                            </li>
                         </ul>
                         <div class="right-header">
                             <span class="dropdown px-3">
@@ -167,13 +181,18 @@
                                     id="language-selector"
                                     type="hidden"
                                     value="{{ LANGUAGE_CODE }}"/>
-                            </form>
-                            {% comment %}
-                            <a class="mx-3 text-black font-weight-bold" href="#">{% translate "Sign In" %}</a>
-                            {% endcomment %}
+                            </form> 
                             <div class="register-link">
-                                <a id="moocs_register_link_onmenu" class="d-none btn btn__primary btn__small" target="_blank" href="">
-                                    {% translate "S'inscrire gratuitement" %}
+                                <a class="mx-3 text-black font-weight-bold" 
+                                    target="_blank" 
+                                    href="https://apps.courses.africancitieslab.org/authn/login">
+                                        {% translate "Login" %}
+                                </a>
+                                <a id="moocs_register_link_onmenu" 
+                                    class="btn btn__primary btn__xxsmall" 
+                                    target="_blank" 
+                                    href="https://apps.courses.africancitieslab.org/authn/register">
+                                        {% translate "Register" %}
                                 </a>
                             </div>
                         </div>

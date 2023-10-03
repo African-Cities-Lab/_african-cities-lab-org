@@ -715,6 +715,10 @@ a:hover {
 .btn__small {
   padding: 10px 25px;
 }
+.btn__xxsmall {
+  padding: 6px 20px;
+  font-size: 14px;
+}
 .btn__big {
   padding: 1rem 2rem;
   font-size: 1.3rem;
@@ -1675,6 +1679,22 @@ ul.event-meta {
   vertical-align: 0;
   margin-right: 3px;
 }
+
+/*----------------------------------------*/
+/*  Floating Menu
+/*----------------------------------------*/
+.floating-navbar {
+  bottom: 0;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+  padding: .75rem 0;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(25, 255, 255, 0.2);
+ }
 
 /*----------------------------------------*/
 /*  ACC 2023 Pages
@@ -2738,6 +2758,7 @@ h2.bannner__add-text {
     top: 80px;
     left: 0px;
     right: 0;
+    z-index: 2147482999;
     text-align: left;
     padding-bottom: 20px;
     background: rgb(255, 255, 255);
@@ -2772,9 +2793,7 @@ h2.bannner__add-text {
     padding: 0 3rem;
   }
   .right-header .register-link {
-    display: block;
-    text-align: center;
-    padding: 3rem 0;
+    display: none;
   }
   li.events-listing__item .events-listing__logo {
     margin: 0 25px 0 0;
@@ -2831,6 +2850,9 @@ h2.bannner__add-text {
   }
 }
 @media (min-width: 992px) {
+  .register-link-lg, .floating-navbar {
+    display: none;
+  } 
   .right-header .register-link {
     display: inline-block;
   }
