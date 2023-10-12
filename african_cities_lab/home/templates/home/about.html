@@ -32,13 +32,13 @@
     <style>
         .page-banner {
             background-image: linear-gradient(rgba(84,84,84,0.25) 12%, rgba(0,0,0,.5) 100%),
-              url({% static 'images/assets/acl-aboutpage-banner.jpg' %});
+              url({% static 'images/assets/acl-aboutpage-banner.webp' %});
             background-position: bottom center;
         }
         .acl-conference {
-            background-image: linear-gradient(rgba(64, 39, 129, 0.25),rgba(64, 39, 129, 0.55)),
-              url({% static 'images/assets/2023_summit_img.jpeg' %});
-            background-position: top center;
+            background-image: linear-gradient(105deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.10) 60%),
+                url({% static 'images/assets/city-of-port-louis-mauritius.webp' %});
+            background-position: bottom center;
         }
     </style>
 {% endblock css %}
@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="acl-sharpes right-sharpe">
-        <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/outline-sharpe-right.svg' %}"/>
+        <img class="d-none d-lg-block" alt="icon" width="195" height="380" src="{% static 'images/assets/outline-sharpe-right.svg' %}"/>
     </div>
 </section>
 
@@ -96,7 +96,7 @@
         <div class="container-xl">
             <div class="row justify-content-around">
                 <div class="col-12 col-md-3 col-lg-4 p-5 p-md-3 order-1 order-md-0">
-                    <img class="about-mission__img" alt="about-mission" src="{% static 'images/assets/about-mission.jpg' %}"/>
+                    <img class="about-mission__img" width="408" height="500" alt="about-mission" src="{% static 'images/assets/about-mission.webp' %}"/>
                 </div>
                 <div class="col-12 col-md-9 col-lg-8 order-0 order-md-1 pt-5 px-lg-5">
 
@@ -281,7 +281,7 @@
 
     <section class="acl-conference">
         <div class="acl-sharpes top-right__sharpe">
-            <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/outline-sharpe-top.svg' %}"/>
+            <img class="d-none d-lg-block" alt="icon" width="400" height="205" src="{% static 'images/assets/outline-sharpe-top.svg' %}"/>
         </div>
         <div class="container position-relative">
             <div class="row p-3 py-5 p-md-5">

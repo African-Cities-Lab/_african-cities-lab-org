@@ -23,18 +23,18 @@
     <style>
         .page-banner {
             background-image: linear-gradient(rgba(84,84,84,0.5) 12%, rgba(0,0,0,.5) 100%),
-              url({% static 'images/assets/acl-homepage-banner.jpg' %});
+              url({% static 'images/assets/acl-homepage-banner.webp' %});
             background-position: bottom center;
             min-height: 465px;
         }
         .homepage-slider .slide-1 {
             background-image: linear-gradient(90deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.25) 100%),
-              url({% static 'images/assets/acl-homepage-banner.jpg' %});
+              url({% static 'images/assets/acl-homepage-banner.webp' %});
             background-position: bottom center;
         }
         .homepage-slider .slide-2 {
             background-image: linear-gradient(105deg, rgba(0,0,0,.5) 12%, rgba(0,0,0,0.10) 60%),
-              url({% static 'images/assets/city-of-port-louis-mauritius.jpg' %});
+              url({% static 'images/assets/city-of-port-louis-mauritius.webp' %});
             background-position: bottom center;
         }
 
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="acl-sharpes bottom-right__sharpe">
-                            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
+                            <img class="d-none d-lg-block" alt="icon" width="400" height="205" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="acl-sharpes bottom-right__sharpe">
-            <img class="d-none d-lg-block" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
+            <img class="d-none d-lg-block" alt="icon" src="{% static 'images/assets/outline-sharpe-bottom.svg' %}"/>
         </div>
     </section>
     {% endcomment %}
@@ -189,7 +189,7 @@
                 <div class="col-12 col-lg-3 col-md-5 icon-box">
                     <div class="card ">
                         <div class="card-header icon-container">
-                            <img src="{% static 'images/assets/university.svg' %}" height="62" width="62">
+                            <img alt="icon" src="{% static 'images/assets/university.svg' %}" height="62" width="62">
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
@@ -204,7 +204,7 @@
                 <div class="col-12 col-lg-3 col-md-5 icon-box">
                     <div class="card">
                         <div class="card-header icon-container">
-                            <img src="{% static 'images/assets/people-ico.svg' %}" height="78" width="78">
+                            <img alt="icon" src="{% static 'images/assets/people-ico.svg' %}" height="78" width="78">
                         </div>
                         <div class="card-body">
                             <div class="icon-box__title">
@@ -246,12 +246,12 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:WaterResearchCommission+001+2023/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/introduction-to-new-sanitation-systems-economies-markets.jpeg' %}"/>
+                                <img width="399" height="200" alt="Introduction to New Sanitation Systems, Economies & Markets" src="{% static 'images/assets/moocs/introduction-to-new-sanitation-systems-economies-markets.webp' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/wrc-logo.jpeg" %}">
+                                <img alt="Water Research Commission" width="95" height="95" class="brand-icon" src="{% static "images/assets/partners/wrc-logo.jpeg" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">{% translate "Water Research Commission" %}</div>
                             </div>
@@ -274,12 +274,12 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+002+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/african-urban-economic-development-in-the-context-of-climate-change.jpeg' %}"/>
+                                <img width="399" height="200" alt="African Urban Economic Development in the Context of Climate Change" src="{% static 'images/assets/moocs/african-urban-economic-development-in-the-context-of-climate-change.webp' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <img alt="UM6P - Université Mohammed VI Polytechnique" width="95" height="95" class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
                             </div>
@@ -302,12 +302,12 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:Gret+001+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/fabrique-urbaine-collective.jpg' %}"/>
+                                <img width="399" height="200" alt="La fabrique urbaine collective : idées et outils pour co-produire les villes africaines" src="{% static 'images/assets/moocs/fabrique-urbaine-collective.webp' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/gret.png" %}">
+                                <img alt="icon" width="95" height="95" class="brand-icon" src="{% static "images/assets/partners/gret.png" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">GRET</div>
                             </div>
@@ -330,12 +330,12 @@
                                 <div class="ribbon">NEW</div>
                             </div>
                             <a href="https://courses.africancitieslab.org/courses/course-v1:CAHF+001+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/making-housing-markets-work-in-african-cities.jpg' %}"/>
+                                <img width="399" height="200" alt="Making housing markets work in African cities: understanding the role and opportunity of finance" src="{% static 'images/assets/moocs/making-housing-markets-work-in-african-cities.webp' %}"/>
                             </a>
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/cahf.png" %}">
+                                <img alt="Centre for Affordable Housing Finance in Africa" width="95" height="95" class="brand-icon" src="{% static "images/assets/partners/cahf.png" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">{% translate "Centre for Affordable Housing Finance in Africa" %}</div>
                             </div>
@@ -358,13 +358,13 @@
                                 <div class="ribbon bg_tertiary">{% translate "COMING SOON" %}</div>
                             </div-->
                             <a href="https://courses.africancitieslab.org/courses/course-v1:UM6P+003+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/urban-data-management-for-smart-city-development-in-africa.jpeg' %}"/>
+                                <img width="399" height="200" alt="La gestion des données urbaines : clé du développement de villes africaines plus intelligentes" src="{% static 'images/assets/moocs/urban-data-management-for-smart-city-development-in-africa.webp' %}"/>
                             </a>
                             <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
+                                <img alt="UM6P - Université Mohammed VI Polytechnique" width="95" height="95" class="brand-icon" src="{% static "images/assets/partners/UM6P.svg" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">{% translate "UM6P - Université Mohammed VI Polytechnique" %}</div>
                             </div>
@@ -390,13 +390,13 @@
                     <div class="card">
                         <div class="card-header p-0 border-0"> 
                             <a href="https://courses.africancitieslab.org/courses/course-v1:UN-HABITAT+001+2022/about" class="d-block" target="_blank">
-                                <img src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.jpeg' %}"/>
+                                <img width="399" height="200" alt="Digital Governance for inclusive and sustainable African cities" src="{% static 'images/assets/moocs/digital-governance-for-inclusive-and-sustainable-african-cities.webp' %}"/>
                             </a>
                             <!--div class="mooc-status">{% translate "COMING SOON" %}</div-->
                         </div>
                         <div class="card-body">
                             <div class="moocsCard-university d-flex align-items-center">
-                                <img class="brand-icon" src="{% static "images/assets/partners/unhabitat.png" %}">
+                                <img alt="UN-HABITAT" class="brand-icon" width="95" height="95" src="{% static "images/assets/partners/unhabitat.png" %}">
                                 <div class="university__divider"></div>
                                 <div class="university__label">{% translate "UN-HABITAT" %}</div>
                             </div>
@@ -489,7 +489,7 @@
                         <div class="featured-img">
                             <a href="{% url 'how-to-build-resilient-african-cities' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.jpeg' %}"/>
+                                    <img width="416" height="250" alt="How to build resilient African Cities in response to climate change?" src="{% static 'images/assets/webinar-3/how-to-build-africa-green-cities-face-a-number-of-constraints.webp' %}"/>
                                 </div>
                             </a>
                         </div>
@@ -519,7 +519,7 @@
                         <div class="featured-img">
                             <a href="{% url 'african-cities-what-role-for-the-youth' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.jpeg' %}"/>
+                                    <img width="416" height="250" alt="African Cities:What role for the youth?" src="{% static 'images/assets/webinar-2/african-cities-what-role-for-the-youth.webp' %}"/>
                                 </div>
                             </a>
                         </div>
@@ -551,7 +551,7 @@
                         <div class="featured-img">
                             <a href="{% url 'integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa' %}">
                                 <div class="featured-img__inner">
-                                    <img src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}"/>
+                                    <img width="416" height="250" alt="Integration of open data and artificial intelligence in the development of smart cities in Africa" src="{% static 'images/assets/integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa.jpg' %}"/>
                                 </div>
                             </a>
                         </div>

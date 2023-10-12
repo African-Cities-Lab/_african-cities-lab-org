@@ -360,6 +360,7 @@ template {
     url("../fonts/biko/Biko_Regular.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: "Biko";
@@ -367,6 +368,7 @@ template {
     url("../fonts/biko/Biko_Bold.otf") format("opentype");
   font-style: normal;
   font-weight: bold;
+  font-display: auto;
 }
 @font-face {
   font-family: "Biko";
@@ -374,6 +376,7 @@ template {
     url("../fonts/biko/Biko_Black.otf") format("opentype");
   font-style: normal;
   font-weight: 800;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -385,6 +388,7 @@ template {
     url("../fonts/gotham/Gotham-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -397,6 +401,7 @@ template {
     url("../fonts/gotham/Gotham-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -408,6 +413,7 @@ template {
     url("../fonts/fonts/gotham/Gotham-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -420,6 +426,7 @@ template {
     url("../fonts/gotham/Gotham-BookItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -431,6 +438,7 @@ template {
     url("../fonts/gotham/Gotham-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -443,6 +451,7 @@ template {
     url("../fonts/gotham/Gotham-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -454,6 +463,7 @@ template {
     url("../fonts/gotham/Gotham-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: "Gotham";
@@ -466,12 +476,14 @@ template {
     url("../fonts/gotham/Gotham-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
+  font-display: auto;
 }
 @font-face {
   font-family: "Haudrey";
   src: url("../fonts/haudrey/Haudrey.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 /*----------------------------------------*/
