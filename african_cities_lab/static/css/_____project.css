@@ -1305,17 +1305,17 @@ a.novashare-button {
   width: 100%;
 }
 .moocs-card .card .card-body {
-  padding: 0 1rem 1rem;
+  padding: 1rem 1rem 1rem;
 }
 .moocs-card .moocsCard-title {
   font-weight: 500;
-  padding: 0 0.88rem 1rem;
+  padding: 1rem 0.5rem 1rem;
 }
 .moocs-card .moocsCard-university .brand-icon {
   width: 95px;
-  height: 95px;
+  height: auto;
   object-fit: contain;
-  padding: 1rem;
+  padding: .5rem;
 }
 .moocs-card .moocsCard-university .university__divider {
   height: 50px;
