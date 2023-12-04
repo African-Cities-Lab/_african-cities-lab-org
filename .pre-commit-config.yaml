@@ -30,7 +30,7 @@ repos:
         additional_dependencies: ['stylelint', 'stylelint-prettier', 'stylelint-config-prettier']
 
   - repo: https://github.com/psf/black
-    rev: 21.9b0
+    rev: 23.11.0
     hooks:
       - id: black
 

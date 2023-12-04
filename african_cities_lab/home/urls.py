@@ -32,6 +32,11 @@ urlpatterns = [
         name="moocs",
     ),
     path(
+        "contest/",
+        TemplateView.as_view(template_name="home/events/contest.html"),
+        name="contest",
+    ),
+    path(
         "integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa/",
         TemplateView.as_view(template_name="home/events/1st_webinar.html"),
         name="integration-of-open-data-and-artificial-intelligence-in-the-development-of-smart-cities-in-Africa",
@@ -122,9 +127,11 @@ urlpatterns = [
         TemplateView.as_view(template_name="home/newsletter.html"),
         name="newsletter",
     ),
-
     ########
-    path("newsletter/submission/", views.newsletter_submission, name="suscribe-newsletter"),
-
+    path(
+        "newsletter/submission/",
+        views.newsletter_submission,
+        name="suscribe-newsletter",
+    ),
     path("moocs/subscribe/", views.subscribe_moocs, name="subscribe-moocs"),
 ]
