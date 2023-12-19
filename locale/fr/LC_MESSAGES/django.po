@@ -6619,7 +6619,7 @@ msgstr ""
 
 #: african_cities_lab/home/templates/home/events/contest.html:211
 msgid "December 11, 2023"
-msgstr "11 Décembre 2024"
+msgstr "11 Décembre 2023"
 
 #: african_cities_lab/home/templates/home/events/contest.html:214
 msgid "Contest opening"
