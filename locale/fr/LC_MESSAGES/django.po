@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-11 15:17+0100\n"
+"POT-Creation-Date: 2024-01-11 11:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -356,7 +356,7 @@ msgstr "3ème Webinaire"
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:13
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:18
 #: african_cities_lab/home/templates/home/events/3rd_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:505
+#: african_cities_lab/home/templates/home/home.html:501
 #: african_cities_lab/home/templates/home/webinar_form.html:19
 #: african_cities_lab/home/templates/home/webinar_form.html:24
 #: african_cities_lab/home/templates/home/webinar_form.html:29
@@ -418,7 +418,7 @@ msgstr ""
 #: african_cities_lab/home/templates/home/event_index_page.html:181
 #: african_cities_lab/home/templates/home/events/civa/civa.html:336
 #: african_cities_lab/home/templates/home/events/civa/civa.html:509
-#: african_cities_lab/home/templates/home/home.html:104
+#: african_cities_lab/home/templates/home/home.html:100
 msgid "Learn more"
 msgstr "En savoir plus"
 
@@ -457,7 +457,7 @@ msgid "Events"
 msgstr "Événements"
 
 #: african_cities_lab/home/templates/home/event_index_page.html:48
-#: african_cities_lab/home/templates/home/home.html:475
+#: african_cities_lab/home/templates/home/home.html:471
 #: african_cities_lab/templates/base.html:142
 #: african_cities_lab/templates/base.html:253
 msgid "Webinars"
@@ -526,7 +526,7 @@ msgstr "Juil"
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:13
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:18
 #: african_cities_lab/home/templates/home/events/1st_webinar.html:23
-#: african_cities_lab/home/templates/home/home.html:567
+#: african_cities_lab/home/templates/home/home.html:563
 msgid ""
 "Integration of open data and artificial intelligence in the development of "
 "smart cities in Africa"
@@ -6452,6 +6452,7 @@ msgid "Contest"
 msgstr "Concours"
 
 #: african_cities_lab/home/templates/home/events/contest.html:66
+#: african_cities_lab/home/templates/home/home.html:91
 msgid "Participate to the \"African urban visions\" contest"
 msgstr "Participez au concours «&nbsp;Visions urbaines Africaines&nbsp;»"
 
@@ -6526,7 +6527,7 @@ msgid "(2 by category + 1 audience price by category)"
 msgstr "(2 par catégorie + 1 prix du public par catégorie)"
 
 #: african_cities_lab/home/templates/home/events/contest.html:142
-#: african_cities_lab/home/templates/home/home.html:164
+#: african_cities_lab/home/templates/home/home.html:160
 #: african_cities_lab/home/templates/home/moocs.html:9
 #: african_cities_lab/home/templates/home/moocs.html:15
 #: african_cities_lab/home/templates/home/moocs.html:20
@@ -6686,39 +6687,21 @@ msgstr ""
 msgid "Explore our MOOCs"
 msgstr "Explorez nos MOOCs"
 
-#: african_cities_lab/home/templates/home/home.html:91
-msgid "MAY 23-24"
-msgstr "23-24 Mai"
-
-#: african_cities_lab/home/templates/home/home.html:92
-msgid "COTONOU"
-msgstr ""
-
-#: african_cities_lab/home/templates/home/home.html:92
-msgid "BEN GUERIR"
-msgstr ""
-
 #: african_cities_lab/home/templates/home/home.html:95
-msgid "Join the movement to transform African cities"
-msgstr "Rejoignez le mouvement pour transformer les villes africaines"
-
-#: african_cities_lab/home/templates/home/home.html:99
 msgid ""
-"On May 23rd and 24th 2023, the African Cities Lab platform will bring "
-"together governments, urban professionals, academic researchers, "
-"entrepreneurs, public and private actors and youth from all over the world "
-"in order to uplift african cities development."
+"Capture the best of innovation and urban transformation right in the heart "
+"of your city, and share your vision through the prism of a photograph or "
+"short video!"
 msgstr ""
-"Les 23 et 24 mai 2023, la plateforme African Cities Lab rassemblera des "
-"gouvernements, des professionnels urbains, des chercheurs universitaires, "
-"des entrepreneurs, des acteurs publics et privés et des jeunes du monde "
-"entier afin de favoriser le développement des villes africaines."
+"Capturez, au coeur même de votre ville, le meilleur de l'innovation et de la "
+"transformation urbaine et partagez votre vision par le prisme d'une "
+"photographie ou d'une courte vidéo !"
 
-#: african_cities_lab/home/templates/home/home.html:145
+#: african_cities_lab/home/templates/home/home.html:141
 msgid "What we offer"
 msgstr "Ce que nous offrons"
 
-#: african_cities_lab/home/templates/home/home.html:148
+#: african_cities_lab/home/templates/home/home.html:144
 msgid ""
 "Top-quality educational content to understand and provide practical "
 "solutions to the challenges presented by the accelerated urbanization of the "
@@ -6728,7 +6711,7 @@ msgstr ""
 "pratiques aux enjeux que présente l’urbanisation accélérée du continent "
 "Africain"
 
-#: african_cities_lab/home/templates/home/home.html:167
+#: african_cities_lab/home/templates/home/home.html:163
 msgid ""
 "A catalog of online training courses delivered by experts in the fields of "
 "urban planning on topics from eco-construction to sustainable development."
@@ -6737,29 +6720,29 @@ msgstr ""
 "domaines de l’urbanisation sur des thématiques allant de l'éco-construction "
 "à la gestion des déchets."
 
-#: african_cities_lab/home/templates/home/home.html:182
+#: african_cities_lab/home/templates/home/home.html:178
 msgid "Learn from the experts"
 msgstr "Apprendre des experts"
 
-#: african_cities_lab/home/templates/home/home.html:185
+#: african_cities_lab/home/templates/home/home.html:181
 msgid "Experts on urban and sustainable development in Africa"
 msgstr "Experts du développement urbain et durable en Afrique"
 
-#: african_cities_lab/home/templates/home/home.html:197
+#: african_cities_lab/home/templates/home/home.html:193
 msgid "6 African Universities"
 msgstr "6 Universités africaines"
 
-#: african_cities_lab/home/templates/home/home.html:200
+#: african_cities_lab/home/templates/home/home.html:196
 msgid "Partners of the African Cities Lab's knowledge hub "
 msgstr ""
 "Qui s’unissent pour transmettre leurs connaissances sur les problématiques "
 "urbaines des villes africaines de demain."
 
-#: african_cities_lab/home/templates/home/home.html:212
+#: african_cities_lab/home/templates/home/home.html:208
 msgid "A large community"
 msgstr "Une vaste communauté"
 
-#: african_cities_lab/home/templates/home/home.html:215
+#: african_cities_lab/home/templates/home/home.html:211
 msgid ""
 "An active community of more than 5000 professionals concerned with the "
 "living environment that African cities will offer to their populations in "
@@ -6768,11 +6751,11 @@ msgstr ""
 "Une communauté active de plus de 5000 professionnels soucieux du cadre de "
 "vie que les villes africaines offriront à leurs populations en 2050"
 
-#: african_cities_lab/home/templates/home/home.html:229
+#: african_cities_lab/home/templates/home/home.html:225
 msgid "Our MOOCs"
 msgstr "Nos MOOCs"
 
-#: african_cities_lab/home/templates/home/home.html:233
+#: african_cities_lab/home/templates/home/home.html:229
 msgid ""
 "We cover all aspects of urban development, considering into account issues "
 "related to housing, employment, transportation, access to water, sanitation, "
@@ -6782,12 +6765,12 @@ msgstr ""
 "une approche qui tient compte des problématiques transverses de logement, "
 "transport, accès à l’eau et l’électricité, emploi et la qualité de vie."
 
-#: african_cities_lab/home/templates/home/home.html:271
-#: african_cities_lab/home/templates/home/home.html:299
-#: african_cities_lab/home/templates/home/home.html:327
-#: african_cities_lab/home/templates/home/home.html:352
-#: african_cities_lab/home/templates/home/home.html:377
-#: african_cities_lab/home/templates/home/home.html:412
+#: african_cities_lab/home/templates/home/home.html:267
+#: african_cities_lab/home/templates/home/home.html:295
+#: african_cities_lab/home/templates/home/home.html:323
+#: african_cities_lab/home/templates/home/home.html:348
+#: african_cities_lab/home/templates/home/home.html:373
+#: african_cities_lab/home/templates/home/home.html:408
 #: african_cities_lab/home/templates/home/moocs.html:90
 #: african_cities_lab/home/templates/home/moocs.html:118
 #: african_cities_lab/home/templates/home/moocs.html:146
@@ -6805,49 +6788,49 @@ msgstr ""
 msgid "Start date:"
 msgstr "Début :"
 
-#: african_cities_lab/home/templates/home/home.html:290
+#: african_cities_lab/home/templates/home/home.html:286
 #: african_cities_lab/home/templates/home/moocs.html:109
 msgid "Water Research Commission"
 msgstr "Commission de Recherche sur l'Eau"
 
-#: african_cities_lab/home/templates/home/home.html:294
+#: african_cities_lab/home/templates/home/home.html:290
 #: african_cities_lab/home/templates/home/moocs.html:113
 msgid "Introduction to New Sanitation Systems, Economies & Markets"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:318
-#: african_cities_lab/home/templates/home/home.html:397
+#: african_cities_lab/home/templates/home/home.html:314
+#: african_cities_lab/home/templates/home/home.html:393
 #: african_cities_lab/home/templates/home/moocs.html:137
 #: african_cities_lab/home/templates/home/moocs.html:216
 msgid "UM6P - Université Mohammed VI Polytechnique"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:322
+#: african_cities_lab/home/templates/home/home.html:318
 #: african_cities_lab/home/templates/home/moocs.html:141
 msgid "African Urban Economic Development in the Context of Climate Change"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:368
+#: african_cities_lab/home/templates/home/home.html:364
 #: african_cities_lab/home/templates/home/moocs.html:187
 msgid "Centre for Affordable Housing Finance in Africa"
 msgstr "Centre pour le Financement du Logement Abordable en Afrique"
 
-#: african_cities_lab/home/templates/home/home.html:372
+#: african_cities_lab/home/templates/home/home.html:368
 #: african_cities_lab/home/templates/home/moocs.html:191
 msgid ""
 "Making housing markets work in African cities: understanding the role and "
 "opportunity of finance"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:386
-#: african_cities_lab/home/templates/home/home.html:391
+#: african_cities_lab/home/templates/home/home.html:382
+#: african_cities_lab/home/templates/home/home.html:387
 #: african_cities_lab/home/templates/home/moocs.html:205
 #: african_cities_lab/home/templates/home/moocs.html:210
 #: african_cities_lab/home/templates/home/moocs.html:242
 msgid "COMING SOON"
 msgstr "DISPONIBLE BIENTÔT"
 
-#: african_cities_lab/home/templates/home/home.html:402
+#: african_cities_lab/home/templates/home/home.html:398
 #: african_cities_lab/home/templates/home/moocs.html:221
 #: african_cities_lab/home/templates/home/moocs.html:253
 #: african_cities_lab/home/templates/home/moocs.html:283
@@ -6860,23 +6843,23 @@ msgstr "DISPONIBLE BIENTÔT"
 msgid "Sanitation"
 msgstr "Assainissement"
 
-#: african_cities_lab/home/templates/home/home.html:407
+#: african_cities_lab/home/templates/home/home.html:403
 #: african_cities_lab/home/templates/home/moocs.html:226
 msgid ""
 "La gestion des données urbaines : clé du développement de villes africaines "
 "plus intelligentes"
 msgstr ""
 
-#: african_cities_lab/home/templates/home/home.html:420
+#: african_cities_lab/home/templates/home/home.html:416
 msgid "More MOOCs"
 msgstr "Voir plus"
 
-#: african_cities_lab/home/templates/home/home.html:479
-#: african_cities_lab/home/templates/home/home.html:578
+#: african_cities_lab/home/templates/home/home.html:475
+#: african_cities_lab/home/templates/home/home.html:574
 msgid "All events"
 msgstr "Voir tous"
 
-#: african_cities_lab/home/templates/home/home.html:535
+#: african_cities_lab/home/templates/home/home.html:531
 msgid ""
 "\n"
 "                                        African Cities: <br> What role for "
@@ -6886,11 +6869,11 @@ msgstr ""
 "\n"
 "Villes africaines : <br>Quelle place pour les jeunes?"
 
-#: african_cities_lab/home/templates/home/home.html:589
+#: african_cities_lab/home/templates/home/home.html:585
 msgid "Focus Areas"
 msgstr "Thématiques"
 
-#: african_cities_lab/home/templates/home/home.html:592
+#: african_cities_lab/home/templates/home/home.html:588
 msgid ""
 "8 topics that address cross-cutting and multidisciplinary issues of urban "
 "transformation in Africa in an environmentally safe way."
@@ -6898,43 +6881,43 @@ msgstr ""
 "8 thématiques qui abordent des sujets transverses et pluridisciplinaires de "
 "la mutation urbaine en Afrique, dans une démarche environnementale durable."
 
-#: african_cities_lab/home/templates/home/home.html:601
+#: african_cities_lab/home/templates/home/home.html:597
 msgid "Housing"
 msgstr "Logement"
 
-#: african_cities_lab/home/templates/home/home.html:604
+#: african_cities_lab/home/templates/home/home.html:600
 msgid "Digital"
 msgstr "Digital"
 
-#: african_cities_lab/home/templates/home/home.html:607
+#: african_cities_lab/home/templates/home/home.html:603
 msgid "Building"
 msgstr "Construction"
 
-#: african_cities_lab/home/templates/home/home.html:610
+#: african_cities_lab/home/templates/home/home.html:606
 msgid "Climate change"
 msgstr "Changement climatique"
 
-#: african_cities_lab/home/templates/home/home.html:613
+#: african_cities_lab/home/templates/home/home.html:609
 msgid "Planning"
 msgstr "Planification"
 
-#: african_cities_lab/home/templates/home/home.html:616
+#: african_cities_lab/home/templates/home/home.html:612
 msgid "Urban System"
 msgstr "Système urbain"
 
-#: african_cities_lab/home/templates/home/home.html:619
+#: african_cities_lab/home/templates/home/home.html:615
 msgid "Gouvernance"
 msgstr "Gouvernance"
 
-#: african_cities_lab/home/templates/home/home.html:622
+#: african_cities_lab/home/templates/home/home.html:618
 msgid "Energy"
 msgstr "Énergie"
 
-#: african_cities_lab/home/templates/home/home.html:638
+#: african_cities_lab/home/templates/home/home.html:634
 msgid "Latest News"
 msgstr "Derniers articles"
 
-#: african_cities_lab/home/templates/home/home.html:641
+#: african_cities_lab/home/templates/home/home.html:637
 msgid ""
 "Stay up to date with our newsletter and explore our blog posts to learn more "
 "about African urban and environmental development."
@@ -6942,8 +6925,8 @@ msgstr ""
 "Recevez notre newsletter et consultez nos articles de blog pour en savoir "
 "plus sur le développement urbain et environnemental en Afrique."
 
-#: african_cities_lab/home/templates/home/home.html:646
-#: african_cities_lab/home/templates/home/home.html:692
+#: african_cities_lab/home/templates/home/home.html:642
+#: african_cities_lab/home/templates/home/home.html:688
 msgid "All articles"
 msgstr "Tous les articles"
 
@@ -7268,6 +7251,23 @@ msgstr "Un événement de"
 #: african_cities_lab/templates/civa-base.html:194
 msgid "About African Cities Lab"
 msgstr "À propos d'African Cities Lab"
+
+#~ msgid "MAY 23-24"
+#~ msgstr "23-24 Mai"
+
+#~ msgid "Join the movement to transform African cities"
+#~ msgstr "Rejoignez le mouvement pour transformer les villes africaines"
+
+#~ msgid ""
+#~ "On May 23rd and 24th 2023, the African Cities Lab platform will bring "
+#~ "together governments, urban professionals, academic researchers, "
+#~ "entrepreneurs, public and private actors and youth from all over the "
+#~ "world in order to uplift african cities development."
+#~ msgstr ""
+#~ "Les 23 et 24 mai 2023, la plateforme African Cities Lab rassemblera des "
+#~ "gouvernements, des professionnels urbains, des chercheurs universitaires, "
+#~ "des entrepreneurs, des acteurs publics et privés et des jeunes du monde "
+#~ "entier afin de favoriser le développement des villes africaines."
 
 #~ msgid "CC License"
 #~ msgstr "Licence CC"
