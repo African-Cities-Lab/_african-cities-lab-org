@@ -52,6 +52,11 @@ urlpatterns = [
         name="how-to-build-resilient-african-cities",
     ),
     path(
+        "building-new-paradigm-african-cities/",
+        TemplateView.as_view(template_name="home/events/4th_webinar.html"),
+        name="building-new-paradigm-african-cities",
+    ),
+    path(
         "webinar-registration/",
         TemplateView.as_view(template_name="home/webinar_form.html"),
         name="webinar-registration",

@@ -58,7 +58,44 @@
 
   <section class="upcoming-events">
 
-    <div class="container-lg py-md-5">
+      <div class="container-lg py-md-5">
+
+	  <div class="row event-item">
+
+              <div class="col-md-2 col-lg-1 col-sm-2 col-xs-12">
+		  <div class="event-meta__card float-md-end">
+		      <div class="date-d">22</div>
+		      <div class="date-m">{% translate "Feb" %}</div>
+		      <div class="date-y">2024</div>
+		  </div>
+              </div>
+
+              <div class="col-md-8 col-lg-4 col-sm-8 col-xs-12">
+		  <div class="event-item__img">
+		      <a href="{% url "building-new-paradigm-african-cities" %}">
+			  <div>
+			      <img width="408" height="245" alt="{% translate 'Building a new paradigm around African cities: exploring the contributions of research, innovation and creative cultural industries' %}" src="{% static 'images/assets/webinar-4/building-new-paradigm-african-cities.jpg' %}"/>
+			  </div>
+		      </a>
+		  </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+		  <div class="event-item__inner py-3">
+		      <a href="{% url "building-new-paradigm-african-cities" %}" class="h4">
+			  {% translate "Building a new paradigm around African cities: exploring the contributions of research, innovation and creative cultural industries" %}
+		      </a>
+		  </div>
+		  <div>
+                      {% blocktranslate %}In a continent undergoing constant change, African cities are at the center of major issues that need to be catalyzed for the benefit of all, a challenge that still remains to be met. The first step towards this goal is to deconstruct clichés and misperceptions about these cities, by highlighting the many approaches and urban mutations that make them tick.{% endblocktranslate %}
+		  </div>
+		  <div class="mt-3">
+		      <a class="text_primary font-weight-500" href="{% url "building-new-paradigm-african-cities" %}">{% translate "Learn more" %}</a>
+		  </div>
+              </div>
+
+	  </div>
+
 
       <div class="row event-item">
 

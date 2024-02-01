@@ -1,0 +1,613 @@
+{% extends "base.html" %}
+{% load static i18n home_tags wagtailcore_tags wagtailimages_tags %}
+{% block title %}
+    {% translate "Building a new paradigm around African cities: exploring the contributions of research, innovation and creative cultural industries" %} - African Cities Lab
+{% endblock title %}
+{% block css %}
+    {{ block.super }}
+    <style>
+     .page-banner {
+	 background-image: linear-gradient(285deg, rgba(64, 39, 129,0.1) 15%, rgba(64, 39, 129,1) 100%),
+         url({% static 'images/assets/webinar-4/building-new-paradigm-african-cities.jpg' %});
+	 background-position: bottom
+     }
+     #video_player .btn-close{
+	 color: #fff;
+	 background: unset;
+     }
+     a.text_primary {
+	 font-weight: bold
+     }
+    </style>
+{% endblock css %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container-fluid">
+            <div class="row align-item-center py-5">
+                <div class="col-12 col-lg-10 col-xl-8 pt-4">
+                    <div class="meta-badge bg-transparent border border-white">{% translate "Webinar" %}</div>
+                    <div class="py-3 h2">
+                        {% translate "Building a new paradigm around African cities: exploring the contributions of research, innovation and creative cultural industries" %}
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3">
+                            <div class="d-inline-flex align-items-start">
+                                <img alt="icon"
+                                     width="50"
+                                     height="33"
+                                     src="{% static 'images/assets/big-pointer.svg' %}"/>
+                                <div class="font-size-18 d-inline-block font-weight-bold px-3">
+                                    {% blocktranslate %}February 22 <br>2024{% endblocktranslate %}
+                                </div>
+                            </div>
+                            <div class="mt-3 d-inline-flex">
+                                <img alt="icon"
+                                     width="12"
+                                     height="30"
+                                     src="{% static 'images/assets/small-pointer.svg' %}"/>
+                                <span class="font-size-18 font-weight-500 p-3">{% translate "Online" %}</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 mt-3 d-none d-md-block">
+                            <div class="row my-3">
+                                <div class="col-12 col-md-4 d-flex align-items-start">
+                                    <img alt="icon"
+                                         width="12"
+                                         height="30"
+                                         src="{% static 'images/assets/small-pointer.svg' %}"/>
+                                    <div class="font-size-16 font-weight-500 px-3 d-inline-block">
+					14h00 | 15h30 <br>
+					GMT + 1
+				    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+		    <div class="my-5">
+			<a href="https://epfl.zoom.us/meeting/register/u50vceqvpjMuGNXtw3fXRmDgiTN-7MmzkB_d#/registration" class="btn btn__primary btn__small" target="blank">
+			    {% translate "Register now" %}
+			 </a>
+		    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container-fluid">
+            <div class="row py-md-5">
+                <div class="col-12 col-lg-11">
+                    <div class="event-overview font-size-16">
+                        <h3 class="section-title mb-3">{% translate "Overview" %}</h3>
+                        <div class="text-justify">
+                            <p>
+                                {% blocktranslate %}In a continent undergoing constant change, African cities are at the center of major issues that need to be catalyzed for the benefit of all, a challenge that still remains to be met.{% endblocktranslate %}
+                            </p>
+                            <p class="py-3">
+                                {% blocktranslate %}The first step towards this goal is to deconstruct clichés and misperceptions about these cities, by highlighting the many approaches and urban mutations that make them tick.{% endblocktranslate %}
+                            </p>
+                            <p class="py-3">
+                                {% blocktranslate %}Research, the creative cultural industries and, more generally, innovation, offer a new set of lenses through which to understand the dynamics at work and activate the levers for sustainable transformation of urban spaces in Africa.{% endblocktranslate %}
+                            </p>
+                            <p class="py-3">
+                                {% blocktranslate %}This webinar invites you to explore these new initiatives in the presence of various speakers who will share enlightening perspectives on current advances, while discussing the challenges and opportunities that accompany them.{% endblocktranslate %}
+                            </p>
+                            <p class="py-3">
+                                {% blocktranslate %}It will also be an opportunity to announce the winners of the <a href="https://africancitieslab.org/en/contest" class="text_primary" target="blank">African Urban Visions</a> contest.{% endblocktranslate %}
+                            </p>
+			    <p>
+				{% blocktranslate %}Please register <a href="https://epfl.zoom.us/meeting/register/u50vceqvpjMuGNXtw3fXRmDgiTN-7MmzkB_d#/registration" class="text_primary" target="blank">here</a>.{% endblocktranslate %}
+			    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="event-agenda bg-light__ py-5">
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-11">
+                    <h3 class="section-title">{% translate "On the agenda" %}</h3>
+                    <div class="tab-content" id="agenda-content">
+                        <div class="row mt-3 border-bottom_grey">
+                            <div class="col-12 col-sm-8 p-3 py-4">
+                                <div class="meta-badge">14:00 - 14.08</div>
+                                <p class="font-size-18 font-weight-500">
+                                    {% translate "Introduction" %}
+                                </p>
+                                <p>
+                                    {% blocktranslate %}Welcome of participants, presentation of the webinar proceedings and introduction of panel members.{% endblocktranslate %}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-4 p-3 py-4">
+                                <p class="font-weight-500">
+                                    <span class="speaker-ico"></span>
+                                    {% translate "Speaker:" %} Leandry JIEUTSA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row border-bottom_grey">
+                            <div class="col-12 col-sm-8 p-3 py-4">
+                                <div class="meta-badge">14:08 - 14.33</div>
+                                <p class="font-size-18 font-weight-500">
+                                    {% translate "Why a new paradigm?" %}
+                                </p>
+                                <p>
+                                    {% blocktranslate %}This part of the webinar explores the specific dynamics of urban development in Africa. It will highlight the particularities of urbanization, with its challenges and opportunities, the possibility of rethinking urban sustainability through local architecture, the empowerment of young people and women, as well as the valorization of the rich African architectural heritage.{% endblocktranslate %}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-4 p-3 py-4">
+                                <p class="font-weight-500">
+                                    <span class="speaker-ico"></span>
+                                    {% translate "Speakers:" %} Nmadili Okwumabua, Issa Diabaté, Taman Mhoumadi, Mohamed Zoghla
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row border-bottom_grey">
+                            <div class="col-12 col-sm-8 p-3 py-4">
+                                <div class="meta-badge">14:33 - 15:13</div>
+                                <p class="font-size-18 font-weight-500">
+                                    {% translate "How to build this new paradigm?" %}
+                                </p>
+                                <p>
+                                    {% blocktranslate %}This second part will examine the need to train the new generation to meet current challenges. It will focus on the use of local heritage in urban planning in Africa. It will also explore how technological advances can promote urban sustainability, considering African specificities in terms of innovation. The session will close with audience interaction, encouraging participants to respond and contribute to the discussions.{% endblocktranslate %}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-4 p-3 py-4">
+                                <p class="font-weight-500">
+                                    <span class="speaker-ico"></span>
+                                    {% translate "Speakers:" %} Nmadili Okwumabua, Issa Diabaté, Taman Mhoumadi, Mohamed Zoghla
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row border-bottom_grey">
+                            <div class="col-12 col-sm-8 p-3 py-4">
+                                <div class="meta-badge">15:13 - 15:28</div>
+                                <p class="font-size-18 font-weight-500">
+                                    {% translate "Announcement of the winners of the African urban visions competition" %}
+                                </p>
+                                <p>
+                                    {% blocktranslate %}After a general presentation of the African Cities Lab (ACL) and the MOOCs, this sequence will be devoted to the proclamation of the results of the "African urban visions" competition by the jury for each category (urban photography and creative video).{% endblocktranslate %}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-4 p-3 py-4">
+                                <p class="font-weight-500">
+                                    <span class="speaker-ico"></span>
+                                    {% translate "Speakers:" %} Danièle Diwouta Kotto, Taman Mhoumadi, Sarah Lecourt, Rida Azmi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-8 p-3 py-4">
+                                <div class="meta-badge">15:28 - 15:30</div>
+                                <p class="font-size-18 font-weight-500">
+                                    {% translate "Final remarks" %}
+                                </p>
+                                <p>
+                                    {% blocktranslate %}The moderator summarizes the discussions, congratulates the winners and thanks the public and the panelists.{% endblocktranslate %}
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-4 p-3 py-4">
+                                <p class="font-weight-500">
+                                    <span class="speaker-ico"></span>
+                                    {% translate "Speaker:" %} Leandry JIEUTSA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="event-speakers py-5">
+        <div class="container-fluid position-relative py-5">
+            <h3 class="section-title mb-3">{% translate "Speakers" %}</h3>
+            <div class="row event-speakers__list py-3">
+                <div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-header p-0">
+                            <a href="#speaker_modal_1"
+                               type="button"
+                               class="d-block"
+                               data-bs-toggle="modal"
+                               data-bs-target="#speaker_modal_1">
+                                <img width="288"
+                                     height="275"
+                                     class="speaker-avatar"
+                                     src="{% static 'images/assets/webinar-4/nmadili-okwumabua.jpg' %}"
+                                     alt="Nmadili Okwumabua"/>
+                                <div class="speaker-hover-content">
+                                    <img alt="icon"
+                                         class="pb-5"
+                                         src="{% static 'images/assets/icon-plus-circle.svg' %}"
+                                         width="50"
+                                         height="50"/>
+                                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/nmadili-okwumabua-founder-cpdi-africa-85278249/" target="blank">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body border-0">
+                            <h4 class="speaker-title">Nmadili Okwumabua</h4>
+                            <p class="speaker-designation">
+                                {% translate 'Founder, CPDI Africa and Lecturer at the University Illinois Urbana-Champaign' %}
+                            </p>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade"
+                             id="speaker_modal_1"
+                             tabindex="-1"
+                             aria-labelledby="speaker_modal_1"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <button type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body pb-5">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-7">
+                                                <div class="mdl-speaker-avatar">
+                                                    <img alt="Nmadili Okwumabua"
+                                                         width="239"
+                                                         height="250"
+                                                         src="{% static 'images/assets/webinar-4/nmadili-okwumabua.jpg' %}"
+                                                         alt="Nmadili Okwumabua"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="mdl-speaker-details p-3">
+                                                    <h2>Nmadili Okwumabua</h2>
+                                                    <p class="my-2">
+                                                        {% translate 'Founder, CPDI Africa and Lecturer at the University Illinois Urbana-Champaign' %}
+                                                    </p>
+                                                    <ul class="mdl-speaker-social-list list-inline m-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="https://www.linkedin.com/in/nmadili-okwumabua-founder-cpdi-africa-85278249/" target="blank">
+                                                                <i class="fab fa-linkedin-in"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="xs-hr-line"></span>
+                                                    <p>
+                                                        {% blocktranslate %}<strong>Nmadili Okwumabua</strong> is a cultural designer, urbanist and educator in African architecture and community planning. Her passion for design is rooted in a vision where communities in Africa and the Diaspora are developed with new architectural languages that preserve heritage, and are culturally and environmentally sustainable. In 2005, she founded Southern Sahara USA, an international consultancy specializing in the research and development of this new architecture.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}Nmadili Okwumabua attended the University of Tennessee and Georgia State University, where she pursued undergraduate studies in architecture and urban studies. She holds a masters degree in African and African American studies from Clark Atlanta University, where her research centred on the evolution of modern vernacular architecture in Nigeria. In 2013, the fruits of these efforts gave birth to the <strong>Community Planning & Design Initiative, Africa</strong>, (CPDI Africa), a research-based, culture-inspired initiative created to develop new African architectural languages though design competition. Believing that the redevelopment of Africa's built environment should be as it has always been, built as a collaborative effort between the community members and designated master builders, Ms. Okwumabua engages participation from the design community throughout the African Diaspora, for the accomplishment of the CPDI Africa vision.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+                                                        {% blocktranslate %}Nmadili Okwumabuas work in African and black culture architecture has been studied worldwide, via her lectures as a lecturer and visiting professor, annual design workshops and the <strong>Art of African Architecture</strong>, a curated exhibition of winning designs from CPDI Africa bi annual design competitions. She has presented research papers in over sixty international conferences, universities and professional associations. Her work in African American & Diaspora studies builds upon Africanisms, cultural retentions rooted African design philosophies for preserving and developing black communities. In 2021 Okwumabua launched the <strong>Global Studio for African Centered Architecture</strong> (CPDI Africa GSACA), an academy for teaching this new pedagogy in architecture. Practitioners and students are awarded certificates post completion of intense research and scholarship led by distinguished, tenured built environment professionals.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Ms. Okwumabuas career as a built environment professional spans over 27 years, she is a licensed Realtor in the state of Georgia and Certified Property Manager with Broll CBRE South Africa. <strong>Nmadili Okwumabua</strong> lives in Atlanta Georgia and Abuja Nigeria, where she offers international consultancy services in urban design, hospitality, and real estate asset management, passionately sharing her vision with the future shapers of African and global built environments.{% endblocktranslate %}
+                                                    </p>
+						</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+		<div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+                    <div class="card border-0 bg-transparent">
+			<div class="card-header p-0">
+                            <a href="#speaker_modal_2"
+                               type="button"
+                               class="d-block"
+                               data-bs-toggle="modal"
+                               data-bs-target="#speaker_modal_2">
+				<img alt="Issa Diabaté"
+                                     width="288"
+                                     height="275"
+                                     class="speaker-avatar"
+                                     src="{% static 'images/assets/webinar-4/issa-diabate.jpg' %}"
+                                     alt="Issa Diabaté"/>
+				<div class="speaker-hover-content">
+                                    <img alt="icon"
+					 class="pb-5"
+					 src="{% static 'images/assets/icon-plus-circle.svg' %}"
+					 width="50"
+					 height="50"/>
+                                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+					<li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/issa-diabate-904513/" target="blank">
+						<i class="fab fa-linkedin-in"></i>
+                                            </a>
+					</li>
+                                    </ul>
+				</div>
+                            </a>
+			</div>
+			<div class="card-body border-0">
+                            <h4 class="speaker-title">Issa Diabaté</h4>
+                            <p class="speaker-designation">
+				{% translate 'Architect, Managing Director Koffi & Diabaté Architectes' %}
+                            </p>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade"
+                             id="speaker_modal_2"
+                             tabindex="-1"
+                             aria-labelledby="speaker_modal_2"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+                                    <div class="modal-header border-0">
+					<button type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Close">
+					</button>
+                                    </div>
+                                    <div class="modal-body pb-5">
+					<div class="row">
+                                            <div class="col-lg-4 col-md-7">
+						<div class="mdl-speaker-avatar">
+                                                    <img alt="Issa Diabaté"
+							 width="239"
+							 height="250"
+							 src="{% static 'images/assets/webinar-4/issa-diabate.jpg' %}"
+							 alt="Issa Diabaté"/>
+						</div>
+                                            </div>
+                                            <div class="col-lg-8">
+						<div class="mdl-speaker-details p-3">
+                                                    <h2>
+							Issa Diabaté
+                                                    </h2>
+                                                    <p class="my-2">
+							{% translate 'Architect, Managing Director at Koffi & Diabaté Architectes' %}
+                                                    </p>
+                                                    <ul class="mdl-speaker-social-list list-inline m-0">
+							<li class="list-inline-item">
+                                                            <a href="https://www.linkedin.com/in/issa-diabate-904513/" target="blank">
+								<i class="fab fa-linkedin-in"></i>
+                                                            </a>
+							</li>
+                                                    </ul>
+                                                    <span class="xs-hr-line">
+                                                    </span>
+                                                    <p>
+							{% blocktranslate %}With a Master's degree in architecture from YALE UNIVERSITY, Issa DIABATE is Managing Director of Koffi & Diabaté Architectes (founded in 2001 with Guillaume Koffi) and co-founder of Koffi & Diabaté Group.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}His previous experience with the group includes internships with internships with several renowned agencies: Goly Kouassi, Devrouax and Purnell, Jean Nouvel and Cattani, and SAU Guillaume Koffi.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Over the years, Issa Diabaté has been deeply involved in urban issues in Africa, and has taken part in a number of initiatives aimed at changing the local urban context. (notably through projects and mentoring of young architects).{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}His aim: to highlight the creative solutions needed to build the African city of tomorrow, as applied in the Koffi & Diabaté approach. He has addressed these subjects at various international conferences and publications (Columbia University, Ted Talks, Afritekture Munich, DESIGN INDABA, University of Johannesburg...).{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Member of the Côte d'Ivoire Order of Architects, Issa Diabaté is also active in the world of design. Runner-up at the 2017 Biennale d'Art Contemporain, Issa DIABATE collaborated with the IKEA group to create the "ÖVERALLT" collection, the first designed by African designers. by African designers.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Issa DIABATE is a <em>Chevalier de l'Ordre du Mérite Culturel</em> in Côte d'Ivoire.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}The work of Agence Koff & Diabaté Architectes has been presented at international exhibitions at the Milan Triennale, the Louisiana Museum of Denmark and the 18th International Architecture Exhibition Architecture Exhibition in 2023.{% endblocktranslate %}
+                                                    </p>
+						</div>
+                                            </div>
+					</div>
+                                    </div>
+				</div>
+                            </div>
+			</div>
+                    </div>
+		</div>
+		<div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+                    <div class="card border-0 bg-transparent">
+			<div class="card-header p-0">
+                            <a href="#speaker_modal_3"
+                               type="button"
+                               class="d-block"
+                               data-bs-toggle="modal"
+                               data-bs-target="#speaker_modal_3">
+				<img alt="Taman Mhoumadi"
+                                     width="288"
+                                     height="275"
+                                     class="speaker-avatar"
+                                     src="{% static 'images/assets/webinar-4/taman-mhoumadi.jpg' %}"
+                                     alt="Dr. Taman Mhoumadi"/>
+				<div class="speaker-hover-content">
+                                    <img alt="icon"
+					 class="pb-5"
+					 src="{% static 'images/assets/icon-plus-circle.svg' %}"
+					 width="50"
+					 height="50"/>
+                                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+					<li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/taman-mhoumadi/" target="blank">
+						<i class="fab fa-linkedin-in"></i>
+                                            </a>
+					</li>
+                                    </ul>
+				</div>
+                            </a>
+			</div>
+			<div class="card-body border-0">
+                            <h4 class="speaker-title">
+				Taman Mhoumadi
+                            </h4>
+                            <p class="speaker-designation">
+				{% translate 'Consultant, Climate and Innovation Trainer and Speaker, Singer and Actress' %}
+                            </p>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade"
+                             id="speaker_modal_3"
+                             tabindex="-1"
+                             aria-labelledby="speaker_modal_3"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+                                    <div class="modal-header border-0">
+					<button type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Close">
+					</button>
+                                    </div>
+                                    <div class="modal-body pb-5">
+					<div class="row">
+                                            <div class="col-lg-4 col-md-7">
+						<div class="mdl-speaker-avatar">
+                                                    <img alt="Taman Mhoumadi"
+							 width="239"
+							 height="250"
+							 src="{% static 'images/assets/webinar-4/taman-mhoumadi.jpg' %}"
+							 alt="Dr. Taman Mhoumadi"/>
+						</div>
+                                            </div>
+                                            <div class="col-lg-8">
+						<div class="mdl-speaker-details p-3">
+                                                    <h2>
+							Taman Mhoumadi
+                                                    </h2>
+                                                    <p class="my-2">
+							{% translate 'Consultant, Climate and Innovation Trainer and Speaker, Singer and Actress' %}
+                                                    </p>
+                                                    <ul class="mdl-speaker-social-list list-inline m-0">
+							<li class="list-inline-item">
+                                                            <a href="https://www.linkedin.com/in/taman-mhoumadi/" target="blank">
+								<i class="fab fa-linkedin-in"></i>
+                                                            </a>
+							</li>
+                                                    </ul>
+                                                    <span class="xs-hr-line">
+                                                    </span>
+                                                    <p>
+							{% blocktranslate %}Tamaa ("hope" in comorian) is a young French-Comorian singer and comedian living in Dakar. Taman Mhoumadi, her civic name, is also Consultant, trainer and speaker on climate and innovation topics.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}She has been comitted to fight against climate change for more than 5 years now, in Europe and Africa through different kinds of projects on innovation, public policy and art.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Her ambition is both to give tools to African climate project leaders and to link her commitments to her artistic practice.{% endblocktranslate %}
+                                                    </p>
+						</div>
+                                            </div>
+					</div>
+                                    </div>
+				</div>
+                            </div>
+			</div>
+                    </div>
+		</div>
+		<div class="col-lg-3 col-md-4 col-xl-3 py-4 speakers-card">
+                    <div class="card border-0 bg-transparent">
+			<div class="card-header p-0">
+                            <a href="#speaker_modal_4"
+                               type="button"
+                               class="d-block"
+                               data-bs-toggle="modal"
+                               data-bs-target="#speaker_modal_4">
+				<img alt="Mohamed Zoghlami"
+                                     width="288"
+                                     height="275"
+                                     class="speaker-avatar"
+                                     src="{% static 'images/assets/webinar-4/mohamed-zoghlami.png' %}"
+                                     alt="Mohamed Zoghlami"/>
+				<div class="speaker-hover-content">
+                                    <img alt="icon"
+					 class="pb-5"
+					 src="{% static 'images/assets/icon-plus-circle.svg' %}"
+					 width="50"
+					 height="50"/>
+                                    <ul class="speakers-social-lists list-inline p-0 mb-0">
+					<li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/mohamed-zoghlami-66449121/" target="blank">
+						<i class="fab fa-linkedin-in"></i>
+                                            </a>
+					</li>
+                                    </ul>
+				</div>
+                            </a>
+			</div>
+			<div class="card-body border-0">
+                            <h4 class="speaker-title">
+				Mohamed Zoghlami
+                            </h4>
+                            <p class="speaker-designation">
+				{% translate "International Consultant in Strategy and Development, Co-founder of Afric'Up and Africa in Colors, Specialist in creative industries and the Metaverse in Africa, Africa 2020 Season Expert Committee" %}
+                            </p>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade"
+                             id="speaker_modal_4"
+                             tabindex="-1"
+                             aria-labelledby="speaker_modal_7"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+                                    <div class="modal-header border-0">
+					<button type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Close">
+					</button>
+                                    </div>
+                                    <div class="modal-body pb-5">
+					<div class="row">
+                                            <div class="col-lg-4 col-md-7">
+						<div class="mdl-speaker-avatar">
+                                                    <img alt="Mohamed Zoghlami"
+							 width="239"
+							 height="250"
+							 src="{% static 'images/assets/webinar-4/mohamed-zoghlami.png' %}"
+							 alt="Mohamed Zoghlami"/>
+						</div>
+                                            </div>
+                                            <div class="col-lg-8">
+						<div class="mdl-speaker-details p-3">
+                                                    <h2>
+							Mohamed Zoghlami
+                                                    </h2>
+                                                    <p class="my-2">
+							{% translate "International Consultant in Strategy and Development, Co-founder of Afric'Up and Africa in Colors, Specialist in creative industries and the Metaverse in Africa, Africa 2020 Season Expert Committee" %}
+                                                    </p>
+                                                    <ul class="mdl-speaker-social-list list-inline m-0">
+							<li class="list-inline-item">
+                                                            <a href="https://www.linkedin.com/in/mohamed-zoghlami-66449121/" target="blank">
+								<i class="fab fa-linkedin-in"></i>
+                                                            </a>
+							</li>
+                                                    </ul>
+                                                    <span class="xs-hr-line">
+                                                    </span>
+                                                    <p>
+							{% blocktranslate %}Mohamed ZOGHLAMI is a Consultant in Development & Strategic Analysis - Specialized in Creative Industries in Africa - Co-founder of Afric'Up the first African startup summit, of Africa in Colors digital platform and African event dedicated to digital creative industries in Rwanda, and of Africa Metaverse Museum, the first immersive cultural, educational and gaming space in Africa.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}He is Honorary Chairman of CAVIE - Centre Africain de Veille et d'Intelligence Économique and Vice-Chairman of the Agence africaine & francophone de l'intelligence artificielle (AFRIA). He has worked in European institutions and headed Externans International, a firm specializing in development and cooperation with emerging countries, particularly in the Mediterranean and Africa.{% endblocktranslate %}
+                                                    </p>
+                                                    <p>
+							{% blocktranslate %}Mohamed ZOGHLAMI has been the digital creative industries expert for the Africa 2020 Summit organized in France on African cultures. He is a shareholder in 3D Netinfo, Africa's first creative digital coding school, and DigiArt Living Lab, the continent's only creative innovation center.{% endblocktranslate %}
+                                                    </p>
+						</div>
+                                            </div>
+					</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
